@@ -7,13 +7,13 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
 == About Coq ==
   * Visit the homepage at http://coq.inria.fr
   * FrequentlyAskedQuestions
-  * StandardLibrary  for a discussion of to the standard library of Coq 
+  * StandardLibrary  for a discussion of the standard library of Coq 
   * ["Documentation"] for a list of manuals, books and tutorials
   * ["Tools"] that are built on top of Coq
   * UserContributions for a discussion of the contributions that are distributed by Coq
   * TipsAndTricks
   * CoqNewbie? 
-  * TheoreticalBackground
+  * TheoryBehindCoq
   * TheSource of Coq, which is written in [http://caml.inria.fr/ocaml/index.en.html Objective Caml]
 
 == About Cocorico! ==
