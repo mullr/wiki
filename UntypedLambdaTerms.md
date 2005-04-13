@@ -22,7 +22,7 @@ A generic recursion function called gfold is created for these data types.
 
 I give several examples of data types to represent untyped lambda calculus terms.  
 
-{{{
+{{{#!coq
 Set Implicit Arguments.
 Set Contextual Implicit.
 
@@ -50,7 +50,7 @@ Definition lift_Maybe A B (h : A -> B) (t : Maybe A) : (Maybe B) :=
  * + Even better polymorphic {{{(Term A)}}} are also closed terms and can be instantiated for any set of variables.
  * - Join is not definable without impredicative Set.
 
-{{{
+{{{#!coq
 Module NonUniform_De_Bruijn.
 
 Inductive Term : Type -> Type :=
@@ -123,7 +123,7 @@ End NonUniform_De_Bruijn.
 
 This definition does not work because the occurence of {{{Term}}} inside {{{(Maybe (Term A))}}} doesn't meet Coq's PositivityRequirement.  And even if it did {{{(Term (Maybe (Term A)))}}} would probably require ImpredicativeSet.
 
-{{{
+{{{#!coq
 Module NonUniform_Generalized_De_Bruijn.
 
 (* THIS DOESN'T WORK
@@ -148,7 +148,7 @@ This is also knows as the adbmal calculus.  See DimitriHendriks.
  * - Only finite number of free variables, and they must be given numbers.
  * - Not a Monad.
 
-{{{
+{{{#!coq
 Module Dependent_Generalized_De_Bruijn.
 
 Inductive Term : nat -> Set :=
@@ -179,7 +179,7 @@ End Dependent_Generalized_De_Bruijn.
  * - Bound and free variables are handled different ways.
  * - {{{(Term A n)}}} has named free variable and n numbered free variables.
 
-{{{
+{{{#!coq
 Module Dependent_Generalized_De_Bruijn_Free_Variables.
 
 Inductive Term (A:Set) : nat -> Set :=
@@ -210,7 +210,7 @@ End Dependent_Generalized_De_Bruijn_Free_Variables.
  * - All free variables are numbered.
  * - Not a Monad.
 
-{{{
+{{{#!coq
 Module De_Bruijn.
 
 Inductive Term : Set :=
@@ -239,7 +239,7 @@ End De_Bruijn.
  * - No type for closed Terms.
  * - Bad Terms exist with de Bruijn indices that refer to non-existant lambdas.
 
-{{{
+{{{#!coq
 Module De_Bruijn_Free_Variables.
 
 Inductive Term (A:Set) : Set :=
