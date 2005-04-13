@@ -31,4 +31,4 @@ Fixpoint log_inf (p:positive) : Z :=
 
 }}}
 
-But somehow doesn't work iwth Mozilla 1.7.
+But somehow doesn't work with Mozilla 1.7.
