@@ -18,9 +18,20 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
 
 == About Cocorico! ==
   * RecentChanges: see where people are currently working
-  * HelpForBeginners: to get you going
   * WikiSandBox: feel free to change this page and experiment with editing
   * FindPage: search or browse the database in various ways
   * WantedPages:  pages waiting for an author.
+  * HelpForBeginners
+
+== How to use this Wiki ==
+
+A Wiki is a collaborative site, anyone can contribute and share:
+ * Edit any page by pressing '''[[GetText(Edit)]]''' at the top or the bottom of the page 
+ * Create a link to another page with joined capitalized words (like WikiSandBox) or with {{{["quoted words in brackets"]}}}
+ * Search for page titles or text within pages using the search box at the top of any page
+ * For all help pages see the HelpContents bar at the top of this page.
+
+To learn more about what a WikiWikiWeb is, read about MoinMoin:WhyWikiWorks and the MoinMoin:WikiNature. Also, consult the MoinMoin:WikiWikiWebFaq. 
+
 ----
 CategoryHomepage
