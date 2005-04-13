@@ -9,6 +9,7 @@ Please feel free to experiment here, after the four dashes below... and please d
 ----
 
 TableOfContents
+RecentChanges
 
 == Formatting ==
 
