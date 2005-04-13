@@ -10,6 +10,8 @@ Please feel free to experiment here, after the four dashes below... and please d
 
 AbandonedPages, Action, AttachInfo, AttachList, BR, EditTemplates, EditedSystemPages, FootNote, Form, FullSearch, GetText, GetTextFormatted, Include, LikePages, Navigation, NewPage, OrphanedPages, PageHits, PageSize, RandomPage, RandomQuote, RecentChanges, ShowSmileys, StatsChart, SystemAdmin, TableOfContents, TeudView, Verbatim, WantedPages
 
+[[RandomQuote]]
+
 [[TableOfContents]]
 
 == Formatting ==
