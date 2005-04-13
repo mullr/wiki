@@ -8,8 +8,8 @@ Please feel free to experiment here, after the four dashes below... and please d
 '''Tip:''' Shift-click "HelpOnEditing" to open a second window with the help pages.
 ----
 
-TableOfContents
-RecentChanges
+AbandonedPages, Action, AttachInfo, AttachList, BR, EditTemplates, EditedSystemPages, FootNote, Form, FullSearch, GetText, GetTextFormatted, Include, LikePages, Navigation, NewPage, OrphanedPages, PageHits, PageSize, RandomPage, RandomQuote, RecentChanges, ShowSmileys, StatsChart, SystemAdmin, TableOfContents, TeudView, Verbatim, WantedPages
+
 
 == Formatting ==
 
