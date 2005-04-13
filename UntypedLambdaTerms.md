@@ -22,7 +22,7 @@ A generic recursion function called gfold is created for these data types.
 
 I give several examples of data types to represent untyped lambda calculus terms.  
 
-{{{#!coq
+{{{#!coq numbering=off
 Set Implicit Arguments.
 Set Contextual Implicit.
 
