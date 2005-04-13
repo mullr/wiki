@@ -22,7 +22,8 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
   * WikiSandBox: feel free to change this page and experiment with editing
   * FindPage: search or browse the database in various ways
   * WantedPages:  pages waiting for an author.
-  * HelpForBeginners
+  * HelpForBeginners for general help on MoinMoin wiki
+  * HelpForCocorico  for help on Wiki topics peculiar to Cocorico (HelpForCocorico/ColorizedCoqSyntax etc.)
 
 == How to use this Wiki ==
 
