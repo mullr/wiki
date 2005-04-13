@@ -11,7 +11,10 @@ Please feel free to experiment here, after the four dashes below... and please d
 
 [[RandomQuote]]
 
+
+
 {{{#!coq
+
 
 Fixpoint log_inf (p:positive) : Z :=
   match p with
