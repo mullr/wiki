@@ -1,6 +1,6 @@
-= Coq code with highlighted syntax
+= Coq code with highlighted syntax =
 
-In ["Cocorico"] To present a piece of Coq code with syntax highlighting, you should enclose your code between "{{{#!coq" and "}}}".
+In ["Cocorico"] To present a piece of Coq code with syntax highlighting, you should enclose your code between {{{{{{#!coq}}} and }}}.
 
 For example
 
