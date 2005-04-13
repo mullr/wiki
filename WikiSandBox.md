@@ -11,7 +11,7 @@ Please feel free to experiment here, after the four dashes below... and please d
 
 [[RandomQuote]]
 
-{{!coq
+{{{#!coq
 
 Fixpoint log_inf (p:positive) : Z :=
   match p with
@@ -25,7 +25,7 @@ Lemma log_sup_correct1 : forall p:positive, 0 <= log_sup p.
 simple induction p; intros; simpl in |- *; auto with zarith.
 Qed.
 
-}}
+}}}
 
 
 == Formatting ==
