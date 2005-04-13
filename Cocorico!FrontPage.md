@@ -11,6 +11,7 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
   * ["Documentation"] for a list of manuals, books and tutorials
   * ["Tools"] that are built on top of Coq
   * UserContributions for a discussion of the contributions that are distributed by Coq
+  * CoqPearls small bits of pretty Coq code
   * TipsAndTricks
   * CoqNewbie? 
   * TheoryBehindCoq
