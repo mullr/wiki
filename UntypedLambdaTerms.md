@@ -67,7 +67,7 @@ Lam (Lam (Lam
  (App (Var (Just (Just Nothing))) (Var Nothing))
  (App (Var (Just Nothing)) (Var Nothing))))).                                
 
-(* It is to define lift then bind, even though lift could be definined in terms of bind. *)
+(* It is to define lift then bind, even though lift could be defined in terms of bind. *)
 This code was created by GeorgesGonthier. *)
 
 Fixpoint lift_Term A B (h : A -> B) (t : Term A) {struct t} : Term B :=
