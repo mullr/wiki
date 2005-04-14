@@ -21,7 +21,7 @@ Qed.
 
 }}}
 
-adding """numbers=disable""" or """numbers=none""" supresses the line numbers completely. 
+adding '''numbers=disable''' or '''numbers=none''' supresses the line numbers completely. 
 
 {{{#!coq numbers=none
 
