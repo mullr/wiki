@@ -31,7 +31,7 @@ Inductive Maybe (A : Type) : Type :=
  | Nothing : Maybe A
  | Just : A -> Maybe A.
 
-(*Maybe is also a modad*)
+(*Maybe is also a monad*)
 Definition lift_Maybe A B (h : A -> B) (t : Maybe A) : (Maybe B) :=
   match t with
   | Nothing => Nothing
@@ -237,7 +237,7 @@ End De_Bruijn.
  * + I think Join is definable.
  * - Bound and free variables are handled different ways.
  * - No type for closed Terms.
- * - Bad Terms exist with de Bruijn indices that refer to non-existant lambdas.
+ * - Bad Terms exist with de Bruijn indices that refer to non-existent lambdas.
 
 {{{#!coq
 Module De_Bruijn_Free_Variables.
