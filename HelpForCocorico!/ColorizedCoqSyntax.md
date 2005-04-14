@@ -1,6 +1,6 @@
 = Coq code with highlighted syntax =
 
-In ["Cocorico"] To present a piece of Coq code with syntax highlighting, you should enclose your code between {{{{{{#!coq}}} and }}}.
+In ["Cocorico!"] to present a piece of Coq code with syntax highlighting, you should enclose your code between {{{{{{#!coq}}} and }}}.
 
 For example
 
@@ -31,4 +31,4 @@ Fixpoint log_inf (p:positive) : Z :=
 
 }}}
 
-But somehow doesn't work with Mozilla 1.7.
+But somehow this doesn't work with Mozilla 1.7.
