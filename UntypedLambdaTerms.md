@@ -16,9 +16,9 @@ data TermE a = VarE a
 	     | LamE (TermE (Maybe (TermE a)))
 }}}
 
-Both data types, along with suitable functions, are monad, and have return, bind, and join operations.
+Both data types, along with suitable functions, are monads, and have return, bind, and join operations.
 
-A generic recursion function called gfold is created for these data types.
+A generic recursion function called {{{gfold}}} is created for these data types.
 
 I give several examples of data types to represent untyped lambda calculus terms.  
 
@@ -44,7 +44,7 @@ Definition lift_Maybe A B (h : A -> B) (t : Maybe A) : (Maybe B) :=
 
 === Properties ===
  * + Is a Monad.
- * + Bound and Free Variables are work in the same way.
+ * + Bound and Free Variables work in the same way.
  * + Variables can be over any Set.
  * + {{{(Term Empty_Set)}}} are closed terms.
  * + Even better polymorphic {{{(Term A)}}} are also closed terms and can be instantiated for any set of variables.
