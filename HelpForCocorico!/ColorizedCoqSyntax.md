@@ -21,14 +21,12 @@ Qed.
 
 }}}
 
-adding "numbering=disable" is supposed to supress the line numbers completely. 
+adding """numbers=disable""" or """numbers=none""" supresses the line numbers completely. 
 
-{{{#!coq numbering=disable
+{{{#!coq numbers=none
 
 Fixpoint log_inf (p:positive) : Z :=
   match p with
   | xH => 0   | xO q => Zsucc (log_inf q)   | xI q => Zsucc (log_inf q)   end.
 
 }}}
-
-But somehow this doesn't work with Mozilla 1.7.
