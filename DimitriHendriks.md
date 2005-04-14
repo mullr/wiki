@@ -1,1 +1,1 @@
-<a href="http://www.cs.ru.nl/~hendriks">Dimitri Hendriks</a>
+[http://www.cs.ru.nl/~hendriks] Dimitri Hendriks
