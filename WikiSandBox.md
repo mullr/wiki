@@ -8,28 +8,19 @@ Please feel free to experiment here, after the four dashes below... and please d
 '''Tip:''' Shift-click "HelpOnEditing" to open a second window with the help pages.
 ----
 
+{{{#!syntax C
+data Hi = Mi | Ra | So
+}}}
+
 {{{
 \}\}\}
 }}}
 
 [[RandomQuote]]
 
-{{{#!bibtex
-@Book{aho.74,
-  author= {Alfred V. Aho and John E. Hopcroft and Jeffrey D. Ullman},
-  title = {The Design and Analysis of Computer Algorithms},
-  publisher= {Addison-Wesley},
-  year  = {1974},
-}
-}}}
 
-{{{#!latex2
-\noindent\textit{The} Fundamental Theorem of Calculus:
-$$\int_{\mathcal{M}}dL = \oint_{\partial\mathcal{M}}L$$
-with less things implicit,
-$$\int_{\mathcal{M}}dL(\mathbf{x},d^m\mathbf{x}) = \oint_{\partial\mathcal{M}}L(\mathbf{x},d^{m-1}\mathbf{x})$$
-where $dL$ is the exterior derivative of the differential ($m-1$) form $L$.
-}}}
+
+
 
 == Formatting ==
 
