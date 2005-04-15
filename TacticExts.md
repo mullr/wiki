@@ -1,3 +1,5 @@
+= TacticExts =
+[[TableOfContents]]
 == ApplyFwd ==
 
 {{{ApplyFwd}}} is intended to allow you to apply lemmas of the form
