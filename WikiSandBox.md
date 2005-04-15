@@ -23,10 +23,6 @@ Please feel free to experiment here, after the four dashes below... and please d
 }
 }}}
 
-{{{#!syntax haskell
-fib = 1 : 1 : zipWith (+) fib (tail fib)
-}}}
-
 {{{#!latex2
 \noindent\textit{The} Fundamental Theorem of Calculus:
 $$\int_{\mathcal{M}}dL = \oint_{\partial\mathcal{M}}L$$
