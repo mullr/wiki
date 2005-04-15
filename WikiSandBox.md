@@ -23,7 +23,17 @@ Please feel free to experiment here, after the four dashes below... and please d
 }
 }}}
 
+{{{#!syntax haskell
+fib = 1 : 1 : zipWith (+) fib (tail fib)
+}}}
 
+{{{#!latex2
+\noindent\textit{The} Fundamental Theorem of Calculus:
+$$\int_{\mathcal{M}}dL = \oint_{\partial\mathcal{M}}L$$
+with less things implicit,
+$$\int_{\mathcal{M}}dL(\mathbf{x},d^m\mathbf{x}) = \oint_{\partial\mathcal{M}}L(\mathbf{x},d^{m-1}\mathbf{x})$$
+where $dL$ is the exterior derivative of the differential ($m-1$) form $L$.
+}}}
 
 == Formatting ==
 
