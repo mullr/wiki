@@ -77,7 +77,7 @@ both in goal and local context.
 We have to take care that {{{H}}} does not rewrite itself, 
 for then we'd get {{{H : t2 = t2}}}, and a loop is entered.
 
-{{{
+{{{#!coq
 Ltac rewrite_in_cxt H :=
   let T := type of H in
   match T with
