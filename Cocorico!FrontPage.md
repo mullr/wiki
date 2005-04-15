@@ -1,5 +1,8 @@
 ## page was renamed from CocoricoFrontPage
-#pragma section numbers off
+#pragma section-numbers off
+#language en
+
+[[TableOfContents]]
 
 = Welcome to Cocorico!, the Coq Wiki =
 
