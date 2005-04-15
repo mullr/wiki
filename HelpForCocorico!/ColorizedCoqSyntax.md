@@ -1,3 +1,4 @@
+## page was renamed from HelpForCocorico/ColorizedCoqSyntax
 = Coq code with highlighted syntax =
 
 In ["Cocorico!"] to present a piece of Coq code with syntax highlighting, you should enclose your code between {{{{{{#!coq}}} and }}}.
