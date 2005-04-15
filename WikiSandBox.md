@@ -14,7 +14,14 @@ Please feel free to experiment here, after the four dashes below... and please d
 
 [[RandomQuote]]
 
-
+{{{#!bibtex
+@Book{aho.74,
+  author= {Alfred V. Aho and John E. Hopcroft and Jeffrey D. Ullman},
+  title = {The Design and Analysis of Computer Algorithms},
+  publisher= {Addison-Wesley},
+  year  = {1974},
+}
+}}}
 
 
 
