@@ -12,7 +12,7 @@ You can type
 } } }
 }}}
 
-to get the generated dvi file inlined in your text. 
+to get the generated dvi file inlined (as a .png file) in your text. 
 
 For example 
 
