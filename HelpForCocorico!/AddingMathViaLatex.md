@@ -17,7 +17,7 @@ to get the generated dvi file inlined in your text.
 For example 
 
 {{{#!latex2
-$\forall m,n:N,\; \neg \frac{a}{b}=2^{\sup m,n}$
+$\forall m,n:\mathbb{N} a,b:\mathbb{Z},\; \neg \frac{a}{b}=2^{\sup (m,n)}$
 }}}
 
 The most general form is
