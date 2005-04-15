@@ -46,7 +46,7 @@ first
 }}}
 
 == LHS ==
-
+[[Anchor(LHS)]]
 {{{LHS}}} means “left-hand side”.  It returns the term on the left hand side of an equality or inequality.
 {{{#!coq
 Ltac LHS :=
@@ -57,7 +57,7 @@ end.
 }}}
 
 == RHS ==
-
+[[Anchor(RHS)]]
 {{{RHS}}} means “right-hand side”.  It returns the term on the left hand side of an equality or inequality.
 {{{#!coq
 Ltac RHS :=
