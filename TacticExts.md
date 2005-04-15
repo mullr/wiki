@@ -66,3 +66,40 @@ match goal with
 | |-(_ _ ?a) => constr: a
 end.
 }}}
+
+
+[[Anchor RewriteAll]]
+== RewriteAll ==
+
+Given an assumption {{{H : t1 = t2}}}, 
+the tactic {{{rewrite_all H}}} replaces {{{t1}}} with {{{t2}}} 
+both in goal and local context.
+We have to take care that {{{H}}} does not rewrite itself, 
+for then we'd get {{{H : t2 = t2}}}, and a loop is entered.
+
+{{{
+Ltac rewrite_in_cxt H :=
+  let T := type of H in
+  match T with
+  | ?t1 = ?t2 =>
+      repeat
+      (
+      generalize H; clear H; 
+      match goal with
+      | id : context[t1] |- _ =>
+          intro H; rewrite H in id
+      end
+      )
+  end.
+
+Ltac rewrite_all H :=
+  rewrite_in_cxt H; rewrite H.
+
+Ltac replace_in_cxt t1 t2 :=
+  let H := fresh "H" in
+  (cut (t1 = t2); [ intro H; rewrite_in_cxt H; clear H | idtac ]).
+
+Ltac replace_all t1 t2 :=
+  let H := fresh "H" in
+  (cut (t1 = t2); [ intro H; rewrite_all H; clear H | idtac ]).
+}}}
