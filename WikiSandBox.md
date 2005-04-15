@@ -42,7 +42,7 @@ It is possible to do {{{scale}}} and {{{normSquared}}} at the same time. Interna
 
 Consider a vector represented as a list of doubles.  Suppose we want to normalize a vector.  The standard method is to compute the length in one pass, and scale the vector in another pass
 
-{{{##!haskell numbers=disable
+{{{#!haskell numbers=disable
 type Vector = [Double]
 
 normSquared :: Vector -> Double
@@ -77,17 +77,9 @@ circNormalize v = scaledVector
   where (scaledVector, normSquared) = scaleAndNormSquared (recip (sqrt normSquared)) v
 }}}
 
--- fst of the result is the scaled value of the vector
--- snd of the result is the squared norm of the vector before scaling
-scaleAndNormSquared :: Double -> Vector -> (Vector, Double)
-scaleAndNormSquared a [] = ([], 0)
-scaleAndNormSquared a (x:xs) = (a*x:recScale, x*x+recNormSquared)
-  where (recScale, recNormSquared) = scaleAndNormSquared a xs
-}}}
-
 Now using the laziness of Haskell, and recursive binding, we can use {{{scaleAndNormSquared}}} to create a virtually one-pass normalization. We need to scale by the reciprocal of the square-root of {{{normSquared}}}.  So we say exactly that.
 
-{{{#!syntax haskell
+{{{#!haskell
 circNormalize :: Vector -> Vector
 circNormalize v = scaledVector
   where (scaledVector, normSquared) = scaleAndNormSquared (recip (sqrt normSquared)) v
