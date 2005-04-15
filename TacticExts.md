@@ -29,7 +29,7 @@ first
 
 == ApplyRev ==
 
-{{{ApplyFwd}}} is intended to allow you to apply lemmas of the form
+{{{ApplyRev}}} is intended to allow you to apply lemmas of the form
 {{{forall a0:T0, ..., forall an:Tn, Phi <-> Psi}}} to reduce a goal of {{{Phi}}} to {{{Psi}}}.
 {{{#!coq
 Ltac applyRev l :=
