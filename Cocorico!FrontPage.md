@@ -12,6 +12,7 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
   * ["Tools"] that are built on top of Coq
   * UserContributions for a discussion of the contributions that are distributed by Coq
   * CoqPearls small bits of pretty Coq code
+  * LtacPearls useful tacticals
   * TipsAndTricks
   * CoqNewbie? 
   * TheoryBehindCoq
