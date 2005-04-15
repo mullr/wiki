@@ -45,8 +45,8 @@ first
 ].
 }}}
 
-== LHS ==
 [[Anchor(LHS)]]
+== LHS ==
 {{{LHS}}} means “left-hand side”.  It returns the term on the left hand side of an equality or inequality.
 {{{#!coq
 Ltac LHS :=
@@ -56,8 +56,8 @@ match goal with
 end.
 }}}
 
-== RHS ==
 [[Anchor(RHS)]]
+== RHS ==
 {{{RHS}}} means “right-hand side”.  It returns the term on the left hand side of an equality or inequality.
 {{{#!coq
 Ltac RHS :=
