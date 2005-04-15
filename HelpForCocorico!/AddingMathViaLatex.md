@@ -2,7 +2,7 @@
 
 == Using latex to generate math ==
 
-We use the latex2.py written by [http://johannes.sipsolutions.de/Projects/new-moinmoin-latex Johannes Berg].
+We use the latex2.py Wiki parser written by [http://johannes.sipsolutions.de/Projects/new-moinmoin-latex Johannes Berg].
 
 You can type 
 
@@ -17,8 +17,18 @@ to get the generated dvi file inlined in your text.
 For example 
 
 {{{#!latex2
-$\forall m,n:{N} a,b:{Z},\; \neg \frac{a}{b}=2^{\sup (m,n)}$
+$\forall m,n:{N}\;\; a,b:{Z},\; \neg \frac{a}{b}=2^{\sup (m,n)}$
 }}}
+
+You can also add a peramble containing user defined macros or \usepackage. For example we import the `amssymb` package to get the blackboard fonts for `N` and `Z`:
+
+{{{#!latex2
+\usepackage{amssymb}
+ %%end-prologue%%
+$\forall m,n:\mathbb{N}\;\; a,b:\mathbb{Z},\; \neg \frac{a}{b}=2^{\sup (m,n)}$
+}}}
+
+
 
 The most general form is
 
