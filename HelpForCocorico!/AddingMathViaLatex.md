@@ -28,7 +28,8 @@ You can also add a peramble containing user defined macros or \usepackage. For e
 $\forall m,n:\mathbb{N}\;\; a,b:\mathbb{Z},\; \neg \frac{a}{b}=2^{\sup (m,n)}$
 }}}
 
-It is possible to include the outcome in between the text, as we do [[latex2(usepackage{amssymb}%$\neg\exists p,q\in\mathbb{Q}\;\; \frac{p}{q}=\sqrt{2}$)]] here!
+It is possible to include the outcome in between the text, 
+as we do [[latex2(\usepackage{amssymb}%$\neg\exists p,q\in\mathbb{Q},\;\; \frac{p}{q}=\sqrt{2}$ )]] here!
 
 The most general form is
 
