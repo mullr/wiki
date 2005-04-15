@@ -8,6 +8,10 @@ Please feel free to experiment here, after the four dashes below... and please d
 '''Tip:''' Shift-click "HelpOnEditing" to open a second window with the help pages.
 ----
 
+{{{#!syntax haskell
+data Hi = Mi | Ra | So
+}}}
+
 {{{
 \}\}\}
 }}}
