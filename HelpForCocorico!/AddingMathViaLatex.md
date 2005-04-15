@@ -1,4 +1,4 @@
-#languae en
+#language en
 
 == Using latex to generate math ==
 
@@ -16,7 +16,7 @@ to get the generated dvi file inlined in your text.
 
 For example 
 
-{{{!#latex2
+{{{#!latex2
 $\forall m,n:N,\; \neg \frac{a}{b}=2^{\sup m,n}$
 }}}
 
