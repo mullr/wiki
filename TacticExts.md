@@ -1,5 +1,11 @@
 = TacticExts =
 [[TableOfContents]]
+== Dependent case ==
+
+{{{dcase}}} is a version of case that remembers the case you are in.
+{{{#!coq
+Ltac dcase x := generalize (refl_equal x); pattern x at -1; case x.
+}}}
 == ApplyFwd ==
 
 {{{ApplyFwd}}} is intended to allow you to apply lemmas of the form
