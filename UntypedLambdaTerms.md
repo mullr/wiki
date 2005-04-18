@@ -139,7 +139,7 @@ End NonUniform_Generalized_De_Bruijn.
 
 == Dependent Generalized de Bruijn Indices ==
 
-This is also knows as the adbmal calculus.  See DimitriHendriks.
+This is also known as the adbmal calculus. See DimitriHendriks.
 
 === Properties ===
  * + {{{(Term 0)}}} are closed terms
