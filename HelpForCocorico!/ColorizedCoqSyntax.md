@@ -1,7 +1,7 @@
 ## page was renamed from HelpForCocorico/ColorizedCoqSyntax
 = Coq code with highlighted syntax =
 
-In ["Cocorico!"] to present a piece of Coq code with syntax highlighting, you should enclose your code between {{{{{{#!coq}}} and }}}.
+In ["Cocorico!"] to present a piece of Coq code with syntax highlighting, you should enclose your code between `{{{#!coq` and `}}}`.
 
 For example
 
@@ -22,9 +22,10 @@ Qed.
 
 }}}
 
-adding '''numbers=disable''' or '''numbers=none''' supresses the line numbers completely. 
+By default you don't get any line numbers. Adding '''numbers=on''' adds line numbers to the code, which then can be toggled on and off
+in most browsers. 
 
-{{{#!coq numbers=none
+{{{#!coq numbers=on
 
 Fixpoint log_inf (p:positive) : Z :=
   match p with
