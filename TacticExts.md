@@ -76,7 +76,7 @@ end.
 }}}
 
 
-[[Anchor RewriteAll]]
+[[Anchor(RewriteAll)]]
 == RewriteAll ==
 
 Given an assumption {{{H : t1 = t2}}}, 
