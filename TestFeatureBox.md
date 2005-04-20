@@ -10,3 +10,9 @@ To test the experimental features.
   year  = {1974},
 }
 }}}
+
+{{{#!latex2
+\usepackage{amssymb}
+%%end-prologue%%
+$2\in\NN$
+}}}
