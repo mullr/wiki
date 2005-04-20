@@ -14,5 +14,5 @@ To test the experimental features.
 {{{#!latex2
 \usepackage{amssymb}
 %%end-prologue%%
-$2\in\NN$
+$2\in\mathbb{N}$
 }}}
