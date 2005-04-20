@@ -27,6 +27,9 @@ Axioms qwe:llqwjehljhq.
 Global Variable X232143->Y.
 a-b
 
+Proof.
+[idtac; first [T1|T2|T3].
+
 Goal g:skljs.
 Proof.
 
