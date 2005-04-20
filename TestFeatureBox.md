@@ -16,3 +16,28 @@ To test the experimental features.
 %%end-prologue%%
 $2\in\mathbb{N}$
 }}}
+
+{{{#!coq
+Global Variable X.
+Global X.
+
+Axiom s:kjhdwkjhw.
+Axioms qwe:llqwjehljhq.
+
+Global Variable X232143->Y.
+a-b
+
+Goal g:skljs.
+Proof.
+
+Defined.
+Qed.
+
+Parameter a := "kjhasdkjhdas".
+
+SearchAbout X.
+SearchPattern Y. 
+SearchRewrite j54976;l.
+Show ;kdawflkj.
+
+}}}
