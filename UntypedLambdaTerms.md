@@ -1,16 +1,18 @@
 This work is inspired by the article [http://www.soi.city.ac.uk/~ross/papers/debruijn.html De Bruijn Notation as a Nested Datatype] by Richard Bird and Ross Paterson. Journal of Functional Programming, 9(1):77-91, January 1999. 
 
 
-In this paper they define the following Haskell datatype: {{{
+In this paper they define the following Haskell datatype: 
+{{{#!haskell
 data Term v = Var v | App (Term v) (Term v) | Lam (Term (Maybe v))
 }}}
 
-for lambda expression.  For example K = λx. λy. x = λ λ 1 would be {{{
+for lambda expression.  For example K = λx. λy. x = λ λ 1 would be 
+{{{#!haskell
 Lam (Lam (Just Nothing))
 }}}
 
 A data type for generalized de Bruijn notation is also given.
-{{{
+{{{#!haskell
 data TermE a = VarE a
 	     | AppE (TermE a) (TermE a)
 	     | LamE (TermE (Maybe (TermE a)))
