@@ -111,3 +111,12 @@ Ltac replace_all t1 t2 :=
   let H := fresh "H" in
   (cut (t1 = t2); [ intro H; rewrite_all H; clear H | idtac ]).
 }}}
+
+== Expand until ==
+This tactic is useful when carefully unfolding definitions, for instance inductive ones.
+It also shows the use of tactic notation.
+{{{#!coq
+Tactic Notation "expand" reference (t) "until" constr (s):=
+  let x:=fresh"x" in 
+  set (x:=s); unfold t; fold t;  unfold x.
+}}}
