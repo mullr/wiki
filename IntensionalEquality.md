@@ -9,6 +9,6 @@ reflect : forall (f:N -> N),
  | forall (n m:N) {(exec rf n m)=Some (f n)}+{(exec rf n m)=None}
 }}}
 
-During ProgramExtraction this function could be mapped to a function statifying this signature.  This might be a useful thing to do.
+During ProgramExtraction this function could be mapped to a function satisfying this signature.  This might be a useful thing to do.
 
-I ''think'' that if coq had extensional equality of functions, such an axiom could not be mapped to any function during program extraction.
+I ''think'' that if Coq had extensional equality of functions, such an axiom could not be mapped to any function during program extraction.
