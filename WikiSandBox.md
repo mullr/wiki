@@ -39,7 +39,7 @@ normalize v = scale (recip (norm v)) v
 
 It is possible to do {{{scale}}} and {{{normSquared}}} at the same time. Internally the data must still be processed twice but this can be hidden.
 
-Consider a vector represented as a list of doubles.  Suppose we want to normalize a vector.  The standard method is to compute the length in one pass, and scale the vector in another pass
+Consider a vector represented as a list of doubles.  Suppose we want to normalize a vector.  The standard method is to compute the length in one pass, and scale the vector in another pass:
 
 {{{#!haskell numbers=disable
 type Vector = [Double]
