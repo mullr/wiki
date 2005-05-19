@@ -7,7 +7,7 @@ Discussion on what users would like to see in a standard library.
 === Consistent Definition of Operators ===
 I would be nice if the standard library was more consistent with the definitions it uses.  As it stands {{{a < b}}} for {{{nat}}} is an inductive definition while {{{a < b}}} for {{{Z}}} is defined to be {{{a ?= b = LT}}}.
 
-I think that a consistent set of definitions would be easy to achive by writing a general module (or modules) that are instantiated for various types ({{{nat}}}, {{{binPos}}}, {{{Z}}}, rationals, etc.)
+I think that a consistent set of definitions would be easy to achived by writing a general module (or modules) that are instantiated for various types ({{{nat}}}, {{{binPos}}}, {{{Z}}}, rationals, etc.)
 
 More speficially for decidable total orders I am thinking of module with {{{compare : A -> A -> comparison}}} as primitive and with
 
