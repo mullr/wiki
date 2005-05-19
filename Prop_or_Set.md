@@ -8,4 +8,4 @@ If your type could have two or more indistiguishable objects, put it in {{{Set}}
 
 The basis of this philosophy is that an object from a type with at most one object contributes no information, and therefore may safely be removed during program extraction.
 
-A consequence of of this philosophy is that or should never be used because {{{A \/ B}}} could have to object even if {{{A}}} and {{{B}}} both only have at most one object. See OrConsideredHarmful.
+A consequence of of this philosophy is that or should never be used because {{{A \/ B}}} could have to object even if {{{A}}} and {{{B}}} both only have at most one object. See ExistsConsideredHarmful.
