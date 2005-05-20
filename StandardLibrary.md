@@ -25,7 +25,7 @@ Definition lt (a b:A) : bool := ltcompare (compare a b)
 
 (* ... *)
 
-Coercion Is_true : bool>->SortClass
+Coercion Is_true : bool >-> Sortclass
 }}}
 
 This process uses SmallScaleReflection advocated by GeorgesGonthier.
