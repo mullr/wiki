@@ -114,7 +114,7 @@ Ltac replace_all t1 t2 :=
 
 == Expand until ==
 This tactic is useful when carefully unfolding definitions, for instance inductive ones.
-It also shows the use [http://pauillac.inria.fr/coq/doc/Reference-Manual013.html#toc71 tactic notation].
+It also shows the use of [http://pauillac.inria.fr/coq/doc/Reference-Manual013.html#toc71 tactic notation].
 {{{#!coq
 Tactic Notation "expand" reference (t) "until" constr (s):=
   let x:=fresh"x" in 
