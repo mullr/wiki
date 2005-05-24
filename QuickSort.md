@@ -1,6 +1,6 @@
 #language en
 
-We want to formalise the folloiwng haskell implementation of  '''quicksort''' algorithm in Coq:
+We want to formalise the following Haskell implementation of  '''quicksort''' algorithm in Coq:
 
 {{{#!haskell 
 quicksort :: (Ord a) => [a] -> [a]           
@@ -12,7 +12,7 @@ quicksort (pivot:rest) = quicksort [y | y <- rest, y < pivot] ++
 
 We will use the method known as the ''recursion on an ad hoc predicate''. This is a method for defining general recursive functions based on InductiveDomainPredicate paradigm.  We define the algorithm on integers, the generalisation to a generic ordered type being trivial.
 
-First we need to formalise the main componenent of quicksort which is the list comprehension function. It is possible to formalise the general case of MonadicListComprehension but here we only define the instance that we need:
+First we need to formalise the main component of quicksort which is the list comprehension function. It is possible to formalise the general case of MonadicListComprehension but here we only define the instance that we need:
 
 {{{#!coq
 Definition is_decidable (A:Set) (P:A->Prop) := forall a, {P a} + {~(P a)}.
@@ -35,7 +35,7 @@ It is easy to define the familiar notation for list comprehension (see TipsAndTr
 Notation "[ e | b <- l , Hp ]" := (map (fun b:Z=> e) ((list_comprehension Z) l (fun b:Z=>_ ) Hp))  (at level 1).
 }}}
 
-Now we define the domain of the quicksort function as inductive prediacte that lives in `Prop`:
+Now we define the domain of the quicksort function as an inductive prediacte that lives in `Prop`:
 
 {{{#!coq
 Inductive is_sortable : list Z -> Prop :=
@@ -46,7 +46,7 @@ Inductive is_sortable : list Z -> Prop :=
                                                        is_sortable (pivot::rest).
 }}}
 
-As in can be seen the predicate has two constructors each corresponding to a branch of teh Haskell definition.
+As it can be seen the predicate has two constructors, each corresponding to a branch of the Haskell definition.
 
 Next we need to prove the inverse of the second constructor without using inversion.  This constructor has two inverses, we prove both. Here is a possible proof:
 
@@ -92,13 +92,13 @@ Fixpoint quicksort_aux (l : list Z) (H_sortable : is_sortable l) {struct H_sorta
 
 The `quicksort_aux` function when extracted to Haskell is identical (modulo extraction of the constants) to the Haskell code that we started with. 
 
-However, inside Coq it is a function with 2 arguments despite the fact that we know that quicksort is a total function (and hence should have one argument). So we need to prove that `quicksort_aux` is total. I.e we should prove that 
+However, inside Coq it is a function with 2 arguments despite the fact that we know that `quicksort` is a total function (and hence should have one argument). So we need to prove that `quicksort_aux` is total. I.e we should prove that 
 {{{#!coq
 Theorem everylist_is_sortable : forall (l:list Z), is_sortable l.
 }}}
 
 
-We prove this by induction of the length of `l`. For this we the following lemma
+We prove this by induction on the length of `l`. For this we need the following lemma
 
 {{{#!coq
 Lemma induction_ltof1_Prop
@@ -107,9 +107,9 @@ Lemma induction_ltof1_Prop
        forall a : A, P a.
 }}}
 
-which is missing in the standard library (the similar case where `P: A -> Set` exists as `Coq.Arith.Wf_nat.induction_ltof1`).
+which is missing in the StandardLibrary (the similar case where `P: A -> Set` exists as `Coq.Arith.Wf_nat.induction_ltof1`).
 
-Furthermore we need the folloiwng fact about list comprehension, that says any sublist obtained by list comprehension on tail of a list is necessarily shorter than the original list.
+Furthermore we need the folloiwng fact about list comprehension, that says that any sublist obtained by list comprehension on tail of a list is necessarily shorter than the original list.
 
 {{{#!coq
 Lemma tail_comprehension_shortens:forall A pivot rest P H, length (list_comprehension A rest P H) < length (pivot::rest).
