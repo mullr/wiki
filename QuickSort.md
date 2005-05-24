@@ -1,4 +1,4 @@
-# language en
+#language en
 
 We want to formalise the folloiwng haskell implementation of  '''quicksort''' algorithm in Coq:
 
@@ -109,7 +109,7 @@ Lemma induction_ltof1_Prop
 
 which is missing in the standard library (the similar case where `P: A -> Set` exists as `Coq.Arith.Wf_nat.induction_ltof1`).
 
-Furthermore we need te folloiwng fact about list comprehension, that says any sublist obtained by list comprehension on tail of a list is necessarily shorter than the original list.
+Furthermore we need the folloiwng fact about list comprehension, that says any sublist obtained by list comprehension on tail of a list is necessarily shorter than the original list.
 
 {{{#!coq
 Lemma tail_comprehension_shortens:forall A pivot rest P H, length (list_comprehension A rest P H) < length (pivot::rest).
@@ -170,7 +170,7 @@ Time Eval compute in (quicksort (quicksort (99 :: 11 :: 4 :: -9 :: -23 :: -88 ::
 Finished transaction in 1. secs (0.37u,0.s)
 }}}
 
-To prove any further properties we need some basic facts. The most essentail ones are the FixpointEquations of `quicksort` and `quicksort_aux`. For the latter we first need to prove the ProofIrrelevance. I.e. we should prove that
+To prove any further properties we need some basic facts. The most essential ones are the FixpointEquations of `quicksort` and `quicksort_aux`. For the latter we first need to prove the ProofIrrelevance. I.e. we should prove that
 
 {{{#!coq
 Lemma quicksort_aux_proof_irrelevance : forall l (H_sort1 H_sort2: is_sortable l), quicksort_aux l H_sort1 = quicksort_aux l H_sort2.
