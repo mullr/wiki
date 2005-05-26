@@ -125,11 +125,13 @@ Tactic Notation "expand" reference (t) "until" constr (s):=
 [[Anchor(eecideEquality)]]
 == Decide Equality ==
 
-Coq's decide equality is unneccesarily dumb.  It ought to behave more like the following.
+Coq's [http://coq.inria.fr/doc/Reference-Manual010.html#@tactic78 decide equality] should be more accepting.  It ought to behave more like the following.
 
 {{{#!coq
 Ltac decideEquality :=
 match goal with
-|  |- {?a = ?b}+{~?a=?b} => decide equality a b
+| |- forall x y, {x = y}+{~x=y} => decide equality
+| |- {?a=?b}+{~?a=?b} => decide equality a b
+| |- {~?a=?b}+{?a=?b} => cut ({a=b}+{~a=b});[tauto | decide equality a b]
 end.
 }}}
