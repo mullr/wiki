@@ -120,3 +120,16 @@ Tactic Notation "expand" reference (t) "until" constr (s):=
   let x:=fresh"x" in 
   set (x:=s); unfold t; fold t;  unfold x.
 }}}
+
+
+[[Anchor(eecideEquality)]]
+== Decide Equality ==
+
+Coq's decide equality is unneccesarily dumb.  It ought to behave more like the following.
+
+{{{#!coq
+Ltac decideEquality :=
+match goal with
+|  |- {?a = ?b}+{~?a=?b} => decide equality a b
+end.
+}}}
