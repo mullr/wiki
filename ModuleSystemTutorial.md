@@ -217,3 +217,84 @@ Module MaxOrd := Max Ord.
 Export MaxOrd.
 End MinMax.
 }}}
+
+With {{{min}}} and {{{max}}} in hand we can prove properties involving both of them.  For example, we can prove that {{{min}}} distributed over {{{max}}}.  This goes into another module.
+
+{{{#!coq
+(* File: DecidableOrder.v
+ * Part 6
+ *)
+Module DistributivityA (Ord : Sig).
+
+Module MinMaxOrd := MinMax Ord.
+Import MinMaxOrd.
+
+Lemma min_max_distr : ∀ x y z, (min x (max y z))=(max (min x y) (min x z)).
+Proof.
+intros.
+set (H:=le_antisym).
+set (H0:=(le_trans x y z)).
+set (H1:=(le_trans x z y)).
+set (H2:=(le_trans z x y)).
+set (H3:=(le_trans y x z)).
+repeat apply case_min; repeat apply case_max; auto.
+Qed.
+
+End DistributivityA.
+}}}
+
+We can prove the dual lemma that states that {{{max}}} distributes over {{{min}}} by using the same dualizing technique that we used to define {{{max}}} in terms of {{{min}}}.  This can be combined with the above into one distributivity module.
+
+{{{#!coq
+(* File: DecidableOrder.v
+ * Part 7
+ *)
+Module DistributivityB (Ord : Sig).
+
+Module MinMaxOrd := MinMax Ord.
+Import MinMaxOrd.
+
+Module DualOrd := Dual Ord.
+Module DualDistrib := DistributivityA DualOrd.
+
+Definition max_min_distr : ∀ x y z, (max x (min y z))=(min (max x y) (max x z)) := DualDistrib.min_max_distr.
+
+End DistributivityB.
+
+Module Distributivity  (Ord : Sig).
+
+Module MinMaxOrd := MinMax Ord.
+Export MinMaxOrd.
+
+Module DistributivityAOrd := DistributivityA Ord.
+Export DistributivityAOrd.
+
+Module DistributivityBOrd := DistributivityB Ord.
+Export DistributivityBOrd.
+
+End Distributivity.
+}}}
+
+Finally at the end of the file, we place a {{{Theory}}} Module that exports all of the modules that we have defined.
+
+{{{#!coq
+(* File: DecidableOrder.v
+ * Part 8
+ *)
+Module Theory (Ord : Sig).
+
+Module DistributivityOrd := Distributivity Ord.
+Export DistributivityOrd.
+
+End Theory.
+}}}
+
+This {{{Theory}}} module functor can be instantiated and exported inside the {{{QpositiveOrder.v}}} file.
+
+{{{#!coq
+(* File: QpositiveOrder.v
+ * Part 2
+ *)
+Module Order := DecidableOrder.Theory QDecidableOrderSig.
+Export Order.
+}}}
