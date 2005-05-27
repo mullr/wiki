@@ -106,7 +106,7 @@ Infix "≤" := le : Qpos_scope.
 Bind Scope Qpos_scope with Qpositive. 
 Open Scope Qpos_scope.
 
-Lemma le_dec : ∀ x y, {x ≤ y} +{¬ x ≤ y}.
+Lemma le_dec : ∀ x y, {x ≤ y} + {¬ x ≤ y}.
 Proof.
 intros.
 unfold le, Qpositive_le.
@@ -165,14 +165,14 @@ intuition.
 apply Ord.le_trans with y; assumption.
 Qed.
 
-Lemma le_total : ∀ x y, {x ≤ y} +{y ≤ x}.
+Lemma le_total : ∀ x y, {x ≤ y} + {y ≤ x}.
 Proof.
 unfold le.
 set (H:=Ord.le_total).
 auto.
 Defined.
 
-Definition le_dec : ∀ x y, {x ≤ y} +{¬x ≤ y}. 
+Definition le_dec : ∀ x y, {x ≤ y} + {¬x ≤ y}. 
 unfold le.
 set (H:=Ord.le_dec).
 auto.
