@@ -24,3 +24,5 @@ Notation " ∀ x ( y : A2 ) , B  " := (forall (x:_) (y:A2), B ) (at level 200, x
 
 Notation " ¬ x " := (not  x) (at level 75, right associativity) : type_scope.
 }}}
+
+attachment:utf8.v
