@@ -52,9 +52,6 @@ int main() {
 }}}
 
 {{{#!syntax printall
-circNormalize :: Vector -> Vector
-circNormalize v = scaledVector
-  where (scaledVector, normSquared) = scaleAndNormSquared (recip (sqrt normSquared)) v
 }}}
 
 
