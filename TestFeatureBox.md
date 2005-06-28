@@ -51,5 +51,75 @@ int main() {
 }
 }}}
 
+{{{#!syntax haskell
+data Song = Do | Re | Mi 
+}}}
+
+ 
+
+
+{{{#!syntax haskell
+type Vector = [Double]
+
+normSquared :: Vector -> Double
+normSquared = sum . map (^2)
+
+norm :: Vector -> Double
+norm = sqrt . normSquared
+
+scale :: Double -> Vector -> Vector
+scale a = map (a*)
+
+normalize :: Vector -> Vector
+normalize v = scale (recip (norm v)) v
+}}}
+
+It is possible to do {{{scale}}} and {{{normSquared}}} at the same time. Internally the data must still be processed twice but this can be hidden.
+
+Consider a vector represented as a list of doubles.  Suppose we want to normalize a vector.  The standard method is to compute the length in one pass, and scale the vector in another pass:
+
+{{{#!syntax haskell
+type Vector = [Double]
+
+normSquared :: Vector -> Double
+normSquared = sum . map (^2)
+
+norm :: Vector -> Double
+norm = sqrt . normSquared
+
+scale :: Double -> Vector -> Vector
+scale a = map (a*)
+
+normalize :: Vector -> Vector
+normalize v = scale (recip (norm v)) v
+}}}
+
+It is possible to do {{{scale}}} and {{{normSquared}}} at the same time. Internally the data must still be processed twice but this can be hidden.
+
+{{{#!syntax haskell
+-- fst of the result is the scaled value of the vector
+-- snd of the result is the squared norm of the vector before scaling
+scaleAndNormSquared :: Double -> Vector -> (Vector, Double)
+scaleAndNormSquared a [] = ([], 0)
+scaleAndNormSquared a (x:xs) = (a*x:recScale, x*x+recNormSquared)
+  where (recScale, recNormSquared) = scaleAndNormSquared a xs
+}}}
+
+Now using the laziness of Haskell, and recursive binding, we can use {{{scaleAndNormSquared}}} to create a virtually one-pass normalization. We need to scale by the reciprocal of the square-root of {{{normSquared}}}.  So we say exactly that.
+
+{{{#!syntax haskell
+circNormalize :: Vector -> Vector
+circNormalize v = scaledVector
+  where (scaledVector, normSquared) = scaleAndNormSquared (recip (sqrt normSquared)) v
+}}}
+
+Now using the laziness of Haskell, and recursive binding, we can use {{{scaleAndNormSquared}}} to create a virtually one-pass normalization. We need to scale by the reciprocal of the square-root of {{{normSquared}}}.  So we say exactly that.
+
+{{{#!haskell
+circNormalize :: Vector -> Vector
+circNormalize v = scaledVector
+  where (scaledVector, normSquared) = scaleAndNormSquared (recip (sqrt normSquared)) v
+}}}
+
 
 [[PageHits]]
