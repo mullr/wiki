@@ -45,5 +45,11 @@ Show ;kdawflkj.
 
 }}}
 
+{{{#!syntax c
+int main() {
+    printf("Hello wikiwiki world!\n");
+}
+}}}
+
 
 [[PageHits]]
