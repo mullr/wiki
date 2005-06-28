@@ -51,6 +51,13 @@ int main() {
 }
 }}}
 
+{{{#!syntax ppp
+circNormalize :: Vector -> Vector
+circNormalize v = scaledVector
+  where (scaledVector, normSquared) = scaleAndNormSquared (recip (sqrt normSquared)) v
+}}}
+
+
 {{{#!syntax haskell
 data Song = Do | Re | Mi 
 }}}
