@@ -13,7 +13,22 @@ You have to use the folloiwng format
 
 Of course your language-name shoud be among the [http://people.ssh.com/mtr/genscript/highlightings.html languages recognised by Gnu enscript].
 
-For example, you can include `Haskell` code:
+For example, 
+
+{{{
+ { { {#!syntax haskell
+type Vector = [Double]
+
+normSquared :: Vector -> Double
+normSquared = sum . map (^2)
+
+norm :: Vector -> Double
+norm = sqrt . normSquared
+ } } }
+}}}
+
+
+generates the folloiwng `Haskell` code. 
 
 {{{#!syntax haskell
 type Vector = [Double]
