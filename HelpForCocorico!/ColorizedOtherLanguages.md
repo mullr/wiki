@@ -1,4 +1,4 @@
-# language en
+#language en
 = Highlighted syntax for various languages=
 
 It is possible (using a parrser based on [http://people.ssh.com/mtr/genscript/ Gnu enscript]) to produce colorized syntax for various programming languages.
