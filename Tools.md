@@ -10,7 +10,7 @@ Some of the tools listed here are part of bigger projects that support other pro
  * !ProofGeneral [http://proofgeneral.inf.ed.ac.uk/]
  * tmcoq [http://tmcoq.audebaud.org/]
 
-== Interface for Brwosing Proofs ==
+== Interface for Browsing Proofs ==
 
  * Helm [http://helm.cs.unibo.it/]
 
