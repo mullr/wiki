@@ -10,7 +10,17 @@ There is a great deal of mathematics (including some of the Top100MathematicalTh
 
 == sorting ==
 
-||Algoirthm|| Formliser ||
-||Quicksort|| ||
-||Treesort|| StandardLibrary ||
-||Insertion sort|| StandardLibrary ||
+|| Algoirthm || Formlisation available from ||
+|| Quicksort || ["Why"] ||
+|| Treesort|| StandardLibrary ||
+|| Insertion sort|| StandardLibrary ||
+|| Selection sort || ["Why"] ||
+|| Maximum sort || ["Why"] ||
+|| Heapsort || ["Why"] ||
+
+== other algoirthms
+
+ * RSA
+ * Stalmarck
+ * Buchberger
+ * GMP square root
