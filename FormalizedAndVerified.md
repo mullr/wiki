@@ -4,7 +4,8 @@
 
 There is a great deal of mathematics (including some of the Top100MathematicalTheorems) already formalized in Coq. Some of the material is available in StandardLibrary or UserContributions.
 
- * Top100MathematicalTheoremsInCoq List of Top100MathematicalTheorems that are formalised in Coq (see also [http://www.cs.ru.nl/~freek/100/]).
+ * Top100MathematicalTheoremsInCoq: a list of Top100MathematicalTheorems that are formalised in Coq (see also [http://www.cs.ru.nl/~freek/100/]).
+ * ["CoRN"] : a large library of formalised mathematics built on top of Coq
 
 = Software Verified by Coq =
 
