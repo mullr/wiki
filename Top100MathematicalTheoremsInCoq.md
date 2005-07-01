@@ -12,5 +12,6 @@
 ||98|| Bertrand’s Postulate || UserContributions/Sophia-Antipolis/Bertrand||
 
 ----
+The Ranks are taken from the original list of Top100MathematicalTheorems.
 
 See Also [http://www.cs.ru.nl/~freek/100/]
