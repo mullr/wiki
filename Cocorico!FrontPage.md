@@ -14,7 +14,7 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
   * StandardLibrary  for a discussion of the standard library of Coq 
   * ["Documentation"] for a list of manuals, books and tutorials
   * ["Tools"] that are built on top of Coq or are otherwise related to Coq
-  * UserContributions for a discussion of the contributions that are distributed by Coq
+  * UserContributions and FormalizedAndVerified for a discussion of the material that is formalized and verified in Coq. 
   * CoqPearls small bits of pretty Coq code
   * LtacPearls useful tacticals
   * Learn about Coq's ModuleSystem
@@ -30,6 +30,7 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
   * WantedPages:  pages waiting for an author.
   * HelpForBeginners for general help on MoinMoin wiki
   * ["HelpForCocorico!"]  for help on Wiki topics peculiar to Cocorico! (["HelpForCocorico!/ColorizedCoqSyntax"] etc.)
+  * ["Cocorico!WikiLicense"] this license allows for free reuse of the material on the wiki
 
 == How to use this Wiki ==
 
