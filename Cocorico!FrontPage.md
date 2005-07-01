@@ -31,6 +31,7 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
   * HelpForBeginners for general help on MoinMoin wiki
   * ["HelpForCocorico!"]  for help on Wiki topics peculiar to Cocorico! (["HelpForCocorico!/ColorizedCoqSyntax"] etc.)
   * ["Cocorico!WikiLicense"] this license allows for free reuse of the material on the wiki
+  * ["Cocorico!Logo"] 
 
 == How to use this Wiki ==
 
