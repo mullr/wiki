@@ -5,7 +5,7 @@
 || 6 || Gödel's Incompleteness Theorem ||UserContributions/Berkeley/Godel||
 ||15|| Fundamental Theorem of Integral Calculus || UserContributions/Nijmegen/CoRN||
 ||20|| All Primes Equal the Sum of Two Squares || UserContributions/Sophia-Antipolis/!SumOfTwoSquare||
-||32|| The Four Color Problem|| GeorgesGonthier ||
+||32|| The Four Color Problem|| GeorgesGonthier [http://research.microsoft.com/~gonthier/]||
 ||69|| Greatest Common Divisor Algorithm|| UserContributions/Orsay/Maths, UserContributions/Eindhoven/POCKLINGTON, UserContributions/Nijmegen/QArith||
 ||74|| The Principle of Mathematical Induction|| StandardLibrary ||
 ||80|| The Fundamental Theorem of Arithmetic|| UserContributions/Eindhoven/POCKLINGTON||
