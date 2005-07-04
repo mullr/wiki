@@ -11,7 +11,7 @@ There is a great deal of mathematics (including some of the Top100MathematicalTh
 
 == sorting ==
 
-|| Algoirthm || Formlisation available from ||
+|| Algorithm || Formalisation available from ||
 || Quicksort || ["Why"] ||
 || Treesort|| StandardLibrary ||
 || Insertion sort|| StandardLibrary ||
