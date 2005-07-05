@@ -22,7 +22,20 @@ To test the experimental features.
 $2\in\mathbb{N}$
 }}}
 
-{{{#!coq
+{{{#!syntax ocaml
+open Reduction
+open Type_errors
+
+(* raise Not_found if not an inductive type *)
+let lookup_mind_specif env (kn,tyi) =
+  let mib = Environ.lookup_mind kn env in
+  if tyi >= Array.length mib.mind_packets then
+    error "Inductive.lookup_mind_specif: invalid inductive index";
+  (mib, mib.mind_packets.(tyi))
+}}}
+
+
+{{{#!syntax coq
 Global Variable X.
 Global X.
 
