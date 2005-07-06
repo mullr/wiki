@@ -33,7 +33,7 @@ Ltac incl_tac_rec := (auto with datatypes; fail)
 
 == Tactic incl_tac ==
 
-This tactic proves goals of the type ''incl ((1::l1)++2) (l2++(1::l1))''. It
+This tactic proves goals of the type ''incl ((1 :: l1) ++ l2) (l2 ++ (1 :: l1))''. It
 first removes append and cons on the left-hand side of the incl, then calls incl_tac_rec.
 
 {{{#!coq
@@ -44,8 +44,8 @@ Ltac incl_tac := (repeat  (apply incl_cons || apply incl_app); incl_tac_rec ).
 
 
 
-This tactic proves goals of the type ''in a ((1::l1)++2) (l2++(1::l1))'' where there is an assumption
-of the type ''in a ((1::l1)++2) (l2++(1::l1))''. 
+This tactic proves goals of the type ''in a ((1 :: l1) ++ l2) (l2 ++ (1 :: l1))'' where there is an assumption
+of the type ''in a ((1 :: l1) ++ l2) (l2 ++ (1 :: l1))''. 
 
 {{{#!coq
 Ltac in_tac :=
