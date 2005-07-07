@@ -65,17 +65,20 @@ Ltac in_tac :=
 
 {{{#!coq
 
-Goal forall a (l1 l2 l3 l4: (list nat)),   (In a (l1 ++ l2 ++ (1::l3))) -> (In a l4) -> (In a (l3 ++ (1::l1) ++ l2)) .
+Goal forall a (l1 l2 l3 l4: (list nat)),   
+  (In a (l1 ++ l2 ++ (1::l3))) -> (In a l4) -> (In a (l3 ++ (1::l1) ++ l2)) .
 intros.
 in_tac.
 Qed.
 
-Goal forall a (l1 l2 l3 l4: (list nat)),   (In a (l1 ++ l2 ++ (1::l3))) -> (In a l4) -> (In a (l3 ++ (2::(l1 ++ (1::l1)) ++ l2)) ).
+Goal forall a (l1 l2 l3 l4: (list nat)),   
+  (In a (l1 ++ l2 ++ (1::l3))) -> (In a l4) -> (In a (l3 ++ (2::(l1 ++ (1::l1)) ++ l2)) ).
 intros.
 in_tac.
 Qed.
 
-Goal forall a (l1 l2 l3 l4: (list nat)),   (In a (l1 ++ (1::nil) ++ (1::l3))) -> (In a l4) -> (In a (l3 ++ (2::(l1 ++ (1::l1)) ++ l2)) ).
+Goal forall a (l1 l2 l3 l4: (list nat)),   
+  (In a (l1 ++ (1::nil) ++ (1::l3))) -> (In a l4) -> (In a (l3 ++ (2::(l1 ++ (1::l1)) ++ l2)) ).
 intros.
 in_tac.
 Qed.
