@@ -64,6 +64,15 @@ match goal with
 end.
 }}}
 
+For example you can use this to write a tactic that proves the cofixpoint equations of streams:
+
+{{{#!coq
+Ltac decomp_stream := intros; let L := LHS in rewrite (Streams.unfold_Stream L); reflexivity.
+}}}
+
+
+
+
 [[Anchor(RHS)]]
 == RHS ==
 {{{RHS}}} means “right-hand side”.  It returns the term on the left hand side of an equality or inequality.
