@@ -104,7 +104,7 @@ Here is the final theorem :
 Theorem prop_to_set : (exists x, P x) -> {x : nat | P x}.
 Proof. 
 intro h. 
-  exact (well_founded_induction (wf_decr h) (fun _ => {z : nat | P z}) algo 0).
+  exact (Fix (wf_decr h) (fun _ => {z : nat | P z}) algo 0).
 Qed.
 
 End Decida.
