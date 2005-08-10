@@ -5,3 +5,4 @@ Many questions are answered in the official [http://coq.inria.fr/doc/faq.html Co
  1. Should I put my type in ["Prop or Set"]?
  1. How does the MatchAsInReturn syntax work?
  1. Isn't IntensionalEquality useless?
+ 1. Why not ["WTypeInsteadOfInductiveTypes"]?
