@@ -4,6 +4,10 @@
 
 Discussion on what users would like to see in a standard library.
 
+=== Wf ===
+
+{{{Acc_Iter}}}  and {{{Fix_F}}} are almost identical, but they have different theories following from them.  This should be cleaned up by having the two theories merged into one.  See [http://coq.inria.fr/library/Coq.Init.Wf.html Coq.Init.Wf]
+
 === Consistent Definition of Operators ===
 I would be nice if the standard library was more consistent with the definitions it uses.  As it stands {{{a < b}}} for {{{nat}}} is an inductive definition while {{{a < b}}} for {{{Z}}} is defined to be {{{a ?= b = LT}}}.
 
