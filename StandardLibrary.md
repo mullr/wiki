@@ -40,3 +40,11 @@ Some may argue that the function {{{(true=)}}} should be the coercion because it
 === Sets ===
 
 Both the {{{A -> Set}}} and the {{{forall I:Type, I -> A}}} notions of subsets of A should be purused in the standard library.
+
+I also suggest a theory of decideable sets {{{A -> bool}}} and semi-decidable sets {{{A -> conat}}} where
+
+{{{#!coq
+CoInductive conat : Set :=
+| coO : conat
+| coS : conat -> conat.
+}}}
