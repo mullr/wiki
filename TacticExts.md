@@ -130,6 +130,8 @@ Tactic Notation "expand" reference (t) "until" constr (s):=
   set (x:=s); unfold t; fold t;  unfold x.
 }}}
 
+This tactic doesn't seem to work if x is a variable name used in the current context?  Is there a fix? -- RussellOConnor
+
 
 [[Anchor(eecideEquality)]]
 == Decide Equality ==
