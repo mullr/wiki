@@ -9,6 +9,10 @@ Please feel free to experiment here, after the four dashes below... and please d
 ----
 
 {{{#!haskell numbers=disable
+data S = Do | Re | Mi 
+}}}
+
+{{{#!haskell numbers=disable
 data Song = Do | Re | Mi 
 }}}
 
