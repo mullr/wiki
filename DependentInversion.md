@@ -64,7 +64,7 @@ The 3th term has type "vector bool (S n)" which should be coercible to
 
 What has happened is that, like before, the inversion has replaced the {{{(S n)}}} parameter to {{{Q}}} with a fresh variable {{{n0}}}, but now the parameter {{{b}}} has the wrong type.  {{{b}}} has type {{{(vector bool (S n)}}}, but needs to have the type {{{(vector bool n0)}}}.
 
-This problem can be solved by putting {{{b}}} (and everything that depends on b) into the goal so that the inversion tactic knows to generalize the (S n) term occurring inside the type of {{{b}}}.  The tactical {{{generalize b; clear b; dependent inversion_clear a; intro b}}} works yielding:
+This problem can be solved by putting {{{b}}} (and everything that depends on {{{b}}}) into the goal so that the inversion tactic knows to generalize the (S n) term occurring inside the type of {{{b}}}.  The tactical {{{generalize b; clear b; dependent inversion_clear a; intro b}}} works yielding:
 
 
 {{{
