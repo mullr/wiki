@@ -4,7 +4,7 @@ Inversion is used when you have an object of an inductively defined dependent ty
 
 == An Easy Case ==
 
-{{{
+{{{#!coq
 P : forall n : nat, vector bool n -> Prop
 n : nat
 a : vector bool (S n)
@@ -14,7 +14,7 @@ P (S n) a
 
 In this case {{{dependent inversion_clear a}}} does a case analysis on a, and figures out that {{{a}}} cannot be {{{Vnil}}}, so it leaves only the {{{Vcons}}} case.
 
-{{{
+{{{#!coq
 P : forall n : nat, vector bool n -> Prop
 n : nat
 a0 : bool
@@ -40,7 +40,7 @@ It is important to see that the inversion tactic has determined that the {{{(S n
 
 Things become more difficult if another term has a type that depends on the same expression that the type to invert depends on.
 
-{{{
+{{{#!coq
 Q : forall n : nat, vector bool n -> vector bool n -> Prop
 n : nat
 a : vector bool (S n)
@@ -67,7 +67,7 @@ What has happened is that, like before, the inversion has replaced the {{{(S n)}
 This problem can be solved by putting {{{b}}} (and everything that depends on {{{b}}}) into the goal so that the inversion tactic knows to generalize the (S n) term occurring inside the type of {{{b}}}.  The tactical {{{generalize b; clear b; dependent inversion_clear a; intro b}}} works yielding:
 
 
-{{{
+{{{#!coq
 Q : forall n : nat, vector bool n -> vector bool n -> Prop
 n : nat
 a0 : bool
@@ -81,7 +81,7 @@ Q (S n) (Vcons bool a0 n v) b
 
 Sometimes instead of a single variable {{{b}}}, as above, we have a complicated term.  Consider where we left off above
 
-{{{
+{{{#!coq
 Q : forall n : nat, vector bool n -> vector bool n -> Prop
 n : nat
 a0 : bool
@@ -109,7 +109,7 @@ We could generalize {{{(Vcons bool a0 n v)}}} away, like before, and then the in
 Instead we make a fresh variable, {{{a1}}}, of a vector type with fresh parameters, {{{m}}}, and a bunch of equalities to constrain the fresh variable to be equal to {{{(Vcons bool a0 n v)}}}. 
   
 
-{{{
+{{{#!coq
 cut (forall m (a1:vector bool m) , 
         (forall p, (eq_rec m (vector bool) a1 (S n) p)=(Vcons bool a0 n v)) -> 
         forall (p:(m=(S n))),
@@ -124,7 +124,7 @@ cut (forall m (a1:vector bool m) ,
 
 This has reformulated the problem as:
 
-{{{
+{{{#!coq
 Q : forall n : nat, vector bool n -> vector bool n -> Prop
 n : nat
 a0 : bool
@@ -142,7 +142,7 @@ Because {{{a1}}} has type {{{vector bool m}}} and {{{(Vcons bool a0 n v)}}} has 
 
 Now we can do {{{dependent inversion_clear b}}}.
 
-{{{
+{{{#!coq
 Q : forall n : nat, vector bool n -> vector bool n -> Prop
 n : nat
 a0 : bool
@@ -159,7 +159,7 @@ Q (S n) (eq_rec m (vector bool) a (S n) p) (Vcons bool a1 n v0)
 
 All that remains is to rewrite {{{(eq_rec m (vector bool) a (S n) p)}}} back into {{{(Vcons bool a0 n v)}}}.  This can be done with {{{intro p; rewrite H; clear H p a.}}}
 
-{{{
+{{{#!coq
 Q : forall n : nat, vector bool n -> vector bool n -> Prop
 n : nat
 a0 : bool
@@ -175,7 +175,7 @@ Q (S n) (Vcons bool a0 n v) (Vcons bool a1 n v0)
 
 You can follow the development of the harder and very hard cases above with the following Coq source code.
 
-{{{
+{{{#!coq
 Require Import Bvector.
 Require Import Eqdep_dec.
 Require Import Peano_dec.
