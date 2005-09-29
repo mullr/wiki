@@ -1,4 +1,4 @@
-{{{match}}} allows the result type to depend on both the input value, and the parameters of the input type.  The {{{as}}} and {{{in}}} keywords create bound variables that can occur the the {{{return}}} type.  So the expression
+{{{match}}} allows the result type to depend on both the input value, and the parameters of the input type.  The {{{as}}} and {{{in}}} keywords create bound variables that can occur in the {{{return}}} type.  So the expression
 {{{#!coq
 match expr as T in (deptype A B) return exprR
 (*...*)
