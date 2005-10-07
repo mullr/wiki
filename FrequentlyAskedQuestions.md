@@ -7,4 +7,4 @@ Many questions are answered in the official [http://coq.inria.fr/doc/faq.html Co
  1. Isn't IntensionalEquality useless?
  1. How do I get DependentInversion to work in my case?
  1. Why not ["WTypeInsteadOfInductiveTypes"]?
- 1. Do [FalseEqAcc False, eq, Acc] have a special status?
+ 1. Do [http://cocorico.cs.ru.nl/coqwiki/FalseEqAcc False, eq, Acc] have a special status?
