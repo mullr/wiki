@@ -46,6 +46,3 @@ To learn more about what a WikiWikiWeb is, read about MoinMoin:WhyWikiWorks and 
 
 ----
 CategoryHomepage
-
- == Many interesting infos ==
- Now 20050929-171146_123.
