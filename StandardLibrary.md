@@ -4,6 +4,10 @@
 
 Discussion on what users would like to see in a standard library.
 
+=== Extensional Equality ===
+
+There should be a library for extential equality for functions.
+
 === Wf ===
 
 {{{Acc_Iter}}}  and {{{Fix_F}}} are almost identical, but they have different theories following from them.  This should be cleaned up by having the two theories merged into one.  See [http://coq.inria.fr/library/Coq.Init.Wf.html Coq.Init.Wf]
