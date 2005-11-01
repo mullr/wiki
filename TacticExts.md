@@ -132,6 +132,23 @@ Tactic Notation "expand" reference (t) "until" constr (s):=
 
 This tactic doesn't seem to work if x is a variable name used in the current context?  Is there a fix? -- RussellOConnor
 
+-----
+
+This has proved useful in a situation like:
+
+{{{
+   sorted (b :: a :: a0)
+
+> unfold sorted; fold sorted
+
+   cmp b a = true /\
+   match a0 with
+   | nil => True
+   | a'' :: _ => cmp a a'' = true /\ sorted a0
+   end
+}}}
+
+there's two levels expanded! Solution was "expand sorted until (a::a0)." (thanks roconnor)
 
 [[Anchor(eecideEquality)]]
 == Decide Equality ==
