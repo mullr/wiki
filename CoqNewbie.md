@@ -2,4 +2,4 @@ Well, thinking in Coq is not hard. It just requires some time to learn syntax an
 
 But thanks questions are just interesting for any newbie:
 
-ComparisionWithOtherSystems?
+ComparisionWithOtherSystems
