@@ -8,6 +8,8 @@ Discussion on what users would like to see in a standard library.
 
 There should be a library for extential equality for functions.
 
+Let there be less tactics but let them be more powerful than now. For example, replace tactic in theory can be used to replace one 1/2 with 2/4. Or even sin pi with sin 3*pi. But now it's not possible. 
+
 === Wf ===
 
 {{{Acc_Iter}}}  and {{{Fix_F}}} are almost identical, but they have different theories following from them.  This should be cleaned up by having the two theories merged into one.  See [http://coq.inria.fr/library/Coq.Init.Wf.html Coq.Init.Wf]
@@ -52,3 +54,29 @@ CoInductive conat : Set :=
 | coO : conat
 | coS : conat -> conat.
 }}}
+
+=== Interfaces and Types ===
+
+It should allow different views on the same subject - for example, different ways of the same subject definiton. We need ability to define interface and to replace one it's implementation with another.
+
+There should be way to define placeholders. Moreover, almost all current math structure should be explained with ability to prove
+it's later.
+
+More coercions to allow type conversions - CoQ should automatically expand notation of n ^ 5.4 ^ to (nat_to_real n)^5.4 ^.
+
+=== Structure ===
+
+It should handle very big amounts of theorems - around millions, while
+I suspect none of existing systems is targeted to that.
+
+Proofs should not be readable as usual math proofs. Programs are much more
+readable than proofs. Comments to the theorems helps much more than
+clean proof. User should think in terms of theorems and tactics 
+application, not in term of terms elimination or induction.
+  
+=== Organization ===
+
+Easy-to-contribute library is much better. Although we should keep library clean and strict we should allow user to contribute in even small part. Nobody will write thousands lines of code before contribution. If every ten lines can be submitted, then we'll have
+much more active and wide community. 
+
+There should be clean list of common problems defined in both existing and to-be-written code. One should be able to easily find the problem and solve it.
