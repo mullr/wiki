@@ -2,6 +2,8 @@ Now that you know the basics of Coq you are itching to prove somthing.  Here are
 
 [[TableOfContents(1)]]
 
+See also [http://www.cs.ru.nl/~freek/100/ Formalizing 100 Theorems]
+
 = Fermat Last Theorem for n = 3 =
 
 == Statement ==
@@ -14,3 +16,22 @@ See [http://fermatslasttheorem.blogspot.com/2005/05/fermats-last-theorem-proof-f
 == Estimated Difficulty ==
 
 {*} {*} {o} {o} {o} ''(change the estimate if you disagree)''
+
+== Bounties Offered ==
+''(none)''
+
+= Fermat Last Theorem =
+
+== Statement ==
+{{{forall (x y z:Z) (n:nat), x^(n+3) + y^(n+3) = z^(n+3) -> x=0 \/ y= 0 \/ z=0}}}
+
+== Resources ==
+
+Fermat's lat theorem has been proven in Coq for the ''n''=4 case.
+
+== Estimated Difficulty ==
+
+{*} {*} {*} {*} {*} ''(change the estimate if you disagree)''
+
+== Bounties Offered ==
+''(none)''
