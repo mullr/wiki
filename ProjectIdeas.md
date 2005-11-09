@@ -9,7 +9,7 @@ Now that you know the basics of Coq you are itching to prove somthing.  Here are
 
 == Resources ==
 
-See [http://fermatslasttheorem.blogspot.com/2005/05/fermats-last-theorem-proof-for-n3.html Fermat's Lasth Theorem: Proof for n=3].
+See [http://fermatslasttheorem.blogspot.com/2005/05/fermats-last-theorem-proof-for-n3.html Fermat's Last Theorem: Proof for n=3].
 
 == Estimated Difficulty ==
 
