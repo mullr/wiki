@@ -8,3 +8,4 @@ Many questions are answered in the official [http://coq.inria.fr/doc/faq.html Co
  1. How do I get DependentInversion to work in my case?
  1. Why not ["WTypeInsteadOfInductiveTypes"]?
  1. Do [wiki:FalseEqAcc False, eq, and Acc] have a special status?
+ 1. What is the logical strength of Coq?  Can it prove the consistency of ZF or ZFC?
