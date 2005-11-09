@@ -27,7 +27,7 @@ See [http://fermatslasttheorem.blogspot.com/2005/05/fermats-last-theorem-proof-f
 
 == Resources ==
 
-Fermat's last theorem has been proven in Coq for the ''n''=4 case.
+Fermat's last theorem has been proven in Coq for the ''n''=4 case. The proof is available in UserContributions/CNAM/Fermat4/ .
 
 == Estimated Difficulty ==
 
