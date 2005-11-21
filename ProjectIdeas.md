@@ -35,3 +35,24 @@ Fermat's last theorem has been proven in Coq for the ''n''=4 case. The proof is 
 
 == Bounties Offered ==
 ''(none)''
+
+= Tarski's Undefinability of Truth =
+
+== Informal Statement ==
+
+The set of numbers which encode true sentences of number theory, is not definable as a predicate in number theory.
+
+== Resources ==
+
+This theorem should be a direct consequence of [http://coq.inria.fr/contribs/GodelRosser.html the Gödel-Rosser Incompleteness Theorem] as defined in the Coq contribution.
+
+The idea is that if the truth predicate were definable, then the set of true statements in number theory would be form a consistent axiom system that is able to represent it's own axioms.  This contradicts the Gödel-Rosser Incompleteness Theorem.
+
+However, Tarski's Undefinability of Truth may be easy enough to prove directly given the framework of the [http://coq.inria.fr/contribs/GodelRosser.html the Gödel-Rosser Incompleteness Development].
+
+== Estimated Difficult =
+
+{*} {*} {*} {o} {o} {o} {o} ''(change the estimate if you disagree)''
+
+== Bounties Offered ==
+''(none)''
