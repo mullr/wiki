@@ -50,7 +50,7 @@ The idea is that if the truth predicate were definable, then the set of true sta
 
 However, Tarski's Undefinability of Truth may be easy enough to prove directly given the framework of the [http://coq.inria.fr/contribs/GodelRosser.html the Gödel-Rosser Incompleteness Development].
 
-== Estimated Difficult =
+== Estimated Difficult ==
 
 {*} {*} {*} {o} {o} {o} {o} ''(change the estimate if you disagree)''
 
