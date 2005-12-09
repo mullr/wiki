@@ -17,3 +17,6 @@ However there some problems with using W-type constructor instead of inductive t
 On the other hand basing a proof assistant on W-types has its own advantages:
 
  1. The system is simpler. You only have one constructor for all inductive types instead of adding inductive types one by one.  
+ 2. You have one type constructor for all inductive types. This means that you can describe classes of particular data types and
+    define functions on these. This is usually called generic programming in the functional programming community. In type theory      
+    it is there for free.
