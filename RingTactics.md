@@ -22,3 +22,10 @@ This runs {{{replace a with b}}} and uses ring to solve the equality.  Works gre
 Ltac ringreplace a b :=
 replace a with b ; [idtac | solve [ ring ]].
 }}}
+
+Alternative:
+
+{{{#!coq
+Tactic Notation "ringreplace" constr (a) "with" constr (b) :=
+replace a with b ; [idtac | solve [ ring ]].
+}}}
