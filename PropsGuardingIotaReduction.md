@@ -28,7 +28,7 @@ Eval compute in (f 0)
 
 The result is {{{(fix ...) 0 (H 0) : nat}}} but the fix point does not evaluate further because the guard {{{H 0}}} is in normal form, but does not have a constructor.
 
-One can try to push the evaluation onward by giving a few {{{Acc_intro}}}'s for the match to succeed on
+One can try to push the evaluation onward by giving a few constructors ({{{Acc_intro}}}) for the match to succeed on
 
 {{{#!coq
 set (H':=(fun z => (Acc_intro z (fun y _ => (Acc_intro y (fun x _ => (H x))))))).
