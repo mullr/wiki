@@ -4,7 +4,7 @@ It is possible for the guard of a fix-point to be of a type inside {{{Prop}}} ra
 
 The [http://coq.inria.fr/library/Coq.Init.Wf.html#Acc Acc] {{{x}}} type lives in {{{Prop}}} and an object of this types is the guard for the fix point function [http://coq.inria.fr/library/Coq.Init.Wf.html#Fix_F Fix_F].
 
-It is this situation where one may be forced to evaluate an object living in {{{Prop}}}.  This evaluation proves to the system that the guard is no a purely ''hypothetical'' object.
+It is this situation where one may be forced to evaluate an object living in {{{Prop}}}.  This evaluation proves to the system that the guard is not a purely ''hypothetical'' object.
 
 
 To be concrete, consider some function defined by well founded recursion
