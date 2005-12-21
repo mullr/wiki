@@ -1,6 +1,6 @@
 = Propositions Guarding Iota Reduction =
 
-It is possible for the guard of a fix-point to be of a type inside {{{Prop}}} rather than a type inside {{{Set}}}.  This can be still used [:FalseEqAcc: in functions whose output type is in {{{Set}}}].  In fact, this is used in [http://coq.inria.fr/library/Coq.Init.Wf.html well-founded recursion].
+It is possible for the guard of a fix-point to be of a type inside {{{Prop}}} rather than a type inside {{{Set}}}.  This can be still used [:FalseEqAcc: in functions whose output type is in Set].  In fact, this is used in [http://coq.inria.fr/library/Coq.Init.Wf.html well-founded recursion].
 
 The [http://coq.inria.fr/library/Coq.Init.Wf.html#Acc Acc] {{{x}}} type lives in {{{Prop}}} and an object of this types is the guard for the fix point function [http://coq.inria.fr/library/Coq.Init.Wf.html#Fix_F Fix_F].
 
@@ -19,7 +19,7 @@ set (P:=fun _:nat => nat).
 set (f:=Fix H P F)
 }}}
 
-Loosely speaking ''f''(''x'') = 1 + ''f''(''x''+1) and because we are assuming the {{{gt}} relation is well founded (which it isn't) this function is well defined.
+Loosely speaking ''f''(''x'') = 1 + ''f''(''x''+1) and because we are assuming the {{{gt}}} relation is well founded (which it isn't) this function is well defined.
 In this context we can ask Coq to compute this function.
 
 {{{#!coq
