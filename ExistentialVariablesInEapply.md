@@ -1,18 +1,18 @@
 #language en
 
-{{{eapply}}} introduces an existential variable which is denoted by a numbered question mark. You can let Coq itself fill the suitable candidate for the question mark later on in your proof. Alternatively you can explicitely ask coq to instantiate the question mark with a term. For the latter you should use the {{{instantiate}}} tactic:
+{{{eapply}}} introduces an existential variable which is denoted by a numbered question mark. You can let Coq itself fill the suitable candidate for the question mark later on in your proof. Alternatively you can explicitely ask Coq to instantiate the question mark with a term. For the latter you should use the {{{instantiate}}} tactic:
 
 {{{#!coq
 instantiate (1:=H)
 }}}
 
-This will instantiate the leftmost existential variable with the term {{{H}}}. You can instantiate more existential variables at once:
+This will instantiate the rightmost existential variable with the term {{{H}}}. You can instantiate more existential variables at once:
 
 {{{#!coq
 instantiate (1:=H1) (2:=H2)
 }}}
 
-This will instantiate the leftmost and the second from left existential variables by {{{H1}}} and {{{H2}}} respectively.
+This will instantiate the rightmost and the second from right existential variables by {{{H1}}} and {{{H2}}} respectively.
 
 If you have existential variables in your goal (or context) you can see their environment by 
 
