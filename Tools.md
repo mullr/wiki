@@ -9,6 +9,7 @@ Some of the tools listed here are part of bigger projects that support other pro
  * PCoq [http://www-sop.inria.fr/lemme/pcoq/]
  * !ProofGeneral [http://proofgeneral.inf.ed.ac.uk/]
  * tmcoq [http://tmcoq.audebaud.org/]
+ * GeoProof [http://home.gna.org/geoproof/]
 
 == Interface for Browsing Proofs ==
 
