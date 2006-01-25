@@ -10,6 +10,7 @@ Some of the tools listed here are part of bigger projects that support other pro
  * !ProofGeneral [http://proofgeneral.inf.ed.ac.uk/]
  * tmcoq [http://tmcoq.audebaud.org/]
  * GeoProof [http://home.gna.org/geoproof/]
+   * Does GeoProof have anything to do with Coq?
 
 == Interface for Browsing Proofs ==
 
