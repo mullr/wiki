@@ -4,7 +4,7 @@
 
 Coq's module system can be used parameterise proofs over structures.  For instance rather than writing {{{min}}} and {{{max}}} functions, lemma and tactics for {{{nat}}}, {{{Z}}}, {{{Q}}}, etc., we can write the proofs once for an abstract decidable total order and then instanciate these functions, lemmas and tactics for each structure.
 
-This tutorial uses unicode characher and hence requires the ["UTF8Module"].
+This tutorial uses unicode characters and hence requires the ["UTF8Module"].
 
 {{{#!coq
 Require Import utf8.
