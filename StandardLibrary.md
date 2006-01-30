@@ -4,6 +4,10 @@
 
 Discussion on what users would like to see in a standard library.
 
+=== Finite Types ===
+
+Finite Types should be part of the Standard Library.  Either InductiveFiniteTypes or FixpointFiniteTypes would be reasonable candidates for inclusion in the standard library. 
+
 === Extensional Equality ===
 
 There should be a library for extential equality for functions.
