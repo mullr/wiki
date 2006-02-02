@@ -1,7 +1,4 @@
-## page was renamed from ModuleSystem
-= Module System =
-
-== A Tutorial on Using Modules ==
+= A Tutorial on Using Modules =
 
 Coq's module system can be used parameterise proofs over structures.  For instance rather than writing {{{min}}} and {{{max}}} functions, lemma and tactics for {{{nat}}}, {{{Z}}}, {{{Q}}}, etc., we can write the proofs once for an abstract decidable total order and then instanciate these functions, lemmas and tactics for each structure.
 
