@@ -8,13 +8,6 @@ Please feel free to experiment here, after the four dashes below... and please d
 '''Tip:''' Shift-click "HelpOnEditing" to open a second window with the help pages.
 ----
 
-[http://www.roth-401k-forum.com Roth 401k Plan]
-[http://www.readytocopy.com Great Lakes Airlines]
-[http://www.firefoxdownload.us Download Firefox]
-[http://www.seodetails.com Indianapolis SEO]
-[http://www.ialmostdied.com I Almost Died]
-[http://www.isla-fisher.com Isla Fisher]
-
 {{{#!haskell numbers=disable
 data S = Do | Re | Mi 
 }}}
