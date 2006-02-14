@@ -29,6 +29,8 @@ See [http://fermatslasttheorem.blogspot.com/2005/05/fermats-last-theorem-proof-f
 
 Fermat's last theorem has been proven in Coq for the ''n''=4 case. The proof is available in UserContributions/CNAM/Fermat4/ .
 
+See also, [http://www.cs.rug.nl/~wim/fermat/wilesEnglish.html Computer verification of Wiles' proof of Fermat's Last Theorem]
+
 == Estimated Difficulty ==
 
 {*} {*} {*} {*} {*} {*} {*} {*} ''(change the estimate if you disagree)''
@@ -49,7 +51,6 @@ This theorem should be a direct consequence of [http://coq.inria.fr/contribs/God
 The idea is that if the truth predicate were definable, then the set of true statements in number theory would be form a consistent axiom system that is able to represent it's own axioms.  This contradicts the Gödel-Rosser Incompleteness Theorem.
 
 However, Tarski's Undefinability of Truth may be easy enough to prove directly given the framework of the [http://coq.inria.fr/contribs/GodelRosser.html the Gödel-Rosser Incompleteness Development].
-
 == Estimated Difficulty ==
 
 {*} {*} {*} {o} {o} {o} {o} {o} ''(change the estimate if you disagree)''
