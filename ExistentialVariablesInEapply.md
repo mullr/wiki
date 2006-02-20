@@ -14,7 +14,7 @@ instantiate (1:=H1) (2:=H2)
 
 This will instantiate the rightmost and the second from right existential variables by {{{H1}}} and {{{H2}}} respectively.
 
-If you have existential variables in your goal (or context) you can see their environment by 
+If you have existential variables in your goal (or context) you can see their local environment by 
 
 {{{#!coq
 Show Existentials.
