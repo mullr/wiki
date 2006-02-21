@@ -76,10 +76,8 @@ Qed.
 == Extraction ==
 
  * When extracting to Haskell, note that Haskell module names should start with an upper-case letter. It is best practice to use the whole Coq generated as a Haskell module and write your own pretty printing interface for it (in fact this is the default behaviour of the extraction mechanism). Instead of simply capitalising the first letter, I usually use something like following
-
 {{{#!coq
 Extraction Language Haskell.
 Extraction "Xfoo.hs" foo.
 }}}
-
-to extract a Coq constant `foo` into Haskell module `Xfoo.hs`. This way it is emphasised that this Haskell file is a result of Coq extraction.
+ to extract a Coq constant `foo` into Haskell module `Xfoo.hs`. This way it is emphasised that this Haskell file is a result of Coq extraction.
