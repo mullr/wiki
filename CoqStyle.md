@@ -25,7 +25,7 @@ For the discussion of issues related to the content of specific formalisations a
 
  *  Use [http://coq.inria.fr/doc/Reference-Manual015.html#toc80 coqdoc]-style comments graciously, to clarify the structure of your formalisation. (However, try not to use them ''inside'' proofs. Instead use ordinary `(*  *)` comments.) This is because proofs are less likely to be processed via coqdoc and usually they are suppressed.
  
- * Use blank lines consistently (I.e. use the same number of blank lines between all lemmas in a section)
+ * Use blank lines consistently (I.e. use the same number of blank lines between all lemmas in a section).
 
  * End the file with a newline character.
 
@@ -75,11 +75,11 @@ Qed.
 
 == Extraction ==
 
- * When extracting to Haskell, note that Haskell module names should start with a capital letter. It is best practice to use the whole Coq generated as a Haskell module and write your own pretty printing interface for it (in fact this is the default behaviour of the extraction mechanism). I usually use something like following
+ * When extracting to Haskell, note that Haskell module names should start with an upper-case letter. It is best practice to use the whole Coq generated as a Haskell module and write your own pretty printing interface for it (in fact this is the default behaviour of the extraction mechanism). Instead of simply capitalising the first letter, I usually use something like following
 
 {{{#!coq
 Extraction Language Haskell.
 Extraction "Xfoo.hs" foo.
 }}}
 
-to extract a Coq constant `foo` into Haskell.
+to extract a Coq constant `foo` into Haskell module `Xfoo.hs`. This way it is emphasised that this Haskell file is a result of Coq extraction.
