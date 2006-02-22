@@ -2,11 +2,11 @@
 == GenericTactics ==
 
 === Rationale ===
-A tactic like auto is powerful in theory, but often in practice it can not do anything on the goal just because in a series of, say, 5 steps, the last can not be done by auto. So in practice, it is sometimes better just to try to write some domain-specific tactic ''t'' in Ltac, doing just some invertible steps and, to call {{{repeat}}} ''t''.
+A tactic like {{{auto}}} is powerful in theory, but in practice it too often can not do anything on the goal just because in a series of, say, 5 steps, the last can not be done by {{{auto}}}. So in practice, it sometimes is more effective to write some domain-specific tactic ''t'' in Ltac, doing only some small invertible reasonning step and, to call {{{repeat}}} ''t''.
 
-The following code elaborates on this idea: Ltac can be used to build a generic solver tactic, taking as arguments invertible and non-invertible tactics, and applying a standard iterative deepening search using non-invertible tactics and normalizing the goal at each depth using invertible tactics. You can think of it as a parameterized intuition tactic (intuition can be parameterized but only about the way it ''solves'' atoms; there is no way to add some specific behavior to, say, make it unfold some definitions or rewrite some terms, or ...)
+The following code elaborates on this idea: Ltac can be used to build a generic solver tactic, taking as arguments invertible and non-invertible tactics, and applying a standard iterative deepening search using non-invertible tactics and normalizing the goal at each depth using invertible tactics. You can think of it as a parameterized {{{intuition}}} tactic ({{{intuition}}} can be parameterized this facility is very limited : you can only customize the way it ''solves'' atoms; there is no way to add some specific behavior in order to, say, make it unfold some definitions or rewrite some terms, or ...)
 
-I (JudicaelCourant) then define some domain-specific tactics in my developments, extending the invertible and/or non-invertible tactics given in the next section an apply the generic search tactic to my tactic. For instance, in a case study I am currently conducting with Jean-François Monin, I define the following {{{progress1}}} tactic:
+I (JudicaelCourant) define some domain-specific tactics in my developments, extending the invertible and/or non-invertible tactics given in the next section and I apply the generic search tactic to my tactic. For instance, in a case study I am currently conducting with Jean-François Monin, I defined the following {{{progress1}}} tactic:
 
 {{{#!coq
 Ltac progress1 g := match goal with
@@ -16,7 +16,7 @@ Ltac progress1 g := match goal with
   || progress0 g.
 }}}
 
-Then I define {{{splitsolve1}}} as the following shorthand:
+Then I defined {{{splitsolve1}}} as the following shorthand:
 {{{#!coq
 Ltac splitsolve1 n := splitsolve progress1 split0 noni0 n 0.
 }}}
@@ -44,23 +44,24 @@ Ltac repeat1 t g := t g; repeat (t g).
 
 Ltac tacsum t1 t2 g := (t1 g; try t2 g) || t2 g.
 
-(* A tactic is said invertible whenever its application does not change
-   the provability of the goal.
+(* A tactic is said invertible whenever its application does not
+   change the provability of the goal.
 
    In the following we use the following terminology:
-   * progressing tactics: invertible tactics generating at most one subgoal  
-   * splitting tactics: invertible tactics potentially generating several
-                        subgoal
+   * progressing tactics: invertible tactics generating at most one
+       subgoal  
+   * splitting tactics: invertible tactics potentially generating
+       several subgoal
    * solving tactics: solve the goal or fail
    * non-invertible tactics.
-   * non-invertible mapping: a parameterized tactic [t], taking as argument a
-       solver [s], apply some non-invertible tactic followed by [s] on the
-       generated subgoals.
+   * non-invertible mapping: a parameterized tactic [t], taking as
+       argument a solver [s], applying some non-invertible tactic
+       followed by [s] on the generated subgoals.
 *)
 
-(* [rsplit pro spl] tries to solve the goal, using the progressing tactic
-   [pro] and the splitting tactic [spl]. [g] is a dummy argument. This tactic
-   is splitting.
+(* [rsplit pro spl] tries to solve the goal, using the progressing
+   tactic [pro] and the splitting tactic [spl]. [g] is a dummy
+   argument. This tactic is splitting.
 *)
 Ltac rsplit pro spl g :=
   let t g := (spl g; try repeat1 pro g) in
@@ -70,7 +71,8 @@ Ltac rsplit pro spl g :=
 
 Ltac myfail g := fail.
 
-(* [solver_dfs pro spl noni n g] is a depth-first search solving tactic, where
+(* [solver_dfs pro spl noni n g] is a depth-first search solving
+   tactic, where:
    * [pro] is progressing
    * [spl] is splitting
    * [noni] is a non-invertible mapping
@@ -85,8 +87,8 @@ Ltac solver_dfs pro spl noni n g :=
            end
   in t g.
 
-(* [solver pro spl noni n g] is an iterative deepening search solving tactic,
-   where:
+(* [solver pro spl noni n g] is an iterative deepening search
+   solving tactic where:
    * [pro] is progressing
    * [spl] is splitting
    * [noni] is a non-invertible mapping
@@ -102,19 +104,20 @@ Ltac solver pro spl noni n g :=
     end
   in t g.
 
-(* [splitsolve pro spl noni n g] is a splitting tactic trying to solve the
-   generated subgoals with [solver]
+(* [splitsolve pro spl noni n g] is a splitting tactic trying to
+   solve the generated subgoals with [solver]
 *)
 Ltac splitsolve pro spl noni n g :=
   try rsplit pro spl g; try solver pro spl noni n g.
 
 
-(* [everywhere t g] generalizes the whole goal, then applies g, then intros
-   generalized hyps and variable back.
+(* [everywhere t g] generalizes the whole goal, then applies g,
+   then introduces previously generalized hyps and variable back.
+
+   NB: we have to take care of 'match goal' non-determinism since
+   we want a deterministic behaviour here: the first case must
+   apply only on the last hypothesis of the context
 *)
-(* NB: we have to take care of match goal non-determinism since we want a
-   deterministic behaviour here: the first case must apply only on the last
-   hypothesis of the context *)
 Ltac everywhere t g := match goal with
 | [ H : _ |- _ ] => generalize H; clear H; (everywhere t g || fail 1); intro H
 | [ |- _ ] => match goal with
@@ -123,8 +126,8 @@ Ltac everywhere t g := match goal with
             end
 end.
 
-(* apply [t] on some hyp [H] by generalizing [H], applying [t] (and verifying
-   it is progressing), then introducing [H] back.
+(* apply [t] on some hyp [H] by generalizing [H], applying [t]
+   (and verifying it is progressing), then introducing [H] back.
 *)
 Ltac on_one_hyp t g := match goal with
 | [ H : _ |- _ ] => generalize H; clear H;
@@ -135,10 +138,10 @@ end.
 (* our generic rewrite database is named rew_db *)
 Ltac autorew g := autorewrite with rew_db.
 
-(* The base progress, splitting and non-invertible tactics I use. I do not
-   pretend they have nice theoretical properties (besides being progressing,
-   splitting and non-invertible) but they do the job for me. (I call them
-   using [splitsolve0] below.)
+(* The base progress, splitting and non-invertible tactics I use.
+   I do not pretend they have nice theoretical properties (besides
+   being progressing, splitting and non-invertible) but they do the
+   job for me. (I call them using [splitsolve0] below.)
 *)
 Ltac progress0 g := match goal with
 | [ |- _ ] => omega || elimtype False;omega
@@ -211,18 +214,4 @@ Ltac splitsolve0 n := splitsolve progress0 split0 noni0 n 0.
 Ltac solver0 n := solver progress0 split0 noni0 n 0.
 
 Hint Extern 2 (?x=?y) => congruence.
-
-(* ensure [t] generates a given number of subgoals *)
-Ltac ensure0 t g := t g;fail.
-Ltac ensure1 t g := t g ; [idtac].
-Ltac ensure2 t g := t g;[idtac | idtac].
-Ltac ensure1atmost t g := (t g;fail)||(t g;[idtac]).
-
-(* a progressing tactic potentially better than repeat1 as it uses
-   splitting tactics, provided all of their subgoal except one are solved.
-   To be improved, though.
-*)
-Ltac prosolve pro spl noni n g :=
-  let splsol k g := spl g; solver pro spl noni k g in
-  (try repeat1 pro g; ensure1atmost ltac:(splsol n g)).
-}}} 
+}}}
