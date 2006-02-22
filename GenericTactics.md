@@ -1,7 +1,7 @@
 #format wiki
 == GenericTactics ==
 
-===Rationale===
+=== Rationale ===
 A tactic like auto is powerful in theory, but in practice it often can not anything on the goal just because in a series of, says 5 steps, the last can not be done by auto. So in practice, it is sometimes better just to try to write some domain-specific tactic "t" in Ltac, doing just some invertible steps and, to call ""repeat"" "t".
 
 The following code elaborates on this idea: Ltac can be used to build a generic solver tactic, taking as arguments invertible and non-invertible tactics, and applying a standard iterative deepening search using non-invertible tactics and normalizing the goal at each depth using invertible tactics. You can think of it as a parameterized intuition tactic (intuition can be parameterized but only about the way it "solves" atoms; there is no way to add some specific behavior to, say, make it unfold some definitions or rewrite some terms, or ...)
@@ -32,7 +32,7 @@ ring.
 }}}
 with a single ""splitsolve0 0"" (in fact, ""intros;simpl;omega"" would also work, but I did not figure it out at first; splitsolve0 did).
 
-===Coq code===
+=== Coq code ===
 
 {{{
 Require Omega.
