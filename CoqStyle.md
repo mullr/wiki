@@ -37,7 +37,7 @@ For the discussion of issues related to the content of specific formalisations a
  
  * When a tactic generates more than one subgoal use indentation for tactics that are used for solving each subgoal.
 
- * When a tactics solves a subgoal use `...` (triple dot) instead of `.` (single dot). 
+ * When a tactic solves a subgoal use `...` (triple dot) instead of `.` (single dot). 
 
  * Use comments when using complicated or lengthy proof segments on subgoals of `case`, `induction`, `destruct` and their friends.
 
@@ -61,7 +61,7 @@ Qed.
 
 An alternate possible layout is to use indentation to tell exactly how many subgoals remain:  n indentation for n subgoals (variant: (n-1)). This is especially useful during development when you replay proofs after you have modified a definition above: you can easily find where your proof script behaves differently.
 
-The previous example would looks much less nice than with the previous style; on the contrary for tactics like assert, it looks nicer:
+The previous example would look much less nice than with the former style; on the contrary this latter style fits better with a forward proof-style, using assert-like tactics.
 
 Example:
 {{{#!coq
@@ -70,6 +70,11 @@ Proof.
  assert (H: <some property>).
   rewrite foobar.
   intuition.
+ assert (H2: <something else>).
+  simpl.
+  omega.
+ assert (H3: ...).
+  auto.
  <body of tactics>
 Qed.
 }}}
