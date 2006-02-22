@@ -59,6 +59,21 @@ Proof.
 Qed.
 }}}
 
+An alternate possible layout is to use indentation to tell exactly how many subgoals remain:  n indentation for n subgoals (variant: (n-1)). This is especially useful during development when you replay proofs after you have modified a definition above: you can easily find where your proof script behaves differently.
+
+The previous example would looks much less nice than with the previous style; on the contrary for tactics like assert, it looks nicer:
+
+Example:
+{{{#!coq
+Lemma bar:
+Proof.
+ assert (H: <some property>).
+  rewrite foobar.
+  intuition.
+ <body of tactics>
+Qed.
+}}}
+
 = Naming =
 
 == Lemmas and Data-types ==
