@@ -213,5 +213,4 @@ end.
 Ltac splitsolve0 n := splitsolve progress0 split0 noni0 n 0.
 Ltac solver0 n := solver progress0 split0 noni0 n 0.
 
-Hint Extern 2 (?x=?y) => congruence.
 }}}
