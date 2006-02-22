@@ -8,7 +8,7 @@ The following code elaborates on this idea: Ltac can be used to build a generic 
 
 I (JudicaelCourant) then define some domain-specific tactics in my developments, extending the invertible and/or non-invertible tactics given in the next section an apply the generic search tactic to my tactic. For instance, in a case study I am currently conducting with Jean-François Monin, I define the following {{{progress1}}} tactic:
 
-{{{
+{{{#!coq
 Ltac progress1 g := match goal with
   | [ |- step_up ?f ?z (?u::?x) ] => apply step_up_snoc2
   | [ H : continuous ?f |- _ ] => unfold continuous in H
@@ -17,7 +17,7 @@ Ltac progress1 g := match goal with
 }}}
 
 Then I define {{{splitsolve1}}} as the following shorthand:
-{{{
+{{{#!coq
 Ltac splitsolve1 n := splitsolve progress1 split0 noni0 n 0.
 }}}
 
@@ -34,7 +34,7 @@ with a single {{{splitsolve0 0}}} (in fact, {{{intros;simpl;omega}}} would also 
 
 === Coq code ===
 
-{{{
+{{{#!coq
 Require Omega.
 
 (* A repeat tactical for one-argument tactics. Unlike repeat, the
