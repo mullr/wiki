@@ -1,1 +1,1 @@
-[http://www.cs.ru.nl/~hendriks Dimitri Hendriks]
+[http://www.few.vu.nl/~diem Dimitri Hendriks]
