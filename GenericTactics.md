@@ -2,11 +2,11 @@
 == GenericTactics ==
 
 === Rationale ===
-A tactic like auto is powerful in theory, but in practice it often can not anything on the goal just because in a series of, says 5 steps, the last can not be done by auto. So in practice, it is sometimes better just to try to write some domain-specific tactic "t" in Ltac, doing just some invertible steps and, to call ""repeat"" "t".
+A tactic like auto is powerful in theory, but often in practice it can not do anything on the goal just because in a series of, say, 5 steps, the last can not be done by auto. So in practice, it is sometimes better just to try to write some domain-specific tactic ''t'' in Ltac, doing just some invertible steps and, to call {{{repeat}}} ''t''.
 
-The following code elaborates on this idea: Ltac can be used to build a generic solver tactic, taking as arguments invertible and non-invertible tactics, and applying a standard iterative deepening search using non-invertible tactics and normalizing the goal at each depth using invertible tactics. You can think of it as a parameterized intuition tactic (intuition can be parameterized but only about the way it "solves" atoms; there is no way to add some specific behavior to, say, make it unfold some definitions or rewrite some terms, or ...)
+The following code elaborates on this idea: Ltac can be used to build a generic solver tactic, taking as arguments invertible and non-invertible tactics, and applying a standard iterative deepening search using non-invertible tactics and normalizing the goal at each depth using invertible tactics. You can think of it as a parameterized intuition tactic (intuition can be parameterized but only about the way it ''solves'' atoms; there is no way to add some specific behavior to, say, make it unfold some definitions or rewrite some terms, or ...)
 
-I (JudicaelCourant) then define some domain-specific tactics in my developments, extending the invertible and/or non-invertible tactics given in the next section an apply the generic search tactic to my tactic. For instance, in a case study I am currently conducting. I define the following ""progress1"" tactic:
+I (JudicaelCourant) then define some domain-specific tactics in my developments, extending the invertible and/or non-invertible tactics given in the next section an apply the generic search tactic to my tactic. For instance, in a case study I am currently conducting with Jean-François Monin, I define the following {{{progress1}}} tactic:
 
 {{{
 Ltac progress1 g := match goal with
@@ -16,21 +16,21 @@ Ltac progress1 g := match goal with
   || progress0 g.
 }}}
 
-Then I take ""splitsolve1"" as the following shorthand:
+Then I define {{{splitsolve1}}} as the following shorthand:
 {{{
 Ltac splitsolve1 n := splitsolve progress1 split0 noni0 n 0.
 }}}
 
-And I then use ""splitsolve1 0", ""splitsolve1 1"", ..., ""splitsolve1 2"" to attack my goals.
+And I use {{{splitsolve1 0}}}, ..., {{{splitsolve1 2}}} to work on my goals.
 
-But even with no customisation, ""splitsolve0"" (given below) is surprisingly effective. For instance, in my current case study, I found that I could replace the following steps:
+Even with no customisation, {{{splitsolve0}}} (given below) is surprisingly effective. For instance, in my current case study, I found that I could replace the following steps:
 {{{
 intros m H y.
 simpl.
 rewrite H.
 ring.
 }}}
-with a single ""splitsolve0 0"" (in fact, ""intros;simpl;omega"" would also work, but I did not figure it out at first; splitsolve0 did).
+with a single {{{splitsolve0 0}}} (in fact, {{{intros;simpl;omega}}} would also work, but I did not figure it out at first as the goal was quite complex; {{{splitsolve0}}} did).
 
 === Coq code ===
 
@@ -212,7 +212,7 @@ Ltac solver0 n := solver progress0 split0 noni0 n 0.
 
 Hint Extern 2 (?x=?y) => congruence.
 
-(* ensure [t] generates a given a number of subgoals *)
+(* ensure [t] generates a given number of subgoals *)
 Ltac ensure0 t g := t g;fail.
 Ltac ensure1 t g := t g ; [idtac].
 Ltac ensure2 t g := t g;[idtac | idtac].
