@@ -81,3 +81,21 @@ I believe the inequality in the theorem is equivalent to (''q''^2^ + ''n'' - ''q
 == Estimated Difficulty ==
 
 {*} {*} {*} {*} {*} {o} {o} {o} ''(change the estimate if you disagree)''
+
+= Lusin Separation Theorem =
+
+== Informal Statement ==
+
+Any strongly disjoint pair of analytic sets is strongly Borel sepearable.
+
+== Comments ==
+
+Peter Aczel has a proof in constructive ZF.  It should be possible to translate this proof into type theory.
+
+== Resources ==
+
+ * http://foundations.cs.ru.nl/fndswiki/A_constructive_version_of_the_Lusin_Separation_Theorem
+
+== Estimated Difficulty ==
+
+{*} {*} {*} {*} {o} {o} {o} {o} ''(change the estimate if you disagree)''
