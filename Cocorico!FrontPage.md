@@ -1,4 +1,3 @@
-## page was renamed from CocoricoFrontPage
 #pragma section numbers off
 
 = Welcome to Cocorico!, the Coq Wiki =
@@ -25,7 +24,7 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
   * FindPage: search or browse the database in various ways
   * WantedPages:  pages waiting for an author.
   * HelpForBeginners for general help on MoinMoin wiki
-  * ["HelpForCocorico!"]  for help on Wiki topics peculiar to Cocorico (["HelpForCocorico!/ColorizedCoqSyntax"] etc.)
+  * HelpForCocorico  for help on Wiki topics peculiar to Cocorico (HelpForCocorico/ColorizedCoqSyntax etc.)
   * ["Cocorico!Logo"]
 
 == How to use this Wiki ==
