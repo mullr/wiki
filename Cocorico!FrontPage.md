@@ -1,8 +1,4 @@
-## page was renamed from CocoricoFrontPage
-#pragma section-numbers off
-#language en
-
-[[TableOfContents]]
+#pragma section numbers off
 
 = Welcome to Cocorico!, the Coq Wiki =
 
@@ -10,14 +6,13 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
 
 == About Coq ==
   * Visit the homepage at http://coq.inria.fr
-  * FrequentlyAskedQuestions about Coq
+  * FrequentlyAskedQuestions
   * StandardLibrary  for a discussion of the standard library of Coq 
   * ["Documentation"] for a list of manuals, books and tutorials
-  * ["Tools"] that are built on top of Coq or are otherwise related to Coq
-  * UserContributions and FormalizedAndVerified for a discussion of the material that is formalized and verified in Coq. 
+  * ["Tools"] that are built on top of Coq
+  * UserContributions for a discussion of the contributions that are distributed by Coq
   * CoqPearls small bits of pretty Coq code
   * LtacPearls useful tacticals
-  * Learn about Coq's ModuleSystem
   * TipsAndTricks
   * CoqNewbie? 
   * TheoryBehindCoq
@@ -29,9 +24,8 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
   * FindPage: search or browse the database in various ways
   * WantedPages:  pages waiting for an author.
   * HelpForBeginners for general help on MoinMoin wiki
-  * ["HelpForCocorico!"]  for help on Wiki topics peculiar to Cocorico! (["HelpForCocorico!/ColorizedCoqSyntax"] etc.)
-  * ["Cocorico!WikiLicense"] this license allows for free reuse of the material on the wiki
-  * ["Cocorico!Logo"] 
+  * ["HelpForCocorico!"]  for help on Wiki topics peculiar to Cocorico (["HelpForCocorico!/ColorizedCoqSyntax"] etc.)
+  * ["Cocorico!Logo"]
 
 == How to use this Wiki ==
 
