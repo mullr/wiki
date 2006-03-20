@@ -19,11 +19,11 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
   * LtacPearls useful tacticals
   * Learn about Coq's ModuleSystem
   * TipsAndTricks
-  * CoqNewbie?
+  * CoqNewbie
   * TheoryBehindCoq
   * TheSource of Coq, which is written in [http://caml.inria.fr/ocaml/index.en.html Objective Caml]
   * irc channel about Coq: [irc://irc.freenode.net/coq #coq] on irc.freenode.net. (Not very active but everything may change)
-
+  * ProjectIdeas
 == About Cocorico! ==
   * RecentChanges: see where people are currently working
   * WikiSandBox: feel free to change this page and experiment with editing
