@@ -1,3 +1,4 @@
+## page was renamed from CocoricoFrontPage
 #pragma section numbers off
 
 = Welcome to Cocorico!, the Coq Wiki =
