@@ -11,6 +11,7 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
   * ["Documentation"] for a list of manuals, books and tutorials
   * ["Tools"] that are built on top of Coq
   * UserContributions for a discussion of the contributions that are distributed by Coq
+  * CoqPearls small bits of pretty Coq code
   * TipsAndTricks
   * CoqNewbie? 
   * TheoryBehindCoq
@@ -21,7 +22,9 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
   * WikiSandBox: feel free to change this page and experiment with editing
   * FindPage: search or browse the database in various ways
   * WantedPages:  pages waiting for an author.
-  * HelpForBeginners
+  * HelpForBeginners for general help on MoinMoin wiki
+  * HelpForCocorico  for help on Wiki topics peculiar to Cocorico (HelpForCocorico/ColorizedCoqSyntax etc.)
+  * AboutCocorico!
 
 == How to use this Wiki ==
 
