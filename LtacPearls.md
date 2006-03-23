@@ -2,4 +2,4 @@
   * RingTactics tactics for reasoning about ring structures
   * InTac tactic to prove the inclusion of list
   * GenericTactics a few tactics letting the user define its domain specific tactics
-  * A tactic to clean duplicated hypothesis
+  * CleanDuplicatedHypothesis a tactic to remove redundant information from the context
