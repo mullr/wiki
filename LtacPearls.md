@@ -1,7 +1,6 @@
 = General tactics =
 
   * TacticExts small tactics that are widely useful
-  * CleanDuplicatedHypothesis a tactic to remove redundant information from the context
 
 = Domain specific tactics =
 
