@@ -107,6 +107,17 @@ Ltac clean_duplicated_hyps :=
 end.
 }}}
 
+=== Assert if necessary ===
+
+This tactic assert a fact only if does not already exists in the context. This is intended to be used in more complex tactics.
+{{{#!coq
+Ltac not_exist_hyp t := match goal with
+  | H1:t |- _ => fail 2
+ end || idtac.
+
+Ltac assert_if_not_exist H :=
+  not_exist_hyp H;assert H.
+}}}
 
 == Tactics about equality ==
 
