@@ -190,6 +190,34 @@ Ltac replace_all t1 t2 :=
 }}}
 
 
+[[Anchor(RewriteAll2)]]
+=== RewriteAll, expert version ===
+
+Given an assumption {{{H : t1 = t2}}}, 
+the tactic {{{rewrite_all H}}} replaces {{{t1}}} with {{{t2}}} 
+both in goal and local context.
+We have to take care that {{{H}}} does not rewrite itself, 
+for then we'd get {{{H : t2 = t2}}}, and a loop is entered;
+this version generates a smarter proof term than the previous one.
+
+{{{#!coq
+Ltac rewrite_all H := 
+ match type of H with
+ | ?t1 = ?t2 => 
+   let rec aux H :=
+     match goal with
+     | id : context [t1] |- _ => 
+       match type of id with 
+       | t1 = t2 => fail 1 
+       | _ => generalize id;clear id; try aux H; intro id
+       end
+     | _ => rewrite H
+     end in
+   aux H
+ end.
+}}}
+
+
 [[Anchor(eecideEquality)]]
 === Decide Equality ===
 
