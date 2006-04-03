@@ -211,7 +211,7 @@ Ltac rewrite_all H :=
        | t1 = t2 => fail 1 
        | _ => generalize id;clear id; try aux H; intro id
        end
-     | _ => rewrite H
+     | _ => try rewrite H
      end in
    aux H
  end.
