@@ -1,4 +1,4 @@
-Now that you know the basics of Coq you are itching to prove somthing.  Here are some ideas.
+Now that you know the basics of Coq you are itching to prove something.  Here are some ideas.
 
 [[TableOfContents(1)]]
 
