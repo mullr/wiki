@@ -99,3 +99,21 @@ Peter Aczel has a proof in constructive ZF.  It should be possible to translate 
 == Estimated Difficulty ==
 
 {*} {*} {*} {*} {o} {o} {o} {o} ''(change the estimate if you disagree)''
+
+= Conway's Cosmological Theorem =
+
+== Informal Statement ==
+The maximal length of an atom in the splitting of a 50-day-old 
+string is 74. Every such atom decays, in at most 17 days, into stable 
+or transuranic elements.
+
+== Resources ==
+
+[http://www.mathematik.uni-bielefeld.de/~sillke/SEQUENCES/series000]
+
+== Estimated Difficulty ==
+
+??? ''(change the estimate if you disagree)''
+
+== Bounties Offered ==
+''(none)''
