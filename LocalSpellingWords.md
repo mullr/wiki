@@ -16,5 +16,3 @@ account address Anybody as Choose deactivate desired Enter here However If log l
 clicking mail password preferences Preferences Profile profile
 
 anyone bar Behind bits box brackets Category Cocorico code collaborative contribute Documentation general How Pearls peculiar pretty quoted share small Syntax text Text Theory titles topics using within
-
-above After be but case command decidable declare define denote fact false feature file following fun graph has Haskell have helpful it less let level map modify notation Notation Now print printed Printing Prop recompile replace Set should source Then translate true Type type universe Universes universes Variable variable want We we will without
