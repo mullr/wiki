@@ -8944,3 +8944,5 @@ azurite's
 azygous
 
 html http Module otherwise related System Table tacticals useful
+
+ascii before between blank body character clarifies clarify collection comment comments compare consequently consistently constitutes containing content Copyright coq coqdoc credit discuss dot files formalisation formalisations generates good graciously ideas inria Instead intended interested issues Layout legibility lemmas lengthy license likely line lines Naming necessary newline number ordinary please practice present processed proofs Proofs Qed reading same scripts section segments separate shape single so solve solves sources Start start Structure structure style subgoal subgoals suggestions suppressed tactic tactics their them theoretic they tips traps triple try usability used usually variables via well Yes zero
