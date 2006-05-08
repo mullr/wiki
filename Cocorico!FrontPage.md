@@ -1,233 +1,48 @@
-#format wiki
+## page was renamed from CocoricoFrontPage
+#pragma section-numbers off
 #language en
 
-Describe the pages in this category...
+[[TableOfContents]]
 
-To add a page to this category, add a link to this page on the last line of the page. You can add multiple categories to a page.
+= Welcome to Cocorico!, the Coq Wiki =
 
-'''List of pages in this category:'''
+This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof assistant.
 
-[[FullSearch()]]
+== About Coq ==
+  * Visit the homepage at http://coq.inria.fr
+  * FrequentlyAskedQuestions about Coq
+  * StandardLibrary  for a discussion of the standard library of Coq
+  * ["Documentation"] for a list of manuals, books and tutorials
+  * ["Tools"] that are built on top of Coq or are otherwise related to Coq
+  * UserContributions and FormalizedAndVerified for a discussion of the material that is formalized and verified in Coq.
+  * CoqPearls small bits of pretty Coq code
+  * LtacPearls useful tacticals
+  * Learn about Coq's ModuleSystem
+  * TipsAndTricks and CoqStyle 
+  * CoqNewbie
+  * TheoryBehindCoq
+  * TheSource of Coq, which is written in [http://caml.inria.fr/ocaml/index.en.html Objective Caml]
+  * irc channel about Coq: [irc://irc.freenode.net/%23coq #coq] on irc.freenode.net. (Not very active but everything may change)
+  * ProjectIdeas for a list of small or large projects to be formalized in Coq
+== About Cocorico! ==
+  * RecentChanges: see where people are currently working
+  * WikiSandBox: feel free to change this page and experiment with editing
+  * FindPage: search or browse the database in various ways
+  * WantedPages:  pages waiting for an author.
+  * HelpForBeginners for general help on MoinMoin wiki
+  * ["HelpForCocorico!"]  for help on Wiki topics peculiar to Cocorico! (["HelpForCocorico!/ColorizedCoqSyntax"] etc.)
+  * ["Cocorico!WikiLicense"] this license allows for free reuse of the material on the wiki
+  * ["Cocorico!Logo"]
+
+== How to use this Wiki ==
+
+A Wiki is a collaborative site, anyone can contribute and share:
+ * Edit any page by pressing '''[[GetText(EditText)]]''' at the top or the bottom of the page
+ * Create a link to another page with joined capitalized words (like WikiSandBox) or with {{{["quoted words in brackets"]}}}
+ * Search for page titles or text within pages using the search box at the top of any page
+ * For all help pages see the HelpContents bar at the top of this page.
+
+To learn more about what a WikiWikiWeb is, read about MoinMoin:WhyWikiWorks and the MoinMoin:WikiNature. Also, consult the MoinMoin:WikiWikiWebFaq.
 
 ----
-CategoryCategory
-
-
-<div style="overflow:auto;height:1px;">
-Excuse for my post but I do not have money to buy meal to my children. Forgive me please.
-[http://lil-wayne.groto.info/all-new-lil-wayne-lyric.html lil wayne]
-[http://lil-wayne.groto.info/avant-know-lil-lyric-wayne.html lil wayne]
-[http://lil-wayne.groto.info/by-fire-lil-lyric-man-wayne.html lil wayne]
-[http://lil-wayne.groto.info/by-fireman-lil-lyric-wayne.html lil wayne]
-[http://lil-wayne.groto.info/carter2-lil-lyric-wayne.html lil wayne]
-[http://lil-wayne.groto.info/dont-lil-lyric-trip-wayne.html lil wayne]
-[http://lil-wayne.groto.info/father-like-like-lil-son-wayne.html lil wayne]
-[http://lil-wayne.groto.info/fire-lil-lyric-mo-wayne.html lil wayne]
-[http://lil-wayne.groto.info/fireman-lil-lyric-wayne.html lil wayne]
-[http://lil-wayne.groto.info/gangsta-grillz-lil-lyric-wayne.html lil wayne]
-[http://lil-wayne.groto.info/get-lil-lyric-over-wayne.html lil wayne]
-[http://lil-wayne.groto.info/holla-lil-lyric-wayne.html lil wayne]
-[http://lil-wayne.groto.info/hustla-lil-music-wayne.html lil wayne]
-[http://lil-wayne.groto.info/hustle-lil-music-wayne.html lil wayne]
-[http://lil-wayne.groto.info/hustler-lil-music-video-wayne.html lil wayne]
-[http://lil-wayne.groto.info/lil-lyric-new-orleans-wayne.html lil wayne]
-[http://lil-wayne.groto.info/lil-wayne-and-young-money-entertainment.html lil wayne]
-[http://lil-wayne.groto.info/lil-wayne-bio.html lil wayne]
-[http://lil-wayne.groto.info/lil-wayne-diss.html lil wayne]
-[http://lil-wayne.groto.info/lil-wayne-everything-lyric.html lil wayne]
-[http://lil-wayne.groto.info/lil-wayne-get-your-shine-on-lyric.html lil wayne]
-[http://lil-wayne.groto.info/lil-wayne-image.html lil wayne]
-[http://lil-wayne.groto.info/lil-wayne-light-out-lyric.html lil wayne]
-[http://lil-wayne.groto.info/lil-wayne-lyric-weezy-baby.html lil wayne]
-[http://lil-wayne.groto.info/lil-wayne-mixtape.html lil wayne]
-[http://lil-wayne.groto.info/lil-wayne-my-block-is-hot-lyric.html lil wayne]
-[http://lil-wayne.groto.info/lil-wayne-official-site.html lil wayne]
-[http://lil-wayne.groto.info/lil-wayne-shine.html lil wayne]
-[http://lil-wayne.groto.info/lil-wayne-snitch-lyric.html lil wayne]
-[http://lil-wayne.groto.info/lil-wayne-tha-carter-lyric.html lil wayne]
-[http://lil-wayne.groto.info/lil-wayne-underground-lyric.html lil wayne]
-[http://lil-wayne.groto.info/picture-of-lil-wayne-cash-money.html lil wayne]
-[http://lil-wayne.groto.info/picture-of-the-rapper-lil-wayne.html lil wayne]
-[http://lil-wayne.groto.info/rapper-lil-wayne.html lil wayne]
-[http://list-of-phobias.groto.info/ list of phobias]
-[http://list-of-phobias.groto.info/anxiety-and-phobia-workbook.html list of phobias]
-[http://list-of-phobias.groto.info/cameron-park-phobia.html list of phobias]
-[http://list-of-phobias.groto.info/case-phobia-social-study.html list of phobias]
-[http://list-of-phobias.groto.info/foot-phobia.html list of phobias]
-[http://list-of-phobias.groto.info/history-of-phobia.html list of phobias]
-[http://list-of-phobias.groto.info/kind-of-phobia.html list of phobias]
-[http://list-of-phobias.groto.info/lincoln-phobia.html list of phobias]
-[http://list-of-phobias.groto.info/loomis-phobia.html list of phobias]
-[http://list-of-phobias.groto.info/murieta-phobia-rancho.html list of phobias]
-[http://list-of-phobias.groto.info/phobia-california.html list of phobias]
-[http://list-of-phobias.groto.info/phobia-disorder.html list of phobias]
-[http://list-of-phobias.groto.info/phobia-rocklin.html list of phobias]
-[http://list-of-phobias.groto.info/phobia-statistics.html list of phobias]
-[http://list-of-phobias.groto.info/social-phobia-and-anxiety-inventory.html list of phobias]
-[http://list-of-phobias.groto.info/social-phobia-disorder.html list of phobias]
-[http://list-of-phobias.groto.info/social-phobia-inventory.html list of phobias]
-[http://list-of-phobias.groto.info/social-phobia-support-group.html list of phobias]
-[http://list-of-phobias.groto.info/social-phobia-symptom.html list of phobias]
-[http://list-of-phobias.groto.info/social-phobia.html list of phobias]
-[http://list-of-phobias.groto.info/spider-phobia.html list of phobias]
-[http://mackenzie-rosman.groto.info/ mackenzie rosman]
-[http://mackenzie-rosman.groto.info/hot-mackenzie-rosman.html mackenzie rosman]
-[http://mackenzie-rosman.groto.info/mackenzie-rosman-pic.html mackenzie rosman]
-[http://mackenzie-rosman.groto.info/mackenzie-rosman-picture.html mackenzie rosman]
-[http://marriage.groto.info/ marriage]
-[http://marriage.groto.info/angeles-county-license-los-marriage.html marriage]
-[http://marriage.groto.info/antelope-counseling-marriage.html marriage]
-[http://marriage.groto.info/bexar-county-license-marriage.html marriage]
-[http://marriage.groto.info/carolina-license-marriage-north.html marriage]
-[http://marriage.groto.info/catholic-marriage-counseling.html marriage]
-[http://marriage.groto.info/christian-marriage.html marriage]
-[http://marriage.groto.info/christian-pre-marriage-counseling.html marriage]
-[http://marriage.groto.info/common-law-marriage.html marriage]
-[http://marriage.groto.info/cordova-counseling-marriage-online-rancho.html marriage]
-[http://marriage.groto.info/counseling-galt-marriage.html marriage]
-[http://marriage.groto.info/counseling-highland-marriage-north.html marriage]
-[http://marriage.groto.info/counseling-linda-marriage-online-rio.html marriage]
-[http://marriage.groto.info/counseling-marriage-newcastle-online.html marriage]
-[http://marriage.groto.info/counseling-marriage-online-placer.html marriage]
-[http://marriage.groto.info/counseling-marriage-online-roseville.html marriage]
-[http://marriage.groto.info/counseling-marriage-online-sacramento.html marriage]
-[http://marriage.groto.info/counseling-marriage-penryn.html marriage]
-[http://marriage.groto.info/counseling-marriage-placer.html marriage]
-[http://marriage.groto.info/county-cuyahoga-license-marriage.html marriage]
-[http://marriage.groto.info/county-diego-license-marriage-san.html marriage]
-[http://marriage.groto.info/county-harris-license-marriage.html marriage]
-[http://marriage.groto.info/definition-of-marriage.html marriage]
-[http://marriage.groto.info/delaware-license-marriage.html marriage]
-[http://marriage.groto.info/family-and-marriage-counseling-degree.html marriage]
-[http://marriage.groto.info/florida-marriage-license.html marriage]
-[http://marriage.groto.info/free-license-marriage-record.html marriage]
-[http://marriage.groto.info/free-marriage-record.html marriage]
-[http://marriage.groto.info/free-online-marriage-counseling.html marriage]
-[http://marriage.groto.info/georgia-in-license-marriage.html marriage]
-[http://marriage.groto.info/georgia-license-marriage.html marriage]
-[http://marriage.groto.info/hawaii-license-marriage.html marriage]
-[http://marriage.groto.info/help-save-marriage.html marriage]
-[http://marriage.groto.info/illinois-license-marriage.html marriage]
-[http://marriage.groto.info/license-marriage-maryland.html marriage]
-[http://marriage.groto.info/license-marriage-mississippi.html marriage]
-[http://marriage.groto.info/license-marriage-nevada.html marriage]
-[http://marriage.groto.info/license-marriage-new-state-york.html marriage]
-[http://marriage.groto.info/license-marriage-new-york.html marriage]
-[http://marriage.groto.info/license-marriage-nj.html marriage]
-[http://marriage.groto.info/license-marriage-state-washington.html marriage]
-[http://marriage.groto.info/license-marriage-state.html marriage]
-[http://marriage.groto.info/license-marriage.html marriage]
-[http://marriage.groto.info/marriage-and-family.html marriage]
-[http://marriage.groto.info/marriage-builder.html marriage]
-[http://marriage.groto.info/marriage-counseling-folsom.html marriage]
-[http://marriage.groto.info/marriage-counseling-fort-worth.html marriage]
-[http://marriage.groto.info/marriage-counseling-oakland.html marriage]
-[http://marriage.groto.info/marriage-counseling-portland-oregon.html marriage]
-[http://marriage.groto.info/marriage-counseling-riverside.html marriage]
-[http://marriage.groto.info/marriage-counseling-sacramento.html marriage]
-[http://marriage.groto.info/marriage-counseling-seattle.html marriage]
-[http://marriage.groto.info/marriage-vow.html marriage]
-[http://marriage.groto.info/russian-marriage-agency.html marriage]
-[http://marriage.groto.info/russian-marriage.html marriage]
-[http://marriage.groto.info/texas-marriage-license.html marriage]
-[http://marriage.groto.info/texas-marriage-record.html marriage]
-[http://marriage.groto.info/toronto-marriage-counseling.html marriage]
-[http://cyox.de/host/vikusa/ativan_lorazepam.html ativan lorazepam]
-[http://cyox.de/host/vikusa/buy_lorazepam.html buy lorazepam]
-[http://cyox.de/host/vikusa/buy_lorazepam_online.html buy lorazepam online]
-[http://cyox.de/host/vikusa/canada_lorazepam.html canada lorazepam]
-[http://cyox.de/host/vikusa/cheap_lorazepam.html cheap lorazepam]
-[http://cyox.de/host/vikusa/generic_lorazepam.html generic lorazepam]
-[http://cyox.de/host/vikusa/lorazepam_online.html lorazepam online]
-[http://cyox.de/host/vikusa/lorazepam_side_effects.html lorazepam side effects]
-[http://cyox.de/host/vikusa/lorazepam_withdrawal.html lorazepam withdrawal]
-[http://cyox.de/host/vikusa/order_lorazepam.html order lorazepam]
-[http://cyox.de/host/vikusa/buy_meridia.html buy meridia]
-[http://cyox.de/host/vikusa/buy_meridia_online.html buy meridia online]
-[http://cyox.de/host/vikusa/cheap_meridia.html cheap meridia]
-[http://cyox.de/host/vikusa/discount_meridia.html discount meridia]
-[http://cyox.de/host/vikusa/generic_meridia.html generic meridia]
-[http://cyox.de/host/vikusa/meridia_diet.html meridia diet]
-[http://cyox.de/host/vikusa/meridia_diet_pill.html meridia diet pill]
-[http://cyox.de/host/vikusa/meridia_online.html meridia online]
-[http://cyox.de/host/vikusa/meridia_side_effects.html meridia side effects]
-[http://cyox.de/host/vikusa/meridia_weight_loss.html meridia weight loss]
-[http://cyox.de/host/vikusa/buy_phentermine.html buy phentermine]
-[http://cyox.de/host/vikusa/buy_phentermine_online.html buy phentermine online]
-[http://cyox.de/host/vikusa/cheap_phentermine.html cheap phentermine]
-[http://cyox.de/host/vikusa/discount_phentermine.html discount phentermine]
-[http://cyox.de/host/vikusa/order_phentermine.html order phentermine]
-[http://cyox.de/host/vikusa/phentermine_diet_pill.html phentermine diet pill]
-[http://cyox.de/host/vikusa/phentermine_online.html phentermine online]
-[http://cyox.de/host/vikusa/phentermine_prescription.html phentermine prescription]
-[http://cyox.de/host/vikusa/phentermine_side_effects.html phentermine side effects]
-[http://cyox.de/host/vikusa/purchase_phentermine.html purchase phentermine]
-[http://cyox.de/host/babulya/buy_propecia.html buy propecia]
-[http://cyox.de/host/babulya/buy_propecia_online.html buy propecia online]
-[http://cyox.de/host/babulya/cheap_propecia.html cheap propecia]
-[http://cyox.de/host/babulya/discount_propecia.html discount propecia]
-[http://cyox.de/host/babulya/generic_propecia.html generic propecia]
-[http://cyox.de/host/babulya/hair_loss_propecia.html hair loss propecia]
-[http://cyox.de/host/babulya/order_propecia.html order propecia]
-[http://cyox.de/host/babulya/propecia_online.html propecia online]
-[http://cyox.de/host/babulya/propecia_prescription.html propecia prescription]
-[http://cyox.de/host/babulya/propecia_side_effects.html propecia side effects]
-[http://cyox.de/host/babulya/buy_soma.html buy soma]
-[http://cyox.de/host/babulya/buy_soma_online.html buy soma online]
-[http://cyox.de/host/babulya/cheap_soma.html cheap soma]
-[http://cyox.de/host/babulya/order_soma.html order soma]
-[http://cyox.de/host/babulya/soma_addiction.html soma addiction]
-[http://cyox.de/host/babulya/soma_carisoprodol.html soma carisoprodol]
-[http://cyox.de/host/babulya/soma_drug.html soma drug]
-[http://cyox.de/host/babulya/soma_online.html soma online]
-[http://cyox.de/host/babulya/soma_prescription.html soma prescription]
-[http://cyox.de/host/babulya/watson_soma.html watson soma]
-[http://cyox.de/host/babulya/buy_tramadol.html buy tramadol]
-[http://cyox.de/host/babulya/cheap_tramadol.html cheap tramadol]
-[http://cyox.de/host/babulya/tramadol_addiction.html tramadol addiction]
-[http://cyox.de/host/babulya/tramadol_cod.html tramadol cod]
-[http://cyox.de/host/babulya/tramadol_hcl.html tramadol hcl]
-[http://cyox.de/host/babulya/tramadol_hydrochloride.html tramadol hydrochloride]
-[http://cyox.de/host/babulya/tramadol_online.html tramadol online]
-[http://cyox.de/host/babulya/tramadol_prescription.html tramadol prescription]
-[http://cyox.de/host/babulya/tramadol_side_effects.html tramadol side effects]
-[http://cyox.de/host/babulya/buy_ultram.html buy ultram]
-[http://cyox.de/host/babulya/buy_ultram_online.html buy ultram online]
-[http://cyox.de/host/babulya/cheap_ultram.html cheap ultram]
-[http://cyox.de/host/babulya/generic_ultram.html generic ultram]
-[http://cyox.de/host/babulya/order_ultram.html order ultram]
-[http://cyox.de/host/babulya/tramadol_ultram.html tramadol ultram]
-[http://cyox.de/host/babulya/ultram_addiction.html ultram addiction]
-[http://cyox.de/host/babulya/ultram_online.html ultram online]
-[http://cyox.de/host/babulya/ultram_side_effects.html ultram side effects]
-[http://cyox.de/host/babulya/ultram_weight_loss.html ultram weight loss]
-[http://cyox.de/host/prevet/buy_valium.html buy valium]
-[http://cyox.de/host/prevet/buy_valium_online.html buy valium online]
-[http://cyox.de/host/prevet/discount_valium.html discount valium]
-[http://cyox.de/host/prevet/generic_valium.html generic valium]
-[http://cyox.de/host/prevet/order_valium.html order valium]
-[http://cyox.de/host/prevet/purchase_valium.html purchase valium]
-[http://cyox.de/host/prevet/valium_diazepam.html valium diazepam]
-[http://cyox.de/host/prevet/valium_on_line.html valium on line]
-[http://cyox.de/host/prevet/valium_online.html valium online]
-[http://cyox.de/host/prevet/buy_viagra.html buy viagra]
-[http://cyox.de/host/prevet/buy_viagra_online.html buy viagra online]
-[http://cyox.de/host/prevet/cheap_viagra.html cheap viagra]
-[http://cyox.de/host/prevet/generic_viagra.html generic viagra]
-[http://cyox.de/host/prevet/order_viagra.html order viagra]
-[http://cyox.de/host/prevet/viagra_alternative.html viagra alternative]
-[http://cyox.de/host/prevet/viagra_erection.html viagra erection]
-[http://cyox.de/host/prevet/viagra_online.html viagra online]
-[http://cyox.de/host/prevet/viagra_pill.html viagra pill]
-[http://cyox.de/host/prevet/viagra_prescription.html viagra prescription]
-[http://cyox.de/host/prevet/buy_xanax.html buy xanax]
-[http://cyox.de/host/prevet/buy_xanax_online.html buy xanax online]
-[http://cyox.de/host/prevet/cheap_xanax.html cheap xanax]
-[http://cyox.de/host/prevet/generic_xanax.html generic xanax]
-[http://cyox.de/host/prevet/order_xanax.html order xanax]
-[http://cyox.de/host/prevet/purchase_xanax.html purchase xanax]
-[http://cyox.de/host/prevet/xanax_online.html xanax online]
-[http://cyox.de/host/prevet/xanax_prescription.html xanax prescription]
-[http://cyox.de/host/prevet/xanax_side_effects.html xanax side effects]
-[http://cyox.de/host/prevet/xanax_valium.html xanax valium]
-</div>
+CategoryHomepage
