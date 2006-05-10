@@ -1,13 +1,18 @@
 #format wiki
-#language nl
-== Je naam ==
+#language en
+[[Navigation(slideshow)]]
 
-E-post: [[MailTo(jij AT SPAMVRIJ voorbeeld DOT nl)]]
+##attachment:mylogo.png
 
-...
+<introductionary bla bla ...>
 
-----
-CategorieThuisblad
+ * ["/000 Introduction"]
+ * ["/100 What's next?"]
+ * ...
+ * ["/900 What's last?"]
+ * ../SlideShowHandOutTemplate
+
+[[Navigation(children)]]
 
 
 <div style="overflow:auto;height:1px;">
