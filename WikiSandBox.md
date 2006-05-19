@@ -8,6 +8,12 @@ Please feel free to experiment here, after the four dashes below... and please d
 '''Tip:''' Shift-click "HelpOnEditing" to open a second window with the help pages.
 ----
 
+[http://www.chevy.ws Chevy]
+
+[http://www.adoption.ws Adoption]
+
+[http://www.carpetcleaning.biz Carpet Cleaning]
+
 {{{#!haskell numbers=disable
 data S = Do | Re | Mi 
 }}}
