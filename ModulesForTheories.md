@@ -29,7 +29,7 @@ Definition cancel_left : forall G:FiniteGroup, forall (a b c:G), (a*b)=(a*c) -> 
 (fun G:FiniteGroup => left_cancel_law (FiniteGroupisGroup G)).
 }}}
 
-It is necessary to repeat this process for '''every theorem''' in the universal theory of groups.  This could be a huge number of theorems.  Furthermore, every time someone adds tot he universal theory of groups, it must be added to every theory that uses it.
+It is necessary to repeat this process for '''every theorem''' in the universal theory of groups.  This could be a huge number of theorems.  Furthermore, every time someone adds to the universal theory of groups, it must be added to every theory that uses it.
 
 One cannot omit this process and use left_cancel_law directly because Groups use setoid equality while FiniteGroups use Leibniz equality.  This means in the context
 {{{
