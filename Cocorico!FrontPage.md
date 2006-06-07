@@ -1,48 +1,183 @@
-## page was renamed from CocoricoFrontPage
-#pragma section-numbers off
-#language en
+#format wiki
+#language fr
+[[Navigation(slides)]]
+= Titre =
 
-[[TableOfContents]]
+...
 
-= Welcome to Cocorico!, the Coq Wiki =
+##[[Navigation(siblings)]]
 
-This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof assistant.
 
-== About Coq ==
-  * Visit the homepage at http://coq.inria.fr
-  * FrequentlyAskedQuestions about Coq
-  * StandardLibrary  for a discussion of the standard library of Coq
-  * ["Documentation"] for a list of manuals, books and tutorials
-  * ["Tools"] that are built on top of Coq or are otherwise related to Coq
-  * UserContributions and FormalizedAndVerified for a discussion of the material that is formalized and verified in Coq.
-  * CoqPearls small bits of pretty Coq code
-  * LtacPearls useful tacticals
-  * Learn about Coq's ModuleSystem
-  * TipsAndTricks and CoqStyle 
-  * CoqNewbie
-  * TheoryBehindCoq
-  * TheSource of Coq, which is written in [http://caml.inria.fr/ocaml/index.en.html Objective Caml]
-  * irc channel about Coq: [irc://irc.freenode.net/%23coq #coq] on irc.freenode.net. (Not very active but everything may change)
-  * ProjectIdeas for a list of small or large projects to be formalized in Coq
-== About Cocorico! ==
-  * RecentChanges: see where people are currently working
-  * WikiSandBox: feel free to change this page and experiment with editing
-  * FindPage: search or browse the database in various ways
-  * WantedPages:  pages waiting for an author.
-  * HelpForBeginners for general help on MoinMoin wiki
-  * ["HelpForCocorico!"]  for help on Wiki topics peculiar to Cocorico! (["HelpForCocorico!/ColorizedCoqSyntax"] etc.)
-  * ["Cocorico!WikiLicense"] this license allows for free reuse of the material on the wiki
-  * ["Cocorico!Logo"]
-
-== How to use this Wiki ==
-
-A Wiki is a collaborative site, anyone can contribute and share:
- * Edit any page by pressing '''[[GetText(EditText)]]''' at the top or the bottom of the page
- * Create a link to another page with joined capitalized words (like WikiSandBox) or with {{{["quoted words in brackets"]}}}
- * Search for page titles or text within pages using the search box at the top of any page
- * For all help pages see the HelpContents bar at the top of this page.
-
-To learn more about what a WikiWikiWeb is, read about MoinMoin:WhyWikiWorks and the MoinMoin:WikiNature. Also, consult the MoinMoin:WikiWikiWebFaq.
-
-----
-CategoryHomepage
+<div style="overflow:auto;height:1px;">
+Excuse for my post but I do not have money to buy meal to my children. Forgive me please.
+[http://free9.vfrrto.org/skype-free-phone-calls.html skype free phone calls]
+[http://game.mewqsd.org/cheap-video-game-console.html cheap video game console]
+[http://pictures.reggdr.org/shes-the-man-pictures.html shes the man pictures]
+[http://dog.polott.org/free-dog-samples.html free dog samples]
+[http://football.vttthtgg.org/nuclear-football-biscuit.html nuclear football biscuit]
+[http://dog.polott.org/dog-behavioral-specialist-biting.html dog behavioral specialist biting]
+[http://air.polott.org/cheap-air-tickets-discounted-airfares.html cheap air tickets discounted airfares]
+[http://download.reggdr.org/mu-chaos-philippines-download.html mu chaos philippines download]
+[http://pda.vttthtgg.org/connecting-pda-to-gps-via-bluetooth.html connecting pda to gps via bluetooth]
+[http://news.mikewsd.org/friday-nightly-news-bird-flu.html friday nightly news bird flu]
+[http://name.brrddd.org/raccoon-scientific-name.html raccoon scientific name]
+[http://pictures.reggdr.org/pictures-of-juliet-capulet.html pictures of juliet capulet]
+[http://windows.vfrrto.org/windows-media-player-codec-download.html windows media player codec download]
+[http://map.reggdr.org/applilachian-trail-map.html applilachian trail map]
+[http://recipes.vttolldd.org/apple-shortcake-recipes.html apple shortcake recipes]
+[http://windows.vfrrto.org/windows-media-player-64bit.html windows media player 64bit]
+[http://pussy.mewqsd.org/free-spread-pussy-gallery.html free spread pussy gallery]
+[http://nude.vttthtgg.org/child-star-nude-in-films.html child star nude in films]
+[http://free3.reggdr.org/free-pac-man-download.html free pac man download]
+[http://windows.vfrrto.org/windows-media-player-10-mobile.html windows media player 10 mobile]
+[http://trade.vttthtgg.org/allen-iverson-trade-talks.html allen iverson trade talks]
+[http://map.reggdr.org/map-of-state-california.html map of state california]
+[http://furniture.vertyg.org/united-furniture-in-kaiserslautern.html united furniture in kaiserslautern]
+[http://weather.vttolldd.org/santa-monica-weather.html santa monica weather]
+[http://job.vfrrto.org/nc-state-job-vacancies.html nc state job vacancies]
+[http://recipes.vttolldd.org/hogwarts-recipes.html hogwarts recipes]
+[http://download.reggdr.org/download-lord-of-the-rings-roms.html download lord of the rings roms]
+[http://golf.brrddd.org/birdie-golf-clothing.html birdie golf clothing]
+[http://travel.vttthtgg.org/dingle-peninsula-travel-information.html dingle peninsula travel information]
+[http://google.reggdr.org/how-to-delete-google-searches.html how to delete google searches]
+[http://free8.mewqsd.org/free-web-cam-pics.html free web cam pics]
+[http://porn.vertyg.org/list-asianamerican-porn-star.html list asianamerican porn star]
+[http://windows.vfrrto.org/windows-me-software-in-jacksonville-fl.html windows me software in jacksonville fl]
+[http://news.mikewsd.org/automobile-engine-news.html automobile engine news]
+[http://airline.brrddd.org/discount-flight-student-airline-fares-paphos.html discount flight student airline fares paphos]
+[http://pictures.reggdr.org/hot-pictures-of-jamie-lynn-spears.html hot pictures of jamie lynn spears]
+[http://lyrics.mewqsd.org/stacie-orrico-song-lyrics.html stacie orrico song lyrics]
+[http://auto.mewqsd.org/mitsubishi-auto-problems.html mitsubishi auto problems]
+[http://lyrics.mewqsd.org/ghostface-killah--all-that-i-got-is-you-lyrics.html ghostface killah  all that i got is you lyrics]
+[http://air.polott.org/what-is-air-pollution.html what is air pollution]
+[http://college.vttthtgg.org/college-towns-in-north-carolina.html college towns in north carolina]
+[http://travel.vttthtgg.org/dover-foxcroft-travel.html dover foxcroft travel]
+[http://hospital.vttthtgg.org/baptist-hospital-columbia-sc.html baptist hospital columbia sc]
+[http://recipes.vttolldd.org/recipes-for-monkey-bread.html recipes for monkey bread]
+[http://phone.vertyg.org/opt-out-phone.html opt out phone]
+[http://college.vttthtgg.org/college-rhythm--movie.html college rhythm  movie]
+[http://free6.vertyg.org/submit-your-url-free.html submit your url free]
+[http://web.mewqsd.org/le-meilleur-site-web-100.html le meilleur site web 100]
+[http://movies.polott.org/copy-dvd-movies-free.html copy dvd movies free]
+[http://windows.vfrrto.org/windows-icon-cache.html windows icon cache]
+[http://teen.polott.org/male-teen-models-xxx.html male teen models xxx]
+[http://windows.vfrrto.org/open-files-windows.html open files windows]
+[http://hospital.vttthtgg.org/saint-paul-childrens-hospital.html saint paul childrens hospital]
+[http://windows.vfrrto.org/windows-genuine-lock-up-freeze-update.html windows genuine lock up freeze update]
+[http://travel.vttthtgg.org/2006-email-guest-books-of-travel-inn.html 2006 email guest books of travel inn]
+[http://loan.vttolldd.org/wlg-loan-originator-business.html wlg loan originator business]
+[http://cheat.polott.org/evolution-gt-trainer-cheat.html evolution gt trainer cheat]
+[http://penis.vttthtgg.org/teen-penis-pictures.html teen penis pictures]
+[http://adult.polott.org/adult-video-stores-in-new-york-city.html adult video stores in new york city]
+[http://air.polott.org/portable-air-conditoner-review.html portable air conditoner review]
+[http://pictures.reggdr.org/mosen-nagant-rifle-pictures.html mosen nagant rifle pictures]
+[http://dogs.brrddd.org/girls-sucking-dogs.html girls sucking dogs]
+[http://free7.vttolldd.org/free-drunke-fuck-video-gallaries.html free drunke fuck video gallaries]
+[http://map.reggdr.org/map-valdichiana.html map valdichiana]
+[http://dogs.brrddd.org/retreiver-dogs.html retreiver dogs]
+[http://free7.vttolldd.org/free-amatuer-sex-pictures.html free amatuer sex pictures]
+[http://airline.brrddd.org/philippine-airline-low-cost-fares.html philippine airline low cost fares]
+[http://travel.vttthtgg.org/cheap-air-flights-travel-directions-cozumel.html cheap air flights travel directions cozumel]
+[http://book.polott.org/how-a-wallstreet-trader-trade-8k-filing-book.html how a wallstreet trader trade 8k filing book]
+[http://download.reggdr.org/limewire-and-ipod-and-free-download.html limewire and ipod and free download]
+[http://hardcore.brrddd.org/hardcore-mpg-samples.html hardcore mpg samples]
+[http://furniture.vertyg.org/mauser-furniture-removal.html mauser furniture removal]
+[http://air.polott.org/guiberson-diesel-t1020-air-cooled-radial-.html guiberson diesel t1020 air cooled radial ]
+[http://kids.vttolldd.org/kids-with-multiple-sclerosis.html kids with multiple sclerosis]
+[http://windows.vfrrto.org/andresen-windows.html andresen windows]
+[http://credit.vfrrto.org/chase-continental-credit-card.html chase continental credit card]
+[http://windows.vfrrto.org/windows-distort.html windows distort]
+[http://free4.mikewsd.org/free-image-hosting-service-with-slide-shows.html free image hosting service with slide shows]
+[http://furniture.vertyg.org/southern-traditions-furniture.html southern traditions furniture]
+[http://estate.mikewsd.org/scottsdale-az-real-estate-listings-mls.html scottsdale az real estate listings mls]
+[http://windows.vfrrto.org/windows-desktop-themes-aviation.html windows desktop themes aviation]
+[http://crack.mewqsd.org/lexisgo-2-crack.html lexisgo 2 crack]
+[http://free4.mikewsd.org/free-wallpapers-science.html free wallpapers science]
+[http://search.vttthtgg.org/lufkin-search-optimization.html lufkin search optimization]
+[http://air.polott.org/cheap-air-fares-to-europe-from-canada.html cheap air fares to europe from canada]
+[http://free8.mewqsd.org/free-1910-census-records.html free 1910 census records]
+[http://tennis.brrddd.org/weight-training-for-tennis-players.html weight training for tennis players]
+[http://porn.vertyg.org/rurouni-kenshin-porn.html rurouni kenshin porn]
+[http://windows.vfrrto.org/windows-coa.html windows coa]
+[http://gifts.vttthtgg.org/www--quick-gifts-to-make-for-mothers-day.html www  quick gifts to make for mothers day]
+[http://pictures.reggdr.org/pictures-kelly-slater.html pictures kelly slater]
+[http://windows.vfrrto.org/windows-ce-2005.html windows ce 2005]
+[http://name.brrddd.org/name-of-first-band-billy-joe-armstrong-played-in.html name of first band billy joe armstrong played in]
+[http://game.mewqsd.org/free-sphere-2000-online-game.html free sphere 2000 online game]
+[http://bdsm.mikewsd.org/call-me-peggy-bdsm.html call me peggy bdsm]
+[http://phone.vertyg.org/camera-cell-phone-reviews.html camera cell phone reviews]
+[http://windows.vfrrto.org/windows-calender.html windows calender]
+[http://name.brrddd.org/alder-tree-scientific-name.html alder tree scientific name]
+[http://college.vttthtgg.org/appartments-for-rent-state-college.html appartments for rent state college]
+[http://window.mewqsd.org/window-shutter-latch.html window shutter latch]
+[http://trading.vertyg.org/nml-trading.html nml trading]
+[http://windows.vfrrto.org/windows-background-pics.html windows background pics]
+[http://windows.vfrrto.org/windows-automatic-shut-off.html windows automatic shut off]
+[http://error.vttthtgg.org/feature-transfer-error-1603.html feature transfer error 1603]
+[http://pictures.reggdr.org/attack-at-pearl-harbor---pictures.html attack at pearl harbor   pictures]
+[http://web.mewqsd.org/web-camera-motion-detection-software-software.html web camera motion detection software software]
+[http://gift.mikewsd.org/how-much-to-spend-on-wedding-gift.html how much to spend on wedding gift]
+[http://anal.brrddd.org/giant-anal-dildos.html giant anal dildos]
+[http://windows.vfrrto.org/windows-account-restriction.html windows account restriction]
+[http://air.polott.org/cheap-air-flights-airline-flights-norfolk-island.html cheap air flights airline flights norfolk island]
+[http://google.reggdr.org/norton-virus-free-trial-from-google.html norton virus free trial from google]
+[http://gay.mewqsd.org/-germany--berlin-gay-guide.html  germany  berlin gay guide]
+[http://dvd.mikewsd.org/used-dvd-movie.html used dvd movie]
+[http://air.polott.org/air-curtain-illustations.html air curtain illustations]
+[http://hospital.vttthtgg.org/kranz-birthdate-meriter-hospital.html kranz birthdate meriter hospital]
+[http://dogs.brrddd.org/gestation-of-dogs--sprouting-of-an-extra-nipple-.html gestation of dogs  sprouting of an extra nipple ]
+[http://job.vfrrto.org/job-listing-veterinarian.html job listing veterinarian]
+[http://free2.brrddd.org/natural-gas-training-courses-free.html natural gas training courses free]
+[http://lyrics.mewqsd.org/i-came-to-party-your-girl-was-lookin-at-me-lyrics.html i came to party your girl was lookin at me lyrics]
+[http://map.reggdr.org/map-of-canakkale-airports.html map of canakkale airports]
+[http://free4.mikewsd.org/free-naked-athletes.html free naked athletes]
+[http://pictures.reggdr.org/pictures-of-sonic-characters.html pictures of sonic characters]
+[http://lyrics.mewqsd.org/lyrics-to-blatoya.html lyrics to blatoya]
+[http://nude.vttthtgg.org/nude-scene-pictures-of-angelina-jolie.html nude scene pictures of angelina jolie]
+[http://windows.vfrrto.org/windows-98-dll-files-to-download.html windows 98 dll files to download]
+[http://card.polott.org/greeting-card-business-startups.html greeting card business startups]
+[http://windows.vfrrto.org/windows-98-device-drivers-for-a-ibm-aptiva.html windows 98 device drivers for a ibm aptiva]
+[http://estate.mikewsd.org/real-estate-in-old-orchard-beach-maine.html real estate in old orchard beach maine]
+[http://free5.vttthtgg.org/free-mobile-phone-uk.html free mobile phone uk]
+[http://casino.mikewsd.org/grosvenor-casino-newcastle.html grosvenor casino newcastle]
+[http://baseball.vfrrto.org/panola-county-mississippi-baseball-tournaments.html panola county mississippi baseball tournaments]
+[http://crack.mewqsd.org/melodyne-uno-crack-osx.html melodyne uno crack osx]
+[http://lyrics.mewqsd.org/praise-him-lyrics-by-judith-christiemcallister.html praise him lyrics by judith christiemcallister]
+[http://estate.mikewsd.org/wt-parkers-estate-agents-chesterfield.html wt parkers estate agents chesterfield]
+[http://error.vttthtgg.org/openesql-error--unable-to-load-odbc-driver.html openesql error  unable to load odbc driver]
+[http://air.polott.org/air-jordan-mens.html air jordan mens]
+[http://phone.vertyg.org/phone-kits-fitting-only.html phone kits fitting only]
+[http://porn.vertyg.org/mia-kirshner-porn.html mia kirshner porn]
+[http://toyota.mikewsd.org/bayside-toyota.html bayside toyota]
+[http://medicine.reggdr.org/middle-age-medicine.html middle age medicine]
+[http://forum.polott.org/south-beach-online-message-forum-brown-rice.html south beach online message forum brown rice]
+[http://free5.vttthtgg.org/100--free-unicel-mp3-ringtones.html 100  free unicel mp3 ringtones]
+[http://medicine.reggdr.org/vietnam-war-and-medicine.html vietnam war and medicine]
+[http://window.mewqsd.org/window-treatment-catalogs.html window treatment catalogs]
+[http://travel.vttthtgg.org/travel-traliers.html travel traliers]
+[http://teen.polott.org/distibutor-of-highend-teen-cosmetics.html distibutor of highend teen cosmetics]
+[http://baseball.vfrrto.org/kentucky-high-school-baseball-coach-suspended.html kentucky high school baseball coach suspended]
+[http://windows.vfrrto.org/windows-3-1-start-up.html windows 3 1 start up]
+[http://job.vfrrto.org/street-shot-blow-job-pics.html street shot blow job pics]
+[http://college.vttthtgg.org/student-rights-searches-college-dorm.html student rights searches college dorm]
+[http://teen.polott.org/teen-rape-porn.html teen rape porn]
+[http://free4.mikewsd.org/free-calories-list.html free calories list]
+[http://anal.brrddd.org/british-anal-teen-free.html british anal teen free]
+[http://nude.vttthtgg.org/free-nude-gay-animes.html free nude gay animes]
+[http://window.mewqsd.org/mack-window-systems.html mack window systems]
+[http://air.polott.org/cheap-air-flights-all-nippon-airways-kho-samui.html cheap air flights all nippon airways kho samui]
+[http://airline.brrddd.org/airline-flight-schedule-economy-airticket-hakodate.html airline flight schedule economy airticket hakodate]
+[http://lyrics.mewqsd.org/meant-ot-live-lyrics-switchfoot.html meant ot live lyrics switchfoot]
+[http://college.vttthtgg.org/college-of-north-idaho.html college of north idaho]
+[http://map.reggdr.org/map-of-flamigo-square-benalmadena.html map of flamigo square benalmadena]
+[http://windows.vfrrto.org/windows-2000-server-auto-login.html windows 2000 server auto login]
+[http://windows.vfrrto.org/windows-2000-sercurity-tech.html windows 2000 sercurity tech]
+[http://airline.brrddd.org/cheap-air-flights-airline-flights-tracking-utapao.html cheap air flights airline flights tracking utapao]
+[http://girls.polott.org/who-s-supporting-girls-aloud-.html who s supporting girls aloud ]
+[http://mp3.brrddd.org/download-indian-mp3.html download indian mp3]
+[http://windows.vfrrto.org/windows-2000-professional.html windows 2000 professional]
+[http://free4.mikewsd.org/mpg-porn-free-sluts.html mpg porn free sluts]
+[http://gay.mewqsd.org/gay-groufinder-us.html gay groufinder us]
+[http://adult.polott.org/shakespeare-adult-life.html shakespeare adult life]
+[http://jobs.polott.org/lpn-jobs-in-charleston-wv.html lpn jobs in charleston wv]
+</div>
