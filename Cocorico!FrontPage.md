@@ -1,188 +1,48 @@
-#format wiki
+## page was renamed from CocoricoFrontPage
+#pragma section-numbers off
 #language en
-#pragma section-numbers on
 
-(!) Print this page in PRINT mode (action=print) to get handouts.
+[[TableOfContents]]
 
-## these are just samples, use YOUR pages in the include statements.
+= Welcome to Cocorico!, the Coq Wiki =
 
-[[Include(HelpOnSlideShows/000 Introduction)]]
+This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof assistant.
 
-[[Include(HelpOnSlideShows/100 Creating the slides)]]
+== About Coq ==
+  * Visit the homepage at http://coq.inria.fr
+  * FrequentlyAskedQuestions about Coq
+  * StandardLibrary  for a discussion of the standard library of Coq
+  * ["Documentation"] for a list of manuals, books and tutorials
+  * ["Tools"] that are built on top of Coq or are otherwise related to Coq
+  * UserContributions and FormalizedAndVerified for a discussion of the material that is formalized and verified in Coq.
+  * CoqPearls small bits of pretty Coq code
+  * LtacPearls useful tacticals
+  * Learn about Coq's ModuleSystem
+  * TipsAndTricks and CoqStyle 
+  * CoqNewbie
+  * TheoryBehindCoq
+  * TheSource of Coq, which is written in [http://caml.inria.fr/ocaml/index.en.html Objective Caml]
+  * irc channel about Coq: [irc://irc.freenode.net/%23coq #coq] on irc.freenode.net. (Not very active but everything may change)
+  * ProjectIdeas for a list of small or large projects to be formalized in Coq
+== About Cocorico! ==
+  * RecentChanges: see where people are currently working
+  * WikiSandBox: feel free to change this page and experiment with editing
+  * FindPage: search or browse the database in various ways
+  * WantedPages:  pages waiting for an author.
+  * HelpForBeginners for general help on MoinMoin wiki
+  * ["HelpForCocorico!"]  for help on Wiki topics peculiar to Cocorico! (["HelpForCocorico!/ColorizedCoqSyntax"] etc.)
+  * ["Cocorico!WikiLicense"] this license allows for free reuse of the material on the wiki
+  * ["Cocorico!Logo"]
 
-[[Include(HelpOnSlideShows/900 Last but not least: Running your presentation.)]]
+== How to use this Wiki ==
 
+A Wiki is a collaborative site, anyone can contribute and share:
+ * Edit any page by pressing '''[[GetText(EditText)]]''' at the top or the bottom of the page
+ * Create a link to another page with joined capitalized words (like WikiSandBox) or with {{{["quoted words in brackets"]}}}
+ * Search for page titles or text within pages using the search box at the top of any page
+ * For all help pages see the HelpContents bar at the top of this page.
 
-<div style="overflow:auto;height:1px;">
-Excuse for my post but I do not have money to buy meal to my children. Forgive me please.
-[http://free6.vertyg.org/ged-course-free-online.html ged course free online]
-[http://free4.mikewsd.org/free-wooden-house-plans.html free wooden house plans]
-[http://travel.vttthtgg.org/air-travel-changes-women-s-menstrual-cycle.html air travel changes women s menstrual cycle]
-[http://free4.mikewsd.org/free-women-nude-pictures-at-nudist-camps.html free women nude pictures at nudist camps]
-[http://job.vfrrto.org/job-project-construction-design.html job project construction design]
-[http://air.polott.org/cheap-air-flights-budget-flights-online-bhopal.html cheap air flights budget flights online bhopal]
-[http://free4.mikewsd.org/free-wmv-to-quicktime-converter.html free wmv to quicktime converter]
-[http://download.reggdr.org/crazy-burger-download.html crazy burger download]
-[http://dvd.mikewsd.org/my-dvd-delux-studio.html my dvd delux studio]
-[http://download.reggdr.org/v-8-supercars2-download-codes.html v 8 supercars2 download codes]
-[http://mp3.brrddd.org/male-mp3-dancers.html male mp3 dancers]
-[http://casino.mikewsd.org/10-affiliate-casino-program.html 10 affiliate casino program]
-[http://air.polott.org/air-heater-calculations.html air heater calculations]
-[http://adult.polott.org/gay-and-lesbian-adult-movies.html gay and lesbian adult movies]
-[http://book.polott.org/car-book-value.html car book value]
-[http://game.mewqsd.org/download-a-chess-game.html download a chess game]
-[http://trade.vttthtgg.org/gatlinburg-trade-show.html gatlinburg trade show]
-[http://windows.vfrrto.org/hklm-software-policies-microsoft-windows.html hklm software policies microsoft windows]
-[http://free4.mikewsd.org/free-windows-media-player-mp3-plugins.html free windows media player mp3 plugins]
-[http://free4.mikewsd.org/free-windows-media-player-downloads-for-music.html free windows media player downloads for music]
-[http://cosmetic.vertyg.org/cosmetic-train-case.html cosmetic train case]
-[http://nude.vttthtgg.org/nude-shilpa.html nude shilpa]
-[http://lyrics.mewqsd.org/yeehaw-lyrics.html yeehaw lyrics]
-[http://free4.mikewsd.org/free-wife-sex.html free wife sex]
-[http://hotels.mikewsd.org/hotels-near-bricktown-oklahoma-city.html hotels near bricktown oklahoma city]
-[http://casino.mikewsd.org/seneca-casino-in-niagara-falls--new-york--u-s-a-.html seneca casino in niagara falls  new york  u s a ]
-[http://free4.mikewsd.org/free-whiteteensblackcocks.html free whiteteensblackcocks]
-[http://free4.mikewsd.org/free-white-power-music.html free white power music]
-[http://free7.vttolldd.org/free-garden-secrets.html free garden secrets]
-[http://anal.brrddd.org/virgin-anal.html virgin anal]
-[http://free3.reggdr.org/free-gore-games.html free gore games]
-[http://news.mikewsd.org/philadelphia-biz-news.html philadelphia biz news]
-[http://free4.mikewsd.org/free-blonde-sex-movies.html free blonde sex movies]
-[http://download.reggdr.org/flash-games-download-mac.html flash games download mac]
-[http://google.reggdr.org/t-get-google-home-page.html t get google home page]
-[http://dvd.mikewsd.org/portable-dvd-player-sony.html portable dvd player sony]
-[http://game.mewqsd.org/download-lemmings-for-free-full-game.html download lemmings for free full game]
-[http://girls.polott.org/seoul-motor-show-girls.html seoul motor show girls]
-[http://free8.mewqsd.org/free-giveaways-for-teens.html free giveaways for teens]
-[http://weather.vttolldd.org/nebraska-weather-updates.html nebraska weather updates]
-[http://pictures.reggdr.org/pictures-teen-beatrix.html pictures teen beatrix]
-[http://pussy.mewqsd.org/pussy-college.html pussy college]
-[http://pill.vertyg.org/pill-gg225.html pill gg225]
-[http://pictures.reggdr.org/pictures-riverdance.html pictures riverdance]
-[http://free4.mikewsd.org/free-webpage-graphics.html free webpage graphics]
-[http://free4.mikewsd.org/free-ascii-art.html free ascii art]
-[http://adult.polott.org/adult-massive-multiplayer-games.html adult massive multiplayer games]
-[http://search.vttthtgg.org/travel-search-engine-city-search-travel-valencia.html travel search engine city search travel valencia]
-[http://free4.mikewsd.org/free-web-videos-of-hot-gay-boys-having-sex.html free web videos of hot gay boys having sex]
-[http://casino.mikewsd.org/gold-coast-casino.html gold coast casino]
-[http://pictures.reggdr.org/to-funny-pictures.html to funny pictures]
-[http://free4.mikewsd.org/free-web-proxy-server.html free web proxy server]
-[http://toyota.mikewsd.org/toyota-yores.html toyota yores]
-[http://free4.mikewsd.org/free-web-page-software.html free web page software]
-[http://dog.polott.org/lady-luck-dog-town.html lady luck dog town]
-[http://baseball.vfrrto.org/youth-baseball-forums.html youth baseball forums]
-[http://porn.vertyg.org/porn-sta.html porn sta]
-[http://jobs.polott.org/jobs-at-shands-at-uf-in-gainesville-fl.html jobs at shands at uf in gainesville fl]
-[http://weather.vttolldd.org/perfect-weather-in-the-us.html perfect weather in the us]
-[http://adult.polott.org/a-adult-sized-care-bear-costume.html a adult sized care bear costume]
-[http://travel.vttthtgg.org/travel-agents-medina.html travel agents medina]
-[http://pictures.reggdr.org/zebras-pictures.html zebras pictures]
-[http://free4.mikewsd.org/free-web-bar-templates.html free web bar templates]
-[http://pictures.reggdr.org/pictures-of-celebrity-braids.html pictures of celebrity braids]
-[http://football.vttthtgg.org/football-design-golf-balls.html football design golf balls]
-[http://gifts.vttthtgg.org/anniversary-gifts-o-pearls.html anniversary gifts o pearls]
-[http://work.polott.org/medicare-recipent-on-ssdi-returns-to-work---sga.html medicare recipent on ssdi returns to work   sga]
-[http://free8.mewqsd.org/sonicstage-1-5-free-download.html sonicstage 1 5 free download]
-[http://free4.mikewsd.org/free-ware-viewer-for-edaq-files.html free ware viewer for edaq files]
-[http://card.polott.org/dora-mothers-day-card.html dora mothers day card]
-[http://air.polott.org/cost-of-high-velocity-air-conditioning.html cost of high velocity air conditioning]
-[http://movies.polott.org/john-cusick-movies.html john cusick movies]
-[http://kids.vttolldd.org/kids--funny--monologue.html kids  funny  monologue]
-[http://book.polott.org/harville-henrick-s-first-book.html harville henrick s first book]
-[http://free4.mikewsd.org/free-wallpapers-and-ringtones-cell-phones.html free wallpapers and ringtones cell phones]
-[http://free4.mikewsd.org/free-wallpapers-and-backgrounds.html free wallpapers and backgrounds]
-[http://kids.vttolldd.org/india-for-kids.html india for kids]
-[http://phone.vertyg.org/causes-for-a-cordless-phone-to-be-dead.html causes for a cordless phone to be dead]
-[http://news.mikewsd.org/volcano-merapi-indonesia--news.html volcano merapi indonesia  news]
-[http://pictures.reggdr.org/pictures-for-comparative-and-superlative.html pictures for comparative and superlative]
-[http://free4.mikewsd.org/free-w600i-themes.html free w600i themes]
-[http://game.mewqsd.org/emperor-of-dune-the-game.html emperor of dune the game]
-[http://air.polott.org/liester-hot-air-blowers.html liester hot air blowers]
-[http://free4.mikewsd.org/vista-icons-free.html vista icons free]
-[http://web.mewqsd.org/buy-web-traffic.html buy web traffic]
-[http://free4.mikewsd.org/free-voodoo-curses.html free voodoo curses]
-[http://nude.vttthtgg.org/vida-guerra-nude.html vida guerra nude]
-[http://lesbian.reggdr.org/portland-lesbian.html portland lesbian]
-[http://baseball.vfrrto.org/baseball-swing-analyser.html baseball swing analyser]
-[http://windows.vfrrto.org/windows-xp-update.html windows xp update]
-[http://baseball.vfrrto.org/baseball-players-home-addresses.html baseball players home addresses]
-[http://porn.vertyg.org/free-animal-porn-movies.html free animal porn movies]
-[http://dating.brrddd.org/free-online-dating-pictures.html free online dating pictures]
-[http://sport.polott.org/timex-women-sport-watches.html timex women sport watches]
-[http://furniture.vertyg.org/antique-furniture-dealers-southafrica.html antique furniture dealers southafrica]
-[http://pharmacy.mikewsd.org/hippa-compliant-pharmacy-system.html hippa compliant pharmacy system]
-[http://money.vfrrto.org/free-online-poker-fake-money.html free online poker fake money]
-[http://phone.vertyg.org/phone-selling-scripts.html phone selling scripts]
-[http://free4.mikewsd.org/mom-photo-gallery-free-preview.html mom photo gallery free preview]
-[http://free4.mikewsd.org/free-virtual-community-websters-for-kids.html free virtual community websters for kids]
-[http://recipes.vttolldd.org/low-gi-pizza-recipes.html low gi pizza recipes]
-[http://lyrics.mewqsd.org/wandering-hands-lyrics.html wandering hands lyrics]
-[http://games.vfrrto.org/free-bingo-games-online.html free bingo games online]
-[http://work.polott.org/how-do-impact-printers-work.html how do impact printers work]
-[http://stories.vfrrto.org/true-mothers-day-stories.html true mothers day stories]
-[http://windows.vfrrto.org/windows-undelete-file.html windows undelete file]
-[http://games.vfrrto.org/2006-macabi-games.html 2006 macabi games]
-[http://pictures.reggdr.org/pictures-of-ww1.html pictures of ww1]
-[http://pussy.mewqsd.org/tight-petite-pussy-mpegs.html tight petite pussy mpegs]
-[http://porn.vertyg.org/free-teen-lesbians-porn-pictures.html free teen lesbians porn pictures]
-[http://free7.vttolldd.org/anti-virus-scanners-for-free.html anti virus scanners for free]
-[http://air.polott.org/air-force-uniforms.html air force uniforms]
-[http://dvd.mikewsd.org/convert-wmv-dvd.html convert wmv dvd]
-[http://map.reggdr.org/map-of-the-villages--fl.html map of the villages  fl]
-[http://news.mikewsd.org/bowling-green-state-university-news-service.html bowling green state university news service]
-[http://free4.mikewsd.org/free-video-guitar-tabs.html free video guitar tabs]
-[http://free4.mikewsd.org/free-plump-gallery.html free plump gallery]
-[http://pictures.reggdr.org/sexy-eva-longoria-pictures.html sexy eva longoria pictures]
-[http://money.vfrrto.org/earn-money-from-home-while-sleeping.html earn money from home while sleeping]
-[http://auto.mewqsd.org/access-auto-sales.html access auto sales]
-[http://dog.polott.org/a-dog-kennel.html a dog kennel]
-[http://job.vfrrto.org/job-evaluation.html job evaluation]
-[http://free2.brrddd.org/temple-of-dog-free-music-video-codes.html temple of dog free music video codes]
-[http://game.mewqsd.org/massive-multiplayer-online-game.html massive multiplayer online game]
-[http://air.polott.org/cheap-air-flights-cheap-airfares-santa-rosa.html cheap air flights cheap airfares santa rosa]
-[http://search.vttthtgg.org/search-engine-marketing-job.html search engine marketing job]
-[http://baseball.vfrrto.org/need-seattle-mariner-baseball-tickets.html need seattle mariner baseball tickets]
-[http://map.reggdr.org/map-of-narragansett-bay.html map of narragansett bay]
-[http://game.mewqsd.org/lula-3d-english-2-demo-game-walkthrough.html lula 3d english 2 demo game walkthrough]
-[http://free8.mewqsd.org/free-satellite-television-services.html free satellite television services]
-[http://travel.vttthtgg.org/cheapest-travel-prague.html cheapest travel prague]
-[http://nylon.mikewsd.org/nylon-fiberfill-coverlet--duvett-or-comforter.html nylon fiberfill coverlet  duvett or comforter]
-[http://cars.reggdr.org/cars-direct.html cars direct]
-[http://pictures.reggdr.org/fm-2006-pictures.html fm 2006 pictures]
-[http://cards.brrddd.org/free-instant-phone-cards.html free instant phone cards]
-[http://loan.vttolldd.org/government-grant-loan-small-business.html government grant loan small business]
-[http://msn.polott.org/msn-iconos-gestuales.html msn iconos gestuales]
-[http://pictures.reggdr.org/african-pictures.html african pictures]
-[http://card.polott.org/1937-royal-navy-signalling-card.html 1937 royal navy signalling card]
-[http://free4.mikewsd.org/free-unit-conversion.html free unit conversion]
-[http://pictures.reggdr.org/yogi-bear-pictures.html yogi bear pictures]
-[http://furniture.vertyg.org/furniture-stores-burlington--nc.html furniture stores burlington  nc]
-[http://free2.brrddd.org/free-henati-pics.html free henati pics]
-[http://dating.brrddd.org/alt-dating-service.html alt dating service]
-[http://google.reggdr.org/search-engine-to-replace-google.html search engine to replace google]
-[http://football.vttthtgg.org/football-lines-bet.html football lines bet]
-[http://auto.mewqsd.org/auto-franchise-for-sale.html auto franchise for sale]
-[http://half.mikewsd.org/dodge-magnum-back-half.html dodge magnum back half]
-[http://crack.mewqsd.org/toshiba-sd44-dvd-crack.html toshiba sd44 dvd crack]
-[http://loan.vttolldd.org/gmac-auto-loan-center.html gmac auto loan center]
-[http://html.vertyg.org/browserbased-html-editor.html browserbased html editor]
-[http://free4.mikewsd.org/free-tuition-catholic-school.html free tuition catholic school]
-[http://free6.vertyg.org/free-children-clip-art.html free children clip art]
-[http://name.brrddd.org/brand-name-famous.html brand name famous]
-[http://free4.mikewsd.org/free-tribal-tattoo-fonts.html free tribal tattoo fonts]
-[http://card.polott.org/02-sim-card-cheats.html 02 sim card cheats]
-[http://free4.mikewsd.org/free-trial-psp-8.html free trial psp 8]
-[http://dvd.mikewsd.org/buy-memoires-of-a-geisha-on-dvd.html buy memoires of a geisha on dvd]
-[http://lyrics.mewqsd.org/lyrics-al-tanoorah.html lyrics al tanoorah]
-[http://mp3.brrddd.org/mp3-rs100-firmware.html mp3 rs100 firmware]
-[http://furniture.vertyg.org/cherry-home-office-furniture.html cherry home office furniture]
-[http://free4.mikewsd.org/free-travel-slogans-tag-lines.html free travel slogans tag lines]
-[http://mp3.brrddd.org/mp3-to-ringtone-lg-phone.html mp3 to ringtone lg phone]
-[http://golf.brrddd.org/loft-of-a-wood-golf.html loft of a wood golf]
-[http://card.polott.org/sports-card-dealers-in-pgh-pa.html sports card dealers in pgh pa]
-[http://air.polott.org/cheap-air-flights-airline-flights-chedule-yosu.html cheap air flights airline flights chedule yosu]
-[http://medicine.reggdr.org/kids-medicine-cabinet.html kids medicine cabinet]
-[http://names.reggdr.org/names-of-the-people-in-starwars.html names of the people in starwars]
-[http://forum.polott.org/steam-forum.html steam forum]
-[http://girls.polott.org/girls-girls-girls-lyrics.html girls girls girls lyrics]
-</div>
+To learn more about what a WikiWikiWeb is, read about MoinMoin:WhyWikiWorks and the MoinMoin:WikiNature. Also, consult the MoinMoin:WikiWikiWebFaq.
+
+----
+CategoryHomepage
