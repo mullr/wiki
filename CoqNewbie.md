@@ -7,3 +7,5 @@ ComparisionWithOtherSystems
 If you are searching some little task to contribute, you might want to look at
 
 ProjectIdeas
+
+Novice coq users can submit questions to CoqNewbieQuestions.
