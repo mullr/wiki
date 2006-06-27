@@ -9,6 +9,7 @@
 ||15|| Fundamental Theorem of Integral Calculus || UserContributions/Nijmegen/CoRN||
 ||17|| De Moivre's Theorem|| UserContributions/Sophia-Antipolis/  ||
 ||20|| All Primes Equal the Sum of Two Squares || UserContributions/Sophia-Antipolis/!SumOfTwoSquare||
+||25|| Schroeder--Bernstein Theorem || UserContributions/Rocq /SCHROEDER||
 ||26|| Leibnitz's Series for Pi || UserContributions/Nijmegen/CoRN ||
 ||27|| Sum of the Angles of a Triangle|| UserContributions/Sophia-Antipolis/  ||
 ||32|| The Four Color Problem|| GeorgesGonthier [http://research.microsoft.com/~gonthier/]||
