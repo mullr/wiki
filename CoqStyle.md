@@ -16,8 +16,8 @@ For the discussion of issues related to the content of specific formalisations a
 
 {{{
 (************************************************************************)
-(* Copyright <YEAR> <AUTHOR>                                                          *)
-(* <LICENSE>                                                                                           *)
+(* Copyright <YEAR> <AUTHOR>                                            *)
+(* <LICENSE>                                                            *)
 (************************************************************************)
 }}}
 
