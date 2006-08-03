@@ -1,7 +1,11 @@
 #language en
 
-[http://c-corn.cs.kun.nl/ Constructive Coq Repository at Nijmegen]
+[http://c-corn.cs.ru.nl/ Constructive Coq Repository at Nijmegen]
 
+== FAQ about C-Corn ==
 
- == Many interesting infos ==
-[http://xwoolwl.poes.net/fisting/ | gay and hardcoreand fisting][http://xwoolwl.poes.net/pantyhose/ | wet sticky  panties][http://xwoolwl.poes.net/fat/ | adult photos fat mature][http://xwoolwl.poes.net/gay/ | hot gay twins][http://xwoolwl.poes.net/black/ | interracial dating ebony women][http://xwoolwl.poes.net/webcam/ | adult web cam communities][http://xwoolwl.poes.net/creampie/ | black creampies internal, cumshots][http://xwoolwl.poes.net/rape/ | tiny teens forced to fuck][http://xwoolwl.poes.net/cumshot/ | free info on how to give a blow job][http://xwoolwl.poes.net/asian/ | creamy asian pussy picture gallerie][http://xwoolwl.poes.net/toons/ | anime vs manga][http://xwoolwl.poes.net/zoo/ | live animal porn][http://xwoolwl.poes.net/pregnant/ | nude pics free pregnant women pic][http://xwoolwl.poes.net/celebrity/ | mr pink nude celebrity fakes][http://xwoolwl.poes.net/hairy/ | atk hairy + josie][http://xwoolwl.poes.net/lesbians/ | free strapon movies lesbian][http://xwoolwl.poes.net/amateurs/ | amateur teen porn gallery galleries][http://xwoolwl.poes.net/bizarre/ | bizarre accidents][http://xwoolwl.poes.net/pussy/ | free indian hairy pussy]
+1. In algebraic structures, why hava a separate structure for the axioms (as in [http://c-corn.cs.ru.nl/documentation/CoRN.algebra.CGroups.html#is_CGroup is_CGroup]) instead of putting the axioms with the group sturcture ([http://c-corn.cs.ru.nl/documentation/CoRN.algebra.CGroups.html#CGroup CGroup])?
+
+Sometimes the axiom structure is useful when an algebraic structure can be viewed as two different substructures.  For example the additive structure of a [http://c-corn.cs.ru.nl/documentation/CoRN.algebra.CRings.html#CRing CRing] [http://c-corn.cs.ru.nl/documentation/CoRN.algebra.CAbGroups.html#is_CAbGroup is an Abelian group] and the multiplicative stucture [http://c-corn.cs.ru.nl/documentation/CoRN.algebra.CMonoids.html#is_CMonoid is a monoid].  By using a separate structure for the axioms, it is easy for the same stursture to share the same universe.
+
+The same technique could be used to define a vector space as an Abelian group with a field action plus a distributive law.
