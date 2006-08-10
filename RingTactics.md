@@ -36,7 +36,7 @@ The above alternative doesn't support {{{LHS}}} and {{{RHS}}}; however you can a
 Tactic Notation "ringreplace" "LHS" "with" constr (b) :=
 let a := LHS in ringreplace a with b
 Tactic Notation "ringreplace" "RHS" "with" constr (b) :=
-let a := RHS in tingreplace a with b.
+let a := RHS in ringreplace a with b.
 }}}
 
 but if someone has a variable named {{{LHS}}} or {{{RHS}}}, they are on their own. ;)
