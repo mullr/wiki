@@ -16,6 +16,8 @@ end.
 
 == ringreplace ==
 
+Instead of this tactic, you can now do {{{replace a with b by ring}}} in Coq.  Unfortuately this doesn't work for {{{setoid_replace}}}
+
 This runs {{{replace a with b}}} and uses ring to solve the equality.  Works great with wiki:Self:TacticExts#LHS and wiki:Self:TacticExts#RHS.
 
 {{{#!coq
