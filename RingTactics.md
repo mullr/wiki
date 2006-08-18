@@ -42,3 +42,5 @@ let a := RHS in ringreplace a with b.
 }}}
 
 but if someone has a variable named {{{LHS}}} or {{{RHS}}}, they are on their own. ;)
+
+ringreplace LHS doesn't do what is expected when the LHS also happens to be a subexpression of the RHS.
