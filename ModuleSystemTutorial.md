@@ -114,7 +114,7 @@ Defined.
 End QDecidableOrderSig.
 }}}
 
-To use the module functor, we must apply it to this module and give the resulting module a name.  Then we can dow whatever we want with the resulting module, such as exporting it.
+To use the module functor, we must apply it to this module and give the resulting module a name.  Then we can do whatever we want with the resulting module, such as exporting it.
 
 {{{#!coq
 Module Order := DecidableOrder.Min QDecidableOrderSig.
