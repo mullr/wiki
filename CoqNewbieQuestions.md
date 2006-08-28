@@ -1,20 +1,3 @@
-==== Proof ====
-I can prove :
-{{{#!coq
-Variable U : Type.
-Variables P1 P2 : U -> Prop.
-
-Definition def1 := forall x:U, P1 x -> P2 x.
-Definition def2 := (forall x:U, P1 x) -> forall x:U, P2 x.
-
-Theorem theo1 : def1 -> def2.
-}}}
-but not :
-{{{#!coq
-Theorem theo2 : def2 -> def1.
-}}}
-It seems easy but I'm blocked. How can I prove ?
-Thanks in advance.
 ===== Debugging output for tactics =====
 
 idtac can be used to give output when writing ltac tactics for debugging reasons. However, I cannot work out how to convert Coq terms to strings. For example, I would like to see what the failed match is below:
