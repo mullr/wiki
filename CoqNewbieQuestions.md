@@ -12,6 +12,8 @@ Ltac test x :=
 
 "idtac x" doesn't work because x isn't a string. How do I convert x to a string?
 
+'''Suggested solution:''' Use `pose (name := x)` in place of `idtac x`.
+
 ===== Can commutivity of or be proven? =====
 
 {{{#!coq 
