@@ -7,7 +7,6 @@ For example
 
 {{{#!coq
 
-
 Fixpoint log_inf (p:positive) : Z :=
   match p with
   | xH => 0   | xO q => Zsucc (log_inf q)   | xI q => Zsucc (log_inf q)   end.
