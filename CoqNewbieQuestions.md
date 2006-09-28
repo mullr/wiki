@@ -25,3 +25,9 @@ No, but coq can prove
 {{{#!coq 
 Lemma or_comm : forall (A B:Prop), (A \/ B) <-> (B \/ A).
 }}}
+
+Is it consistent to add as an axiom
+{{{#!coq
+Hypothesis extprop : forall (C D:Prop), (C <-> D) <-> (C = D).
+}}}
+? (I don't suppose it's ''useful''.)
