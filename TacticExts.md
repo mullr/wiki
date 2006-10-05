@@ -7,6 +7,8 @@
 {{{#!coq
 Ltac dcase x := generalize (refl_equal x); pattern x at -1; case x.
 }}}
+NB: This tactic has been integrated in Coq >= 8.1beta under the name {{{case_eq}}}
+
 === ApplyFwd ===
 
 {{{ApplyFwd}}} is intended to allow you to apply lemmas of the form
