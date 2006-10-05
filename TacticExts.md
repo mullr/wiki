@@ -7,7 +7,7 @@
 {{{#!coq
 Ltac dcase x := generalize (refl_equal x); pattern x at -1; case x.
 }}}
-NB: This tactic has been integrated in Coq >= 8.1beta under the name {{{case_eq}}}
+'''NB''': This tactic has been integrated in Coq >= 8.1beta under the name {{{case_eq}}}
 
 === ApplyFwd ===
 
@@ -157,6 +157,12 @@ end.
 
 [[Anchor(RewriteAll)]]
 === RewriteAll ===
+
+'''NB''': A similar {{{rewrite_all}}} has been integrated in Coq >= 8.1beta
+(see file {{{theories/Init/Tactics.v}}}). Moreover, in the release following 8.1beta, 
+the newly allowed synax {{{rewrite ... in *}}} permits to define {{{rewrite_all}}}
+with a simple {{{repeat rewrite ... in *}}}.
+
 
 Given an assumption {{{H : t1 = t2}}}, 
 the tactic {{{rewrite_all H}}} replaces {{{t1}}} with {{{t2}}} 
