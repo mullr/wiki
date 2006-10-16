@@ -60,15 +60,6 @@ first
 
 This tactic is useful when carefully unfolding definitions, for instance inductive ones.
 It also shows the use of [http://pauillac.inria.fr/coq/doc/Reference-Manual013.html#toc71 tactic notation].
-{{{#!coq
-Tactic Notation "expand" reference (t) "until" constr (s):=
-  let x:=fresh"x" in 
-  set (x:=s); unfold t; fold t;  unfold x.
-}}}
-
-This tactic doesn't seem to work if x is a variable name used in the current context?  Is there a fix? -- RussellOConnor
-
-It has been suggested that the following will work.  Can someone verify this? -- RussellOConnor
 
 {{{#!coq
 Tactic Notation "expand" reference (t) "until" constr (s):=
