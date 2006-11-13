@@ -13,6 +13,8 @@ See Top100MathematicalTheoremsInCoq and [http://www.cs.ru.nl/~freek/100/ Formali
 
 See [http://fermatslasttheorem.blogspot.com/2005/05/fermats-last-theorem-proof-for-n3.html Fermat's Last Theorem: Proof for n=3].
 
+[http://nshmyrev.narod.ru/temp/fermat4.tar.gz] start of the proof.
+
 == Estimated Difficulty ==
 
 {*} {*} {o} {o} {o} {o} {o} {o} ''(change the estimate if you disagree)''
