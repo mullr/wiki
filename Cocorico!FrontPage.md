@@ -24,6 +24,7 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
   * TheSource of Coq, which is written in [http://caml.inria.fr/ocaml/index.en.html Objective Caml]
   * irc channel about Coq: [irc://irc.freenode.net/%23coq #coq] on irc.freenode.net. (Not very active but everything may change)
   * ProjectIdeas for a list of small or large projects to be formalized in Coq
+  * An experimental [http://hair-dryer.cs.ru.nl:1024/ Coq web interface].
 == About Cocorico! ==
   * RecentChanges: see where people are currently working
   * WikiSandBox: feel free to change this page and experiment with editing
