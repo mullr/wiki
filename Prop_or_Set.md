@@ -4,7 +4,7 @@ There are several philosophies to follow to help you decide whether to make your
 
 == How Many Objects Per Type Philosophy ==
 
-If your type could have two or more indistiguishable objects, put it in {{{Set}}} otherwise put it in {{{Prop}}}.  In Coq (without addtional axioms) extensionally equivalent functions are indistinguishable. According to this philosophy {{{(lt a b)}}} should be in {{{Prop}}} because there can be only one proof that ''a'' < ''b'' for natural numbers.  For (constructive) real number {{{a < b}}} should be in {{{Set}}} because in this case there are multiple proofs that ''a'' < ''b''.  Indeed the (constructive) logarithm function, ln(''x''), requires a proof that 0 < ''x'' to be in Set because the logarithm function requires a (constructive) proof that its arguement is positive to operate (anyone have a reference?).
+If your type could have two or more distiguishable objects, put it in {{{Set}}} otherwise put it in {{{Prop}}}.  In Coq (without addtional axioms) extensionally equivalent functions are indistinguishable. According to this philosophy {{{(lt a b)}}} should be in {{{Prop}}} because there can be only one proof that ''a'' < ''b'' for natural numbers.  For (constructive) real number {{{a < b}}} should be in {{{Set}}} because in this case there are multiple proofs that ''a'' < ''b''.  Indeed the (constructive) logarithm function, ln(''x''), requires a proof that 0 < ''x'' to be in Set because the logarithm function requires a (constructive) proof that its arguement is positive to operate (anyone have a reference?).
 
 The basis of this philosophy is that an object from a type with at most one object contributes no information, and therefore may safely be removed during program extraction.
 
