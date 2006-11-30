@@ -47,6 +47,3 @@ To learn more about what a WikiWikiWeb is, read about MoinMoin:WhyWikiWorks and 
 
 ----
 CategoryHomepage
-<u style=display:none>
-
-</u>
