@@ -109,4 +109,4 @@ Qed.
 
 End Decida.
 }}} 
-The extraction of this code gives something like a functionnal "while". 
+The extraction of this code gives something like a functional "while". 
