@@ -1,7 +1,7 @@
 #language en
-= Ocaml code with highlighted syntax =
+= OCaml code with highlighted syntax =
 
-We use the Ocaml parser written by Jakub Piotr Nowak.
+We use the OCaml parser written by Jakub Piotr Nowak.
 
 You can type
 
