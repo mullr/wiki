@@ -17,5 +17,6 @@ If you are logged in you can log out by clicking on UserPreferences (here or on 
 
 
  * ["HelpForCocorico!/ColorizedCoqSyntax"]
+ * ["HelpForCocorico!/ColorizedOCamlSyntax"]
  * ["HelpForCocorico!/AddingMathViaLatex"]
  * ["HelpForCocorico!/ColorizedOtherLanguages"]
