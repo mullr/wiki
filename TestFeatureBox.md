@@ -143,13 +143,6 @@ scaleAndNormSquared a (x:xs) = (a*x:recScale, x*x+recNormSquared)
   where (recScale, recNormSquared) = scaleAndNormSquared a xs
 }}}
 
-Now using the laziness of Haskell, and recursive binding, we can use {{{scaleAndNormSquared}}} to create a virtually one-pass normalization. We need to scale by the reciprocal of the square-root of {{{normSquared}}}.  So we say exactly that.
-
-{{{#!syntax haskell
-circNormalize :: Vector -> Vector
-circNormalize v = scaledVector
-  where (scaledVector, normSquared) = scaleAndNormSquared (recip (sqrt normSquared)) v
-}}}
 
 Now using the laziness of Haskell, and recursive binding, we can use {{{scaleAndNormSquared}}} to create a virtually one-pass normalization. We need to scale by the reciprocal of the square-root of {{{normSquared}}}.  So we say exactly that.
 
@@ -158,5 +151,3 @@ circNormalize :: Vector -> Vector
 circNormalize v = scaledVector
   where (scaledVector, normSquared) = scaleAndNormSquared (recip (sqrt normSquared)) v
 }}}
-
-#[[[PageHits]]]
