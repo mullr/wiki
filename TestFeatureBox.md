@@ -3,6 +3,7 @@
 [[AttachList]]
 
 inline:test.pas
+inline:toast.v
 
 casino
 
