@@ -159,4 +159,4 @@ circNormalize v = scaledVector
   where (scaledVector, normSquared) = scaleAndNormSquared (recip (sqrt normSquared)) v
 }}}
 
-[[[PageHits]]]
+#[[[PageHits]]]
