@@ -2,8 +2,8 @@
 
 [[AttachList]]
 
+inline:test.pas
 attachment:tust.c
-attachment:toast.v
 
 casino
 
