@@ -3,7 +3,6 @@
 [[AttachList]]
 
 inline:test.pas
-attachment:tust.c
 
 casino
 
