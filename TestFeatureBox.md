@@ -2,7 +2,7 @@
 
 [[AttachList]]
 
-inline:tust.c
+attachment:tust.c
 
 
 casino
