@@ -2,7 +2,6 @@
 
 [[AttachList]]
 
-inline:test.pas
 inline:tust.c
 inline:toast.v
 
