@@ -7,23 +7,24 @@ Sometimes one does no care about the order one processes the numbers, such as wh
 === Solution for N ===
 
 {{{#!coq
-Fixpoint predecessorsInNHelp (cont:N -> N) (x:positive) {struct x} : list N :=
+Fixpoint predecessorsInNHelp (cont:N -> N) (x:positive) {struct x} : list N -> list N :=
 match x with
-|xI x'=> (cont (Npos (xO x')))::
-         ((predecessorsInNHelp (fun n => cont (Ndouble n)) x')++
-          (predecessorsInNHelp (fun n => cont (Ndouble_plus_one n)) x'))
+|xI x'=> (fun l => (cont (Npos (xO x')))::
+         ((predecessorsInNHelp (fun n => cont (Ndouble n)) x')
+         ((predecessorsInNHelp (fun n => cont (Ndouble_plus_one n)) x') l)))
 
-|xO x'=> (predecessorsInNHelp (fun n => cont (Ndouble n)) x')++
-         (predecessorsInNHelp (fun n => cont (Ndouble_plus_one n)) x')
-|xH => (cont N0)::nil
+|xO x'=> (fun l =>
+         ((predecessorsInNHelp (fun n => cont (Ndouble n)) x')
+         ((predecessorsInNHelp (fun n => cont (Ndouble_plus_one n)) x') l)))
+|xH => (cons (cont N0))
 end.
 
-Definition predecessorsInN (n:positive) := predecessorsInNHelp (fun x => x) n.
+Definition predecessorsInN (n:positive) := predecessorsInNHelp (fun x => x) n nil.
 
 Eval compute in predecessorsInN 10.
 }}}
 
-{{{predecessorsInN}}} takes a {{{positive}}} number {{{n}}} and returns a {{{list N}}} of numbers {0, ..., n - 1}
+{{{predecessorsInN}}} takes a {{{positive}}} number {{{n}}} and returns a {{{list N}}} of numbers {0, ..., {{{n - 1}}}}
 
 This solution was developed by BasSpitters and RussellOconnor
 
@@ -55,8 +56,8 @@ Eval compute in predecessorsInPositive 10.
 Eval compute in predecessorsInPositiveStrict 10.
 }}}
 
-{{{predecessorsInPositive}}} takes a {{{positive}}} number {{{n}}} and returns a {{{list positive}}} of numbers {1, ..., n}
-{{{predecessorsInPositiveStrict}}} takes a {{{positive}}} number {{{n}}} and returns a {{{list positive}}} of numbers {1, ..., n - 1}
+{{{predecessorsInPositive}}} takes a {{{positive}}} number {{{n}}} and returns a {{{list positive}}} of numbers {1, ..., {{{n}}}}
+{{{predecessorsInPositiveStrict}}} takes a {{{positive}}} number {{{n}}} and returns a {{{list positive}}} of numbers {1, ..., {{{n - 1}}}}
 
 This solution was developed by PierreCorbineau.
 
