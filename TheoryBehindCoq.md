@@ -12,6 +12,8 @@
 
   [http://www.cs.vu.nl/~tcs/lv/notes.html Lecture notes by Femke van Raamsdonk]
 
+  [http://cel.archives-ouvertes.fr/inria-00083975 Lecture notes on Lambda calculus, types and their use in proofs, by Yves Bertot] (in French)
+
 = Metatheory of Calculus of Constructions =
 
  * [http://www.cs.chalmers.se/~coquand/meta.pdf Metamathematical Investigations of a Calculus of Construction, Thierry Coquand] 
