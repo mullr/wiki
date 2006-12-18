@@ -12,6 +12,10 @@
 
   [http://www.cs.vu.nl/~tcs/lv/notes.html Lecture notes by Femke van Raamsdonk]
 
+= Metatheory of Calculus of Constructions =
+
+ * [http://www.cs.chalmers.se/~coquand/meta.pdf Metamathematical Investigations of a Calculus of Construction, Thierry Coquand] 
+
 = Metatheory of Inductive Types =
 
  * [http://www.lri.fr/~paulin/habilitation.ps.gz Definitions and further issues regarding inductive types in Coq, Christine Paulin] (in French)
