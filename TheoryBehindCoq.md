@@ -11,8 +11,6 @@
   http://www.europeindia.org/cd09/lectures/lect04/index.htm
 
   [http://www.cs.vu.nl/~tcs/lv/notes.html Lecture notes by Femke van Raamsdonk]
- 
-  [http://cel.archives-ouvertes.fr/inria-00001173 Tutorial by Yves Bertot]
 
 = Metatheory of Calculus of Constructions =
 
