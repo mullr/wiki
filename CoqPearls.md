@@ -2,3 +2,4 @@
  * QuickSort: an implementation of quicksort in Coq
  * InductiveFiniteTypes or alternatively FixpointFiniteTypes
  * ListOfPredecessors for binary numbers
+ * ExistsFromPropToSet: Existential implies Sigma for decidable properties on {{{nat}}}
