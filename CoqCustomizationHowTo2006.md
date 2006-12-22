@@ -1,13 +1,18 @@
 #language en
+#pragma section-numbers 2
 ## Initial Version by Pierre Corbineau
 
 = Coq customization: A tutorial =
 
 The object of this document is to guide the user towards the
 implementation of new commands or tatctics for the Coq proof
-assistant. It assumes familiarity with Objective Caml and a basic knoledge of the use of GNU Make.
+assistant. It assumes familiarity with Objective Caml and a basic knowledge of the use of GNU Make.
+
+[[TableOfContents]]
 
 == Before you start ==
+
+''Written by PierreCorbineau''
 
 === Compiler ===
 
@@ -31,6 +36,7 @@ To access earlier versions, use the {{{-r}}} ''nnnn'' option.
 
 == Basic setup ==
 
+''Written by PierreCorbineau''
 
 === Running {{{./configure }}} ===
 
@@ -106,6 +112,8 @@ The compiling process require preprocessing, which requires some compiling, this
 
 
 == A first example ==
+
+''Written by PierreCorbineau''
 
 For our example, we will add a new directory {{{custom}}} in the {{{contrib/}}} subdirectory, which is the standard place for additional files.
 
