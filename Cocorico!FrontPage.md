@@ -25,7 +25,7 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
   * CoqCustomizationHowTo
   * irc channel about Coq: [irc://irc.freenode.net/%23coq #coq] on irc.freenode.net. (Not very active but everything may change)
   * ProjectIdeas for a list of small or large projects to be formalized in Coq
-  * An experimental [http://prover.cs.ru.nl:81/  Coq Web Interface].
+  * An experimental [http://prover.cs.ru.nl/  Coq Web Interface].
 == About Cocorico! ==
   * RecentChanges: see where people are currently working
   * WikiSandBox: feel free to change this page and experiment with editing
