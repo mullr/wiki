@@ -38,7 +38,7 @@
 
 = (In)dependence of Axioms =
 
- * [http://www.tcs.informatik.uni-muenchen.de/~mhofmann/venedig.dvi.gz Groupoid model of intensional Martin-Lof type theory, Martin Hofmann and Thomas Streicher]: This shows the independence of Axiom {{{K}}}, which means there is only one proof of reflexivity statement.
+ * [http://www.tcs.informatik.uni-muenchen.de/~mhofmann/venedig.dvi.gz Groupoid model of intensional Martin-Lof type theory, Martin Hofmann and Thomas Streicher]: This shows the independence of Axiom {{{K}}}, which states that there is only one proof of reflexivity statement.
 
  * [http://www.pps.jussieu.fr/~miquel/publis/these.pdf Excluded Middle in impredicative Set and extensionality of functions are refuted by Miquel's realizability model of CC_{omega}, Alexandre Miquel]
  
