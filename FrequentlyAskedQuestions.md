@@ -12,3 +12,7 @@ Many questions are answered in the official [http://coq.inria.fr/doc/faq.html Co
  1. Do objects living in {{{Prop}}} ever need to be evaluated?  See PropsGuardingIotaReduction.
  1. When using {{{eapply}}}, how can I instantiate the question marks i.e. the ["ExistentialVariablesInEapply"]?
  1. What is the difference between ["Require Import and Require Export"]?
+
+== Coqide ==
+
+ 1. ["CoqIDE crashes under KDE"] (Kubuntu) when I open a query window.
