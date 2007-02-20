@@ -1,6 +1,6 @@
 ## page was renamed from CocoricoFrontPage
 #pragma section-numbers off
-#language en 	
+#language en	
 
 [[TableOfContents]]
 
@@ -45,5 +45,5 @@ A Wiki is a collaborative site, anyone can contribute and share:
  * For all help pages see the HelpContents bar at the top of this page.
 
 To learn more about what a WikiWikiWeb is, read about MoinMoin:WhyWikiWorks and the MoinMoin:WikiNature. Also, consult the MoinMoin:WikiWikiWebFaq.
-
+----
 CategoryHomepage
