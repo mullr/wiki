@@ -13,6 +13,7 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
   * FrequentlyAskedQuestions about Coq
   * StandardLibrary  for a discussion of the standard library of Coq
   * ["Documentation"] for a list of manuals, books and tutorials
+  * [http://www.nabble.com/ Nabble] Coq forum
   * ["Tools"] that are built on top of Coq or are otherwise related to Coq
   * UserContributions and FormalizedAndVerified for a discussion of the material that is formalized and verified in Coq.
   * CoqPearls small bits of pretty Coq code
