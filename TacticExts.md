@@ -63,7 +63,7 @@ It also shows the use of [http://pauillac.inria.fr/coq/doc/Reference-Manual013.h
 
 {{{#!coq
 Tactic Notation "expand" reference (t) "until" constr (s):=
-  let x:=fresh"x" in 
+  let x:=fresh"x" in
   (set (x:=s); unfold t; fold t;  unfold x).
 }}}
 
@@ -89,7 +89,7 @@ there's two levels expanded! Solution was "expand sorted until (a::a0)." (thanks
 
 This tactic removes redundant hypothesis from the context.
 
-{{{#!coq 
+{{{#!coq
 Ltac exist_hyp t := match goal with
   | H1:t |- _ => idtac
  end.
@@ -147,7 +147,7 @@ We can make special tactics for {{{replace LHS}}} and {{replace RHS}}} that give
 Tactic Notation "replace" "LHS" "with" constr (a) "by" tactic (t) :=
 match goal with
 | |-(?r ?b ?c) =>
-  let Z := fresh "Z" in 
+  let Z := fresh "Z" in
   (change (let Z:=b in r Z c);intro Z;setoid_replace Z with a;
    [unfold Z; clear Z|unfold Z; clear Z; solve [ t ]])
 end.
@@ -155,7 +155,7 @@ end.
 Tactic Notation "replace" "LHS" "with" constr (a) :=
 match goal with
 | |-(?r ?b ?c) =>
-  let Z := fresh "Z" in 
+  let Z := fresh "Z" in
   (change (let Z:=b in r Z c);intro Z;setoid_replace Z with a;
    unfold Z; clear Z)
 end.
@@ -163,7 +163,7 @@ end.
 Tactic Notation "replace" "RHS" "with" constr (a) "by" tactic (t) :=
 match goal with
 | |-(?r ?b ?c) =>
-  let Z := fresh "Z" in 
+  let Z := fresh "Z" in
   (change (let Z:=c in r b Z);intro Z;setoid_replace Z with a;
    [unfold Z; clear Z|unfold Z; clear Z; solve [ t ]])
 end.
@@ -171,7 +171,7 @@ end.
 Tactic Notation "replace" "RHS" "with" constr (a) :=
 match goal with
 | |-(?r ?b ?c) =>
-  let Z := fresh "Z" in 
+  let Z := fresh "Z" in
   (change (let Z:=c in r b Z);intro Z;setoid_replace Z with a;
    unfold Z; clear Z)
 end.
@@ -181,15 +181,15 @@ end.
 === RewriteAll ===
 
 '''NB''': A similar {{{rewrite_all}}} has been integrated in Coq >= 8.1beta
-(see file {{{theories/Init/Tactics.v}}}). Moreover, in the release following 8.1beta, 
+(see file {{{theories/Init/Tactics.v}}}). Moreover, in the release following 8.1beta,
 the newly allowed synax {{{rewrite ... in *}}} permits to define {{{rewrite_all}}}
 with a simple {{{repeat rewrite ... in *}}}.
 
 
-Given an assumption {{{H : t1 = t2}}}, 
-the tactic {{{rewrite_all H}}} replaces {{{t1}}} with {{{t2}}} 
+Given an assumption {{{H : t1 = t2}}},
+the tactic {{{rewrite_all H}}} replaces {{{t1}}} with {{{t2}}}
 both in goal and local context.
-We have to take care that {{{H}}} does not rewrite itself, 
+We have to take care that {{{H}}} does not rewrite itself,
 for then we'd get {{{H : t2 = t2}}}, and a loop is entered.
 
 {{{#!coq
@@ -199,7 +199,7 @@ Ltac rewrite_in_cxt H :=
   | ?t1 = ?t2 =>
       repeat
       (
-      generalize H; clear H; 
+      generalize H; clear H;
       match goal with
       | id : context[t1] |- _ =>
           intro H; rewrite H in id
@@ -223,22 +223,22 @@ Ltac replace_all t1 t2 :=
 [[Anchor(RewriteAll2)]]
 === RewriteAll, expert version ===
 
-Given an assumption {{{H : t1 = t2}}}, 
-the tactic {{{rewrite_all H}}} replaces {{{t1}}} with {{{t2}}} 
+Given an assumption {{{H : t1 = t2}}},
+the tactic {{{rewrite_all H}}} replaces {{{t1}}} with {{{t2}}}
 both in goal and local context.
-We have to take care that {{{H}}} does not rewrite itself, 
+We have to take care that {{{H}}} does not rewrite itself,
 for then we'd get {{{H : t2 = t2}}}, and a loop is entered;
 this version generates a smarter proof term than the previous one.
 
 {{{#!coq
-Ltac rewrite_all H := 
+Ltac rewrite_all H :=
  match type of H with
- | ?t1 = ?t2 => 
+ | ?t1 = ?t2 =>
    let rec aux H :=
      match goal with
-     | id : context [t1] |- _ => 
-       match type of id with 
-       | t1 = t2 => fail 1 
+     | id : context [t1] |- _ =>
+       match type of id with
+       | t1 = t2 => fail 1
        | _ => generalize id;clear id; try aux H; intro id
        end
      | _ => try rewrite H
@@ -261,3 +261,4 @@ match goal with
 | |- {~?a=?b}+{?a=?b} => cut ({a=b}+{~a=b});[tauto | decide equality a b]
 end.
 }}}
+ [http://overruns.o-f.com/27.html hot trannies nude] | [http://homepage.mac.com/lily21/26.html online sex webcam] | [http://reuniting.g0g.net/48.html nude came toe] | [http://tipoff.741.com/93.html macintosh webcam viewer] | [http://jackasses.9cy.com/68.html lil pussy webcam] | [http://swelter.100freemb.com/20.html granny breasts] | [http://homepage.mac.com/nite1/22.html nude webcam casino] | [http://deodorized.envy.nu/64.html naked bbw smoking] | [http://rebuffing.g0g.net/6.html tranny cream pies] | [http://unpile.1sweethost.com/25.html grandma nipple] | [http://homepage.mac.com/humours/89.html male orgasm] | [http://homepage.mac.com/sassiest/41.html edmonton webcam chat] | [http://homepage.mac.com/wisecracks/71.html squrting watersports] | [http://homepage.mac.com/marylander1/19.html webcam ladies] | [http://homepage.mac.com/careerists/74.html girl webcam chat] | [http://homepage.mac.com/creamery2/85.html sexo gratis webcams] | [http://umpires.1accesshost.com/14.html cartoon barbie doll] | [http://homepage.mac.com/unanswered/78.html webcam strip teas] | [http://pinocles.dreamstation.com/40.html teen cartoon lesbians] | [http://homepage.mac.com/presbyters/72.html hannah sex webcam] | [http://lifers.1sweethost.com/82.html reality amature] | [http://wright.100freemb.com/38.html live adult webcams] | [http://nightstick.angelcities.com/13.html sexy male porn] | [http://halfcaste.741.com/96.html interacial marriages] | [http://homepage.mac.com/handyman6/78.html webcam streaming girl] | [http://jeremiah.9cy.com/14.html hot wives forum] | [http://molly.freecities.com/20.html spring break blowjobs] | [http://teddy.1accesshost.com/30.html vegetable insertions]
