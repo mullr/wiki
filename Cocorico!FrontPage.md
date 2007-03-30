@@ -1,3 +1,3 @@
-<a href= http://dvd-hq.info/forum/viewtopic.php?t=451 >bdsm tgp</a>   [url=http://dvd-hq.info/forum/viewtopic.php?t=451]bdsm tgp[/url]
+<a href= http://forum.firstweekendclub.ca/viewtopic.php?t=39443 >bdsm torture</a>   [url=http://forum.firstweekendclub.ca/viewtopic.php?t=39443]bdsm torture[/url]
 ----
 CategoryTemplate
