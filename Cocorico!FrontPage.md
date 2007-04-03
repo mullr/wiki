@@ -1,4 +1,5 @@
 ## page was renamed from CocoricoFrontPage
+#acl All:read Known:read,write,revert
 #pragma section-numbers off
 #language en
 
