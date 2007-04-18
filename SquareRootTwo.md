@@ -46,8 +46,8 @@ Proof.
 Qed.
 }}}
 
-For the second solution, the proof of integer statement is based on more
-manual work:
+For the second solution, the proof of `integer_statement` is based on more
+manual work, then we can re-use the same final lemma.
 
 {{{#!coq
 Require Import ZArith ZArithRing Omega Zwf.
