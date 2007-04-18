@@ -23,12 +23,12 @@ Proof.
 intros [n [p [Heq Hnz]]]; pose (n' := Zabs n); pose (p':=Zabs p).
 assert (facts : 0 <= Zabs n /\ 0 <= Zabs p /\ Zabs n2=n2
          /\ Zabs p2 = p2) by auto.
-assert (H : (0 < n' /\ 0 <= p' /\ n' ^2 = 2* p' ^2))
+assert (H : (0 < n' /\ 0 <= p' /\ n' ^ 2 = 2* p' ^ 2))
 by (destruct facts as [Hf1 [Hf2 [Hf3 Hf4]]]; unfold n', p'; micromega).
 generalize p' H; elim n' using (well_founded_ind (Zwf_well_founded 0)); clear.
 intros n IHn p [Hn [Hp Heq]].
 assert (Hzwf : Zwf 0 (2*p-n) n) by (unfold Zwf; zrelax; micromega).
-assert (Hdecr : 0 < 2*p-n /\ 0 <= n-p /\ (2*p-n)2=2*(n-p)2)
+assert (Hdecr : 0 < 2*p-n /\ 0 <= n-p /\ (2*p-n)^2=2*(n-p)^2)
 by (zrelax; micromega).
 apply (IHn (2*p-n) Hzwf (n-p) Hdecr).
 Qed.
