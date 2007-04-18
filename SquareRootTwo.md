@@ -1,6 +1,6 @@
 The plain language proof is as follows,
 ''if there is an n such that for some p, n^2^ = 2p^2^, then let's take the least positive such n and
-the corresponding p,  in this case we have (i) (2p-n)^2^=2(n-p)^2^ and (ii) (2p-n) < n, thus a contradiction.''
+the corresponding positive p,  in this case we have (i) (2p-n)^2^=2(n-p)^2^ and (ii) (2p-n) < n, thus a contradiction.''
 
 The key to the proof is algebraic computation to obtain (i) and solving systems of inequations to obtain (ii).
 These can be done very quickly using the "micromega" tactic proposed in "http://www.irisa.fr/lande/fbesson/fbesson.html".
@@ -8,7 +8,7 @@ These can be done very quickly using the "micromega" tactic proposed in "http://
 We give two solutions, first a solution that uses micromega, and second a solution that uses only tactics that are
 provided in standard Coq V8.1.
 
-{{{
+{{{#!coq
 Require Import ZArith Zwf Micromegatac QArith.
 Open Scope Z_scope.
 
@@ -49,7 +49,7 @@ Qed.
 For the second solution, the proof of integer statement is based on more
 manual work:
 
-{{{
+{{{#!coq
 Require Import ZArith ZArithRing Omega Zwf.
 Open Scope Z_scope.
 
