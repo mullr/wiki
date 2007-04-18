@@ -35,7 +35,7 @@ Qed.
 
 Open Scope Q_scope.
 
-Theorem sqrt2_not_rational : ~exists x:Q, x2==2#1.
+Theorem sqrt2_not_rational : ~exists x:Q, x ^ 2==2#1.
 Proof.
  unfold Qeq; intros [x]; simpl (Qden (2#1)); rewrite Zmult_1_r.
  intros HQeq.
