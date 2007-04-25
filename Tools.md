@@ -5,7 +5,7 @@ Some of the tools listed here are part of bigger projects that support other pro
 
 == Interface for Editing Proofs ==
 
- * CoqIDE [http://coq.inria.fr/coqide/]
+ * ["CoqIDE"] [http://coq.inria.fr/coqide/]
    The graphical user interface distributed with Coq.
  * PCoq [http://www-sop.inria.fr/lemme/pcoq/]
    A graphical user interface for Coq. The environment provides ways to edit structurally formulas and commands, new notations can easily be added. It allows proof by pointing.
@@ -15,6 +15,7 @@ Some of the tools listed here are part of bigger projects that support other pro
   !TmCoq integrates Coq within TeXmacs.
  * !GeoProof [http://home.gna.org/geoproof/]
   !GeoProof is a dynamic geometry software, with can communicate with CoqIDE to build the formula corresponding to a geometry figure interactively.
+ * tmEgg: Coq plugin for the TeXmacs
 
 == Interface for Browsing Proofs ==
 
