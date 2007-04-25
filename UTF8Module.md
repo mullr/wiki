@@ -6,3 +6,11 @@ This file is created from scratch. Feel free to enlarge/shorten/modify it. It is
 
 
 inline:utf8.v
+
+= Usage =
+
+This file (and all the files based on the notation defined in this file) should be saved with the charset encoding UTF-8, otherwise you won't be able to compile it with `coqc`. In order to ensure this in CoqIde you should go to 
+
+'''Edit''' -> ''' Preferences''' -> '''Files''' 
+
+and set '''File charset encoding''' to UTF-8.
