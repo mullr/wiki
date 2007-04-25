@@ -13,4 +13,4 @@ This file (and all the files based on the notation defined in this file) should 
 
 '''Edit''' -> ''' Preferences''' -> '''Files''' 
 
-and set '''File charset encoding''' to UTF-8.
+and set '''File charset encoding''' to UTF-8. (This is also explained in [http://coq.inria.fr/V8.1/refman/Reference-Manual016.html#toc100 Section 14.8.3 of the Reference Manual].)
