@@ -15,7 +15,7 @@ Some of the tools listed here are part of bigger projects that support other pro
   !TmCoq integrates Coq within TeXmacs.
  * !GeoProof [http://home.gna.org/geoproof/]
   !GeoProof is a dynamic geometry software, with can communicate with CoqIDE to build the formula corresponding to a geometry figure interactively.
- * tmEgg: Coq plugin for the TeXmacs
+ * tmEgg: Coq plugin for TeXmacs
 
 == Interface for Browsing Proofs ==
 
