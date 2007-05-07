@@ -4,7 +4,14 @@ Many questions are answered in the official [http://coq.inria.fr/doc/faq.html Co
  
  1. Should I put my type in ["Prop or Set"]?
  1. How does the MatchAsInReturn syntax work?
+ 1. Why can't I prove (forall x, f x = g x) -> f = g? (see ["extensional equality"])
+
+---- /!\ '''Edit conflict - other version:''' ----
  1. Why can't I prove (forall x, f x = g x) -> f = g? (see ["extentional equality"])
+
+---- /!\ '''Edit conflict - your version:''' ----
+
+---- /!\ '''End of edit conflict''' ----
  1. Isn't IntensionalEquality useless?
  1. How do I get DependentInversion to work in my case?
  1. Why not ["WTypeInsteadOfInductiveTypes"]?
