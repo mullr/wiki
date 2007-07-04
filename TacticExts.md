@@ -141,7 +141,7 @@ match goal with
 end.
 }}}
 
-We can make special tactics for {{{replace LHS}}} and {{replace RHS}}} that give similar functionality to {{{step}}}.
+We can make special tactics for {{{replace LHS}}} and {{{replace RHS}}} that give similar functionality to {{{step}}}.
 
 {{{#!coq
 Tactic Notation "replace" "LHS" "with" constr (a) "by" tactic (t) :=
