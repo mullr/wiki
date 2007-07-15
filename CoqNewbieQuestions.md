@@ -31,3 +31,7 @@ Is it consistent to add as an axiom
 Hypothesis extprop : forall (C D:Prop), (C <-> D) -> (C = D).
 }}}
 ? (I don't suppose it's ''useful''.)
+
+
+===== Syntax Question: What does ... mean? =====
+What do the triple elipses mean  after a tactic? E.g. how is {{{induction 1... }}} different than just {{{induction 1.}}}
