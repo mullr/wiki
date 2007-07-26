@@ -35,3 +35,5 @@ Hypothesis extprop : forall (C D:Prop), (C <-> D) -> (C = D).
 
 ===== Syntax Question: What does ... mean? =====
 What do the triple elipses mean  after a tactic? E.g. how is {{{induction 1... }}} different than just {{{induction 1.}}}
+
+  If you start your proof with {{{Proof with foo.}}} then {{{induction 1...}}} is equivalent to {{{induction 1; foo.}}}. This is explained in the Reference Manual in [http://coq.inria.fr/V8.1/refman/Reference-Manual010.html#@command186]. 
