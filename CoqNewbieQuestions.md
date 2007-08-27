@@ -49,3 +49,7 @@ induction 1...
 induction 1; foo.
 }}}
  This is explained in the Reference Manual in [http://coq.inria.fr/V8.1/refman/Reference-Manual010.html#@command186]. 
+
+===== Operational Semantics of Coq =====
+
+Is there a paper which describes a small-(or big) step operational semantics for core coq? 
