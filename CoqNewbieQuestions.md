@@ -108,3 +108,25 @@ In my intended applications, I will ''never'' want to refer to the entire operat
 So in the end, here's what I'd like to do, and maybe there's some way to do it that I just don't realise: I want to use settings that allow me (preferably automatically, but manually after each definition if necessary) to define '''comp''' and '''id''' with implicit arguments as above, but ''also'' tell Coq that (when they appear in a later type construction) both '''comp''' and '''id''' should always appear with inferred arguments, ''even if'' there are no explicit arguments following. Is this possible?
 
 —TobyBartels
+
+
+Here's another example, which doesn't show all of the issues above, but does demonstrate quickly that I really don't understand what's going on:
+
+{{{#!coq
+Set Implicit Arguments.
+Set Contextual Implicit.
+
+Inductive sum_dep (A: Set) (B: A -> Set): Set := |pair_dep (a: A) (b: B a).
+Print pair_dep.
+
+Definition sum_indep (A B: Set): Set := sum_dep (fun a: A => B).
+Definition pair_indep (A B: Set) (a: A) (b: B): sum_indep A B := pair_dep (B := fun _ => B) a b.
+Print pair_indep.
+Definition pair_indep' (A B: Set) (a: A) (b: B): sum_indep A B := pair_dep a b.
+}}}
+
+(Note that the final line causes an error.)
+
+I've used an extra setting, just to get Coq to automatically make '''B''' implicit, but I could have made it implicit by hand as well. Now, I can understand Coq's reluctance to make the inference called for in '''pair_indep''''; although there's really only one possible answer, it's a strange one, and a good compiler ''should'' at least issue a warning in such a circumstance. But what I really don't understand is why that it expects ''me'' to make precisely that inference in its printout for '''pair_indep'''! I must define it with '''(B := ...)''', but Coq doesn't have to print it that way???
+
+—TobyBartels
