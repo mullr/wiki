@@ -1,1 +1,103 @@
-<a href="http://mysiteup.my2gig.com/insurance-quotes/healthcare-insurance-quotes/compare-term-life-insurance-quotes.html">compare term life insurance quotes</a> compare term life insurance quotes ; <a href="http://mysiteup.my2gig.com/free-credit-reports/free-credit-reports-through-snail-mail/free-credit-reports-and-fico-scores-online.html">free credit reports and fico scores online</a> free credit reports and fico scores online ; <a href="http://mysiteup.my2gig.com/insurance-quotes/calgary-car-insurance-quotes/car-insurance-quotes-in-canada.html">car insurance quotes in canada</a> car insurance quotes in canada ; <a href="http://mysiteup.my2gig.com/student-loans/average-student-loans/health-professions-student-loans.html">health professions student loans</a> health professions student loans ; <a href="http://mysiteup.my2gig.com/home-loans/low-interest-home-loans/e-loan-mortgage-refinance-home-equity-auto-loans-savings-cds.html">e loan mortgage refinance home equity auto loans savings cds</a> e loan mortgage refinance home equity auto loans savings cds ; <a href="http://mysiteup.my2gig.com/student-loans/student-loans-interest-rates-federal/fdr-federal-student-loans.html">fdr federal student loans</a> fdr federal student loans ; <a href="http://mysiteup.my2gig.com/citibank/when-sears-citibank-send-account-to-collection/citibank-offer-unsecured-debt-consolidation-loans.html">citibank offer unsecured debt consolidation loans</a> citibank offer unsecured debt consolidation loans ; <a href="http://mysiteup.my2gig.com/insurance-quotes/california-health-insurance-online-quotes/liability-insurance-quotes.html">liability insurance quotes</a> liability insurance quotes ; <a href="http://mysiteup.my2gig.com/aapl-summary-for-apple-inc-yahoo-finance/yahoo-finance-moscow-stock-exchange.html">yahoo finance moscow stock exchange</a> yahoo finance moscow stock exchange ; <a href="http://mysiteup.my2gig.com/credit-repair/legal-grip-credit-repair-training-tips/advantage-credit-repair-solutions.html">advantage credit repair solutions</a> advantage credit repair solutions ; 
+## page was renamed from CocoricoFrontPage
+#pragma section-numbers off
+#language en
+
+[[TableOfContents]]
+
+Here we will present ideas of what constitutes a well written Coq source file. We discuss the general issues that affect the ''shape'' of the Coq scripts and consequently their  ''legibility'' and ''re-usability''. Yes, we are interested in reading and editing ASCII Coq sources!
+
+This is intended to be a collection of suggestions for good style and good practice, acknowledging that usually more than one way is possible. 
+
+For the discussion of issues related to the content of specific formalisations and general (type theoretic) tips and traps to avoid please use TipsAndTricks.
+
+= File Structure =
+
+ * Following the shape of the files in the standard library of Coq, start the Coq files with a comment of the form
+
+{{{
+(************************************************************************)
+(* Copyright <YEAR> <AUTHOR>                                            *)
+(* <LICENSE>                                                            *)
+(************************************************************************)
+}}}
+
+ This will credit the author(s) and clarifies any license issues, which is necessary for re-usability of your code.
+
+ *  Use [http://coq.inria.fr/doc/Reference-Manual015.html#toc80 coqdoc]-style comments graciously, to clarify the structure of your formalisation. (However, try not to use them ''inside'' proofs. Instead use ordinary `(*  *)` comments.) This is because proofs are less likely to be processed via coqdoc and usually they are suppressed.
+ 
+ * Use blank lines consistently (I.e. use the same number of blank lines between all lemmas in a section).
+
+ * End the file with a newline character.
+
+= Layout =
+
+== Layout of Proofs ==
+
+ * Start the proofs using a line containing  `Proof.`
+ 
+ * When a tactic generates more than one subgoal use indentation for tactics that are used for solving each subgoal.
+
+ * When a tactic solves a subgoal use `...` (triple dot) instead of `.` (single dot). 
+
+ * Use comments when using complicated or lengthy proof segments on subgoals of `case`, `induction`, `destruct` and their friends.
+
+ * Use blank lines to separate different segments of the proof. 
+
+{{{#!coq
+Lemma foo:
+Proof.
+ <body of tactics before case>.
+ case (compare_with_zero X).
+  (* 0 < X *)
+   <body of tactics>...
+  (* X < 0  *)
+   <body of tactics>... 
+  (* X = 0  *)
+   <body of tactics>... 
+ 
+ <body of tactics after case>.
+Qed.
+}}}
+
+An alternate possible layout is to use indentation to tell exactly how many subgoals remain:  n indentation for n subgoals (variant: (n-1)). This is especially useful during development when you replay proofs after you have modified a definition above: you can easily find where your proof script behaves differently.
+
+The previous example would look much less nice than with the former style; on the contrary this latter style fits better with a forward proof-style, using assert-like tactics.
+
+Example:
+{{{#!coq
+Lemma bar:
+Proof.
+ assert (H: <some property>).
+  rewrite foobar.
+  intuition.
+ assert (H2: <something else>).
+  simpl.
+  omega.
+ assert (H3: ...).
+  auto.
+ <body of tactics>
+Qed.
+}}}
+
+= Naming =
+
+== Lemmas and Data-types ==
+
+ * It is good practice to use a uniform naming convention for inductive data-types, their constructors, the inverse of the constructors (provable by `inversion`) and the strong elimination rules (generated by `Scheme`).
+
+ * For lemmas try to follow a uniform naming convention based on the subject of the formalisation. If in doubt use the naming pattern used for similar lemmas that is used in the Coq standard library.
+
+== Variables inside proofs ==
+
+ * It is usually a good idea to explicitly give names to all the hypothesis that are introduced by Coq. This makes reuse of the code easier. It is easy to achieve this when using `intros`, while for `destruct`, `induction` and similar tactics, this means that you have to use the `as` keyword to explicitly give names.
+
+ * Orthogonal to the above, at some points it is better to use underscore `_` to immediately clear the variables that are not useful.
+
+== Extraction ==
+
+ * When extracting to Haskell, note that Haskell module names should start with an upper-case letter. It is best practice to use the whole Coq generated code as a Haskell module and write your own pretty printing interface for it (in fact this is the default behaviour of the extraction mechanism). Instead of simply capitalising the first letter, I usually use something like following
+{{{#!coq
+Extraction Language Haskell.
+Extraction "Xfoo.hs" foo.
+}}}
+ to extract a Coq constant `foo` into Haskell module `Xfoo.hs`. This way it is emphasised that this Haskell file is a result of Coq extraction.
