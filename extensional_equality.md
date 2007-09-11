@@ -32,3 +32,5 @@ NatId (fun x:nat => x+0) <===> NatId (fun x:nat => x)
 and therefore {{{(fun x:nat => x+0)}}} and {{{(fun x:nat => x)}}} must be convertible.  In general, this convertibility check must work for any two extensionally equal functions and that is undecidable in general.
 
 Coq chooses to not have extensional equality by default.  Users can add an exentensionality axiom to get extensional equality by losing canonicity.  Other proof systems may make other choices.  For instance, Epigram 2 has no inductive families, while other system may drop decidable type checking.
+
+This article is misleading. Epigram 2 is going to have inductive families upto extensional equality. I don't agree with the claim at the top. Thorsten
