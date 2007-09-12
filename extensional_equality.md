@@ -33,7 +33,7 @@ and therefore {{{(fun x:nat => x+0)}}} and {{{(fun x:nat => x)}}} must be conver
 
 Coq chooses to not have extensional equality by default.  Users can add an exentensionality axiom to get extensional equality by losing canonicity.  Other proof systems may make other choices.  For instance, Epigram 2 has no intensional inductive families, while other system may drop decidable type checking.
 
-=== Comments by Thorsten Altenkirch ===
+=== Comments by ThorstenAltenkirch ===
 
   1. Epigram 2 will have inductive families upto extensional equality which is the natural choice for a system with extensional equality. 
   1. In practice all common inductive families I know (e.g. Vectors, finite types, typed lambda terms) are indexed over first order types and for them there is no difference between intensional or extensional families. The only important exception is equality also in the disguise of a singleton family.
