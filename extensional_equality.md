@@ -1,10 +1,10 @@
 = Extensional Equality =
 
-Extensional equality is an equality such that when {{{forall x, f x = gx}}} then {{{f = g}}}
+Extensional equality is an equality such that when {{{forall x, f x = g x}}} then {{{f = g}}}
 
 == Why does Coq not have Extensional Equality? ==
 
-ConorMcbride noted that the following four properties cannot be satisfied simultaneously
+ConorMcBride noted that the following four properties cannot be satisfied simultaneously
 
  1. Extensional equality
  1. Intensional inductive families
@@ -33,10 +33,8 @@ and therefore {{{(fun x:nat => x+0)}}} and {{{(fun x:nat => x)}}} must be conver
 
 Coq chooses to not have extensional equality by default.  Users can add an exentensionality axiom to get extensional equality by losing canonicity.  Other proof systems may make other choices.  For instance, Epigram 2 has no intensional inductive families, while other system may drop decidable type checking.
 
-=== Comments by Thorsten ===
+=== Comments by Thorsten Altenkirch ===
 
-1. Epigram 2 has inductive families upto extensional equality which is the natural choice for a system with extensional equality. 
-
-2. In practice all inductive families I know (e.g. Vectors, finite types, typed lambda terms) are indexed over first order types and for them there is no difference between intensional or extensional families. The only exception is equality also in the disguise of a singleton type.
-
-3. The observation that pattern matching over intensional families is inconsistent with extensionality is originally due to Thierry Coquand. 
+  1. Epigram 2 will have inductive families upto extensional equality which is the natural choice for a system with extensional equality. 
+  1. In practice all common inductive families I know (e.g. Vectors, finite types, typed lambda terms) are indexed over first order types and for them there is no difference between intensional or extensional families. The only important exception is equality also in the disguise of a singleton family.
+  1. Thierry Coquand already observed that pattern matching over intensional families is inconsistent with extensionality in the mid 90ies.
