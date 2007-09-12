@@ -7,7 +7,7 @@ Extensional equality is an equality such that when {{{forall x, f x = gx}}} then
 ConorMcbride noted that the following four properties cannot be satisfied simultaneously
 
  1. Extensional equality
- 1. Inductive families
+ 1. Intensional inductive families
  1. Cannonicity
  1. Decidable type checking
 
@@ -31,6 +31,10 @@ NatId (fun x:nat => x+0) <===> NatId (fun x:nat => x)
 
 and therefore {{{(fun x:nat => x+0)}}} and {{{(fun x:nat => x)}}} must be convertible.  In general, this convertibility check must work for any two extensionally equal functions and that is undecidable in general.
 
-Coq chooses to not have extensional equality by default.  Users can add an exentensionality axiom to get extensional equality by losing canonicity.  Other proof systems may make other choices.  For instance, Epigram 2 has no inductive families, while other system may drop decidable type checking.
+Coq chooses to not have extensional equality by default.  Users can add an exentensionality axiom to get extensional equality by losing canonicity.  Other proof systems may make other choices.  For instance, Epigram 2 has no intensional inductive families, while other system may drop decidable type checking.
 
-This article is misleading. Epigram 2 is going to have inductive families upto extensional equality. I don't agree with the claim at the top. Thorsten
+=== Comments by Thorsten ===
+
+1. Epigram 2 has inductive families upto extensional equality which is the natural choice for a system with extensional equality. 
+2. In practice all inductive families I know (e.g. Vectors, finite types, typed lambda terms) are indexed over first order types and for them there is no difference between intensional or extensional families. The only exception is equality also in the disguise of a singleton type.
+3. The observation that pattern matching over intensional families is inconsistent with extensionality is originally due to Thierry Coquand. 
