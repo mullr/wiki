@@ -36,5 +36,7 @@ Coq chooses to not have extensional equality by default.  Users can add an exent
 === Comments by Thorsten ===
 
 1. Epigram 2 has inductive families upto extensional equality which is the natural choice for a system with extensional equality. 
+
 2. In practice all inductive families I know (e.g. Vectors, finite types, typed lambda terms) are indexed over first order types and for them there is no difference between intensional or extensional families. The only exception is equality also in the disguise of a singleton type.
+
 3. The observation that pattern matching over intensional families is inconsistent with extensionality is originally due to Thierry Coquand. 
