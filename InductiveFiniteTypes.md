@@ -1,4 +1,4 @@
-This development requires that the K_dec_set theory be [wiki:Self:Eqdep_dec_Type extended to work on predictes going to Type].
+This development requires that the K_dec_set theory be [wiki:Self:Eqdep_dec_Type extended to work on predicates going to Type].
 
 {{{#!coq
 Require Import Image.
