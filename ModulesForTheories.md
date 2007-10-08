@@ -7,7 +7,7 @@ It is often the case that one mathematical structure is related to another mathe
 The universal theory of groups includes the theorems that are universally quantified over groups, but that do not construct new groups as part of the proof.  For example
 
 {{{#!coq
-Theorem left_cancel_law : forall G:Group, forall (a b c:G), GroupEq G (a*b) (a*c) -> GroupEq G b c.
+Theorem left_cancel_law : forall G:Group, forall (a b c:G), GroupEq G (a*b) (a*c) -&gt; GroupEq G b c.
 }}}
 
 is part of the universal theory of groups, while the theorem stating the existence of product groups is not.
@@ -19,14 +19,14 @@ It is possible to reuse the universal theory of groups and apply it to finite gr
 One can define FiniteGroups and Groups in many different ways.  Let us assume for sake of argument that Groups are implemented using Setoid equality, while FiniteGroups are implemented using Leibniz equality.  In any case, every finite group is a group, so there will be some function (probably a coercion) from FiniteGroup to Group.
 
 {{{#!coq
-Coercion FiniteGroupisGroup : FiniteGroup >-> Group.
+Coercion FiniteGroupisGroup : FiniteGroup &gt;-&gt; Group.
 }}}
 
 To reuse the {{{cancel_left}}} for finite groups requires restating the theorem and proving it using the original theorem
 
 {{{#!coq
-Definition cancel_left : forall G:FiniteGroup, forall (a b c:G), (a*b)=(a*c) -> b=c :=
-(fun G:FiniteGroup => left_cancel_law (FiniteGroupisGroup G)).
+Definition cancel_left : forall G:FiniteGroup, forall (a b c:G), (a*b)=(a*c) -&gt; b=c :=
+(fun G:FiniteGroup =&gt; left_cancel_law (FiniteGroupisGroup G)).
 }}}
 
 It is necessary to repeat this process for '''every theorem''' in the universal theory of groups.  This could be a huge number of theorems.  Furthermore, every time someone adds to the universal theory of groups, it must be added to every theory that uses it.
@@ -51,8 +51,8 @@ Module Type Sig.
 
 Parameter record : Type.
 
-Parameter universe : record -> Setoid.
-Coercion universe : record >-> Setoid.
+Parameter universe : record -&gt; Setoid.
+Coercion universe : record &gt;-&gt; Setoid.
 
 Parameter id : forall G:record, G.
 Parameter inv : forall G:record, (morphism G G).
@@ -82,7 +82,7 @@ Let right_id : forall a, Seq (op a id) a := right_id G.
 Let right_inv : forall a, Seq (op a (inv a)) id := right_inv G.
 Let assoc : forall a b c, Seq (op (op a b) c) (op a (op b c)) := assoc G.
 
-Lemma cancel_left : forall a b c, Seq (op a b) (op a c) -> (Seq b c).
+Lemma cancel_left : forall a b c, Seq (op a b) (op a c) -&gt; (Seq b c).
 Proof.
 (* ... *)
 Qed.
@@ -102,10 +102,10 @@ Given a definition of Group such as
 
 {{{#!coq
 Record Group : Type :=
-{ universe :> Setoid
+{ universe :&gt; Setoid
 ; id : universe
-; inv : universe --> universe
-; op : universe --> universe --> universe
+; inv : universe --&gt; universe
+; op : universe --&gt; universe --&gt; universe
 ; GroupProof : isGroup id inv op
 }.
 }}}
@@ -113,16 +113,16 @@ Record Group : Type :=
 one can define a group signature as
 
 {{{#!coq
-Module GroupSig <: Sig.
+Module GroupSig &lt;: Sig.
 
 Definition record := Group.
 Definition universe := universe.
 Definition id := @id.
 Definition inv := @inv.
 Definition op := @op.
-Definition assoc := (fun x => assoc_law (GroupProof x)).
-Definition right_id := (fun x => id_law (GroupProof x)).
-Definition right_inv := (fun x => inv_law (GroupProof x)).
+Definition assoc := (fun x =&gt; assoc_law (GroupProof x)).
+Definition right_id := (fun x =&gt; id_law (GroupProof x)).
+Definition right_inv := (fun x =&gt; inv_law (GroupProof x)).
 End GroupSig.
 }}}
 
@@ -144,27 +144,27 @@ Record FiniteGroup : Type :=
 { order : nat
 ; universe := Fin order
 ; id : universe
-; inv : universe -> universe
-; op : universe -> universe -> universe
+; inv : universe -&gt; universe
+; op : universe -&gt; universe -&gt; universe
 ; GroupProof : isGroup id inv op
 }.
 
-Coercion universe : FiniteGroup>->Sortclass.
+Coercion universe : FiniteGroup&gt;-&gt;Sortclass.
 }}}
 
 One can export the universal theory of groups in the same way as for groups, but a little work is required to satisfy the module signature.  This is the same work required to prove that every finite group is a group.
 
 {{{#!coq
-Module GroupSig <: Sig.
+Module GroupSig &lt;: Sig.
 
 Definition record := FiniteGroup.
-Definition universe := fun x => TypeSetoid (universe x).
+Definition universe := fun x =&gt; TypeSetoid (universe x).
 Definition id := @id.
-Definition inv := fun x => TypeSetoidFun (@inv x).
-Definition op := fun x => TypeSetoidFun2 (@op x).
-Definition assoc := (fun x => assoc_law (GroupProof x)).
-Definition right_id := (fun x => id_law (GroupProof x)).
-Definition right_inv := (fun x => inv_law (GroupProof x)).
+Definition inv := fun x =&gt; TypeSetoidFun (@inv x).
+Definition op := fun x =&gt; TypeSetoidFun2 (@op x).
+Definition assoc := (fun x =&gt; assoc_law (GroupProof x)).
+Definition right_id := (fun x =&gt; id_law (GroupProof x)).
+Definition right_inv := (fun x =&gt; inv_law (GroupProof x)).
 End GroupSig.
 
 Module GroupUniversalTheory := UniversalTheory GroupSig.
@@ -176,7 +176,7 @@ Now look at {{{Check cancel_left}}}
 {{{#!coq
 cancel_left
      : forall (G : record) (a b c : universe G),
-       Seq (universe G) (op G a b) (op G a c) -> Seq (universe G) b c
+       Seq (universe G) (op G a b) (op G a c) -&gt; Seq (universe G) b c
 }}}
 
 
@@ -192,3 +192,5 @@ b = c
 because {{{Seq (s:=universe G) b c}}} simplifies to {{{b=c}}}.  Before this was impossible because the inference engine would have to magically infer (universe G) parameter which is now explicitly given.
 
 So the entire universal theory of groups is available without any work.  If the universal theory is extended later, all users of that universal theory get the extended theorems automatically.
+
+[of Meaning]
