@@ -43,5 +43,3 @@
  * [http://www.pps.jussieu.fr/~miquel/publis/these.pdf Excluded Middle in impredicative Set and extensionality of functions are refuted by Miquel's realizability model of CC_{omega}, Alexandre Miquel]
  
  * [http://www-sop.inria.fr/lemme/Loic.Pottier/chicli_pottier_simpson.ps Excluded Middle in Prop and Axiom of Choice in Type are inconsistent with impredicative Set, Laurent Chicli and Loïc Pottier and Carlos Simpson]
-
-[Cajun French]
