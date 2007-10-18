@@ -138,6 +138,7 @@ http://moinmoin.wikiwikiweb.de/ [http://www.python.org/ Python]
 
 someone@the.inter.net
 
+An [:HelpOnEditing:internal link] that looks like normal text.
 
 === Image Link ===
 http://c2.com/sig/wiki.gif
