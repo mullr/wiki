@@ -21,9 +21,9 @@ Let there be less tactics but let them be more powerful than now. For example, r
 === Consistent Definition of Operators ===
 I would be nice if the standard library was more consistent with the definitions it uses.  As it stands {{{a < b}}} for {{{nat}}} is an inductive definition while {{{a < b}}} for {{{Z}}} is defined to be {{{a ?= b = LT}}}.
 
-I think that a consistent set of definitions would be easy to achived by writing a general module (or modules) that are instantiated for various types ({{{nat}}}, {{{binPos}}}, {{{Z}}}, rationals, etc.)
+I think that a consistent set of definitions would be easy to achieved by writing a general module (or modules) that are instantiated for various types ({{{nat}}}, {{{binPos}}}, {{{Z}}}, rationals, etc.)
 
-More speficially for decidable total orders I am thinking of module with {{{compare : A -> A -> comparison}}} as primitive and with
+More specifically for decidable total orders I am thinking of module with {{{compare : A -> A -> comparison}}} as primitive and with
 
 {{{#!coq
 Definition ltcompare (c:compare) : bool :=
@@ -47,11 +47,20 @@ This process uses SmallScaleReflection advocated by GeorgesGonthier.
 ==== Is_true vs (true=) ====
 Some may argue that the function {{{(true=)}}} should be the coercion because it allows access to the extensive array of rewrite tactics.  I think the above definition is more beautiful.  Discuss.
 
+I would advocate for using the following definition as the canonical coercion from `bool` to `Prop`:
+
+{{{
+Inductive eq_true : bool -> Prop := is_eq_true : eq_true true.
+}}}
+
+It directly expresses what it means, it does not interfere with other potentially independent uses of {{{true=}}} and it is easy
+to use for rewriting expressions into {{{true}}} using {{{destruct}}}. [HH]
+
 === Sets ===
 
 Both the {{{A -> Set}}} and the {{{forall I:Type, I -> A}}} notions of subsets of A should be purused in the standard library.
 
-I also suggest a theory of decideable sets {{{A -> bool}}} and semi-decidable sets {{{A -> conat}}} where
+I also suggest a theory of decidable sets {{{A -> bool}}} and semi-decidable sets {{{A -> conat}}} where
 
 {{{#!coq
 CoInductive conat : Set :=
@@ -61,7 +70,7 @@ CoInductive conat : Set :=
 
 === Interfaces and Types ===
 
-It should allow different views on the same subject - for example, different ways of the same subject definiton. We need ability to define interface and to replace one it's implementation with another.
+It should allow different views on the same subject - for example, different ways of the same subject definition. We need ability to define interface and to replace one it's implementation with another.
 
 There should be way to define placeholders. Moreover, almost all current math structure should be explained with ability to prove
 it's later.
