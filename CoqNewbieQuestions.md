@@ -157,4 +157,4 @@ I've used an extra setting, just to get Coq to automatically make '''B''' implic
 
 —TobyBartels
 
-'''A''': Coq unfortunately does not implement inference of such kind of implicit :-(. To ensure reversibility of parsing, Coq's printer makes explicit the value of '''B'''. This is a ''defensive'' strategy of printing. From Coq version 8.2, such defensive strategy of printing can be deactivated using the command '''Unset Printing Implicit Defensive'''.
+'''A''': Coq unfortunately does not implement inference of such kind of implicit :-(. Then, if '''B''' is printed in '''pair_indep''', it is to ensure the reversibility of parsing. This is a ''defensive'' strategy of printing. From Coq version 8.2, such defensive strategy of printing can be deactivated using the command `Unset Printing Implicit Defensive`.
