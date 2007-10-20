@@ -68,7 +68,7 @@ See Section ''Conversion tactics'' in Chapter [http://coq.inria.fr/doc/Reference
 
 = Implicit arguments =
 
-I have a problem with implicit arguments. Really, this is only a matter of inconvenience, but since implicit arguments are for convenience, why not ask?
+'''Q''': I have a problem with implicit arguments. Really, this is only a matter of inconvenience, but since implicit arguments are for convenience, why not ask?
 
 I believe that the following input shows the issues simply:
 
@@ -122,8 +122,21 @@ So in the end, here's what I'd like to do, and maybe there's some way to do it t
 
 —TobyBartels
 
+'''A''': The feature you are looking for is implemented in the development version of Coq (to be released as Coq version 8.2 in early 2008). It is called maximal insertion of implicit arguments and it works as follows:
 
-Here's another example, which doesn't show all of the issues above, but does demonstrate quickly that I really don't understand what's going on:
+{{{#!coq
+Set Implicit Arguments.
+Set Maximal Implicit Insertion.
+
+Definition comp (A B C: Set) (f: A -> B) (g: B -> C): A -> C := fun x => g (f x).
+Definition id (A: Set): A -> A := fun x => x.
+About id. 
+(* tells you that A is "maximally inserted", i.e. inserted even if no arguments follow *)
+
+Theorem unit (A B: Set) (f: A -> B): forall (x: A), comp id f x = f x. (* works *)
+}}}
+
+'''Q''': Here's another example, which doesn't show all of the issues above, but does demonstrate quickly that I really don't understand what's going on:
 
 {{{#!coq
 Set Implicit Arguments.
@@ -143,3 +156,5 @@ Definition pair_indep' (A B: Set) (a: A) (b: B): sum_indep A B := pair_dep a b.
 I've used an extra setting, just to get Coq to automatically make '''B''' implicit, but I could have made it implicit by hand as well. Now, I can understand Coq's reluctance to make the inference called for in '''pair_indep''''; although there's really only one possible answer, it's a strange one, and a good compiler ''should'' at least issue a warning in such a circumstance. But what I really don't understand is why that it expects ''me'' to make precisely that inference in its printout for '''pair_indep'''! I must define it with '''(B := ...)''', but Coq doesn't have to print it that way???
 
 —TobyBartels
+
+'''A''': Coq unfortunately does not implement inference of such kind of implicit :-(. To ensure reversibility of parsing, Coq's printer makes explicit the value of '''B'''. This is a ''defensive'' strategy of printing. From Coq version 8.2, such defensive strategy of printing can be deactivated using the command '''Unset Printing Implicit Defensive'''.
