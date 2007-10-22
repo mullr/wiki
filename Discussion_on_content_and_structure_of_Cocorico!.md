@@ -1,0 +1,33 @@
+#language en
+
+This page is for discussing Cocorico's contents and structure.
+
+== General style ==
+
+=== English sentences vs internal WikiName to refer to internal pages ===
+
+Cocorico uses the actual WikiName of an internal page to talk about it. I think that we would get more fluent texts if one'd use ordinary English sentences to mention an internal link. Compare for instance a mention to the [:CocoricoFrontPage:Cocorico's front page] and another mention to the same CocoricoFrontPage. [HH]
+
+=== English sentences vs internal WikiName in titles ===
+
+An [http://labix.org/snippets/moin-title extension] to MoinMoin allows to use ordinary English sentences for page titles. I believe it would offer the possiblity of more flexible and smoother-to-read page titles. [HH]
+
+=== External links ===
+
+Should the exact URL of external links be made explicit in Cocorico pages (as it is the case for instance in the Tools page)? General web practice is to bind URL to regular English expressions rather than binding it the text of the URL. If one really wants to know an URL, it generally appears anyway at the bottom of the browser when the mouse is over the link. [HH]
+
+=== Use of table of contents ===
+
+My feeling is that table of contents are relevant on pages with proper elaborated contents. I don't think that they are necessary for pages that consists in a list of links. For instance, removing the table of contents from the [:CocoricoFrontPage:Cocorico's front page] would remove what at the end is just a redundant information. [HH]
+
+=== Reference to individuals ===
+
+If one looks at the pages of [:WantedPages:wanted pages], one sees several pages named after a individual. Wouldn't it be better to link to the existing (external) page of the persons cited rather than creating new stub pages for these individuals? [HH]
+
+== Organisation of the contents ==
+
+My opinion is that Cocorico has now grown enough to justify a step of reorganisation of the contents. I don't have a clear global idea of what to do but a few restructuration steps are certainly worth to be done.
+
+Among other things, I'm thinking about grouping similar topics under a same heading (grouping for instance the contact links ''nable'' and ''irc''; the documentation links [:Documentation:general documentation], the [:TheoryBehindCoq: logical theory] of Coq, extending the [:CoqCustomizationHowTo:source] of Coq and documentation on [:Modules:modules]).
+
+I also wonder whether the front page could start with a short text, linking among others to the [:ComparisonWithOtherSystems:page] (from the CoqNewbie page) that compares Coq to other similar systems. [HH]
