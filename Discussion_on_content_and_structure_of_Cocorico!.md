@@ -12,6 +12,8 @@ Cocorico uses the actual WikiName of an internal page to talk about it. I think 
 
 An [http://labix.org/snippets/moin-title extension] to MoinMoin allows to use ordinary English sentences for page titles. I believe it would offer the possiblity of more flexible and smoother-to-read page titles. [HH]
 
+An alternative solution is to directly use English sentences between quotes for wiki page names. This works well for new pages. For already existing pages in the !WikiName format, it would however require the renaming of all existing links to a so-renamed page. [HH]
+
 === External links ===
 
 Should the exact URL of external links be made explicit in Cocorico pages (as it is the case for instance in the Tools page)? General web practice is to bind URL to regular English expressions rather than binding it the text of the URL. If one really wants to know an URL, it generally appears anyway at the bottom of the browser when the mouse is over the link. [HH]
