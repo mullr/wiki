@@ -37,6 +37,7 @@ This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof ass
   * ["HelpForCocorico!"]  for help on Wiki topics peculiar to Cocorico! (["HelpForCocorico!/ColorizedCoqSyntax"] etc.)
   * ["Cocorico!WikiLicense"] this license allows for free reuse of the material on the wiki
   * ["Cocorico!Logo"]
+  * Please take part in ["Discussion on content and structure of Cocorico!"]
 
 == How to use this Wiki ==
 
