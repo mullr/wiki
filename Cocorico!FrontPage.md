@@ -3,8 +3,6 @@
 #pragma section-numbers off
 #language en
 
-[[TableOfContents]]
-
 = Welcome to Cocorico!, the Coq Wiki =
 
 This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof assistant.
