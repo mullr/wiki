@@ -24,7 +24,7 @@ Should the exact URL of external links be made explicit in Cocorico pages (as it
 
 My feeling is that table of contents are relevant on pages with proper elaborated contents. I don't think that they are necessary for pages that consists in a list of links. For instance, removing the table of contents from the [:CocoricoFrontPage:Cocorico's front page] would remove what at the end is just a redundant information. [HH]
 
- Yes, on the front page it was redundant. -- MiladNiqui
+ Yes, on the front page it was redundant (removed now). -- MiladNiqui
 
 === Reference to individuals ===
 
