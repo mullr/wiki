@@ -3,6 +3,8 @@
 ##master-page:WikiSandBox
 #format wiki
 #language en
+#title WikiSandBox with modified title
+
 Please feel free to experiment here, after the four dashes below... and please do '''NOT''' create new pages without any meaningful content just to try it out!
 
 '''Tip:''' Shift-click "HelpOnEditing" to open a second window with the help pages.
