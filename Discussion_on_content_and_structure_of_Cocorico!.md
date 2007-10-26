@@ -30,6 +30,8 @@ My feeling is that table of contents are relevant on pages with proper elaborate
 
 If one looks at the pages of [:WantedPages:wanted pages], one sees several pages named after a individual. Wouldn't it be better to link to the existing (external) page of the persons cited rather than creating new stub pages for these individuals? [HH]
 
+  Yes it is a good idea. But the stub pages are also created for users of this wiki when they edit a page (because their username will appear on the RecentChanges page). In that case it might be good to put at least a link to the external page of the individual on the stub page.  -- MiladNiqui
+
 == Organisation of the contents ==
 
 My opinion is that Cocorico has now grown enough to justify a step of reorganisation of the contents. I don't have a clear global idea of what to do but a few restructuration steps are certainly worth to be done.
