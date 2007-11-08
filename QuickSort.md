@@ -109,7 +109,7 @@ Lemma induction_ltof1_Prop
 
 which is missing in the StandardLibrary (the similar case where `P: A -> Set` exists as `Coq.Arith.Wf_nat.induction_ltof1`).
 
-Furthermore we need the folloiwng fact about list comprehension, that says that any sublist obtained by list comprehension on tail of a list is necessarily shorter than the original list.
+Furthermore we need the following fact about list comprehension, that says that any sublist obtained by list comprehension on tail of a list is necessarily shorter than the original list.
 
 {{{#!coq
 Lemma tail_comprehension_shortens:forall A pivot rest P H, length (list_comprehension A rest P H) < length (pivot::rest).
