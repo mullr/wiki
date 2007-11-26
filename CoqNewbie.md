@@ -1,16 +1,12 @@
-== Tutorial ==
-[http://cel.archives-ouvertes.fr/inria-00001173 Coq in a Hurry, A tutorial by Yves Bertot]
-
-== Resources for Newbies ==
-
-Well, thinking in Coq is not hard. It just requires some time to learn syntax and basic tactics. After that you'll be able to create almost any possible proof. Of course, it's better to start with [http://coq.inria.fr/doc/faq.html Coq FAQ]. The library also contains a lot of small proofs and can help a lot to get started: [http://coq.inria.fr/library/].
-
-But some questions are always interesting for any newbie:
-
-ComparisionWithOtherSystems
-
-If you are searching some little task to contribute, you might want to look at
-
-ProjectIdeas
-
-Novice coq users can submit questions to CoqNewbieQuestions.
+ http://www.geocities.com/ringtone.cellphone/polyphonic-ringtones-composer.html
+ http://www.geocities.com/ringtone.cellphone/nextel-ringtones-program.html
+ http://www.geocities.com/ringtone.cellphone/nextel-ringtone-loader.html
+ http://www.geocities.com/ringtone.cellphone/nextel-ringtone-creator.html
+ http://www.geocities.com/ringtone.cellphone/nextel-ringtone-cord.html
+ http://www.geocities.com/ringtone.cellphone/mp3-ringtone-software.html
+ http://www.geocities.com/ringtone.cellphone/mp3-to-ringtone-converter.html
+ http://www.geocities.com/ringtone.cellphone/nextel-ringtone-downloads.html
+ http://www.geocities.com/ringtone.cellphone/polyphonic-ringtones-codes.html
+ http://www.geocities.com/ringtone.cellphone/polyphonic-ringtones-download.html
+----
+CategoryCategory
