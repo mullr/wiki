@@ -1,16 +1,6 @@
-== Tutorial ==
-[http://cel.archives-ouvertes.fr/inria-00001173 Coq in a Hurry, A tutorial by Yves Bertot]
-
-== Resources for Newbies ==
-
-Well, thinking in Coq is not hard. It just requires some time to learn syntax and basic tactics. After that you'll be able to create almost any possible proof. Of course, it's better to start with [http://coq.inria.fr/doc/faq.html Coq FAQ]. The library also contains a lot of small proofs and can help a lot to get started: [http://coq.inria.fr/library/].
-
-But some questions are always interesting for any newbie:
-
-ComparisionWithOtherSystems
-
-If you are searching some little task to contribute, you might want to look at
-
-ProjectIdeas
-
-Novice coq users can submit questions to CoqNewbieQuestions.
+buy injectable valium  http://www.codemax.net/shared/temp/buy-injectable-valium.html
+buy valium online without a prescription  http://www.codemax.net/shared/temp/buy-valium-online-without-a-prescription.html
+buy valium overnight  http://www.codemax.net/shared/temp/buy-valium-overnight.html
+canine valium dosage per pound  http://www.codemax.net/shared/temp/canine-valium-dosage-per-pound.html
+----
+&lt;No addition&gt;
