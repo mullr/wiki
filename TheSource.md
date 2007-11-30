@@ -1,3 +1,3 @@
 #language en
 
-The source code for Coq can be downloaded at http://coq.inria.fr/distrib-eng.html. 
+The source code of the last release of Coq can be downloaded from the [http://coq.inria.fr/distrib-eng.html Coq download page]. As for the development version, it can be browsed at the [https://gforge.inria.fr/plugins/scmsvn/viewcvs.php/trunk/?root=coq Coq Gforge Subversion server].
