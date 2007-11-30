@@ -39,3 +39,16 @@ My opinion is that Cocorico has now grown enough to justify a step of reorganisa
 Among other things, I'm thinking about grouping similar topics under a same heading (grouping for instance the contact links ''nable'' and ''irc''; the documentation links [:Documentation:general documentation], the [:TheoryBehindCoq: logical theory] of Coq, extending the [:CoqCustomizationHowTo:source] of Coq and documentation on [:Modules:modules]).
 
 I also wonder whether the front page could start with a short text, linking among others to the [:ComparisonWithOtherSystems:page] (from the CoqNewbie page) that compares Coq to other similar systems. [HH]
+
+Here is a new proposition for formatting the Coq topic available on the [:CocoricoFrontPage:Front page].
+
+||<tableclass="userpref">'''''The Coq Community'''''       ||<style="width: 25%">'''''Documentation'''''||<style="width: 25%">'''''Formalisations'''''||<style="width: 25%">'''''Software'''''  ||
+||<style="width: 25%">[:CoqNewbie:The newbie zone]         ||[:Documentation:Books and Manuals]         ||[:StandardLibrary:Standard Library]         ||[:Tools:Interfaces]             ||
+||[http://www.nabble.com/Coq-f2323.html Coq-club on Nabble]||[:Tutorials:Tutorials]                     ||[:FormalizedAndVerified:Formalized in Coq...]||[:Tools:Software Verification] ||
+||[irc://irc.freenode.net/#coq irc channel]                ||[:FrequentlyAskedQuestions:Frequently asked questions] ||[:CoqPearls:Coq pearls]      ||[:Tools:Tactic plugins]             ||
+||[:CoqInTheClassroom:Coq in the classroom]                ||[:TheoryBehindCoq:Logical foundations]                 ||[:LtacPearls:Tactic pearls]  ||[:Tools:Documentation tools]        ||
+||                                                         ||[:SpecializedDocumentation:Misc. documentation]        ||[:ProjectIdeas:Project ideas]|| ||
+||                                                         ||[:CoqSource:About Coq code source]                     ||[:CoqStyle:Coq's style]      || ||
+
+Notes: ''About Coq source code'' would link to a new page that includes CoqCustomizationHowTo and TheSource; 
+the page on [:ModuleSystem:modules] would be in the (new) [:SpecializedDocumentation:Misc. documentation] page; the UserContribution page would be integrated to the FormalizedAndVerified page. The TipsAndTricks page would be integrated to the FrequentlyAskedQuestions.
