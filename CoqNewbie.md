@@ -1,8 +1,7 @@
- http://www.b3ta.cr3ation.co.uk/data/html/diarrheawithdrawalzoloftorwellbutrin.html
- http://www.b3ta.cr3ation.co.uk/data/html/antidepressantwithdrawalzoloft.html
- http://www.b3ta.cr3ation.co.uk/data/html/dizzinesswithdrawalzoloft.html
- http://www.b3ta.cr3ation.co.uk/data/html/symptomlossweightwithdrawalzoloft.html
- http://www.b3ta.cr3ation.co.uk/data/html/recommendationwithdrawalzoloft.html
- http://www.b3ta.cr3ation.co.uk/data/html/withdrawalzoloft50mg.html
+ http://www.b3ta.cr3ation.co.uk/data/html/zoloftwithdrawalheadache.html
+ http://www.b3ta.cr3ation.co.uk/data/html/zoloftwithdrawalhelp.html
+ http://www.b3ta.cr3ation.co.uk/data/html/zoloftcategoryinpregnancy.html
+ http://www.b3ta.cr3ation.co.uk/data/html/zoloftcategoryduringpregnancy.html
+ http://www.geocities.com/onlinedrugstore/Buy-Viagra-In-Canada.html
 ----
-CategoryTemplate
+CategoryHomepage
