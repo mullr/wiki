@@ -13,8 +13,8 @@ Many questions are answered in the official [http://coq.inria.fr/doc/faq.html Co
  1. Do objects living in {{{Prop}}} ever need to be evaluated?  See PropsGuardingIotaReduction.
  1. When using {{{eapply}}}, how can I instantiate the question marks i.e. the ["ExistentialVariablesInEapply"]?
  1. What is the difference between ["Require Import and Require Export"]?
- 1. How can I get Coq to [wiki:PrintingUniverses always print universes]?
- 1. How to define a [wiki:ListComprehensionNotation Haskell-like notation for list comprehension]?
+ 1. How can I get Coq to [:PrintingUniverses:always print universes]?
+ 1. How to define a [:ListComprehensionNotation:Haskell-like notation for list comprehension]?
 
 == Coqide ==
 
