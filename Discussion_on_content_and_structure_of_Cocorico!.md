@@ -52,3 +52,5 @@ Here is a new proposition for formatting the Coq topic available on the [:Cocori
 
 Notes: ''About Coq source code'' would link to a new page that includes CoqCustomizationHowTo and TheSource; 
 the page on [:ModuleSystem:modules] would be in the (new) [:SpecializedDocumentation:Misc. documentation] page; the UserContribution page would be integrated to the FormalizedAndVerified page. The TipsAndTricks page would be integrated to the FrequentlyAskedQuestions.
+
+ Most of these are applied now. What should [:Tutorials:Tutorials]  point to? Right now it points to [:CoqNewbie:CoqNewbie]. [[Date(2007-12-03T15:39:30Z)]]
