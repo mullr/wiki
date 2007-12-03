@@ -6,26 +6,14 @@
 = Welcome to Cocorico!, the Coq Wiki =
 
 This site is a !WikiWikiWeb dedicated to the [http://coq.inria.fr Coq] proof assistant.
+||<tableclass="userpref">'''''The Coq Community'''''       ||<style="width: 25%">'''''Documentation'''''||<style="width: 25%">'''''Formalisations'''''||<style="width: 25%">'''''Software'''''  ||
+||<style="width: 25%">[:CoqNewbie:The newbie zone]         ||[:Documentation:Books and Manuals]         ||[:StandardLibrary:Standard Library]         ||[:Tools:Interfaces]             ||
+||[http://www.nabble.com/Coq-f2323.html Coq-club on Nabble]||[:Tutorials:Tutorials]                     ||[:FormalizedAndVerified:Formalized in Coq...]||[:Tools:Software Verification] ||
+||[irc://irc.freenode.net/#coq irc channel]                ||[:FrequentlyAskedQuestions:Frequently asked questions] ||[:CoqPearls:Coq pearls]      ||[:Tools:Tactic plugins]             ||
+||[:CoqInTheClassroom:Coq in the classroom]                ||[:TheoryBehindCoq:Logical foundations]                 ||[:LtacPearls:Tactic pearls]  ||[:Tools:Documentation tools]        ||
+||                                                         ||[:SpecializedDocumentation:Misc. documentation]        ||[:ProjectIdeas:Project ideas]|| ||
+||                                                         ||[:CoqSource:About Coq code source]                     ||[:CoqStyle:Coq's style]      || ||
 
-== About Coq ==
-  * Visit the homepage at http://coq.inria.fr
-  * FrequentlyAskedQuestions about Coq
-  * StandardLibrary  for a discussion of the standard library of Coq
-  * ["Documentation"] for a list of manuals, books and tutorials
-  * [http://www.nabble.com/ Nabble] Coq forum
-  * ["Tools"] that are built on top of Coq or are otherwise related to Coq
-  * UserContributions and FormalizedAndVerified for a discussion of the material that is formalized and verified in Coq.
-  * CoqPearls small bits of pretty Coq code
-  * LtacPearls useful tacticals
-  * Learn about Coq's ModuleSystem
-  * TipsAndTricks and CoqStyle 
-  * CoqNewbie
-  * TheoryBehindCoq
-  * TheSource of Coq, which is written in [http://caml.inria.fr/ocaml/index.en.html Objective Caml]
-  * CoqCustomizationHowTo
-  * irc channel about Coq: [irc://irc.freenode.net/%23coq #coq] on irc.freenode.net. (Not very active but everything may change)
-  * ProjectIdeas for a list of small or large projects to be formalized in Coq
-  * An experimental [http://prover.cs.ru.nl/  Coq Web Interface].
 == About Cocorico! ==
   * RecentChanges: see where people are currently working
   * WikiSandBox: feel free to change this page and experiment with editing
