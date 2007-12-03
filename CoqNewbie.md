@@ -1,16 +1,12 @@
-== Tutorial ==
-[http://cel.archives-ouvertes.fr/inria-00001173 Coq in a Hurry, A tutorial by Yves Bertot]
-
-== Resources for Newbies ==
-
-Well, thinking in Coq is not hard. It just requires some time to learn syntax and basic tactics. After that you'll be able to create almost any possible proof. Of course, it's better to start with [http://coq.inria.fr/doc/faq.html Coq FAQ]. The library also contains a lot of small proofs and can help a lot to get started: [http://coq.inria.fr/library/].
-
-But some questions are always interesting for any newbie:
-
-ComparisionWithOtherSystems
-
-If you are searching some little task to contribute, you might want to look at
-
-ProjectIdeas
-
-Novice coq users can submit questions to CoqNewbieQuestions.
+elavil overdose side effects  http://www.geocities.com/elavil_pills/elavil-overdose-side-effects.html
+amitriptyline generic of elavil medication sleep  http://www.geocities.com/elavil_pills/amitriptyline-generic-of-elavil-medication-sleep.html
+amitriptyline hcl elavil side effects  http://www.geocities.com/elavil_pills/amitriptyline-hcl-elavil-side-effects.html
+contraindication of tramadol and elavil  http://www.geocities.com/elavil_pills/contraindication-of-tramadol-and-elavil.html
+elavil amitriptyline widthdrawal  http://www.geocities.com/elavil_pills/elavil-amitriptyline-widthdrawal.html
+elavil can it cause dependency  http://www.geocities.com/elavil_pills/elavil-can-it-cause-dependency.html
+elavil for chronic pain  http://www.geocities.com/elavil_pills/elavil-for-chronic-pain.html
+elavil overdose amount  http://www.geocities.com/elavil_pills/elavil-overdose-amount.html
+elavil overdose information  http://www.geocities.com/elavil_pills/elavil-overdose-information.html
+elavil side effects amitriptyline endep  http://www.geocities.com/elavil_pills/elavil-side-effects-amitriptyline-endep.html
+----
+CategoryTemplate
