@@ -1,4 +1,4 @@
 #pragma section-numbers off
 #language en
 
- * [:ModuleSystem:modules]
+ * [:ModuleSystem:Module System of Coq]
