@@ -1,11 +1,16 @@
- http://microbio1.biologie.uni-greifswald.de:8080/Pime/uploads/hair-loss-propecia-treatment.html
- http://microbio1.biologie.uni-greifswald.de:8080/Pime/uploads/generic-propecia-without-prescription.html
- http://microbio1.biologie.uni-greifswald.de:8080/Pime/uploads/do-proscar-and-propecia-have-same-finasteride.html
- http://microbio1.biologie.uni-greifswald.de:8080/Pime/uploads/do-generic-propecia-work.html
- http://microbio1.biologie.uni-greifswald.de:8080/Pime/uploads/does-propecia-work-on-exogenous-testosterone-for-hair-growth.html
- http://microbio1.biologie.uni-greifswald.de:8080/Pime/uploads/buy-propecia-online-dream-pharmaceutical.html
- http://microbio1.biologie.uni-greifswald.de:8080/Pime/uploads/finasteride-or-propecia-or-proscar.html
- http://microbio1.biologie.uni-greifswald.de:8080/Pime/uploads/finasteride-propecia-skip.html
- http://microbio1.biologie.uni-greifswald.de:8080/Pime/uploads/general-information-about-finasteride-or-propecia.html
-----
-CategoryTemplate
+== Tutorial ==
+[http://cel.archives-ouvertes.fr/inria-00001173 Coq in a Hurry, A tutorial by Yves Bertot]
+
+== Resources for Newbies ==
+
+Well, thinking in Coq is not hard. It just requires some time to learn syntax and basic tactics. After that you'll be able to create almost any possible proof. Of course, it's better to start with [http://coq.inria.fr/doc/faq.html Coq FAQ]. The library also contains a lot of small proofs and can help a lot to get started: [http://coq.inria.fr/library/].
+
+But some questions are always interesting for any newbie:
+
+ComparisionWithOtherSystems
+
+If you are searching some little task to contribute, you might want to look at
+
+ProjectIdeas
+
+Novice coq users can submit questions to CoqNewbieQuestions.
