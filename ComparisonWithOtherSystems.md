@@ -1,3 +1,4 @@
+## page was renamed from ComparisionWithOtherSystems
 There are a number of automatic theorems provers, proof assistants and math formalization systems. Some of them:
 
  * [http://www.cs.utexas.edu/users/moore/acl2/acl2-doc.html ACL2]
