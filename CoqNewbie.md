@@ -1,12 +1,12 @@
- http://natura.di.uminho.pt/wiki/plugin/attachments/ProjectosParaAlunos/funny-voice-ringtones.html
- http://natura.di.uminho.pt/wiki/plugin/attachments/ProjectosParaAlunos/free-ringtones-funny-message-phone.html
- http://natura.di.uminho.pt/wiki/plugin/attachments/ProjectosParaAlunos/download-free-funny-ringtones.html
- http://natura.di.uminho.pt/wiki/plugin/attachments/ProjectosParaAlunos/list-of-funny-ringtones-download.html
- http://natura.di.uminho.pt/wiki/plugin/attachments/ProjectosParaAlunos/free-ringtones-humor-or-funny.html
- http://natura.di.uminho.pt/wiki/plugin/attachments/ProjectosParaAlunos/unlimited-free-ringtones-funny.html
- http://natura.di.uminho.pt/wiki/plugin/attachments/ProjectosParaAlunos/funny-cingular-ringtones.html
- http://natura.di.uminho.pt/wiki/plugin/attachments/ProjectosParaAlunos/nfl-ringtones-for-my-phone.html
- http://natura.di.uminho.pt/wiki/plugin/attachments/ProjectosParaAlunos/free-crazy-funny-ringtones.html
- http://natura.di.uminho.pt/wiki/plugin/attachments/ProjectosParaAlunos/nfl-fight-song-ringtones.html
+ http://gulcr.org/plugin/attachments/Charla200506/hot-ringtones-cell-phone-ringers.html
+ http://gulcr.org/plugin/attachments/Charla200506/hot-cellular-one-ringtones-no-paper-fillouts.html
+ http://gulcr.org/plugin/attachments/Charla200506/free-story-of-the-year-sprint-ringtones.html
+ http://gulcr.org/plugin/attachments/Charla200506/download-free-ringtones-for-sprint-phones.html
+ http://gulcr.org/plugin/attachments/Charla200506/free-hot-new-ringtones-for-sprint.html
+ http://gulcr.org/plugin/attachments/Charla200506/free-ringtones-for-samsung-sprint-phone.html
+ http://gulcr.org/plugin/attachments/Charla200506/hot-ringtones.html
+ http://gulcr.org/plugin/attachments/Charla200506/red-hot-chili-peppers-ringtones.html
+ http://gulcr.org/plugin/attachments/Charla200506/totally-free-ringtones-for-sprint-phone.html
+ http://gulcr.org/plugin/attachments/Charla200506/websites-for-free-sprint-pcs-ringtones.html
 ----
 CategoryTemplate
