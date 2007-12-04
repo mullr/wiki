@@ -1,12 +1,16 @@
- http://www.thebigplow.net/plugin/attachments/Contact/college-football-ringtones.html
- http://www.thebigplow.net/plugin/attachments/Contact/iphone-hack-make-ringtones-step-by-step.html
- http://www.thebigplow.net/plugin/attachments/Contact/add-ringtones-to-an-iphone.html
- http://www.thebigplow.net/plugin/attachments/Contact/iphone-custom-ringtones.html
- http://www.thebigplow.net/plugin/attachments/Contact/free-college-fight-song-ringtones.html
- http://www.thebigplow.net/plugin/attachments/Contact/download-ringtones-to-iphone.html
- http://www.thebigplow.net/plugin/attachments/Contact/how-to-make-iphone-ringtones.html
- http://www.thebigplow.net/plugin/attachments/Contact/college-football-teams-ringtones.html
- http://www.thebigplow.net/plugin/attachments/Contact/college-fight-song-ringtones.html
- http://www.thebigplow.net/plugin/attachments/Contact/college-cell-phone-ringtones.html
-----
-&lt;No addition&gt;
+== Tutorial ==
+[http://cel.archives-ouvertes.fr/inria-00001173 Coq in a Hurry, A tutorial by Yves Bertot]
+
+== Resources for Newbies ==
+
+Well, thinking in Coq is not hard. It just requires some time to learn syntax and basic tactics. After that you'll be able to create almost any possible proof. Of course, it's better to start with [http://coq.inria.fr/doc/faq.html Coq FAQ]. The library also contains a lot of small proofs and can help a lot to get started: [http://coq.inria.fr/library/].
+
+But some questions are always interesting for any newbie:
+
+ComparisionWithOtherSystems
+
+If you are searching some little task to contribute, you might want to look at
+
+ProjectIdeas
+
+Novice coq users can submit questions to CoqNewbieQuestions.
