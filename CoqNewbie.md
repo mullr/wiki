@@ -1,3 +1,5 @@
+#language en
+
 == Tutorial ==
 [http://cel.archives-ouvertes.fr/inria-00001173 Coq in a Hurry, A tutorial by Yves Bertot]
 
@@ -7,7 +9,7 @@ Well, thinking in Coq is not hard. It just requires some time to learn syntax an
 
 But some questions are always interesting for any newbie:
 
-ComparisionWithOtherSystems
+ComparisonWithOtherSystems
 
 If you are searching some little task to contribute, you might want to look at
 
