@@ -8,14 +8,14 @@
 
 ||<tablestyle="width: 100%; background: #E6EAF0; font-size: 0.85em;"> ||
 
-[[RecentChanges]]
+<<RecentChanges>>
 
 ##last, but not least, a randomly chosen page: [[RandomPage(1)]]
 
-||<:> [[Icon(diffrc)]] || marks older pages that have at least one backup version stored (click for an author diff)||
-||<:> [[Icon(updated)]] || marks pages edited since you set your bookmark (click for a bookmark diff)||
-||<:> [[Icon(new)]] || marks pages created since you set your bookmark, and were not edited after creation||
-||<:> [[Icon(deleted)]] || marks page deletions||
+||<:> <<Icon(diffrc)>> || marks older pages that have at least one backup version stored (click for an author diff)||
+||<:> <<Icon(updated)>> || marks pages edited since you set your bookmark (click for a bookmark diff)||
+||<:> <<Icon(new)>> || marks pages created since you set your bookmark, and were not edited after creation||
+||<:> <<Icon(deleted)>> || marks page deletions||
 ||<:> /!\ || An editing conflict happened, please resolve it by merging both versions of the problematic paragraphs together. ||
 ----
 This page contains a list of recent changes in this wiki.
