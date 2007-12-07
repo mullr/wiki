@@ -1,4 +1,4 @@
-This work is inspired by the article [http://www.soi.city.ac.uk/~ross/papers/debruijn.html De Bruijn Notation as a Nested Datatype] by Richard Bird and Ross Paterson. Journal of Functional Programming, 9(1):77-91, January 1999. 
+This work is inspired by the article [[http://www.soi.city.ac.uk/~ross/papers/debruijn.html|De Bruijn Notation as a Nested Datatype]] by Richard Bird and Ross Paterson. Journal of Functional Programming, 9(1):77-91, January 1999. 
 
 
 In this paper they define the following Haskell datatype: 
