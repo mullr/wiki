@@ -12,7 +12,7 @@
 ||25|| Schroeder--Bernstein Theorem || UserContributions/Rocq /SCHROEDER||
 ||26|| Leibnitz's Series for Pi || UserContributions/Nijmegen/CoRN ||
 ||27|| Sum of the Angles of a Triangle|| UserContributions/Sophia-Antipolis/  ||
-||32|| The Four Color Problem|| GeorgesGonthier [http://research.microsoft.com/~gonthier/]||
+||32|| The Four Color Problem|| GeorgesGonthier [[http://research.microsoft.com/~gonthier/]]||
 ||35|| Taylor's Theorem|| UserContributions/Nijmegen/CoRN ||
 ||51|| Wilson's Theorem|| UserContributions/Sophia-Antipolis/ ||
 ||52||The Number of Subsets of a Set||UserContributions/Orsay/FSets||
@@ -38,4 +38,4 @@
 
  * The Ranks are taken from the original list of Top100MathematicalTheorems.
 
- * See Also [http://www.cs.ru.nl/~freek/100/]
+ * See Also [[http://www.cs.ru.nl/~freek/100/]]
