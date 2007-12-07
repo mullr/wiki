@@ -2,7 +2,7 @@
 
 This page collects material related to Coq teaching or using Coq and related interfaces as a support for teaching.
 
-[[TableOfContents]]
+<<TableOfContents>>
 
 == Teaching Coq ==
 
