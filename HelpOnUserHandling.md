@@ -3,7 +3,7 @@
 #format wiki
 #language en
 
-[[TableOfContents]]
+<<TableOfContents>>
 
 = How to maintain your user data =
 
