@@ -2,7 +2,7 @@
 #pragma section-numbers off
 #language en
 
-[[TableOfContents]]
+<<TableOfContents>>
 
 Here we will present ideas of what constitutes a well written Coq source file. We discuss the general issues that affect the ''shape'' of the Coq scripts and consequently their  ''legibility'' and ''re-usability''. Yes, we are interested in reading and editing ASCII Coq sources!
 
@@ -23,7 +23,7 @@ For the discussion of issues related to the content of specific formalisations a
 
  This will credit the author(s) and clarifies any license issues, which is necessary for re-usability of your code.
 
- *  Use [http://coq.inria.fr/doc/Reference-Manual015.html#toc80 coqdoc]-style comments graciously, to clarify the structure of your formalisation. (However, try not to use them ''inside'' proofs. Instead use ordinary `(*  *)` comments.) This is because proofs are less likely to be processed via coqdoc and usually they are suppressed.
+ *  Use [[http://coq.inria.fr/doc/Reference-Manual015.html#toc80|coqdoc]]-style comments graciously, to clarify the structure of your formalisation. (However, try not to use them ''inside'' proofs. Instead use ordinary `(*  *)` comments.) This is because proofs are less likely to be processed via coqdoc and usually they are suppressed.
  
  * Use blank lines consistently (I.e. use the same number of blank lines between all lemmas in a section).
 
