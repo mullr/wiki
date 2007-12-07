@@ -18,7 +18,7 @@ Coq has been taught more deeply in the context of the second-year-of-master-leve
 
 Loïc Pottier and Laurent Théry used Coq (and the graphical interface CtCoq) in a class on ''Proofs of Algorithms'' (at least in 1998 and 1999).
 
-Experiences were made at the first year of the Master level at ENS Lyon by Yves Bertot (from 2001?). This class, now taught by Jean Duprat, is still alive. Yves Bertot, who cowrote with Pierre Castéran the [Coq'Art] comprehensive textbook also wrote a tutorial derived from his class: the [http://cel.archives-ouvertes.fr/inria-00001173/en Coq in a hurry] tutorial.
+Experiences were made at the first year of the Master level at ENS Lyon by Yves Bertot (from 2001?). This class, now taught by Jean Duprat, is still alive. Yves Bertot, who cowrote with Pierre Castéran the [Coq'Art] comprehensive textbook also wrote a tutorial derived from his class: the [[http://cel.archives-ouvertes.fr/inria-00001173/en Coq in a hurry]] tutorial.
 
 From 2004, Alexandre Miquel taught Coq at the first year of the master level at University Paris 7.  He has [http://www.pps.jussieu.fr/~miquel/enseignement/mpri/index.html exercises] and a [http://www.pps.jussieu.fr/~miquel/enseignement/mpri/guide.html "guide de survie"] for a class at the second year of the master level (in French).
 
