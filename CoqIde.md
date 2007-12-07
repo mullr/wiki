@@ -1,6 +1,6 @@
 #language en
 
-CoqIde is a graphical interface for Coq. It is written in OCaml. CoqIde is documented in [http://coq.inria.fr/V8.1/refman/Reference-Manual016.html Chapter 14 of the Reference Manual].
+CoqIde is a graphical interface for Coq. It is written in OCaml. CoqIde is documented in [[http://coq.inria.fr/V8.1/refman/Reference-Manual016.html|Chapter 14 of the Reference Manual]].
 
 === Manual Installation in Debian ===
 
