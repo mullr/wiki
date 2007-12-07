@@ -1,21 +1,21 @@
 = Frequently Asked Questions About Coq =
 
-Many questions are answered in the official [http://coq.inria.fr/doc/faq.html Coq FAQ] that is maintained by the Coq team.
+Many questions are answered in the official [[http://coq.inria.fr/doc/faq.html|Coq FAQ]] that is maintained by the Coq team.
  
- 1. Should I put my type in ["Prop or Set"]?
+ 1. Should I put my type in [[Prop_or_Set]]?
  1. How does the MatchAsInReturn syntax work?
- 1. Why can't I prove (forall x, f x = g x) -> f = g? (see ["extensional equality"])
+ 1. Why can't I prove (forall x, f x = g x) -> f = g? (see [[extensional_equality]])
  1. Isn't IntensionalEquality useless?
  1. How do I get DependentInversion to work in my case?
- 1. Why not ["WTypeInsteadOfInductiveTypes"]?
- 1. Do [wiki:FalseEqAcc False, eq, and Acc] have a special status?
+ 1. Why not [[WTypeInsteadOfInductiveTypes]]?
+ 1. Do [[FalseEqAcc|False, eq, and Acc]] have a special status?
  1. What is the logical strength of Coq?  Can it prove the consistency of ZF or ZFC?
  1. Do objects living in {{{Prop}}} ever need to be evaluated?  See PropsGuardingIotaReduction.
- 1. When using {{{eapply}}}, how can I instantiate the question marks i.e. the ["ExistentialVariablesInEapply"]?
- 1. What is the difference between ["Require Import and Require Export"]?
- 1. How can I get Coq to [:PrintingUniverses:always print universes]?
- 1. How to define a [:ListComprehensionNotation:Haskell-like notation for list comprehension]?
+ 1. When using {{{eapply}}}, how can I instantiate the question marks i.e. the [[ExistentialVariablesInEapply]]?
+ 1. What is the difference between [[Require_Import_and_Require_Export]]?
+ 1. How can I get Coq to [[PrintingUniverses|always print universes]]?
+ 1. How to define a [[ListComprehensionNotation|Haskell-like notation for list comprehension]]?
 
 == Coqide ==
 
- 1. ["CoqIDE crashes under KDE"] (Kubuntu) when I open a query window.
+ 1. [[CoqIDE_crashes_under_KDE]] (Kubuntu) when I open a query window.
