@@ -1,4 +1,4 @@
-This extends [http://coq.inria.fr/library/Coq.Logic.Eqdep_dec.html Eqdep_dec] to work on predicates over Type
+This extends [[http://coq.inria.fr/library/Coq.Logic.Eqdep_dec.html|Eqdep_dec]] to work on predicates over Type
 {{{#!coq
 Require Export Eqdep_dec.
 
