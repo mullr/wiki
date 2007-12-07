@@ -10,7 +10,7 @@ This page collects material related to Coq teaching or using Coq and related int
 
 From the late 80's, a class on proofs, types and formalisation was held at Paris with Gérard Huet and Thierry Coquand as teachers, then with Gilles Dowek. Christine Paulin taught a class ''Types et Preuves'' (Types and Proofs) at ENS Lyon from 1992 to 1996.
 
-Benjamin Werner taught Coq at the master level of the French [http://www.ensta.fr/en ENSTA] Engineer Advanced School as soon as 1996. This was using Coq version 6.2 beta and the class was entitled ''Preuves sur ordinateur'' (Proof on computers).
+Benjamin Werner taught Coq at the master level of the French [[http://www.ensta.fr/en ENSTA]] Engineer Advanced School as soon as 1996. This was using Coq version 6.2 beta and the class was entitled ''Preuves sur ordinateur'' (Proof on computers).
 
 Coq has been taught more deeply in the context of the second-year-of-master-level DEA of Programmation in Paris from 1997 by Christine Paulin and Benjamin Werner. The DEA course focused both on the foundations and applications of Coq. After the ''Licence-Master-PhD'' standardisation at the European level, the DEA got renamed Master. The class didn't evolved much and the original notes by Christine Paulin and Benjamin Werner, enriched from new chapters by Bruno Barras, Jean-Christophe Filliâtre, Hugo Herbelin and Claude Marché, are still used and available [http://logical.inria.fr/mpri/index-2-7-2.html online].
 
