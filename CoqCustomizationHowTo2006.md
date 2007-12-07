@@ -8,7 +8,7 @@ The object of this document is to guide the user towards the
 implementation of new commands or tatctics for the Coq proof
 assistant. It assumes familiarity with Objective Caml and a basic knowledge of the use of GNU Make.
 
-[[TableOfContents]]
+<<TableOfContents>>
 
 == Before you start ==
 
