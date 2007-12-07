@@ -1,5 +1,5 @@
 = TacticExts =
-[[TableOfContents]]
+<<TableOfContents>>
 == General tactics ==
 === Dependent case ===
 
@@ -59,7 +59,7 @@ first
 === Expand until ===
 
 This tactic is useful when carefully unfolding definitions, for instance inductive ones.
-It also shows the use of [http://pauillac.inria.fr/coq/doc/Reference-Manual013.html#toc71 tactic notation].
+It also shows the use of [[http://pauillac.inria.fr/coq/doc/Reference-Manual013.html#toc71|tactic notation]].
 
 {{{#!coq
 Tactic Notation "expand" reference (t) "until" constr (s):=
@@ -114,8 +114,8 @@ Ltac assert_if_not_exist H :=
 
 == Tactics about equality ==
 
-[[Anchor(LHS)]]
-[[Anchor(RHS)]]
+<<Anchor(LHS)>>
+<<Anchor(RHS)>>
 === LHS & RHS ===
 {{{LHS}}} means “left-hand side”.  It returns the term on the left hand side of an equality or inequality.
 {{{#!coq
@@ -177,7 +177,7 @@ match goal with
 end.
 }}}
 
-[[Anchor(RewriteAll)]]
+<<Anchor(RewriteAll)>>
 === RewriteAll ===
 
 '''NB''': A similar {{{rewrite_all}}} has been integrated in Coq >= 8.1beta
@@ -220,7 +220,7 @@ Ltac replace_all t1 t2 :=
 }}}
 
 
-[[Anchor(RewriteAll2)]]
+<<Anchor(RewriteAll2)>>
 === RewriteAll, expert version ===
 
 Given an assumption {{{H : t1 = t2}}}, 
@@ -248,10 +248,10 @@ Ltac rewrite_all H :=
 }}}
 
 
-[[Anchor(eecideEquality)]]
+<<Anchor(eecideEquality)>>
 === Decide Equality ===
 
-Coq's [http://coq.inria.fr/doc/Reference-Manual010.html#@tactic78 decide equality] should be more accepting.  It ought to behave more like the following.
+Coq's [[http://coq.inria.fr/doc/Reference-Manual010.html#@tactic78|decide equality]] should be more accepting.  It ought to behave more like the following.
 
 {{{#!coq
 Ltac decideEquality :=
