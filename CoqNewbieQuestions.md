@@ -21,7 +21,7 @@ To observe the value of `x` in the branch, a solution is to use `pose (name := x
 {{{#!coq 
 Lemma or_comm : forall (A B:Prop), (A \/ B) = (B \/ A).
 }}}
-[[Date(2006-06-18T22:32:50Z)]]
+<<Date(2006-06-18T22:32:50Z)>>
 
 '''A''': No, but Coq can prove
 {{{#!coq 
@@ -54,17 +54,17 @@ is equivalent to
 {{{#!coq
 induction 1; foo.
 }}}
-This is explained in the Reference Manual in [http://coq.inria.fr/V8.1/refman/Reference-Manual010.html#@command186]. 
+This is explained in the Reference Manual in [[http://coq.inria.fr/V8.1/refman/Reference-Manual010.html#@command186]]. 
 
 = Operational Semantics of Coq =
 
 '''Q''': Is there a paper which describes a small-(or big) step operational semantics for core coq? 
 
-'''A''': Coq is an equational theory generated from four reduction rules named β, δ, ι and ζ (see Section ''Conversion rules'' in Chapter [http://coq.inria.fr/doc/Reference-Manual006.html Calculus of Inductive Constructions] of the Coq 
-[http://coq.inria.fr/doc/index.html Reference Manual]). There is no fixed operational semantics and reduction is not restricted to evaluation of closed terms.
+'''A''': Coq is an equational theory generated from four reduction rules named β, δ, ι and ζ (see Section ''Conversion rules'' in Chapter [[http://coq.inria.fr/doc/Reference-Manual006.html|Calculus of Inductive Constructions]] of the Coq 
+[[http://coq.inria.fr/doc/index.html|Reference Manual]]). There is no fixed operational semantics and reduction is not restricted to evaluation of closed terms.
 
 Different strategies of reduction are made available to the user such as lazy and strict evaluation (strict here does not mean call-by-value in Plotkin's sense: it means reducing first the arguments into a weak head normal form before contracting β-redexes).
-See Section ''Conversion tactics'' in Chapter [http://coq.inria.fr/doc/Reference-Manual010.html Tactics] for the list of available strategies of reduction.
+See Section ''Conversion tactics'' in Chapter [[http://coq.inria.fr/doc/Reference-Manual010.html|Tactics]] for the list of available strategies of reduction.
 
 = Implicit arguments =
 
