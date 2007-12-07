@@ -2,7 +2,7 @@
 
 == Using latex to generate math ==
 
-We use the latex2.py Wiki parser written by [http://johannes.sipsolutions.de/Projects/new-moinmoin-latex Johannes Berg].
+We use the latex2.py Wiki parser written by [[http://johannes.sipsolutions.de/Projects/new-moinmoin-latex|Johannes Berg]].
 
 You can type 
 
@@ -29,7 +29,7 @@ $\forall m,n:\mathbb{N}\;\; a,b:\mathbb{Z},\; \neg \frac{a}{b}=2^{\sup (m,n)}$
 }}}
 
 It is possible to include the outcome in between the text, 
-as we do [[latex2(\usepackage{amssymb}%$\neg\exists p,q\in\mathbb{Q},\;\; \frac{p}{q}=\sqrt{2}$ )]] here!
+as we do <<latex2(\usepackage{amssymb}%$\neg\exists p,q\in\mathbb{Q},\;\; \frac{p}{q}=\sqrt{2}$ )>> here!
 
 The most general form is
 
