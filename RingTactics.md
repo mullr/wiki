@@ -16,4 +16,4 @@ end.
 
 == ringreplace ==
 
-Instead of this tactic, you can now do {{{replace a with b by ring}}} in Coq.  Unfortuately this doesn't work for {{{setoid_replace}}}.See also wiki:Self:TacticExts#LHS for using replace with {{{LHS}}} and {{{RHS}}}.
+Instead of this tactic, you can now do {{{replace a with b by ring}}} in Coq.  Unfortuately this doesn't work for {{{setoid_replace}}}.See also [[TacticExts#LHS]] for using replace with {{{LHS}}} and {{{RHS}}}.
