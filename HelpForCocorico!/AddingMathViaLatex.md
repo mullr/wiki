@@ -16,7 +16,7 @@ to get the generated dvi file inlined (as a .png file) in your text.
 
 For example 
 
-{{{#!latex
+{{{#!latex2
 $\forall m,n:{N}\;\; a,b:{Z},\; \neg \frac{a}{b}=2^{\sup (m,n)}$
 }}}
 
