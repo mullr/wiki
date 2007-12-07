@@ -1,7 +1,7 @@
 #language en
 = Highlighted syntax for various languages =
 
-It is possible (using a parrser based on [http://www.codento.com/people/mtr/genscript/ Gnu enscript]) to produce colorized syntax for various programming languages.
+It is possible (using a parrser based on [[http://www.codento.com/people/mtr/genscript/|Gnu enscript]]) to produce colorized syntax for various programming languages.
 
 You have to use the folloiwng format
 
@@ -11,7 +11,7 @@ You have to use the folloiwng format
 } } }
 }}}
 
-Of course your language-name shoud be among the [http://www.codento.com/people/mtr/genscript/highlightings.html languages recognised by Gnu enscript].
+Of course your language-name shoud be among the [[http://www.codento.com/people/mtr/genscript/highlightings.html|languages recognised by Gnu enscript]].
 
 For example, 
 
