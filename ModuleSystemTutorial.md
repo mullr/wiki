@@ -2,13 +2,13 @@
 
 Coq's module system can be used parameterise proofs over structures.  For instance rather than writing {{{min}}} and {{{max}}} functions, lemma and tactics for {{{nat}}}, {{{Z}}}, {{{Q}}}, etc., we can write the proofs once for an abstract decidable total order and then instanciate these functions, lemmas and tactics for each structure.
 
-This tutorial uses unicode characters and hence requires the ["UTF8Module"].
+This tutorial uses unicode characters and hence requires the [[UTF8Module]].
 
 {{{#!coq
 Require Import utf8.
 }}}
 
-The first step is to write a {{{Module Type}}} in a file that contains the signature of the abstract structure to work from.  This will be the signature of a decidable total order.  A {{{Module Type}}} is just a listing of {{{Parameter}}}s and {{{Axiom}}}s.  In this case we also add a ["Notation"] to make the sytax nicer.
+The first step is to write a {{{Module Type}}} in a file that contains the signature of the abstract structure to work from.  This will be the signature of a decidable total order.  A {{{Module Type}}} is just a listing of {{{Parameter}}}s and {{{Axiom}}}s.  In this case we also add a [[Notation]] to make the sytax nicer.
 
 {{{#!coq
 (* File: DecidableOrder.v
@@ -30,7 +30,7 @@ Parameter le_dec : ∀ x y, {x ≤ y} +{¬ x ≤ y}.
 End Sig.
 }}}
 
-Now we can write a module functor.  A module functor is a {{{Module}}} that takes one or more {{{Module}}}s of some {{{Module Type}}}s as parameters.  For example we can create a {{{Module}}} that defines a {{{min}}} function and lemmas for any {{{Module}}} that has the above {{{Module Type}}} signature.  The first thing we do is import the {{{Modle}}} parameter in order to have access to its parameters without having to use the DotNotation.  Notice that we also get access to the ["Notation"] defined in the {{{Module Type}}}.
+Now we can write a module functor.  A module functor is a {{{Module}}} that takes one or more {{{Module}}}s of some {{{Module Type}}}s as parameters.  For example we can create a {{{Module}}} that defines a {{{min}}} function and lemmas for any {{{Module}}} that has the above {{{Module Type}}} signature.  The first thing we do is import the {{{Modle}}} parameter in order to have access to its parameters without having to use the DotNotation.  Notice that we also get access to the [[Notation]] defined in the {{{Module Type}}}.
 
 {{{#!coq
 (* File: DecidableOrder.v
@@ -82,7 +82,7 @@ Qed.
 End Min.
 }}}
 
-Suppose you have a data type, such as [http://coq.inria.fr/contribs/QArith-Stern-Brocot.html Qpositive], that has a decidable total order and we want to make an instance of {{{min}}} and its lemmas for it.  We first must create a module satisfying the module signature.  The {{{<:}}} notation says that we are making a {{{Module}}} that (transparently) satisfies a given {{{Module Type}}}.  We are then required to have inside our module a list of {{{Definition}}}s and {{{Lemma}}}s that have the same name and types as those listed in the module type's signature. This work is specific to {{{Qpositive}}} and therefore it should go into a different file.
+Suppose you have a data type, such as [[http://coq.inria.fr/contribs/QArith-Stern-Brocot.html|Qpositive]], that has a decidable total order and we want to make an instance of {{{min}}} and its lemmas for it.  We first must create a module satisfying the module signature.  The {{{<:}}} notation says that we are making a {{{Module}}} that (transparently) satisfies a given {{{Module Type}}}.  We are then required to have inside our module a list of {{{Definition}}}s and {{{Lemma}}}s that have the same name and types as those listed in the module type's signature. This work is specific to {{{Qpositive}}} and therefore it should go into a different file.
 
 {{{#!coq
 (* File: QpositiveOrder.v
