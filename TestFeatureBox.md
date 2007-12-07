@@ -1,8 +1,8 @@
 #acl All:
 
-[[AttachList]]
+<<AttachList>>
 
-inline:toast.v
+{{attachment:toast.v}}
 
 casino
 
