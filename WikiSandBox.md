@@ -21,7 +21,7 @@ data Song = Do | Re | Mi
 \}\}\}
 }}}
 
-[[RandomQuote]]
+<<RandomQuote>>
 onsider a vector represented as a list of doubles.  Suppose we want to normalize a vector.  The standard method is to compute the length in one pass, and scale the vector in another pass
 
 {{{#!haskell numbers=disable
@@ -135,14 +135,14 @@ def syntax(highlight):
 
 HelpOnEditing MoinMoin:InterWiki 
 
-http://moinmoin.wikiwikiweb.de/ [http://www.python.org/ Python]
+http://moinmoin.wikiwikiweb.de/ [[http://www.python.org/|Python]]
 
 someone@the.inter.net
 
-An [:HelpOnEditing:internal link] that looks like normal text.
+An [[HelpOnEditing|internal link]] that looks like normal text.
 
 === Image Link ===
-http://c2.com/sig/wiki.gif
+{{http://c2.com/sig/wiki.gif}}
 
 == Smileys ==
 
@@ -163,7 +163,7 @@ http://c2.com/sig/wiki.gif
  Term:: Definition
 
 === Drawing ===
-drawing:mytest
+{{drawing:mytest}}
 
 = Heading 1 =
 == Heading 2 ==
