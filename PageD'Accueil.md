@@ -13,7 +13,7 @@ De quoi ce wiki parle-t-il ?
 
 Poins de départ intéressants :
  * ModificationsRécentes : regardez ce sur quoi les utilisateurs sont en train de travailler ;
- * ["BacÀSable"] : n'hésitez pas à venir modifier cette page et à vous entraîner à la publication de pages ;
+ * [[BacÀSable]] : n'hésitez pas à venir modifier cette page et à vous entraîner à la publication de pages ;
  * RechercherUnePage : parcourrez ou effectuez des recherches dans la base de données de différentes façons ;
  * RésuméDeLaSyntaxe : accès rapide à la syntaxe du wiki ;
  * ExplorerCeWiki : pour en savoir plus sur ce site et sur son contenu.
@@ -21,11 +21,11 @@ Poins de départ intéressants :
 == Comment utiliser ce site ==
 
 Un Wiki est un site de travail en commun, tout le monde peut contribuer et partager :
- * Éditez n'importe quelle page en cliquant sur '''[[GetText(Edit)]]''' en haut ou en bas de la page ;
+ * Éditez n'importe quelle page en cliquant sur '''<<GetText(Edit)>>''' en haut ou en bas de la page ;
  * Créez un lien vers une autre page en accolant des mots débutant par une majuscule (comme par exemple ModificationsRécentes) ou avec {{{["des mots entre guillemets à l'intérieur de crochets"]}}} ;
  * Retrouvez des titres ou des mots du texte en utilisant le formulaire de recherche en haut de chaque page ;
- * Consultez en premier lieu l'["AideAuxDébutants"] ; le ["SommaireDeL'Aide"] dresse la liste de toutes les pages d'aide.
+ * Consultez en premier lieu l'[[AideAuxDébutants]] ; le [[SommaireDeL'Aide]] dresse la liste de toutes les pages d'aide.
 
-Pour en savoir plus sur ce qu'est un [:WikiWikiWebVF: WikiWikiWeb], lisez MoinMoin:WhyWikiWorks et MoinMoin:WikiNature. Vous pouvez également consulter la MoinMoin:WikiWikiWebFaq.
+Pour en savoir plus sur ce qu'est un [[WikiWikiWebVF| WikiWikiWeb]], lisez MoinMoin:WhyWikiWorks et MoinMoin:WikiNature. Vous pouvez également consulter la MoinMoin:WikiWikiWebFaq.
 
-Ce site utilise le moteur [:MoinMoinVF: MoinMoin].
+Ce site utilise le moteur [[MoinMoinVF| MoinMoin]].
