@@ -2,7 +2,7 @@
 
 = W-Type =
 
-W-type or well-ordered set constructor is introduced in ["Martin-LöfTypeTheory"] to construct well-ordered set. It can be used to construct many (all predicative?) inductive types of Coq.
+W-type or well-ordered set constructor is introduced in [[Martin-LöfTypeTheory]] to construct well-ordered set. It can be used to construct many (all predicative?) inductive types of Coq.
 
 == General form ==
 
