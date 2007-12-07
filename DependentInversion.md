@@ -1,6 +1,6 @@
 = Dependent Inversion =
 
-Inversion is used when you have an object of an inductively defined dependent type, whose parameters are not pure variables, but have constructors in them.  Dependent inversion is used when this object occurs inside another type, such as the goal (vector is defined here: [http://coq.inria.fr/library/Coq.Bool.Bvector.html#vector]) .
+Inversion is used when you have an object of an inductively defined dependent type, whose parameters are not pure variables, but have constructors in them.  Dependent inversion is used when this object occurs inside another type, such as the goal (vector is defined here: [[http://coq.inria.fr/library/Coq.Bool.Bvector.html#vector]]) .
 
 == An Easy Case ==
 
