@@ -2,7 +2,7 @@
 #format wiki
 == Milad Niqui ==
 
-[http://www.cs.ru.nl/~milad Milad Niqui]
+[[http://www.cs.ru.nl/~milad|Milad Niqui]]
 
 ----
 CategoryHomepage
