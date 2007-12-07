@@ -1,2 +1,2 @@
-[[UserPreferences]]
+<<UserPreferences>>
 ----
