@@ -1,6 +1,6 @@
 #language en
 
-Anybody can edit a page in ["Cocorico!"]. 
+Anybody can edit a page in [[Cocorico!]]. 
 However, you can also register and edit with your username. 
 
 In order to register:
@@ -16,7 +16,7 @@ also use the profile to deactivate your account.
 If you are logged in you can log out by clicking on UserPreferences (here or on top of the page). 
 
 
- * ["HelpForCocorico!/ColorizedCoqSyntax"]
- * ["HelpForCocorico!/ColorizedOCamlSyntax"]
- * ["HelpForCocorico!/AddingMathViaLatex"]
- * ["HelpForCocorico!/ColorizedOtherLanguages"]
+ * [[HelpForCocorico!/ColorizedCoqSyntax]]
+ * [[HelpForCocorico!/ColorizedOCamlSyntax]]
+ * [[HelpForCocorico!/AddingMathViaLatex]]
+ * [[HelpForCocorico!/ColorizedOtherLanguages]]
