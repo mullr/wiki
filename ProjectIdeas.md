@@ -2,9 +2,9 @@
 
 Now that you know the basics of Coq you are itching to prove something.  Here are some ideas.
 
-[[TableOfContents(2)]]
+<<TableOfContents(2)>>
 
-See Top100MathematicalTheoremsInCoq and [http://www.cs.ru.nl/~freek/100/ Formalizing 100 Theorems]
+See Top100MathematicalTheoremsInCoq and [[http://www.cs.ru.nl/~freek/100/|Formalizing 100 Theorems]]
 
 == Fermat Last Theorem for n = 3 ==
 
@@ -13,9 +13,9 @@ See Top100MathematicalTheoremsInCoq and [http://www.cs.ru.nl/~freek/100/ Formali
 
 === Resources ===
 
-See [http://fermatslasttheorem.blogspot.com/2005/05/fermats-last-theorem-proof-for-n3.html Fermat's Last Theorem: Proof for n=3].
+See [[http://fermatslasttheorem.blogspot.com/2005/05/fermats-last-theorem-proof-for-n3.html|Fermat's Last Theorem: Proof for n=3]].
 
-[http://nshmyrev.narod.ru/temp/fermat4.tar.gz] start of the proof.
+[[http://nshmyrev.narod.ru/temp/fermat4.tar.gz]] start of the proof.
 
 === Estimated Difficulty ===
 
@@ -33,7 +33,7 @@ See [http://fermatslasttheorem.blogspot.com/2005/05/fermats-last-theorem-proof-f
 
 Fermat's last theorem has been proven in Coq for the ''n''=4 case. The proof is available in UserContributions/CNAM/Fermat4/ .
 
-See also, [http://www.cs.rug.nl/~wim/fermat/wilesEnglish.html Computer verification of Wiles' proof of Fermat's Last Theorem]
+See also, [[http://www.cs.rug.nl/~wim/fermat/wilesEnglish.html|Computer verification of Wiles' proof of Fermat's Last Theorem]]
 
 === Estimated Difficulty ===
 
@@ -69,7 +69,7 @@ or transuranic elements.
 
 === Resources ===
 
-[http://www.mathematik.uni-bielefeld.de/~sillke/SEQUENCES/series000]
+[[http://www.mathematik.uni-bielefeld.de/~sillke/SEQUENCES/series000]]
 
 === Estimated Difficulty ===
 
