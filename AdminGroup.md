@@ -2,3 +2,5 @@
  * LionelElieMamane
  * MiladNiqui
  * [[RussellOConnor]]
+ * JeanMarcNotin
+ * HugoHerbelin
