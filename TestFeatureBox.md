@@ -1,5 +1,7 @@
 #acl All:
 
+[[attachment.toast.v]]
+
 {{attachment:toast.v}}
 
 {{attachment:test.hs}}
