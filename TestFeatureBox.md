@@ -6,7 +6,7 @@
 
 inline:toast.v
 
-{{attachment:test.py}}
+
 
 
 {{{#!coq
