@@ -4,10 +4,6 @@
 
 {{attachment:toast.v}}
 
-casino
-
-01-beltonen.com
-
 
 To test the experimental features.
 
@@ -20,7 +16,13 @@ To test the experimental features.
 }
 }}}
 
-{{{#!latex2
+{{{#!pascal
+int main() {
+    printf("Hello wikiwiki world!\n");
+}
+}}}
+
+{{{#!latex
 \usepackage{amssymb}
 %%end-prologue%%
 $2\in\mathbb{N}$
