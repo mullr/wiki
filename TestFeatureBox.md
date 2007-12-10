@@ -1,10 +1,9 @@
 #acl All:
 
-
+#{{attachment:test.py}}
 
 {{attachment:toast.v}}
 
-inline:toast.v
 
 
 
