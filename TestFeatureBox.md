@@ -1,8 +1,10 @@
 #acl All:
 
-inline:test.py
+{{inline:test.py}}
 
-[[attachment:toast.v]]
+{{attachment:test.py}}
+
+{{attachment:toast.v}}
 
 inline:toast.v
 
