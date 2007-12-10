@@ -1,3 +1,2 @@
 #acl All:
-
-{{attachment:test.py}}
+#{{attachment:test.py}}
