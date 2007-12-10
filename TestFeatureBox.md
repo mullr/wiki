@@ -2,6 +2,8 @@
 
 {{attachment:toast.v}}
 
+{{attachment:test.hs}}
+
 {{attachment:test.cpp}}
 
 {{attachment:test.py}}
