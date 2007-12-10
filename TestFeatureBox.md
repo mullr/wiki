@@ -100,7 +100,7 @@ normalize :: Vector -> Vector
 normalize v = scale (recip (norm v)) v
 }}}
 
-{{{#!haskell
+{{{#!syntax haskell numbers=none
 type Vector = [Double]
 
 normSquared :: Vector -> Double
@@ -150,7 +150,7 @@ scaleAndNormSquared a (x:xs) = (a*x:recScale, x*x+recNormSquared)
 
 Now using the laziness of Haskell, and recursive binding, we can use {{{scaleAndNormSquared}}} to create a virtually one-pass normalization. We need to scale by the reciprocal of the square-root of {{{normSquared}}}.  So we say exactly that.
 
-{{{#!haskell
+{{{#!syntax haskell
 circNormalize :: Vector -> Vector
 circNormalize v = scaledVector
   where (scaledVector, normSquared) = scaleAndNormSquared (recip (sqrt normSquared)) v
