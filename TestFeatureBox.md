@@ -1,12 +1,12 @@
 #acl All:
 
-{{inline:test.py}}
 
-{{attachment:test.py}}
 
 {{attachment:toast.v}}
 
 inline:toast.v
+
+{{attachment:test.py}}
 
 
 {{{#!coq
