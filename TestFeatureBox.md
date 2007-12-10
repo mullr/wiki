@@ -3,7 +3,7 @@
 
 [[attachment:toast.v]]
 
-attachment:tuust.cpp
+[[inline:tuust.cpp]]
 
 
 To test the experimental features.
