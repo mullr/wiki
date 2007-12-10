@@ -1,7 +1,7 @@
 #acl All:
 #{{attachment:test.py}}
 
-{{{#!python
+{{{#!coq
 from string import whitespace
 from math import *
 from math import sin as SIN
