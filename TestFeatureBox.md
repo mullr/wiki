@@ -1,5 +1,7 @@
 #acl All:
-#{{attachment:test.py}}
+
+{{attachment:test.py}}
+
 
 {{{#!coq
 from string import whitespace
