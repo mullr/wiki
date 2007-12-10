@@ -1,8 +1,9 @@
 #acl All:
 
-<<AttachList>>
 
-{{attachment:toast.v}}
+attachment:toast.v
+
+inline:tuust.cpp
 
 
 To test the experimental features.
