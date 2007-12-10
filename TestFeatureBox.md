@@ -1,5 +1,6 @@
 #acl All:
 
+inline:test.py
 
 [[attachment:toast.v]]
 
