@@ -18,17 +18,19 @@ Coq has been taught more deeply in the context of the second-year-of-master-leve
 
 Loïc Pottier and Laurent Théry used Coq (and the graphical interface CtCoq) in a class on ''Proofs of Algorithms'' (at least in 1998 and 1999).
 
-Experiences were made at the first year of the Master level at ENS Lyon by Yves Bertot (from 2001?). This class, now taught by Jean Duprat, is still alive. Yves Bertot, who cowrote with Pierre Castéran the [Coq'Art] comprehensive textbook also wrote a tutorial derived from his class: the [[[http://cel.archives-ouvertes.fr/inria-00001173/en|Coq in a hurry]]] tutorial.
+Experiences were made at the first year of the Master level at ENS Lyon by Yves Bertot (from 2002). This class id now taught by Jean Duprat.
 
 From 2004, Alexandre Miquel taught Coq at the first year of the master level at University Paris 7.  He has [[http://www.pps.jussieu.fr/~miquel/enseignement/mpri/index.html|exercises]] and a [[http://www.pps.jussieu.fr/~miquel/enseignement/mpri/guide.html|"guide de survie"]] for a class at the second year of the master level (in French).
 
+Nicolas Magaud has a class ''Ingénierie de la preuve'' at the University of Strasbourg.
+
 === Intensive formations for senior people ===
 
-As soon as 1993, the [[http://www.cs.chalmers.se/Cs/Research/Logic/Types|TYPES]] summer school had courses on Coq as part of its curriculum. Notice that other proof assistants related to the TYPES European working group were taught too (in the 2007 edition, this included Isabelle, Matita and Mizar). Most attendees were PhD students but these summer schools were opened to senior people too.
+As soon as 1993, the [[http://www.cs.chalmers.se/Cs/Research/Logic/Types|TYPES]] summer school had courses on Coq as part of its curriculum. In particular, Yves Bertot's course in 2006 led to a tutorial named   [[[http://cel.archives-ouvertes.fr/inria-00001173/en|Coq in a hurry]]. Notice that other proof assistants related to the TYPES European working group were taught too (in the 2007 edition, this included Isabelle, Matita and Mizar). Most attendees were PhD students but these summer schools were opened to senior people too.
 
-Between 1999 and 2002, a few formations were organised by the [[http://logical.inria.fr|LogiCal]] team (formerly Coq team). It was generally three-days-long intensive formations hosting senior people from industry and academy. The material is now rather old as the last such session was using Coq V7.2.
+Between 1999 and 2002, a few formations were organised by the [[http://logical.inria.fr|LogiCal]] team (formerly Coq team). It was generally three-day-long intensive formations hosting senior people from industry and academy. The material is now rather old as the last such session was using Coq V7.2.
 
-In 2006, Pierre Castéran proposed a 3-hours introduction to Coq at the [jfla.inria.fr/2006 JFLA] conference. It was based on his formalisation of ordinals and entitled [[http://www.labri.fr/perso/casteran/Cantor/JFLA2006.pdf|Le Coq au Pauillac et aux omégas]].
+In 2006, Pierre Castéran proposed a 3-hours introduction to Coq at the [[jfla.inria.fr/2006|JFLA]] conference. It was based on his formalisation of ordinals and entitled [[http://www.labri.fr/perso/casteran/Cantor/JFLA2006.pdf|Le Coq au Pauillac et aux omégas]].
 
 == Using Coq as a teaching tool ==
 
@@ -41,6 +43,8 @@ Another experiment has been made by David Delahaye, Mathieu Jaume and Virgile Pr
 A similar master-level class on formal methods and specification languages has been taught by Catherine Dubois using Coq. This was at [[http://www.iie.cnam.fr|ENSIIE]], a computer science engineer school attached to the CNAM. Groups were composed of 15 to 20 students.
 
 In 2004, Pierre Castéran and Richard Moot used Coq in the context of a [[http://esslli2004.loria.fr/giveabs.php?14|course]] on ''Proof automation for type-logical grammars''] at ESSLLI. Their Coq material is avalaible [[http://www.labri.fr/perso/casteran/esslli2004/index.html|online]].
+
+In 2007, Yves Bertot used Coq as a support for an intensive 4-day class ''Semantics in Calculus of Constructions'' at Chalmers University. The [[http://groups.google.com/group/chalmers-cs-semantics-in-coq|course notes]] are freely available.
 
 Amy Felty used Coq as a tool for a class on ''Principles of Formal Software Development'' [[http://www.site.uottawa.ca/~afelty/csi5110|Fall 2007]] at Ottawa University.
 
