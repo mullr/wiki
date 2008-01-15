@@ -68,7 +68,7 @@ string is 74. Every such atom decays, in at most 17 days, into stable
 or transuranic elements.
 
 === Resources ===
-
+[[http://www.cs.cmu.edu/~kw/pubs/conway.pdf]]
 [[http://www.mathematik.uni-bielefeld.de/~sillke/SEQUENCES/series000]]
 
 === Estimated Difficulty ===
