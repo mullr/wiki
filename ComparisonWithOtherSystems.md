@@ -17,8 +17,8 @@ For a more complete list see [[http://www.cs.ru.nl/~freek/digimath/index.html|Fr
 
 It would be nice to give brief list of their advantages and disadvantages compared to Coq. 
 
-* Kam, Robert C., "Case Studies in Proof Checking" available from [[http://www.cs.sjsu.edu/faculty/beeson/Masters/KamThesis.pdf]] includes a critique of Coq and a comparison with the Mizar system.
-** Among other things, it is claimed that Coq's abstract foundations introduce incompatibilities between foundational libraries and make it hard to reuse existing theories.  The non-trivialness of type-casting compounds this problem.  See LibraryIncompatibility
+ * Kam, Robert C., "Case Studies in Proof Checking" available from [[http://www.cs.sjsu.edu/faculty/beeson/Masters/KamThesis.pdf]] includes a critique of Coq and a comparison with the Mizar system.
+ ** Among other things, it is claimed that Coq's abstract foundations introduce incompatibilities between foundational libraries and make it hard to reuse existing theories.  The non-trivialness of type-casting compounds this problem.  See LibraryIncompatibility
 
 === Why you should choose Coq ===
 
