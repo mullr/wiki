@@ -1,5 +1,7 @@
-If a predicate on a natural number is decidable, then the existence in Prop of a natural number verifying this property is equivalent to existence in Set of such a number.
-It's a nice exercice to try to prove it :
+Because of Coq's constructivist foundations, an ''exists'' statement in the Prop domain cannot ordinarily be used to build a proof in the concrete Set domain.
+
+However, if a predicate on a natural number is decidable, then the existence in Prop of a natural number verifying this property is equivalent to existence in Set of such a number.
+It's a nice exercise to try to prove it :
 {{{#!coq
 Theorem prop_to_set : (exists x, P x) -> {x : nat | P x}.
 }}}
