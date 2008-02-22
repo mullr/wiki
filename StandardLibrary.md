@@ -68,6 +68,9 @@ CoInductive conat : Set :=
 | coS : conat -> conat.
 }}}
 
+=== Double-negation mapping of classical logic ===
+It would be nice to standardize the double-negation embedding of classical logic into intuitionistic logic.  This would make it easier to investigate the constructive implications of classical theories, by avoiding reliance on additional axioms.  
+
 === Interfaces and Types ===
 
 It should allow different views on the same subject - for example, different ways of the same subject definition. We need ability to define interface and to replace one it's implementation with another.
