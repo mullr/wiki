@@ -5,7 +5,12 @@ This file is created from scratch. Feel free to enlarge/shorten/modify it. It is
 
 
 {{{#!coq
-Notation " A ⇒ B " := (A -> B) (at level 90, right associativity) : type_scope.
+
+Notation " A ⇒ B " := (A => B) (at level 90, right associativity) : type_scope.
+
+Notation " A → B " := (A -> B) (at level 90, right associativity) : type_scope.
+
+Notation " A ← B " := (A <- B) (at level 90, right associativity) : type_scope.
 
 Notation " ∀ x , B  " := (forall x:_, B ) (at level 200, x at level 0, no associativity) : type_scope.
 
@@ -29,6 +34,12 @@ Notation " A × B " := (A * B) (at level 40, left associativity) : type_scope.
 
 Notation " A ≠ B " := (A <> B) (at level 70, no associativity) : type_scope.
 
+Notation " A ≠ B :> T " := (A <> B :> T) (at level 70, no associativity) : type_scope.
+
+Notation " A ≤ B " := (A <= B) (at level 70, no associativity) : type_scope.
+
+Notation " A ≥ B " := (A >= B) (at level 70, no associativity) : type_scope.
+
 Notation " A ∧ B " := (A /\ B) (at level 80, right associativity) : type_scope.
 
 Notation " A ⇔ B " := (A <-> B) (at level 95, right associativity) : type_scope.
@@ -43,7 +54,25 @@ Notation " ∃ x , B  " := (ex (fun x:_=>B) ) (at level 0, x at level 99, no ass
 
 Notation " ∃ x : A , B  " := (ex (fun x:A=>B) ) (at level 0, x at level 99, no associativity) : type_scope.
 
+Notation " ∃! x , B  " := := (ex (unique (fun x => P))) (at level 200, x ident, right associativity, format "'[' 'exists' ! '/ ' x , '/ ' P ']'") : type_scope.
+
+Notation " ∃! x : A , B  " := (ex (unique (fun x:A => P))) (at level 200, x ident, right associativity, format "'[' 'exists' ! '/ ' x : A , '/ ' P ']'") : type_scope.
+
 Notation " 'ℕ' " := nat : type_scope.
+
+(* Notation " 'ℤ' " := Int : type_scope. 
+
+Notation " 'ℤ'⁺ " := positive : type_scope.
+
+Notation " 'ℚ' " := Q : type_scope.
+
+Notation " 'ℝ' " := R : type_scope. *)
+
+Notation " 'ℝ' ⁺ " := posreal : type_scope.
+
+Notation " 'ℝ' ⁻ " := negreal : type_scope.
+
+
 }}}
 
 [[attachment:utf8.v]]
