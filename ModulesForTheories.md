@@ -1,6 +1,6 @@
 = Using Modules for the Universal Theory of Abstract Algebra =
 
-It is often the case that one mathematical structure is related to another mathematical structure, and can reuse part of the theory.  Take for example groups and finite groups.  Clearly a finite group is a group and therefore can make use of the universal theory of group.
+It is often the case that one mathematical structure is related to another mathematical structure, and can reuse part of the theory.  Take for example groups and finite groups.  Clearly a finite group is a group and therefore can make use of the universal theory of group.  The module and record systems allow Coq to support this "little theories" approach to mathematical reasoning (Farmer et al., 1992).
 
 == Universal Theory ==
 
@@ -192,3 +192,6 @@ b = c
 because {{{Seq (s:=universe G) b c}}} simplifies to {{{b=c}}}.  Before this was impossible because the inference engine would have to magically infer (universe G) parameter which is now explicitly given.
 
 So the entire universal theory of groups is available without any work.  If the universal theory is extended later, all users of that universal theory get the extended theorems automatically.
+
+= Further reading =
+* W. M. Farmer, J. D. Guttman, and F. J. Thayer. Little theories. In D. Kapur, editor, Proceedings of the Eleventh International Conference on Automated Deduction, volume 607 of Lecture Notes in Computer Science, pages 567--581. Springer Verlag, New York, 1992. http://citeseer.ist.psu.edu/farmer92little.html
