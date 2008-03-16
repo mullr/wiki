@@ -1,6 +1,6 @@
 = Frequently Asked Questions About Coq =
 
-Many questions are answered in the official [[http://coq.inria.fr/doc/faq.html|Coq FAQ]] that is maintained by the Coq team.
+Many questions are answered in the official [[http://coq.inria.fr/V8.1/faq.html|Coq FAQ]] that is maintained by the Coq team.
  
  1. Should I put my type in [[Prop_or_Set]]?
  1. How does the MatchAsInReturn syntax work?
