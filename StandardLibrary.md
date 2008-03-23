@@ -16,7 +16,7 @@ Let there be less tactics but let them be more powerful than now. For example, r
 
 === Wf ===
 
-{{{Acc_Iter}}}  and {{{Fix_F}}} are almost identical, but they have different theories following from them.  This should be cleaned up by having the two theories merged into one.  See [[http://coq.inria.fr/library/Coq.Init.Wf.html|Coq.Init.Wf]]
+{{{Acc_Iter}}}  and {{{Fix_F}}} are almost identical, but, until Coq 8.1, they had different theories following from them. From Coq 8.2, the notions are merged.  See [[http://coq.inria.fr/library/Coq.Init.Wf.html|Coq.Init.Wf]]
 
 === Consistent Definition of Operators ===
 I would be nice if the standard library was more consistent with the definitions it uses.  As it stands {{{a < b}}} for {{{nat}}} is an inductive definition while {{{a < b}}} for {{{Z}}} is defined to be {{{a ?= b = LT}}}.
