@@ -12,8 +12,16 @@
 
  * Who is [[Coq and PL Education|teaching programming languages in Coq (or teaching Coq for PL)]]?
 
+ * Where else can I [[Other Coq Resources|learn about Coq]]?
+
+
+---- /!\ '''Edit conflict - other version:''' ----
  * Where else can I [[learn about Coq|Other Coq Resources]]?
 
+
+---- /!\ '''Edit conflict - your version:''' ----
+
+---- /!\ '''End of edit conflict''' ----
 == Discussion of Built-In Tactics ==
 
  * How do I use the [[Fix (tactic)|fix tactic]]?
