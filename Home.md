@@ -14,6 +14,8 @@
 
  * Where else can I [[Other Coq Resources|learn about Coq]]?
 
+ * Where can I read research papers about [[TheoryBehindCoq|Coq's theoretical foundations]]?
+
 
 == Discussion of Built-In Tactics ==
 
