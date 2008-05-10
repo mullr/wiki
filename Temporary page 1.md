@@ -16,6 +16,7 @@
 
  * Where can I read research papers about [[TheoryBehindCoq|Coq's theoretical foundations]]?
 
+ * How can use the [[ModuleSystem|module system]] effectively?
 
 == Discussion of Built-In Tactics ==
 
