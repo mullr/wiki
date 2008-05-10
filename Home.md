@@ -19,7 +19,7 @@
 
 * What exactly does [[simpl (tactic)|simpl]] do?
 
-* How can I avoid [[http://pauillac.inria.fr/pipermail/coq-club/2007/003186.html non-instantiated existential variables with eauto]]?
+* How can I avoid [[http://pauillac.inria.fr/pipermail/coq-club/2007/003186.html|non-instantiated existential variables with eauto]]?
 
 
 == Some Useful Custom Tactics ==
