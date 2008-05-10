@@ -1,5 +1,9 @@
 There are lots more places to learn about Coq.
 
+ * [[http://coq.inria.fr/doc-eng.html|The Coq Reference Manual]]
+
+ * The [[http://www.springer.com/computer/programming/book/978-3-540-20854-9|Coq'Art book]] and [[http://www.labri.fr/perso/casteran/CoqArt/index.html|website]].  The website contains examples and exercises.
+
  * [[http://cel.archives-ouvertes.fr/inria-00001173|Coq in a Hurry, A tutorial by Yves Bertot]]
 
  * [[http://coq.inria.fr/doc/faq.html|The Official Coq FAQ]]
