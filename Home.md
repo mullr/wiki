@@ -6,8 +6,6 @@
 
 * How do I do [[Induction over a type containing pairs|induction over a type containing pairs]]?
 
-* How can I [[Teaching programming languages in Coq|teach programming languages in Coq]]?
-
 * Where can I learn about [[Ssreflect library|extending Coq for for small scale reflection]]?
 
 * Who is using [[List of Coq PL Projects|Coq in their programming languages research]]?
