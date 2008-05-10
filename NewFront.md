@@ -11,8 +11,6 @@
 * Who is using [[List of Coq PL Projects|Coq in their programming languages research]]?
 
 * Who is [[Coq and PL Education|teaching programming languages in Coq (or teaching Coq for PL)]]?
-
-
 == Discussion of Built-In Tactics ==
 
 * How do I use the [[Fix (tactic)|fix tactic]]?
@@ -30,7 +28,7 @@
 
 * [[if/then/else (tactical)|A conditional tactical]]
 
-* [[subst++ (tactic)|An aggressive version of <code>subst</code>]]
+* [[subst++ (tactic)|An aggressive version of `subst`]]
 
 * [[decompose records (tactic)|Decomposing all record-like structures]]
 
