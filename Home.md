@@ -12,13 +12,14 @@
 
 * Who is [[Coq and PL Education|teaching programming languages in Coq (or teaching Coq for PL)]]?
 
+
 == Discussion of Built-In Tactics ==
 
 * How do I use the [[Fix (tactic)|fix tactic]]?
 
 * What exactly does [[simpl (tactic)|simpl]] do?
 
-* How can I avoid [http://pauillac.inria.fr/pipermail/coq-club/2007/003186.html non-instantiated existential variables with eauto] ?
+* How can I avoid [[http://pauillac.inria.fr/pipermail/coq-club/2007/003186.html non-instantiated existential variables with eauto]]?
 
 
 == Some Useful Custom Tactics ==
