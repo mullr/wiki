@@ -8,7 +8,7 @@
 
  * Who is using [[List of Coq PL Projects|Coq in their programming languages research]]?
 
- * Who is [[Coq and PL Education|teaching programming languages in Coq (or teaching Coq for PL)]]?
+ * How is Coq [[CoqInTheClassroom|being taught and used to teach]]?
 
  * Where else can I [[Other Coq Resources|learn about Coq]]?
 
