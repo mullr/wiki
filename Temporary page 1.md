@@ -6,8 +6,6 @@
 
  * How do I do [[Induction over a type containing pairs|induction over a type containing pairs]]?
 
- * Where can I learn about [[Ssreflect library|extending Coq for for small scale reflection]]?
-
  * Who is using [[List of Coq PL Projects|Coq in their programming languages research]]?
 
  * Who is [[Coq and PL Education|teaching programming languages in Coq (or teaching Coq for PL)]]?
@@ -17,6 +15,8 @@
  * Where can I read research papers about [[TheoryBehindCoq|Coq's theoretical foundations]]?
 
  * How can use the [[ModuleSystem|module system]] effectively?
+
+ * What [Tools|tools and tactic packages] are available for Coq?
 
 == Discussion of Built-In Tactics ==
 
