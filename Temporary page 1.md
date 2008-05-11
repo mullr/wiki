@@ -18,7 +18,6 @@
 
  * What [[Tools|tools and tactic packages]] are available for Coq?
 
-
 == Language Constructs and Built-In Tactics ==
 
  * How do I use the [[Fix (tactic)|fix tactic]]?
@@ -28,6 +27,14 @@
  * How can I avoid [[http://pauillac.inria.fr/pipermail/coq-club/2007/003186.html|non-instantiated existential variables with eauto]]?
 
  * How does the [[MatchAsInReturn|pattern match]] syntax work? 
+
+ * How does [[DependentInversion|dependent inversion]] work?
+
+ * Why doesn't Coq support [[extensional_equality|extension equality]]? (Why can't I prove `forall x, f x = g x) -> f = g`?)
+
+ * Why does Coq use inductive types and not [[WTypeInsteadOfInductiveTypes|W-Types]]?
+
+ * Why can I [[FalseEqAcc|eliminate False]] (a `Prop`) when constructing a member of `Set`?
 
 == Some Useful Custom Tactics ==
 
