@@ -21,7 +21,7 @@ It would be nice to give brief list of their advantages and disadvantages compar
  ** Among other things, it is claimed that Coq's abstract foundations introduce incompatibilities between foundational libraries and make it hard to reuse existing theories.  The non-trivialness of type-casting compounds this problem.  See LibraryIncompatibility
 
 
-== Related Tools for Software Verification ==
+=== Related Tools for Software Verification ===
 
  * Caduceus [[http://why.lri.fr/caduceus/index.en.html]]
  * Krakatoa [[http://krakatoa.lri.fr/]]
