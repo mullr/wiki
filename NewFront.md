@@ -18,6 +18,10 @@
 
  * How can use the [[ModuleSystem|module system]] effectively?
 
+ * [[InTac|Solve goals about list inclusion]]
+
+ * [[AppFwdRev|Apply <-> forwards and backwards]]
+
 == Discussion of Built-In Tactics ==
 
  * How do I use the [[Fix (tactic)|fix tactic]]?
