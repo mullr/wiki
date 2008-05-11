@@ -25,12 +25,6 @@ Some of the tools listed here are part of bigger projects that support other pro
 
  * `coqdoc` exports vernacular file to TeX or HTML. It is part of the Coq distribution and documented in the [[http://coq.inria.fr/doc|Reference Manual]].
  * enscript mode for Coq [[http://www.cs.ru.nl/~milad/programs/enscript]]
-
-== Related Tools for Software Verification ==
-
- * Caduceus [[http://why.lri.fr/caduceus/index.en.html]]
- * Krakatoa [[http://krakatoa.lri.fr/]]
- * Why [[http://why.lri.fr/index.en.html]]
  
 == Tactics packages ==
 
