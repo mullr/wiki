@@ -1,6 +1,4 @@
-= TacticExts =
 <<TableOfContents>>
-== General tactics ==
 === Dependent case ===
 
 {{{dcase}}} is a version of case that remembers the case you are in.
