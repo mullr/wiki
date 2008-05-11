@@ -52,3 +52,5 @@
  * How do I change the [[Proof General Error Color]]?
 
  * I'm using Proof General.  [[Proof General Missing Proof State|Where did my proof state go]]?
+
+ * [[CoqIDE_crashes_under_KDE|CoqIDE crashes in KDE. Help!]]
