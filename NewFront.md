@@ -40,7 +40,7 @@
 
  * Why can I [[FalseEqAcc|eliminate False]] (a `Prop`) when constructing a member of `Set`?
 
-== Some Useful Custom Tactics ==
+== Some Useful Custom Tactics and Notation ==
 
  * [[Case (tactic)|Marking cases and subcases in proofs]]
 
@@ -59,6 +59,8 @@
  * [[AppFwdRev|Apply <-> forwards and backwards]]
 
  * [[LhsRhsTactic|Manipulate equalities in the goal]]
+
+ * [[ListComprehensionNotation|Haskell-like notation for list comprehension]]
 
 == Proof-General and CoqIDE Tips ==
 
