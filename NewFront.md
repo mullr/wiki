@@ -18,6 +18,8 @@
 
  * What [[Tools|tools and tactic packages]] are available for Coq?
 
+ * Where is the [[OldFront|old front page]]?
+
 == Language Constructs and Built-In Tactics ==
 
  * How do I use the [[Fix (tactic)|fix tactic]]?
