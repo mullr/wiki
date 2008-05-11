@@ -18,7 +18,8 @@
 
  * What [[Tools|tools and tactic packages]] are available for Coq?
 
-== Discussion of Built-In Tactics ==
+
+== Language Constructs and Built-In Tactics ==
 
  * How do I use the [[Fix (tactic)|fix tactic]]?
 
@@ -26,6 +27,7 @@
 
  * How can I avoid [[http://pauillac.inria.fr/pipermail/coq-club/2007/003186.html|non-instantiated existential variables with eauto]]?
 
+ * How does the [[MatchAsInReturn|pattern match]] syntax work? 
 
 == Some Useful Custom Tactics ==
 
