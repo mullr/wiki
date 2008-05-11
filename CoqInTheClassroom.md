@@ -24,13 +24,15 @@ From 2004, Alexandre Miquel taught Coq at the first year of the master level at 
 
 Nicolas Magaud has a class ''Ingénierie de la preuve'' at the University of Strasbourg.
 
-=== Intensive formations for senior people ===
+=== Short courses for working researchers ===
 
 As soon as 1993, the [[http://www.cs.chalmers.se/Cs/Research/Logic/Types|TYPES]] summer school had courses on Coq as part of its curriculum. In particular, Yves Bertot's course in 2006 led to a tutorial named   [[[http://cel.archives-ouvertes.fr/inria-00001173/en|Coq in a hurry]]. Notice that other proof assistants related to the TYPES European working group were taught too (in the 2007 edition, this included Isabelle, Matita and Mizar). Most attendees were PhD students but these summer schools were opened to senior people too.
 
 Between 1999 and 2002, a few formations were organised by the [[http://logical.inria.fr|LogiCal]] team (formerly Coq team). It was generally three-day-long intensive formations hosting senior people from industry and academy. The material is now rather old as the last such session was using Coq V7.2.
 
 In 2006, Pierre Castéran proposed a 3-hours introduction to Coq at the [[jfla.inria.fr/2006|JFLA]] conference. It was based on his formalisation of ordinals and entitled [[http://www.labri.fr/perso/casteran/Cantor/JFLA2006.pdf|Le Coq au Pauillac et aux omégas]].
+
+The University of Pennsylvania Provers Group ran a 2008 POPL tutorial, [[http://www.cis.upenn.edu/~plclub/popl08-tutorial/|Using Proof Assistants for Programming Language Research]].  Extensively documented Coq code, illustrating type soundness for simply typed lambda calculus and system F-sub, is available from the website.
 
 == Using Coq as a teaching tool ==
 
@@ -50,9 +52,13 @@ Amy Felty used Coq as a tool for a class on ''Principles of Formal Software Deve
 
 Andrew W. Appel used Coq in a class on ''Automated Theorem Proving'' [[http://www.cs.princeton.edu/courses/archive/fall07/cos595|Fall 2007]] at Princeton University.
 
-Benjamin Pierce used Coq as a tool for teaching ''Software Foundations'' [[http://www.seas.upenn.edu/~cis500/cis500-f07/index.html|Fall 2007]] at Yale University.
+Benjamin Pierce used Coq as a tool for teaching ''Software Foundations'' [[http://www.seas.upenn.edu/~cis500/cis500-f07/index.html|Fall 2007]] at the University of Pennsylvania.
 
 Paweł Urzyczyn used Coq as a tool for teaching ''Theoretical Foundations of Theorem Proving Systems'' (Winter 2006-07) at Warsaw University.
+
+Greg Morrisett (Harvard): I've been teaching an undergraduate PL course using Coq. We've done a big chunk of Winskell's book, and parts of Pierce's book as well. The course website is [[http://www.eecs.harvard.edu/cs152/|here]]. 
+
+Yves Bertot (INRIA): For teaching purpose, I have a project on the thorough description of a very small imperative programming language. The development contains two variants of operational semantics (small-step --also called SOS in my development-- or big-step --also called natural semantics), denotational semantics, Hoare logic, Dijkstra's weakest precondition calculus, and abstract interpretation; I intended to add a formally verified compiler. The programming language I work on is minimal, as it only contains constructs for assignment, while-loops and sequences and each aspect is covered in a few hundred lines of Coq code.
 
 === Coq as a teaching tool in mathematics ===
 
