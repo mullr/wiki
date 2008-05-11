@@ -20,6 +20,14 @@ It would be nice to give brief list of their advantages and disadvantages compar
  * Kam, Robert C., "Case Studies in Proof Checking" available from [[http://www.cs.sjsu.edu/faculty/beeson/Masters/KamThesis.pdf]] includes a critique of Coq and a comparison with the Mizar system.
  ** Among other things, it is claimed that Coq's abstract foundations introduce incompatibilities between foundational libraries and make it hard to reuse existing theories.  The non-trivialness of type-casting compounds this problem.  See LibraryIncompatibility
 
+
+== Related Tools for Software Verification ==
+
+ * Caduceus [[http://why.lri.fr/caduceus/index.en.html]]
+ * Krakatoa [[http://krakatoa.lri.fr/]]
+ * Why [[http://why.lri.fr/index.en.html]]
+
+
 === Why you should choose Coq ===
 
 It's free. Coq is licensed under LGPL,  so it's much easier to modify it and develop it. For example, although Mizar has very large theorems collection, there is no prover source available.
