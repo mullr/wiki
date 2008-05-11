@@ -1,3 +1,5 @@
+[[http://coq.inria.fr/|Coq]] is proof assistant based on the calculus of constructions.  It is used to formalize proofs in a variety of fields, including mathematics and programming languages.  Cocorico is a Coq wiki.
+
 == High-Level Advice and Guidance ==
 
  * How do I do [[Mutual Induction|mutual induction]]?
@@ -17,8 +19,6 @@
  * How can use the [[ModuleSystem|module system]] effectively?
 
  * What [[Tools|tools and tactic packages]] are available for Coq?
-
- * Where is the [[OldFront|old front page]]?
 
 == Language Constructs and Built-In Tactics ==
 
@@ -71,3 +71,9 @@
  * I'm using Proof General.  [[Proof General Missing Proof State|Where did my proof state go]]?
 
  * [[CoqIDE_crashes_under_KDE|CoqIDE crashes in KDE. Help!]]
+
+== Meta ==
+
+ * Where is the [[OldFront|old front page]]?
+
+ * Where can I learn [[AboutCocorico!|about this wiki]]?
