@@ -5,17 +5,18 @@ Some of the tools listed here are part of bigger projects that support other pro
 
 == Interface for Editing Proofs ==
 
- * CoqIDE [[http://coq.inria.fr/coqide/]]
+ * [[http://coq.inria.fr/coqide/|CoqIDE]]
    The graphical user interface distributed with Coq.
- * PCoq [[http://www-sop.inria.fr/lemme/pcoq/]]
+ * [[http://www-sop.inria.fr/lemme/pcoq/|PCoq]]
    A graphical user interface for Coq. The environment provides ways to edit structurally formulas and commands, new notations can easily be added. It allows proof by pointing.
- * !ProofGeneral [[http://proofgeneral.inf.ed.ac.uk/]]
+ * [[http://proofgeneral.inf.ed.ac.uk/|ProofGeneral]]
   !ProofGeneral is a generic interface for proof assistants, based on the customizable text editor Emacs.
- * !TmCoq [[http://tmcoq.audebaud.org/]] 
+ * [[http://tmcoq.audebaud.org/|TmCoq]] 
   !TmCoq integrates Coq within !TeXmacs.
- * !GeoProof [[http://home.gna.org/geoproof/]]
+ * [[http://home.gna.org/geoproof/|GeoProof]]
   !GeoProof is a dynamic geometry software, with can communicate with CoqIDE to build the formula corresponding to a geometry figure interactively.
- * [[http://www.cs.ru.nl/~lionelm/tmEgg/|tmEgg]]: Coq plugin for !TeXmacs
+ * [[http://www.cs.ru.nl/~lionelm/tmEgg/|tmEgg]]
+  Coq plugin for !TeXmacs
 
 == Interface for Browsing Proofs ==
 
