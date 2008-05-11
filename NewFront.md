@@ -18,10 +18,6 @@
 
  * How can use the [[ModuleSystem|module system]] effectively?
 
- * [[InTac|Solve goals about list inclusion]]
-
- * [[AppFwdRev|Apply <-> forwards and backwards]]
-
 == Discussion of Built-In Tactics ==
 
  * How do I use the [[Fix (tactic)|fix tactic]]?
@@ -45,6 +41,11 @@
 
  * [[solve by inversion (tactic)|Solving a goal by inversion on an unspecified hypothesis]]
 
+ * [[InTac|Solve goals about list inclusion]]
+
+ * [[AppFwdRev|Apply <-> forwards and backwards]]
+
+ * [[LhsRhsTactic|Manipulate equalities in the goal]]
 
 == Proof-General and CoqIDE Tips ==
 
