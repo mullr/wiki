@@ -16,7 +16,7 @@
 
  * How can use the [[ModuleSystem|module system]] effectively?
 
- * What [Tools|tools and tactic packages] are available for Coq?
+ * What [[Tools|tools and tactic packages]] are available for Coq?
 
 == Discussion of Built-In Tactics ==
 
