@@ -30,6 +30,10 @@
 
  * How does [[DependentInversion|dependent inversion]] work?
 
+ * When using `eapply`, how can I [[ExistentialVariablesInEapply|instantiate the question marks]]?
+
+ * How can I make Coq [[PrintingUniverses|always print universes]]? 
+
  * Why doesn't Coq support [[extensional_equality|extension equality]]? (Why can't I prove `forall x, f x = g x) -> f = g`?)
 
  * Why does Coq use inductive types and not [[WTypeInsteadOfInductiveTypes|W-Types]]?
