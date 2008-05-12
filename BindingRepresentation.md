@@ -4,7 +4,7 @@ discuss approaches to formalizing languages with binding.
 
  * Brian Aydemir, Arthur Charguéraud, Benjamin C. Pierce, Randy Pollack, and Stephanie Weirich. [[http://www.cis.upenn.edu/~baydemir/papers/Engineering%20Formal%20Metatheory.pdf|Engineering Formal Metatheory]]. This paper argues for locally nameless terms and cofinitely quantified judgments.  The approach appears practical for general research purposes.
 
- * The locally nameless/cofinite approach is used in [[http://www.cis.upenn.edu/~plclub/popl08-tutorial/code/index.html|Using Proof Assistants for Programming Language Research]].
+ * The locally nameless/cofinite approach is used in the [[http://www.cis.upenn.edu/~plclub/popl08-tutorial/code/index.html|Using Proof Assistants for Programming Language Research]] tutorial.
 
  * Brian Aydemir, Stephanie Weirich, and Steve Zdancewic. [[http://www.cis.upenn.edu/~baydemir/papers/Abstracting%20Syntax.pdf|Abstracting Syntax (Draft)]]. This paper suggests several other shemes including a higher order abstract syntax encoding in Coq.  The techniques mostly refine those described above.
 
