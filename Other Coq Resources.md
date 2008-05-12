@@ -10,6 +10,8 @@ There are lots more places to learn about Coq.
 
  * [[http://coq.inria.fr/library/|Coq Library Documentation]]
 
+ * Materials form the [[http://www.cis.upenn.edu/~plclub/popl08-tutorial/code/index.html|Using Proof Assistants for Programming Language Research]] tutorial.
+
  * The Coq-Club mailing list, [[http://pauillac.inria.fr/pipermail/coq-club/|subscription information and official archive]]
 
  * Coq IRC channel: `irc://irc.freenode.net/#coq`
