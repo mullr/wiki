@@ -1,1 +1,3 @@
-This Coq-club [[http://pauillac.inria.fr/pipermail/coq-club/2007/003006.html|thread]] contains an interesting discussion about how to stay oriented while doing large inductive proofs.  Benjamin Pierce suggests using a [[Case (tactic)|Case tactic]] to mark your progress.
+This Coq-club [[http://pauillac.inria.fr/pipermail/coq-club/2007/003006.html|thread]] contains an interesting discussion about how to stay oriented while doing large inductive proofs.  
+
+Benjamin Pierce suggests using a [[Case (tactic)|Case tactic]] to mark your progress.
