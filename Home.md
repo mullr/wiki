@@ -16,6 +16,8 @@
 
  * What [[Tools|tools and tactic packages]] are available for Coq?
 
+ * Where can I learn about proofs for languages with [[BindingRepresentation|variable binding]]?
+
 == Community ==
 
  * Who is using [[List of Coq PL Projects|Coq in their programming languages research]]?
