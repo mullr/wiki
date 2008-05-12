@@ -22,9 +22,11 @@
 
  * How is Coq [[CoqInTheClassroom|being taught and used to teach]]?
 
-== Language Constructs and Built-In Tactics ==
+== Community ==
 
- * How do I use the [[Fix (tactic)|fix tactic]]?
+ * Who is using [[List of Coq PL Projects|Coq in their programming languages research]]?
+
+ * How is Coq [[CoqInTheClassroom|being taught and used to teach]]?
 
  * What exactly does [[simpl (tactic)|simpl]] do?
 
