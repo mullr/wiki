@@ -22,11 +22,7 @@
 
  * How is Coq [[CoqInTheClassroom|being taught and used to teach]]?
 
-== Community ==
-
- * Who is using [[List of Coq PL Projects|Coq in their programming languages research]]?
-
- * How is Coq [[CoqInTheClassroom|being taught and used to teach]]?
+== Language Constructs and Built-In Tactics ==
 
  * What exactly does [[simpl (tactic)|simpl]] do?
 
