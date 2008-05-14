@@ -7,22 +7,21 @@ There is a great deal of mathematics (including some of the Top100MathematicalTh
  * Top100MathematicalTheoremsInCoq: a list of Top100MathematicalTheorems that are formalised in Coq (see also [[http://www.cs.ru.nl/~freek/100/]]).
  * [[CoRN]] : a large library of formalised mathematics built on top of Coq
 
-= Software Verified by Coq =
+= Software Verified in Coq =
 
-== sorting ==
+== Sorting ==
 
 || Algorithm || Formalisation available from ||
-|| Quicksort || [[Why]] ||
+|| Quicksort || [[http://why.lri.fr/index.en.html|Why]] ||
 || Treesort|| StandardLibrary ||
 || Insertion sort|| StandardLibrary ||
-|| Selection sort || [[Why]] ||
-|| Maximum sort || [[Why]] ||
-|| Heapsort || [[Why]] ||
+|| Selection sort || [[http://why.lri.fr/index.en.html|Why]] ||
+|| Maximum sort || [[http://why.lri.fr/index.en.html|Why]] ||
+|| Heapsort || [[http://why.lri.fr/index.en.html|Why]] ||
 
-== other algorithms ==
+== Other Algorithms ==
 
  * [[http://coq.inria.fr/contribs/RSA.html|RSA]]
  * [[http://coq.inria.fr/contribs/Stalmarck.html|Stalmarck]]
  * [[http://coq.inria.fr/contribs/Buchberger.html|Buchberger]]
- * GMP square root
- * ...
+ * [[http://en.scientificcommons.org/12723003|GMP square root]]
