@@ -68,6 +68,18 @@
 
  * [[ListComprehensionNotation|Haskell-like notation for list comprehension]]
 
+== Formal Developments and Coq Pearls ==
+
+ * SquareRootTwo: A very short proof that the square root of 2 is non rational.
+
+ * UntypedLambdaTerms: various data structures for implementing the untyped lambda calculus in Coq.
+
+ * [[http://www.lri.fr/~sozeau/research/russell/quicksort.html|QuickSort]]: an implementation of quicksort in Coq using `Program`.
+
+ * ExistsFromPropToSet: Existential implies Sigma for decidable properties on {{{nat}}}.
+
+ * Where can I see other examples of [[FormalizedAndVerified|formalization and verification]]?
+
 == Proof-General and CoqIDE Tips ==
 
  * How do I change the [[Proof General Error Color]]?
