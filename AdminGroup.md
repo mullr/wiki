@@ -4,3 +4,4 @@
  * [[RussellOConnor]]
  * JeanMarcNotin
  * HugoHerbelin
+ * JeffVaughan
