@@ -1,7 +1,7 @@
 #pragma section-numbers off
 #language en
 
-Some of the tools listed here are part of bigger projects that support other proof assistants/theorem provers.
+Some of the tools listed here are part of bigger projects that support other proof assistants/theorem provers.  Another list of Coq-related tools can be found at [[http://coq.inria.fr/tools1-eng.html]].
 
 == Interface for Editing Proofs ==
 
