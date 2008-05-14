@@ -3,7 +3,7 @@
 #pragma section-numbers off
 #language en
 
-= Welcome to Cocorico!, the Coq Wiki =
+= Welcome toto Cocorico!, the Coq Wiki =
 
 This site is a !WikiWikiWeb dedicated to the [[http://coq.inria.fr|Coq]] proof assistant.
 ||<tableclass="userpref">'''''The Coq Community'''''       ||<style="width: 25%">'''''Documentation'''''||<style="width: 25%">'''''Formalisations'''''||<style="width: 25%">'''''Software'''''  ||
