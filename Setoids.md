@@ -5,5 +5,3 @@ Setoids are employed whenever Leibniz equality is too strong for your purposes. 
 The purpose of this page is to collect miscellaneous tips about the subject. Many of these were given by mattam on IRC.
 
 I'll loosely collect conjectures here, so take this page with a grain of salt.
-
- * Better not add `Build_Equivalence` to the Hints database (note that `Hint Constructors Equivalence` will add it), since this will cause looping in the Instance search.  
