@@ -1,3 +1,5 @@
+During the Cocorico redesign the following articles were moved "off the beaten path".  Many are still quite informative, and with a little polish they should be ready for the main page.  Please consider updating and moving any articles you find useful.
+
 == Coq Pearls ==
 
  * QuickSort: an implementation of quicksort in Coq.
@@ -10,8 +12,8 @@
 
 == Miscellany ==
 
- * A discussion about [[CoqStyle|Coq Style]]
- * A discussion suggesting [[ExistsConsideredHarmful|using Set instead of Prop]]
+ * A discussion about [[CoqStyle|Coq Style]].
+ * A discussion suggesting [[ExistsConsideredHarmful|preferring Set to Prop]].
  * What is the difference between Require_Import_and_Require_Export?
  * Isn't IntensionalEquality useless?
  * Do objects living in Prop ever need to be evaluated? See PropsGuardingIotaReduction.
