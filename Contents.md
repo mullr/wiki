@@ -91,3 +91,5 @@
  * Where is the [[OldFront|old front page]]?
 
  * Where can I learn [[AboutCocorico!|about this wiki]]?
+
+ * How do I [[EditingTheFrontPage|edit this page]]?
