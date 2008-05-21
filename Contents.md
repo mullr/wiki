@@ -44,6 +44,8 @@
 
  * Why can I [[FalseEqAcc|eliminate False]] (a `Prop`) when constructing a member of `Set`?
 
+ * How does the [[Fix (tactic)|fix tactic]] work?
+
 == Some Useful Custom Tactics and Notation ==
 
  * [[Case (tactic)|Marking cases and subcases in proofs]]
