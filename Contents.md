@@ -93,3 +93,5 @@
  * Where can I learn [[AboutCocorico!|about this wiki]]?
 
  * How do I [[EditingCocorico|edit this wiki]]?
+
+ * All old (and new) pages are included in the [[TitleIndex|title index]].
