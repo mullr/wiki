@@ -1,4 +1,4 @@
-During the Cocorico redesign the following articles were moved "off the beaten path".  Many are still quite informative, and with a little polish they should be ready for the main page.  Please consider updating and moving any articles you find useful.
+During the Cocorico redesign the following articles were moved "off the beaten path."  Many are still quite informative, and with a little polish should be ready for the main page.  Please consider updating and moving any articles you find useful.
 
 == Coq Pearls ==
 
