@@ -94,4 +94,4 @@
 
  * How do I [[EditingCocorico|edit this wiki]]?
 
- * All old (and new) pages are included in the [[TitleIndex|title index]].
+ * All pages are included in the [[TitleIndex|title index]].
