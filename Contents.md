@@ -96,4 +96,4 @@
 
  * How do I [[EditingCocorico|edit this wiki]]?
 
- * All pages are included in the [[TitleIndex|title index]].
+ * Where did that [[OtherContents|old article]] go?
