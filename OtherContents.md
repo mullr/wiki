@@ -1,4 +1,4 @@
-==Coq Pearls==
+== Coq Pearls ==
 
  * QuickSort: an implementation of quicksort in Coq.
  * [[http://www.lri.fr/~sozeau/research/russell/quicksort.html|Another QuickSort]]: an implementation of quicksort in Coq using Program and definitions from the standard library.
@@ -8,7 +8,7 @@
  * A proof of [[LagrangesTheorem|Lagrange's Theorem]].
  * A proof that there are [[NotFinitePrimes|not finitely many primes]].
 
-==Miscellany==
+== Miscellany ==
 
  * A discussion about [[CoqStyle|Coq Style]]
  * A discussion suggesting [[ExistsConsideredHarmful|using Set instead of Prop]]
