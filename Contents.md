@@ -1,3 +1,5 @@
+#acl All:read Known:read,write,revert
+
 == High-Level Advice and Guidance ==
 
  * How do I do [[Mutual Induction|mutual induction]]?
