@@ -92,4 +92,4 @@
 
  * Where can I learn [[AboutCocorico!|about this wiki]]?
 
- * How do I [[EditingTheFrontPage|edit this page]]?
+ * How do I [[EditingCocorico|edit this wiki]]?
