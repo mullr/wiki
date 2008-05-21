@@ -1,4 +1,4 @@
-#acl All:read Known:read,write,revert
+#acl Known:read,write,revert All:read
 
 == High-Level Advice and Guidance ==
 
