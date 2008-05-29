@@ -14,7 +14,7 @@ During the Cocorico redesign the following articles were moved "off the beaten p
 
  * A discussion about [[CoqStyle|Coq Style]].
  * A discussion suggesting [[ExistsConsideredHarmful|preferring Set to Prop]].
- * What is the difference between Require_Import_and_Require_Export?
+ * What is the difference between [[Require_Import_and_Require_Export|Require Import and Require Export]]?
  * Isn't IntensionalEquality useless?
  * Do objects living in Prop ever need to be evaluated? See PropsGuardingIotaReduction.
  * A discussion about [[IntensionalEquality|intensional equality]].
