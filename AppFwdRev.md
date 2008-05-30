@@ -1,3 +1,5 @@
+From Coq Version 8.2 these tricks are not longer necessary, on can use {{{apply ->}}} and {{{apply <-}}}.
+
 === ApplyFwd ===
 
 {{{ApplyFwd}}} is intended to allow you to apply lemmas of the form
