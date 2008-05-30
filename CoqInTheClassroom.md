@@ -24,6 +24,8 @@ From 2004, Alexandre Miquel taught Coq at the first year of the master level at 
 
 Nicolas Magaud has a class ''Ingénierie de la preuve'' at the University of Strasbourg.
 
+Jean François Dufourd has a class '' Spécifications formelles, preuves et programmation'' at the University of Strasbourg.
+
 === Short courses for working researchers ===
 
 As soon as 1993, the [[http://www.cs.chalmers.se/Cs/Research/Logic/Types|TYPES]] summer school had courses on Coq as part of its curriculum. In particular, Yves Bertot's course in 2006 led to a tutorial named   [[[http://cel.archives-ouvertes.fr/inria-00001173/en|Coq in a hurry]]. Notice that other proof assistants related to the TYPES European working group were taught too (in the 2007 edition, this included Isabelle, Matita and Mizar). Most attendees were PhD students but these summer schools were opened to senior people too.
