@@ -16,7 +16,7 @@ Some of the tools listed here are part of bigger projects that support other pro
  * [[http://home.gna.org/geoproof/|GeoProof]]
   !GeoProof is a dynamic geometry software, with can communicate with CoqIDE to build the formula corresponding to a geometry figure interactively.
  * [[http://www.mimuw.edu.pl/~chrzaszc/Papuq/|Papuq]]
-  !Papuq is patched version of CoqIde with teaching oriented features.
+  Papuq is patched version of CoqIde with teaching oriented features.
  * [[http://www.cs.ru.nl/~lionelm/tmEgg/|tmEgg]]
   Coq plugin for !TeXmacs
 
