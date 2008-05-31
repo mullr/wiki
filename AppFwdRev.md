@@ -1,4 +1,4 @@
-From Coq Version 8.2 these tricks are not longer necessary, on can use {{{apply ->}}} and {{{apply <-}}}.
+Starting with Coq Version 8.2 these tricks are no longer necessary, as one can use {{{apply ->}}} and {{{apply <-}}}.
 
 === ApplyFwd ===
 
