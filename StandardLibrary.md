@@ -68,6 +68,8 @@ CoInductive conat : Set :=
 | coS : conat -> conat.
 }}}
 
+The {{{Coq.Sets}}} section of the standard library seems to be poorly documented.  The {{{Coq.Sets.Relations_*}}} modules duplicate the theory of relations provided by {{{Coq.Relations.Relations}}}.
+
 === Double-negation mapping of classical logic ===
 It would be nice to standardize the double-negation embedding of classical logic into intuitionistic logic.  This would make it easier to investigate the constructive implications of classical theories, by avoiding reliance on additional axioms.  
 
