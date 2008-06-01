@@ -18,6 +18,10 @@ Let there be less tactics but let them be more powerful than now. For example, r
 
 {{{Acc_Iter}}}  and {{{Fix_F}}} are almost identical, but, until Coq 8.1, they had different theories following from them. From Coq 8.2, the notions are merged.  See [[http://coq.inria.fr/library/Coq.Init.Wf.html|Coq.Init.Wf]]
 
+=== Theory of relations ===
+
+The {{{Coq.Sets.Relations_*}}} modules duplicate the theory of relations provided by {{{Coq.Relations.Relations}}}, with different theorems following from each.  Module {{{Coq.Relations.Relation_Operators}}} seems to provide an inductive definition for Rstar as described in {{{Coq.Relations.Rstar}}} and used in {{{Coq.Relations.Newman}}}, but the connection should be made explicit.
+
 === Consistent Definition of Operators ===
 I would be nice if the standard library was more consistent with the definitions it uses.  As it stands {{{a < b}}} for {{{nat}}} is an inductive definition while {{{a < b}}} for {{{Z}}} is defined to be {{{a ?= b = LT}}}.
 
@@ -67,8 +71,6 @@ CoInductive conat : Set :=
 | coO : conat
 | coS : conat -> conat.
 }}}
-
-The {{{Coq.Sets}}} section of the standard library seems to be poorly documented.  The {{{Coq.Sets.Relations_*}}} modules duplicate the theory of relations provided by {{{Coq.Relations.Relations}}}.
 
 === Double-negation mapping of classical logic ===
 It would be nice to standardize the double-negation embedding of classical logic into intuitionistic logic.  This would make it easier to investigate the constructive implications of classical theories, by avoiding reliance on additional axioms.  
