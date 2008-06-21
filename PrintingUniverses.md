@@ -2,9 +2,27 @@
 
 = Printing Universes =
 
+== Coq 8.2 ==
+
 From Coq version 8.2, you can use the corresponding entry of the Display menu of CoqIDE.
 
+== Coq 8.1 ==
+
 From Coq version 8.1, {{{Type}}} universes in terms can be displayed by toggling the {{{Set Printing Universes}}} command and universes constraints can be displayed using the {{{Print Universes}}} command (more in the [[http://coq.inria.fr/V8.1/refman/Reference-Manual004.html#toc21|Reference Manual]]).
+
+Subsequently, the {{{Print [term]}}} command will annotate it's output with universes levels.  For instance
+
+{{{#!coq
+Coq < Set Printing Universes.
+
+Coq < Print prod.
+Inductive prod
+              (A : Type (* Coq.Init.Datatypes.22 *))
+              (B : Type (* Coq.Init.Datatypes.22 *))
+            : Type (* Coq.Init.Datatypes.22 *) :=  pair : A -> B -> A * B
+}}}
+
+== Coq 8.0 ==
 
 In Coq versions 8.0 and 8.0pl1 to 8.0pl4, the following tricks can be used instead.
 
