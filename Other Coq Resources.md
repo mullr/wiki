@@ -15,3 +15,5 @@ There are lots more places to learn about Coq.
  * The Coq-Club mailing list, [[http://pauillac.inria.fr/pipermail/coq-club/|subscription information and official archive]]
 
  * Coq IRC channel: `irc://irc.freenode.net/#coq`
+
+See also: [[CoqNewbie|Resources for Coq Newbies]]
