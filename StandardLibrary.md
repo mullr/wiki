@@ -12,8 +12,6 @@ Finite Types should be part of the Standard Library.  Either InductiveFiniteType
 
 There should be a library for extential equality for functions.
 
-Let there be less tactics but let them be more powerful than now. For example, replace tactic in theory can be used to replace one 1/2 with 2/4. Or even sin pi with sin 3*pi. But now it's not possible. 
-
 === Wf ===
 
 {{{Acc_Iter}}}  and {{{Fix_F}}} are almost identical, but, until Coq 8.1, they had different theories following from them. From Coq 8.2, the notions are merged.  See [[http://coq.inria.fr/library/Coq.Init.Wf.html|Coq.Init.Wf]]
@@ -60,7 +58,7 @@ Inductive eq_true : bool -> Prop := is_eq_true : eq_true true.
 It directly expresses what it means, it does not interfere with other potentially independent uses of {{{true=}}} and it is easy
 to use for rewriting expressions into {{{true}}} using {{{destruct}}}. [HH]
 
-=== Sets ===
+=== Set theory ===
 
 Both the {{{A -> Set}}} and the {{{forall I:Type, I -> A}}} notions of subsets of A should be purused in the standard library.
 
@@ -71,6 +69,8 @@ CoInductive conat : Set :=
 | coO : conat
 | coS : conat -> conat.
 }}}
+
+See [[http://arxiv.ccsd.cnrs.fr/abs/math/0402336v1 | arXiv:math/0402336v1 ]] Carlos Simpson, ''Set theoretical mathematics in Coq'' for an overview.
 
 === Double-negation mapping of classical logic ===
 It would be nice to standardize the double-negation embedding of classical logic into intuitionistic logic.  This would make it easier to investigate the constructive implications of classical theories, by avoiding reliance on additional axioms.  
@@ -100,3 +100,7 @@ Easy-to-contribute library is much better. Although we should keep library clean
 much more active and wide community. 
 
 There should be clean list of common problems defined in both existing and to-be-written code. One should be able to easily find the problem and solve it.
+
+----
+
+Let there be less tactics but let them be more powerful than now. For example, replace tactic in theory can be used to replace one 1/2 with 2/4. Or even sin pi with sin 3*pi. But now it's not possible. 
