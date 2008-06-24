@@ -70,7 +70,10 @@ CoInductive conat : Set :=
 | coS : conat -> conat.
 }}}
 
-See [[http://arxiv.ccsd.cnrs.fr/abs/math/0402336v1 | arXiv:math/0402336v1 ]] Carlos Simpson, ''Set theoretical mathematics in Coq'' for an overview.
+See  Carlos Simpson, ''Computer theorem proving in math'' ([[http://arxiv.ccsd.cnrs.fr/abs/math/0311260 | arXiv:math/0311260 ]]) and ''Set theoretical mathematics in Coq'' ([[http://arxiv.ccsd.cnrs.fr/abs/math/0402336v1 | arXiv:math/0402336v1 ]]) for an overview.
+
+=== Abstract algebra ===
+The Coq standard library should include the abstract theory of the most common algebraic structures at least (monoids, groups, rings, fields).  (Semi-)rings and fields are already defined as part of the {{{ring}}} and {{{field}}} tactic families. 
 
 === Double-negation mapping of classical logic ===
 It would be nice to standardize the double-negation embedding of classical logic into intuitionistic logic.  This would make it easier to investigate the constructive implications of classical theories, by avoiding reliance on additional axioms.  
