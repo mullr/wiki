@@ -78,6 +78,8 @@ The Coq standard library should include the abstract theory of the most common a
 === Double-negation mapping of classical logic ===
 It would be nice to standardize the double-negation embedding of classical logic into intuitionistic logic.  This would make it easier to investigate the constructive implications of classical theories, by avoiding reliance on additional axioms.  
 
+* Classical reasoning is currently required for much of {{{Coq.Reals}}}; it would be nice if it was rewritten to use double-negation. 
+
 === Interfaces and Types ===
 
 It should allow different views on the same subject - for example, different ways of the same subject definition. We need ability to define interface and to replace one it's implementation with another.
