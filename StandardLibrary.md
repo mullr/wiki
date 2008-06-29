@@ -77,7 +77,7 @@ Both the {{{A -> Set}}} and the {{{forall I:Type, I -> A}}} notions of subsets o
 
  Note that the {{{Program}}} feature relies on yet another(?) notion of subset: {{{ { x : T | P } }}} is an x of type T endowed with a proof that x satisfies P.  The {{{Ensemble}}} type from {{{Coq.Sets}}} seems to be a version of {{{ { x : T | P } }}} endowed with an extensionality axiom. (is this correct???)  How much of {{{Coq.Sets}}} can be rephrased without needing extensionality?  
 
-I also suggest a theory of decidable sets {{{A -> bool}}} and semi-decidable sets {{{A -> conat}}} where
+I also suggest a theory of decidable sets {{{A -> bool}}} (This is apparently provided by {{{Coq.Sets.Uniset}}}) and semi-decidable sets {{{A -> conat}}} where
 
 {{{#!coq
 CoInductive conat : Set :=
