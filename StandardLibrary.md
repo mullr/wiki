@@ -12,7 +12,8 @@ Finite Types should be part of the Standard Library.  Either InductiveFiniteType
 
 There should be a library for extential equality for functions.
 
- The axiom of functional extensionality is declared in {{{Coq.Program.FunctionalExtensionality}}} (Coq SVN): {{{
+ The axiom of functional extensionality is declared in {{{Coq.Program.FunctionalExtensionality}}} (Coq SVN):
+ {{{#!coq
 
 Axiom fun_extensionality_dep : forall A, forall B : (A -> Type), 
   forall (f g : forall x : A, B x), 
@@ -20,7 +21,6 @@ Axiom fun_extensionality_dep : forall A, forall B : (A -> Type),
 
 Lemma fun_extensionality : forall A B (f g : A -> B), 
   (forall x, f x = g x) -> f = g.
-
 }}}
 
  Is this what's meant here?
@@ -75,7 +75,7 @@ to use for rewriting expressions into {{{true}}} using {{{destruct}}}. [HH]
 
 Both the {{{A -> Set}}} and the {{{forall I:Type, I -> A}}} notions of subsets of A should be perused in the standard library.
 
- Note that the {{{Program}}} feature relies on yet another(?) notion of subset: {{{ { x : T | P } }}} is an x of type T endowed with a proof that x satisfies P.
+ Note that the {{{Program}}} feature relies on yet another(?) notion of subset: {{{ { x : T | P } }}} is an x of type T endowed with a proof that x satisfies P.  The {{{Ensemble}}} type from {{{Coq.Sets}}} seems to be a version of {{{ { x : T | P } }}} endowed with an extensionality axiom. (is this correct???)  How much of {{{Coq.Sets}}} can be rephrased without needing extensionality?  
 
 I also suggest a theory of decidable sets {{{A -> bool}}} and semi-decidable sets {{{A -> conat}}} where
 
@@ -84,6 +84,8 @@ CoInductive conat : Set :=
 | coO : conat
 | coS : conat -> conat.
 }}}
+
+ Of course, we should try to establish connections among these notions whenever possible.
 
 See  Carlos Simpson, ''Computer theorem proving in math'' ([[http://arxiv.ccsd.cnrs.fr/abs/math/0311260 | arXiv:math/0311260 ]]) and ''Set theoretical mathematics in Coq'' ([[http://arxiv.ccsd.cnrs.fr/abs/math/0402336v1 | arXiv:math/0402336v1 ]]) for an overview.
 
