@@ -12,6 +12,19 @@ Finite Types should be part of the Standard Library.  Either InductiveFiniteType
 
 There should be a library for extential equality for functions.
 
+ The axiom of functional extensionality is declared in {{{Coq.Program.FunctionalExtensionality}}} (Coq SVN): {{{
+
+Axiom fun_extensionality_dep : forall A, forall B : (A -> Type), 
+  forall (f g : forall x : A, B x), 
+  (forall x, f x = g x) -> f = g.
+
+Lemma fun_extensionality : forall A B (f g : A -> B), 
+  (forall x, f x = g x) -> f = g.
+
+}}}
+
+ Is this what's meant here?
+
 === Wf ===
 
 {{{Acc_Iter}}}  and {{{Fix_F}}} are almost identical, but, until Coq 8.1, they had different theories following from them. From Coq 8.2, the notions are merged.  See [[http://coq.inria.fr/library/Coq.Init.Wf.html|Coq.Init.Wf]]
@@ -60,7 +73,9 @@ to use for rewriting expressions into {{{true}}} using {{{destruct}}}. [HH]
 
 === Set theory ===
 
-Both the {{{A -> Set}}} and the {{{forall I:Type, I -> A}}} notions of subsets of A should be purused in the standard library.
+Both the {{{A -> Set}}} and the {{{forall I:Type, I -> A}}} notions of subsets of A should be perused in the standard library.
+
+ Note that the {{{Program}}} feature relies on yet another(?) notion of subset: {{{ { x : T | P } }}} is an x of type T endowed with a proof that x satisfies P.
 
 I also suggest a theory of decidable sets {{{A -> bool}}} and semi-decidable sets {{{A -> conat}}} where
 
