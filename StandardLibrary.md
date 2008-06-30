@@ -121,7 +121,7 @@ application, not in term of terms elimination or induction.
 Easy-to-contribute library is much better. Although we should keep library clean and strict we should allow user to contribute in even small part. Nobody will write thousands lines of code before contribution. If every ten lines can be submitted, then we'll have
 much more active and wide community. 
 
-There should be clean list of common problems defined in both existing and to-be-written code. One should be able to easily find the problem and solve it.
+There should be clean list of common problems defined in both existing and to-be-written code. One should be able to easily find the problem and solve it. (See ProjectIdeas?)
 
 ----
 
