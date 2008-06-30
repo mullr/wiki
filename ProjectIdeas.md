@@ -2,7 +2,7 @@
 
 Now that you know the basics of Coq you are itching to prove something.  Here are some ideas.
 
-Other than formalizing existing proofs, one useful exercise is to update some of Coq's user-contributed libraries so that they build on the recent additions in the Coq standard library rather than their own foundations.
+Other than formalizing existing proofs, one useful exercise is to update some of Coq's user-contributed libraries so that they build on the recent additions in the Coq StandardLibrary rather than their own foundations.
  
 <<TableOfContents(2)>>
 
