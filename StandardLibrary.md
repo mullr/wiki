@@ -31,7 +31,7 @@ Lemma fun_extensionality : forall A B (f g : A -> B),
 
 === Theory of relations ===
 
-The {{{Coq.Sets.Relations_*}}} modules duplicate the theory of relations provided by {{{Coq.Relations.Relations}}}, with different theorems following from each.  Module {{{Coq.Relations.Relation_Operators}}} seems to provide an inductive definition for Rstar as described in {{{Coq.Relations.Rstar}}} and used in {{{Coq.Relations.Newman}}}, but the connection should be made explicit.
+The {{{Coq.Sets.Relations_*}}} modules duplicate the theory of relations provided by {{{Coq.Relations.Relations}}}, with different theorems following from each.  These notions should be unified.  {{{Coq.Relations.Rstar}}} and {{{Coq.Relations.Newman}}} have been removed from SVN due to similar issues; they're still accessible from Coq-contribs. (There is an inductive definition for R* in {{{Coq-Relations.Relation_Operators}}}.)
 
 === Consistent Definition of Operators ===
 I would be nice if the standard library was more consistent with the definitions it uses.  As it stands {{{a < b}}} for {{{nat}}} is an inductive definition while {{{a < b}}} for {{{Z}}} is defined to be {{{a ?= b = LT}}}.
