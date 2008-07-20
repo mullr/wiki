@@ -10,7 +10,7 @@ Finite Types should be part of the Standard Library.  Either InductiveFiniteType
 
 === Extensional Equality ===
 
-There should be a library for [[extensionial equality]] for functions.
+There should be a library for [[extensional_equality]] for functions.
 
  The axiom of functional extensionality is declared in {{{Coq.Program.FunctionalExtensionality}}} (Coq SVN):
  {{{#!coq
