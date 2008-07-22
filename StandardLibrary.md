@@ -57,9 +57,10 @@ Definition lt (a b:A) : bool := ltcompare (compare a b)
 Coercion Is_true : bool >-> Sortclass
 }}}
 
-This process uses SmallScaleReflection advocated by GeorgesGonthier.
+This process uses SmallScaleReflection advocated by GeorgesGonthier, i.e. coercing bools to propositions and treating them as equivalent when working on a decidable domain. 
 
 ==== Is_true vs (true=) ====
+
 Some may argue that the function {{{(true=)}}} should be the coercion because it allows access to the extensive array of rewrite tactics.  I think the above definition is more beautiful.  Discuss.
 
 I would advocate for using the following definition as the canonical coercion from `bool` to `Prop`:
@@ -72,7 +73,6 @@ It directly expresses what it means, it does not interfere with other potentiall
 to use for rewriting expressions into {{{true}}} using {{{destruct}}}. [HH]
 
 === Set theory ===
-
 Both the {{{A -> Set}}} and the {{{forall I:Type, I -> A}}} notions of subsets of A should be perused in the standard library.
 
  Note that the {{{Program}}} feature relies on yet another(?) notion of subset: {{{ { x : T | P } }}} is an x of type T endowed with a proof that x satisfies P.  The {{{Ensemble}}} type from {{{Coq.Sets}}} seems to be a version of {{{ { x : T | P } }}} endowed with an extensionality axiom. (is this correct???)  How much of {{{Coq.Sets}}} can be rephrased without needing extensionality?  
