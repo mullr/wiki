@@ -12,7 +12,7 @@ If A is a type and B is a type dependent on A (of course this may all be in a co
  * we can do induction on nodes: given any property of nodes, if it holds for a node whenever it holds for every node one step further from the root, then it holds for all nodes.
 Note that the root of the tree is a node like any other, and the leaves are those nodes labelled by an x: A such that B[x] is empty.
 
-For example, to define the NaturalNumbers, A has two elements (call them z and s), B[z] is empty, and B[s] has one element. The tree corresponding the natural number n consists of n nodes labelled by s (the first of these the root), one after another, ending in one more node (a leaf) labelled by z. (If the number is zero, then the root is the leaf.) Branching is trivial, since every B[x] has at most one element; the tree must stop sometime, by well-foundedness.
+For example, to define the NaturalNumbers, A has two elements (call them z and s), B[z] is empty, and B[s] has one element. The tree corresponding to the natural number n consists of n nodes labelled by s (the first of these the root), one after another, ending in one more node (a leaf) labelled by z. (If the number is zero, then the root is the leaf.) Branching is trivial, since every B[x] has at most one element; the tree must stop sometime, by well-foundedness.
 
 Note that a calculus founded on inductive types will still need to stick in some basic type constructions by hand: an empty type, binary sums, and dependent sums. (Also dependent products, but even the CalculusOfInductiveConstructions has to do that.) Often, followers of Martin-Löf will put in some other basic types by hand (usually N and the non-empty finite types), but these are not strictly necessary.
 
@@ -22,9 +22,9 @@ There some problems with using W-type constructor instead of inductive types of 
 
  1. The elimination rule for inductive types couldn't be proved using intensional equality. For example if you define natural numbers using W-type then you will need extensional equality to obtain nat_elim. This is because one can not prove that there is only a unique function from empty set to the set of natural numbers without using extensionality.
 
- 1. Using W-type it is difficult to encode complicated inductive types (e.g. mutual inductive families). You can use GeneralTreeConstructor to get over some of this difficulty, but still defining inductive types directly using their constructors (as it is done in Coq) is much easier in practice for programming. 
+ 1. Using W-type it is difficult to encode complicated inductive types (e.g. mutual inductive families). You can use GeneralTreeConstructor to get over some of this difficulty, but still defining inductive types directly using their constructors (as it is done in Coq) is much easier in practice for programming.
 
- 1. You want to be able to define impredicative inductive types (at least in Prop). 
+ 1. You want to be able to define impredicative inductive types (at least in Prop).
 
 On the other hand basing a proof assistant on W-types has its own advantages:
 
