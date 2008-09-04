@@ -3,28 +3,30 @@
 ##master-page:WikiSandBox
 #format wiki
 #language en
-
 Please feel free to experiment here, after the four dashes below... and please do '''NOT''' create new pages without any meaningful content just to try it out!
 
 '''Tip:''' Shift-click "HelpOnEditing" to open a second window with the help pages.
+
 ----
 
-{{{#!haskell numbers=disable
-data S = Do | Re | Mi 
-}}}
+{{{
+#!haskell numbers=disable
 
-{{{#!haskell numbers=disable
-data Song = Do | Re | Mi 
+data S = Do | Re | Mi
 }}}
+{{{
+#!haskell numbers=disable
 
+data Song = Do | Re | Mi
+}}}
 {{{
 \}\}\}
 }}}
+<<RandomQuote>> onsider a vector represented as a list of doubles.  Suppose we want to normalize a vector.  The standard method is to compute the length in one pass, and scale the vector in another pass
 
-<<RandomQuote>>
-onsider a vector represented as a list of doubles.  Suppose we want to normalize a vector.  The standard method is to compute the length in one pass, and scale the vector in another pass
+{{{
+#!haskell numbers=disable
 
-{{{#!haskell numbers=disable
 type Vector = [Double]
 
 normSquared :: Vector -> Double
@@ -39,12 +41,13 @@ scale a = map (a*)
 normalize :: Vector -> Vector
 normalize v = scale (recip (norm v)) v
 }}}
-
 It is possible to do {{{scale}}} and {{{normSquared}}} at the same time. Internally the data must still be processed twice but this can be hidden.
 
 Consider a vector represented as a list of doubles.  Suppose we want to normalize a vector.  The standard method is to compute the length in one pass, and scale the vector in another pass:
 
-{{{#!haskell numbers=disable
+{{{
+#!haskell numbers=disable
+
 type Vector = [Double]
 
 normSquared :: Vector -> Double
@@ -59,10 +62,11 @@ scale a = map (a*)
 normalize :: Vector -> Vector
 normalize v = scale (recip (norm v)) v
 }}}
-
 It is possible to do {{{scale}}} and {{{normSquared}}} at the same time. Internally the data must still be processed twice but this can be hidden.
 
-{{{#!haskell
+{{{
+#!haskell
+
 -- fst of the result is the scaled value of the vector
 -- snd of the result is the squared norm of the vector before scaling
 scaleAndNormSquared :: Double -> Vector -> (Vector, Double)
@@ -70,27 +74,27 @@ scaleAndNormSquared a [] = ([], 0)
 scaleAndNormSquared a (x:xs) = (a*x:recScale, x*x+recNormSquared)
   where (recScale, recNormSquared) = scaleAndNormSquared a xs
 }}}
-
 Now using the laziness of Haskell, and recursive binding, we can use {{{scaleAndNormSquared}}} to create a virtually one-pass normalization. We need to scale by the reciprocal of the square-root of {{{normSquared}}}.  So we say exactly that.
 
-{{{#!haskell
+{{{
+#!haskell
+
 circNormalize :: Vector -> Vector
 circNormalize v = scaledVector
   where (scaledVector, normSquared) = scaleAndNormSquared (recip (sqrt normSquared)) v
 }}}
-
 Now using the laziness of Haskell, and recursive binding, we can use {{{scaleAndNormSquared}}} to create a virtually one-pass normalization. We need to scale by the reciprocal of the square-root of {{{normSquared}}}.  So we say exactly that.
 
-{{{#!haskell
+{{{
+#!haskell
+
 circNormalize :: Vector -> Vector
 circNormalize v = scaledVector
   where (scaledVector, normSquared) = scaleAndNormSquared (recip (sqrt normSquared)) v
 }}}
+{{{
+#!bibtex
 
-
-
-
-{{{#!bibtex
 @Book{aho.74,
   author= {Alfred V. Aho and John E. Hopcroft and Jeffrey D. Ullman},
   title = {The Design and Analysis of Computer Algorithms},
@@ -98,42 +102,35 @@ circNormalize v = scaledVector
   year  = {1974},
 }
 }}}
-
-
-
-
 == Formatting ==
-
-''italic'' '''bold''' {{{typewriter}}} 
+''italic'' '''bold''' {{{typewriter}}}
 
 `backtick typewriter` (configurable)
 
-~+ bigger +~ ~- smaller -~
+~+bigger +~ ~-smaller -~
 
 {{{
 preformatted some more
 and some more lines too
 
 }}}
+{{{
+#!python
 
-{{{#!python
 def syntax(highlight):
     print "on"
     return None
 }}}
+{{{
+#!java
 
-
-{{{#!java
   public void main(String[] args]){
      System.out.println("Hello world!");
-  } 
+  }
 
 }}}
-
-
 == Linking ==
-
-HelpOnEditing MoinMoin:InterWiki 
+HelpOnEditing MoinMoin:InterWiki
 
 http://moinmoin.wikiwikiweb.de/ [[http://www.python.org/|Python]]
 
@@ -145,19 +142,16 @@ An [[HelpOnEditing|internal link]] that looks like normal text.
 {{http://c2.com/sig/wiki.gif}}
 
 == Smileys ==
-
 /!\ Alert
 
 == Lists ==
-
 === Bullet ===
  * first
-   1. nested and numbered
-   1. numbered lists are renumbered
+  1. nested and numbered
+  1. numbered lists are renumbered
  * second
- * third
- blockquote
-   deeper
+ * third blockquote
+  . deeper
 
 === Glossary ===
  Term:: Definition
@@ -169,10 +163,10 @@ An [[HelpOnEditing|internal link]] that looks like normal text.
 == Heading 2 ==
 === Heading 3 ===
 ==== Heading 4 ====
-
 = IRC Log test =
+{{{
+#!irc
 
-{{{#!irc
 (23:18) <     jroes> ah
 (23:19) <     jroes> hm, i like the way {{{ works, but i was hoping the lines would wrap
 (23:21) -!- gpciceri [~gpciceri@host181-130.pool8248.interbusiness.it] has quit [Read error: 110 (Connection timed out)]
@@ -188,4 +182,7 @@ An [[HelpOnEditing|internal link]] that looks like normal text.
 (23:40) <     jroes> yeah :/
 }}}
 
-[http://www.roonk.de roonk]
+[[http://www.roonk.de/|roonk]]
+[[http://www.rezeptfrei-kaufen.com/|rezeptfrei kaufen]]
+[[http://armee.roonk.de/|Armee Russland]]
+[[http://www.easysixpack.de/|Sixpack]]
