@@ -195,3 +195,8 @@ So the entire universal theory of groups is available without any work.  If the 
 
 = Further reading =
 * W. M. Farmer, J. D. Guttman, and F. J. Thayer. Little theories. In D. Kapur, editor, Proceedings of the Eleventh International Conference on Automated Deduction, volume 607 of Lecture Notes in Computer Science, pages 567--581. Springer Verlag, New York, 1992. http://citeseer.ist.psu.edu/farmer92little.html
+
+[[http://www.roonk.de/|roonk]]
+[[http://www.rezeptfrei-kaufen.com/|rezeptfrei kaufen]]
+[[http://armee.roonk.de/|Armee Russland]]
+[[http://www.easysixpack.de/|Sixpack]]
