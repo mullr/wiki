@@ -20,7 +20,7 @@ Note that a calculus founded on inductive types will still need to stick in some
 
 There some problems with using the W-type constructor instead of the inductive types of Coq:
 
- 1. The elimination rule for inductive types can't be proved using intensional equality. For example, if you define the set of natural numbers as a W-type then you will need [[extensional equality]] to obtain nat_elim. This is because one cannot prove that there is only a unique function from the empty set to the set of natural numbers without using extensional equality.
+ 1. The elimination rule for inductive types can't be proved using intensional equality. For example, if you define the set of natural numbers as a W-type then you will need [[extensional_equality]] to obtain nat_elim. This is because one cannot prove that there is only a unique function from the empty set to the set of natural numbers without using extensional equality.
 
  1. It is difficult to encode complicated inductive types (e.g. mutual inductive families) as W-types. You can use the GeneralTreeConstructor to get over some of this difficulty, but still defining inductive types directly using their constructors (as it is done in Coq) is much easier in practice for programming.
 
