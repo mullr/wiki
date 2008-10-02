@@ -31,12 +31,13 @@ Lemma fun_extensionality : forall A B (f g : A -> B),
 
 === Theory of relations ===
 
-The {{{Coq.Sets.Relations_*}}} modules duplicate the theory of relations provided by {{{Coq.Relations.Relations}}}, with different theorems following from each.  These notions should be unified.  {{{Coq.Relations.Rstar}}} and {{{Coq.Relations.Newman}}} have been removed from SVN due to similar issues; they're still accessible from Coq-contribs. (Note that an inductive definition for R* is given in {{{Coq.Relations.Relation_Operators}}}, and Newman's theorem is proven in {{{Coq.Sets.Relations_3_facts}}}.)
+The {{{Coq.Sets.Relations_*}}} modules duplicate the theory of relations provided by {{{Coq.Relations.Relations}}}, with different theorems following from each.  These notions should be unified.  {{{Coq.Relations.Rstar}}} and {{{Coq.Relations.Newman}}} have been removed from SVN due to similar issues; they're still accessible from Coq-contribs. (Note that an inductive definition for R* is given in {{{Coq.Relations.Relation_Operators}}}, and Newman's lemma is proven in {{{Coq.Sets.Relations_3_facts}}}.)
 
-Now that nested directories are being used for {{{theories/Numbers}}}, the {{{Wellfounded}}} directory should probably be moved under {{{Relations}}} for clarity, as it was in Coq 6.x
+Now that nested directories are being supported for {{{theories/Numbers}}}, the {{{Wellfounded}}} directory should probably be moved under {{{Relations}}} for clarity, as it was in Coq 6.x
   
 === Consistent Definition of Operators ===
-I would be nice if the standard library was more consistent with the definitions it uses.  As it stands {{{a < b}}} for {{{nat}}} is an inductive definition while {{{a < b}}} for {{{Z}}} is defined to be {{{a ?= b = LT}}}.
+
+It would be nice if the standard library was more consistent with the definitions it uses.  As it stands {{{a < b}}} for {{{nat}}} is an inductive definition while {{{a < b}}} for {{{Z}}} is defined to be {{{a ?= b = LT}}}.
 
 I think that a consistent set of definitions would be easy to achieved by writing a general module (or modules) that are instantiated for various types ({{{nat}}}, {{{binPos}}}, {{{Z}}}, rationals, etc.)
 
@@ -62,7 +63,6 @@ Coercion Is_true : bool >-> Sortclass
 This process uses SmallScaleReflection advocated by GeorgesGonthier, i.e. coercing bools to propositions and treating them as equivalent when working on a decidable domain. 
 
 ==== Is_true vs (true=) ====
-
 Some may argue that the function {{{(true=)}}} should be the coercion because it allows access to the extensive array of rewrite tactics.  I think the above definition is more beautiful.  Discuss.
 
 I would advocate for using the following definition as the canonical coercion from `bool` to `Prop`:
@@ -75,11 +75,13 @@ It directly expresses what it means, it does not interfere with other potentiall
 to use for rewriting expressions into {{{true}}} using {{{destruct}}}. [HH]
 
 === Arithmetic ===
-Coq includes a plethora of arithmetical libraries ({{{Arith}}}, {{{NArith}}}, {{{ZArith}}}, {{{Ints}}}), many of them implementing the same theories in different ways.  The developments are highly redundant with each other and even internally incoherent.
+
+Coq includes a plethora of arithmetical libraries ({{{Arith}}}, {{{NArith}}}, {{{ZArith}}}, {{{Ints}}}...), many of them implementing the same theories in different ways.  The developments are highly redundant with each other and even internally incoherent.
 
 Coq 8.2 will include a library of abstract theories for arithmetic, with support for concrete implementations.  As a result, much of {{{Arith}}}, etc. will be all but  deprecated, except for the concrete implementation of the theory axioms.  The same considerations apply to {{{ZArith}}}, etc.  The remaining sections should probably be rewritten so that they build on the abstract theories of N, Z, etc.
 
 === Set theory ===
+
 Both the {{{A -> Set}}} and the {{{forall I:Type, I -> A}}} notions of subsets of A should be perused in the standard library.
 
  Note that the {{{Program}}} feature relies on yet another(?) notion of subset: {{{ { x : T | P } }}} is an x of type T endowed with a proof that x satisfies P.  The {{{Ensemble}}} type from {{{Coq.Sets}}} seems to be a version of {{{ { x : T | P } }}} endowed with an extensionality axiom. (is this correct???)  How much of {{{Coq.Sets}}} can be rephrased without needing extensionality?  
@@ -97,9 +99,11 @@ CoInductive conat : Set :=
 See  Carlos Simpson, ''Computer theorem proving in math'' ([[http://arxiv.ccsd.cnrs.fr/abs/math/0311260 | arXiv:math/0311260 ]]) and ''Set theoretical mathematics in Coq'' ([[http://arxiv.ccsd.cnrs.fr/abs/math/0402336v1 | arXiv:math/0402336v1 ]]) for an overview.
 
 === Abstract algebra ===
+
 The Coq standard library should include the abstract theory of the most common algebraic structures at least (monoids, groups, rings, fields).  (Semi-)rings and fields are already defined as part of the {{{ring}}} and {{{field}}} tactic families. 
 
 === Double-negation mapping of classical logic ===
+
 It would be nice to standardize the double-negation embedding of classical logic into intuitionistic logic.  This would make it easier to investigate the constructive implications of classical theories, by avoiding reliance on additional axioms.  
 
 * Classical reasoning is currently required for much of {{{Coq.Reals}}}; it would be nice if it was rewritten to use double-negation. 
