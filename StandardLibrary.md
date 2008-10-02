@@ -33,6 +33,8 @@ Lemma fun_extensionality : forall A B (f g : A -> B),
 
 The {{{Coq.Sets.Relations_*}}} modules duplicate the theory of relations provided by {{{Coq.Relations.Relations}}}, with different theorems following from each.  These notions should be unified.  {{{Coq.Relations.Rstar}}} and {{{Coq.Relations.Newman}}} have been removed from SVN due to similar issues; they're still accessible from Coq-contribs. (Note that an inductive definition for R* is given in {{{Coq.Relations.Relation_Operators}}}, and Newman's theorem is proven in {{{Coq.Sets.Relations_3_facts}}}.)
 
+Now that nested directories are being used for {{{theories/Numbers}}}, the {{{Wellfounded}}} directory should probably be moved under {{{Relations}}} for clarity, as it was in Coq 6.x
+  
 === Consistent Definition of Operators ===
 I would be nice if the standard library was more consistent with the definitions it uses.  As it stands {{{a < b}}} for {{{nat}}} is an inductive definition while {{{a < b}}} for {{{Z}}} is defined to be {{{a ?= b = LT}}}.
 
@@ -71,6 +73,11 @@ Inductive eq_true : bool -> Prop := is_eq_true : eq_true true.
 
 It directly expresses what it means, it does not interfere with other potentially independent uses of {{{true=}}} and it is easy
 to use for rewriting expressions into {{{true}}} using {{{destruct}}}. [HH]
+
+=== Arithmetic ===
+Coq includes a plethora of arithmetical libraries ({{{Arith}}}, {{{NArith}}}, {{{ZArith}}}, {{{Ints}}}), many of them implementing the same theories in different ways.  The developments are highly redundant with each other and even internally incoherent.
+
+Coq 8.2 will include a library of abstract theories for arithmetic, with support for concrete implementations.  As a result, much of {{{Arith}}}, etc. will be all but  deprecated, except for the concrete implementation of the theory axioms.  The same considerations apply to {{{ZArith}}}, etc.  The remaining sections should probably be rewritten so that they build on the abstract theories of N, Z, etc.
 
 === Set theory ===
 Both the {{{A -> Set}}} and the {{{forall I:Type, I -> A}}} notions of subsets of A should be perused in the standard library.
