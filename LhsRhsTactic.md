@@ -14,7 +14,7 @@ For example you can use this to write a tactic that proves the cofixpoint equati
 Ltac decomp_stream := intros; let L := LHS in rewrite (Streams.unfold_Stream L); reflexivity.
 }}}
 
-{{{RHS}}} means “right-hand side”.  It returns the term on the left hand side of an equality or inequality.
+{{{RHS}}} means “right-hand side”.  It returns the term on the right hand side of an equality or inequality.
 {{{#!coq
 Ltac RHS :=
 match goal with
