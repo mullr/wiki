@@ -1,5 +1,7 @@
 [[http://coq.inria.fr/library-eng.html|The Coq Standard Library]]
 
+ReflectionOnStandardLibrary mostly discusses organizational aspects
+
 == Reworking the Standard Library ==
 
 Discussion on what users would like to see in a standard library.
