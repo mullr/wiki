@@ -4,8 +4,7 @@
 
  * type classes
 
- * extended arithmetic libraries (arithmetical computations bound to machine words when possible,
-libraries for 31-bits integers, 31-bits-word-based unbounded integers, axiomatic arithmetic)
+ * extended arithmetic libraries (arithmetical computations bound to machine words when possible, libraries for 31-bits integers, 31-bits-word-based unbounded integers, axiomatic arithmetic)
 
  * more general comfort for daily use of Coq (module system, tactics, syntax extensions, type inference, commands)
 
