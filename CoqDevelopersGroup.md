@@ -3,3 +3,4 @@
  * JeanMarcNotin
  * MatthieuSozeau
  * ArnaudSpiwack
+ * GeorgesGonthier
