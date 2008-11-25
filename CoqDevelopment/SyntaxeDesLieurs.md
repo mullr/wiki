@@ -168,3 +168,26 @@ implicites :
 }}}
 
 mais risque d'ambiguïté avec les autres usages du `?`.
+
+
+== Discussion en GT Coq ==
+
+Cette modification de la syntaxe a également été discutée lors du GT Coq du [[CRGTCoq20081118|18 novembre 2008]]. La discussion a été longue, et les propositions nombreuses. Aucune décision n'a été prise, si ce n'est de continuer les propositions via le wiki (cf CoqDevelopment/SyntaxeDesLieurs).
+
+La syntaxe proposée au départ est la suivante:
+
+ * les `{ .. }` sont utilisées pour les lieurs implicites;
+ * ` est utilisé pour les lieurs généralisés
+
+Ce qui donne:
+
+|| `x` || variable dont le type est à inférer ||
+|| `(x:T)` || variable avec type contraint ||
+|| `{x}` || (=`{x:_}`) variable implicite ||
+|| `{x:T}` || ||
+|| `(x:T) || variable généralisée ||
+|| `{x:T} || généralisée implicite ||
+
+Il manque (pour les classes de types) une notation pour {{{`{_:T} }}}. 
+
+Cette syntaxe pourrait être étendue au niveau toplevel, pour permettre d'écrire: {{{Definition t := `body.}}} ou {{{Goal `formule.}}}
