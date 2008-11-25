@@ -2,3 +2,4 @@
  * HugoHerbelin
  * JeanMarcNotin
  * MatthieuSozeau
+ * ArnaudSpiwack
