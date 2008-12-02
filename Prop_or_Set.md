@@ -8,7 +8,7 @@ If your type could have two or more distiguishable objects, put it in {{{Set}}} 
 
 The basis of this philosophy is that an object from a type with at most one object contributes no information, and therefore may safely be removed during program extraction.
 
-A consequence of this philosophy is that {{{or}}} should never be used because {{{A \/ B}}} could have two objects even if {{{A}}} and {{{B}}} both only have at most one object.  Instead, use {{{ {A} + {B} }}}.  Similar considerations apply to {{{exists}}; use {{{ {x:T | P} }}} instead. See ExistsConsideredHarmful.
+A consequence of this philosophy is that {{{or}}} should never be used because {{{A \/ B}}} could have two objects even if {{{A}}} and {{{B}}} both only have at most one object.  Instead, use {{{ {A} + {B} }}}.  Similar considerations apply to {{{exists}}}; use {{{ {x:T | P} }}} instead. See ExistsConsideredHarmful.
 
 === Exists : from Prop to Set ===
 Even if the existence of an object in Prop doesn't give a witness, we can write an algorithm to find it for some types.
