@@ -13,6 +13,10 @@ See also StandardLibrary for older discussion (should these pages be merged?)
 
 Possible solution: A more modular approach of libraries with a small core of standard library maintained by the Coq development team and a second distinct distributed archive of libraries with a coordinated maintenance so as, not to necessarily guarantee a strict overall consistent design, but to at least guarantee correct compilation dependencies (see the [[http://prover.cs.ru.nl/wiki.php|MathWiki]] project). The responsibility of the maintenance of the consistency of each individual component of this second archive would be distributed.
 
+From the StandardLibrary page:
+ * Easy-to-contribute library is much better. Although we should keep library clean and strict we should allow user to contribute in even small part. Nobody will write thousands lines of code before contribution. If every ten lines can be submitted, then we'll have much more active and wide community. [Comment by HH: how to ensure design consistency? Official guidelines to follow? Who takes the responsability of the integration? Set up of a user-contributor group?]
+ * There should be clean list of common problems defined in both existing and to-be-written code. One should be able to easily find the problem and solve it. (See ProjectIdeas?)
+
 === Compatibility issues ===
 
  * Compatibility issues hinder or at least complicate the improvement of some libraries, e.g.:
@@ -42,8 +46,6 @@ Possible solution: A more modular approach of libraries with a small core of sta
 Coqdoc is a rather nice tool for documentation but there is a need for metadatas liable to ease the formal treatment of informations like title, author, table of contents, ...
 
 == Specific issues with the libraries of Coq ==
-
-  see StandardLibrary
 
 === Arithmetic ===
 
@@ -81,6 +83,8 @@ Coqdoc is a rather nice tool for documentation but there is a need for metadatas
 
 === Lists ===
 
+ * How to deal with partial functions: by returning a default element, by returning an option type, by guarding the definition with a precondition?
+
 === Lists annotated with their length (vectors) ===
 
 Coq provides a single file with a few results (with comments in French) in the [[http://logical.saclay.inria.fr/coq/distrib/current/stdlib/Coq.Bool.Bvector.html|Bool]] library. The [[http://color.inria.fr|CoLoR]] contribution provides much more.
@@ -88,6 +92,15 @@ Coq provides a single file with a few results (with comments in French) in the [
 === Boolean ===
 
 === Strings ===
+
+* Add a function to interpret C-style strings (using \ for escaping).
+
+* Add a primitive function {{{print : string -> unit}}} (or {{{: forall A, string -> A -> A}}} natively interpreted at evaluation time as a side-effect on the standard output.
+
+=== Logic ===
+
+There should be a module for extensional equality for functions (see
+the axiom of functional extensionality declared in {{{Coq.Program.FunctionalExtensionality}}}).
 
 === Sorting ===
 
@@ -97,10 +110,20 @@ Is this worth to be a distinct library?
 
 === Relations and sets ===
 
+ * The {{{Coq.Sets.Relations_}}}* modules duplicate the theory of relations provided by {{{Coq.Relations.Relations}}}, with different theorems following from each.
+
+ * Now that nested directories are being supported for theories/Numbers, the {{{Wellfounded}}} directory should probably be moved under {{{Relations}}} for clarity, as it was in Coq 6.x.
+
+=== Unexploited content of the support for tactics (ring, ...) ===
+
 === Algebra ===
 
-Coq sparsely provides definitions of algebraic structures but nothing usable as a standard library. Many approaches to algebra exist (see the various Algebra contributions in the [[http://logical.saclay.inria.fr/coq/distrib/current/contribs|user contribution server of Coq]], including C-CoRN).
+Coq sparsely provides definitions of algebraic structures but to which extend is this usable as a standard library? Many approaches to algebra exist (see the various Algebra contributions in the [[http://logical.saclay.inria.fr/coq/distrib/current/contribs|user contribution server of Coq]], including C-CoRN).
 
 === Libraries not represented in Coq ===
 
-Floating point numbers, constructive real analysis (computing and mathematical aspects), finite sets, but candidates exist (what about the licence issues?).
+Libraries on these topics exist:
+ * Floating point numbers ([[http://logical.saclay.inria.fr/coq/distrib/current/contribs/IEEE754.html|IEEE754]], [[http://lipforge.ens-lyon.fr/www/pff|fp2]])
+ * Constructive real analysis (computing and mathematical aspects, see e.g. [[http://logical.saclay.inria.fr/coq/distrib/current/contribs/ExactRealArithmetic.html|ExactRealArithmetic]], [[http://logical.saclay.inria.fr/coq/distrib/current/contribs/CoinductiveReals.html|CoinductiveReals]], [[http://c-corn.cs.ru.nl|CoRN]], interval arithmetic, ...)
+ * finite sets (either InductiveFiniteTypes or FixpointFiniteTypes would be reasonable candidates for inclusion in the standard library, there is also a library by Jean-François Monin).
+What about the licence issues?
