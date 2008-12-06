@@ -17,15 +17,25 @@ Possible solution: A more modular approach of libraries with a small core of sta
 
  * Compatibility issues hinder or at least complicate the improvement of some libraries, e.g.:
    * definitions or lemmas got wrong names, e.g.:
-     * {{{plus}}}/{{{mult}}} instead of {{{plus}}}/{{{times}}} or {{{add}}}/{{{mult}}},
-     * very basic lemmas such as {{{pred (S n) = n}}} were stated in an unnatural way (this historically was due to the use of ''elim'' for simulating rewriting before ''rewrite'' was implemented),
+     * {{{plus}}}/{{{mult}}} instead of {{{plus}}}/{{{times}}} or {{{add}}}/{{{mult}}} or {{{add}}}/{{{mul}}},
+     * very basic lemmas such as {{{n = pred (S n)}}} were stated in an unnatural way (this historically was due to the use of ''elim'' for simulating rewriting before ''rewrite'' was implemented),
+   * bound variables sometimes got inconsistent names in a same library (e.g. lemmas on nat generally use n, m, p, q in this order, but sometimes, it is a,b or x, y or the differently ordered m, n),
    * hints database cannot be improved without breaking ''auto'' in general.
+   * bad definition choices were sometimes made (e.g. {{{Zplus}}} of numbers of opposite signs which uselessly computes twice the difference, or the questioned design of <=, <, >= and >),
+ * How to address the compatibility issues?
+   * Completely forget about too inconsistently built libraries? But they will still be needed anyway. And with what to replace them?
+   * Use mechanisms as in the V7 to V8 translator?
+     * Notations to provide only-parsing compatibility aliases to newly consistently-named lemmas?
+     * ML support for on the fly renaming of binders?
+     * Eventually arrive at a V9 generation and use a translator?
+     * Combine the cleaner parts with parts clearly flagged as obsolete?
 
 === Lack of Coq support for features ===
 
  * Dependency of the technical design of the libraries over the support (or absence of support!) of Coq for some features, e.g.:
    * lack of support for freely reasoning with less-or-equal or greater-or-equal as one would do in a mathematical text: either one is a notation for the other and then the user cannot choose which one he wants to read, or there are two distinct definitions but then there are often not converted one to the other by Coq,
-   * lack of support for freely switching between a computational representation of decidable properties (as order in {{{ZArith}}} is defined) and a propositional representation of it (as order in {{{Arith}}} is defined).
+   * lack of support for freely switching between a computational representation of decidable properties (as order in {{{ZArith}}} is defined) and a propositional representation of it (as order in {{{Arith}}} is defined),
+   * automatic introduction of names and hypotheses in the context?
 
 === Documentation and metadata issues ===
 
@@ -39,7 +49,27 @@ Coqdoc is a rather nice tool for documentation but there is a need for metadatas
 
 ==== General issues about arithmetic ====
 
+ * Naming policy:
+   * {{{Snm}}} style vs {{{_assoc}}} style?
+   * Heterogenous pair {{{plus}}}/{{{mult}}} (with adopted solution being the pair {{{add}}}/{{{mul}}})?
+ * Design choice for less vs greater:
+   * Have explicit constants for > and >= (better for displaying things as the user did but requires better support for such 'notational' definitions)?
+   * Have only < and <= what is easier to manage and mathematically "cleaner" to think about?
+ * Notation policy:
+   * Adopt the nice {{{.+1}}} notation?
+   * Use "_ = _ ?", "_ <= _ ?" for the computational operations?
+ * What design choices for orders and decidable predicates?
+ * Design choice for decidable operations:
+   * Decidability to {{{bool}}} or decidability to {{{sumbool}}} (but then requires better support for rewriting modulo proof-irrelevance)?
+ * Modularity:
+   * Proceed further with the {{{Numbers}}} modular approach?
+
 ==== Peano numbers ====
+
+ * Organisation:
+   * One large file vs small files (as it is now)?
+   * What to put in {{{Init}}}? Just the operations or also the basic lemmas?
+   * Make all non basic lemmas derived from {{{Numbers}}}?
 
 ==== Binary natural numbers ====
 
