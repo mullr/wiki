@@ -20,12 +20,14 @@ From the StandardLibrary page:
 === Compatibility issues ===
 
  * Compatibility issues hinder or at least complicate the improvement of some libraries, e.g.:
-   * definitions or lemmas got wrong names, e.g.:
+   * definitions or lemmas got inconsistent names, e.g.:
+     * {{{_symm}}} vs {{{_sym}}}, {{{le_n}}} vs {{{le_refl}}}, ...), 
      * {{{plus}}}/{{{mult}}} instead of {{{plus}}}/{{{times}}} or {{{add}}}/{{{mult}}} or {{{add}}}/{{{mul}}},
      * very basic lemmas such as {{{n = pred (S n)}}} were stated in an unnatural way (this historically was due to the use of ''elim'' for simulating rewriting before ''rewrite'' was implemented),
    * bound variables sometimes got inconsistent names in a same library (e.g. lemmas on nat generally use n, m, p, q in this order, but sometimes, it is a,b or x, y or the differently ordered m, n),
    * hints database cannot be improved without breaking ''auto'' in general.
    * bad definition choices were sometimes made (e.g. {{{Zplus}}} of numbers of opposite signs which uselessly computes twice the difference, or the questioned design of <=, <, >= and >),
+   * lemmas not always stated on their optimal generality (useless or arbitrarily weak side-conditions).
  * How to address the compatibility issues?
    * Completely forget about too inconsistently built libraries? But they will still be needed anyway. And with what to replace them?
    * Use mechanisms as in the V7 to V8 translator?
@@ -52,10 +54,10 @@ Coqdoc is a rather nice tool for documentation but there is a need for metadatas
 ==== General issues about arithmetic ====
 
  * Naming policy:
-   * {{{Snm}}} style vs {{{_assoc}}} style?
+   * {{{_n_0}}} style vs {{{_0_r}}} style?
    * Heterogenous pair {{{plus}}}/{{{mult}}} (with adopted solution being the pair {{{add}}}/{{{mul}}})?
  * Design choice for less vs greater:
-   * Have explicit constants for > and >= (better for displaying things as the user did but requires better support for such 'notational' definitions)?
+   * Have explicit constants for > and >= (better for displaying things as the user did but requires better support for such "notational" definitions)?
    * Have only < and <= what is easier to manage and mathematically "cleaner" to think about?
  * Notation policy:
    * Adopt the nice {{{.+1}}} notation?
@@ -125,5 +127,5 @@ Coq sparsely provides definitions of algebraic structures but to which extend is
 Libraries on these topics exist:
  * Floating point numbers ([[http://logical.saclay.inria.fr/coq/distrib/current/contribs/IEEE754.html|IEEE754]], [[http://lipforge.ens-lyon.fr/www/pff|fp2]])
  * Constructive real analysis (computing and mathematical aspects, see e.g. [[http://logical.saclay.inria.fr/coq/distrib/current/contribs/ExactRealArithmetic.html|ExactRealArithmetic]], [[http://logical.saclay.inria.fr/coq/distrib/current/contribs/CoinductiveReals.html|CoinductiveReals]], [[http://c-corn.cs.ru.nl|CoRN]], interval arithmetic, ...)
- * finite sets (either InductiveFiniteTypes or FixpointFiniteTypes would be reasonable candidates for inclusion in the standard library, there is also a library by Jean-François Monin).
+ * Finite sets (either InductiveFiniteTypes or FixpointFiniteTypes would be reasonable candidates for inclusion in the standard library, there is also a library by Jean-François Monin).
 What about the licence issues?
