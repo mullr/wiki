@@ -2,7 +2,6 @@
 ||Rank || Theorem || Statement || Formalisation available from ||
 || 1 || The Irrationality of the Square Root of 2 || ??? || UserContributions/Nijmegen/QArith ||
 ||  ||  || {{{  ~exists n, exists p, n ^2 = 2* p^2 /\ n <> 0}}} ||  ||
-
 || 2 || Fundamental Theorem of Algebra || ??? || UserContributions/Nijmegen/CoRN ||
 || 3 || The Denumerability of the Rational Numbers || ??? ||  UserContributions/Nijmegen/QArith ||
 || 4 || Pythagorean Theorem || ??? ||  UserContributions/Sophia-Antipolis/geometry ||
