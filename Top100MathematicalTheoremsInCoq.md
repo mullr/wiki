@@ -5,7 +5,7 @@
 || 2 || Fundamental Theorem of Algebra || ??? || UserContributions/Nijmegen/CoRN ||
 || 3 || The Denumerability of the Rational Numbers || ??? ||  UserContributions/Nijmegen/QArith ||
 || 4 || Pythagorean Theorem || ??? ||  UserContributions/Sophia-Antipolis/geometry ||
-|| 6 || Gödel's Incompleteness Theorem || {{{ forall T : System, Included Formula NN T -> RepresentsInSelf T -> DecidableSet Formula T ->  }}} {{{{ f : Formula | (Sentence f) /\ ({SysPrf T f} + {SysPrf T (notH f)} -> Inconsistent LNN T)} }}} ||UserContributions/Berkeley/Godel ||
+|| 6 || Gödel's Incompleteness Theorem || {{{ forall T : System, Included Formula NN T -> RepresentsInSelf T -> DecidableSet Formula T -> }}} {{{ }}} {{{{ f : Formula | (Sentence f) /\ ({SysPrf T f} + {SysPrf T (notH f)} -> Inconsistent LNN T)} }}} ||UserContributions/Berkeley/Godel ||
 ||11 || The Infinitude of Primes || {{{~(EX l:(list Prime) | (p:Prime)(In p l))}}} || NotFinitePrimes ||
 ||15 || Fundamental Theorem of Integral Calculus ||  ??? || UserContributions/Nijmegen/CoRN ||
 ||17 || De Moivre's Theorem || ??? || UserContributions/Sophia-Antipolis/ ||
@@ -17,7 +17,7 @@
 ||35 || Taylor's Theorem || ??? || UserContributions/Nijmegen/CoRN ||
 ||51 || Wilson's Theorem || {{{forall p, prime p ->  Zis_mod (Zfact (p - 1)) (- 1) p}}} || UserContributions/Sophia-Antipolis/ ||
 ||52 ||The Number of Subsets of a Set || ??? || ??? ||
-||55 || Product of Segments of Chords || {{{forall A B C D M O:point, samedistance O A O B ->  samedistance O A O C ->  samedistance O A O D ->  collinear A B M ->  collinear C D M ->  (distance M A)*(distance M B)=(distance M C)*(distance M D)  \/ parallel A B C D. }}}|| to appear next... ||
+||55 || Product of Segments of Chords || {{{forall A B C D M O:point, samedistance O A O B ->  samedistance O A O C ->  samedistance O A O D ->  collinear A B M ->  collinear C D M -> }}} {{{ (distance M A)*(distance M B)=(distance M C)*(distance M D)  \/ parallel A B C D. }}} || to appear next... ||
 ||60 || Bezout's Theorem || ??? || StandardLibrary/Coq.ZArith.Znumtheory ||
 ||61 || Theorem of Ceva ||  ??? ||UserContributions/Sophia-Antipolis/ ||
 ||65 || Isosceles Triangle Theorem ||  ??? ||UserContributions/Sophia-Antipolis/ ||
