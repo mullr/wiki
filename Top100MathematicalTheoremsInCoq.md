@@ -14,14 +14,18 @@
 ||27 || Sum of the Angles of a Triangle ||  ??? ||UserContributions/Sophia-Antipolis/ ||
 ||32 || The Four Color Problem || ??? || GeorgesGonthier http://research.microsoft.com/~gonthier/ ||
 ||35 || Taylor's Theorem || ??? || UserContributions/Nijmegen/CoRN ||
-||51 || Wilson's Theorem || {{{{forall p, prime p ->  Zis_mod (Zfact (p - 1)) (- 1) p}}}} || UserContributions/Sophia-Antipolis/ ||
-||52 ||The Number of Subsets of a Set|| ??? || ||
+||51 || Wilson's Theorem || {{{forall p, prime p ->  Zis_mod (Zfact (p - 1)) (- 1) p}}} || UserContributions/Sophia-Antipolis/ ||
+||52 ||The Number of Subsets of a Set || ??? ||{{{
+ }}}
+{{{
+}}}
+||
 ||60 || Bezout's Theorem || ??? || StandardLibrary/Coq.ZArith.Znumtheory ||
 ||61 || Theorem of Ceva ||  ??? ||UserContributions/Sophia-Antipolis/ ||
 ||65 || Isosceles Triangle Theorem ||  ??? ||UserContributions/Sophia-Antipolis/ ||
 ||66 || Sum of a Geometric Series ||  ??? ||UserContributions/Nijmegen/CoRN ||
 ||69 || Greatest Common Divisor Algorithm ||  ??? ||StandardLibrary/Coq.ZArith.Znumtheory ||
-||71 || Order of a Subgroup ||???||
+||71 || Order of a Subgroup ||??? ||
 ||74 || The Principle of Mathematical Induction || ??? || StandardLibrary ||
 ||75 || The Mean Value Theorem || ??? || UserContributions/Nijmegen/CoRN ||
 ||79 || The Intermediate Value Theorem || ??? || UserContributions/Nijmegen/CoRN ||
