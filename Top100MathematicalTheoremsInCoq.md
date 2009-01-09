@@ -1,5 +1,5 @@
 #language en
-||Rank|| Theorem|| Formalisation avialable from ||
+||Rank|| Theorem|| Statement|| Formalisation avialable from ||
 || 1 || The Irrationality of the Square Root of 2|| UserContributions/Nijmegen/QArith ||
 || 2 || Fundamental Theorem of Algebra||UserContributions/Nijmegen/CoRN ||
 || 3 || The Denumerability of the Rational Numbers|| UserContributions/Nijmegen/QArith ||
