@@ -9,7 +9,7 @@
 ||11 || The Infinitude of Primes || {{{~(EX l:(list Prime) | (p:Prime)(In p l))}}} || NotFinitePrimes ||
 ||15 || Fundamental Theorem of Integral Calculus ||  ??? || UserContributions/Nijmegen/CoRN ||
 ||17 || De Moivre's Theorem || ??? || UserContributions/Sophia-Antipolis/ ||
-||20 || All Primes Equal the Sum of Two Squares ||  ??? ||UserContributions/Sophia-Antipolis/!SumOfTwoSquare ||
+||20 || All Primes Equal the Sum of Two Squares ||   {{{forall n, 0 <= n ->}}} {{{(forall p, prime p -> Zis_mod p 3 4 ->  Zeven (Zdiv_exp p n)) ->}}} {{{sum_of_two_square n}}} ||UserContributions/Sophia-Antipolis/!SumOfTwoSquare ||
 ||25 || Schroeder--Bernstein Theorem || ??? || UserContributions/Rocq /SCHROEDER ||
 ||26 || Leibnitz's Series for Pi || ??? || UserContributions/Nijmegen/CoRN ||
 ||27 || Sum of the Angles of a Triangle ||  ??? ||UserContributions/Sophia-Antipolis/ ||
