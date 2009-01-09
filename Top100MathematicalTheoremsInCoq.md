@@ -14,7 +14,7 @@
 ||27 || Sum of the Angles of a Triangle ||  ??? ||UserContributions/Sophia-Antipolis/ ||
 ||32 || The Four Color Problem || ??? || GeorgesGonthier http://research.microsoft.com/~gonthier/ ||
 ||35 || Taylor's Theorem || ??? || UserContributions/Nijmegen/CoRN ||
-||51 || Wilson's Theorem || forall p, prime p ->  Zis_mod (Zfact (p - 1)) (- 1) p || UserContributions/Sophia-Antipolis/ ||
+||51 || Wilson's Theorem || {{{{forall p, prime p ->  Zis_mod (Zfact (p - 1)) (- 1) p}}}} || UserContributions/Sophia-Antipolis/ ||
 ||52 ||The Number of Subsets of a Set|| ??? || ||
 ||60 || Bezout's Theorem || ??? || StandardLibrary/Coq.ZArith.Znumtheory ||
 ||61 || Theorem of Ceva ||  ??? ||UserContributions/Sophia-Antipolis/ ||
