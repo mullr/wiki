@@ -29,7 +29,7 @@
 ||87 || Desargues's Theorem ||  ??? ||UserContributions/Sophia-Antipolis/geometry ||
 ||89 || The Factor and Remainder Theorems ||  ??? || StandardLibrary ||
 ||94 || The Law of Cosines || ??? || UserContributions/Sophia-Antipolis/ ||
-||98 || Bertrand’s Postulate ||  ??? || UserContributions/Sophia-Antipolis/Bertrand ||
+||98 || Bertrand’s Postulate || {{{forall n : nat, 2 <= n -> exists p : nat, prime p /\ n < p /\ p < 2 * n}}} || UserContributions/Sophia-Antipolis/Bertrand ||
 
 
 ----
