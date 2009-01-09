@@ -15,7 +15,7 @@
 ||32 || The Four Color Problem || ??? || GeorgesGonthier http://research.microsoft.com/~gonthier/ ||
 ||35 || Taylor's Theorem || ??? || UserContributions/Nijmegen/CoRN ||
 ||51 || Wilson's Theorem || ??? || UserContributions/Sophia-Antipolis/ ||
-||52 ||The Number of Subsets of a Set| ??? || ||
+||52 ||The Number of Subsets of a Set|| ??? || ||
 ||60 || Bezout's Theorem || ??? || StandardLibrary/Coq.ZArith.Znumtheory ||
 ||61 || Theorem of Ceva ||  ??? ||UserContributions/Sophia-Antipolis/ ||
 ||65 || Isosceles Triangle Theorem ||  ??? ||UserContributions/Sophia-Antipolis/ ||
