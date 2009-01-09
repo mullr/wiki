@@ -1,11 +1,11 @@
 #language en
 ||Rank || Theorem || Statement || Formalisation available from ||
 || 1 || The Irrationality of the Square Root of 2 || ??? || UserContributions/Nijmegen/QArith ||
-||  ||  || {{{  ~exists n, exists p, n ^2 = 2* p^2 /\ n <> 0}}} || SquareRootTwo ||
+|| || || {{{  ~exists n, exists p, n ^2 = 2* p^2 /\ n <> 0}}} || SquareRootTwo ||
 || 2 || Fundamental Theorem of Algebra || ??? || UserContributions/Nijmegen/CoRN ||
 || 3 || The Denumerability of the Rational Numbers || ??? ||  UserContributions/Nijmegen/QArith ||
 || 4 || Pythagorean Theorem || ??? ||  UserContributions/Sophia-Antipolis/geometry ||
-|| 6 || Gödel's Incompleteness Theorem || {{{ forall T : System, Included Formula NN T -> RepresentsInSelf T -> DecidableSet Formula T ->  { f : Formula | (Sentence f) /\ ({SysPrf T f} + {SysPrf T (notH f)} -> Inconsistent LNN T)} }}} ||UserContributions/Berkeley/Godel ||
+|| 6 || Gödel's Incompleteness Theorem || {{{ forall T : System, Included Formula NN T -> RepresentsInSelf T -> DecidableSet Formula T ->  }}} {{{{ f : Formula | (Sentence f) /\ ({SysPrf T f} + {SysPrf T (notH f)} -> Inconsistent LNN T)} }}} ||UserContributions/Berkeley/Godel ||
 ||11 || The Infinitude of Primes || ??? || NotFinitePrimes ||
 ||15 || Fundamental Theorem of Integral Calculus ||  ??? || UserContributions/Nijmegen/CoRN ||
 ||17 || De Moivre's Theorem || ??? || UserContributions/Sophia-Antipolis/ ||
