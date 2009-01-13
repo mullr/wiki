@@ -24,7 +24,6 @@
 ||55 || Product of Segments of Chords || {{{forall A B C D M O:point, samedistance O A O B ->  samedistance O A O C ->  samedistance O A O D ->  collinear A B M ->  collinear C D M -> }}} {{{ (distance M A)*(distance M B)=(distance M C)*(distance M D)  \/ parallel A B C D. }}} || to appear next... ||
 ||<|2>60 ||<|2> Bezout's Theorem || ??? || StandardLibrary/Coq.ZArith.Znumtheory ||
 || {{{forall m n, m > 0 -> {a | a < m & m %| gcdn m n + a * n} }}} <<BR>> {{{forall m n, n > 0 -> {a | a < n & n %| gcdn m n + a * m} }}}|| http://coqfinitgroup.gforge.inria.fr/ ||
-
 ||61 || Theorem of Ceva ||  ??? ||UserContributions/Sophia-Antipolis/ ||
 ||65 || Isosceles Triangle Theorem ||  ??? ||UserContributions/Sophia-Antipolis/ ||
 ||66 || Sum of a Geometric Series ||  ??? ||UserContributions/Nijmegen/CoRN ||
