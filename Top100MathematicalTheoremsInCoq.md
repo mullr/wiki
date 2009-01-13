@@ -1,15 +1,15 @@
 #language en
 ||Rank || Theorem || Statement || Formalisation available from ||
-|| 1 || The Irrationality of the Square Root of 2 || ??? || UserContributions/Nijmegen/QArith ||
-|| || || {{{  ~exists n, exists p, n ^2 = 2* p^2 /\ n <> 0}}} || SquareRootTwo ||
-|| 2 || Fundamental Theorem of Algebra || ??? || UserContributions/Nijmegen/CoRN ||
-|| 3 || The Denumerability of the Rational Numbers || ??? ||  UserContributions/Nijmegen/QArith ||
+||<|2> 1 ||<|2> The Irrationality of the Square Root of 2 || {{{Theorem sqrt2_not_rational : forall p q : nat, q <> 0 -> p * p = 2 * (q * q) -> False.}}} || UserContributions/Nijmegen/QArithSternBrocot/sqrt2.v||
+|| {{{  ~exists n, exists p, n ^2 = 2* p^2 /\ n <> 0}}} || SquareRootTwo ||
+|| 2 || Fundamental Theorem of Algebra || {{{Lemma FTA : forall f : CCX, nonConst _ f -> {z : CC | f ! z [=] Zero}.}}} <<BR>> {{{Lemma FTA_a_la_Henk : forall f : CCX, {x : CC | {y : CC | AbsCC (f ! x[-]f ! y) [>]Zero}} -> {z : CC | f ! z [=] Zero}.}}} || UserContributions/Nijmegen/CoRN/fta/FTA.v||
+|| 3 ||The Denumerability of the Rational Numbers ||{{{Theorem Q_is_denumerable: is_denumerable Q.}}} <<BR>> ''where''<<BR>> {{{Definition is_denumerable A := same_cardinality A nat.}}} <<BR>>{{{Definition same_cardinality (A B:Set):= {f:A->B & { g:B->A |}}} <<BR>> {{{ (forall b,(compose _ _ _ f g) b= (identity B) b) /\ forall a,(compose _ _ _ g f) a = (identity A) a}}.}}}|| UserContributions/Nijmegen/QArithSternBrocot/Q_denumerable.v||
 || 4 || Pythagorean Theorem || ??? ||  UserContributions/Sophia-Antipolis/geometry ||
 || 6 || Gödel's Incompleteness Theorem || {{{ forall T : System, Included Formula NN T -> RepresentsInSelf T -> DecidableSet Formula T -> }}} {{{ }}} {{{{ f : Formula | (Sentence f) /\ ({SysPrf T f} + {SysPrf T (notH f)} -> Inconsistent LNN T)} }}} ||UserContributions/Berkeley/Godel ||
 ||11 || The Infinitude of Primes || {{{~(EX l:(list Prime) | (p:Prime)(In p l))}}} || NotFinitePrimes ||
 ||15 || Fundamental Theorem of Integral Calculus ||  ??? || UserContributions/Nijmegen/CoRN ||
 ||17 || De Moivre's Theorem || ??? || UserContributions/Sophia-Antipolis/ ||
-||20 || All Primes Equal the Sum of Two Squares ||   {{{forall n, 0 <= n -> (forall p, prime p -> Zis_mod p 3 4 ->  Zeven (Zdiv_exp p n)) -> sum_of_two_square n}}} ||UserContributions/Sophia-Antipolis/!SumOfTwoSquare ||
+||20 || All Primes Equal the Sum of Two Squares ||   {{{forall n, 0 <= n -> (forall p, prime p -> Zis_mod p 3 4 ->  Zeven (Zdiv_exp p n)) -> sum_of_two_square n}}} ||UserContributions/Sophia-Antipolis/SumOfTwoSquare ||
 ||23 || Formula for Pythagorean Triples || {{{Lemma pytha_thm1 : forall a b c : Z, (is_pytha a b c) -> (pytha_set a b c).}}} {{{Lemma pytha_thm2 : forall a b c : Z, (pytha_set a b c) -> (is_pytha a b c).}}} || [[http://coq.inria.fr/contribs/Fermat4.html|UserContributions/CNAM/Fermat4]] (File Pythagorean.v) by ''[[http://cedric.cnam.fr/~delahaye/|D. Delahaye]]'' and ''[[http://www-lipn.univ-paris13.fr/~mayero/|M. Mayero]]'' ||
 ||25 || Schroeder--Bernstein Theorem || ??? || UserContributions/Rocq /SCHROEDER ||
 ||26 || Leibnitz's Series for Pi || ??? || UserContributions/Nijmegen/CoRN ||
