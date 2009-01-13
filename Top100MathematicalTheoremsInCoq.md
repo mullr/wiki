@@ -16,6 +16,7 @@
 ||27 || Sum of the Angles of a Triangle ||  ??? ||UserContributions/Sophia-Antipolis/ ||
 ||32 || The Four Color Problem || ??? || GeorgesGonthier http://research.microsoft.com/~gonthier/ ||
 ||35 || Taylor's Theorem || ??? || UserContributions/Nijmegen/CoRN ||
+||44 || Binomial Theorem || {{{(a + b) ^ n = \sum_(i < n.+1) (bin n i * (a ^ (n - i) * b ^ i))}}} || http://coqfinitgroup.gforge.inria.fr/||
 ||49 || Cayley-Hamilton Theorem || Every square matrix is a root of its characteristic polynomial : {{{forall A, (Zpoly (char_poly A)).[A] = 0}}} || Math Components Projects : http://coqfinitgroup.gforge.inria.fr/ ||
 ||51 || Wilson's Theorem || {{{forall p, prime p ->  Zis_mod (Zfact (p - 1)) (- 1) p}}} || UserContributions/Sophia-Antipolis/ ||
 ||52 ||The Number of Subsets of a Set || ??? || ??? ||
