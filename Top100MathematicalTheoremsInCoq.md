@@ -18,7 +18,7 @@
 ||35 || Taylor's Theorem || ??? || UserContributions/Nijmegen/CoRN ||
 ||44 || Binomial Theorem || {{{(a + b) ^ n = \sum_(i < n.+1) (bin n i * (a ^ (n - i) * b ^ i))}}} || http://coqfinitgroup.gforge.inria.fr/||
 ||49 || Cayley-Hamilton Theorem || Every square matrix is a root of its characteristic polynomial : {{{forall A, (Zpoly (char_poly A)).[A] = 0}}} || Math Components Projects : http://coqfinitgroup.gforge.inria.fr/ ||
-||51 || Wilson's Theorem || {{{forall p, prime p ->  Zis_mod (Zfact (p - 1)) (- 1) p}}} || UserContributions/Sophia-Antipolis/ ||
+||<|2> 51 ||<|2> Wilson's Theorem || {{{forall p, prime p ->  Zis_mod (Zfact (p - 1)) (- 1) p}}} || UserContributions/Sophia-Antipolis/ || {{{forall p, 1 < p -> (prime p <-> p %| (fact (p.-1)).+1)}}} || http://coqfinitgroup.gforge.inria.fr/ ||
 ||52 ||The Number of Subsets of a Set || ??? || ??? ||
 ||55 || Product of Segments of Chords || {{{forall A B C D M O:point, samedistance O A O B ->  samedistance O A O C ->  samedistance O A O D ->  collinear A B M ->  collinear C D M -> }}} {{{ (distance M A)*(distance M B)=(distance M C)*(distance M D)  \/ parallel A B C D. }}} || to appear next... ||
 ||60 || Bezout's Theorem || ??? || StandardLibrary/Coq.ZArith.Znumtheory ||
