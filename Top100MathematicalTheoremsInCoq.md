@@ -1,6 +1,6 @@
 #language en
 ||Rank || Theorem || Statement || Formalisation available from ||
-||<|2> 1 ||<|2> The Irrationality of the Square Root of 2 || {{{Theorem sqrt2_not_rational : forall p q : nat, q <> 0 -> p * p = 2 * (q * q) -> False.}}} || UserContributions/Nijmegen/QArithSternBrocot/sqrt2.v||
+||<|2>1 ||<|2> The Irrationality of the Square Root of 2 || {{{Theorem sqrt2_not_rational : forall p q : nat, q <> 0 -> p * p = 2 * (q * q) -> False.}}} || UserContributions/Nijmegen/QArithSternBrocot/sqrt2.v||
 || {{{  ~exists n, exists p, n ^2 = 2* p^2 /\ n <> 0}}} || SquareRootTwo ||
 || 2 || Fundamental Theorem of Algebra || {{{Lemma FTA : forall f : CCX, nonConst _ f -> {z : CC | f ! z [=] Zero}.}}} <<BR>> {{{Lemma FTA_a_la_Henk : forall f : CCX, {x : CC | {y : CC | AbsCC (f ! x[-]f ! y) [>]Zero}} -> {z : CC | f ! z [=] Zero}.}}} || UserContributions/Nijmegen/CoRN/fta/FTA.v||
 || 3 ||The Denumerability of the Rational Numbers ||{{{Theorem Q_is_denumerable: is_denumerable Q.}}} <<BR>> ''where''<<BR>> {{{Definition is_denumerable A := same_cardinality A nat.}}} <<BR>>{{{Definition same_cardinality (A B:Set):= {f:A->B & { g:B->A |}}} <<BR>> {{{ (forall b,(compose _ _ _ f g) b= (identity B) b) /\ forall a,(compose _ _ _ g f) a = (identity A) a}}.}}}|| UserContributions/Nijmegen/QArithSternBrocot/Q_denumerable.v||
@@ -18,11 +18,13 @@
 ||35 || Taylor's Theorem || ??? || UserContributions/Nijmegen/CoRN ||
 ||44 || Binomial Theorem || {{{(a + b) ^ n = \sum_(i < n.+1) (bin n i * (a ^ (n - i) * b ^ i))}}} || http://coqfinitgroup.gforge.inria.fr/||
 ||49 || Cayley-Hamilton Theorem || Every square matrix is a root of its characteristic polynomial : {{{forall A, (Zpoly (char_poly A)).[A] = 0}}} || Math Components Projects : http://coqfinitgroup.gforge.inria.fr/ ||
-||<|2> 51 ||<|2> Wilson's Theorem || {{{forall p, prime p ->  Zis_mod (Zfact (p - 1)) (- 1) p}}} || UserContributions/Sophia-Antipolis/ || 
+||<|2> 51 ||<|2> Wilson's Theorem || {{{forall p, prime p ->  Zis_mod (Zfact (p - 1)) (- 1) p}}} || UserContributions/Sophia-Antipolis/ ||
 ||{{{forall p, 1 < p -> (prime p <-> p %| (fact (p.-1)).+1)}}} || http://coqfinitgroup.gforge.inria.fr/ ||
 ||52 ||The Number of Subsets of a Set || ??? || ??? ||
 ||55 || Product of Segments of Chords || {{{forall A B C D M O:point, samedistance O A O B ->  samedistance O A O C ->  samedistance O A O D ->  collinear A B M ->  collinear C D M -> }}} {{{ (distance M A)*(distance M B)=(distance M C)*(distance M D)  \/ parallel A B C D. }}} || to appear next... ||
-||60 || Bezout's Theorem || ??? || StandardLibrary/Coq.ZArith.Znumtheory ||
+||<|2>60 ||<|2> Bezout's Theorem || ??? || StandardLibrary/Coq.ZArith.Znumtheory ||
+|| {{{forall m n, m > 0 -> {a | a < m & m %| gcdn m n + a * n} }}} <<BR>> {{{forall m n, n > 0 -> {a | a < n & n %| gcdn m n + a * m} }}}|| http://coqfinitgroup.gforge.inria.fr/ ||
+
 ||61 || Theorem of Ceva ||  ??? ||UserContributions/Sophia-Antipolis/ ||
 ||65 || Isosceles Triangle Theorem ||  ??? ||UserContributions/Sophia-Antipolis/ ||
 ||66 || Sum of a Geometric Series ||  ??? ||UserContributions/Nijmegen/CoRN ||
