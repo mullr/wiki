@@ -29,7 +29,8 @@
 ||66 || Sum of a Geometric Series ||  ??? ||UserContributions/Nijmegen/CoRN ||
 ||69 || Greatest Common Divisor Algorithm ||  ??? ||StandardLibrary/Coq.ZArith.Znumtheory ||
 ||71 || Order of a Subgroup ||??? || ||
-||74 || The Principle of Mathematical Induction || ??? || StandardLibrary ||
+||74 || The Principle of Mathematical Induction || {{{forall P : nat -> Prop,
+       P 0 -> (forall n : nat, P n -> P (S n)) ->}} <BR> {{{ forall n : nat, P n}}|| StandardLibrary ||
 ||75 || The Mean Value Theorem || ??? || UserContributions/Nijmegen/CoRN ||
 ||79 || The Intermediate Value Theorem || ??? || UserContributions/Nijmegen/CoRN ||
 ||80 || The Fundamental Theorem of Arithmetic || ??? || UserContributions/Eindhoven/POCKLINGTON ||
