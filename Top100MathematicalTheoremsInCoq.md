@@ -28,7 +28,8 @@
 ||65 || Isosceles Triangle Theorem ||  ??? ||UserContributions/Sophia-Antipolis/ ||
 ||66 || Sum of a Geometric Series ||  ??? ||UserContributions/Nijmegen/CoRN ||
 ||69 || Greatest Common Divisor Algorithm ||  ??? ||StandardLibrary/Coq.ZArith.Znumtheory ||
-||71 || Order of a Subgroup ||??? || ||
+||71 || Order of a Subgroup || {{{forall (gT : finGroupType) (G H : {group gT}),  H :<=: G -> (#|H| * #|G : H|)%N = #|G|}}} || http://coqfinitgroup.gforge.inria.fr/ ||
+||72 || Sylow Theorem || {{{Lemma Sylow_exists: forall (p : nat) (gT : finGroupType) (G : {group gT}), {P : {group gT} | p.-Sylow(G) P} }}} <<BR>> {{{Lemma Sylow_subj: forall (p : nat) (gT : finGroupType) (G P Q : {group gT}),}}} <<BR>> {{{ p.-Sylow(G) P -> Q :<=: G -> p.-group Q -> exists2 x : gT, x \in G & Q :<=: P :^ x  }}}<<BR>> {{{Lemma card_Syl_dvd : forall (p : nat) (gT : finGroupType) (G : {group gT}), #|'Syl_p(G)| %| #|G| }}}<<BR>> {{{Lemma card_Syl_mod : forall (p : nat) (gT : finGroupType) (G : {group gT}), prime p -> #|'Syl_p(G)| %% p = 1}}} ||  http://coqfinitgroup.gforge.inria.fr/ ||
 ||74 || The Principle of Mathematical Induction || {{{forall P : nat -> Prop,  P 0 -> (forall n : nat, P n -> P (S n)) ->}}} {{{ forall n : nat, P n}}}|| StandardLibrary ||
 ||75 || The Mean Value Theorem || ??? || UserContributions/Nijmegen/CoRN ||
 ||79 || The Intermediate Value Theorem || ??? || UserContributions/Nijmegen/CoRN ||
