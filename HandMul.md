@@ -24,7 +24,7 @@ Definition down h :=
 
 (* The left hand holds the first number, the right hand the second number,
    the production is composed 
-     for the decimals by the sum of the fingers up and 
+     for the tens by the sum of the fingers up and 
      for the units by the product of the fingers down
  *)
 Theorem hand_mult: forall (left right: hand),
