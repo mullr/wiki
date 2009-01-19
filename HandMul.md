@@ -2,6 +2,7 @@ Here is a fun way to do multiplications by hand.<<BR>> Each hand represents a nu
 
 Now we are ready to do 7 * 9, the left hand takes 7 the right one 9 {{attachment:seven.png}} {{attachment:rnine.png}} . <<BR>> Now, the idea is simple, the sum of the fingers up gives the tens, and the product of the fingers down the units.<<BR>> On our example 7 * 9, how many fingers are up? 6 (2 on the left, 4 on the right). Now for the units, 3 fingers down for the left hand, one for the right, so 3 units (3 * 1). Putting tens and units together we get 63. Magic!
 
+{{{#!coq
 (* A magic way to do multiplication with hands *)
 
 Inductive hand : Type := Hand6 | Hand7 | Hand8 | Hand9.
@@ -31,3 +32,4 @@ Theorem hand_mult: forall (left right: hand),
 Proof.
 intros left right; destruct left; destruct right; trivial.
 Qed.
+}}}
