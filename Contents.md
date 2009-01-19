@@ -78,6 +78,8 @@
 
  * ExistsFromPropToSet: Existential implies Sigma for decidable properties on {{{nat}}}.
 
+ * HandMul: A fun way of doing multiplication by hand 
+
  * Where can I see other examples of [[FormalizedAndVerified|formalization and verification]]?
 
 == Proof-General and CoqIDE Tips ==
