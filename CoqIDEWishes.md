@@ -1,4 +1,4 @@
-The Coq development team has been given the opportunity to improve and extended CoqIDE. The purpose of this page is to list wishes for CoqIDE and to set priorities.
+The Coq development team has been given the opportunity to improve and extend CoqIDE. The purpose of this page is to list wishes for CoqIDE and to set priorities.
 
 (please complete or add comments or add stars "*" to vote for features)
 
@@ -24,7 +24,7 @@ The plan is to rebuild CoqIDE on a client-server basis, CoqIDE communicating wit
 
 === Miscellaneous features ===
 
- * Easier support for Unicode (support for some input-method, e.g. writing \forall automatically display ∀).
+ * Easier support for Unicode (support for some input method, e.g. writing \forall automatically display ∀).
  * Proofs scripts folding (preliminary support already done in trunk version).
  * Proof-by-pointing features (Pcoq's spirit) using right-clic:
    * right-clicking on constants would propose "unfold",
