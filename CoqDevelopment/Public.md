@@ -28,6 +28,8 @@ In the longer term, we plan
 
  * more solid foundations for the different forms of unification used in Coq (for proving and for type inference)
 
+ * an extension of CoqIDE ([[CoqIDEWishes|wish list]])
+
 Under consideration from partners are
 
  * the [[http://www.msr-inria.inria.fr/Projects/math-components|ssreflect]] tactic language
