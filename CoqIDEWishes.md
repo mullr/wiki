@@ -41,6 +41,7 @@ The plan is to rebuild CoqIDE on a client-server basis, CoqIDE communicating wit
  * *Support for 2-dimension notations?
  * automatically expand unnamed intros into intros with explicit names
  * automatically compile file when Requires are evaluated
+ * a small detail: when after scrolling down in a fresh coqide we click inside the buffer, it brings back the pointer to the top instead putting it at the current location
 
 === List of queries to support ===
  * Print Assumptions for a constant
