@@ -34,14 +34,17 @@ The plan is to rebuild CoqIDE on a client-server basis, CoqIDE communicating wit
  * Displays hypotheses and goal in two separate panes ?
  * Use tab to indent proofs
  * Search/replace could be a pane at the bottom as in firefox (not a window)
- * Search/replace could have the same semantics as in emacs
+ * Search/replace could have the same semantics/shortcuts as in emacs
  * A graphical advanced search windows for driving SearchAbout.
  * Support for queries by right-clicking constants or selected expressions? what about a tooltip (if you keep the pointer on a constant more than 3 seconds, it displays its type, definitions...)
  * Key or right-click for making explicit hidden information (coercions, implicit arguments, notations, ...) on selected subterms.
  * *Support for 2-dimension notations?
- * automatically expand unnamed intros into intros with explicit names
- * automatically compile file when Requires are evaluated
- * a small detail: when after scrolling down in a fresh coqide we click inside the buffer, it brings back the pointer to the top instead putting it at the current location
+ * Automatically expand unnamed intros into intros with explicit names
+ * Automatically compile .v  if necessary when 'Require' are evaluated
+ * A small detail: when after scrolling down in a fresh coqide we click inside the buffer, it brings back the pointer to the top instead putting it at the current location
+ * Allow editing buffer (only the white part) during evaluation
+ * Allow modifying comments (even in the green part) without re-evaluating the buffer
+ * Allow changing the target of evaluation (the scope of the blue part) during evaluation
 
 === List of queries to support ===
  * Print Assumptions for a constant
@@ -52,5 +55,5 @@ The plan is to rebuild CoqIDE on a client-server basis, CoqIDE communicating wit
 === Views ===
  * Command to switch from .v view to a coqdoc view of the same buffer.
  * Command to switch to a view showing only Definition/Theorem names?
- * A tool to display the dependency tree of the modules
- * A tool to display the dependency tree of the theorems...
+ * A tool to display the dependency tree of the modules?
+ * A tool to display the dependency tree of the theorems?
