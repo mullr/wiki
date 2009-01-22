@@ -45,6 +45,7 @@ The plan is to rebuild CoqIDE on a client-server basis, CoqIDE communicating wit
  * Allow editing buffer (only the white part) during evaluation
  * Allow modifying comments (even in the green part) without re-evaluating the buffer
  * Allow changing the target of evaluation (the scope of the blue part) during evaluation
+ * Allow partial evaluation of ; sequences as in Matita : for example evaluating only T1;T2 in the sequence T1;T2;T3 without writing T1;T2. T3.
 
 === List of queries to support ===
  * Print Assumptions for a constant
