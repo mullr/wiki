@@ -109,3 +109,7 @@ Extract Constant output_stream_Z =>
          (print_z a; f s') in
      f".
 }}}
+
+This starting contribution could be improved in several ways.  First, efficiency was not a design issue.  Second, new datatypes
+could be covered.  In particular, the input could be read as a stream of strings (thus to be processed in a co-inductive way)
+or as a single string (thus to be processed co-inductively).
