@@ -30,7 +30,7 @@ ocamlc -o adds_two adds_two.mli
 Assuming the file `ex.txt` contains the strings "1" "2" ..."5", each on a line,
 the result file `ex1.txt` will contain the strings "3" "4" ... "7".
 
-Here is the module.  In the long term, we expect this to become a library provided, for instance
+Here is the module.  Place this text in the file `Z_interface.v`.  In the long term, we expect this to become a library provided, for instance
 in the Coq user-contribution.
 {{{
 Require Export ZArith Streams List String.
