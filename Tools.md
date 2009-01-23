@@ -34,3 +34,6 @@ Some of the tools listed here are part of bigger projects that support other pro
  * [[http://coq.inria.fr/contribs/Micromega.html|Micromega]]: solves linear (Fourier-Motzkin) and non linear (Sum-of-Square's algorithm) systems of polynomial inequations; also provides a (partial) replacement for the Coq's `omega` tactic.
 
  * [[http://www.msr-inria.inria.fr/Projects/math-components|Ssreflect]] facilitates proof by small scale reflection, "a style of proof that ... provide[s] effective automation for many small, clerical proof steps. This is often accomplished by restating ("reflecting") problems in a more concrete form ... For example, in the Ssreflect library arithmetic comparison is not an abstract predicate, but a function computing a boolean. ([[http://pauillac.inria.fr/pipermail/coq-club/2008/003486.html|source]])" 
+
+== Packaging extracted code ==
+ * [[ZInterfacePackage|Z_interface]] An approach for deriving directly standalone programs from extracted code.
