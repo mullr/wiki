@@ -37,6 +37,7 @@
 ||87 || Desargues's Theorem ||  ??? ||UserContributions/Sophia-Antipolis/geometry ||
 ||89 || The Factor and Remainder Theorems ||  ??? || StandardLibrary ||
 ||94 || The Law of Cosines || ??? || UserContributions/Sophia-Antipolis/ ||
+||97 || Cramer's rule || {{{forall (R : comRingType) (n : nat) (A : matrix R n n), A *m \adj A = \Z (\det A)}}} || Math Components Projects : http://coqfinitgroup.gforge.inria.fr/ ||
 ||98 || Bertrand’s Postulate || {{{forall n : nat, 2 <= n -> exists p : nat, prime p /\ n < p /\ p < 2 * n}}} || UserContributions/Sophia-Antipolis/Bertrand ||
 
 
