@@ -17,7 +17,7 @@
 ||32 || The Four Color Problem || ??? || GeorgesGonthier http://research.microsoft.com/~gonthier/ ||
 ||35 || Taylor's Theorem || ??? || UserContributions/Nijmegen/CoRN ||
 ||44 || Binomial Theorem || {{{(a + b) ^ n = \sum_(i < n.+1) (bin n i * (a ^ (n - i) * b ^ i))}}} || http://coqfinitgroup.gforge.inria.fr/binomial.html#exp_pascal||
-||49 || Cayley-Hamilton Theorem || Every square matrix is a root of its characteristic polynomial : {{{forall A, (Zpoly (char_poly A)).[A] = 0}}} || Math Components Projects : http://coqfinitgroup.gforge.inria.fr/charpoly.html#Cayley_Hamilton||
+||49 || Cayley-Hamilton Theorem || Every square matrix is a root of its characteristic polynomial : {{{forall A, (Zpoly (char_poly A)).[A] = 0}}} || Math Components Project : http://coqfinitgroup.gforge.inria.fr/charpoly.html#Cayley_Hamilton||
 ||<|2> 51 ||<|2> Wilson's Theorem || {{{forall p, prime p ->  Zis_mod (Zfact (p - 1)) (- 1) p}}} || UserContributions/Sophia-Antipolis/ ||
 ||{{{forall p, 1 < p -> (prime p <-> p %| (fact (p.-1)).+1)}}} || http://coqfinitgroup.gforge.inria.fr/binomial.html#wilson ||
 ||52 ||The Number of Subsets of a Set || ??? || ??? ||
@@ -38,7 +38,7 @@
 ||87 || Desargues's Theorem ||  ??? ||UserContributions/Sophia-Antipolis/geometry ||
 ||89 || The Factor and Remainder Theorems ||  ??? || StandardLibrary ||
 ||94 || The Law of Cosines || ??? || UserContributions/Sophia-Antipolis/ ||
-||97 || Cramer's rule || {{{forall (R : comRingType) (n : nat) (A : matrix R n n), A *m \adj A = \Z (\det A)}}} || Math Components Projects : http://coqfinitgroup.gforge.inria.fr/matrix.html#mulmx_adjr ||
+||97 || Cramer's rule || {{{forall (R : comRingType) (n : nat) (A : matrix R n n), A *m \adj A = \Z (\det A)}}} || Math Components Project : http://coqfinitgroup.gforge.inria.fr/matrix.html#mulmx_adjr ||
 ||98 || Bertrand’s Postulate || {{{forall n : nat, 2 <= n -> exists p : nat, prime p /\ n < p /\ p < 2 * n}}} || UserContributions/Sophia-Antipolis/Bertrand ||
 
 
