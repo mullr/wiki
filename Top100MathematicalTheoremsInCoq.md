@@ -16,20 +16,20 @@
 ||27 || Sum of the Angles of a Triangle ||  ??? ||UserContributions/Sophia-Antipolis/ ||
 ||32 || The Four Color Problem || ??? || GeorgesGonthier http://research.microsoft.com/~gonthier/ ||
 ||35 || Taylor's Theorem || ??? || UserContributions/Nijmegen/CoRN ||
-||44 || Binomial Theorem || {{{(a + b) ^ n = \sum_(i < n.+1) (bin n i * (a ^ (n - i) * b ^ i))}}} || http://coqfinitgroup.gforge.inria.fr/||
-||49 || Cayley-Hamilton Theorem || Every square matrix is a root of its characteristic polynomial : {{{forall A, (Zpoly (char_poly A)).[A] = 0}}} || Math Components Projects : http://coqfinitgroup.gforge.inria.fr/ ||
+||44 || Binomial Theorem || {{{(a + b) ^ n = \sum_(i < n.+1) (bin n i * (a ^ (n - i) * b ^ i))}}} || http://coqfinitgroup.gforge.inria.fr/binomial.html#exp_pascal||
+||49 || Cayley-Hamilton Theorem || Every square matrix is a root of its characteristic polynomial : {{{forall A, (Zpoly (char_poly A)).[A] = 0}}} || Math Components Projects : http://coqfinitgroup.gforge.inria.fr/charpoly.html#Cayley_Hamilton||
 ||<|2> 51 ||<|2> Wilson's Theorem || {{{forall p, prime p ->  Zis_mod (Zfact (p - 1)) (- 1) p}}} || UserContributions/Sophia-Antipolis/ ||
-||{{{forall p, 1 < p -> (prime p <-> p %| (fact (p.-1)).+1)}}} || http://coqfinitgroup.gforge.inria.fr/ ||
+||{{{forall p, 1 < p -> (prime p <-> p %| (fact (p.-1)).+1)}}} || http://coqfinitgroup.gforge.inria.fr/binomial.html#wilson ||
 ||52 ||The Number of Subsets of a Set || ??? || ??? ||
 ||55 || Product of Segments of Chords || {{{forall A B C D M O:point, samedistance O A O B ->  samedistance O A O C ->  samedistance O A O D ->  collinear A B M ->  collinear C D M -> }}} {{{ (distance M A)*(distance M B)=(distance M C)*(distance M D)  \/ parallel A B C D. }}} || to appear next... ||
 ||<|2>60 ||<|2> Bezout's Theorem || ??? || StandardLibrary/Coq.ZArith.Znumtheory ||
-|| {{{forall m n, m > 0 -> {a | a < m & m %| gcdn m n + a * n} }}} <<BR>> {{{forall m n, n > 0 -> {a | a < n & n %| gcdn m n + a * m} }}}|| http://coqfinitgroup.gforge.inria.fr/ ||
+|| {{{forall m n, m > 0 -> {a | a < m & m %| gcdn m n + a * n} }}} <<BR>> {{{forall m n, n > 0 -> {a | a < n & n %| gcdn m n + a * m} }}}|| http://coqfinitgroup.gforge.inria.fr/div.html#bezoutl ||
 ||61 || Theorem of Ceva ||  ??? ||UserContributions/Sophia-Antipolis/ ||
 ||65 || Isosceles Triangle Theorem ||  ??? ||UserContributions/Sophia-Antipolis/ ||
 ||66 || Sum of a Geometric Series ||  ??? ||UserContributions/Nijmegen/CoRN ||
 ||69 || Greatest Common Divisor Algorithm ||  ??? ||StandardLibrary/Coq.ZArith.Znumtheory ||
-||71 || Order of a Subgroup || {{{forall (gT : finGroupType) (G H : {group gT}),  H :<=: G -> (#|H| * #|G : H|)%N = #|G|}}} || http://coqfinitgroup.gforge.inria.fr/ ||
-||72 || Sylow Theorem || {{{Lemma Sylow_exists: forall (p : nat) (gT : finGroupType) (G : {group gT}), {P : {group gT} | p.-Sylow(G) P} }}} <<BR>> {{{Lemma Sylow_subj: forall (p : nat) (gT : finGroupType) (G P Q : {group gT}),}}} <<BR>> {{{ p.-Sylow(G) P -> Q :<=: G -> p.-group Q -> exists2 x : gT, x \in G & Q :<=: P :^ x  }}}<<BR>> {{{Lemma card_Syl_dvd : forall (p : nat) (gT : finGroupType) (G : {group gT}), #|'Syl_p(G)| %| #|G| }}}<<BR>> {{{Lemma card_Syl_mod : forall (p : nat) (gT : finGroupType) (G : {group gT}), prime p -> #|'Syl_p(G)| %% p = 1}}} ||  http://coqfinitgroup.gforge.inria.fr/ ||
+||71 || Order of a Subgroup || {{{forall (gT : finGroupType) (G H : {group gT}),  H :<=: G -> (#|H| * #|G : H|)%N = #|G|}}} || http://coqfinitgroup.gforge.inria.fr/groups.html#LaGrange ||
+||72 || Sylow Theorem || {{{Lemma Sylow_exists: forall (p : nat) (gT : finGroupType) (G : {group gT}), {P : {group gT} | p.-Sylow(G) P} }}} <<BR>> {{{Lemma Sylow_subj: forall (p : nat) (gT : finGroupType) (G P Q : {group gT}),}}} <<BR>> {{{ p.-Sylow(G) P -> Q :<=: G -> p.-group Q -> exists2 x : gT, x \in G & Q :<=: P :^ x  }}}<<BR>> {{{Lemma card_Syl_dvd : forall (p : nat) (gT : finGroupType) (G : {group gT}), #|'Syl_p(G)| %| #|G| }}}<<BR>> {{{Lemma card_Syl_mod : forall (p : nat) (gT : finGroupType) (G : {group gT}), prime p -> #|'Syl_p(G)| %% p = 1}}} ||  http://coqfinitgroup.gforge.inria.fr/sylow.html ||
 ||74 || The Principle of Mathematical Induction || {{{forall P : nat -> Prop,  P 0 -> (forall n : nat, P n -> P (S n)) ->}}} {{{ forall n : nat, P n}}}|| StandardLibrary ||
 ||75 || The Mean Value Theorem || ??? || UserContributions/Nijmegen/CoRN ||
 ||79 || The Intermediate Value Theorem || ??? || UserContributions/Nijmegen/CoRN ||
@@ -37,7 +37,7 @@
 ||87 || Desargues's Theorem ||  ??? ||UserContributions/Sophia-Antipolis/geometry ||
 ||89 || The Factor and Remainder Theorems ||  ??? || StandardLibrary ||
 ||94 || The Law of Cosines || ??? || UserContributions/Sophia-Antipolis/ ||
-||97 || Cramer's rule || {{{forall (R : comRingType) (n : nat) (A : matrix R n n), A *m \adj A = \Z (\det A)}}} || Math Components Projects : http://coqfinitgroup.gforge.inria.fr/ ||
+||97 || Cramer's rule || {{{forall (R : comRingType) (n : nat) (A : matrix R n n), A *m \adj A = \Z (\det A)}}} || Math Components Projects : http://coqfinitgroup.gforge.inria.fr/matrix.html#mulmx_adjr ||
 ||98 || Bertrand’s Postulate || {{{forall n : nat, 2 <= n -> exists p : nat, prime p /\ n < p /\ p < 2 * n}}} || UserContributions/Sophia-Antipolis/Bertrand ||
 
 
