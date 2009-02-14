@@ -26,7 +26,7 @@
 || {{{forall m n, m > 0 -> {a | a < m & m %| gcdn m n + a * n} }}} <<BR>> {{{forall m n, n > 0 -> {a | a < n & n %| gcdn m n + a * m} }}}|| http://coqfinitgroup.gforge.inria.fr/div.html#bezoutl ||
 ||61 || Theorem of Ceva ||  ??? ||UserContributions/Sophia-Antipolis/ ||
 ||65 || Isosceles Triangle Theorem ||  ??? ||UserContributions/Sophia-Antipolis/ ||
-||66 || Sum of a Geometric Series ||  ??? ||UserContributions/Nijmegen/CoRN ||
+||66 || Sum of a Geometric Series || {{{Lemma power_series_conv}}} {{{ }}} {{{: forall c : IR, AbsIR c[<]One -> convergent (power_series c)}}}<<BR>> {{{Lemma power_series_sum}}} {{{ }}} {{{: forall c : IR,}}} {{{ }}} {{{AbsIR c[<]One ->}}} {{{ }}} {{{forall (H : Dom (f_rcpcl' IR) (One[-]c))}}} {{{ }}} {{{(Hc0 : convergent (power_series c)),}}} {{{ }}} {{{series_sum (power_series c) Hc0[=](One[/]One[-]c[//]H)}}}||UserContributions/Nijmegen/CoRN ||
 ||69 || Greatest Common Divisor Algorithm ||  ??? ||StandardLibrary/Coq.ZArith.Znumtheory ||
 ||71 || Order of a Subgroup || {{{forall (gT : finGroupType) (G H : {group gT}),  H :<=: G -> (#|H| * #|G : H|)%N = #|G|}}} || http://coqfinitgroup.gforge.inria.fr/groups.html#LaGrange ||
 |||| ||  || ||
