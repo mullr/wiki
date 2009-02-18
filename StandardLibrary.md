@@ -35,7 +35,13 @@ Lemma fun_extensionality : forall A B (f g : A -> B),
 
 The {{{Coq.Sets.Relations_*}}} modules duplicate the theory of relations provided by {{{Coq.Relations.Relations}}}, with different theorems following from each.  These notions should be unified.  {{{Coq.Relations.Rstar}}} and {{{Coq.Relations.Newman}}} have been removed from SVN due to similar issues; they're still accessible from Coq-contribs. (Note that an inductive definition for R* is given in {{{Coq.Relations.Relation_Operators}}}, and Newman's lemma is proven in {{{Coq.Sets.Relations_3_facts}}}.)
 
+{{{Coq.Classes}}} includes a typeclass-based theory of relations which depends on {{{Coq.Relations}}}.  It probably has some duplications
+
 Now that nested directories are being supported for {{{theories/Numbers}}}, the {{{Wellfounded}}} directory should probably be moved under {{{Relations}}} for clarity, as it was in Coq 6.x
+
+Add a theory of heterogeneous relations {{{R: A -> B -> Prop}}}. 
+
+ Add a {{{functional_rel}}} property: {{{forall x: A, exists! y: B, R x y}}} and some kind of coercion from CIC functions {{{A -> B}}} to functional relations.  This is useful in math, logic, program specification...
   
 === Consistent Definition of Operators ===
 
