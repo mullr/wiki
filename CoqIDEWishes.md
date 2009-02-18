@@ -36,9 +36,14 @@ The plan is to rebuild CoqIDE on a client-server basis, CoqIDE communicating wit
  * Search/replace could be a pane at the bottom as in firefox (not a window)
  * Search/replace could have the same semantics/shortcuts as in emacs
  * A graphical advanced search windows for driving SearchAbout.
+ * Support for easy selection of structural features (definitions, terms, subterms, identifiers...)?
+  * could be a separate view (see below)
+  * pcoq can do this
+  * Alfa (agda1) also does this: it's deeply integrated with its natural language support.
  * Support for queries by right-clicking constants or selected expressions? what about a tooltip (if you keep the pointer on a constant more than 3 seconds, it displays its type, definitions...)
  * Key or right-click for making explicit hidden information (coercions, implicit arguments, notations, ...) on selected subterms.
  * *Support for 2-dimension notations?
+  * pcoq and alfa/agda1 have some support for this
  * Automatically expand unnamed intros into intros with explicit names
  * Automatically compile .v  if necessary when 'Require' are evaluated
  * A small detail: when after scrolling down in a fresh coqide we click inside the buffer, it brings back the pointer to the top instead putting it at the current location
@@ -46,7 +51,19 @@ The plan is to rebuild CoqIDE on a client-server basis, CoqIDE communicating wit
  * Allow modifying comments (even in the green part) without re-evaluating the buffer
  * Allow changing the target of evaluation (the scope of the blue part) during evaluation
  * Allow partial evaluation of ; sequences as in Matita : for example evaluating only T1;T2 in the sequence T1;T2;T3 without writing T1;T2. T3.
+  * could be a switchable option, useful for debugging complex proof scripts.
+  * what about other tacticals?
  * Reflect the tree structure of the proof into a gtk tree widget to allow hiding parts of the proof.
+  * is this the same as proof-scripts folding? (see above)
+  * most procedural proof scripts don't have much of a tree structure. does this apply to proof-terms, declarative proofs or what?
+ * Support for natural language explanations in proofs?
+  * useful for beginners
+  * coq 6.* and pcoq had this
+  * alfa integrated this with support for 2D views
+  * declarative proofs may make this unnecessary
+   * but need some means of converting from proof terms (Matita does this) or procedural proof scripts
+  * drawback: full natural-language proofs quickly become overwhelming
+   * Alfa supports hybrid representation: use symbols for low-level manipulation, natlang for the higher-level structure
 
 === List of queries to support ===
  * Print Assumptions for a constant
@@ -57,5 +74,8 @@ The plan is to rebuild CoqIDE on a client-server basis, CoqIDE communicating wit
 === Views ===
  * Command to switch from .v view to a coqdoc view of the same buffer.
  * Command to switch to a view showing only Definition/Theorem names?
- * A tool to display the dependency tree of the modules?
- * A tool to display the dependency tree of the theorems?
+ * Display dependency trees and graphs for:
+   * modules
+   * theorems
+   * library contributions
+  * optionally use graphviz for graph rendering?
