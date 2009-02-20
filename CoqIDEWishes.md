@@ -74,6 +74,7 @@ The plan is to rebuild CoqIDE on a client-server basis, CoqIDE communicating wit
 === Views ===
  * Command to switch from .v view to a coqdoc view of the same buffer.
  * Command to switch to a view showing only Definition/Theorem names?
+ * add a structural editing mode, like pcoq and Alfa?
  * Add tools to display dependency trees and graphs for:
    * modules
    * theorems
