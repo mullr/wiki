@@ -11,7 +11,7 @@
 ||17 || De Moivre's Theorem || ??? || UserContributions/Sophia-Antipolis/ ||
 ||20 || All Primes Equal the Sum of Two Squares ||   {{{forall n, 0 <= n -> (forall p, prime p -> Zis_mod p 3 4 ->  Zeven (Zdiv_exp p n)) -> sum_of_two_square n}}} ||UserContributions/Sophia-Antipolis/SumOfTwoSquare ||
 ||23 || Formula for Pythagorean Triples || {{{Lemma pytha_thm1 : forall a b c : Z, (is_pytha a b c) -> (pytha_set a b c).}}} {{{Lemma pytha_thm2 : forall a b c : Z, (pytha_set a b c) -> (is_pytha a b c).}}} || [[http://coq.inria.fr/contribs/Fermat4.html|UserContributions/CNAM/Fermat4]] (File Pythagorean.v) by ''[[http://cedric.cnam.fr/~delahaye/|D. Delahaye]]'' and ''[[http://www-lipn.univ-paris13.fr/~mayero/|M. Mayero]]'' ||
-||25 || Schroeder--Bernstein Theorem || ??? || UserContributions/Rocq /SCHROEDER ||
+||25 || Schroeder--Bernstein Theorem || {{{forall A B:Ensemble U, A <=_card B -> B <=_card A -> A =_card B.}}} || UserContributions/Rocq/SCHROEDER ||
 ||26 || Leibnitz's Series for Pi || ??? || UserContributions/Nijmegen/CoRN ||
 ||27 || Sum of the Angles of a Triangle ||  ??? ||UserContributions/Sophia-Antipolis/ ||
 ||32 || The Four Color Problem || ??? || GeorgesGonthier http://research.microsoft.com/~gonthier/ ||
