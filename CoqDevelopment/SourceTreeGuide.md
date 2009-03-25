@@ -1,4 +1,4 @@
-= Hichhiker's Guide to the Coq Source Tree =
+= Hitchhiker's Guide to the Coq Source Tree =
 
 A bit of notation :
  * terms and types are written with the form '''symbol_name:path/to/sourcefile.ml''' or '''(symbol_name:type):path/to/sourcefile.ml''' the first time they are encountered, and can be shortened to '''symbol_name''' after.
