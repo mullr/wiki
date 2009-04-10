@@ -5,6 +5,7 @@ Ceci est la page d'accueil de l'espace réservé aux développeurs de Coq. Pour 
 
 == Compte-rendus des GT Coq ==
 
+ * [[CoqDevelopment/CRADT20090324|24 jenvier 2009]] (ADT Coq sur l'automatisation)
  * [[CoqDevelopment/CRGTCoq20090116|16 janvier 2009]] 
  * [[CoqDevelopment/CRGTCoq20081118|18 novembre 2008]]
  * [[CoqDevelopment/CRGTCoq20081029|29 octobre 2008]] (lancement de l'ADT Coq)
