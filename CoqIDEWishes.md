@@ -17,12 +17,14 @@ The plan is to rebuild CoqIDE on a client-server basis, CoqIDE communicating wit
  * F4/F5 query features better delimiting ident (taking qualified names, ' and _ under consideration).
  * F4/F5 query features not forcing a selection in the clipboard.
  * More user-friendly completion (without needing to type a neutral key to keep the completion or use a shortcut to complete).
- * Uniform behavior of copy-pasting between windows.
+ * --(Uniform behavior of copy-pasting between windows)-- Done in trunk.
  * Replacing the not-often-used output windows by something using less work space?
 
 === Miscellaneous features ===
- * Easier support for Unicode (support for some input method, e.g. writing \forall automatically display ∀).
- * Proofs scripts folding (preliminary support already done in trunk version).
+ * --(Easier support for Unicode (support for some input method, e.g. writing \forall automatically display ∀))--.
+  * Linux/BSD/MacOS users : use a real input method such as http://code.google.com/p/uim/. Translation files should be pushed upstream soon.
+  * Windows users : we haven't worked out a solution yet (I mean one that will not horribly backfire).
+ * --(Proofs scripts folding)-- Done in trunk, feedback welcome.
  * Proof-by-pointing features (Pcoq's spirit) using right-clic:
   * right-clicking on constants would propose "unfold",
   * moving equality statements in hypothesis to goal or other hypothesis with a left or right move would rewrite the given hypothesis,
@@ -76,8 +78,8 @@ The plan is to rebuild CoqIDE on a client-server basis, CoqIDE communicating wit
  * Command to switch to a view showing only Definition/Theorem names?
  * add a structural editing mode, like pcoq and Alfa?
  * Add tools to display dependency trees and graphs for:
-   * modules
-   * theorems
-   * definitions?
-   * library contributions?
+  * modules
+  * theorems
+  * definitions?
+  * library contributions?
   * optionally use graphviz for graph rendering?
