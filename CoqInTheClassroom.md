@@ -76,7 +76,7 @@ In 2006 and 2007, Aaron Stump used Coq as a tool to teach Logic and Discrete Mat
 
 In 2007, Jakub Sakowicz and Jacek Chrząszcz developed [[http://www.mimuw.edu.pl/~chrzaszc/Papuq|Papuq]], an extension of CoqIde designed for teaching logic and set theory at Warsaw University (see paper [[#Ref5|Ref5]]).
 
-In 2007, Sungwoo Park taught a [[http://www.postech.ac.kr/~gla/cs433/|logic class]] using Coq for the assignments.
+In 2007, Sungwoo Park taught a [[http://www.postech.ac.kr/~gla/cs433/|logic class]] using Coq for the assignments at [[http://www.postech.ac.kr|Postech]].
 
 In 2008, Anne Mulhern taught an informal semester long seminar [[http://www.cs.wisc.edu/~mulhern/coqtalks/2008.01/index.html|CoqTalks]] on using Coq to write formal proofs and using the Penn PL club metatheory library to prove language properties.
 
