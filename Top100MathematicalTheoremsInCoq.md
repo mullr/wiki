@@ -28,7 +28,7 @@
 ||<style="text-align: center;" |2>60 ||<style="text-align: center;" |2>Bezout's Theorem ||??? ||StandardLibrary/Coq.ZArith.Znumtheory ||
 ||{{{forall m n, m > 0 -> {a | a < m & m %| gcdn m n + a * n} }}} <<BR>> {{{forall m n, n > 0 -> {a | a < n & n %| gcdn m n + a * m} }}} ||http://coqfinitgroup.gforge.inria.fr/div.html#bezoutl ||
 ||57 ||Heron formula || Theorem herron_qin : forall A B C, S A B C * S A B C = 1 / (2*2*2*2) * (Py A B A * Py A C A - Py B A C * Py B A C). || UserContributions/Rocq/AreaMethod/ ||
-||61 ||Theorem of Ceva ||??? ||UserContributions/Sophia-Antipolis/ ||
+||61 ||Theorem of Ceva || Theorem Ceva : forall A B C D E F G P : Point, inter_ll D B C A P -> inter_ll E A C B P -> inter_ll F A B C P -> F <> B -> D <> C -> E <> A -> parallel A F F B -> parallel B D D C -> parallel C E E A -> (A ** F / F ** B) *  (B ** D / D ** C) *  (C ** E / E ** A) = 1. ||UserContributions/Rocq/AreaMethod ||
 ||65 ||Isosceles Triangle Theorem ||??? ||UserContributions/Sophia-Antipolis/ ||
 ||66 ||Sum of a Geometric Series ||{{{Lemma power_series_conv}}} {{{ }}} {{{: forall c : IR, AbsIR c[<]One -> convergent (power_series c)}}}<<BR>> {{{Lemma power_series_sum}}} {{{ }}} {{{: forall c : IR,}}} {{{ }}} {{{AbsIR c[<]One ->}}} {{{ }}} {{{forall (H : Dom (f_rcpcl' IR) (One[-]c))}}} {{{ }}} {{{(Hc0 : convergent (power_series c)),}}} {{{ }}} {{{series_sum (power_series c) Hc0[=](One[/]One[-]c[//]H)}}} ||UserContributions/Nijmegen/CoRN ||
 ||69 ||Greatest Common Divisor Algorithm ||??? ||StandardLibrary/Coq.ZArith.Znumtheory ||
