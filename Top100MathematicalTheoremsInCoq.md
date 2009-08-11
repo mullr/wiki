@@ -42,6 +42,7 @@
 ||87 ||Desargues's Theorem || Theorem Desargues : <<BR>> forall A B C X A' B' C' : Point, A' <>C' -> A' <> B' -> <<BR>> on_line A' X A -> <<BR>> on_inter_line_parallel B' A' X B A B -> <<BR>> on_inter_line_parallel C' A' X C A C -> <<BR>> parallel B C B' C'.|| UserContributions/Rocq/AreaMethod <<BR>> UserContributions/Sophia-Antipolis/geometry ||
 ||89 ||The Factor and Remainder Theorems ||??? ||StandardLibrary ||
 ||94 ||The Law of Cosines ||??? ||UserContributions/Sophia-Antipolis/ ||
+||95 || Ptolemy's theorem || ??? || extension of UserContributions/Sophia-Antipolis/geometry/||
 ||97 ||Cramer's rule ||{{{forall (R : comRingType) (n : nat) (A : matrix R n n), A *m \adj A = \Z (\det A)}}} ||Math Components Project : http://coqfinitgroup.gforge.inria.fr/matrix.html#mulmx_adjr ||
 ||98 ||Bertrand’s Postulate ||{{{forall n : nat, 2 <= n -> exists p : nat, prime p /\ n < p /\ p < 2 * n}}} ||UserContributions/Sophia-Antipolis/Bertrand ||
 
