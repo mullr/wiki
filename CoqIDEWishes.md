@@ -83,3 +83,5 @@ The plan is to rebuild CoqIDE on a client-server basis, CoqIDE communicating wit
   * definitions?
   * library contributions?
   * optionally use graphviz for graph rendering?
+
+See also [[http://coq.inria.fr/bugs/show_bug.cgi?id=2144]]
