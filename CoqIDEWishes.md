@@ -44,8 +44,6 @@ The plan is to rebuild CoqIDE on a client-server basis, CoqIDE communicating wit
   * Alfa (agda1) also does this: it's deeply integrated with its natural language support.
  * Support for queries by right-clicking constants or selected expressions? what about a tooltip (if you keep the pointer on a constant more than 3 seconds, it displays its type, definitions...)
  * Key or right-click for making explicit hidden information (coercions, implicit arguments, notations, ...) on selected subterms.
- * *Support for 2-dimension notations?
-  * pcoq and alfa/agda1 have some support for this
  * Automatically expand unnamed intros into intros with explicit names
  * Automatically compile .v  if necessary when 'Require' are evaluated
  * A small detail: when after scrolling down in a fresh coqide we click inside the buffer, it brings back the pointer to the top instead putting it at the current location
@@ -66,6 +64,12 @@ The plan is to rebuild CoqIDE on a client-server basis, CoqIDE communicating wit
    * but need some means of converting from proof terms (Matita does this) or procedural proof scripts
   * drawback: full natural-language proofs quickly become overwhelming
    * Alfa supports hybrid representation: use symbols for low-level manipulation, natlang for the higher-level structure
+
+=== Graphical notations ===
+
+ * Support for 2-dimension notations?
+  * pcoq and alfa/agda1 have some support for this
+  * as a convention, every notation of the form ^* could be written as an exponent and every part of an ident ended by _digits or __foo and every notation of the form _bla could be written as indices (as e.g. Emacs does it when writing LaTeX files)
 
 === List of queries to support ===
  * Print Assumptions for a constant
