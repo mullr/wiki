@@ -1,26 +1,26 @@
 #acl CoqAdminGroup:read,write,admin,revert,delete CoqDevelopersGroup:read,write All:read
 
-= The main features of the forthcoming version 8.2 =
+= The main features of the next version 8.3 =
 
- * type classes
+ * new proof engine with existential variables instantiable by tactics, and, hopefully structured proof scripts
 
- * extended arithmetic libraries (arithmetical computations bound to machine words when possible, libraries for 31-bits integers, 31-bits-word-based unbounded integers, axiomatic arithmetic)
+ * a new specialized tactic for solving systems of polynomial equations
 
- * more general comfort for daily use of Coq (module system, tactics, syntax extensions, type inference, commands)
+ * more and better tactics
 
- * a stand-alone cross-verifier of Coq proofs
+ * a better module system with more transparent name management
 
 = The future of Coq =
 
-Here are a few directions that the Coq development team aim to follow for the next releases of Coq (post-8.2):
+In the longer term, we plan to investigate
 
- * a new proof engine with tactics applying to multi-goals, structured proofs and refinement of existential variables by tactics
+ * foundations of the [[TheoryBehindCoq|Calculus of Inductive Constructions]]
 
- * extension of the underlying [[TheoryBehindCoq|Calculus of Inductive Constructions]] with pattern-matching on inductive subfamilies leading to pattern-matching à la [[http://appserv.cs.chalmers.se/users/ulfn/wiki/agda.php|Agda]]
+   * how to support some form of extensional reasoning?
 
- * still more general comfort, tactics and tools
+   * to which extent supporting pattern-matching on inductive subfamilies à la [[http://appserv.cs.chalmers.se/users/ulfn/wiki/agda.php|Agda]]?
 
-In the longer term, we plan
+   * support for proof-irrelevance in the conversion (either by reasoning in Miquel-Barras-Bernardo's Implicit Calculus of Inductive Constructions or by following Werner's approach)
 
  * a re-evaluation of the overall structure, objectives and contents of the standard library ([[ReflectionOnStandardLibrary|discussion page]])
 
@@ -30,10 +30,13 @@ In the longer term, we plan
 
  * an extension of CoqIDE ([[CoqIDEWishes|wish list]])
 
-Under consideration from partners are
+Under consideration are
 
- * the [[http://www.msr-inria.inria.fr/Projects/math-components|ssreflect]] tactic language
+ * aspects of the [[http://www.msr-inria.inria.fr/Projects/math-components|ssreflect]] tactic language
 
  * proof generation from the [[http://ergo.lri.fr|alt-ergo]] theorem prover
+
+ * kernel-embedded decision procedures
+er
 
  * kernel-embedded decision procedures
