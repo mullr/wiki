@@ -48,6 +48,8 @@ A similar master-level class on formal methods and specification languages has b
 
 In 2004, Pierre Castéran and Richard Moot used Coq in the context of a [[http://esslli2004.loria.fr/giveabs.php?14|course]] on ''Proof automation for type-logical grammars''] at ESSLLI. Their Coq material is avalaible [[http://www.labri.fr/perso/casteran/esslli2004/index.html|online]].
 
+In 2006, Adam Chlipala and George Necula taught [[http://adam.chlipala.net/itp/|Interactive Computer Theorem Proving]] at Berkeley university, focusing on Coq and Twelf.
+
 In 2007, Yves Bertot used Coq as a support for an intensive 4-day class ''Semantics in Calculus of Constructions'' at Chalmers University. The [[http://groups.google.com/group/chalmers-cs-semantics-in-coq|course notes]] are freely available.
 
 Amy Felty used Coq as a tool for a class on ''Principles of Formal Software Development'' [[http://www.site.uottawa.ca/~afelty/csi5110|Fall 2007]] at Ottawa University.
