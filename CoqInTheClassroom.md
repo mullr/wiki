@@ -34,6 +34,8 @@ Between 1999 and 2002, a few formations were organised by the [[http://logical.i
 
 In 2006, Pierre Castéran proposed a 3-hours introduction to Coq at the [[jfla.inria.fr/2006|JFLA]] conference. It was based on his formalisation of ordinals and entitled [[http://www.labri.fr/perso/casteran/Cantor/JFLA2006.pdf|Le Coq au Pauillac et aux omégas]].
 
+In 2006, Adam Chlipala and George Necula taught [[http://adam.chlipala.net/itp/|Interactive Computer Theorem Proving]] at Berkeley university, focusing on Coq and Twelf.
+
 The University of Pennsylvania Provers Group ran a 2008 POPL tutorial, [[http://www.cis.upenn.edu/~plclub/popl08-tutorial/|Using Proof Assistants for Programming Language Research]].  Extensively documented Coq code, illustrating type soundness for simply typed lambda calculus and system F-sub, is available from the website.
 
 == Using Coq as a teaching tool ==
@@ -47,8 +49,6 @@ Another experiment has been made by David Delahaye, Mathieu Jaume and Virgile Pr
 A similar master-level class on formal methods and specification languages has been taught by Catherine Dubois using Coq. This was at [[http://www.iie.cnam.fr|ENSIIE]], a computer science engineer school attached to the CNAM. Groups were composed of 15 to 20 students.
 
 In 2004, Pierre Castéran and Richard Moot used Coq in the context of a [[http://esslli2004.loria.fr/giveabs.php?14|course]] on ''Proof automation for type-logical grammars''] at ESSLLI. Their Coq material is avalaible [[http://www.labri.fr/perso/casteran/esslli2004/index.html|online]].
-
-In 2006, Adam Chlipala and George Necula taught [[http://adam.chlipala.net/itp/|Interactive Computer Theorem Proving]] at Berkeley university, focusing on Coq and Twelf.
 
 In 2007, Yves Bertot used Coq as a support for an intensive 4-day class ''Semantics in Calculus of Constructions'' at Chalmers University. The [[http://groups.google.com/group/chalmers-cs-semantics-in-coq|course notes]] are freely available.
 
