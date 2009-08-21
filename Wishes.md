@@ -65,6 +65,14 @@ It should wait for falling in one of the given n-ary clauses.
 
 Prune the proof terms produced by tauto/intuition/omega (by removal of unnecessary steps) so that they're shorter and we can use them w/o endanger an arbitrary increase of the size of the proof.
 
+=== The Ltac language ===
+
+Typing L''tac'' (details to be given).
+
+Providing functions to know the structure of inductive types, like the number of constructors (details to be given).
+
+Support for matching terms below binders.
+
 == The Calculus of Inductive Constructions ==
 
 === Support lexicographic termination in Fixpoint ===
