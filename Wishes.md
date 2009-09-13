@@ -44,6 +44,30 @@ meaning
 
 For implicit arguments, one could force to have a surrounding '{... as y}' ??
 
+=== Induction schemes ===
+
+==== Extended detection of computationally-void inductive propositions ====
+
+Automatically build {{{_rect}}} eliminators for inductive propositions with several constructors whose constructors have disjoint conclusions and whose constructors have only propositional (possibly recursive) arguments as in, e.g.:
+
+{{{
+  Inductive le_list a : list nat -> Prop :=
+    | le_list_nil : le_list a nil
+    | le_list_cons b l : a <= b -> le_list a (b :: l).
+
+  Lemma le_list_inv : forall a b l, le_list a (b :: l) -> a <= b.
+  Proof. intros; inversion H; trivial. Defined.
+
+  Lemma le_list_rect : forall a (P : list nat -> Type),
+       P nil -> (forall b l, a <= b -> P (b :: l)) -> forall l : list nat, le_list a l -> P l.
+  Proof. induction l; firstorder using le_list_inv. Defined.
+}}}
+
+==== Total ordering of algebraic data-types ====
+
+Automatically equip simple algebraic data-types with a canonical total ordering of it
+
+
 == Tactics ==
 
 === Simplification tactics ===
