@@ -1,4 +1,4 @@
-This page is for collecting wishes for Coq and possibly discuss their feasibility. For CoqIde see [[CoqIDEWishes|CoqIDE wishes page]].
+This page is for collecting wishes for Coq and possibly discuss their feasibility. For CoqIde see [[CoqIDEWishes|CoqIDE wishes page]].  For the standard library, see [[StandardLibrary]] and [[ReflectionOnStandardLibrary]]
 
 <<TableOfContents>>
 
