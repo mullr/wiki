@@ -85,7 +85,15 @@ Fixpoint minus (n m:nat) {struct n} : nat :=
 
 It should wait for falling in one of the given n-ary clauses.
 
-=== Optimization ===
+=== Injection ===
+
+Axiom K is so weak and its benefit so important that it should be used as much as possible. For instance, "injection" could be able to split dependent equalities instead of keeping them under the form (exists P x p) = (exists P y q). One would then obtain "H : x = y" and "H': p = eq_rect_r P q H" (with good notations for eq_rect_r, the second equations could look say as "p = {q}_H").
+
+=== Referring to hypotheses by type ===
+
+When referring to propositional hypotheses, it would be often convenient to refer to them by type. One could for instance imagine typing "induction (le n m)" to mean induction on the (say first) hypothesis of type "(le n m)". A notation for that could be for instance "induction :(le n m)".
+
+=== Optimizations ===
 
 Prune the proof terms produced by tauto/intuition/omega (by removal of unnecessary steps) so that they're shorter and we can use them w/o endanger an arbitrary increase of the size of the proof.
 
