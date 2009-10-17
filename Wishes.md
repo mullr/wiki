@@ -142,9 +142,37 @@ This is not as useful as native support for lexicographic ordering because when 
 
 When unfolding a fixpoint and reducing it, we are left with a {{{fix}}} expression which in principle could be refolded when this expression is associated to a definition. What are the issues if we modify the rule for unfolding "named fixpoint" in the kernel.
 
+=== Per-inductive parameters in mutual inductive blocks ===
+
+A mutual inductive definition such as
+
+{{{
+Inductive Tree : bool -> Type :=
+ | leaf : Tree true
+ | node : forall b, TreePair b -> Tree false
+
+with TreePair (b:bool) : Type :=
+ | stp	: Tree b -> Tree b -> TreePair Tree b.
+}}}
+
+is not supported with the message that all parameters should be the same for all inductive type of the block. However, it can be simulated with
+
+{{{
+Inductive TreePair Tree (b:bool) : Type :=
+ | stp	: Tree b -> Tree b -> TreePair Tree b.
+
+Inductive Tree : bool -> Type :=
+ | leaf : Tree true
+ | node : forall b, TreePair Tree b -> Tree false.
+}}}
+
+Why not to provide it natively? (Agda does for instance)
+
+See also [[http://logical.saclay.inria.fr/coq-puma/messages/2d36611d50dc817a|Coq club]] (16 Oct 2009).
+
 === Investigation into commutative cuts ===
 
-In many cases, terms could be made convertible thanks to commutative cuts, such as {{{(let (a,b) := x in t) u) == let (a,b) := x in (t u)}}}.
+In many cases, terms could be made convertible thanks to commutative cuts, such as {{{(let (a,b) := x in t) u == let (a,b) := x in (t u)}}}.
 
 In presence of predicate parameters (i.e. indices), commutative cuts may get quite involved. Consider the following example in context  {{{H : x = y}}}:
 
