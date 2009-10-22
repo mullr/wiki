@@ -16,9 +16,9 @@ A possible approach for printing terms of some type T as numerals is to provide 
 
 ==== Support for specific constr grammar entries ====
 
-==== Support for on-the-fly decomposition of unary inductive types ====
+==== A more expressive language for Coq binders ====
 
-That would be convenient to be able to write 
+The notion of binders could be more general than it is. For instance it would be convenient to be able to write 
 
 {{{Definition f x (y1,y2) z := .... }}} or {{{ Definition f x ((y1,y2) as y) z := ....}}}
 
