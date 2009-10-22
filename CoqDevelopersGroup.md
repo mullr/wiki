@@ -10,4 +10,5 @@
  * VincentGross
  * AssiaMahboubi
  * CyrilCohen
+ * SansDroit
  * HugoHerbelin
