@@ -42,7 +42,10 @@ Now that nested directories are being supported for {{{theories/Numbers}}}, the 
 Add a theory of heterogeneous relations {{{R: A -> B -> Prop}}}. 
 
  Add a {{{functional_rel}}} property: {{{forall x: A, exists! y: B, R x y}}} and some kind of coercion from CIC functions {{{A -> B}}} to functional relations.  This is useful in math, logic, program specification...
-  
+
+=== Order stuff (8.3) ===
+The theories library for Coq 8.3 adds some module-based support for decidable total orders.  But the names chosen ({{{OrderType}}} and similar) are arguably inappropriate.
+
 === Consistent Definition of Operators ===
 
 It would be nice if the standard library was more consistent with the definitions it uses.  As it stands {{{a < b}}} for {{{nat}}} is an inductive definition while {{{a < b}}} for {{{Z}}} is defined to be {{{a ?= b = LT}}}.
