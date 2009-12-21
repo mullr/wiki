@@ -1,22 +1,22 @@
-= Trucs pour accélérer le processus de compilation de Coq sous Emacs =
+= Some hints to accelerate the compilation process of Coq with Emacs =
 
-Raccourcis dans `.emacs` pour compiler et trouver les erreurs « instantanément » :
+Shortcuts to put in `.emacs` to compile and locate errors "instantaneously":
 
 {{{
-;;; pour initier la 1e compil de la session par simple appui sur F5
+;;; pressing F5 initiates the compilation session
 (global-set-key [f5] 'compile)
-;;; pour relancer la compil en cours par appui sur F6
+;;; pressing F6 restarts the current compilation
 (global-set-key [f6] 'recompile)
-;;; pour trouver _instantanement_ la derniere erreur de compilation avec F7
+;;; pressing F7 locates the compilation errors
 (global-set-key [f7] 'next-error)
 }}}
 
-Script de nom `makecoq` à mettre dans son `path` permettant de compiler Coq depuis n'importe quel sous-répertoire sans refaire les dépendances
+Script named `makecoq` to put in the `path` to compile Coq from any subdirectory and without recomputing the dependencies (you need first to remove the space before '#!')
 
 {{{
-#!/bin/sh
+ #!/bin/sh
 
-# permet d'avoir les messages de make en anglais afin que emacs sache les parser
+# ensure make messages are in English so that Emacs parse them correctly
 export LC_ALL=C
 i=0
 case "$@" in  
@@ -39,32 +39,32 @@ esac
 exec make NO_RECALC_DEPS=1 GOTO_STAGE_N=2 $@ | grep -v '\*\*\*\*\*\*\*\*'
 }}}
 
-Ensuite, une fois `emacs` ouvert sur le fichier, par exemple
+Then, as soon `emacs` is open on some file, for example
 `pretyping/unification.ml` :
 
-`F5`, une première fois qui ouvre une ligne d'édition dans laquelle je mets
+Press `F5` and, in the minibuffer, give either the following command:
 {{{
   makecoq bin/coqtop.byte
 }}}
-ou
+or
 {{{
   makecoq theories
 }}}
-ou, si l'on ne veut tester que les premiers fichiers de la bibliothèque
+or, to test only the first files of the library
 {{{
   makecoq BEST=byte theories
 }}}
-retour chariot, puis, si erreur à la compil, `F7` qui positionne immédiatement à l'endroit de l'erreur. Correction de l'erreur, et `F6` pour relancer exactement la même compil, puis `F7`, correction, `F6`, etc. jusqu'à réussite de la compil.
+Then, if the compilation fails, press `F7` which moves the cursor at the exact error location. When the error is fixed, press `F6` to restart the compilation, then `F7`, fix, `F6`, etc. until the compilation eventually succeeds.
 
-Les `NO_RECALC_DEPS=1 GOTO_STAGE=2` sont là pour contourner le calcul des dépendances. Dans la pratique, si la compil échoue pour une raison de dépendance, je relance un `make stage2` dans un terminal à côté, juste pour refaire les dépendances et je repars avec `F6`. Si aucun des `.ml4` utilisés pour parser d'autres `.ml4` est concerné, alors on peut même se contenter de `make GOTO_STAGE=2 dummy`.
+The `NO_RECALC_DEPS=1 GOTO_STAGE=2` are here to shortcut the computation of dependencies. In practice, if the compilation fails for a dependency problem, I start a `make stage2` in a side terminal, just to redo the dependencies before continuing with `F6`. If no `.ml4` is used to parse other `.ml4`, the computation of dependencies can be done using `make GOTO_STAGE=2 dummy`.
 
-Il y a certaines erreurs que `F7` ne capturent pas comme `Values do not match`. C'est parce que ocaml n'envoie pas de localisation pour cette erreur.
+There are some errors that `F7` cannot locate. This is e.g. the case of `Values do not match` and this is due to ocaml which does not send a location for this error.
 
-(merci à JCF, PL et LM)
+(thanks to JCF, PL and LM)
 
-= Compilation de la doc =
+= Compilation of the documentation =
 
-Pour compiler des cibles spécifiques de la doc, démarrer sur `Makefile.stage3`, comme dans :
+To compile specific target of the documentation, start on `Makefile.stage3`, as in:
 {{{
   make -f Makefile.stage3 doc/refman/Reference-Manual.ps
 }}}
