@@ -18,22 +18,18 @@ Script named `makecoq` to put in the `path` to compile Coq from any subdirectory
 
 # ensure make messages are in English so that Emacs parse them correctly
 export LC_ALL=C
-i=0
+
 case "$@" in  
   *-f\ *) true;;
   *-C\ *) true;;
   *)
-  while [ $i != 1 ]; do
-    if [ "$PWD" == "/" ]; then
-      echo No makefile found
-      exit 1
-    fi
-    if [ -e GNUmakefile -o -e Makefile -o -e makefile -o "$PWD" == "/" ]; then
-      i=1
-    else
-      cd .. 
-    fi
+  while [ ! \( -e GNUmakefile -o -e Makefile -o -e makefile -o "$PWD" != "/" \) ]; do
+    cd .. 
   done
+  if [ ! \(  -e GNUmakefile -o -e Makefile -o -e makefile  \) ]; then
+    echo No makefile found
+    exit 1
+  fi
 esac 
     
 exec make NO_RECALC_DEPS=1 GOTO_STAGE_N=2 $@ | grep -v '\*\*\*\*\*\*\*\*'
