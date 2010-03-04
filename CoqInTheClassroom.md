@@ -22,7 +22,7 @@ Experiences were made at the first year of the Master level at ENS Lyon by Yves 
 
 From 2004, Alexandre Miquel taught Coq at the first year of the master level at University Paris 7.  He has [[http://www.pps.jussieu.fr/~miquel/enseignement/mpri/index.html|exercises]] and a [[http://www.pps.jussieu.fr/~miquel/enseignement/mpri/guide.html|"guide de survie"]] for a class at the second year of the master level (in French).
 
-Nicolas Magaud has a class ''Ingénierie de la preuve'' at the University of Strasbourg.
+Nicolas Magaud and Julien Narboux have a class ''Ingénierie de la preuve'' at the University of Strasbourg.
 
 Jean François Dufourd has a class '' Spécifications formelles, preuves et programmation'' at the University of Strasbourg.
 
