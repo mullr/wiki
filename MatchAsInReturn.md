@@ -11,6 +11,8 @@ If {{{expr}}} has type {{{(deptype exprA exprB)}}} then the type of the entire {
 
 == Recursively Nonuniform Parameters ==
 
+''The following paragraph is misguiding: the argument n of {{{updown}}} is not a recursively non-uniform parameter but a true argument (aka index). Please fix it. [HugoHerbelin 26/3/10]''
+
 Coq is missing some assumptions about recursively nonuniform parameters.  In the (highly contrived) program below, it cannot discern that the last occurrence of {{{u}}} has type {{{updown (z+1)}}}:
 
 {{{#!coq
