@@ -9,11 +9,11 @@ If {{{expr}}} has type {{{(deptype exprA exprB)}}} then the type of the entire {
 
 {{{T}}}, {{{A}}} and {{{B}}} are new variable names, and cannot be expressions.
 
-== Recursively Nonuniform Parameters ==
+== "Real Arguments" ==
 
-''The following paragraph is misguiding: the argument n of {{{updown}}} is not a recursively non-uniform parameter but a true argument (aka index). Please fix it. [HugoHerbelin 26/3/10]''
+Coq is missing some assumptions about real arguments (see page 105 of the 11-Feb-2009 edition of the Coq 8.2 manual for the subtle definition of the technical term "real argument").
 
-Coq is missing some assumptions about recursively nonuniform parameters.  In the (highly contrived) program below, it cannot discern that the last occurrence of {{{u}}} has type {{{updown (z+1)}}}:
+In the (highly contrived) program below, it cannot discern that the last occurrence of {{{u}}} has type {{{updown (z+1)}}}:
 
 {{{#!coq
 Inductive updown : nat -> Set :=                                                                        
