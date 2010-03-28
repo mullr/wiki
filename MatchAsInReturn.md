@@ -13,7 +13,7 @@ If {{{expr}}} has type {{{(deptype exprA exprB)}}} then the type of the entire {
 
 Coq is missing some assumptions about real arguments (see page 105 of the 11-Feb-2009 edition of the Coq 8.2 manual for the subtle definition of the technical term "real argument").
 
-In the (highly contrived) program below, it cannot discern that the last occurrence of {{{u}}} has type {{{updown (z+1)}}}:
+In the (highly contrived) program below, it cannot discern that the last occurrence of {{{u}}} has type {{{updown (n+1)}}}:
 
 {{{#!coq
 Inductive updown : nat -> Set :=                                                                        
