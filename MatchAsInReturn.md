@@ -38,3 +38,7 @@ should be replaced with:
                                                                                 
 For x a fresh variable name.  See the bottom of page 109 for the
 meaning of A_i    
+
+HugoHerbelin, 28 March 2010: This is not as simple as that. First because {{{eq_dep}}} (or {{{eq}}}, or {{{JMeq}}}) are all ''defined'' notions that are unknown from the kernel type-checker. In particular, to be able to type {{{match}}} as proposed above, one would need to have {{{eq_dep}}} primitively defined in the Calculus of Inductive Constructions. In any case, it is easy (though ugly) to simulate the rule proposed above by generalizing the type of the {{{match}}} with hypotheses {{{Coq.Logic.Eqdep.eq_dep Type (fun x=>x) C c A_i c}}} (this is described in most textbooks about Coq, see also the reference paper ''Eliminating dependent pattern-matching'' by Goguen, Mc Bride and Mc Kinna).
+
+Note that some proof assistants such as Agda have a more powerful typing rule for {{{match}}} which supports a limited amount of equations of the form above. However, this is not the case of Coq.
