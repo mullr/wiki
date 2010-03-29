@@ -37,8 +37,10 @@ should be replaced with:
 }}}   
                                                                                 
 For x a fresh variable name.  See the bottom of page 109 for the
-meaning of A_i    
+meaning of A_i.  This suggestion has the disadvantage (which was first lamented [[http://article.gmane.org/gmane.science.mathematics.logic.coq.club/4667|here]]) of introducing a new constant into the typing rules, thereby making {{{eq_dep}}} a primitive of CiC.
 
 HugoHerbelin, 28 March 2010: This is not as simple as that. First because {{{eq_dep}}} (or {{{eq}}}, or {{{JMeq}}}) are all ''defined'' notions that are unknown from the kernel type-checker. In particular, to be able to type {{{match}}} as proposed above, one would need to have {{{eq_dep}}} primitively defined in the Calculus of Inductive Constructions. In any case, it is easy (though ugly) to simulate the rule proposed above by generalizing the type of the {{{match}}} with hypotheses {{{Coq.Logic.Eqdep.eq_dep Type (fun x=>x) C c A_i c}}} (this is described in most textbooks about Coq, see also the reference paper ''Eliminating dependent pattern-matching'' by Goguen, Mc Bride and Mc Kinna).
 
 Note that some proof assistants such as Agda have a more powerful typing rule for {{{match}}} which supports a limited amount of equations of the form above. However, this is not the case of Coq.
+
+AdamMegacz, 28 March 2010: Interesting!  Would you care to include the expanded rule that "inlines" the hypotheses of {{{Coq.Logic.Eqdep.eq_dep Type (fun x=>x) C c A_i c}}} in place of {{{Coq.Logic.Eqdep.eq_dep}}} itself?
