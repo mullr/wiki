@@ -14,7 +14,7 @@ There is a great deal of mathematics already formalized in Coq. Some of the mate
 || Algorithm || Formalisation available from ||
 || Quicksort || [[http://why.lri.fr/index.en.html|Why]] ||
 || Treesort|| StandardLibrary ||
-|| Insertion sort|| StandardLibrary ||
+|| Insertion sort|| [[http://www.labri.u-bordeaux.fr/perso/casteran/CoqArt/horizon/index.html|CoqArt chapter 1]]||
 || Selection sort || [[http://why.lri.fr/index.en.html|Why]] ||
 || Maximum sort || [[http://why.lri.fr/index.en.html|Why]] ||
 || Heapsort || [[http://why.lri.fr/index.en.html|Why]] ||
