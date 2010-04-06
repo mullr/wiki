@@ -18,6 +18,7 @@ There is a great deal of mathematics already formalized in Coq. Some of the mate
 || Selection sort || [[http://why.lri.fr/index.en.html|Why]] ||
 || Maximum sort || [[http://why.lri.fr/index.en.html|Why]] ||
 || Heapsort || [[http://why.lri.fr/index.en.html|Why]] ||
+|| Mergesort || [[http://moscova.inria.fr/~xleroy/coq/Mergesort.html|Xavier Leroy]] ||
 
 == Other Algorithms ==
 
