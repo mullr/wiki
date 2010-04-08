@@ -14,6 +14,8 @@ Note that the root of the tree is a node like any other, and the leaves are thos
 
 For example, to define the NaturalNumbers, A has two elements (call them z and s), B[z] is empty, and B[s] has one element. The tree corresponding to the natural number n consists of n nodes labelled by s (the first of these the root), one after another, ending in one more node (a leaf) labelled by z. (If the number is zero, then the root is the leaf.) Branching is trivial, since every B[x] has at most one element; the tree must stop sometime, by well-foundedness.
 
+For an example of implementation, see WtypesInCoq.
+
 Note that a calculus founded on inductive types will still need to stick in some basic type constructions by hand: an empty type, binary sums, and dependent sums. (Also dependent products, but even the CalculusOfInductiveConstructions has to do that.) Often, followers of Martin-Löf will put in some other basic types by hand (usually N and the non-empty finite types), but these are not strictly necessary.
 
 == W-types vs. Inductive types ==
