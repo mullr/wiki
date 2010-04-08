@@ -12,8 +12,8 @@ In facts before deciding between Records and Modules, consider the following:
  * Will you need to define useful tactics inside your module?
   * If so you won't be able to define them inside Records, and lose the "dot" notation.
  * Will you need some toplevel instructions, such as "Implicit Arguments", "Print" and so...
-  ** Use Modules (Note that for Notations, you have a way to use "Reserved Notation" and "where" for Records)
+  * Use Modules (Note that for Notations, you have a way to use "Reserved Notation" and "where" for Records)
  * Will you need some performances?
-  ** Use Modules, all is defined at toplevel and won't require function calls
+  * Use Modules, all is defined at toplevel and won't require function calls
 
 In all other cases, Records are often a better solution.
