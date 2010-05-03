@@ -42,7 +42,29 @@ If not natively put inside the kernel type-checker, there is then a second alter
 
 AdamMegacz, 29 March 2010: Unfortunately this is not so simple.  The {{{Program}}} command will not alter the inductive definitions in the required manner.  It certainly helps organize the proofs, but it won't get the necessary propositions threaded into the right places.
 
-PierreBoutillier, 23 April 2010: Terminaison checking will fail on your example but why are you unhappy with : 
+PierreBoutillier, 23 April 2010: Terminaison checking will fail on your example
+
+AdamMegacz, 3 May 2010: That's not the problem -- adding a decreasing parameter doesn't fix the problem (but certainly makes the example more difficult to read)
+
+{{{#!coq
+Inductive updown : nat -> Set :=                                                                                          
+  | up   : forall n, updown (n+1) -> updown n                                                                             
+  | down : forall n, updown  n    -> updown (n+1).
+
+Fixpoint demo (n:nat)(t:updown n)(t':updown (n+1))
+              (decreasing_parameter:nat) {struct decreasing_parameter} : nat :=
+  match decreasing_parameter with
+    | 0 => 0
+    | (S dec) => 0
+      match t with
+        | up   _ u => demo n t u dec
+        | down _ d => 3
+      end
+  end.
+}}}
+
+PierreBoutillier, 23 April 2010 but why are you unhappy with:
+
 {{{#!coq
 Fixpoint demo (n:nat)(t:updown n)(t':updown (n+1)) : nat :=
   match t with
@@ -50,8 +72,30 @@ Fixpoint demo (n:nat)(t:updown n)(t':updown (n+1)) : nat :=
     | down _ d => 3
   end.
 }}}
-?
-More generaly, any kind of equation adds garbage in the computationnal behavior. Generalising may be a better solution. 
+
+AdamMegacz, 3 May 2010: Because that is a different program from the one I wrote.  You are passing "u" as the second argument to the recursive call, whereas I am passing "t".  The problem is more glaring if you add an extra argument to the up/down constructors:
+
+{{{#!coq
+Inductive updown : nat -> Set :=                                                                                          
+  | up   : forall n, updown (n+1) -> nat -> updown n                                                                      
+  | down : forall n, updown  n    -> nat -> updown (n+1).                                                                 
+                                                                                                                          
+Definition getX (n:nat)(t:updown n) :=                                                                                    
+  match t with                                                                                                            
+  | up   _ _ x => x                                                                                                       
+  | down _ _ x => x                                                                                                       
+  end.
+
+Fixpoint demo (n:nat)(t:updown n)(t':updown (n+1)) : nat :=
+  match t with
+    | up   _ u _ => demo n t u
+    | down _ d _ => 3
+  end.
+}}}
+
+There is no guarantee that (getX t) and (getX u) are equal, so your change will drastically alter the observable behavior of the function.
+
+PierreBoutillier, 23 April 2010:  More generaly, any kind of equation adds garbage in the computationnal behavior.  Generalising may be a better solution. 
 
 My playground :
 {{{#!coq 
