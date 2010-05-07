@@ -213,8 +213,23 @@ Finally, traversing the fixpoints is complicated. In case of tail-recursive fixp
 
 == Coqdoc ==
 
-=== Support links from within [...] parts of comments ===
+=== Features ===
+==== Support links from within [...] parts of comments ====
 
 E.g. support links on definition {{{permutation}}} from
 
 {{{(* This is a variant of [Coq.List.List.permutation] *)}}}
+
+==== Index ====
+Build up global alphabetical index of all values kind by kind (Module, Lemma, Axiom, ...)
+
+Follow directories hierarchy : In large formalisation and in the standard library for example. Also build (module for example) index file by file and directory by directory.
+
+==== Output independant layout language ====
+with this wiki features and :
+ * 
+
+=== Native output format ===
+ * LaTeX : See the link with coq-tex
+ * HTML 
+ * dot : graph with Lemma's name as verticle and an edge if one is used by the other. Maybe at least avoid induction principle.
