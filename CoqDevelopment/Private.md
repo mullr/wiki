@@ -25,3 +25,5 @@ Ceci est la page d'accueil de l'espace réservé aux développeurs de Coq. Pour 
 [[CoqDevelopment/AccentsDansLesMessagesDeCommit|Rectifier les accents]] dans les messages de commits envoyés depuis `gforge.inria.fr`.
 
 [[CoqDevelopment/RaccourcisPourDevelopperSousEmacs|Raccourcis pour accélérer la compilation]] (en particulier sous Emacs).
+
+[[CoqDevelopment/CommentModifierSiteWeb|Les commandes à donner pour modifier le site web]].
