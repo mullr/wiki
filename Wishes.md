@@ -232,4 +232,5 @@ with this wiki features and :
 === Native output format ===
  * LaTeX : See the link with coq-tex
  * HTML 
- * dot : graph with Lemma's name as verticle and an edge if one is used by the other. Maybe at least avoid induction principle.
+ * dot : graph with Lemma's name as verticle and an edge if one is used by the other. Maybe at least avoid induction principle. 
+Have a look to [[http://www-sop.inria.fr/members/Anne.Pacalet/dpdgraph/|dpdgraph-0.2]]
