@@ -6,4 +6,6 @@ Liste des URLs à connaître pour modifier le site coq.inria.fr (cela suppose d�
 
  * Ensuite, pour ajouter une page : '''http://coq.inria.fr/admin/content/node'''
 
+ * Ou, pour ajouter une « news » : '''http://coq.inria.fr/node/add/news'''
+
  * Ou, pour modifier une page existante : se rendre sur la page en question et choisir l'onglet '''Edit'''
