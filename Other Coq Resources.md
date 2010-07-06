@@ -14,7 +14,7 @@ There are lots more places to learn about Coq.
 
  * Materials from the [[http://www.cis.upenn.edu/~plclub/popl08-tutorial/code/index.html|Using Proof Assistants for Programming Language Research]] tutorial.
 
-* Materials from the course [[http://www.cis.upenn.edu/~bcpierce/sf/|Software foundations]].
+ * Materials from the course [[http://www.cis.upenn.edu/~bcpierce/sf/|Software foundations]].
 
  * The Coq-Club mailing list, [[http://pauillac.inria.fr/pipermail/coq-club/|subscription information and official archive]]
 
