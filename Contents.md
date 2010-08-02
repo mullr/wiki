@@ -46,6 +46,8 @@
 
  * How does the [[Fix (tactic)|fix tactic]] work?
 
+ * Why do I get "Error: Abstracting over the term ... [[AbstractingOverTheTermLeadsToATermWhichIsIllTyped|leads to a term which is ill-typed]]" when rewriting with equalities?
+
 == Some Useful Custom Tactics and Notation ==
 
  * [[Case (tactic)|Marking cases and subcases in proofs]]
