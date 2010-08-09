@@ -18,6 +18,8 @@
 
  * Where can I learn about proofs for languages with [[BindingRepresentation|variable binding]]?
 
+ * How can I get better [[Performance]] out of Coq?
+
 == Community ==
 
  * Who is using [[List of Coq PL Projects|Coq in their programming languages research]]?
