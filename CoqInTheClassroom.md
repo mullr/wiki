@@ -54,9 +54,9 @@ In 2007, Yves Bertot used Coq as a support for an intensive 4-day class ''Semant
 
 Amy Felty used Coq as a tool for a class on ''Principles of Formal Software Development'' [[http://www.site.uottawa.ca/~afelty/csi5110|Fall 2007]] at Ottawa University.
 
-Andrew W. Appel used Coq in a class on ''Automated Theorem Proving'' [[http://www.cs.princeton.edu/courses/archive/fall07/cos595|Fall 2007]] at Princeton University.
+Benjamin Pierce used Coq as a tool for teaching ''[[http://www.cis.upenn.edu/~bcpierce/sf/|Software Foundations]]'' at the University of Pennsylvania (notes used also at [[http://web.cecs.pdx.edu/~apt/cs578/|Portland State Portland]], Maryland, Lehigh, Iowa, USCD, Purdue, ...).
 
-Benjamin Pierce used Coq as a tool for teaching ''Software Foundations'' [[http://www.seas.upenn.edu/~cis500/cis500-f07/index.html|Fall 2007]] at the University of Pennsylvania.
+Andrew W. Appel used Coq in a class on ''Automated Theorem Proving'' [[http://www.cs.princeton.edu/courses/archive/fall07/cos595|Fall 2007]] at Princeton University. This moved to a ''Programming Languages'' class using the ''[[http://www.cis.upenn.edu/~bcpierce/sf/|Software Foundations]]'' material.
 
 Paweł Urzyczyn used Coq as a tool for teaching ''Theoretical Foundations of Theorem Proving Systems'' (Winter 2006-07) at Warsaw University.
 
