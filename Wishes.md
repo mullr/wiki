@@ -168,7 +168,7 @@ Inductive Tree : bool -> Type :=
 
 Why not to provide it natively? (Agda does for instance)
 
-See also [[http://logical.saclay.inria.fr/coq-puma/messages/2d36611d50dc817a|Coq club]] (16 Oct 2009).
+See also [[http://news.gmane.org/find-root.php?message_id=%3calpine.LRH.2.00.0910161427500.28930%40theorem.ca%3e|Coq club]] (16 Oct 2009).
 
 === Investigation into commutative cuts ===
 
