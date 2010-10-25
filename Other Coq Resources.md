@@ -18,6 +18,13 @@ There are lots more places to learn about Coq.
  
  * Materials from the Coq summer school [[http://moscova.inria.fr/~zappa/teaching/coq/ecole10/|Modelling and verifying algorithms in Coq: an introduction]].
 
+ * Materials for courses in French:
+    * [[http://www.irisa.fr/celtique/pichardie/teaching/M2/MDV/| par David Pichardie]]
+    * [[http://www.pps.jussieu.fr/~letouzey/teaching.fr.html| par Pierre Letouzey]]
+    * [[http://www.lix.polytechnique.fr/~assia/ens.html| par Assia Mahboubi]]
+    * [[http://www.pps.jussieu.fr/~miquel/enseignement/mpri/index.html| par Alexandre Miquel]]
+    * [[http://perso.ens-lyon.fr/aurelien.pardon/coq/index.html| par Jean Duprat]]
+
  * The Coq-Club mailing list, [[http://pauillac.inria.fr/pipermail/coq-club/|subscription information and official archive]]
 
  * Coq IRC channel: `irc://irc.freenode.net/#coq`
