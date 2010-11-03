@@ -20,6 +20,10 @@
 
  * How can I do [[InductionWithSelfDefinedCases|induction with self defined cases]] ?
 
+ * How do [[TypeClasses]] work?
+
+ * How do [[ImplicitArguments]] work?
+
 == Community ==
  * Who is using [[List of Coq PL Projects|Coq in their programming languages research]]?
 
