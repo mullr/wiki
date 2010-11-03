@@ -37,4 +37,4 @@ If existentials remain after discharging all proof obligations, you must instant
 Existential 1:=term.
 }}}
 
-This assumes that you are able to provide an exact term for the existential.  [[http://article.gmane.org/gmane.science.mathematics.logic.coq.club/5386||It appears that if you would prefer to use tactics to build the term, you are basically out of luck.]]
+This assumes that you are able to provide an exact term for the existential.  [[http://article.gmane.org/gmane.science.mathematics.logic.coq.club/5386|It appears that if you would prefer to use tactics to build the term, you are basically out of luck.]]
