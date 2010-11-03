@@ -30,3 +30,11 @@ Existential 1 =
 }}}
 
 The terms that you pass to {{{instantiate}}} for {{{?n}}} should appear in the environment of  {{{?n}}}.
+
+If existentials remain after discharging all proof obligations, you must instantiate the existentials before you will be able to finish the proof with {{{Defined}}} or {{{Qed}}}.  You can do this with the {{{Existential}}} command:
+
+{{{
+Existential 1:=term.
+}}}
+
+This assumes that you are able to provide an exact term for the existential.  [[http://article.gmane.org/gmane.science.mathematics.logic.coq.club/5386||It appears that if you would prefer to use tactics to build the term, you are basically out of luck.]]
