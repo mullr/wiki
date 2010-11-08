@@ -1,8 +1,8 @@
 I tried to have a small set of tactics which clean the hypothesis they use:
-* clean (removes some hypothesis and recursively all dependent hypothesis)
-* purge/purge_goal (same job as clean but fails if ALL dependent hypothesis cannot be cleared, so purge_goal is a good cleaner, but also very dangerous as you can get silently rid of hypothesis)
-* linear forward (an assert cleaning its hypothesis)
-* linear backward (an apply cleaning its hypothesis)
+ * clean (removes some hypothesis and recursively all dependent hypothesis)
+ * purge/purge_goal (same job as clean but fails if ALL dependent hypothesis cannot be cleared, so purge_goal is a good cleaner, but also very dangerous as you can get silently rid of hypothesis)
+ * linear forward (an assert cleaning its hypothesis)
+ * linear backward (an apply cleaning its hypothesis)
 
 See and run the last example.
 
