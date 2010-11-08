@@ -1,3 +1,4 @@
+{{{#!coq
 (** * cleaning tactic *)
 Ltac clean H :=
  match H with
@@ -81,3 +82,4 @@ Tactic Notation
 (** in Coq 8.2, "easy" can be slower than auto,
     so here is a patch to correct it *)
 Tactic Notation "now" tactic (a) := (a; auto; easy).
+}}}
