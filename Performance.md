@@ -13,3 +13,11 @@ Try using the {{{abstract}}} tactic.
 See also [[http://article.gmane.org/gmane.science.mathematics.logic.coq.club/5394|this thread]] regarding memory consumption.
 
 If you have your development in a single large file, try breaking it into multiple files.
+
+Even if your machine has ample memory, reducing memory consumption can speed up proof checking (due to garbage collection?)
+
+=== Opaque Proofs ===
+
+The {{{Opaque}}}/{{{Transparent}}} distinction is important for keeping memory consumption under control.  Subproofs wrapped in the {{{abstract}}} tactic and proofs which end with {{{Qed}}} are opaque; all others are transparent (unless made opaque with the {{{Opaque}}} command).
+
+The {{{-dont-load-proofs}}} option is useful.  Once you have broken up your development into multiple separate files and made declarations opaque wherever possible.  If {{{-dont-load-proofs}}} is enabled when checking one module, proof terms for opaque declarations from __other modules__ will not be loaded into memory, keeping the OCaml heap smaller.
