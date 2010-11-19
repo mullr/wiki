@@ -48,67 +48,53 @@ Ltac purge_goal :=
  | H: _ |- _ => purge_aux H
  end.
 
-(** * The forward tactic *)
+(** * The forward and backward linear tactics *)
 (** ** It performs an [assert] and [clean] all no more needed hypothesis *)
 (** It uses same kind of hack as [exploit] tactic in Compcert *)
-Ltac forward_aux head param H :=
-( assert (H := head param)
-||assert (H := head _ param)
-||assert (H := head _ _ param)
-||assert (H := head _ _ _ param)
-||assert (H := head _ _ _ _ param)
-||assert (H := head _ _ _ _ _ param)
-||assert (H := head _ _ _ _ _ _ param)
-||assert (H := head _ _ _ _ _ _ _ param)
-||fail "The head of your goal is not in good shape"
-); clean head; clean param.
 
-Tactic Notation
- "linear" "forward" constr(a) "as" ident(H)
- := (assert (H := a); clean a).
-Tactic Notation
- "linear" "forward" constr(b) constr(a) "as" ident(H)
- := (let K := fresh in linear forward b as K; forward_aux K a H).
-Tactic Notation
- "linear" "forward" constr(c) constr(b) constr(a) "as" ident(H)
- := (let K := fresh in linear forward c b as K; forward_aux K a H).
-Tactic Notation
- "linear" "forward" constr(d) constr(c) constr(b) constr(a) "as" ident(H)
- := (let K := fresh in linear forward d c b as K; forward_aux K a H).
-Tactic Notation
- "linear" "forward" constr(e) constr(d) constr(c) constr(b) constr(a) "as" ident(H)
- := (let K := fresh in linear forward e d c b as K; forward_aux K a H).
-Tactic Notation
- "linear" "forward" constr(f) constr(e) constr(d) constr(c) constr(b) constr(a) "as" ident(H)
- := (let K := fresh in linear forward e d c b as K; forward_aux K a H).
-Tactic Notation
- "linear" "forward" constr(g) constr(f) constr(e) constr(d) constr(c) constr(b) constr(a) "as" ident(H)
- := (let K := fresh in linear forward f e d c b as K; forward_aux K a H).
+(** we don't care about induction principles generation;
+    we do not use the predefined "list" type constructor,
+    but it is cleaner not to do so, so the user cannot be
+    confused *)
+CoInductive TacList :=
+| TacListNil
+| TacListCons: forall A, A -> TacList -> TacList.
+Notation "'forward' x .. y 'as'" := (TacListCons _ x .. (TacListCons _ y TacListNil) .., true) (x at level 0).
+Notation "'bakward' x .. y" := (TacListCons _ x .. (TacListCons _ y TacListNil) .., false) (at level 0).
 
-(** * The backward tactic *)
-(** ** not a very smart tactic; it is a [linear forward] followed by [apply] *)
-Tactic Notation
- "linear" "backward" constr(a)
- := (let K := fresh in linear forward a as K; apply K; clear K).
-Tactic Notation
- "linear" "forward" constr(b) constr(a)
- := (let K := fresh in linear forward b a as K; apply K; clear K).
-Tactic Notation
- "linear" "backward" constr(c) constr(b) constr(a)
- := (let K := fresh in linear forward c b a as K; apply K; clear K).
-Tactic Notation
- "linear" "backward" constr(d) constr(c) constr(b) constr(a)
- := (let K := fresh in linear forward d c b a as K; apply K; clear K).
-Tactic Notation
- "linear" "backward" constr(e) constr(d) constr(c) constr(b) constr(a)
- := (let K := fresh in linear forward e d c b a as K; apply K; clear K).
-Tactic Notation
- "linear" "backward" constr(f) constr(e) constr(d) constr(c) constr(b) constr(a)
- := (let K := fresh in linear forward f e d c b a as K; apply K; clear K).
-Tactic Notation
- "linear" "backward" constr(g) constr(f) constr(e) constr(d) constr(c) constr(b) constr(a)
- := (let K := fresh in linear forward g f e d c b a as K; apply K; clear K).
+Ltac fwx H t l :=
+match l with
+| TacListNil => let h := fresh H in
+                assert (h := t);
+                clean t;
+                rename h into H
+| TacListCons ?A ?a ?b =>
+(  fwx H (t a) b
+|| fwx H (t _ a) b
+|| fwx H (t _ _ a) b
+|| fwx H (t _ _ _ a) b
+|| fwx H (t _ _ _ _ a) b
+|| fwx H (t _ _ _ _ _ a) b
+|| fwx H (t _ _ _ _ _ _ a) b
+|| fwx H (t _ _ _ _ _ _ _ a) b)
+end.
 
+(** ** The backward tactic *)
+(** *** not a very smart tactic; it is a [linear forward] followed by [apply] *)
+Tactic Notation "linear" constr(t) :=
+(match t with
+ | (TacListCons ?A ?a ?l, false) => let H := fresh in
+                                    fwx H a l;
+                                    apply H; clean H
+ | _ => fail "Sorry, I couldn't combine the given terms"
+ end).
+
+(** ** The forward tactic *)
+Tactic Notation "linear" constr(t) ident(H) :=
+(match t with
+ | (TacListCons ?A ?a ?l, true) => fwx H a l
+ | _ => fail "Sorry, I couldn't combine the given terms"
+ end).
 
 (** * Improved now *)
 (** in Coq 8.2, "easy" can be slower than auto,
