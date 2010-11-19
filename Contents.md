@@ -73,6 +73,8 @@
 
  * [[ListComprehensionNotation|Haskell-like notation for list comprehension]]
 
+ * Automatically [[LinearTactics|cleaning your hypothesis like in linear programming]] (contains also an example of a way to have list of hypothesis in a custom tactic)
+
 == Formal Developments and Coq Pearls ==
  * SquareRootTwo: A very short proof that the square root of 2 is non rational.
 
