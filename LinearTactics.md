@@ -60,7 +60,7 @@ CoInductive TacList :=
 | TacListNil
 | TacListCons: forall A, A -> TacList -> TacList.
 Notation "'forward' x .. y 'as'" := (TacListCons _ x .. (TacListCons _ y TacListNil) .., true) (x at level 0).
-Notation "'bakward' x .. y" := (TacListCons _ x .. (TacListCons _ y TacListNil) .., false) (at level 0).
+Notation "'backward' x .. y" := (TacListCons _ x .. (TacListCons _ y TacListNil) .., false) (at level 0).
 
 Ltac fwx H t l :=
 match l with
