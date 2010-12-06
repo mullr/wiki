@@ -10,4 +10,5 @@ Email: <<cauger AT SPAMFREE lri DOT fr>>
 
 ----
 
-[[LinearTactics|Quelques tactiques pour essayer de ne pas polluer le code.]]
+[[LinearTactics|Some tactics to keep hypothesis clean.]]
+[[XComposeAndNotations|Playing with notations with Coq under X.]]
