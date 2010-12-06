@@ -92,7 +92,7 @@ Take a look at the official webpage of unicode to find the unicode codes you wan
 
 The expected format is:
 
-[non empty list of keys] : [optional "\""utf8-encoded-character"\""] [optional "U"unicode-code]
+[non_empty_list_of_keys_or_unicode_name] : [optional "\""utf8-encoded-character"\""] [optional unicode-name] [optional "U"unicode-code]
 
 for instance:
 
@@ -101,3 +101,5 @@ echo '<Multi_key> <a> <l> <l> : "∀" U2200' >> ~/.XCompose.my_symbols
 }}}
 
 Finally restart your X server, and all should work.
+
+See [[XCompose_symbols|this file for an example]].
