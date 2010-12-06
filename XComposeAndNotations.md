@@ -1,4 +1,4 @@
-In Coqide, you can use notations to have fancy (and/or more readable) way to write your code in Coq.
+In Coq, you can use notations to have fancy (and/or more readable) way to write your code in Coq.
 Here is an example of what you can have:
 
 {{{#!coq
