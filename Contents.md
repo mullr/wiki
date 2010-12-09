@@ -24,7 +24,7 @@
 
  * How do [[ImplicitArguments]] work?
 
- * How can I input unicode characters for Coq independantly of my editor (X graphical servers only), using [[XComposeAndNotations|XCompose]].
+ * How can I input unicode characters for Coq independently of my editor using [[XComposeAndNotations|XCompose]] (X graphical servers only) or the [[TeXInputMethodForUnicodeNotations|TeX input method]] (Unix systems).
 
 == Community ==
  * Who is using [[List of Coq PL Projects|Coq in their programming languages research]]?
