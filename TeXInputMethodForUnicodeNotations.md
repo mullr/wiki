@@ -1,3 +1,4 @@
+## page was renamed from UimAndUnicodeNotations
 Using Emacs and Proof General, Unicode symbols can be conveniently entered using the ''TeX'' input method. On CoqIDE, under Unix systems (Linux, BSD, MacOS X), the ''TeX'' input method is also available thanks to the [[http://code.google.com/p/uim/|UIM]] input method library.
 
 = TeX-style input method for Unicode in Emacs Proof General =
