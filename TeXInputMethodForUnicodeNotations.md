@@ -24,7 +24,7 @@ $ coqide
 
 If not already activated, activate the ''ELatin Input Method'' with "{{{Ctrl-\}}}", then type the sequence "{{{\beta}}}". You will see the sequence being replaced by β as soon as you type the "{{{a}}}".
 
-With ''uim 1.5.x'', the TeX input method is not included and you need first to install it. Take the attached files {{{coqide-custom.scm}}},  {{{coqide-rules.scm}}} and {{{coqide.scm}}} and install them in the repository of input methods for ''uim'' (typically {{{/usr/share/uim}}} if uim was installed using a standard Linux distribution). Call first the command {{{uim-register --register coqide}}} to register the new files, then, proceed as above, except that you have to select ''CoqIDE'' instead of ''ELatin'' in the ''Global Settings'' of {{{uim-pref-gtk}}}. You might need to first {{{edit}}} the set of ''Enabled input methods'' to add ''CoqIDE'' to this set.
+With ''uim 1.5.x'', the TeX input method is not included and you need first to install it. Take the attached files [[attachment:coqide-custom.scm]], [[attachment:coqide-rules.scm]] and [[attachment:coqide.scm]] and install them in the repository of input methods for ''uim'' (typically {{{/usr/share/uim}}} if uim was installed using a standard Linux distribution). Call first the command {{{uim-register --register coqide}}} to register the new files, then, proceed as above, except that you have to select ''CoqIDE'' instead of ''ELatin'' in the ''Global Settings'' of {{{uim-pref-gtk}}}. If not already done automatically, you might have first to {{{edit}}} the set of ''Enabled input methods'' to add ''CoqIDE'' to this set.
 
 Many thanks to Vincent Gross for making this input method available.
 
