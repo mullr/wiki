@@ -5,6 +5,12 @@ Using Emacs and Proof General, Unicode symbols can be conveniently entered using
 
 Just do {{{M-x set-input-method}}} and choose {{{TeX}}}. Unicode symbols can then be entered using TeX macros, e.g. "{{{\beta}}}" for "β", "{{{_1}}}" for "₁", "{{{\circ}}}" for "∘", etc.
 
+To make this happen automatically, add the following line to your {{{.emacs}}} file:
+
+{{{
+  (add-hook 'proof-mode-hook (lambda () (set-input-method "TeX") ))
+}}}
+
 = TeX-style input method for Unicode in CoqIDE using uim under POSIX systems =
 
 You need ''uim'' 1.5.x or 1.6.x installed.
