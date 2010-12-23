@@ -6,7 +6,7 @@
 
  * native support for eta-conversion (Hugo Herbelin) and maybe axiom K
 
- * new comprehensive abstract library of numbers, specifying standard arithmetical operations (including power, square root, log, ...) and standard bitwise operations (shift, logical and, or, xor, ...) (Pierre Letouzey, pursuing preliminary works from Evgeny Makarov, also using material from Laurent Théry and Benjamin Grégoire)
+ * new comprehensive abstract library of numbers, specifying standard arithmetical operations (including power, square root, log, ...) and standard bitwise operations (shift, logical and, or, xor, ...) (Pierre Letouzey, carrying on preliminary works from Evgeny Makarov, also using material from Laurent Théry and Benjamin Grégoire)
 
  * new model of communication, process based instead of thread based, between Coq and CoqIDE, allowing multi-sessions and interruptability of Coq
 
