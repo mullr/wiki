@@ -5,6 +5,7 @@
 Note: Minutes might be written in either English or French
 
  * [[CoqDevelopment/CRGTCoq20101217|17 décembre 2010]] (about the Numbers library)
+ * [[http://coq.inria.fr/files/summary-27oct2010.txt|27 octobre 2010]] (ADT interfaces)
  * [[CoqDevelopment/CRGTCoq20100920|20 septembre 2009]]
  * [[CoqDevelopment/CRGTCoq20100426|26 avril 2009]]
  * [[CoqDevelopment/CRADT20100202|2 février 2009]]
