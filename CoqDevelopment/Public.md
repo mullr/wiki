@@ -1,20 +1,14 @@
 #acl CoqAdminGroup:read,write,admin,revert,delete CoqDevelopersGroup:read,write All:read
 
-= The main features of the forthcoming version 8.3 =
-
- * a new specialized tactic for solving systems of polynomial equations ({{{gb}}} by Loïc Pottier)
-
- * a better module system with more transparent name management and an inheritance operator <:
-
- * libraries FSet and Sorting revised, library Numbers extended, new modular library MSets of finite sets with computational content and specification separated
-
- * more and better tactics
-
 = Roadmap for version 8.4 =
 
- * new proof engine with existential variables instantiable by tactics, and, hopefully structured proof scripts (formerly thought for 8.3 but postponed)
+ * new proof engine with existential variables instantiable by tactics, and, hopefully structured proof scripts (Arnaud Spiwack)
 
- * native support for axiom K and eta-conversion
+ * native support for eta-conversion (Hugo Herbelin) and maybe axiom K
+
+ * new comprehensive abstract library of numbers, specifying standard arithmetical operations (including power, square root, log, ...) and standard bitwise operations (shift, logical and, or, xor, ...) (Pierre Letouzey, pursuing preliminary works from Evgeny Makarov, also using material from Laurent Théry and Benjamin Grégoire)
+
+ * new model of communication, process based instead of thread based, between Coq and CoqIDE, allowing multi-sessions and interruptability of Coq
 
 = The future of Coq =
 
@@ -26,6 +20,8 @@ In the longer term, we plan to investigate
 
    * to which extent supporting pattern-matching on inductive subfamilies à la [[http://appserv.cs.chalmers.se/users/ulfn/wiki/agda.php|Agda]]? (see also the [[http://mattam.org/research/coq/equations.en.html|Equations]] plugin)
 
+   * how to natively support machine word arithmetic and arrays (see Benjamin Grégoire's [[https://gforge.inria.fr/scm/viewvc.php/branches/native/?root=coq native]] branch)
+
    * support for proof-irrelevance in the conversion (either by reasoning in Miquel-Barras-Bernardo's Implicit Calculus of Inductive Constructions or by following Werner's approach)
 
  * a re-evaluation of the overall structure, objectives and contents of the standard library ([[ReflectionOnStandardLibrary|discussion page]])
@@ -34,7 +30,7 @@ In the longer term, we plan to investigate
 
  * more solid foundations for the different forms of unification used in Coq (for proving and for type inference)
 
- * an extension of CoqIDE ([[CoqIDEWishes|wish list]])
+ * other extensions of CoqIDE ([[CoqIDEWishes|wish list]])
 
 Under consideration are
 
