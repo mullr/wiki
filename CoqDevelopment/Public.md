@@ -2,20 +2,22 @@
 
 = Minutes from the Coq development working groups and ADT meetings =
 
-Note: Minutes might be either English or French
+Note: Minutes might be written in either English or French
 
- * [[CoqDevelopment/CRGTCoq20101217|17 décembre 2010]] (about the Number library)
+ * [[CoqDevelopment/CRGTCoq20101217|17 décembre 2010]] (about the Numbers library)
  * [[CoqDevelopment/CRGTCoq20100920|20 septembre 2009]]
  * [[CoqDevelopment/CRGTCoq20100426|26 avril 2009]]
+ * [[CoqDevelopment/CRADT20100202|2 février 2009]]
  * [[CoqDevelopment/CRGTCoq20100113|13 janvier 2009]]
  * [[CoqDevelopment/CRGTCoq20091103|3 novembre 2009]]
- * [[CoqDevelopment/CRGTCoq20090704|3 juillet 2009]]
- * [[CoqDevelopment/CRADT20090324|24 mars 2009]] (ADT Coq sur l'automatisation)
+ * [[CoqDevelopment/CRADT20090630|30 juin 2009]] (ADT tactiques)
+ * [[CoqDevelopment/CRGTCoq20090704|3 juillet 2009]] (ADT equality and termination)
+ * [[CoqDevelopment/CRADT20090324|24 mars 2009]] (ADT meeting on automatisation)
  * [[CoqDevelopment/CRADTCommunication20090323|23 mars 2009]] (discussion sur format de communication avec outils externes)
  * [[CoqDevelopment/CRGTCoq20090323|23 mars 2009]] 
  * [[CoqDevelopment/CRGTCoq20090116|16 janvier 2009]] 
  * [[CoqDevelopment/CRGTCoq20081118|18 novembre 2008]]
- * [[CoqDevelopment/CRGTCoq20081029|29 octobre 2008]] (lancement de l'ADT Coq)
+ * [[CoqDevelopment/CRADT20081029|29 octobre 2008]] (ADT Kick-off meeting)
  * [[CoqDevelopment/CRGTCoq20081010|10 octobre 2008]]
 
 = Roadmap for version 8.4 =
