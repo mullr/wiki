@@ -1,7 +1,8 @@
 ## page was renamed from UimAndUnicodeNotations
-Using Emacs and Proof General, Unicode symbols can be conveniently entered using the ''TeX'' input method. On CoqIDE, under Unix systems (Linux, BSD, MacOS X), the ''TeX'' input method is also available thanks to the [[http://code.google.com/p/uim/|UIM]] input method library.
 
-= TeX-style input method for Unicode in Emacs Proof General =
+= In Emacs =
+
+Using Emacs and Proof General, Unicode symbols can be conveniently entered using the ''TeX'' [[http://www.gnu.org/software/emacs/manual/html_node/emacs/Select-Input-Method.html|input method]].
 
 Just do {{{M-x set-input-method}}} and choose {{{TeX}}}. Unicode symbols can then be entered using TeX macros, e.g. "{{{\beta}}}" for "β", "{{{_1}}}" for "₁", "{{{\circ}}}" for "∘", etc.
 
@@ -11,7 +12,9 @@ To make this happen automatically, add the following line to your {{{.emacs}}} f
   (add-hook 'proof-mode-hook (lambda () (set-input-method "TeX") ))
 }}}
 
-= TeX-style input method for Unicode in CoqIDE using uim under POSIX systems =
+= In CoqIDE (using UIM on POSIX systems) =
+
+On CoqIDE, under Unix systems (Linux, BSD, MacOS X), the ''TeX'' input method is also available thanks to the [[http://code.google.com/p/uim/|UIM]] input method library.
 
 You need ''uim'' 1.5.x or 1.6.x installed.
 
