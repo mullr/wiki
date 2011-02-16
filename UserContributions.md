@@ -1,1 +1,1 @@
-[[http://coq.inria.fr/contribs-eng.html|User Contributions]]
+[[http://coq.inria.fr/pylons/contribs/index|User Contributions]]
