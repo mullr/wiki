@@ -2,6 +2,12 @@ This file uses my [[AUGER_Notations|notations]].
 
 It has been written from [[http://www.haskell.org/haskellwiki/Monads_as_Containers|this Haskell tutorial]], so the notations for the monads are also taken from Haskell.
 
+After having done this file I took a look at what has been done in coq for the monads, and I found:
+
+- [[http://coq.inria.fr/V8.2pl1/contribs/lc.Monad.html|this contribution]]; it has a lot of lemmas and theorems, but no example, and IMHO my definition of a monad is more handy (the monad_carrier is a parameter of the type and not a field); but I think that merging my development with his one could be a good thing. 
+
+- [[http://mattam.org/repos/coq/misc/shiftreset/GenuineShiftReset.html|GMonad]]; I didn't read all, but I find odd that the monad_carrier expects 3 arguments.
+
 {{{#!coq
 Require Import Notations.
 Set Implicit Arguments.
