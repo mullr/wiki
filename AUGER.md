@@ -13,3 +13,7 @@ Email: <<cauger AT SPAMFREE lri DOT fr>>
 [[LinearTactics|Some tactics to keep hypothesis clean.]]
 
 [[XComposeAndNotations|Playing with notations with Coq under X.]]
+
+[[AUGER_Notations|Set of notations using UTF-8.]]
+
+[[AUGER_Monad|Monads in Coq.]]
