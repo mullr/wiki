@@ -88,6 +88,8 @@
 
  * HandMul: A fun way of doing multiplication by hand
 
+ * [[AUGER_Monad|Monads in Coq]]
+
  * Where can I see other examples of [[FormalizedAndVerified|formalization and verification]]?
 
 == Proof-General and CoqIDE Tips ==
