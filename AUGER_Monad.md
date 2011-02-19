@@ -6,7 +6,7 @@ After having done this file I took a look at what has been done in coq for the m
 
 - [[http://coq.inria.fr/V8.2pl1/contribs/lc.Monad.html|this contribution]]; it has a lot of lemmas and theorems, but no example, and IMHO my definition of a monad is more handy (the monad_carrier is a parameter of the type and not a field); but I think that merging my development with his one could be a good thing. 
 
-- [[http://mattam.org/repos/coq/misc/shiftreset/GenuineShiftReset.html|GMonad]]; a generalization of monads; doesn't provide examples.
+- [[http://mattam.org/repos/coq/misc/shiftreset/GenuineShiftReset.html|GMonad]]; a generalization of monads.
 
 {{{#!coq
 Require Import Notations.
