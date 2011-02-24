@@ -1,6 +1,5 @@
-This file takes all the notations of "Utf8.v" and "Utf8-core.v" and adds a lot of others.
-See this [[XComposeAndNotations|page]] to find how to use XCompose for an easy access to
-special characters.
+This file takes all the notations of "Utf8.v" and "Utf8-core.v" and adds a lot of others. See this [[XComposeAndNotations|page]] to find how to use XCompose for an easy access to special characters.
+
 {{{#!coq
 (* Logic *)
 Notation "∀  x .. y , P" := (forall x, .. (forall y, P) ..)
@@ -33,12 +32,12 @@ Notation "x ≱ y" := (¬ (x ≥ y)) (at level 70, no associativity).
 (* Types *)
 Delimit Scope init_scope with init.
 Notation "'ℕ'" := nat: init_scope.
-Notation "'𝟘'" := Empty_set: init_scope.
-Notation "'𝟙'" := unit: init_scope.
-Notation "'𝟚'" := bool: init_scope.
-Notation "'𝕠'" := tt: init_scope.
-Notation "'𝕥'" := true: init_scope.
-Notation "'𝕗'" := false: init_scope.
+Notation "'U0001d7d8'" := Empty_set: init_scope.
+Notation "'U0001d7d9'" := unit: init_scope.
+Notation "'U0001d7da'" := bool: init_scope.
+Notation "'U0001d560'" := tt: init_scope.
+Notation "'U0001d565'" := true: init_scope.
+Notation "'U0001d557'" := false: init_scope.
 Notation "x ₁" := (let (y, _) := x in y) (at level 5).
 Notation "x ₂" := (let (_, y) := x in y) (at level 5).
 
@@ -67,3 +66,4 @@ Notation "'℘' s" :=
 
 Close Scope set_scope.
 }}}
+(Note by T. Braibant: this can be simplified using the tokens facilities of proof-general 4.0, which allows to fold in the buffer, e.g. /\ into ∧, and to unfold automatically when communicating with Coq).
