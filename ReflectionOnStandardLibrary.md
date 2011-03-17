@@ -8,7 +8,7 @@ See also StandardLibrary for older discussion (should these pages be merged?)
 
  * Lack of overall design consistency due to not-always-coordinated multi-author development through different times of the history of Coq.
  * Lack of human resources for a correct maintenance of many components of the library: 
-   * many users propose to complete and extend some libraries but no availability from the development team to evaluate these additions and to check these extensions do not add design inconsistencies to the existing setting
+   * many users propose to complete and extend some libraries but no availability from the development team to evaluate these additions and to check these extensions do not add design inconsistencies to the existing setting [Comment by HH: tentative guidelines are available [[HowToContributeToTheStandardLibrary|here]] with the objective of making easier the work of evaluation and integration of user's contributions].
    * many users developed libraries that could be considered of general purpose (UserContributions) but, again, the Coq developers do not have the time to referee and validate these libraries.
 
 Possible solution: A more modular approach of libraries with a small core of standard library maintained by the Coq development team and a second distinct distributed archive of libraries with a coordinated maintenance so as, not to necessarily guarantee a strict overall consistent design, but to at least guarantee correct compilation dependencies (see the [[http://prover.cs.ru.nl/wiki.php|MathWiki]] project). The responsibility of the maintenance of the consistency of each individual component of this second archive would be distributed.
