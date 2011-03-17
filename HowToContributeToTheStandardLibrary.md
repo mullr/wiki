@@ -62,6 +62,10 @@ The following recommendations apply even if the library being extended do not fo
 
 ''To be continued''
 
+== Documentation ==
+
+New lemmas or definitions should be accompanied with a coqdoc-compliant header, even though most of the current library fails to follow this recommendation.
+
 == Use of notations and unicode symbols ==
 
 ''Section to be expanded''
