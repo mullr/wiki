@@ -24,6 +24,8 @@ Unfortunately, the Coq library is far from being [[ReflectionOnStandardLibrary|h
 
  * Start every proof by the keyword {{{Proof}}}, end them with {{{Qed}}} or {{{Defined}}} depending on whether the lemma has to be used in computation or not. Align {{{Proof}}}, {{{Qed}} and {{{Defined}}} with the line stating the lemma. Starts the proof after an extra indentation of 2 characters.
 
+ * Formatting: Coq's terms and statements should be formatted as the Coq pretty-printer formats them. For instance, cases of an inductive type declaration and of pattern-matching constructs should be aligned vertically unless the whole definition is less than 80 characters long. Also, all symbols, to the exception of delimiters, should be separated from other expressions by spaces. Even though English typography recommends no space before a colon, one has to put one in Coq files. In short, the submitted contribution should look like if it has been formatted by the option {{{--beautify}}} of {{{coqc}}}.
+
 == Tactics guidelines ==
 
 The following recommendations apply even if the library being extended do not follow them.
