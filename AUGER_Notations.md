@@ -47,8 +47,13 @@ Close Scope init_scope.
 Delimit Scope set_scope with set.
 Open Scope set_scope.
 Notation "{ x : s 'ﬆ' P }" :=
- (λ (x: s)·(P: Prop)) (at level 10, x at level 69): set_scope.
-Notation "{ x 'ﬆ' P }" := ({x:_ ﬆ P}) (at level 10, x at level 69): set_scope.
+ (fun (x: s) => (P: Prop))
+ (at level 0,
+  x at level 99,
+  format
+  "'[hv' { '[hv' '[hv' x '/' : '[' s ']' ']' '/' 'ﬆ' '[' P ']' ']' '/' } ']'"
+ ): set_scope.
+Notation "{ x 'ﬆ' P }" := ({x:_ ﬆ P}) (at level 10, x at level 99): set_scope.
 Notation "x ∈ X" := ((X: _ → Prop) x) (at level 40): set_scope.
 Notation "x ∉ X" := (¬(x ∈ X)) (at level 40): set_scope.
 Notation "X ⊆ Y" := (∀ x, x ∈ X → x ∈ Y) (at level 40): set_scope.
