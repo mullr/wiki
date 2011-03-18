@@ -16,4 +16,6 @@ Email: <<cauger AT SPAMFREE lri DOT fr>>
 
 [[AUGER_Notations|Set of notations using UTF-8.]]
 
+[[AUGER_LinearLogic|Some notations for linear logic.]]
+
 [[AUGER_Monad|Monads in Coq.]]
