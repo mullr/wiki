@@ -8,7 +8,7 @@ The use of a sequent "m, 1"
 }}}
 is not natural and convenient at all for real proving; it is here only to illustrate how to use the Notation system, and what we can do with it.
 
-{{{
+{{{#!coq
 (** Linear Logic in Coq *)
 
 Require Import Utf8_core.
