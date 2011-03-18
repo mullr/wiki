@@ -56,7 +56,7 @@ The following recommendations apply even if the library being extended do not fo
 
      * Linear arithmetic: there is an overlapping between what {{{omega}}}, {{{romega}}} and {{{lia}}} do. In any cases, avoid {{{romega}}}; {{{lia}} is complete and generally faster but {{{omega}}} is better able to deal with non primitive symbols ({{{max}}}, {{{min}}}, natural numbers, ...).
 
-   * In long proofs, use {{{now}}} as much as possible when a tactic closes the current goal. This improves the robustness of the script.
+   * The {{{now}}} tactical, similar to the {{{by}}} tactical of the ssreflect language, allows to ensure that the tactic coming next solves the goal up to the use of some simple automation tactic called {{{easy}}} (similar to {{{done}}} in ssreflect). The exact strenght to give to {{{easy}}} is still under discussion. Nevertheless, in long proofs, using {{{now}}} improves the robustness of the script and is thus good practice.
 
    * {{{double induction}}} is most often better replaced by {{{induction ...; destruct ...}}}
 
