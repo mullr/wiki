@@ -8,6 +8,8 @@ Contributions of stand-alone libraries should be done at the [[http://coq.inria.
 
 = The Coq library guidelines =
 
+''Warning: this at the current stage only a proposal, comments are welcome (this is a wiki)''
+
 Unfortunately, the Coq library is far from being [[ReflectionOnStandardLibrary|homogeneously]] written. Also, the language of Coq itself, especially regarding tactics, often presents some idiosynchrasies that do not help in designing clean libraries. Nevertheless, the following guidelines seem to be generally accepted. Don't hesitate to add examples or remarks on this page (it is a wiki whoever can contribute to!). If the remarks lead to a discussion thread, some synthesis will be done after a while by the administrators.
 
 == General guidelines ==
