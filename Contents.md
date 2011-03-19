@@ -18,6 +18,8 @@
 
  * How can I get better [[Performance]] out of Coq?
 
+ * What hints can you give me about [[Extraction]] of OCaml/Haskell/Scheme code?
+
  * How can I do [[InductionWithSelfDefinedCases|induction with self defined cases]] ?
 
  * How do [[TypeClasses]] work?
