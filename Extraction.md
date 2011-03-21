@@ -1,0 +1,58 @@
+ * Check the manual pages!
+
+ * Use the "{{{Extraction (Inlined) Constant}}}" directive for commonly used types (List, String, Ascii, int); it is less reliable than not using it (since you use some axioms, but it improves performances and readability)
+
+ * Check from time to time, that you don't generate some functions of module Obj (for the Ocaml extraction) or unsafeCoerce (for Haskell), if so you may consider rewritting your functions not to contain them (don't worry all with work also with these, but the code won't be as pleasant). For an example, run:
+{{{#!coq
+
+Fixpoint f n :=
+ match n with
+ | O => nat
+ | S n => nat -> (f n)
+ end.
+
+Definition sigma: forall n, f n.
+ intro n; induction n; simpl.
+  exact O.
+ intro m.
+ destruct n; simpl in *.
+  exact m.
+ intro o.
+ apply IHn.
+ exact (m+o).
+Defined.
+
+(*Extraction Language Haskell.*)
+Recursive Extraction sigma.
+}}}
+   In this example using a list of integers and a folding function would not have generated such a thing!
+
+ * Try to follow the conventions of the language (having a "type t = Coq_a | Coq_b" is not as pleasant as having a "type t = A | B", so declare "Inductive t: Type := A | B." and not "Inductive t: Type := a | b."); not that as non-informative content won't be extracted, you can use lower case for "Inductive t: Prop := a | b." and it won't mess with the code.
+
+ * To avoid [type]_ind, [type]_rec and [type]_rect generation for non recursive types (for instance for pairs) you may consider using coinductives.
+   In Haskell, it will behave as you want (it is a lazy language after all) but for OCaml, your code will be polluted with the use of Lazy module.
+
+ * Avoid use of multiple modules with extraction to Haskell, as there will be only one big module containing all.
+
+A good benchmark for the last two points is:
+{{{#!coq
+Module M.
+ Module N.
+  CoInductive pair1_type (a b: Type) :=
+  | Pair1: a -> b -> pair1_type a b.
+  Definition fst1 (a b: Type) (p: pair1_type a b) := let (x, _) := p in x.
+  Definition snd1 (a b: Type) (p: pair1_type a b) := let (_, x) := p in x.
+ End N.
+ Module O.
+  Inductive pair2_type (a b: Type) :=
+  | Pair2: a -> b -> pair2_type a b.
+  Definition fst2 (a b: Type) (p: pair2_type a b) := let (x, _) := p in x.
+  Definition snd2 (a b: Type) (p: pair2_type a b) := let (_, x) := p in x.
+ End O.
+End M.
+
+(*Extraction Language Haskell.*)
+Recursive Extraction M.
+}}}
+
+ * Contributors are invited to put their own advice here
