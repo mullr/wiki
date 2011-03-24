@@ -1,4 +1,4 @@
-For the most part, the ability to define inductive Props doesn't increase the Props which it's technically possible to define.  The notable exceptions are things like eq_rect, False_rect, ...  (Which is not to downplay the incredible expressive power of the syntax.  In fact, this page should be taken as just a mathematical game.)
+For the most part, the ability to define inductive Props doesn't increase the Props which it's technically possible to define.  The notable exceptions are things like eq_rect, False_rect, ...  (Which is not to downplay the incredible expressive power of the syntax.  In fact, this page should be taken as just a curiosity.)
 
 This is because, if you take the generated _ind property, and remove references to the inductively defined Prop, you end up with a statement which is equivalent to the original property.  Some examples:
 
@@ -233,7 +233,8 @@ Definition pre_O : nat_cont :=
 Definition pre_S : nat_cont -> nat_cont :=
   fun n P p0 pS => pS (n P p0 pS).
 (* Interesting how this naturally reproduces the lambda-calculus point of
-   view that an integer n is identified with the n-fold composition. *)
+   view that an natural number n is identified with the n-fold
+   composition operation. *)
 Definition nat2 := { n:nat_cont |
   forall P:nat_cont->Prop, P pre_O -> (forall m:nat_cont, P m -> P (pre_S m)) ->
   P n }.
