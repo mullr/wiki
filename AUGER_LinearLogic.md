@@ -110,7 +110,10 @@ Inductive provable: list linear_expression → Prop :=
 | Bottom: ∀ l, provable l → provable (⊥::l)
 | Top: ∀ l, provable (⊤::l)
 | Bang: ∀ l, all_delayed l → ∀ le, provable (le::l) → provable (! le::l)
-| Wnot: ∀ l t le, provable ((why_choice t le)++l) → provable (? le::l).
+| Wnot: ∀ l t le, provable ((why_choice t le)++l) → provable (? le::l)
+| Cut: ∀ t n lst, provable (t::(fst (split n lst))) →
+                  provable (linear_dual t::(snd (split n lst))) →
+                  provable lst.
 
 Definition stack tl := List.map linear_dual tl.
 
