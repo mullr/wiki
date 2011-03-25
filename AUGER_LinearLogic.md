@@ -161,6 +161,8 @@ Ltac derel_ :=
 apply Wnot with Life.
 Ltac contr_ :=
 apply Wnot with Death.
+Ltac cut_ t n :=
+apply Cut with t n.
 
 Lemma linear_em: ∀ φ, ∗φ⊢φ
 with lem: ∀ ψ b, ∗D b ψ ⊢ D b ψ.
