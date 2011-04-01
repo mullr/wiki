@@ -11,7 +11,7 @@ The program is as follows:
  * 9.30am: Coffee
 
  * 10am: [[http://sardes.inrialpes.fr/~pous/typeclasses.pdf|Reification and type classes for formalization in ATBR, AAC and ring]] by D. Pous (with the [[http://sardes.inrialpes.fr/~pous/atbr.v|atbr.v]] demo file)
- * 10.45am: Type Classes for Mathematics in Type Theory, by R. Krebbers
+ * 10.45am: [[http://robbertkrebbers.nl/research/slides/typeclasses_paris.pdf|Type Classes for Mathematics in Type Theory]], by R. Krebbers
  * 11.45am: Typeclasses and rings, non-commutative and commutative by Loïc Pottier
 
  * 12.30pm: Lunch
