@@ -66,7 +66,7 @@ Yves Bertot (INRIA): For teaching purpose, I have a project on the thorough desc
 
 === Coq as a teaching tool in mathematics ===
 
-For teaching Logic, Pierre Castéran used Coq for long. His material (in French) is publicly [[http://www.labri.fr/perso/casteran/CoursDeLogique/index.html|available]].
+For teaching Logic, Pierre Castéran used Coq for long. His material (in French) is publicly [[http://www.labri.fr/perso/casteran/FM/Logique/|available]].
 
 In 2003, Frédérique Guilhot formalised geometry in a way close to the way it is teached in French high schools. A dedicated extension [[GeoView]] of [[PCoq]] was designed in the same time.  It seems that the conclusion was that much work was necessary before submitting such tools to high school pupils. The paper [[#Ref2|Ref2]] (in French) describes this experience and the corresponding [[http://coq.inria.fr/contribs/Angles.html|formalisation of geometry]] is available as a Coq user contribution which can also serve as the base axiomatic for Julien Narboux' [[GeoProof]].
 
