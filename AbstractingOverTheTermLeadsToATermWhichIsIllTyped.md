@@ -4,4 +4,4 @@ There's some advice here: http://logical.saclay.inria.fr/coq-puma/messages/883f1
 
 Try using {{{destruct}}}.
 
-Also try {{{dependent induction}}} from {{{Coq.Program.Equality}}}.
+Also try {{{dependent induction}}} from {{{Coq.Program.Equality}}} (although this requires additional axioms outside of CiC).
