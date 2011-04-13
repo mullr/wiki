@@ -19,3 +19,5 @@ Email: <<cauger AT SPAMFREE lri DOT fr>>
 [[AUGER_LinearLogic|Some notations for linear logic.]]
 
 [[AUGER_Monad|Monads in Coq.]]
+
+[[AUGER_Annotations|Annotating a proof.]]
