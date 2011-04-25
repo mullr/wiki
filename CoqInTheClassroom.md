@@ -82,6 +82,8 @@ In 2007, Sungwoo Park started to teach a [[http://www.postech.ac.kr/~gla/cs433/|
 
 In 2008, Anne Mulhern taught an informal semester long seminar [[http://www.cs.wisc.edu/~mulhern/coqtalks/2008.01/index.html|CoqTalks]] on using Coq to write formal proofs and using the Penn PL club metatheory library to prove language properties.
 
+Coq is used in a [[http://mathinfo.unistra.fr/offre-de-formation/ue/?spec=9&sem=17&ue=524|master class on geometry]] at the university of Strasbourg.
+
 == Other resources ==
 
 A [[http://pauillac.inria.fr/pipermail/coq-club/2007/002885.html|thread]] on using Coq for teaching on the Coq-Club mailing list.
