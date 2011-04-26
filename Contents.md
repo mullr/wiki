@@ -31,6 +31,8 @@
 == Community ==
  * Who is using [[List of Coq PL Projects|Coq in their programming languages research]]?
 
+ * Who is using [[List of Coq Math Projects|Coq for the formalization of mathematics]]?
+
  * How is Coq [[CoqInTheClassroom|being taught and used to teach]]?
 
 == Language Constructs and Built-In Tactics ==
