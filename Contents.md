@@ -96,6 +96,8 @@
 
  * [[AUGER_Monad|Monads in Coq]]
 
+ * [[AUGER_ExtractionTuto|A short tutorial on extraction]]
+
  * Where can I see other examples of [[FormalizedAndVerified|formalization and verification]]?
 
 == Proof-General and CoqIDE Tips ==
