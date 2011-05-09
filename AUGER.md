@@ -23,5 +23,3 @@ Email: <<cauger AT SPAMFREE lri DOT fr>>
 [[AUGER_Annotations|Annotating a proof.]]
 
 [[AUGER_ExtractionTuto|A short tutorial for extraction(v).]]
-
-[[AUGER_ExtractionTutoHtml|A short tutorial for extraction(html).]]
