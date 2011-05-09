@@ -28,6 +28,8 @@
 
  * How can I input unicode characters for Coq independently of my editor using [[XComposeAndNotations|XCompose]] (X graphical servers only) or the [[TeXInputMethodForUnicodeNotations|TeX input method]] (Unix systems).
 
+ * How can I [[BuildingCoqOnMac|build the CoqIDE under Mac OS X without X11]]
+
 == Community ==
  * Who is using [[List of Coq PL Projects|Coq in their programming languages research]]?
 
