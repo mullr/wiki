@@ -21,3 +21,5 @@ Email: <<cauger AT SPAMFREE lri DOT fr>>
 [[AUGER_Monad|Monads in Coq.]]
 
 [[AUGER_Annotations|Annotating a proof.]]
+
+[[AUGER_ExtractionTuto|A short tutorial for extraction.]]
