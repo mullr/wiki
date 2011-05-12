@@ -81,5 +81,7 @@ Record unit2 (P: Prop) := { compute: unit; spec: P }.
 }}}
    can help to get rid of the {{{__}}} in the generated code.
 
+ * You can take a look at [[AUGER_ExtractionTuto|this page]] for a short tutorial (or rather some kind of documented sandbox) on extraction;
+   but it is kind of OCaml oriented tutorial.
 
  * Contributors are invited to put their own advice here
