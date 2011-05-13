@@ -98,6 +98,8 @@
 
  * [[AUGER_ExtractionTuto|A short tutorial on extraction]]
 
+ * [[MathClasses|Math Classes]]: Mathematics using [[TypeClasses]]
+
  * Where can I see other examples of [[FormalizedAndVerified|formalization and verification]]?
 
 == Proof-General and CoqIDE Tips ==
