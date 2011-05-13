@@ -1,5 +1,8 @@
 #acl Known:read,write,revert All:read
+
 == High-Level Advice and Guidance ==
+ * Beginners [[http://www.youtube.com/view_play_list?p=DD40A96C2ED54E99|Video Tutorials]] by Andrej Bauer
+
  * How do I do [[Mutual Induction|mutual induction]]?
 
  * How should I [[Organizing Large Proofs|organize large inductive proofs]]?
