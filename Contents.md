@@ -40,6 +40,8 @@
 
  * How is Coq [[CoqInTheClassroom|being taught and used to teach]]?
 
+ * [[HowToContributeToTheStandardLibrary]]?
+
 == Language Constructs and Built-In Tactics ==
  * What exactly does [[simpl (tactic)|simpl]] do?
 
