@@ -2,7 +2,7 @@
 
 = Minutes from the Coq development working groups and ADT meetings =
 
-Note: Minutes might be written in either English or French
+Minutes might be written in either English or French
 
  * [[CoqDevelopment/CRGTCoq20101217|17 décembre 2010]] (about the Numbers library)
  * [[http://coq.inria.fr/files/summary-27oct2010.txt|27 octobre 2010]] (ADT interfaces)
@@ -20,6 +20,10 @@ Note: Minutes might be written in either English or French
  * [[CoqDevelopment/CRGTCoq20081118|18 novembre 2008]]
  * [[CoqDevelopment/CRADT20081029|29 octobre 2008]] (ADT Kick-off meeting)
  * [[CoqDevelopment/CRGTCoq20081010|10 octobre 2008]]
+
+= Miscellaneous =
+
+ * [[CoqDevelopment/RaccourcisPourDevelopperSousEmacs|Raccourcis pour accélérer la compilation]] (en particulier sous Emacs).
 
 = Roadmap for version 8.4 =
 
