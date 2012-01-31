@@ -9,6 +9,7 @@ Email: <<MailTo(dschepler AT SPAMFREE gmail DOT com)>>
 IteratedFiniteTypes
 NonInductiveProps
 ArbitraryArity
+EqualityFreeInversion
 
 ----
 CategoryHomepage
