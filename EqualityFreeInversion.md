@@ -1,4 +1,4 @@
-The basic idea for this method of generating inversion proofs without intermediate equalities is contained in the auto-generated proofs from discriminate:
+The basic idea for this method of generating inversion proofs without intermediate equalities is contained in the auto-generated proofs from discriminate and injection:
 
 {{{#!coq
 Lemma nat_discr: forall n:nat, S n <> 0.
@@ -20,7 +20,40 @@ Compute nat_discr.
        end
      : forall n : nat, S n <> 0
 }}}
-Ignoring the wrapping which destructs False just to get another proof of False, the essential idea is in providing a return type for a match expression which itself is a match expression.  So let's see some simple examples of how to apply this idea:
+Ignoring the wrapping which destructs False just to get another proof of False, the essential idea is in providing a return type for a match expression which itself is a match expression.  Similarly, for the injection tactic:
+
+{{{#!coq
+Lemma S_inj: forall m n:nat, S m = S n -> m = n.
+Proof.
+injection 1; trivial.
+Defined.
+Compute S_inj.
+     = fun (m n : nat) (x : S m = S n) =>
+       match
+         x in (_ = x0) return (m = match x0 with
+                                   | 0 => m
+                                   | S x1 => x1
+                                   end)
+       with
+       | eq_refl => eq_refl m
+       end
+     : forall m n : nat, S m = S n -> m = n
+}}}
+
+This proof is morally equivalent to:
+
+{{{#!coq
+Definition S_inj': forall m n:nat, S m = S n -> m = n :=
+fun m n Heq => match Heq in (_ = Sn) return
+                 (match Sn return Prop with
+                  | 0 => True
+                  | S n' => m = n'
+                  end) with
+               | eq_refl => eq_refl m
+               end.
+}}}
+
+So let's see some more simple examples of how to apply this idea:
 
 {{{#!coq
 Inductive even : nat -> Prop :=
@@ -317,4 +350,4 @@ let vector_hd' n = function
 | Vector_cons (h, n0, v0) -> h
 }}}
 
-As a closing note, there are a couple situations I can think of where an intermediate equality hypothesis would still be useful: one is when there's an application of a function (which is not a constructor) within the inverted hypothesis.  (Example: im f (g x'), where im f : Y -> Prop is the image subset of the codomain of f.)  Another is when a single atomic argument to constructors shows up multiple times in the inverted hypothesis.  (Example: list_eqv (cons a l1) (cons a l2).)
+As a closing note, there are a couple situations I can think of where an intermediate equality hypothesis could still be useful: one is when there's an application of a function (which is not a constructor) within the inverted hypothesis.  (Example: im f (g x'), where im f : Y -> Prop is the image subset of the codomain of f.)  Another is when a single atomic argument to constructors shows up multiple times in the inverted hypothesis.  (Example: list_eqv (cons a l1) (cons a l2).)
