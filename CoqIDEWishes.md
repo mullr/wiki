@@ -20,6 +20,13 @@ The plan is to rebuild CoqIDE on a client-server basis, CoqIDE communicating wit
  * --(Uniform behavior of copy-pasting between windows)-- Done in trunk.
  * Replacing the not-often-used output windows by something using less work space?
 
+=== Look and Feel ===
+ * Have a fully customizable colors set (in the 8.4 version I had to modify by hand "ide/tags.ml" to have my own set of colors).
+   At the time this is written, you can modify "coqide-gtk2rc" in your xdg directory, but that only changes the background of the window,
+   not the "light green" background of the already read part. This make this unusable for "dark themes" since in those themes,
+   the background is dark whereas the foreground is light; as a result, you will end up with "light foreground" on "light green background"
+   and it is barely readable. I guess a patch to read a configuration file for colors (maybe merge it with coqiderc; or better would be to use the coqide-gtk2rc file, but I am not a gtk pro, so I don't know how to do it) at startup should be easy to do; having a tab in the preference window would be even better, but longer to do.
+
 === Miscellaneous features ===
  * --(Easier support for Unicode (support for some input method, e.g. writing \forall automatically display ∀))--.
   * Linux/BSD/MacOS users : use a real input method such as http://code.google.com/p/uim/. Translation files should be pushed upstream soon.
