@@ -31,10 +31,13 @@ Recursive Extraction sigma.
 
  * To avoid [type]_ind, [type]_rec and [type]_rect generation for non recursive types (for instance for pairs) you may consider using coinductives.
    In Haskell, it will behave as you want (it is a lazy language after all) but for OCaml, your code will be polluted with the use of Lazy module.
-
+   A better alternative is to use the following command:
+{{{#!coq
+Unset Elimination Scheme.
+}}}
  * Avoid use of multiple modules with extraction to Haskell, as there will be only one big module containing all.
 
-A good benchmark for the last two points is:
+A good workbench for the last two points is:
 {{{#!coq
 Module M.
  Module N.
