@@ -41,9 +41,33 @@ Only required for compiling versions of Coq from the svn repository:
  * SVN (package "subversion") 
 
 
+=== Downloading the sources ===
+
+By default, you should get the archive version. If you are an advanced users, you may consider using an svn version.
+
+'''Archive version (default):''' 
+ 1. [[http://coq.inria.fr/download|Download]] the Coq sources for the version that you want
+ 1. deflate the archive, e.g. running "`tar -xvzf coq-8.4pl0.tar.gz`"  
+
+'''Svn version:''' to get it, run:
+
+||<rowstyle="background-color: #FFFFE0;"> `svn checkout svn://scm.gforge.inria.fr/svn/coq/branches/v8.4 coq-v8.4` ||
+
+Warning: the svn version might contain some bug-fixes so it can be slightly different from the archive version.
+
+'''Trunk version:''' if you want to try a feature from the trunk version, then run:
+
+||<rowstyle="background-color: #FFFFE0;"> `svn checkout svn://scm.gforge.inria.fr/svn/coq/branches/trunk coq-trunk` ||
+
+Warning: the trunk is ''not'' stable, it might not even compile.
+
+
+
 === Choice of the target folder ===
 
-'''Global installation:''' if you want to install only one version of Coq installed and if you have root priviledges, then do:
+First, enter the folder that contains the sources. Then, choose among:
+
+'''Global installation (default):''' if you want to install only one version of Coq installed and if you have root priviledges, then do:
 
 ||<rowstyle="background-color: #FFFFE0;"> `./configure -opt -prefix /usr/local` ||
 
