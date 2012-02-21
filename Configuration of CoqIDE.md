@@ -3,8 +3,8 @@
 == Fixing the key bindings ==
 
 The default key bindings of CoqIDE are not efficient and moreover they usually conflict with bindings from the window manager. Fortunately, it is not hard to change them. Simply download a modified configuration file:
- * For Coq >= 8.4, copy [[attachment:coqide.keys]] into the folder "~/.config/coq/" (on Windows, C:\Program Files\Coq\config\)
- * For Coq <= 8.3, copy [[attachment:.coqide.keys]] into your home folder "~/"
+ * For Coq >= 8.4, copy the file '''[[attachment:coqide.keys]]''' into the folder '''~/.config/coq/ ''' (on Windows, C:\Program Files\Coq\config\)
+ * For Coq <= 8.3, copy the file [[attachment:.coqide.keys]] into your home folder
 
 The new bindings, which will boost your productivity, are then as follows:
 
