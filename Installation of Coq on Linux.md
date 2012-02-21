@@ -28,7 +28,7 @@ Then, it is very important that you  [[Configuration of CoqIDE|fix the key bindi
 
 Packages required for building Coq:
  * '''GNU Make => 3.81''' (package "gnu-make")
- * '''OCaml >= 3.12.0''' (package "ocaml")
+ * '''OCaml >= 3.11.2''' (package "ocaml")
  * '''Camlp5 => 5.10''' (package "camlp5")
 
 Only required for building CoqIDE:
@@ -78,7 +78,7 @@ First, enter the folder that contains the sources. Then, choose among:
 
 After running the configure command, you should be able to read:
 
-||You have GNU Make 3.81. Good! <<BR>>You have Objective-Caml 3.12.2. Good!<<BR>>You have native-code compilation. Good!||
+||You have GNU Make 3.81. Good! <<BR>>You have Objective-Caml 3.11.2. Good!<<BR>>You have native-code compilation. Good!||
 
 Moreover, if you plan to install CoqIDE, you should be able to read:
 
