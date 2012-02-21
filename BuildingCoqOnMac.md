@@ -85,3 +85,6 @@ Then coqide just works. There is one final problem, fonts!
 Install either [[http://dejavu-fonts.org/wiki/Main_Page|Dejavu Sans]] or [[http://www.gnu.org/software/freefont/|GNU Freefont]], we use proportional fonts.
 
 Enjoy!
+
+
+[[Installation of Coq]]
