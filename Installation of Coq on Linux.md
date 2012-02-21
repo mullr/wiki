@@ -19,7 +19,7 @@ Then, it is very important that you  [[Configuration of CoqIDE|fix the key bindi
 
 '''Proof General'''. If you want to use Proof General instead of CoqIDE, run: 
 
-||<rowstyle="background-color: #FFFFE0;"> TODO ||
+||<rowstyle="background-color: #FFFFE0;"> --TODO-- ||
 
 
 == Installation from sources ==
