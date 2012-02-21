@@ -15,6 +15,7 @@ To check that the installation is successful, run the command "`coqc -v`".
 ||<rowstyle="background-color: #FFFFE0;"> `sudo apt-get install coqide` ||
 
 To check that the installation is successful, run the command "`coqide &`".
+Then, it is very important that you  [[Configuration of CoqIDE|fix the key bindings for CoqIDE]].
 
 '''Proof General'''. If you want to use Proof General instead of CoqIDE, run: 
 
