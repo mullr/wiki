@@ -99,6 +99,8 @@ Then, if you used "`-prefix /usr/local`", run
 ||<rowstyle="background-color: #FFFFE0;"> `sudo make install` ||
 
 To test the success of the installation, run "`coqc -v`" and "`coqide &`".
+If you plan on using CoqIDE, then it is very important that you 
+[[Configuration of CoqIDE|fix the key bindings for CoqIDE]].
 
 Otherwise, if you went for a local installation with the option "`-local`", simply 
 test the binaries using the commands "`bin/coqc -v`" and "`bin/coqide &`".
