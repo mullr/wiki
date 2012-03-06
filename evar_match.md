@@ -20,9 +20,11 @@ END;;
 To compile it, save it to e.g. {{{evar_match.ml}}}, and use the following commands
 
 {{{#!sh
-coq_makefile > Makefile
+coq_makefile evar_match.ml > Makefile
 make
 }}}
+
+{i} '''Note:''' with version 8.4 and later, the file extension must be .ml4 if it needs to be preprocessed (which is the case when {{{TACTIC EXTEND}}} is used).
 
 You need the development libraries of Coq and its dependencies (most notably OCaml and Camlp5), which should be installed if you compiled from source, but might be distributed separately if you are using a precompiled package (on Debian and its derivatives, they are in the {{{libcoq-ocaml-dev}}} package).
 
