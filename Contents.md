@@ -88,6 +88,8 @@
 
  * Automatically [[LinearTactics|cleaning your hypothesis like in linear programming]] (contains also an example of a way to have list of hypothesis in a custom tactic)
 
+ * A [[evar_match|simple example]] of a tactic written in OCaml
+
 == Formal Developments and Coq Pearls ==
  * SquareRootTwo: A very short proof that the square root of 2 is non rational.
 
