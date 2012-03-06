@@ -47,4 +47,4 @@ The only reliable documentation for writing tactics in OCaml is Coq's source cod
 
 /!\ '''Warning:''' Tactics written in OCaml are highly dependent on the version of Coq, and there is no guarantee on the stability of Coq's API between major versions (e.g. 8.3 and 8.4). The API should be stable between patch level (bugfix) versions, though, and efforts are made to document intrusive changes in {{{dev/doc/changes.txt}}} and/or in commit messages ({{{git annotate}}} and {{{git log -p}}} on a [[https://sympa-roc.inria.fr/wws/arc/coqdev/2010-09/msg00042.html|git clone]] of Coq sources might be useful).
 
-The tactic described in this page has been tested with Coq 8.2, 8.3 and trunk r13631 (2010-11-08).
+The tactic described in this page has been tested with Coq 8.2, 8.3 and trunk r13631 (2010-11-08). It has been part of Coq (named {{{is_evar}}}) since version 8.3pl1, but this page can be used as a skeleton to build new tactics in OCaml.
