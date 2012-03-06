@@ -90,6 +90,8 @@
 
  * A [[evar_match|simple example]] of a tactic written in OCaml
 
+ * [[UnfoldFixpointOnce|Unfold a fixpoint once]] (in OCaml)
+
 == Formal Developments and Coq Pearls ==
  * SquareRootTwo: A very short proof that the square root of 2 is non rational.
 
