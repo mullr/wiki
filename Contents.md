@@ -18,6 +18,15 @@ You need to install Coq and either CoqIDE (recommended for beginners) or Proof G
  * [[Tips on Makefiles for Coq]] (to be completed)
 
 
+== Coq official resources ==
+
+ * [[http://coq.inria.fr/doc-eng.html|The Coq Reference Manual]]
+ * [[http://coq.inria.fr/library/|The Coq Standard Library]]
+ * The Coq-Club mailing list: [[https://sympa-roc.inria.fr/wws/info/coq-club|subscription]] [[https://sympa-roc.inria.fr/wws/arc/coq-club|archive]]
+ * [[https://coq.inria.fr/bugs/|The Coq bug tracker]]
+ * [[http://coq.inria.fr/doc/faq.html|The Coq FAQ]] (no longer maintained)
+ * The Coq IRC channel: `irc://irc.freenode.net/#coq`
+
 == Coq tutorials ==
 
  * [[http://www.cis.upenn.edu/~bcpierce/sf/|Software Foundations]], by Benjamin C. Pierce et al
