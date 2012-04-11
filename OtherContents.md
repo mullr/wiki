@@ -40,6 +40,7 @@ List of other pages stored on this Wiki.
 
 == Threads to update/remove ==
 
+ * [[CoqNewbie|Resources for Coq Newbies]]
  * How does the [[MatchAsInReturn|pattern match]] syntax work?
  * How does [[DependentInversion|dependent inversion]] work?
  * When using `eapply`, how can I [[ExistentialVariablesInEapply|instantiate the question marks]]?
