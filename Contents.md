@@ -1,130 +1,75 @@
 #acl Known:read,write,revert All:read
 
-== High-Level Advice and Guidance ==
- * Beginners [[http://www.youtube.com/view_play_list?p=DD40A96C2ED54E99|Video Tutorials]] by Andrej Bauer
+== Coq installation ==
 
- * How do I do [[Mutual Induction|mutual induction]]?
+You need to install Coq and either CoqIDE (recommended for beginners) or Proof General (recommended for emacs users).
 
- * How should I [[Organizing Large Proofs|organize large inductive proofs]]?
+ * Installation of the Coq system:
+   * [[Installation of Coq on Linux]]
+   * [[Installation of Coq on Mac]] (to be completed)
+   * [[Installation of Coq on Windows]] (to be completed)
 
- * How do I do [[Induction over a type containing pairs|induction over a type containing pairs]]?
+ * [[Configuration of CoqIDE]] 
 
- * Where else can I [[Other Coq Resources|learn about Coq]]?
+ * [[Configuration of Proof General]] (to be completed)
 
- * Where can I read research papers about [[TheoryBehindCoq|Coq's theoretical foundations]]?
+ * [[Installation of plugins]] (to be completed)
 
- * How can use the [[ModuleSystem|module system]] effectively?
+ * [[Tips on Makefiles for Coq]] (to be completed)
 
- * What [[Tools|tools and tactic packages]] are available for Coq?
 
- * Where can I learn about proofs for languages with [[BindingRepresentation|variable binding]]?
+== Coq tutorials ==
 
- * How can I get better [[Performance]] out of Coq?
+ * [[http://www.cis.upenn.edu/~bcpierce/sf/|Software Foundations]], by Benjamin C. Pierce et al
 
- * What hints can you give me about [[Extraction]] of OCaml/Haskell/Scheme code?
+ * [[http://adam.chlipala.net/cpdt/|Certified Programming with Dependent Types]], by Adam Chlipala 
 
- * How can I do [[InductionWithSelfDefinedCases|induction with self defined cases]] ?
+ * [[http://www.labri.fr/perso/casteran/CoqArt/index.html|CoqArt']] (book), by Yves Bertot and Pierre Castéran
 
- * How do [[TypeClasses]] work?
+ * [[Other Coq Resources|Other tutorials]]...
 
- * How do [[ImplicitArguments]] work?
+ * [[CoqInTheClassroom|Teaching Coq and teaching with Coq]]
 
- * How can I input unicode characters for Coq independently of my editor using [[XComposeAndNotations|XCompose]] (X graphical servers only) or the [[TeXInputMethodForUnicodeNotations|TeX input method]] (Unix systems).
 
- * How can I [[BuildingCoqOnMac|build the CoqIDE under Mac OS X without X11]]
+== Coq community ==
 
-== Community ==
- * Who is using [[List of Coq PL Projects|Coq in their programming languages research]]?
+Pointers to existing projects involving Coq.
 
- * Who is using [[List of Coq Math Projects|Coq for the formalization of mathematics]]?
+ * [[List of Coq PL Projects|Formal programming language research in Coq]]
 
- * How is Coq [[CoqInTheClassroom|being taught and used to teach]]?
+ * [[List of Coq Math Projects|Formal mathematics in Coq]]
 
- * [[HowToContributeToTheStandardLibrary]]?
 
-== Language Constructs and Built-In Tactics ==
- * What exactly does [[simpl (tactic)|simpl]] do?
+== Coq libraries ==
 
- * How can I avoid [[http://pauillac.inria.fr/pipermail/coq-club/2007/003186.html|non-instantiated existential variables with eauto]]?
+A non-exhaustive list of Coq libraries that are being used by other people than the developers.
 
- * How does the [[MatchAsInReturn|pattern match]] syntax work?
+ * [[http://www.msr-inria.inria.fr/Projects/math-components|SSReflect]]: formalization of mathematical theories, focusing in particular on group theory.
 
- * How does [[DependentInversion|dependent inversion]] work?
+ * [[http://flocq.gforge.inria.fr/|Flocq]]: formalization of floating-point computations.
 
- * When using `eapply`, how can I [[ExistentialVariablesInEapply|instantiate the question marks]]?
+(to be completed)
 
- * How can I make Coq [[PrintingUniverses|always print universes]]?
 
- * Why doesn't Coq support [[extensional_equality|extension equality]]? (Why can't I prove `forall x, f x = g x) -> f = g`?)
+== Coq plugins and tools ==
 
- * Why does Coq use inductive types and not [[WTypeInsteadOfInductiveTypes|W-Types]]?
+ * [[Tools|Plugins and tools for Coq]]
 
- * Why can I [[FalseEqAcc|eliminate False]] (a `Prop`) when constructing a member of `Set`?
+(section to be updated)
 
- * How does the [[Fix (tactic)|fix tactic]] work?
+== Coq's logic ==
 
- * Why do I get "Error: Abstracting over the term ... [[AbstractingOverTheTermLeadsToATermWhichIsIllTyped|leads to a term which is ill-typed]]" when rewriting with equalities?
+ * [[CoqAndAxioms|Axioms that can safely be added to Coq]]
 
-== Some Useful Custom Tactics and Notation ==
- * [[Case (tactic)|Marking cases and subcases in proofs]]
+ * [[TheoryBehindCoq|Papers about Coq's theoretical foundations]]
 
- * [[Folding tactics|Folding definitions in multiple places]]
 
- * [[if/then/else (tactical)|A conditional tactical]]
+== Coq Wiki ==
 
- * [[subst++ (tactic)|An aggressive version of subst]]
+ * [[HelpForCocorico!|Manual pages for this wiki]]
 
- * [[decompose records (tactic)|Decomposing all record-like structures]]
+ * [[EditingCocorico|Editing the current front page]]
 
- * [[solve by inversion (tactic)|Solving a goal by inversion on an unspecified hypothesis]]
+ * [[OtherContents|Old articles]] 
 
- * [[InTac|Solve goals about list inclusion]]
-
- * [[AppFwdRev|Apply <-> forwards and backwards]]
-
- * [[LhsRhsTactic|Manipulate equalities in the goal]]
-
- * [[ListComprehensionNotation|Haskell-like notation for list comprehension]]
-
- * Automatically [[LinearTactics|cleaning your hypothesis like in linear programming]] (contains also an example of a way to have list of hypothesis in a custom tactic)
-
- * A [[evar_match|simple example]] of a tactic written in OCaml
-
- * [[UnfoldFixpointOnce|Unfold a fixpoint once]] (in OCaml)
-
-== Formal Developments and Coq Pearls ==
- * SquareRootTwo: A very short proof that the square root of 2 is non rational.
-
- * UntypedLambdaTerms: various data structures for implementing the untyped lambda calculus in Coq.
-
- * [[http://www.lri.fr/~sozeau/research/russell/quicksort.html|QuickSort]]: an implementation of quicksort in Coq using `Program`.
-
- * ExistsFromPropToSet: Existential implies Sigma for decidable properties on {{{nat}}}.
-
- * HandMul: A fun way of doing multiplication by hand
-
- * [[AUGER_Monad|Monads in Coq]]
-
- * [[AUGER_ExtractionTuto|A short tutorial on extraction]]
-
- * [[MathClasses|Math Classes]]: Mathematics using [[TypeClasses]]
-
- * Where can I see other examples of [[FormalizedAndVerified|formalization and verification]]?
-
-== Proof-General and CoqIDE Tips ==
- * How do I change the [[Proof General Error Color]]?
-
- * I'm using Proof General.  [[Proof General Missing Proof State|Where did my proof state go]]?
-
- * How to [[http://agda.posterous.com/multiple-coq-configurations-with-proof-genera|deal with multiple coq binaries and path settings]]
-
- * [[CoqIDE_crashes_under_KDE|CoqIDE crashes in KDE. Help!]]
-
-== Meta ==
- * Where is the [[OldFront|old front page]]?
-
- * Where can I learn [[AboutCocorico!|about this wiki]]?
-
- * How do I [[EditingCocorico|edit this wiki]]?
-
- * Where did that [[OtherContents|old article]] go?
+ * [[OldFront|Old versions of the front page]]
