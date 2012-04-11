@@ -1,32 +1,50 @@
-There are lots more places to learn about Coq.
+= Other tutorials =
 
- * [[http://coq.inria.fr/doc-eng.html|The Coq Reference Manual]]
+== Introduction to Coq ==
 
- * The [[http://www.springer.com/computer/programming/book/978-3-540-20854-9|Coq'Art book]] and [[http://www.labri.fr/perso/casteran/CoqArt/index.html|website]].  The website contains examples and exercises.
+ * [[http://www.youtube.com/view_play_list?p=DD40A96C2ED54E99|Beginners video tutorials]], by Andrej Bauer
+ * [[http://cel.archives-ouvertes.fr/inria-00001173|Coq in a Hurry]], tutorial by Yves Bertot
+ * Material from the Coq summer school [[http://moscova.inria.fr/~zappa/teaching/coq/ecole10/|Modelling and verifying algorithms in Coq: an introduction]].
+ * Material from courses in French:
+   * [[http://www.irisa.fr/celtique/pichardie/teaching/M2/MDV/| par David Pichardie]]
+   * [[http://www.pps.jussieu.fr/~letouzey/teaching.fr.html| par Pierre Letouzey]]
+   * [[http://www.lix.polytechnique.fr/~assia/ens.html| par Assia Mahboubi]]
+   * [[http://www.pps.jussieu.fr/~miquel/enseignement/mpri/index.html| par Alexandre Miquel]]
+   * [[http://perso.ens-lyon.fr/aurelien.pardon/coq/index.html| par Jean Duprat]]
+ * Material from the [[http://www.cis.upenn.edu/~plclub/popl08-tutorial/code/index.html|Using Proof Assistants for Programming Language Research]] tutorial.
+  See also the page [[BindingRepresentation|Technique for formalization of variable binding]].
 
- * [[http://cel.archives-ouvertes.fr/inria-00001173|Coq in a Hurry, A tutorial by Yves Bertot]]
 
- * [[http://adam.chlipala.net/cpdt/|Certified Programming with Dependent Types]], a textbook in progress by Adam Chlipala
+== Specific techniques ==
 
- * [[http://coq.inria.fr/doc/faq.html|The Official Coq FAQ]]
+Warning: the rest of this page may contain deprecated information.
 
- * [[http://coq.inria.fr/library/|Coq Library Documentation]]
+=== Tips ===
 
- * Materials from the [[http://www.cis.upenn.edu/~plclub/popl08-tutorial/code/index.html|Using Proof Assistants for Programming Language Research]] tutorial.
+ * Induction
+   * How do I do [[Mutual Induction|mutual induction]]?
+   * How do I do [[Induction over a type containing pairs|induction over a type containing pairs]]?
+   * How can I do [[InductionWithSelfDefinedCases|induction with self defined cases]] ?
+ * [[Extraction|Tips on code extraction]]
+ * [[Performance|Tips on improving performance]]
+ * [[ListComprehensionNotation|Tips on notation (Haskell-style list comprehension)]]
 
- * Materials from the course [[http://www.cis.upenn.edu/~bcpierce/sf/|Software foundations]].
- 
- * Materials from the Coq summer school [[http://moscova.inria.fr/~zappa/teaching/coq/ecole10/|Modelling and verifying algorithms in Coq: an introduction]].
 
- * Materials for courses in French:
-    * [[http://www.irisa.fr/celtique/pichardie/teaching/M2/MDV/| par David Pichardie]]
-    * [[http://www.pps.jussieu.fr/~letouzey/teaching.fr.html| par Pierre Letouzey]]
-    * [[http://www.lix.polytechnique.fr/~assia/ens.html| par Assia Mahboubi]]
-    * [[http://www.pps.jussieu.fr/~miquel/enseignement/mpri/index.html| par Alexandre Miquel]]
-    * [[http://perso.ens-lyon.fr/aurelien.pardon/coq/index.html| par Jean Duprat]]
+=== Ltac tactics ===
 
- * The Coq-Club mailing list, [[http://pauillac.inria.fr/pipermail/coq-club/|subscription information and official archive]]
+ * [[Case (tactic)|Marking cases and subcases in proofs]]
+ * [[Folding tactics|Folding definitions in multiple places]]
+ * [[if/then/else (tactical)|A conditional tactical]]
+ * [[subst++ (tactic)|An aggressive version of subst]]
+ * [[decompose records (tactic)|Decomposing all record-like structures]]
+ * [[solve by inversion (tactic)|Solving a goal by inversion on an unspecified hypothesis]]
+ * [[InTac|Solve goals about list inclusion]]
+ * [[AppFwdRev|Apply <-> forwards and backwards]]
+ * [[LhsRhsTactic|Manipulate equalities in the goal]]
+ * Automatically [[LinearTactics|cleaning your hypothesis like in linear programming]] (contains also an example of a way to have list of hypothesis in a custom tactic)
 
- * Coq IRC channel: `irc://irc.freenode.net/#coq`
 
-See also: [[CoqNewbie|Resources for Coq Newbies]]
+=== OCaml tactics ===
+
+ * A [[evar_match|simple example]] of a tactic written in OCaml
+ * [[UnfoldFixpointOnce|Unfold a fixpoint once]] (in OCaml)
