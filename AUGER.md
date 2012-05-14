@@ -10,6 +10,8 @@ Email: <<cauger AT SPAMFREE lri DOT fr>>
 
 ----
 
+[[AUGER_Enumerates|Finite types.]]
+
 [[LinearTactics|Some tactics to keep hypothesis clean.]]
 
 [[XComposeAndNotations|Playing with notations with Coq under X.]]
