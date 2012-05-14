@@ -1,7 +1,10 @@
 Some coqdoc'umented source.
 Obj.t free extraction.
 
+{{{coqdoc --utf8 -g Enumerates.v}}}
+
 {{{#!coq
+(* Enumerates.v *)
 Require Import Utf8.
 Set Implicit Arguments.
 
