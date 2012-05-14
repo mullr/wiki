@@ -1,4 +1,7 @@
-{{#coq
+Some coqdoc'umented source.
+Obj.t free extraction.
+
+{{{#!coq
 Require Import Utf8.
 Set Implicit Arguments.
 
@@ -217,4 +220,4 @@ Proof.
   repeat f_equal.
   apply last_is_first_dual.
 Qed.
-}}
+}}}
