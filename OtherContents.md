@@ -4,6 +4,7 @@ List of other pages stored on this Wiki.
 
  * QuickSort: an implementation of quicksort in Coq.
  * InductiveFiniteTypes or alternatively FixpointFiniteTypes.
+ * [[AUGER_Enumerates|An other version of InductiveFiniteTypes]] not using nat.
  * ListOfPredecessors for binary numbers.
  * ExcludedMiddleOnNegativeFormulasFromCoqRealAxioms
  * A proof of [[LagrangesTheorem|Lagrange's Theorem]].
