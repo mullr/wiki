@@ -10,6 +10,7 @@ IteratedFiniteTypes
 NonInductiveProps
 ArbitraryArity
 EqualityFreeInversion
+ArithmeticExpressionParser
 
 ----
 CategoryHomepage
