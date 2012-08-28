@@ -1,4 +1,4 @@
-This implements a formally verified parser on a simple grammar of arithmetic expressions, including the completeness of the parser (which also implies the non-ambiguity of the grammar).  It assumes the input has already been tokenized.
+This implements a certified parser on a simple grammar of arithmetic expressions.  It assumes the input has already been tokenized.
 
 Possible improvements:
  * Define some notations so that we can act as if we were using the StateT (list token) Maybe monad.
