@@ -267,6 +267,11 @@ Definition parse_summand_sz (l : list token) := 5 * length l + 2.
 Definition parse_summand_sub_sz (l : list token) := 5 * length l + 1.
 Definition parse_factor_sz (l : list token) := 5 * length l.
 
+Program Definition run_with_initial_state (l : list token) {cond}
+  (m : parse_monad_type (fun l0 l1 => l0 = l /\ l1 = l) cond) :
+  parse_ret l cond :=
+m l l _.
+
 Obligation Tactic := program_simpl; simpl; simpl in *;
   eauto using expr_value, summand_value, factor_value;
   try (repeat split; discriminate);
@@ -300,11 +305,11 @@ Program Definition parse_expr_builder (l : list token)
   (parse_expr_sub : forall n l', parse_expr_sub_sz l' < parse_expr_sz l ->
      parse_ret l' (expr_sub_value n)) :
   parse_ret l expr_value :=
-((
+run_with_initial_state l (
 do_rec n <- parse_summand;
 do_rec m <- parse_expr_sub n;
 return_ m
-) : parse_monad_type (fun l0 l1 => l0 = l /\ l1 = l) _) l l _.
+).
 
 Program Definition parse_expr_sub_builder (n : Z) (l : list token)
   (parse_summand : forall l', parse_summand_sz l' < parse_expr_sub_sz l ->
@@ -312,7 +317,7 @@ Program Definition parse_expr_sub_builder (n : Z) (l : list token)
   (parse_expr_sub : forall n l', parse_expr_sub_sz l' < parse_expr_sub_sz l ->
      parse_ret l' (expr_sub_value n)) :
   parse_ret l (expr_sub_value n) :=
-((
+run_with_initial_state l (
 do t <- peek_token;
 match t with
 | Some PLUS => do _ <- get_token;
@@ -325,7 +330,7 @@ match t with
                 return_ result
 | _ => return_ n
 end
-) : parse_monad_type (fun l0 l1 => l0 = l /\ l1 = l) _) l l _.
+).
 
 Program Definition parse_summand_builder (l : list token)
   (parse_summand_sub : forall n l',
@@ -335,11 +340,11 @@ Program Definition parse_summand_builder (l : list token)
      parse_factor_sz l' < parse_summand_sz l ->
      parse_ret l' factor_value) :
   parse_ret l summand_value :=
-((
+run_with_initial_state l (
 do_rec n <- parse_factor;
 do_rec m <- parse_summand_sub n;
 return_ m
-) : parse_monad_type (fun l0 l1 => l0 = l /\ l1 = l) _) l l _.
+).
 
 Program Definition parse_summand_sub_builder (n : Z) (l : list token)
   (parse_summand_sub : forall n l',
@@ -349,7 +354,7 @@ Program Definition parse_summand_sub_builder (n : Z) (l : list token)
      parse_factor_sz l' < parse_summand_sub_sz l ->
      parse_ret l' factor_value) :
   parse_ret l (summand_sub_value n) :=
-((
+run_with_initial_state l (
 do t <- peek_token;
 match t with
 | Some TIMES => do _ <- get_token;
@@ -357,7 +362,8 @@ match t with
                 do_rec result <- parse_summand_sub (n * m)%Z;
                 return_ result
 | _ => return_ n
-end) : parse_monad_type (fun l0 l1 => l0 = l /\ l1 = l) _) l l _.
+end
+).
 
 Program Definition parse_factor_builder (l : list token)
   (parse_expr : forall l',
@@ -367,7 +373,7 @@ Program Definition parse_factor_builder (l : list token)
      parse_factor_sz l' < parse_factor_sz l ->
      parse_ret l' factor_value) :
   parse_ret l factor_value :=
-((
+run_with_initial_state l (
 do t <- get_token;
 match t with
 | NUM n => return_ n
@@ -382,7 +388,8 @@ match t with
                 | _ => error
                 end
 | _ => error
-end) : parse_monad_type (fun l0 l1 => l0 = l /\ l1 = l) _) l l _.
+end
+).
 
 Fixpoint
 parse_expr (l : list token) (H : Acc lt (parse_expr_sz l)) {struct H} :
@@ -523,7 +530,7 @@ match goal with
 end;
 unfold parse_expr_builder, parse_expr_sub_builder,
   parse_summand_builder, parse_summand_sub_builder, parse_factor_builder,
-  parse_monad_bind_rec, parse_monad_bind; simpl.
+  run_with_initial_state, parse_monad_bind_rec, parse_monad_bind; simpl.
 
 Local Ltac red_expr_completeness :=
 match goal with
@@ -607,7 +614,8 @@ end.
 Local Ltac end_state p :=
 match goal with
 | |- appcontext [p ?tl ?H] =>
-   exists H; destruct (p tl H); reflexivity
+   let a := fresh "a" in generalize H as a; intro a; exists a;
+   destruct (p tl a); reflexivity
 end.
 
 abstract (subcase_intros; expand_parser; red_parse_summand;
@@ -689,7 +697,7 @@ Defined.
 Require Import ExtrOcamlBasic.
 Extraction Inline parse_expr_builder parse_expr_sub_builder
   parse_summand_builder parse_summand_sub_builder parse_factor_builder
-  parse_monad_bind parse_monad_bind_rec.
+  parse_monad_bind parse_monad_bind_rec run_with_initial_state.
 Recursive Extraction parse_expr_wrapper.
 *)
 }}}
