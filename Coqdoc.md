@@ -5,7 +5,7 @@ This page is for collecting wishes and features requests for coqdoc.
 == Use cases for Coqdoc ==
 This section enumerates the different uses for coqdoc.
 
- * Project documentation:
+ * Project documentation
     As for the current version of coqdoc, the user must be able to generate a document that is isomorphic to its development.
     The purpose of such documentation is to help the development.
 
