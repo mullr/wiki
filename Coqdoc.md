@@ -2,26 +2,35 @@ This page is for collecting wishes and features requests for coqdoc.
 
 <<TableOfContents>>
 
-== Use cases for coqdoc ==
-This sections lists the different uses for coqdoc
+== Use cases for Coqdoc ==
+This section enumerates the different uses for coqdoc.
 
- * Project documentation
+ * Project documentation:
+    As for the current version of coqdoc, the user must be able to generate a document that is isomorphic to its development.
+    The purpose of such documentation is to help the development.
+
  * Manpage generation
+    The purpose of such documentation is to help the users of this development. 
+    
  * Literate programming
+    A document, in the style of literate programming, is both a human-readable document and a proof development. 
+
  * Use for writing scientific papers
- * Interactive documentation : 
-  Since there is an implementation of coq in javascript, we can think of interactive content integrated in web pages, using coq.
-  This feature would offer an interactive documentation and even interactive tutorials.
+    A scientific paper is special instance of literate programming, where some part of the proof development are hidden in the final document.
 
-== Coqdoc's design ==
+ * Interactive documentation
+    Since there is a prototype implementation of coq in javascript, we can think of interactive content integrated in web pages, using coq.
+    This feature would help developing  interactive documentation and tutorials.
 
-The objective for the new coqdoc is to use elements from coq's compiler, and to use the metadata obtained during the compilation phase for the documentation.
+== Design of Coqdoc ==
 
-In order to do this, coqdoc would generate .vdoc files, which is an intermediate representation for the documentation files. They would hold all the necessary metadata coming from the coq compiler.
+The objective for the new coqdoc is to have a close interaction with the coq system so that semantic information can be transmitted from the proof assistant to the document.
+
+In order to do this, coqdoc will be based on a documentation language 'vdoc' that will act as a glue between structured documents and pieces of code written in Coq. This language will serve both as an input language to describe document and as an intermediate language. Indeed, source code written in standard .v with annotations in the style of the current coqdoc will be processed by a front-end to obtain a .vdoc file. Similarly, HTML or tex files that embed chunks of documented coq will be translated to .vdoc files. Eventually, a back-end will produces HTML or LaTeX files from the .vdoc files.
 
 == Coqdoc features ==
 
-The following features are taken from [[Wishes]]
+We encourage members of the development teams to participate in the following list of wishes. The following features are taken from [[Wishes]].
 
 === Support links from within [...] parts of comments ===
 
