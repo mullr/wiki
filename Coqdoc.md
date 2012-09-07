@@ -17,7 +17,7 @@ This sections lists the different uses for coqdoc
 
 The objective for the new coqdoc is to use elements from coq's compiler, and to use the metadata obtained during the compilation phase for the documentation.
 
-In order to do this, coqdoc would generate .vdoc files, which is an intermediate representation for the documentation files. They would hold all the necessary metadata coming for the coq compiler.
+In order to do this, coqdoc would generate .vdoc files, which is an intermediate representation for the documentation files. They would hold all the necessary metadata coming from the coq compiler.
 
 == Coqdoc features ==
 
