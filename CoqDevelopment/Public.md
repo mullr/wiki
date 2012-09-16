@@ -28,7 +28,7 @@ Minutes might be written in either English or French
 
  * [[CoqDevelopment/RaccourcisPourDevelopperSousEmacs|Raccourcis pour accélérer la compilation]] (en particulier sous Emacs).
 
-= Roadmap for version 8.4 =
+= Past roadmap for version 8.4 =
 
  * new proof engine with existential variables instantiable by tactics, and, hopefully structured proof scripts (Arnaud Spiwack)
 
@@ -38,6 +38,20 @@ Minutes might be written in either English or French
 
  * new model of communication, process based instead of thread based, between Coq and CoqIDE, allowing multi-sessions and interruptability of Coq
 
+= Roadmap for version 8.5 =
+
+ * improved support for pattern-matching on inductive subfamilies à la [[http://appserv.cs.chalmers.se/users/ulfn/wiki/agda.php|Agda]]? (see also the [[http://mattam.org/research/coq/equations.en.html|Equations]] plugin)
+
+ * native support for machine word arithmetic and arrays (see Benjamin Grégoire and Maxime Dénès's [[https://gforge.inria.fr/scm/viewvc.php/branches/native/?root=coq native]] branch)
+
+ * applications of the new proof engine: multi-goals tactics? deep backtracking? (Arnaud Spiwack)
+
+ * binding the libraries of real and rational numbers to the Numbers architecture
+
+ * asynchronous interaction (parallel compilation of proof scripts, modular compilation of files)
+
+ * miscellaneous tactic improvements (rewriting strategies, improved induction tactics, ...)
+
 = The future of Coq =
 
 In the longer term, we plan to investigate
@@ -46,20 +60,28 @@ In the longer term, we plan to investigate
 
    * how to support some form of extensional reasoning? (see the [[http://pierre-yves.strub.nu/research/coqmt/|CoqMT]] prototype for native support of decidably true equations over natural numbers)
 
-   * to which extent supporting pattern-matching on inductive subfamilies à la [[http://appserv.cs.chalmers.se/users/ulfn/wiki/agda.php|Agda]]? (see also the [[http://mattam.org/research/coq/equations.en.html|Equations]] plugin)
-
-   * how to natively support machine word arithmetic and arrays (see Benjamin Grégoire's [[https://gforge.inria.fr/scm/viewvc.php/branches/native/?root=coq native]] branch)
-
    * support for proof-irrelevance in the conversion (either by reasoning in Miquel-Barras-Bernardo's Implicit Calculus of Inductive Constructions or by following Werner's approach)
 
- * a re-evaluation of the overall structure, objectives and contents of the standard library ([[ReflectionOnStandardLibrary|discussion page]])
+   * support for K at the Set level
+
+   * induction-recursion
+
+   * compatibility of the logic with the univalent homotopy model
+
+   * improvements of the guard condition
+
+ * a library of mathematical structures (see also [[ReflectionOnStandardLibrary|discussion page]])
+
+ * a typed tactic language (Yann Régis-Gianas, Lourdes des Carmen González Huesca)
 
  * a cleaning phase of the tactics
 
  * more solid foundations for the different forms of unification used in Coq (for proving and for type inference)
 
- * other extensions of CoqIDE ([[CoqIDEWishes|wish list]])
+ * graphical user interfaces: JEdit-based interfaces (see [[http://paral-itp,lri.fr|Paral-ITP project]]), design of a Coq-GUI communication protocol, miscellaneous extensions of CoqIDE ([[CoqIDEWishes|wish list]])
 
+ * a reworking of coqdoc (François Ripault)
+ 
 Under consideration are
 
  * aspects of the [[http://www.msr-inria.inria.fr/Projects/math-components|ssreflect]] tactic language
