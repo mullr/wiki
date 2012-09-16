@@ -4,6 +4,9 @@
 
 Minutes might be written in either English or French
 
+ * [[CoqDevelopment/CRGTCoq20120119|19 janvier 2012]] (about the repository of user contributions, parsing patterns as terms, 8.4)
+ * [[CoqDevelopment/CRGTCoq20110706|6 juillet 2012]] (about structured proof scripts, options applying to arguments)
+ * [[CoqDevelopment/CRGTCoq20110414|14 avril 2011]] (about native ints, native arrays, native compilation, numbers library, containers library, ergo decision procedure, other libraries, 8.4)
  * [[CoqDevelopment/CRGTCoq20101217|17 décembre 2010]] (about the Numbers library)
  * [[http://coq.inria.fr/files/summary-27oct2010.txt|27 octobre 2010]] (ADT interfaces)
  * [[CoqDevelopment/CRGTCoq20100920|20 septembre 2009]]
