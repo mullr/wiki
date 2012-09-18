@@ -40,7 +40,7 @@ Minutes might be written in either English or French
 
 = Roadmap for version 8.5 =
 
- * improved support for pattern-matching on inductive subfamilies à la [[http://appserv.cs.chalmers.se/users/ulfn/wiki/agda.php|Agda]]? (see also the [[http://mattam.org/research/coq/equations.en.html|Equations]] plugin)
+ * improved support for pattern-matching on inductive subfamilies à la [[http://appserv.cs.chalmers.se/users/ulfn/wiki/agda.php|Agda]] (see also the [[http://mattam.org/research/coq/equations.en.html|Equations]] plugin)
 
  * native support for machine word arithmetic and arrays (see Benjamin Grégoire and Maxime Dénès's [[https://gforge.inria.fr/scm/viewvc.php/branches/native/?root=coq native]] branch)
 
