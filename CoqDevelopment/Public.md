@@ -46,7 +46,7 @@ Minutes might be written in either English or French
 
  * applications of the new proof engine: multi-goals tactics? deep backtracking? (Arnaud Spiwack)
 
- * binding the libraries of real and rational numbers to the Numbers architecture
+ * binding the libraries of Peano numbers and rational numbers to the Numbers architecture
 
  * asynchronous interaction (parallel compilation of proof scripts, modular compilation of files)
 
