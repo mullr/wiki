@@ -72,7 +72,7 @@ In the longer term, we plan to investigate
 
  * a library of mathematical structures (see also [[ReflectionOnStandardLibrary|discussion page]])
 
- * a typed tactic language (Yann Régis-Gianas, Lourdes des Carmen González Huesca)
+ * a typed tactic language (Yann Régis-Gianas, Lourdes del Carmen González Huesca)
 
  * a cleaning phase of the tactics
 
