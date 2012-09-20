@@ -52,6 +52,14 @@ Minutes might be written in either English or French
 
  * miscellaneous tactic improvements (rewriting strategies, improved induction tactics, ...)
 
+ * improvements of the guard condition
+
+ * optimized representation of records with native projections
+
+ * a new infrastructure for user contributions
+
+ * a reworking of coqdoc (François Ripault)
+
 = The future of Coq =
 
 In the longer term, we plan to investigate
@@ -68,19 +76,15 @@ In the longer term, we plan to investigate
 
    * compatibility of the logic with the univalent homotopy model
 
-   * improvements of the guard condition
-
  * a library of mathematical structures (see also [[ReflectionOnStandardLibrary|discussion page]])
 
- * a typed tactic language (Yann Régis-Gianas, Lourdes del Carmen González Huesca)
+ * a typed tactic language (Yann Régis-Gianas, Lourdes del Carmen González Huesca, Guillaume Claret)
 
  * a cleaning phase of the tactics
 
  * more solid foundations for the different forms of unification used in Coq (for proving and for type inference)
 
  * graphical user interfaces: JEdit-based interfaces (see [[http://paral-itp,lri.fr|Paral-ITP project]]), design of a Coq-GUI communication protocol, miscellaneous extensions of CoqIDE ([[CoqIDEWishes|wish list]])
-
- * a reworking of coqdoc (François Ripault)
  
 Under consideration are
 
@@ -89,3 +93,5 @@ Under consideration are
  * proof generation from the [[http://ergo.lri.fr|alt-ergo]] theorem prover
 
  * kernel-embedded decision procedures (see the [[http://pierre-yves.strub.nu/research/coqmt/|CoqMT]] prototype for natively solving quantifier-free arithmetic)
+
+ * full universe polymorphism
