@@ -1,5 +1,7 @@
 #acl CoqAdminGroup:read,write,admin,revert,delete CoqDevelopersGroup:read,write All:read
 
+<<TableOfContents>>
+
 = Minutes from the Coq development working groups and ADT meetings =
 
 Minutes might be written in either English or French
@@ -23,10 +25,6 @@ Minutes might be written in either English or French
  * [[CoqDevelopment/CRGTCoq20081118|18 novembre 2008]]
  * [[CoqDevelopment/CRADT20081029|29 octobre 2008]] (ADT Kick-off meeting)
  * [[CoqDevelopment/CRGTCoq20081010|10 octobre 2008]]
-
-= Miscellaneous =
-
- * [[CoqDevelopment/RaccourcisPourDevelopperSousEmacs|Raccourcis pour accélérer la compilation]] (en particulier sous Emacs).
 
 = Past roadmap for version 8.4 =
 
@@ -95,3 +93,7 @@ Under consideration are
  * kernel-embedded decision procedures (see the [[http://pierre-yves.strub.nu/research/coqmt/|CoqMT]] prototype for natively solving quantifier-free arithmetic)
 
  * full universe polymorphism
+
+= Miscellaneous =
+
+ * [[CoqDevelopment/RaccourcisPourDevelopperSousEmacs|Raccourcis pour accélérer la compilation]] (en particulier sous Emacs).
