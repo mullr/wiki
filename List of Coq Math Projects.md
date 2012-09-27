@@ -2,7 +2,7 @@ This is a partial list of projects formalizing mathematics in Coq. If your proje
 
 * The [[http://c-corn.cs.ru.nl|Constructive Coq repository at Nijmegen]] (C-CoRN) aims at building a computer based library of constructive mathematics. Started in 1999 with a proof of the [[http://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra|Fundamental Theorem of Algebra]] and of the [[http://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus|Fundamental Theorem of Calculus]], the project covers constructive algebraic structures, metric spaces, effective real analysis.
 
-* The [[http://www.msr-inria.inria.fr/Projects/math-components|Mathematical Components]] group develops libraries in group theory and algebra targetting a full formalization of the [[http://en.wikipedia.org/wiki/odd_order_theorem|odd order theorem]] (Feit-Thompson theorem).
+* The [[http://www.msr-inria.inria.fr/Projects/math-components|Mathematical Components]] group develops libraries in group theory and algebra leading to a full formalization of the [[http://en.wikipedia.org/wiki/odd_order_theorem|odd order theorem]] (Feit-Thompson theorem).
 
 * The [[http://wiki.portal.chalmers.se/cse/pmwiki.php/ForMath/ForMath|ForMath]] project gathers researchers from Gothenburg, Nijmegen, Paris-Saclay and La Rioja. It aims at developing
 libraries of formalized mathematics concerning algebra, linear algebra, real number computation, and algebraic topology. 
