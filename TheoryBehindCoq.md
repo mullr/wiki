@@ -20,7 +20,7 @@
 
 == Metatheory of Inductive Types ==
 
- * [[http://www.lri.fr/~paulin/habilitation.ps.gz|Definitions and further issues regarding inductive types in Coq, Christine Paulin]] (in French)
+ * [[http://www.lri.fr/~paulin/PUBLIS/habilitation.ps.gz|Definitions and further issues regarding inductive types in Coq, Christine Paulin]] (in French)
 
   In this work the definitions based on {{{case}}} (case analysis, now called {{{match}}}) and {{{Fixpoint}}} are described. Several issues eg. mutual inductive types, restrictions on elimination sort and positivity condition are studied.
 
