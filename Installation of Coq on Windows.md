@@ -1,9 +1,13 @@
 #title Installation of Coq on Windows
 
+Windows binaries are distributed with each official release of Coq.
+
+
 == Installation from binaries ==
 
- 1. [[http://coq.inria.fr/download|Download]] the binaries for Windows. (They are only available for official releases.)
- 1. Execute the binary
+ 1. [[http://coq.inria.fr/download|Download]] the installer for Windows.
+ 1. Run the installer
+ 1. [[Configuration of CoqIDE|Configure the key bindings]] (optional but strongly recommended)
  1. Run CoqIDE
 
 == Installation from sources ==
