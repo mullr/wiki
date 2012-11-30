@@ -1,12 +1,24 @@
 #title Configuration of CoqIDE 
 
-== Fixing the key bindings ==
+The default key bindings of CoqIDE are often problematic 
+because they conflict with the window manager.
+Moreover, the default bindings are not efficient at all: 
+the most useful action requires pressing a combination of 3 keys...
+Fortunately, it is straightforward to update the bindings.
 
-The default key bindings of CoqIDE are not efficient and moreover they usually conflict with bindings from the window manager. Fortunately, it is not hard to change them. Simply download a modified configuration file:
- * For Coq >= 8.4, copy the file '''[[attachment:coqide.keys]]''' into the folder '''~/.config/coq/ ''' (on Windows, C:\Program Files\Coq\config\)
- * For Coq <= 8.3, copy the file [[attachment:.coqide.keys]] into your home folder
+== Configuring the alternative set of bindings ==
 
-The new bindings, which will boost your productivity, are then as follows:
+(For Coq version >= 8.4 only)
+
+Close all running instances of CoqIDE, then download and install the modified configuration file as follows:
+ 
+ * On Linux, copy the file '''[[attachment:coqide.keys]]''' into the folder '''~/.config/coq/ ''' 
+ * On Windows, copy the file '''[[attachment:coqide.keys]]''' into the folder '''C:\Program Files\Coq\config\''' (assuming you used the default installation path).
+ * On MacOS, the alternative set of bindings has not been tested; see below how to modify the bindings yourself.
+
+== The alternative set of bindings ==
+
+After you copied the modified configuration file, the new bindings are as follows:
 
 ||Execute until cursor||F5||
 ||Execute backward one step||F6||
@@ -18,9 +30,12 @@ The new bindings, which will boost your productivity, are then as follows:
 ||Interrupt execution||F11||
 ||Reset execution||F12||
 
-=== Custom bindings ===
+=== How to manually modify the bindings ===
 
-If you want to edit the binding files yourself, you can change a binding by editing a line and removing the semi-column at the beginning of the line. For example, change as follows:
+You can edit the binding files '''coqide.keys''' yourself. (It is located in '''~/.config/coq/ ''' or '''C:\Program Files\Coq\config\''').
+To modify a binding, edit the corresponding line by removing the semi-column at the beginning of the line and changing the shortcut. 
+Example:
+
 ||before||`;(gtk_accel_path "/Navigation/_Go to/" "<CTRL><ALT>Right")`||
 ||after|| `(gtk_accel_path "/Navigation/_Go to/" "F5")`||
 
