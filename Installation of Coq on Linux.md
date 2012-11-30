@@ -1,45 +1,52 @@
 #title Installation of Coq on Linux
 
+You can install CoqIDE either as a package or by compiling it form sources.
+
 == Installation from packages ==
 
-This is the simplest way to get the currently-packaged version of Coq and of an IDE, either CoqIDE or Proof General.
+To install Coq and CoqIDE, open a shell and run the following command: 
 
-'''Coq'''. To install Coq, open a shell and run the following command: 
-
-||<rowstyle="background-color: #FFFFE0;"> `sudo apt-get install coq` ||
+||<rowstyle="background-color: #FFFFE0;"> `sudo apt-get install coq coqide` ||
 
 To check that the installation is successful, run the command "`coqc -v`".
 
-'''CoqIDE'''. If you want to use CoqIDE, which is recommended for beginners, run:
+Then, you should configure CoqIDE bindings. This step is optional but strongly recommended, as the default bindings very often conflict with the bindings of the window manager.
+To that end, all you need to do is to copy a new binding file, as described on the page:
 
-||<rowstyle="background-color: #FFFFE0;"> `sudo apt-get install coqide` ||
+ * [[Configuration of CoqIDE|Configure the key bindings]]
 
-To check that the installation is successful, run the command "`coqide &`".
-Then, it is very important that you  [[Configuration of CoqIDE|fix the key bindings for CoqIDE]].
+To check that CoqIDE is correctly installed and configured, run the command:
 
-'''Proof General'''. If you want to use Proof General instead of CoqIDE, run: 
+||<rowstyle="background-color: #FFFFE0;"> `coqide &` ||
 
-||<rowstyle="background-color: #FFFFE0;"> --TODO-- ||
+Then, type `Check True.` and use the menu "Navigation", "Forward" to get Coq to check the definition.
+
+
+'''Remark:''' the installation of '''Proof General''' should be described here.
 
 
 == Installation from sources ==
 
 === Requirements ===
 
+In a nutshell:
+
+||<rowstyle="background-color: #FFFFE0;"> `sudo apt-get install ocaml camlp5 liblablgtk2-ocaml-dev libgtk2.0-dev` ||
+
 Packages required for building Coq:
  * '''GNU Make => 3.81''' (package "gnu-make")
  * '''OCaml >= 3.11.2''' (package "ocaml")
- * '''Camlp5 => 5.10''' (package "camlp5")
+ * '''Camlp5 => 5.10''' (package "camlp5") --TODO: it might not be necessary with Coq >= v8.4
 
-Only required for building CoqIDE:
- * LablGtk (package "liblablgtk2-ocaml-dev")
- * GTK+ libraries (package "libgtk2.0-dev")
+Packages required only for building CoqIDE:
+ * '''LablGtk''' (package "liblablgtk2-ocaml-dev")
+ * '''GTK+''' libraries (package "libgtk2.0-dev")
 
-Only required for generating documentation:
- * Hevea (package "hevea")
-
-Only required for compiling versions of Coq from the svn repository:
+Packages required only for obtaining Coq sources from the svn repository:
  * SVN (package "subversion") 
+
+Packages required only for generating documentation: (you likely don't need it)
+ * Hevea (package "hevea")
 
 
 === Downloading the sources ===
@@ -70,11 +77,11 @@ First, enter the folder that contains the sources. Then, choose among:
 
 '''Global installation (default):''' if you want to install only one version of Coq installed and if you have root priviledges, then do:
 
-||<rowstyle="background-color: #FFFFE0;"> `./configure -opt -prefix /usr/local` ||
+||<rowstyle="background-color: #FFFFE0;"> `./configure -prefix /usr/local` ||
 
 '''Local installation:''' if you only want to go for a local installation of Coq (i.e., leaving the binaries in the ./bin folder), then run:
 
-||<rowstyle="background-color: #FFFFE0;"> `./configure -opt -local` ||
+||<rowstyle="background-color: #FFFFE0;"> `./configure -local` ||
 
 After running the configure command, you should be able to read:
 
@@ -85,6 +92,8 @@ Moreover, if you plan to install CoqIDE, you should be able to read:
 || LablGtk2 found, native threads: native CoqIde will be available.||
 
 It is useless to continue if you don't succeed at this stage.
+
+Remark: the packaged version of v8.4pl0 has a known problem is localizing LablGtk2; a simple work around is to use the svn sources of v8.4.
 
 
 === Compilation of Coq and CoqIDE ===
