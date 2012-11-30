@@ -6,8 +6,8 @@ You need to install Coq and either CoqIDE (recommended for beginners) or Proof G
 
  * Installation of the Coq system:
    * [[Installation of Coq on Linux]]
+   * [[Installation of Coq on Windows]] 
    * [[Installation of Coq on Mac]] (to be completed)
-   * [[Installation of Coq on Windows]] (to be completed)
 
  * [[Configuration of CoqIDE]] 
 
@@ -20,11 +20,11 @@ You need to install Coq and either CoqIDE (recommended for beginners) or Proof G
 
 == Coq official resources ==
 
- * [[http://coq.inria.fr/doc-eng.html|The Coq Reference Manual]]
+ * [[http://coq.inria.fr/documentation|The Coq Reference Manual]]
  * [[http://coq.inria.fr/library/|The Coq Standard Library]]
- * The Coq-Club mailing list: [[https://sympa-roc.inria.fr/wws/info/coq-club|subscription]] [[https://sympa-roc.inria.fr/wws/arc/coq-club|archive]]
+ * [[https://sympa.inria.fr/sympa/info/coq-club|The Coq-Club mailing list]] 
  * [[https://coq.inria.fr/bugs/|The Coq bug tracker]]
- * [[http://coq.inria.fr/doc/faq.html|The Coq FAQ]] (no longer maintained)
+ * [[http://coq.inria.fr/faq|The Coq FAQ]] (no longer maintained)
  * The Coq IRC channel: `irc://irc.freenode.net/#coq`
 
 == Coq tutorials ==
@@ -68,7 +68,7 @@ A non-exhaustive list of Coq libraries that are being used by other people than 
 
 == Coq's logic ==
 
- * [[CoqAndAxioms|Axioms that can safely be added to Coq]]
+ * [[CoqAndAxioms|Axioms that you might consider adding to Coq]]
 
  * [[TheoryBehindCoq|Papers about Coq's theoretical foundations]]
 
