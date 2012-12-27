@@ -31,3 +31,5 @@ This is a partial list of of programming languages projects using Coq.  If we've
  * Kenn Knowles (UCSC): We are in the process of formalizing Velodrome [[http://www.soe.ucsc.edu/~cormac/papers/pldi08.pdf]], a dynamic atomicity analysis which is sound and complete with respect to a given program trace.  This involves a formalization of an interleaving semantics, the happens-before relation, serializability, commutation of operations, etc. This is joint work with Cormac Flanagan, Caitlin Sadowski, Stephen Freund, and Jaeheon Y
 
  * Moez A. Abdel-Gawad (Rice University): I'm using Coq to formalize Domain Theory, as in Cartwright and Parsons's 'Domain Theory: An Introduction' monograph, based upon which I intend to build a domain-theoretic model of nominal OOP (e.g., Java, C#, Scala, ... etc), and prove (also using Coq) certain properties of this model (and, accordingly, certain properties of nominal OO languages).
+
+ * Ben Lippmeier (UNSW): Maintains Iron Lambda [[http://iron.ouroborus.net/]], a collection of Coq formalisations of functional languages of increasing complexity.
