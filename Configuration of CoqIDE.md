@@ -13,7 +13,7 @@ Fortunately, it is straightforward to update the bindings.
 Close all running instances of CoqIDE, then download and install the modified configuration file as follows:
  
  * On Linux, copy the file '''[[attachment:coqide.keys]]''' into the folder '''~/.config/coq/ ''' 
- * On Windows, copy the file '''[[attachment:coqide.keys]]''' into the folder '''C:\Program Files\Coq\config\''' (assuming you used the default installation path).
+ * On Windows, copy the file '''[[attachment:coqide.keys]]''' either into the folder '''%HOME%\.config\coq\''' if '''HOME''' is defined, or into the folder '''C:\Program Files\Coq\config\''' (assuming you used the default installation path).
  * On MacOS, the alternative set of bindings has not been tested; see below how to modify the bindings yourself.
 
 == The alternative set of bindings ==
