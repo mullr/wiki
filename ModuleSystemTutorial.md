@@ -30,7 +30,7 @@ Parameter le_dec : ∀ x y, {x ≤ y} +{¬ x ≤ y}.
 End Sig.
 }}}
 
-Now we can write a module functor.  A module functor is a {{{Module}}} that takes one or more {{{Module}}}s of some {{{Module Type}}}s as parameters.  For example we can create a {{{Module}}} that defines a {{{min}}} function and lemmas for any {{{Module}}} that has the above {{{Module Type}}} signature.  The first thing we do is import the {{{Modle}}} parameter in order to have access to its parameters without having to use the DotNotation.  Notice that we also get access to the [[Notation]] defined in the {{{Module Type}}}.
+Now we can write a module functor.  A module functor is a {{{Module}}} that takes one or more {{{Module}}}s of some {{{Module Type}}}s as parameters.  For example we can create a {{{Module}}} that defines a {{{min}}} function and lemmas for any {{{Module}}} that has the above {{{Module Type}}} signature.  The first thing we do is import the {{{Module}}} parameter in order to have access to its parameters without having to use the DotNotation.  Notice that we also get access to the [[Notation]] defined in the {{{Module Type}}}.
 
 {{{#!coq
 (* File: DecidableOrder.v
@@ -134,7 +134,7 @@ That is the basics of how to use modules.
 === Advanced Module Work ===
 
 Suppose we want to also define a {{{max}}} function.  We could redo all the same sort of work that we did for {{{min}}}; however the proofs are all almost identical.  We would like to reuse that work we did creating {{{min}}} to also create {{{max}}}.  To accomplish this we note that {{{max}}} is dual to {{{min}}}.  That is to say that {{{max}}} is the {{{min}}} function of the reversed ordering.  For any decidable total ordering, the reverse ordering is also a decidable total ordering.  We can make a module functor that creates this dual order.
-The {{{Dual}}} module defined below will take a module of our decidable total order signature, but also produce a moudle statisfying our decidable total order signature.
+The {{{Dual}}} module defined below will take a module of our decidable total order signature, but also produce a module statisfying our decidable total order signature.
 
 {{{#!coq
 (* File: DecidableOrder.v
