@@ -6,14 +6,14 @@ Yann Régis-Gianas, Arnaud Spiwack, Enrico Tassi.
 
 = Points discussed for integration to Coq 8.5 =
 
-- New tacticals
-- Enrico's branch with asynchronous evaluation of commands
-- Universes polymorphism
-- Optimised representation of projections
-- Caching heavy computation done at tactic time
-- New Coqdoc
-- Many deep changes in Coqide
-- Other minor points
+ * New tacticals
+ * Enrico's branch with asynchronous evaluation of commands
+ * Universes polymorphism
+ * Optimised representation of projections
+ * Caching heavy computation done at tactic time
+ * New Coqdoc
+ * Many deep changes in Coqide
+ * Other minor points
 
 == New-tacticals (Arnaud) ==
 
