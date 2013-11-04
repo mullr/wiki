@@ -103,8 +103,7 @@ is just replaced by:
 {{{
 git pull && emacs && make && git commit && git push
 }}}
-For those
-not familiar with git, note the difference between `git commit`
+For those not familiar with git, note the difference between `git commit`
 (recording your modification to a local commit) and `git push`
 (transfering this commit to the remote repository).
 
@@ -142,9 +141,7 @@ a linear history, since a merge of a branch can be fast-forward.
 
  * Please try to keep the history as linear as possible to ease its study. For works of moderate size, this means doing a `git rebase` on top of the trunk before pushing to gforge. When working in this mode, it could be handy to consider the option `--rebase` to `git pull`. Now, for more important development, it's fine to use of the merge abilities of git rather than rebase.
 
- * When preparing the push of a feature, try to separate your work in many atomic single-purpose commits. This can be done a posteriori via `git rebase -i ...`. Each commit you submit should be compilable (this helps greatly when locating issues via git-bisect). For that
-you may consider using for instance `git rebase -i --exec make`. A good habit is to prepare your non-trivial changes in a short-term
-local branch that wou'll rebase on top of trunk (or merge with) when things are ready for showtime.
+ * When preparing the push of a feature, try to separate your work in many atomic single-purpose commits. This can be done a posteriori via `git rebase -i ...`. Each commit you submit should be compilable (this helps greatly when locating issues via git-bisect). For that you may consider using for instance `git rebase -i --exec make`. A good habit is to prepare your non-trivial changes in a short-term local branch that wou'll rebase on top of trunk (or merge with) when things are ready for showtime.
 
 == Misc ==
 
