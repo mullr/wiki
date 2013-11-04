@@ -136,7 +136,7 @@ We also intend to keep the same principle as with svn : once a commit
 reaches the central repository, it stays there forever. By default,
 git provides many destructive features (history rewriting, commit
 reworking, etc). It's perfectly fine to use them on your computer,
-but not one already published commits, otherwise the other users
+but not on commits already published, otherwise the other users
 will encounter issues during their next `git pull`. To avoid this
 situation, our gforge repository will be configure to accept only
 push of "fast-forward" commits (i.e. commits that only adds on top
@@ -155,7 +155,7 @@ a linear history, since a merge of a branch can be fast-forward.
 
  * If you want to push your own branches to the gforge repository, that's probably ok. This was done in the past with the svn repository. Simply, with git using a personal repository somewhere (e.g. on github or similar) could be quite more convenient.
 
- * Do not try to modify this gforge git repository in any other way than `git push`, unless a) you've contacted us first and b) you know exactly what you're doing. Git is quite powerful, but also full of ways to shoot in your own foot. Gforge has a proper backup policy, but let's try not to need it!
+ * Do not try to modify this gforge git repository in any other way than `git push`, unless a) you've contacted us first and b) you know exactly what you're doing. Git is quite powerful, but also full of ways to shoot in your own foot. Gforge has a proper backup policy, but let's try to avoid using it!
 
 == Misc ==
 
@@ -165,7 +165,7 @@ The current coqbench will have to be slightly adapted :
 
  * Use `git pull` instead of `svn up`
 
- * mention git's SHA1 hashrefs instead of svn's revision number. Normally the first 6 or 7 chars of the SHA1 are enough to have unicity.
+ * mention git's SHA1 hashrefs instead of svn's revision number. Normally the first 6 or 7 chars of the SHA1 are enough to have uniqueness.
 
 ==== User Contribution Archive ====
 
@@ -192,7 +192,9 @@ commiter, either :
 
  * use the pull-request feature of github (to be confirmed, see below)
 
-And then warn some coq developper or the whole coqdev
+And then warn some coq developper or the whole coqdev.
+
+When the owner of the contribution (typically you or your employer) isn't Inria or an Inria partner, you might need to fill first a copyright delegation form. Of course you'll remain credited as the author of the contribution. 
 
 ==== Github ====
 
