@@ -56,9 +56,12 @@ We propose to reuse the content of these existing git clones.
 We plan to still use gforge.inria.fr for the hosting of the official
 coq repository. In particular, all gforge accounts with commit rights
 today on the svn archive will still be able to push commits on the git
-archive. The url given above will slightly change in the process,
-"coq-svn.git" will become "coq.git". Of course, the mirroring
-on github will be maintained.
+archive. The url given above will slightly change in the process, no more
+"coq-svn.git", but rather:
+
+ https://scm.gforge.inria.fr/coq/coq.git
+
+Of course, the mirroring on github will be maintained.
 
 We plan to do the switch on '''Friday, 15 November 2013'''.
 More information on the process in the documentation and FAQ of
