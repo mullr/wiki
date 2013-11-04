@@ -152,8 +152,7 @@ a linear history, since a merge of a branch can be fast-forward.
 
  * If you want to push your own branches to the gforge repository, that's probably ok. This was done in the past with the svn repository. Simply, with git using a personal repository somewhere (e.g. on github or similar) could be quite more convenient.
 
- * Do not try to modify this gforge git repository in any other way than `git push`, unless a) you've contacted us first and b) you know exactly what you're doing. Git is quite powerful, but also full of ways to shoot
-in your own foot. Gforge has a proper backup policy, but let's try not to need it!
+ * Do not try to modify this gforge git repository in any other way than `git push`, unless a) you've contacted us first and b) you know exactly what you're doing. Git is quite powerful, but also full of ways to shoot in your own foot. Gforge has a proper backup policy, but let's try not to need it!
 
 == Misc ==
 
