@@ -198,10 +198,10 @@ When the owner of the contribution (typically you or your employer) isn't Inria 
 
 ==== Github ====
 
-Improve the interaction with this repository, especially concerning
-pull requests:
+We'll have to improve the interaction with this repository, especially concerning
+pull requests made on github:
 
- * Be sure somebody in the coq-team gets them, ideally coq-dev
+ * Be sure somebody in the coq-team gets them, ideally coq-dev.
 
  * Find a easy way to apply the pull to gforge. It should be enough to do
  {{{
