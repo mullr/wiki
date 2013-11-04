@@ -215,3 +215,12 @@ pull requests made on github:
  git remote rm toto
  }}}
  But could we automate that more ?
+
+  If you add
+ {{{
+ [remote "upstream"]
+        url = git@github.com:coq/coq.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+        fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
+ }}}
+ to `.git/config`, then `git remote update` will automatically fetch any pull requests on the github repo.
