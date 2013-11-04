@@ -1,5 +1,12 @@
 = Migrating the coq repository from svn to git : Proposed plan =
 
+Author: Pierre Letouzey, with many other contributors (Enrico, Arnaud, Matthieu, Hugo...).
+
+{{{#!wiki red/solid
+Note : this page is a wiki, please edit it to integrate your suggestions, remarks, criticism.
+Just ensure that your notes are visible, for instance by putting them into colored blocks
+like this one. In complement, you can also drop a message to `coqdev`.
+}}}
 
 == Current situation ==
 
@@ -83,8 +90,8 @@ gforge.inria.fr. The main steps are :
  6. Tests : attempt to push a commit to check everything is all right
  (archive, gitweb, coq-commits)
 
- 7. We remove the old svn repository, to avoid anyone stays by mistake
- on a not-evolving-anymore version of Coq.
+ 7. We then remove the old svn repository : this way, nobody will stay by mistake
+ on a not-evolving-anymore repository of Coq.
 
  8. Update any mention of the svn archive, especially on coq.inria.fr
 
@@ -143,6 +150,11 @@ a linear history, since a merge of a branch can be fast-forward.
 
  * When preparing the push of a feature, try to separate your work in many atomic single-purpose commits. This can be done a posteriori via `git rebase -i ...`. Each commit you submit should be compilable (this helps greatly when locating issues via git-bisect). For that you may consider using for instance `git rebase -i --exec make`. A good habit is to prepare your non-trivial changes in a short-term local branch that wou'll rebase on top of trunk (or merge with) when things are ready for showtime.
 
+ * If you want to push your own branches to the gforge repository, that's probably ok. This was done in the past with the svn repository. Simply, with git using a personal repository somewhere (e.g. on github or similar) could be quite more convenient.
+
+ * Do not try to modify this gforge git repository in any other way than `git push`, unless a) you've contacted us first and b) you know exactly what you're doing. Git is quite powerful, but also full of ways to shoot
+in your own foot. Gforge has a proper backup policy, but let's try not to need it!
+
 == Misc ==
 
 ==== Coqbenchs ====
@@ -152,6 +164,10 @@ The current coqbench will have to be slightly adapted :
  * Use `git pull` instead of `svn up`
 
  * mention git's SHA1 hashrefs instead of svn's revision number. Normally the first 6 or 7 chars of the SHA1 are enough to have unicity.
+
+==== User Contribution Archive ====
+
+This contributions are currently stored in a separate svn repository. We also plan to do something about this repository, but no definite plan nor migration date yet. First, let's do this migration of coq sources. Moreover, for contribs we probably want a notion of sub-repository, one per contrib.
 
 ==== Coqbugs ====
 
