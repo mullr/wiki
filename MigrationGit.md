@@ -149,9 +149,9 @@ a linear history, since a merge of a branch can be fast-forward.
 
 The current coqbench will have to be slightly adapted :
 
- * git pull instead of svn up
+ * Use `git pull` instead of `svn up`
 
- * mention git's hashrefs instead of svn's revision number normally the first 6 or 7 chars of the SHA1 are enough to have unicity.
+ * mention git's SHA1 hashrefs instead of svn's revision number. Normally the first 6 or 7 chars of the SHA1 are enough to have unicity.
 
 ==== Coqbugs ====
 
