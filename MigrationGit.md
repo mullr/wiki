@@ -105,7 +105,7 @@ gforge.inria.fr. The main steps are :
 
 ==== Basic use ====
 
-For the developer, this isn't a complete revolution. The usual cycle:
+For the developer, this isn't a complete revolution. `svn checkout` is now `git clone`, and the usual cycle:
 {{{
 svn update && emacs && make && svn commit
 }}}
