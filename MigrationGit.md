@@ -13,9 +13,9 @@ like this one. In complement, you can also drop a message to `coqdev`.
 For the moment, the official read-write repository of coq is a svn one on gforge.inria.fr.
 We already have an existing git clone of the coq svn
 repository, created and maintained via git-svn up to now :
-
+{{{
  git://scm.gforge.inria.fr/coq/coq-svn.git
-
+}}}
 This clone is currently mirrored on github :
 
  https://github.com/coq/coq.git
@@ -58,13 +58,13 @@ coq repository. In particular, all gforge accounts with commit rights
 today on the svn archive will still be able to push commits on the git
 archive. The url given above will slightly change in the process, no more
 "coq-svn.git", but rather:
-
+{{{
  git://scm.gforge.inria.fr/coq/coq.git
-
+}}}
 This url is for the anonymous access, for pushing commits you'll need to rather use:
-
+{{{
  git+ssh://yourname@scm.gforge.inria.fr/gitroot/coq/coq.git
-
+}}}
 Of course, the mirroring on github will be maintained.
 
 We plan to do the switch on '''Friday, 15 November 2013'''.
