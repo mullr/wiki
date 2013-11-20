@@ -1,4 +1,4 @@
-= Migrating the coq repository from svn to git : Proposed plan =
+= Migrating the coq repository from svn to git =
 
 Author: Pierre Letouzey, with many other contributors (Enrico, Arnaud, Matthieu, Hugo...).
 
@@ -8,25 +8,25 @@ Just ensure that your notes are visible, for instance by putting them into color
 like this one. In complement, you can also drop a message to `coqdev`.
 }}}
 
-== Current situation ==
+== Previous situation ==
 
-For the moment, the official read-write repository of coq is a svn one on gforge.inria.fr.
-We already have an existing git clone of the coq svn
+Earlier, the official read-write repository of coq was a svn one on gforge.inria.fr.
+We already add an existing git clone of the coq svn
 repository, created and maintained via git-svn up to now :
 {{{
  git://scm.gforge.inria.fr/coq/coq-svn.git
 }}}
-This clone is currently mirrored on github :
+This clone was mirrored on github :
 
  https://github.com/coq/coq.git
 
-Many persons have cloned either of these repository and proposed
+Many persons had cloned either of these repository and proposed
 their own extensions / experiments / ... on top of them.
 
 
 == Which content for the official git repository ? ==
 
-We propose to reuse the content of these existing git clones.
+We decided to reuse the content of these existing git clones.
 
 ==== Pros: ====
 
@@ -46,18 +46,19 @@ We propose to reuse the content of these existing git clones.
  {{{
    My Name <my.name@inria.fr>
  }}}
- But after all, this is just an instance of email changes for a same individual, and we'll probably have more of such changes in the future too. We plan to maintain a `.mailmap` file that allows to link the various identities of a given person, and display their credits correctly in `git shortlog` (and also `git log` on recent version of git). See `man git-shortlog` for more detail.
+ But after all, this is just an instance of email changes for a same individual, and we'll probably have more of such changes in the future too. We have added to the archive a `.mailmap` file that allows to link the various identities of a given person, and display their credits correctly in `git shortlog` (and also `git log` on recent version of git). See `man git-shortlog` for more detail.
 
- Last remaining question : could such a `.mailmap` induce more spams ? It is meant to contain cleartext emails, and will probably be accessible on the web via the gitweb viewers.
+ Last remaining question : could such a `.mailmap` induce more spams ? It is meant to contain cleartext emails, and will probably be accessible on the web via the gitweb viewers. For the moment, we placed in it pseudo-emails login@gforge, we'll update them to true emails only for recent commiters (or on request).
 
 
-== The migration itself ==
+== The new repository ==
 
-We plan to still use gforge.inria.fr for the hosting of the official
+We decided to continue using gforge.inria.fr for the hosting of the official
 coq repository. In particular, all gforge accounts with commit rights
-today on the svn archive will still be able to push commits on the git
-archive. The url given above will slightly change in the process, no more
-"coq-svn.git", but rather:
+on the earlier svn archive are still able to push commits on the git
+archive.
+
+The url of the new repository is : 
 {{{
  git://scm.gforge.inria.fr/coq/coq.git
 }}}
@@ -65,11 +66,20 @@ This url is for the anonymous access, for pushing commits you'll need to rather 
 {{{
  git+ssh://yourname@scm.gforge.inria.fr/gitroot/coq/coq.git
 }}}
-Of course, the mirroring on github will be maintained.
+Of course, the github mirror is still maintained.
+There is also an anonymous access via an https url if necessary :
+{{{
+ https://gforge.inria.fr/git/coq/coq.git
+}}}
+But note that using this https protocol might not work out-of-the-box due to issues with the ssl certificate of gforge.inria.fr, more details in the FAQ (search for "ssl"). A workaround is to set the environment variable "GIT_SSL_NO_VERIFY=true" in your shell, at least during the git operations.
+
+== The migration itself ==
 
 The switch has been done on '''Tuesday, 19 November 2013'''.
+
+For memory, here are the main steps used during the transition.
 More information on the process in the documentation and FAQ of
-gforge.inria.fr. The main steps are :
+gforge.inria.fr.
 
  1. First, the svn archive has been made read-only that day (via a pre-commit
  hook rejecting all new commits). Then this archive has been backuped
