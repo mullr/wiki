@@ -67,42 +67,42 @@ This url is for the anonymous access, for pushing commits you'll need to rather 
 }}}
 Of course, the mirroring on github will be maintained.
 
-The switch is currently in progress today ('''Tuesday, 19 November 2013''').
+The switch has been done on '''Tuesday, 19 November 2013'''.
 More information on the process in the documentation and FAQ of
 gforge.inria.fr. The main steps are :
 
- 1. ('''DONE''') First, the svn archive will be made read-only that day (via a pre-commit
- hook rejecting all new commits). Then this archive will be backuped
+ 1. First, the svn archive has been made read-only that day (via a pre-commit
+ hook rejecting all new commits). Then this archive has been backuped
  somewhere else just in case.
 
- 2. ('''DONE''') Then we stop the cron task that runs git-svn and push updates
+ 2. Then we stopped the cron task that runs git-svn and pushed updates
  to the existing git clones (on gforge and github).
 
- 3. ('''IN PROGRESS''') Then we asks for the svn=>git switch on the gforge interface
+ 3. Then we asked for the svn=>git switch on the gforge interface
  (tab "source", sub-tab "admin"). This triggers a script that
  runs up to 6 hours according to the FAQ. This script initializes
  an empty coq.git repository somewhere on the gforge server, and
  adapts the "source" pages of the project (with a gitweb viewer,
  etc).
 
- 3. We push to this coq.git repository all the content of coq-svn.git
+ 3. We pushed to this coq.git repository all the content of coq-svn.git
 
  4. Some setup: in particular we forbid "non-fastforward push"
  (e.g. destructive, non strictly increasing change in the archive).
  See guidelines below.
 
- 5. Adapt the mailing list coq-commits announcing each commit
+ 5. '''STILL TO BE DONE''': adapt the mailing list coq-commits announcing each commit
  (cf. FAQ + gforge bug ticket #15388).
 
  6. Tests : attempt to push a commit to check everything is all right
  (archive, gitweb, coq-commits)
 
- 7. We then remove the old svn repository : this way, nobody will stay by mistake
+ 7. We removed the old svn repository : this way, nobody will stay by mistake
  on a not-evolving-anymore repository of Coq.
 
- 8. Update any mention of the svn archive, especially on coq.inria.fr
+ 8. '''STILL TO BE DONE''': Update any mention of the svn archive, especially on coq.inria.fr
 
- 9. Restore a mirroring to the github archive
+ 9. The mirroring to the github archive has been restored
 
 
 == Git usage and guidelines ==
