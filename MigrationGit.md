@@ -204,7 +204,7 @@ commiter, either :
  
  * prepare a patchset via `git format-patch`
 
- * use the pull-request feature of github (to be confirmed, see below)
+ * use the pull-request feature of github (see below)
 
 And then warn some coq developper or the whole coqdev.
 
