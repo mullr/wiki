@@ -214,8 +214,7 @@ When the owner of the contribution (typically you or your employer) isn't Inria 
 
 Concerning pull requests made via github:
 
- * The notification should reach the coqdev mailing list now (thanks to
-   a automatic forward by P. Letouzey's mailer).
+ * The notification should reach the coqdev mailing list now (thanks to a automatic forward by P. Letouzey's mailer).
 
  * To retrieve / review / apply pull requests, it's convenient to add the github repository as "remote" to yours. For instance, place:
  {{{
