@@ -101,7 +101,7 @@ gforge.inria.fr.
  (e.g. destructive, non strictly increasing change in the archive).
  See guidelines below.
 
- 5. '''STILL TO BE DONE''': adapt the mailing list coq-commits announcing each commit
+ 5. The mailing list coq-commits announcing each commit has been adapted
  (cf. FAQ + gforge bug ticket #15388).
 
  6. Tests : attempt to push a commit to check everything is all right
@@ -110,7 +110,7 @@ gforge.inria.fr.
  7. We removed the old svn repository : this way, nobody will stay by mistake
  on a not-evolving-anymore repository of Coq.
 
- 8. '''STILL TO BE DONE''': Update any mention of the svn archive, especially on coq.inria.fr
+ 8. Update any mention of the svn archive, especially on coq.inria.fr
 
  9. The mirroring to the github archive has been restored
 
@@ -212,25 +212,16 @@ When the owner of the contribution (typically you or your employer) isn't Inria 
 
 ==== Github ====
 
-We'll have to improve the interaction with this repository, especially concerning
-pull requests made on github:
+Concerning pull requests made via github:
 
- * Be sure somebody in the coq-team gets them, ideally coq-dev.
+ * The notification should reach the coqdev mailing list now (thanks to
+   a automatic forward by P. Letouzey's mailer).
 
- * Find a easy way to apply the pull to gforge. It should be enough to do
+ * To retrieve / review / apply pull requests, it's convenient to add the github repository as "remote" to yours. For instance, place:
  {{{
- git remote add toto URL
- git remote update
- git merge toto/branch-to-be-pulled
- git remote rm toto
- }}}
- But could we automate that more ?
-
-  If you add
- {{{
- [remote "upstream"]
+ [remote "github"]
         url = git@github.com:coq/coq.git
-        fetch = +refs/heads/*:refs/remotes/upstream/*
-        fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
+        fetch = +refs/heads/*:refs/remotes/github/*
+        fetch = +refs/pull/*/head:refs/remotes/github/pr/*
  }}}
- to `.git/config`, then `git remote update` will automatically fetch any pull requests on the github repo.
+ to your `.git/config`, then `git remote update` will automatically fetch any pull requests on the github repo. You can then do things like `git cherry-pick github/pr/123` 
