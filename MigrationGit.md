@@ -71,14 +71,14 @@ There is also an anonymous access via an https url if necessary :
 {{{
  https://gforge.inria.fr/git/coq/coq.git
 }}}
-But note that using this https protocol might not work out-of-the-box due to issues with the ssl certificate of gforge.inria.fr, more details in the FAQ (search for "ssl"). A workaround is to set the environment variable "GIT_SSL_NO_VERIFY=true" in your shell, at least during the git operations.
+But note that using this https protocol might not work out-of-the-box due to issues with the ssl certificate of gforge.inria.fr, more details in the [[http://siteadmin.gforge.inria.fr/FAQ.html#git_https|gforge FAQ]]. A workaround is to set the environment variable "GIT_SSL_NO_VERIFY=true" in your shell, at least during the git operations.
 
 == The migration itself ==
 
 The switch has been done on '''Tuesday, 19 November 2013'''.
 
 For memory, here are the main steps used during the transition.
-More information on the process in the documentation and FAQ of
+More information on the process in the documentation and [[http://siteadmin.gforge.inria.fr/FAQ.html#git_https|FAQ]] of
 gforge.inria.fr.
 
  1. First, the svn archive has been made read-only that day (via a pre-commit
