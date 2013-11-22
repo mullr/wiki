@@ -78,7 +78,7 @@ But note that using this https protocol might not work out-of-the-box due to iss
 The switch has been done on '''Tuesday, 19 November 2013'''.
 
 For memory, here are the main steps used during the transition.
-More information on the process in the documentation and [[http://siteadmin.gforge.inria.fr/FAQ.html#git_https|FAQ]] of
+More information on the process in the documentation and [[http://siteadmin.gforge.inria.fr/FAQ.html|FAQ]] of
 gforge.inria.fr.
 
  1. First, the svn archive has been made read-only that day (via a pre-commit
