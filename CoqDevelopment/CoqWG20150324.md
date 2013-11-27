@@ -10,14 +10,14 @@ Ludovic Patey, Yann Régis-Gianas, Matthieu Sozeau, Arnaud Spiwack, Enrico Tassi
 [[attachment:slides-tassi.pdf]]
 
 == A Coq Wish List for Scaling Up - Arthur Charguéraud ==
-[[attachment:slides-chargueraud]]
+[[attachment:slides-chargueraud.pdf]]
 == Universe Polymorphism and Fast Projections - Matthieu Sozeau ==
-[[attachment:slides-sozeau]]
+[[attachment:slides-sozeau.pdf]]
 == How to make a Rooster run fast, on a Camel - Pierre-Marie Pédrot ==
 No slides - to be linked here.
 
 == Opam - Thomas Braibant ==
-[[attachment:slides-braibant]]
+[[attachment:slides-braibant.pdf]]
 
 = Miscellaneous discussions =
 
