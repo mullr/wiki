@@ -2,26 +2,19 @@
 ## page was copied from CoqDevelopment/CRGTCoq20130709
 <<TableOfContents>>
 
-Participants: Pierre Boutillier, Pierre Courtieu, Hugo Herbelin, Pierre Letouzey, Guillaume Melquiond,
-Ludovic Patey, Yann Régis-Gianas, Matthieu Sozeau, Arnaud Spiwack, Enrico Tassi... add yourself
+This page is used to organize the next Coq Working Group (in french GT Coq).
 
+= Organisation =
+
+The next WG will happen end of january/beginning of february.
+If you intend to participate, go to:
+    http://doodle.com/49py94nac5554ky5
+    
 = Talks =
 
-== Demo of the new interactive mode - Enrico Tassi ==
-[[attachment:slides-tassi.pdf]]
+If you intend to give a talk, please add your name and title here and any information
+you'd like to give.
 
-== A Coq Wish List for Scaling Up - Arthur Charguéraud ==
-[[attachment:slides-chargueraud.pdf]]
-== Universe Polymorphism and Fast Projections - Matthieu Sozeau ==
-[[attachment:slides-sozeau.pdf]]
-== How to make a Rooster run fast, on a Camel - Pierre-Marie Pédrot ==
-No slides - to be linked here.
+= Talking points =
 
-== Opam - Thomas Braibant ==
-[[attachment:slides-braibant.pdf]]
-
-= Miscellaneous discussions =
-
-M. Sozeau is responsible for the next Coq working groups, to be held every
-two month, time being decided with a doodle sent right after each GT for 
-the following one.
+If you have suggestions for discussions, questions broad or specific, please elaborate here.
