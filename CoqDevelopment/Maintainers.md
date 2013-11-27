@@ -7,13 +7,20 @@ Ludovic Patey, Yann Régis-Gianas, Matthieu Sozeau, Arnaud Spiwack, Enrico Tassi
 = Talks =
 
 == Demo of the new interactive mode - Enrico Tassi ==
+[[attachment:slides-tassi.pdf]]
 
 == A Coq Wish List for Scaling Up - Arthur Charguéraud ==
-
+[[attachment:slides-chargueraud]]
 == Universe Polymorphism and Fast Projections - Matthieu Sozeau ==
-
+[[attachment:slides-sozeau]]
 == How to make a Rooster run fast, on a Camel - Pierre-Marie Pédrot ==
+No slides - to be linked here.
 
 == Opam - Thomas Braibant ==
+[[attachment:slides-braibant]]
 
 = Miscellaneous discussions =
+
+M. Sozeau is responsible for the next Coq working groups, to be held every
+two month, time being decided with a doodle sent right after each GT for 
+the following one.
