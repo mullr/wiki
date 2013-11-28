@@ -39,6 +39,11 @@ You need to install Coq and either CoqIDE (recommended for beginners) or Proof G
 
  * [[CoqInTheClassroom|Teaching Coq and teaching with Coq]]
 
+== Coq development ==
+
+ * [[CoqDevelopment|Coq Working Groups and developers resources]]
+
+ * [[CoqDevelopment/NextCoqWG|The next Coq Working Group]]
 
 == Coq community ==
 
