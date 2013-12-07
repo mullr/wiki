@@ -4,13 +4,13 @@
 
 = The Coq development working groups =
 
-=== Organization ===
+== Organization ==
 
  * As of November 2013, it has been decided to have working groups every two months (Summer excepted), and announced 1 month and a half in advance.
- * It has also been decided to have a bug session ruling on feature requests and recent bugs every two months (Summer excepted).
+ * It has also been decided to have a bug session ruling on pull requests and recent bugs every two months (Summer excepted).
  * There is a page for the organization of the [[CoqDevelopment/NextCoqWG|next working group]].
 
-=== Minutes from past Coq development working groups and ADT meetings ===
+== Minutes from past Coq development working groups and ADT meetings ==
 
  * [[CoqDevelopment/CRGTCoq20131126|26 novembre 2013]] (about asynchronous interaction, wishes for coq, full type polymorphism and fast projections, enhancing efficiency, opam for coq)
  * [[CoqDevelopment/CRGTCoq20130709|9 juillet 2013]] (about what's going on at this time and what is liable to be part of 8.5)
