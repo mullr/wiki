@@ -2,9 +2,11 @@
 
 <<TableOfContents>>
 
-= Minutes from the Coq development working groups and ADT meetings =
+= The Coq development working groups =
 
-Minutes might be written in either English or French
+ * Organization of the [[CoqDevelopment/NextCoqWG|next working group]]
+
+''Minutes from past Coq development working groups and ADT meetings'' (might be written in either English or French)
 
  * [[CoqDevelopment/CRGTCoq20131126|26 novembre 2013]] (about asynchronous interaction, wishes for coq, full type polymorphism and fast projections, enhancing efficiency, opam for coq)
  * [[CoqDevelopment/CRGTCoq20130214|14 février 2013]] (about native compilation, reals, enhancing conversion, the new coqdoc)
@@ -42,7 +44,7 @@ Minutes might be written in either English or French
 
  * improved support for pattern-matching on inductive subfamilies à la [[http://appserv.cs.chalmers.se/users/ulfn/wiki/agda.php|Agda]] (see also the [[http://mattam.org/research/coq/equations.en.html|Equations]] plugin)
 
- * native support for machine word arithmetic and arrays (see Benjamin Grégoire and Maxime Dénès' [[https://gforge.inria.fr/scm/viewvc.php/branches/native/?root=coq native]] branch)
+ * native support for machine word arithmetic and arrays (see Benjamin Grégoire and Maxime Dénès' [[https://gforge.inria.fr/scm/viewvc.php/branches/native/?root=coq|native]] branch)
 
  * applications of the new proof engine: multi-goals tactics? deep backtracking? (Arnaud Spiwack)
 
@@ -53,6 +55,8 @@ Minutes might be written in either English or French
  * miscellaneous tactic improvements (rewriting strategies, improved induction tactics, ...)
 
  * improvements of the guard condition
+
+ * full universe polymorphism
 
  * optimized representation of records with native projections
 
