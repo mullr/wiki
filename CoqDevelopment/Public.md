@@ -6,6 +6,7 @@
 
 Minutes might be written in either English or French
 
+ * [[CoqDevelopment/CRGTCoq20131126|26 novembre 2013]] (about asynchronous interaction, wishes for coq, full type polymorphism and fast projections, enhancing efficiency, opam for coq)
  * [[CoqDevelopment/CRGTCoq20130214|14 février 2013]] (about native compilation, reals, enhancing conversion, the new coqdoc)
  * [[CoqDevelopment/CRGTCoq20120119|19 janvier 2012]] (about the repository of user contributions, parsing patterns as terms, 8.4)
  * [[CoqDevelopment/CRGTCoq20110706|6 juillet 2012]] (about structured proof scripts, options applying to arguments)
