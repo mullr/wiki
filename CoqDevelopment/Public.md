@@ -8,33 +8,32 @@
 
  * As of November 2013, it has been decided to have working groups every two months (Summer excepted), and announced 1 month and a half in advance.
  * It has also been decided to have a bug session ruling on feature requests and recent bugs every two months (Summer excepted).
- * There is a [[CoqDevelopment/NextCoqWG|page]] for the organization of the next working group.
+ * There is a page for the organization of the [[CoqDevelopment/NextCoqWG|next working group]].
 
 === Minutes from past Coq development working groups and ADT meetings ===
 
-Might be written in either English or French.
-
  * [[CoqDevelopment/CRGTCoq20131126|26 novembre 2013]] (about asynchronous interaction, wishes for coq, full type polymorphism and fast projections, enhancing efficiency, opam for coq)
+ * [[CoqDevelopment/CRGTCoq20130709|9 juillet 2013]] (about what's going on at this time and what is liable to be part of 8.5)
  * [[CoqDevelopment/CRGTCoq20130214|14 février 2013]] (about native compilation, reals, enhancing conversion, the new coqdoc)
- * [[CoqDevelopment/CRGTCoq20120119|19 janvier 2012]] (about the repository of user contributions, parsing patterns as terms, 8.4)
- * [[CoqDevelopment/CRGTCoq20110706|6 juillet 2012]] (about structured proof scripts, options applying to arguments)
+ * [[CoqDevelopment/CRGTCoq20120119|19 janvier 2012]] (about the repository of user contributions, parsing patterns as terms, 8.4) (in French)
+ * [[CoqDevelopment/CRGTCoq20110706|6 juillet 2011]] (about structured proof scripts, options applying to arguments) (in French)
  * [[CoqDevelopment/CRGTCoq20110414|14 avril 2011]] (about native ints, native arrays, native compilation, numbers library, containers library, ergo decision procedure, other libraries, 8.4)
- * [[CoqDevelopment/CRGTCoq20101217|17 décembre 2010]] (about the Numbers library)
+ * [[CoqDevelopment/CRGTCoq20101217|17 décembre 2010]] (about the Numbers library) (in French)
  * [[http://coq.inria.fr/files/summary-27oct2010.txt|27 octobre 2010]] (ADT interfaces)
- * [[CoqDevelopment/CRGTCoq20100920|20 septembre 2009]]
- * [[CoqDevelopment/CRGTCoq20100426|26 avril 2009]]
- * [[CoqDevelopment/CRADT20100202|2 février 2009]]
- * [[CoqDevelopment/CRGTCoq20100113|13 janvier 2009]]
+ * [[CoqDevelopment/CRGTCoq20100920|20 septembre 2010]]
+ * [[CoqDevelopment/CRGTCoq20100426|26 avril 2010]] (in French)
+ * [[CoqDevelopment/CRADT20100202|2 février 2010]]
+ * [[CoqDevelopment/CRGTCoq20100113|13 janvier 2010]] (in French)
  * [[CoqDevelopment/CRGTCoq20091103|3 novembre 2009]]
- * [[CoqDevelopment/CRADT20090630|30 juin 2009]] (ADT tactiques)
+ * [[CoqDevelopment/CRADT20090630|30 juin 2009]] (ADT tactiques) (in French)
  * [[CoqDevelopment/CRGTCoq20090704|3 juillet 2009]] (ADT equality and termination)
- * [[CoqDevelopment/CRADT20090324|24 mars 2009]] (ADT meeting on automatisation)
+ * [[CoqDevelopment/CRADT20090324|24 mars 2009]] (ADT meeting on automatisation) (in French)
  * [[CoqDevelopment/CRADTCommunication20090323|23 mars 2009]] (discussion sur format de communication avec outils externes)
  * [[CoqDevelopment/CRGTCoq20090323|23 mars 2009]] 
  * [[CoqDevelopment/CRGTCoq20090116|16 janvier 2009]] 
- * [[CoqDevelopment/CRGTCoq20081118|18 novembre 2008]]
- * [[CoqDevelopment/CRADT20081029|29 octobre 2008]] (ADT Kick-off meeting)
- * [[CoqDevelopment/CRGTCoq20081010|10 octobre 2008]]
+ * [[CoqDevelopment/CRGTCoq20081118|18 novembre 2008]] (in French)
+ * [[CoqDevelopment/CRADT20081029|29 octobre 2008]] (ADT Kick-off meeting) (in French)
+ * [[CoqDevelopment/CRGTCoq20081010|10 octobre 2008]] (in French)
 
 = Past roadmap for version 8.4 =
 
