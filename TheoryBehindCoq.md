@@ -47,3 +47,5 @@
 == Others ==
 
  * Why does Coq use inductive types and not [[WTypeInsteadOfInductiveTypes|W-Types]]?
+
+ * Some [[proof theoretic consequences|http://r6.ca/blog/20091101T231201Z.html]] of impredicative Prop.
