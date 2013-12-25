@@ -13,6 +13,7 @@ The next WG will happen end of january/beginning of february. If you intend to p
 If you intend to give a talk, please add your name and title here and any information you'd like to give.
 
  * Arnaud Spiwack: I'll try to give a talk about the new proof engine and how to develop with it.
+ * Enrico Tassi: Short intro to .vi and .aux files. [RFC] .aux files (e.g. API for ltac)
 
 = Talking points =
 If you have suggestions for discussions, questions broad or specific, please elaborate here.
