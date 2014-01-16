@@ -93,7 +93,7 @@ In the longer term, we plan to investigate
 
  * more solid foundations for the different forms of unification used in Coq (for proving and for type inference)
 
- * graphical user interfaces: JEdit-based interfaces (see [[http://paral-itp,lri.fr|Paral-ITP project]]), design of a Coq-GUI communication protocol, miscellaneous extensions of CoqIDE ([[CoqIDEWishes|wish list]])
+ * graphical user interfaces: JEdit-based interfaces (see [[http://paral-itp.lri.fr|Paral-ITP project]]), design of a Coq-GUI communication protocol, miscellaneous extensions of CoqIDE ([[CoqIDEWishes|wish list]])
  
 Under consideration are
 
