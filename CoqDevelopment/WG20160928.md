@@ -19,4 +19,5 @@ If you intend to give a talk, please add your name and title here and any inform
 If you have suggestions for discussions, questions broad or specific, please elaborate here.
 
  * We should review the situation for an alpha release of 8.5 (what's in, what will not be able to be in, schedule).
- * Poll results
+ * Poll results.
+ * Official build environment for win32 and osx
