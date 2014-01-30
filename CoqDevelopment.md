@@ -5,4 +5,4 @@ discuss ongoing developments.
 
 [[CoqDevelopment/NextCoqWG|The next Coq Working Group]] info.
 
- * [[CoqWG]]
+ * [[CoqDevelopment/CoqWG20140131]]
