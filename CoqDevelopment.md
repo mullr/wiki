@@ -1,15 +1,15 @@
-** Coq Working Groups **
+= Coq Working Groups =
 
 Coq developers and users gather once every two months in Paris to
 discuss ongoing developments.
 
 [[CoqDevelopment/NextCoqWG|The next Coq Working Group]] info.
 
-Latest Coq WG's (in inverse chronogical order):
+== Latest Coq WG's (in inverse chronogical order) ==
 
  * [[CoqDevelopment/CoqWG20140131]]
 
-Past GT Coq's (in chronogical order):
+== Past GT Coq's (in chronogical order) ==
 
  * [[CoqDevelopment/CRGTCoq20081010]]
  * [[CoqDevelopment/CRGTCoq20081118]]
