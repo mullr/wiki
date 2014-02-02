@@ -41,7 +41,7 @@ You need to install Coq and either CoqIDE (recommended for beginners) or Proof G
 
 == Coq development ==
 
- * [[CoqDevelopment|Coq Working Groups and developers resources]]
+ * [[CoqDevelopment/Public|Coq Working Groups and developers resources]]
 
  * [[CoqDevelopment/NextCoqWG|The next Coq Working Group]]
 
