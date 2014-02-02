@@ -33,3 +33,5 @@ This is a partial list of of programming languages projects using Coq.  If we've
  * Moez A. Abdel-Gawad (Rice University): I'm using Coq to formalize Domain Theory, as in Cartwright and Parsons's 'Domain Theory: An Introduction' monograph, based upon which I intend to build a domain-theoretic model of nominal OOP (e.g., Java, C#, Scala, ... etc), and prove (also using Coq) certain properties of this model (and, accordingly, certain properties of nominal OO languages).
 
  * Ben Lippmeier (UNSW): Maintains Iron Lambda [[http://iron.ouroborus.net/]], a collection of Coq formalisations of functional languages of increasing complexity.
+
+ * The JSCert team (Imperial College London & INRIA): We have formalized the semantics of JavaScript (ECMAScript 5) in Coq, and extracted a trusted reference interpreter for the langauge, as described in our POPL'14 paper ([[http://dl.acm.org/citation.cfm?id=2535876]]). Our development is available online, please use it and/or contribute: [[http://jscert.org]], [[https://github.com/jscert/jscert]].
