@@ -6,12 +6,16 @@
 
 == Organization ==
 
- * As of November 2013, it has been decided to have working groups every two months (Summer excepted), and announced 1 month and a half in advance.
+ * As of November 2013, it has been decided to have working groups every two months (Summer excepted) in Paris, at the Sophie Germain building. They are announced 1 month and a half in advance.
+
+  [[CoqDevelopment/NextCoqWG|The next Coq Working Group]]
+
  * It has also been decided to have a bug session ruling on pull requests and recent bugs every two months (Summer excepted).
- * There is a page for the organization of the [[CoqDevelopment/NextCoqWG|next working group]].
 
-== Minutes from past Coq development working groups and ADT meetings ==
+== Latest Coq WG's, ADT meetings and Users/Developers meetings (in inverse chronological order) ==
 
+ * [[CoqDevelopment/CoqWG20140131|31 january 2014]] (about latest proof engine API, .vi's and parallel compilation and the poll, videos to be added)
+ * [[http://www.irisa.fr/celtique/pichardie/cuw2014/|21 january 2014]] (at POPL in San Diego, 8.5 summary, poll results, whish lists and demos)
  * [[CoqDevelopment/CRGTCoq20131126|26 novembre 2013]] (about asynchronous interaction, wishes for coq, full type polymorphism and fast projections, enhancing efficiency, opam for coq)
  * [[CoqDevelopment/CRGTCoq20130709|9 juillet 2013]] (about what's going on at this time and what is liable to be part of 8.5)
  * [[CoqDevelopment/CRGTCoq20130214|14 février 2013]] (about native compilation, reals, enhancing conversion, the new coqdoc)
