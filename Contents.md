@@ -58,7 +58,7 @@ Pointers to existing projects involving Coq.
 
 A non-exhaustive list of Coq libraries that are being used by other people than the developers.
 
- * [[http://www.msr-inria.inria.fr/Projects/math-components|SSReflect]]: formalization of mathematical theories, focusing in particular on group theory.
+ * [[http://www.msr-inria.fr/projects/mathematical-components/|SSReflect]]: formalization of mathematical theories, focusing in particular on group theory.
 
  * [[http://flocq.gforge.inria.fr/|Flocq]]: formalization of floating-point computations.
 
