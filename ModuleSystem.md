@@ -5,3 +5,4 @@
  * ModulesNotRecords: Why the previous line does not always stand.
  * ProofTermsConsideredHarmful:  Why using dependent records can be difficult, and sometimes inadvisable.
  * TypeClasses (experimental in Coq 8.2) can also be used to capture mathematical theories, like in IsabelleTheoremProver.  They use parameterized dependent records internally.
+ * ModulesBibliography: Various pointers to modules in systems like Coq.
