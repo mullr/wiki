@@ -15,15 +15,15 @@ At first, I included expressivity in the list above, but It seems to me that for
 
 I think that people mainly considered the methods a)-d) below in this thread. 
 
- a. Recursors/Eliminators of inductive types
+ a. [[#recelim|Recursors/Eliminators of inductive types]]
  a. Guardedness predicate
  a. Well founded relations
  a. Sized Types
 
 These methods make different trade-offs between the properties 1)-4) above. I'll discuss them one by one. I'll end the discussion on each one with a list of pros and cons.
 
-== Recursors/Eliminators of inductive types  ==
 <<Anchor(recelim)>>
+== Recursors/Eliminators of inductive types  ==
 In many proof assistants (e.g. HoTT, Nuprl) this is the fundamental way to use/eliminate an element of an inductive type. Functions defined using these recursors are guaranteed to be terminating. However,
 as Bruno mentioned in the earlier thread, using recursors often does not produce readable code. He gives an example of a function (div2) function that can be concisely written using pattern matching, but becomes ugly when written using recursors. The following link shows both his concise and ugly versions in Coq.
 http://www.cs.cornell.edu/~aa755/div2.html
