@@ -36,6 +36,7 @@ However, as Matthieu pointed out, this translation might incur a run-time overhe
 pros : logical simplicity
 cons: code readability, efficiency?
 
+
 <<Anchor(guarded)>>
 == Guardedness predicate ==
 This is the method currently used in Coq. Aside from being suspected as the root cause of at least 2 bugs discovered in Coq, this method is not compositional. To do guardedness checking, Coq has to unfold all the definitions used in the body of the function, do reductions, e.t.c.
@@ -43,6 +44,7 @@ This makes typechecking extremely slow at times. Also, the unfoldings can cause 
 
 pros: code readability, efficiency?
 cons: logical simplicity (lack of compositionality), code readability while debugging.
+
 
 <<Anchor(wfrel)>>
 == Well founded relations ==
@@ -60,6 +62,7 @@ http://www.cs.cornell.edu/~aa755/div2.html#div2_Fun
 
 pros : logical simplicity, efficient extracts, readability of extract and user-written-code
 cons : readability of the function that goes into kernel (users have to deal with this version in proofs),  may need more work from the users.
+
 
 <<Anchor(sized)>>
 == Sized Types ==
