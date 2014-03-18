@@ -36,13 +36,17 @@ However, as Matthieu pointed out, this translation might incur a run-time overhe
 pros : logical simplicity
 cons: code readability, efficiency?
 
-b) Guardedness predicate: This is the method currently used in Coq. Aside from being suspected as the root cause of at least 2 bugs discovered in Coq, this method is not compositional. To do guardedness checking, Coq has to unfold all the definitions used in the body of the function, do reductions, e.t.c.
+<<Anchor(guarded)>>
+== Guardedness predicate ==
+This is the method currently used in Coq. Aside from being suspected as the root cause of at least 2 bugs discovered in Coq, this method is not compositional. To do guardedness checking, Coq has to unfold all the definitions used in the body of the function, do reductions, e.t.c.
 This makes typechecking extremely slow at times. Also, the unfoldings can cause the code to bloat by orders of magnitude and become impossible to debug. More importantly, minor syntactic changes to some definitions used in the body (while preserving semantics) can cause the type-checker to reject a legitimate function. See an example in the subsection 1.2.1 in [1]. The same subsection also explains why this guardedness predicate is also involved in loss of SN (strong normalization).
 
 pros: code readability, efficiency?
 cons: logical simplicity (lack of compositionality), code readability while debugging.
 
-c) Coq also provides a way to write arbitrary recursive function as long as one can provide a well founded relation and prove that all recursive calls are performed on arguments that are "less" according to the well founded relation. I'm not sure about the official way to achieve this. However, one way is to use the Function construct
+<<Anchor(wfrel)>>
+== Well founded relations ==
+Coq also provides a way to write arbitrary recursive function as long as one can provide a well founded relation and prove that all recursive calls are performed on arguments that are "less" according to the well founded relation. I'm not sure about the official way to achieve this. However, one way is to use the Function construct
 See the 4^th variant in  http://coq.inria.fr/refman/Reference-Manual004.html#sec75
 Again a problem is that the function that actually goes to Coq's kernel is much more complicated than what we write.
 As far as I understand, the only other downside is that a lot of work might be required from the users. A user has to figure out
