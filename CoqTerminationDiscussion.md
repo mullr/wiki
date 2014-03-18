@@ -16,9 +16,9 @@ At first, I included expressivity in the list above, but It seems to me that for
 I think that people mainly considered the methods a)-d) below in this thread. 
 
  a. [[#recelim|Recursors/Eliminators of inductive types]]
- a. Guardedness predicate
- a. Well founded relations
- a. Sized Types
+ a. [[#guarded|Guardedness predicate]]
+ a. [[wfrel|Well founded relations]]
+ a. [[sized|Sized Types]]
 
 These methods make different trade-offs between the properties 1)-4) above. I'll discuss them one by one. I'll end the discussion on each one with a list of pros and cons.
 
@@ -61,7 +61,8 @@ http://www.cs.cornell.edu/~aa755/div2.html#div2_Fun
 pros : logical simplicity, efficient extracts, readability of extract and user-written-code
 cons : readability of the function that goes into kernel (users have to deal with this version in proofs),  may need more work from the users.
 
-d) Sized Types :
+<<Anchor(sized)>>
+== Sized Types ==
 I have many questions about this approach and my description below might have some errors.
 I've mainly read the version in [1].
 The key idea is to consider approximations of an inductive type.
