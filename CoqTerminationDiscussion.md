@@ -17,8 +17,8 @@ I think that people mainly considered the methods a)-d) below in this thread.
 
  a. [[#recelim|Recursors/Eliminators of inductive types]]
  a. [[#guarded|Guardedness predicate]]
- a. [[wfrel|Well founded relations]]
- a. [[sized|Sized Types]]
+ a. [[#wfrel|Well founded relations]]
+ a. [[#sized|Sized Types]]
 
 These methods make different trade-offs between the properties 1)-4) above. I'll discuss them one by one. I'll end the discussion on each one with a list of pros and cons.
 
