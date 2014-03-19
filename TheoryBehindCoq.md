@@ -47,6 +47,7 @@
 == Others ==
 
  * Why does Coq use inductive types and not [[WTypeInsteadOfInductiveTypes|W-Types]]?
+ * A [[CoqTerminationDiscussion|summary]] of the long and informative discussion that took place on the coq-club mailing list when similar bugs were discovered in the termination checkers of both Coq and Agda. 
 
 ---- /!\ '''Edit conflict - other version:''' ----
 
