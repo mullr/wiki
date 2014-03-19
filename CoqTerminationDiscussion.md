@@ -13,14 +13,14 @@ The following properties are desirable of the methods that these proof assistant
 
 One might consider including expressivity in the list above, but it seems that for all the methods considered in this thread, a terminating function expressible by one method can be expressed by another method using a complicated-enough translation. One exception is noted [[#classical|below]].
 
-I think that people mainly considered the methods a)-d) below in this thread. 
+People mainly considered the methods a)-d) below in this thread. 
 
  a. [[#recelim|Recursors/Eliminators of inductive types]]
  a. [[#guarded|Guardedness predicate]]
  a. [[#wfrel|Well founded relations]]
  a. [[#sized|Sized Types]]
 
-These methods make different trade-offs between the properties 1)-4) [[#criteria|above]]. I'll discuss them one by one. I'll end the discussion on each one with a list of pros and cons.
+These methods make different trade-offs between the properties 1)-4) [[#criteria|above]]. We will discuss them one by one. We will end the discussion on each one with a list of pros and cons.
 
 <<Anchor(recelim)>>
 == Recursors/Eliminators of inductive types  ==
@@ -30,7 +30,8 @@ http://www.cs.cornell.edu/~aa755/div2.html
 (replace .html by .v to get the raw Coq code)
 
 Another suggestion was to automatically translate functions written in the "beautiful" pattern matching syntax down to recursors.
-(Cristina Cornes' PhD thesis deals with this translation; probably, there are no known translations of this to English.)
+Cody mentioned that [[#Giménez1995|Giménez1995]] details the translation of a simple guard condition for Coq into recursors. 
+(Cristina Cornes' [[https://who.rocq.inria.fr/Frederic.Blanqui/divers/cornes97phd-toc.pdf |PhD thesis]] also deals with this translation; probably, there are no known translations of this to English.)
 However, as Matthieu pointed out, this translation might incur a run-time overhead. Also, as Cody mentioned, it is unnatural for users (including myself) to write some function and have to prove properties about some other function (obtained after translation). Ideally the user should never have to see the translated version.
 
 pros : logical simplicity <<BR>>
@@ -96,6 +97,8 @@ cons: users might still have to often use other mechanisms like [[#wfrel | Well 
 
 Pierre Courtieu [[https://sympa.inria.fr/sympa/arc/coq-club/2014-03/msg00086.html| says]] that ''Function'' mechanism described [[#wfrel|above]] is just a wrapper around ''Fixpoint'' and it should work when sized types are used for ''Fixpoint''
 
-References:
+== References ==
 
 <<Anchor(Sacchini2011)>> Sacchini2011 :  Jorge Luis Sacchini. On Type-Based Termination and Dependent Pattern Matching in the Calculus of Inductive Constructions. PhD thesis, Ecole  ́ Nationale Sup ́erieure des Mines de Paris, 2011. http://pastel.archives-ouvertes.fr/docs/00/62/24/29/PDF/21076_SACCHINI_2011_archivage.pdf
+
+<<Anchor(Giménez1995)>> Giménez1995 :  Eduarde Giménez. Codifying guarded definitions with recursive schemes. LNCS, 1995. http://link.springer.com/chapter/10.1007%2F3-540-60579-7_3
