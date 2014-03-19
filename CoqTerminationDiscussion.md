@@ -5,7 +5,7 @@ The 2 threads can be found [[https://sympa.inria.fr/sympa/arc/coq-club/2013-12/m
 For the "types as propositions" paradigm to work, we need the types denoting non-trivial logical propositions to NOT have diverging elements.
 So, proof assistants based on the "types as propositions" idea need ways to ensure that certain types are total.
 The following properties are desirable of the methods that these proof assistants make available for writing such terminating functions/proofs
-
+<<Anchor(criteria)>>
  1. Readability of  code
  1. Logical simplicity. Compositionality is very important here 
  1. Efficiency
@@ -20,7 +20,7 @@ I think that people mainly considered the methods a)-d) below in this thread.
  a. [[#wfrel|Well founded relations]]
  a. [[#sized|Sized Types]]
 
-These methods make different trade-offs between the properties 1)-4) above. I'll discuss them one by one. I'll end the discussion on each one with a list of pros and cons.
+These methods make different trade-offs between the properties 1)-4) [[#criteria|above]]. I'll discuss them one by one. I'll end the discussion on each one with a list of pros and cons.
 
 <<Anchor(recelim)>>
 == Recursors/Eliminators of inductive types  ==
@@ -40,7 +40,7 @@ cons: code readability, efficiency?
 <<Anchor(guarded)>>
 == Guardedness predicate ==
 This is the method currently used in Coq. Aside from being suspected as the root cause of at least 2 bugs discovered in Coq, this method is not compositional. To do guardedness checking, Coq has to unfold all the definitions used in the body of the function, do reductions, e.t.c.
-This makes typechecking extremely slow at times. Also, the unfoldings can cause the code to bloat by orders of magnitude and become impossible to debug. More importantly, minor syntactic changes to some definitions used in the body (while preserving semantics) can cause the type-checker to reject a legitimate function. See an example in the subsection 1.2.1 in [1]. The same subsection also explains why this guardedness predicate is also involved in loss of SN (strong normalization).
+This makes typechecking extremely slow at times. Also, the unfoldings can cause the code to bloat by orders of magnitude and become impossible to debug. More importantly, minor syntactic changes to some definitions used in the body (while preserving semantics) can cause the type-checker to reject a legitimate function. See an example in the subsection 1.2.1 in  [[#Sacchini2011|Sacchini2011]]. The same subsection also explains why this guardedness predicate is also involved in loss of SN (strong normalization).
 
 pros: code readability, efficiency?<<BR>>
 cons: logical simplicity (lack of compositionality), code readability while debugging.
@@ -79,14 +79,14 @@ This is probably analogous to the way Coq currently maintains automatically main
 A user just indicates the  decreasing argument of a fix. 
 If the type of that argument is same as the return type, the return type can be tagged to indicate that the function is size-preserving (e.g. map).
 Note that size preserving just means that the output is of "less or equal" size.
-In [1], there is no way to express more precise size-specifications like the fact that the size of append's output is the sum of the sizes of its inputs. 
-(see the discussion after definition 2.1 in [1])
+In [[#Sacchini2011|Sacchini2011]], there is no way to express more precise size-specifications like the fact that the size of append's output is the sum of the sizes of its inputs. 
+(see the discussion after definition 2.1 in [[#Sacchini2011|Sacchini2011]])
 One could opt for a more expressive syntax for sizes (e.g. include operators for addition, maximum), but that might break the completeness of size inference and one of the
 design goals is to not let users mess with size expressions.
 
 Not all the legitimate functions that satisfy the current (unsound) guardedness checker will satisfy the new sized type based typechecker.
 The (internal) syntax of sizes is pretty limited and cannot express very precise size-specifications, as mentioned above. 
-For example, the system in [1] would probably not accept NPeano.gcd:
+For example, the system in [[#Sacchini2011|Sacchini2011]] would probably not accept NPeano.gcd:
 http://coq.inria.fr/stdlib/Coq.Numbers.Natural.Peano.NPeano.html#gcd 
 It can probably infer that ''mod'' is size preserving but that is not enough.
 (Note that it not allowed to look inside the definition of mod, unlike the guardedness based typechecker)
@@ -97,4 +97,5 @@ cons: users might still have to often use other mechanisms like [[#wfrel | Well 
 Pierre Courtieu [[https://sympa.inria.fr/sympa/arc/coq-club/2014-03/msg00086.html| says]] that ''Function'' mechanism described [[#wfrel|above]] is just a wrapper around ''Fixpoint'' and it should work when sized types are used for ''Fixpoint''
 
 References:
-[1] :  Jorge Luis Sacchini. On Type-Based Termination and Dependent Pattern Matching in the Calculus of Inductive Constructions. PhD thesis, Ecole  ́ Nationale Sup ́erieure des Mines de Paris, 2011. http://pastel.archives-ouvertes.fr/docs/00/62/24/29/PDF/21076_SACCHINI_2011_archivage.pdf
+
+<<Anchor(Sacchini2011)>> Sacchini2011 :  Jorge Luis Sacchini. On Type-Based Termination and Dependent Pattern Matching in the Calculus of Inductive Constructions. PhD thesis, Ecole  ́ Nationale Sup ́erieure des Mines de Paris, 2011. http://pastel.archives-ouvertes.fr/docs/00/62/24/29/PDF/21076_SACCHINI_2011_archivage.pdf
