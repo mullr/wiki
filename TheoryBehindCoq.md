@@ -49,12 +49,6 @@
  * Why does Coq use inductive types and not [[WTypeInsteadOfInductiveTypes|W-Types]]?
  * A [[CoqTerminationDiscussion|summary]] of the long and informative discussion that took place on the coq-club mailing list when similar bugs were discovered in the termination checkers of both Coq and Agda. 
 
----- /!\ '''Edit conflict - other version:''' ----
 
- * Some [[proof theoretic consequences|http://r6.ca/blog/20091101T231201Z.html]] of impredicative Prop.
-
----- /!\ '''Edit conflict - your version:''' ----
 
  * Some [[http://r6.ca/blog/20091101T231201Z.html|proof theoretic consequences]] of impredicative Prop.
-
----- /!\ '''End of edit conflict''' ----
