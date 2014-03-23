@@ -5,12 +5,14 @@
 This page is used to organize the next Coq Working Group (in french GT Coq).
 
 = Organisation =
-The next WG will happen end of march/beginning of april. If you intend to participate, go to:
+The next WG will happen end of march/beginning of april: see [[CoqDevelopment/CoqWG20140404]].
 
-  http://doodle.com/5cp59y49xbudmz9r
+## If you intend to participate, go to:
 
-= Talks =
-If you intend to give a talk, please add your name and title here and any information you'd like to give.
+##  http://doodle.com/5cp59y49xbudmz9r
 
-= Talking points =
-If you have suggestions for discussions, questions broad or specific, please elaborate here.
+##= Talks =
+##If you intend to give a talk, please add your name and title here and any information you'd like to give.
+
+##= Talking points =
+##If you have suggestions for discussions, questions broad or specific, please elaborate here.
