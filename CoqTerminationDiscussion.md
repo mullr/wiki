@@ -9,7 +9,8 @@ The following properties are desirable of the methods that these proof assistant
  1. Readability of  code
  1. Logical simplicity. Compositionality is very important here 
  1. Efficiency
- 1. Minimal annotations/proofs required from users.
+ 1. Minimality of annotations/proofs required from users.
+ 1. <<Anchor(criteria5)>>Equational behavior on open terms.
 
 One might consider including expressivity in the list above, but it seems that for all the methods considered in this thread, a terminating function expressible by one method can be expressed by another method using a complicated-enough translation. One exception is noted [[#classical|below]].
 
@@ -20,7 +21,8 @@ People mainly considered the methods a)-d) below in this thread.
  a. [[#wfrel|Well founded relations]]
  a. [[#sized|Sized Types]]
 
-These methods make different trade-offs between the properties 1)-4) [[#criteria|above]]. We will discuss them one by one. We will end the discussion on each one with a list of pros and cons.
+These methods make different trade-offs between the properties 1)-5) [[#criteria|above]]. We will discuss them one by one. We will end the discussion on each one with a list of pros and cons. <<BR>>
+'''(Can some expert please add some comments on how these methods compare on the [[#criteria5|property 5]]) ?)'''
 
 <<Anchor(recelim)>>
 == Recursors/Eliminators of inductive types  ==
