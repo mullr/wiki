@@ -1,4 +1,4 @@
-#acl CoqAdminGroup:read,write,admin,revert,delete CoqDevelopersGroup:read,write
+#acl CoqAdminGroup:read,write,admin,revert,delete CoqDevelopersGroup:read,write PierreBoutillier
 
 Ceci est la page d'accueil de l'espace réservé aux développeurs de Coq. Pour toute information sur l'édition de ces pages, merci de vous référer à la page 
 [[CoqDevelopment/Usage|Usage]].
