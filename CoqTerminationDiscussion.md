@@ -34,7 +34,7 @@ http://www.cs.cornell.edu/~aa755/div2.html
 Another suggestion was to automatically translate functions written in the "beautiful" pattern matching syntax down to recursors.
 Cody mentioned that [[#Giménez1995|Giménez1995]] details the translation of a simple guard condition for Coq into recursors. 
 (Cristina Cornes' [[https://who.rocq.inria.fr/Frederic.Blanqui/divers/cornes97phd-toc.pdf |PhD thesis]] also deals with this translation; probably, there are no known translations of this to English.)
-However, as Matthieu pointed out, this translation might incur a run-time overhead. Also, as Cody mentioned, it is unnatural for users (including myself) to write some function and have to prove properties about some other function (obtained after translation). Ideally the user should never have to see the translated version.
+However, as Matthieu pointed out, this translation might incur a run-time overhead. Also, as Cody mentioned, it is unnatural for users to write some function and have to prove properties about some other function (obtained after translation). Ideally the user should never have to see the translated version.
 
 Pros : logical simplicity <<BR>>
 Cons: code readability, efficiency?
