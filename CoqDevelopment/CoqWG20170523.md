@@ -14,6 +14,8 @@ to participate, go to:
 = Talks =
 
 If you intend to give a talk, please add your name and title here and any information you'd like to give.
+  
+  * Carst Tankink, A Quick jEdit+Coq demo (15min). I'll give a quick demo of the adaptation of Isabelle/jEdit's codebase to work with Coq, to allow asynchronous proof authoring.
 
 = Talking points =
 
