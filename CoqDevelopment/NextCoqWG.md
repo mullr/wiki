@@ -19,4 +19,7 @@ If you intend to give a talk, please add your name and title here and any inform
 
 = Talking points =
 
+  * (Meta)data storage and installation (.glob, .aux, .cm*, .native, .o, .v, .vo, ...)
+  * SDK and precompiled plugins for 8.5
+
 If you have suggestions for discussions, questions broad or specific, please elaborate here.
