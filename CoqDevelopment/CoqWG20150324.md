@@ -21,5 +21,7 @@ If you intend to give a talk, please add your name and title here and any inform
 
   * (Meta)data storage and installation (.glob, .aux, .cm*, .native, .o, .v, .vo, ...)
   * SDK and precompiled plugins for 8.5
+  * Towards a bit more primitive notations for the standard library (e.g. for "existT", "exist", "proj1_sig", etc, for "S", for "eq_rect", for groupoid laws of equality, ...)?
+  * avoiding re-typing ltac bindings at use-time?
 
 If you have suggestions for discussions, questions broad or specific, please elaborate here.
