@@ -5,11 +5,7 @@
 This page is used to organize the next Coq Working Group (in french GT Coq).
 
 = Organisation =
-The next WG will happen end of may/beginning of june. A doodle is available,
-it will close at least two weeks before the chosen date, so if you intend 
-to participate, go to:
-
-  http://doodle.com/tx88gbcw9xr6nk26
+The next WG will happen June 6th at PPS/Sophie Germain
 
 = Talks =
 
