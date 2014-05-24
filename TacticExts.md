@@ -115,7 +115,7 @@ Ltac assert_if_not_exist H :=
 
 '''NB''': A similar {{{rewrite_all}}} has been integrated in Coq >= 8.1beta
 (see file {{{theories/Init/Tactics.v}}}). Moreover, in the release following 8.1beta,
-the newly allowed synax {{{rewrite ... in *}}} permits to define {{{rewrite_all}}}
+the newly allowed syntax {{{rewrite ... in *}}} permits to define {{{rewrite_all}}}
 with a simple {{{repeat rewrite ... in *}}}.
 
 
