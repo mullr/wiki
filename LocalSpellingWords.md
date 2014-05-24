@@ -8956,3 +8956,5 @@ been behave binders decide Decide definitions duplicated entered exact Expand ex
 care carefully Class Clean clean complex recurse recurses
 
 hypothesis
+
+fresh Hint newly
