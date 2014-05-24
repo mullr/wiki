@@ -8954,3 +8954,5 @@ basing because binary branches branching calculus call called classes community 
 been behave binders decide Decide definitions duplicated entered exact Expand expand expanded expert fail fold generalize Goal goal having helper integrated into itself levels local loop make Moreover name ought pattern permits pose previous rather redundant Reference reference release remembers removes repeat replaces shows situation smarter Solution sorted take term terms thanks theories Under under unfolding version was
 
 care carefully Class Clean clean complex recurse recurses
+
+hypothesis
