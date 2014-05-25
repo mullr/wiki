@@ -3,7 +3,7 @@
 <<Anchor(LtacUnderBinders)>>
 === Recursion under binders ===
 
-Using typeclasses, it is possible to recurse under binders.  Here is an example of a tactic that recurses under binders to turn a proof of "A -> B -> C /\ D" into a proof of "A -> B -> C":
+Using typeclasses, it is possible to recurse under binders.  Here is an example of a tactic that recurses under binders to turn a proof of {{{A -> B -> C /\ D}}} into a proof of {{{A -> B -> C}}}:
 {{{#!coq
 Class ret_and_left {T} (arg : T) {R} := make_recur_ret_and_left : R.
 
@@ -25,7 +25,7 @@ Goal forall A B : Prop, (A -> A -> A /\ B) -> True.
 (* fun x' x'0 : A => proj1 (H x' x'0) : A -> A -> A *)
 }}}
 
-'''NB''': In Coq >= 8.5, it will be possible to do this using tactics in terms rather than a separate typeclass for each tactic, and without having to "simpl" at the end:
+'''NB''': In Coq >= 8.5, it will be possible to do this using tactics in terms rather than a separate typeclass for each tactic, and without having to {{{simpl}}} at the end:
 {{{#!coq
 Ltac ret_and_left f :=
   let tac := ret_and_left in
