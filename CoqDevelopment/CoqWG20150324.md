@@ -19,6 +19,7 @@ If you intend to give a talk, please add your name and title here and any inform
   * SDK and precompiled plugins for 8.5
   * Towards a bit more primitive notations for the standard library (e.g. for "existT", "exist", "proj1_sig", etc, for "S", for "eq_rect", for groupoid laws of equality, ...)?
   * avoiding re-typing ltac bindings at use-time?
-  * Update on the migration of web/bugzilla/contribs
+  * Update on the migration of web/bugzilla/contribs, benchmarking tools
+  * release process
 
 If you have suggestions for discussions, questions broad or specific, please elaborate here.
