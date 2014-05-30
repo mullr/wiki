@@ -20,6 +20,6 @@ If you intend to give a talk, please add your name and title here and any inform
   * Towards a bit more primitive notations for the standard library (e.g. for "existT", "exist", "proj1_sig", etc, for "S", for "eq_rect", for groupoid laws of equality, ...)?
   * avoiding re-typing ltac bindings at use-time?
   * Update on the migration of web/bugzilla/contribs, benchmarking tools
-  * release process
+  * release process, bug support policy
 
 If you have suggestions for discussions, questions broad or specific, please elaborate here.
