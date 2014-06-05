@@ -12,7 +12,7 @@ The next WG will happen June 6th at PPS/Sophie Germain
 If you intend to give a talk, please add your name and title here and any information you'd like to give.
 
   * Carst Tankink, A Quick jEdit+Coq demo (15min). I'll give a quick demo of the adaptation of Isabelle/jEdit's codebase to work with Coq, to allow asynchronous proof authoring.
-  * Pierre Boutillier, Review and proposal about Man power organization in Coq. (20min + discussions)
+  * Pierre Boutillier, Review and proposal about Man power organization in Coq. (10min + discussions)
 
 = Talking points =
 
