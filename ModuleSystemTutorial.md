@@ -8,7 +8,7 @@ This tutorial uses unicode characters and hence requires the [[UTF8Module]].
 Require Import utf8.
 }}}
 
-The first step is to write a {{{Module Type}}} in a file that contains the signature of the abstract structure to work from.  This will be the signature of a decidable total order.  A {{{Module Type}}} is just a listing of {{{Parameter}}}s and {{{Axiom}}}s.  In this case we also add a [[Notation]] to make the sytax nicer.
+The first step is to write a {{{Module Type}}} in a file that contains the signature of the abstract structure to work from.  This will be the signature of a decidable total order.  A {{{Module Type}}} is just a listing of {{{Parameter}}}s and {{{Axiom}}}s.  In this case we also add a [[Notation]] to make the syntax nicer.
 
 {{{#!coq
 (* File: DecidableOrder.v
