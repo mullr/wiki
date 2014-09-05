@@ -6,7 +6,7 @@ discuss ongoing developments.
 [[CoqDevelopment/NextCoqWG|The next Coq Working Group]] info.
 
 == Latest Coq WG's (in inverse chronogical order) ==
-
+ * [[CoqDevelopment/CoqWG20140905]]
  * [[CoqDevelopment/CoqWG20140606]]
  * [[CoqDevelopment/CoqWG20140404]]
  * [[CoqDevelopment/CoqWG20140131]]
