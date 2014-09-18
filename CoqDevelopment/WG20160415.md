@@ -16,3 +16,5 @@ If you intend to give a talk, please add your name and title here and any inform
 = Talking points =
 
 If you have suggestions for discussions, questions broad or specific, please elaborate here.
+
+ * We must fix a date for the beta release
