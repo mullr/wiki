@@ -17,4 +17,5 @@ If you intend to give a talk, please add your name and title here and any inform
 
 If you have suggestions for discussions, questions broad or specific, please elaborate here.
 
+ * Stabilization of regression tests, documentation of changes, ...
  * We must fix a date for the beta release
