@@ -19,3 +19,4 @@ If you have suggestions for discussions, questions broad or specific, please ela
 
  * Stabilization of regression tests, documentation of changes, ...
  * We must fix a date for the beta release
+ * Organization of the "meet the Coq devs" event
