@@ -8960,5 +8960,3 @@ hypothesis
 fresh Hint newly
 
 does syntax
-
-ac
