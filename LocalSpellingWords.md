@@ -125,3 +125,5 @@ Boldo
 building
 
 ca
+
+categories
