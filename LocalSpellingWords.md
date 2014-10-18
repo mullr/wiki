@@ -161,3 +161,5 @@ mathematics
 variety
 
 wiki
+
+languages
