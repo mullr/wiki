@@ -159,3 +159,5 @@ fields
 mathematics
 
 variety
+
+wiki
