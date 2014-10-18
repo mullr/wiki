@@ -127,3 +127,5 @@ building
 ca
 
 categories
+
+category
