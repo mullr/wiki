@@ -135,5 +135,3 @@ Advanced
 browse
 
 additional
-
-by
