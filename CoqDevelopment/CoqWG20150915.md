@@ -22,3 +22,4 @@ If you have suggestions for discussions, questions broad or specific, please ela
  * We must fix a date for the beta release
  * Organization of the "meet the Coq devs" event
  * Setting a weekly coqdev lunch?
+ * Migration to new web site
