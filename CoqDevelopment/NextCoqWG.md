@@ -12,6 +12,7 @@ The next WG will happen on Thursday 23th October, 10am to 1pm at [[https://maps.
 If you intend to give a talk, please add your name and title here and any information you'd like to give.
 
  * A Coq opam interface by Guillaume Claret
+ * International evolution of Coq by Yves Bertot
 
 = Talking points =
 
