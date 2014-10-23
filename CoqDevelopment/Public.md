@@ -14,6 +14,9 @@
 
 == Latest Coq WG's, ADT meetings and Users/Developers meetings (in inverse chronological order) ==
 
+ * [[CoqDevelopment/CoqWG20140905|September 9th 2014]]
+ * [[CoqDevelopment/CoqWG20140606|June 6th 2014]]
+ * [[CoqDevelopment/CoqWG20140404|April 4th 2014]]
  * [[CoqDevelopment/CoqWG20140131|31 january 2014]] (about latest proof engine API, .vi's and parallel compilation and the poll, videos to be added)
  * [[http://www.irisa.fr/celtique/pichardie/cuw2014/|21 january 2014]] (at POPL in San Diego, 8.5 summary, poll results, whish lists and demos)
  * [[CoqDevelopment/CRGTCoq20131126|26 novembre 2013]] (about asynchronous interaction, wishes for coq, full type polymorphism and fast projections, enhancing efficiency, opam for coq)
