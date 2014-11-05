@@ -5,3 +5,4 @@
  * JeanMarcNotin
  * HugoHerbelin
  * JeffVaughan
+ * PierreLetouzey
