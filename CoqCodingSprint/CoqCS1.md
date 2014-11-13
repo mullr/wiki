@@ -4,7 +4,7 @@ This page collects useful infos for the participants to the first Coq Coding Spr
 
 == What is a Coding Sprint? ==
 
-A coding sprint is an even that brings together the core developers of Coq
+A coding sprint is an event that brings together the core developers of Coq
 and people willing to understand, improve or extend the system.
 
 == Location ==
