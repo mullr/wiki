@@ -4,7 +4,7 @@ This is a partial list of of programming languages projects using Coq.  If we've
 
  * Mike Hicks (U. Maryland): We've just gotten a paper accepted to TPHOLs that uses Coq to prove the soundness of our POPL result: [[http://www.cs.umd.edu/~mwh/papers/pratikakis08context.html]] Polyvios Pratikakis used the PLClub's metatheory library for this.  We are also working on formalizing some of the proofs for SELinks, ultimately to create a framework for establishing the correctness of various security policy implementations.  There is no information available on this at the moment, but the project page is [[http://www.cs.umd.edu/projects/PL/selinks]].
 
- * Greg Morrisett (Harvard): The Ynot project (see [[http://www.eecs.harvard.edu/~greg/ynot]]) is using Coq, or more properly, extending Coq with support for writing and extracting programs directly in the language. 
+ * Greg Morrisett (Harvard): The Ynot project (see [[http://www.eecs.harvard.edu/~greg/ynot]]) is using Coq, or more properly, extending Coq with support for writing and extracting programs directly in the language. The Rock``Salt project is using Coq for Software-based fault isolation for the x86, as described in a PLDI'14 paper (see [[http://dl.acm.org/citation.cfm?id=2254111]]).
 
  * Zhong Shao (Yale): Starting from our POPL'02 paper on "a type system for certified binaries", we have been applying the Coq proof assistant to formally reason about low-level programs.  This includes work on typed intermediate languages, proof-carrying code, and a large number of program logics for certified assembly programming. We have also used Coq to certify various components of low-level systems software including the OS bootloader, garbage collectors, memory management libraries, thread implementation, and context switching and synchronization primitives. See the FLINT group page [[http://flint.cs.yale.edu]].
 
@@ -34,4 +34,6 @@ This is a partial list of of programming languages projects using Coq.  If we've
 
  * Ben Lippmeier (UNSW): Maintains Iron Lambda [[http://iron.ouroborus.net/]], a collection of Coq formalisations of functional languages of increasing complexity.
 
- * The JSCert team (Imperial College London & INRIA): We have formalized the semantics of JavaScript (ECMAScript 5) in Coq, and extracted a trusted reference interpreter for the langauge, as described in our POPL'14 paper ([[http://dl.acm.org/citation.cfm?id=2535876]]). Our development is available online, please use it and/or contribute: [[http://jscert.org]], [[https://github.com/jscert/jscert]].
+ * Java Card EAL7 certification in 2007 at Gemalto [[http://www.gemalto.com/php/pr_view.php?id=239]].
+
+ * The JSCert team (Imperial College London & INRIA): We have formalized the semantics of Java``Script (ECMAScript 5) in Coq, and extracted a trusted reference interpreter for the langauge, as described in our POPL'14 paper ([[http://dl.acm.org/citation.cfm?id=2535876]]). Our development is available online, please use it and/or contribute: [[http://jscert.org]], [[https://github.com/jscert/jscert]].
