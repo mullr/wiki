@@ -16,3 +16,5 @@ If you intend to give a talk, please add your name and title here and any inform
 = Talking points =
 
 If you have suggestions for discussions, questions broad or specific, please elaborate here.
+
+Policy for pull requests: anonymity required? need for at least two reviews? guaranteeing answering delays?
