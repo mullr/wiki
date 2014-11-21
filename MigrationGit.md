@@ -1,6 +1,6 @@
 = Migrating the coq repository from svn to git =
 
-Authors: Pierre Letouzey, with many other contributors (Enrico, Arnaud, Matthieu, Hugo...).
+Author: Pierre Letouzey, with many other contributors (Enrico, Arnaud, Matthieu, Hugo...).
 
 {{{#!wiki red/solid
 Note : this page is a wiki, please edit it to integrate your suggestions, remarks, criticism.
