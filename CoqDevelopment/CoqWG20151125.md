@@ -5,7 +5,10 @@
 This page is used to organize the next Coq Working Group (in French GT Coq).
 
 = Organisation =
-The date of next WG to be held in Paris is under consideration.
+The next WG to be held in Paris will take place at the beginning of January. 
+The doodle link is:
+
+  [[http://doodle.com/fy6h2bf3i7iqfdrg]]
 
 = Talks =
 
