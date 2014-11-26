@@ -24,6 +24,7 @@ See also the [[GUIWishes|general wish list for graphical user interfaces]].
   * Linux/BSD/MacOS users : use a real input method such as http://code.google.com/p/uim/. Translation files should be pushed upstream soon.
   * Windows users : we haven't worked out a solution yet (I mean one that will not horribly backfire).
  * --(Proofs scripts folding)-- Done by V. Gross in trunk, feedback welcome.
+ * Ltac debugging à la coquille (https://code.google.com/p/coquille/)
  * Print the current number a goals somewhere which is not subject to scrolling (number of goals should be always visible)
  * Displays hypotheses and goal in two separate panes?
  * Search/replace could be a pane at the bottom as in firefox (not a window)
