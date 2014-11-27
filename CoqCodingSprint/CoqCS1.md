@@ -47,6 +47,23 @@ Subscription is required in order to post.
  1. Benjamin Gregoire (*)
  1. Pierre Letouzey (*)
  1. Yann Régis-Gianas (*)
+ 1. Jaap Boender
  1. ...
 
 (*) To be confirmed
+
+== Coding ideas ==
+
+ * Coqide
+   1. Make the goal window display all goals, not only the focused one.  Consider using a notebook widget to let the user look at any goal by changing page.  Think about creative uses for the notebook page labels.
+   1. ...
+
+ * coq_makefile
+   1. Use a real template engine to generate the Makefile, instead of playing with OCaml strings
+   1. ...
+
+ * Canonical Structures
+   1. Take CS inference failures in error messages.  E.g. "typing error... + during type inference this CS inference failed"
+   1. ...
+
+ * ...
