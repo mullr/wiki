@@ -66,4 +66,7 @@ Subscription is required in order to post.
    1. Take CS inference failures in error messages.  E.g. "typing error... + during type inference this CS inference failed"
    1. ...
 
+ * Bench system
+   1. honor branches named like bench/v8.4/this-experiment and publish the report somewhere so that we can have feedback on an experiment without pushing it to the main branch.
+
  * ...
