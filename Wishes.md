@@ -97,6 +97,18 @@ When referring to propositional hypotheses, it would be often convenient to refe
 
 Prune the proof terms produced by tauto/intuition/omega (by removal of unnecessary steps) so that they're shorter and we can use them w/o endanger an arbitrary increase of the size of the proof.
 
+=== Unification ===
+
+In an example like
+
+{{{
+Require Import Vector.
+Goal vect nat (1+n).
+apply cons.
+}}}
+
+It would be nice to have the definition not expanded under the form of a {{{fix}}} in the second goal. Maybe {{{cbn}}} should be used in function expand of unification.ml, or the kernel should directly unfolds a recursive constant with recursive call on the constant name rather than on an anonymous fixpoint.
+
 === The Ltac language ===
 
 Typing L''tac'' (details to be given).
