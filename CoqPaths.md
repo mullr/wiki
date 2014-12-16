@@ -63,3 +63,9 @@ Compiled Coq files (.vo) are aware of their full(/absolute?) Logical name. How a
 
  ||This is the critical problem in presence of a chain of dependant library as {{{-argument -Q ../deps Deps}}} would say to '''coqtop''' include that without telling to coq_makefile this is what you have to take care by '''coqdep''' also need the -Q and don't get it this way. (Thus the only solution is the COQPATH global variable game)||
  ||We may imagine on the opposite make '''coqdep''' (and '''coqdoc''') accepts all '''coqtop''' argument but ignores the majority of them even it is a bit sad!||
+
+ * Requiring a .vo file requires recursively all its dependencies, that are expressed as full logical paths.  Coq searches for the .vo file using the logical
+   path that today it is almost a physical path too, since .vo are installed in theories/ or user-contribs/ following their logical path. 
+
+ * A .vo file is not easy to relocate, since the file is produced by marshaling and there is no way decent to traverse the data and apply a mapping to all 
+   logical names.
