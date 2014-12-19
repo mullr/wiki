@@ -48,7 +48,7 @@ Subscription is required in order to post.
  1. Pierre Letouzey (*)
  1. Yann Régis-Gianas (*)
  1. Jaap Boender
- 1. ...
+ 1. Carst Tankink (*)
 
 (*) To be confirmed
 
