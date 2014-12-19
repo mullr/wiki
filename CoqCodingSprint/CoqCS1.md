@@ -56,6 +56,7 @@ Subscription is required in order to post.
 
  * Coqide
    1. Make the goal window display all goals, not only the focused one.  Consider using a notebook widget to let the user look at any goal by changing page.  Think about creative uses for the notebook page labels.
+   1. Give more structure to the internal representation of document to confine failures to sub-branches.  Like an unfinished branch started with a bullet or {.  This way Coq could continue checking the rest of the proof.
    1. ...
 
  * coq_makefile
