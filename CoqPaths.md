@@ -36,13 +36,13 @@ There is a path called COQLIB that represents where Coq stuff are installed. It 
  Same remark as above.
  ||There is also an idea of allowing the syntax {{{COQPATH="/toto=Foo;tata=Bar"}}} to give logical path Foo to /toto and Bar to tata instead of the empty one.||
 
- * On '''coqtop''' command line {{{-I path}}} includes ''path'' in the OCaml world. (Nothing in the Coq world)
+ * On '''coqtop''' command line {{{-I path}}} includes ''path'' in the OCaml world. (Nothing in the Coq world, '''''this is a change w.r.t. coq v8.4''''', people porting from v8.4 should replace -I foo by -Q foo "" in there project files and regenerate makefiles)
 
- * On '''coqtop''' command line {{{-Q path Name}}} includes ''path'' in the coq world with the logical prefix Name. (nothing in the OCaml world) (TODO : if {{{-Q . ""}}} works is unclear)
+ * On '''coqtop''' command line {{{-Q path Name}}} includes ''path'' in the coq world with the logical prefix Name. (nothing in the OCaml world, '''''new in coq v8.5''''') (TODO : if {{{-Q . ""}}} works is unclear)
 
  Remember that subdirs are there but in their namespaces.
 
- * On '''coqtop''' command line {{{-R path Name}}} recursively includes ''path'' in the coq world with logical prefix Name. (Nothing in the OCaml world)
+ * On '''coqtop''' command line {{{-R path Name}}} recursively includes ''path'' in the coq world with logical prefix Name. (Nothing in the OCaml world, '''''is this a change w.r.t. coq v8.5?''''')
 
 == Namespace awareness ==
 
