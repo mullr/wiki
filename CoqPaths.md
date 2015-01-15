@@ -26,7 +26,7 @@ There is a path called COQLIB that represents where Coq stuff are installed. It 
  * COQLIB/plugins is __recursively__ included in Coq world with logical prefix Coq. It is also recursively included in OCaml world.
  * COQLIB/user-contrib is included in Coq world with no logical path. It is also recursively included in OCaml world.
  This is where {{{make install}}} of '''coq_makefile''' install stuff.
- ||There are discussion about not recursively include it in the OCaml world but making coq_makefile install OCaml stuff in a flat directory COQLIB/user-contrib-plugins. This would have the benefit to illustrate on the file system that 2 independently distributed myplugin.cmxs will destroy everybody Coq installation. The opposite proposal is to implement inside Coq namespaces for OCaml but no realistic way to make OCaml load both super/myplugin.cmxs and great/myplugin.cmxs has been found.||
+ ||There are discussions about not recursively include it in the OCaml world but making coq_makefile install OCaml stuff in a flat directory COQLIB/user-contrib-plugins. This would have the benefit to illustrate on the file system that 2 independently distributed myplugin.cmxs will destroy everybody Coq installation. The opposite proposal is to implement inside Coq namespaces for OCaml but no realistic way to make OCaml load both super/myplugin.cmxs and great/myplugin.cmxs has been found.||
 
  * for i in $XDG_DATA_DIRS; $i/coq are included with no logical prefix. They are also recursively included in OCaml world.
  This is where {{{make userinstall}}} of coq_makefile can install stuff.
@@ -36,13 +36,13 @@ There is a path called COQLIB that represents where Coq stuff are installed. It 
  Same remark as above.
  ||There is also an idea of allowing the syntax {{{COQPATH="/toto=Foo;tata=Bar"}}} to give logical path Foo to /toto and Bar to tata instead of the empty one.||
 
- * On '''coqtop''' command line {{{-I path}}} includes ''path'' in the OCaml world. (Nothing in the Coq world, '''''this is a change w.r.t. coq v8.4''''', people porting from v8.4 should replace -I foo by -Q foo "" in there project files and regenerate makefiles)
+ * On '''coqtop''' command line {{{-I path}}} includes ''path'' in the OCaml world. (Nothing in the Coq world, '''''this is a change w.r.t. coq v8.4''''', people porting from v8.4 should replace -I foo by -Q foo "" in their project files and regenerate makefiles, and keep -I foo for OCaml files if any. To reduce risks of overloading when installed in concurrency with files from other projects, it is even recommended to use -Q foo Name for some appropriate root Name.)
 
- * On '''coqtop''' command line {{{-Q path Name}}} includes ''path'' in the coq world with the logical prefix Name. (nothing in the OCaml world, '''''new in coq v8.5''''') (TODO : if {{{-Q . ""}}} works is unclear)
+ * On '''coqtop''' command line {{{-Q path Name}}} includes ''path'' in the coq world with the logical prefix Name. (Nothing in the OCaml world, '''''new in coq v8.5''''')
 
- Remember that subdirs are there but in their namespaces.
+ Remember that subdirectories of ''path'' are visible using a qualified name.
 
- * On '''coqtop''' command line {{{-R path Name}}} recursively includes ''path'' in the coq world with logical prefix Name. (Nothing in the OCaml world, '''''is this a change w.r.t. coq v8.5?''''')
+ * On '''coqtop''' command line {{{-R path Name}}} recursively includes ''path'' in the coq world with logical prefix Name. (Nothing in the OCaml world, which is a change w.r.t. coq v8.4.)
 
 == Namespace awareness ==
 
@@ -59,7 +59,7 @@ Compiled Coq files (.vo) are aware of their full(/absolute?) Logical name. How a
 == More facts ==
  * There must be mention that relying on file system semantic is fragile. Especially when we have in mind that, by default, MacOS HFS+ is case aware but case insensitive and that you cannot count on it to distinguish List and list!
 
- * '''Coq_makefile''' overload even more -R and -Q command line arguments. They mean to it "the paths you mention are part of the current development" and for example {{{make clean}}} cleans the mention physical paths. Logical paths are use to infer how to make the doc, where to install the vo, etc ...
+ * '''Coq_makefile''' overloads even more -R and -Q command line arguments. They mean to it "the paths you mention are part of the current development" and for example {{{make clean}}} cleans the mention physical paths. Logical paths are use to infer how to make the doc, where to install the vo, etc ...
 
  ||This is the critical problem in presence of a chain of dependant library as {{{-argument -Q ../deps Deps}}} would say to '''coqtop''' include that without telling to coq_makefile this is what you have to take care by '''coqdep''' also need the -Q and don't get it this way. (Thus the only solution is the COQPATH global variable game)||
  ||We may imagine on the opposite make '''coqdep''' (and '''coqdoc''') accepts all '''coqtop''' argument but ignores the majority of them even it is a bit sad!||
