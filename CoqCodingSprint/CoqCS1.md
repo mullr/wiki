@@ -9,13 +9,7 @@ and people willing to understand, improve or extend the system.
 
 == Location ==
 
-The coding sprint will take place at the [[http://www.inria.fr/centre/sophia/|Sophia-Antipolis Inria center]] [[https://www.google.com/maps/d/edit?mid=z_p9KiH3VmxM.kVW1EdpDBjHU|Annotated map]].
-
-The closest airport is the one of [[http://www.nice.aeroport.fr/|Nice(NCE)]].
-
-The closest town, well connected by bus, is [[http://en.wikipedia.org/wiki/Antibes|Antibes]].  [[http://www.envibus.fr/plan/Secteur_Antibes_Vallauris_a_partir_du_04_Mai.pdf|Bus map]].
-
-Additional travel/accommodation infos will be provided.
+The coding sprint will take place at the Inria Center in Sophia-Antipolis ([[https://team.inria.fr/marelle/venue/|how to reach the Inria center]], [[https://team.inria.fr/marelle/accomodation-information/|accommodation infos]]).
 
 == Program ==
 
