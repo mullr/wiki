@@ -14,6 +14,7 @@
 
 == Latest Coq WG's, ADT meetings and Users/Developers meetings (in inverse chronological order) ==
 
+ * [[CoqDevelopment/CoqWG20150106|January 6th 2015]] (about a parametricity plugin, naming of hypotheses, 8.5, ...)
  * [[CoqDevelopment/CoqWG20141023|October 23th 2014]] (about international collaborations, opam packaging, 8.5, ...)
  * [[CoqDevelopment/CoqWG20140905|September 9th 2014]] (about universes, projections, packaging, existential variables, simpl and cbn)
  * [[CoqDevelopment/CoqWG20140606|June 6th 2014]] (about JEdit+Coq, performance issues, tactic interfaces, ...)
