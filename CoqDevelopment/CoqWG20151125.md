@@ -14,3 +14,5 @@ end of march, the framadate link is:
 = Talks and talking points =
 
 Feel free to add any talk proposals/points you'd like discuss here.
+
+ 1. Shall we support OPAM and how (Enrico can prepare the list of issues to be discussed)
