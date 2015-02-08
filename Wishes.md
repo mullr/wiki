@@ -87,7 +87,21 @@ It should wait for falling in one of the given n-ary clauses.
 
 === Injection ===
 
-Axiom K is so weak and its benefit so important that it should be used as much as possible. For instance, "injection" could be able to split dependent equalities instead of keeping them under the form (exists P x p) = (exists P y q). One would then obtain "H : x = y" and "H': p = eq_rect_r P q H" (with good notations for eq_rect_r, the second equations could look say as "p = {q}_H").
+Shouldn't injection turn equations of the form "(exists P x p) = (exists P y q)" into "H : x = y" and "H': p = rew H in q" instead of keeping them
+as elements of sigma-types which cannot be rewritten as such?
+
+Alternatively, shouldn't rewriting be able to rewrite H:(exists P x p) = (exists P y q) in subterms of the form "Q x" or "R p", where x and p do not occur as part of an exists expression?
+
+=== Discriminate ===
+
+Should be able to work on heterogenous equalities as in:
+
+{{{
+Require Import Vector Eqdep.
+Goal forall (a n : nat) (l : t nat n), eq_dep nat (t nat) 0 (nil nat) (S n) (cons nat a n l) -> False.
+intros * H.
+discriminate H.
+}}}
 
 === Referring to hypotheses by type ===
 
