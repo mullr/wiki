@@ -31,7 +31,7 @@ Then, type `Check True.` and use the menu "Navigation", "Forward" to get Coq to 
 
 In a nutshell:
 
-||<rowstyle="background-color: #FFFFE0;"> `sudo apt-get install ocaml ocaml-native-compiler camlp5 liblablgtk2-ocaml-dev libgtk2.0-dev` ||
+||<rowstyle="background-color: #FFFFE0;"> `sudo apt-get install ocaml ocaml-native-compiler camlp5 liblablgtk2-ocaml-dev liblablgtksourceview2-ocaml-dev libgtk2.0-dev` ||
 
 Packages required for building Coq:
  * '''GNU Make => 3.81''' (package "gnu-make")
