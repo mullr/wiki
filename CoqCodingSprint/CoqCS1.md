@@ -64,4 +64,9 @@ Subscription is required in order to post.
  * Bench system
    1. honor branches named like bench/v8.4/this-experiment and publish the report somewhere so that we can have feedback on an experiment without pushing it to the main branch.
 
+ * Improving Search
+   1. finding theorems that fit a pattern thanks to type classes, canonical structures, or modulo iota-reduction...
+   1. Improving display mechanism: trigger "Set Printing All" only for a sub-expression given by a pattern (using the pattern language).
+   1. Invent a "search" that works for tactics: search the patterns used in the tactic, or use patterns given by the user.
+
  * ...
