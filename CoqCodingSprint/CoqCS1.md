@@ -69,4 +69,7 @@ Subscription is required in order to post.
    1. Improving display mechanism: trigger "Set Printing All" only for a sub-expression given by a pattern (using the pattern language).
    1. Invent a "search" that works for tactics: search the patterns used in the tactic, or use patterns given by the user. ([[http://staff.computing.dundee.ac.uk/katya/ML4PG/|related work]])
 
+ * Developers manual
+   1. Enrich the document started by Wojciech Jedynak [[https://github.com/wjzz/Coq-Developers-Manual/releases/download/0.1/devman.pdf]],
+   [[https://github.com/wjzz/Coq-Developers-Manual|github]].
  * ...
