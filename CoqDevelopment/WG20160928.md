@@ -14,3 +14,5 @@ on march 24th.
 Feel free to add any talk proposals/points you'd like discuss here.
 
  1. Shall we support OPAM and how
+ 2. Arthur Charguéraud. "The library versioning problem" (5 min + discussion).
+ 3. Arthur Charguéraud. "Modernizing tactic programming: a case study" (15 min + discussion).
