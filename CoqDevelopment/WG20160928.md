@@ -13,6 +13,8 @@ on march 24th.
 
 Feel free to add any talk proposals/points you'd like discuss here.
 
- 1. Shall we support OPAM and how
+ 1. Do we support OPAM and how
+ 1. Can we make a -debug version of Coq easily installable/prebuilt? (traces are nice)
+ 1. Native compute & prebuilt .cmxs is non-opam scenarios
  2. Arthur Charguéraud. "The library versioning problem" (5 min + discussion).
  3. Arthur Charguéraud. "Modernizing tactic programming: a case study" (15 min + discussion).
