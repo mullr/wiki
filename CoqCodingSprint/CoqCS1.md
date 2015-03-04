@@ -77,6 +77,7 @@ Subscription is required in order to post.
    1. decouple the prelude from the tactics
 
  * Notation
-   1. fine grained control on enabled notations
+   1. fine grained control on enabled notations and coercions
+   1. control notation/implicits/coercions display on a sub term
 
  * ...
