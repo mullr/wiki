@@ -72,4 +72,8 @@ Subscription is required in order to post.
  * Developers manual
    1. Enrich the document started by Wojciech Jedynak [[https://github.com/wjzz/Coq-Developers-Manual/releases/download/0.1/devman.pdf]],
    [[https://github.com/wjzz/Coq-Developers-Manual|github]].
+ 
+ * Tactics
+   1. decouple the prelude from the tactics
+
  * ...
