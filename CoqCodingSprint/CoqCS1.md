@@ -76,4 +76,7 @@ Subscription is required in order to post.
  * Tactics
    1. decouple the prelude from the tactics
 
+ * Notation
+   1. fine grained control on enabled notations
+
  * ...
