@@ -71,7 +71,8 @@ Subscription is required in order to post.
 
  * Developers manual
    1. Enrich the document started by Wojciech Jedynak [[https://github.com/wjzz/Coq-Developers-Manual/releases/download/0.1/devman.pdf]],
-   [[https://github.com/wjzz/Coq-Developers-Manual|github]].
+      [[https://github.com/wjzz/Coq-Developers-Manual|github]].
+   1. Write down the policies (a real document): how to submit code to coq, how to submit a contrib, how opam packages should be written...
  
  * Tactics
    1. decouple the prelude from the tactics
