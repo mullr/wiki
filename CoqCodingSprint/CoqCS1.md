@@ -81,4 +81,7 @@ Subscription is required in order to post.
    1. fine grained control on enabled notations and coercions
    1. control notation/implicits/coercions display on a sub term
 
+ * Stdlib
+   1. uniform names/notations see [[https://coq.inria.fr/bugs/show_bug.cgi?id=4110|Bug 4110]]
+
  * ...
