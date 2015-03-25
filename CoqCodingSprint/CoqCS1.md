@@ -43,6 +43,7 @@ Subscription is required in order to post.
  1. Yann Régis-Gianas (*)
  1. Jaap Boender
  1. Carst Tankink (*)
+ 1. Arthur Charguéraud
 
 (*) To be confirmed
 
