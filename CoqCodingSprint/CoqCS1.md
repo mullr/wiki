@@ -20,7 +20,7 @@ The coding sprint will take place at the Inria Center in Sophia-Antipolis ([[htt
 For organization purposes we require the participants to register (free of charge) by following these two steps:
 
  1. subscribe to the [[https://sympa.inria.fr/sympa/info/coq-coding-sprint|coordination mailing list]]
- 2. post a [[mailto:coq-coding-sprint@inria.fr?subject=REGISTER|message with subject REGISTER]] and write in the body of the message a few lines draft plan of what the participant would like to work on during the sprint.
+ 2. post a [[mailto:coq-coding-sprint@inria.fr?subject=REGISTER|message with subject REGISTER]].  In case you already have an project in mind, please include a short description of it in the registration email.
 
 The mailing list is also the preferred channel to contact the organizers.
 Subscription is required in order to post.
