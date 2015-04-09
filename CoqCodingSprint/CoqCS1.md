@@ -39,6 +39,8 @@ Subscription is required in order to post.
  1. Yann Régis-Gianas (*)
  1. Jaap Boender
  1. Arthur Charguéraud
+ 1. Nicolas Magaud
+ 1. Gabriel Scherer
 
 (*) To be confirmed
 
