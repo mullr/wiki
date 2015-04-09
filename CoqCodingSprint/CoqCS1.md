@@ -41,7 +41,7 @@ Subscription is required in order to post.
  1. Arthur Charguéraud
  1. Nicolas Magaud
  1. Gabriel Scherer
- 1. Strub, Pierre-Yves
+ 1. Pierre-Yves Strub
 
 (*) To be confirmed
 
