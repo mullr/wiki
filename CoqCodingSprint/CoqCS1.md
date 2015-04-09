@@ -38,47 +38,44 @@ Subscription is required in order to post.
  1. Pierre Letouzey (*)
  1. Yann Régis-Gianas (*)
  1. Jaap Boender
- 1. Carst Tankink (*)
  1. Arthur Charguéraud
 
 (*) To be confirmed
 
 == Coding ideas ==
 
- * Coqide
+ * coqide:
    1. Make the goal window display all goals, not only the focused one.  Consider using a notebook widget to let the user look at any goal by changing page.  Think about creative uses for the notebook page labels.
    1. Give more structure to the internal representation of document to confine failures to sub-branches.  Like an unfinished branch started with a bullet or {.  This way Coq could continue checking the rest of the proof.
-   1. ...
+   1. Add a "quick compile" button, as in coqc -quick
 
- * coq_makefile
-   1. Use a real template engine to generate the Makefile, instead of playing with OCaml strings
-   1. ...
+ * tools:
+   1. Coq_makefile: use a real template engine to generate the Makefile, instead of playing with OCaml strings.
+   1. coqobjinfo (like ocamlobjinfo) reusing some code from votour to get infos about a .vo or .vio file
 
- * Canonical Structures
-   1. Take CS inference failures in error messages.  E.g. "typing error... + during type inference this CS inference failed"
-   1. ...
+ * type inference:
+   1. Print canonical structures inference failures in error messages.  E.g. "typing error... + during type inference this CS inference failed"
 
- * Bench system
+ * bench system:
    1. honor branches named like bench/v8.4/this-experiment and publish the report somewhere so that we can have feedback on an experiment without pushing it to the main branch.
+   1. fix "coqc -quick -time" [[https://coq.inria.fr/bugs/show_bug.cgi?id=3934|Bug 3934]]
 
- * Improving Search
+ * improving Search:
    1. finding theorems that fit a pattern thanks to type classes, canonical structures, or modulo iota-reduction...
    1. Improving display mechanism: trigger "Set Printing All" only for a sub-expression given by a pattern (using the pattern language).
    1. Invent a "search" that works for tactics: search the patterns used in the tactic, or use patterns given by the user. ([[http://staff.computing.dundee.ac.uk/katya/ML4PG/|related work]])
 
- * Developers manual
+ * developers manual:
    1. Enrich the document started by Wojciech Jedynak [[https://github.com/wjzz/Coq-Developers-Manual/releases/download/0.1/devman.pdf]],
       [[https://github.com/wjzz/Coq-Developers-Manual|github]].
-   1. Write down the policies (a real document): how to submit code to coq, how to submit a contrib, how opam packages should be written...
+   1. Write down the policies (a real document): how to submit code to Coq, how to submit a contrib, how opam packages should be written...
  
- * Tactics
+ * tactics:
    1. decouple the prelude from the tactics
 
- * Notation
+ * Notation:
    1. fine grained control on enabled notations and coercions
    1. control notation/implicits/coercions display on a sub term
 
- * Stdlib
+ * stdlib:
    1. uniform names/notations see [[https://coq.inria.fr/bugs/show_bug.cgi?id=4110|Bug 4110]]
-
- * ...
