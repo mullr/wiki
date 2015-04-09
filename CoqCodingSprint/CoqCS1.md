@@ -41,6 +41,7 @@ Subscription is required in order to post.
  1. Arthur Charguéraud
  1. Nicolas Magaud
  1. Gabriel Scherer
+ 1. Strub, Pierre-Yves
 
 (*) To be confirmed
 
@@ -54,6 +55,7 @@ Subscription is required in order to post.
  * tools:
    1. Coq_makefile: use a real template engine to generate the Makefile, instead of playing with OCaml strings.
    1. coqobjinfo (like ocamlobjinfo) reusing some code from votour to get infos about a .vo or .vio file
+   1. make it possible to hide all support files (e.g. .glob files) to make directory listing and file selection/auto-completion operation simpler.  (comment: very much in the spirit of what .coq-native/ does for native_compute files).
 
  * type inference:
    1. Print canonical structures inference failures in error messages.  E.g. "typing error... + during type inference this CS inference failed"
