@@ -13,11 +13,7 @@ The coding sprint will take place at the Inria Center in Sophia-Antipolis ([[htt
 
 == Program ==
 
-TBA, very likely to include a couple of tutorials on
-
- 1. The architecture of the system.
- 2. How to write a plugin.
- 3. How to write a tactic.
+[[attachment:schedule-coqcs1.pdf| Tentative schedule]]
 
 == Registration ==
 
