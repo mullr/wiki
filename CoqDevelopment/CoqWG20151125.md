@@ -6,18 +6,14 @@ This page is used to organize the next Coq Working Group (in French GT Coq).
 
 = Organization =
 
-The next Coq Working Group will take place at Sophie Germain, PPS on the 3rd floor,
-on march 24th, at 10am.
+The next Coq Working Group will take place between the 11th and 13th of may at
+Sophie Germain, PPS on the 3rd floor. The link for choosing a date:
+
+  https://framadate.org/cgp8e7h1br1f5yuy
 
 = Schedule =
 
- * 10:10 Hugo on opam + discussion
- * 11:10 Arthur Charguéraud: The library versioning problem (5 min + discussion).
- * 11:30 Arthur Charguéraud: Modernizing tactic programming: a case study (15 min + discussion).
- * 12:00 Miscellaneous points
-   * Short report on Jenkins for Coq (Maxime)
-   * Can we make a -debug version of Coq easily installable/prebuilt? (traces are nice) (Enrico)
-   * Native compute & prebuilt .cmxs in non-opam scenarios (Enrico)
-   * Summary of things to do and release schedule for 8.5 beta2, 8.5 beta3 (Hugo)
  * 13:00 Lunch at the pizzeria
  * 14:30 Debugging session
+
+= Talking points =
