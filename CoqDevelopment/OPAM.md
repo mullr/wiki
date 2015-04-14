@@ -84,5 +84,3 @@ Things that have been proposed, some of them already implemented
     * PROS: max flexibility
 
     * CONS: no code yet, how do we install the wrapper?
-
-    Enrico: I think an idea of Thomas could make this last option the best one, I'm elaborating in [[https://coq.inria.fr/cocorico/CoqDevelopment/OpamCoqShell|OpamCoqShell]]
