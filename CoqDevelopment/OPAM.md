@@ -30,6 +30,8 @@ I take the freedom to rank problems into the more urgent, and the ones I (Enrico
 
  1. distributing the contribs that are not alive (the one alive are distributed by their authors using the same mechanism)
 
+ 1. an opam root always bundles an ocaml compiler and this helps setting up native_compute (it just works)
+
 = The tool =
 OPAM, what offers and at which price.  
 
