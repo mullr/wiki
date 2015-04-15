@@ -45,6 +45,7 @@ OPAM, what offers and at which price.
  1. complexity of dependency management exposed to the user
  1. compilation time
  1. not for windows (not in time for 8.5, maybe later)
+ 1. not a complete toolchain (the C compiler needs to be in any case installed in the host system for .ml plugins)
 
 === opinions: should we adopt it? ===
 
@@ -84,3 +85,13 @@ Things that have been proposed, some of them already implemented
     * PROS: max flexibility
 
     * CONS: no code yet, how do we install the wrapper?
+
+=== related proposals ===
+
+ 1. The OSX bundle includes also an opam root
+
+    * PROS: best of both worlds (pre compiled environment, extensible via opam)
+ 
+    * CONS: a .app/ directory is read only and .opam/ roots are not relocatable
+
+    Enrico: I think the following "hack" is worth trying  The bundled OPAM root is built in /Library/coq-$VERSION/opam (i.e. a dir not depending on the user name); such root is then shipped as a .tgz inside the .app bundle; the startup script in the .app/ bundle untars ([[http://stackoverflow.com/questions/1517183/is-there-any-graphical-sudo-for-mac-os-x|using sudo]]) the opam root if not already there and starts coq from the opam root (eval `opam config env`; coqide).  The user willing to add opam packages jumps to /Library/coq-$VERSION/opam and calls opam via sudo.  The drawback is that one has, in the .app/ a tarball that uses some space (but also allows one to restart from scratch by erasing the dir in /Library).
