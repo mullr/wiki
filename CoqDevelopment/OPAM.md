@@ -20,17 +20,19 @@ I take the freedom to rank problems into the more urgent, and the ones I (Enrico
 
    Today hard coded in the bench system.
 
-== Maybe problems in the (near) future, desiderata, commodities ==
-
  1. extensions depending on extensions depending on extensions...
 
-   There are a few already.  "Soon" ssreflect will be fragmented into ~ 10 smaller libraries.
+   There are a few already, e.g. the Plouffe package depends on Coquelicot, which depends on Ssreflect. I (Guillaume) have a proof that depends on Flocq, Ssreflect, Coquelicot, Mathcomp, Interval, Gappa, and Why3; this is getting painful for the user. "Soon" Ssreflect will be fragmented into ~ 10 smaller libraries.
+
+== Maybe problems in the (near) future, desiderata, commodities ==
 
  1. standardize the way one distributes/installs an extension (ml or not) for Coq.
 
  1. distributing the contribs that are not alive (the one alive are distributed by their authors using the same mechanism)
 
  1. easy to make coq depend on ocamlc for native_compute
+
+ 1. make external libraries as easy to install as the standard library
 
 = The tool =
 OPAM, what offers and at which price.  
@@ -39,6 +41,7 @@ OPAM, what offers and at which price.
 
  1. clean environment compatible with OCaml's idiosyncrasies (same version of the compiler for all linked files) and Coq's (same coqtop binary for all .cmxs and .vo linked)
  1. handling dependencies between coq and extensions
+ 1. handling dependencies between extensions
  1. low cost of packaging (especially extensions built using coq_makefile)
 
 === bad ===
@@ -48,10 +51,13 @@ OPAM, what offers and at which price.
  1. compilation time
  1. not for windows (not in time for 8.5, maybe later)
  1. not a complete toolchain (the C compiler needs to be in any case installed in the host system for .ml plugins)
+ 1. does not interact with system-level package managers (e.g. Debian)
 
 === opinions: should we adopt it? ===
 
  1. Enrico: no real alternative tool (esp. handling the specificities of ocaml); complexity for the user can be lowered in many ways (extra work, but possible); compilation time not a problem for the regular user (a regular user does not install coq every day).  In short the problems it solves are more than the ones it creates (assuming we use opam >= 1.2, lower versions are too broken).
+
+ 1. Guillaume: not a panacea, but still much better than not having a package manager.
 
 = Proposals so far =
 Things that have been proposed, some of them already implemented
