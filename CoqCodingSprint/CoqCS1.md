@@ -68,7 +68,7 @@ Subscription is required in order to post.
    1. fix "coqc -quick -time" [[https://coq.inria.fr/bugs/show_bug.cgi?id=3934|Bug 3934]]
 
  * improving Search:
-   1. finding theorems that fit a pattern thanks to type classes, canonical structures, or modulo iota-reduction...
+   1. finding theorems that fit a pattern thanks to type classes, canonical structures, or modulo iota-reduction, or delta steps (see also [[https://coq.inria.fr/bugs/show_bug.cgi?id=3904|#3940]])
    1. Improving display mechanism: trigger "Set Printing All" only for a sub-expression given by a pattern (using the pattern language).
    1. Invent a "search" that works for tactics: search the patterns used in the tactic, or use patterns given by the user. ([[http://staff.computing.dundee.ac.uk/katya/ML4PG/|related work]])
 
