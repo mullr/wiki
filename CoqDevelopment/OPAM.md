@@ -88,6 +88,8 @@ Things that have been proposed, some of them already implemented
 
     * CONS: no code yet, how do we install the wrapper?
 
+      A proof of concept is there: [[https://github.com/gares/opam-coq-shell|opam-coq-shell]]
+
 === related proposals ===
 
  1. The OSX bundle includes also an opam root
