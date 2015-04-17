@@ -45,6 +45,7 @@ Subscription is required in order to post.
  1. Jason Gross
  1. Assia Mahboubi
  1. Arnaud Spiwack
+ 1. Pierre-Marie Pédrot (*)
 
 (*) To be confirmed
 
