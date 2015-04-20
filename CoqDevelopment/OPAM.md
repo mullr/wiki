@@ -1,7 +1,7 @@
 Page to sum up the discussions about OPAM.  It may be incomplete.  Feel free to fill in but please don't change the structure of the page that is meant to drive discussion.
 
 = Problems of today we want to solve via a package manager =
-This are problems encountered by the Coq users and developers we want to tackle, not problems of OPAM in one of its declinations.
+These are problems encountered by the Coq users and developers we want to tackle, not problems of OPAM in one of its declinations.
 I take the freedom to rank problems into the more urgent, and the ones I (Enrico) consider less urgent (no matter if a solution for one is also a solution for another).
 
  1. regular user installing Coq.
@@ -10,7 +10,7 @@ I take the freedom to rank problems into the more urgent, and the ones I (Enrico
 
  1. regular user installing an ml extension of Coq.  
 
-   This problem affects all users.  If one is lucky the bundle (as above) ships all the files needed in order to compile the extension (will be the sase in 8.5 for windows, don't know for mac), but compilation can still fail in many ways (upgrade of OCaml between Coq and plugin compilation, wrong paths or env variables).
+   This problem affects all users.  If one is lucky the bundle (as above) ships all the files needed in order to compile the extension (will be the same in 8.5 for windows, don't know for mac), but compilation can still fail in many ways (upgrade of OCaml between Coq and plugin compilation, wrong paths or env variables).
 
  1. people distributing extensions.  
 
@@ -28,7 +28,7 @@ I take the freedom to rank problems into the more urgent, and the ones I (Enrico
 
  1. standardize the way one distributes/installs an extension (ml or not) for Coq.
 
- 1. distributing the contribs that are not alive (the one alive are distributed by their authors using the same mechanism)
+ 1. distributing the contribs that are not alive (the ones alive are distributed by their authors using the same mechanism)
 
  1. easy to make coq depend on ocamlc for native_compute
 
