@@ -41,7 +41,6 @@ Subscription is required in order to post.
  1. Arthur Charguéraud
  1. Nicolas Magaud
  1. Gabriel Scherer
- 1. Pierre-Yves Strub
  1. Jason Gross
  1. Assia Mahboubi
  1. Arnaud Spiwack
