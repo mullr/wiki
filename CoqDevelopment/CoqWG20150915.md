@@ -6,10 +6,8 @@ This page is used to organize the next Coq Working Group (in French GT Coq).
 
 = Organization =
 
-The next Coq Working Group will take place between the 11th and 13th of may at
-Sophie Germain, PPS on the 3rd floor. The link for choosing a date:
-
-  https://framadate.org/cgp8e7h1br1f5yuy
+The next Coq Working Group will take place on may 12th at
+Sophie Germain, PPS on the 3rd floor. 
 
 = Schedule =
 
