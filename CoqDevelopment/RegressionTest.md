@@ -17,5 +17,5 @@ The problems we have w.r.t. regression testing, that apply to one or many
  1. too slow (wait 24h for a run)
  1. are the tests representative?
  1. only 1 big test (all contribs), all or nothing
- 1. test a personal branch
+ 1. test a personal experiment without impacting the other developers
  1. single point of failure (only 1 gatekeeper)
