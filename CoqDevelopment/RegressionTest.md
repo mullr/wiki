@@ -8,7 +8,7 @@ Systems currently running some sort of benchmarking, regression testing for Coq.
 || opam-bench   || [[http://coq-bench.github.io/|opam-bench]]              || jobs on gihub, infrastructure ??? || opam packages || ||
 
 = Problems =
-The problems we have w.r.t. regression testing, that apply to one or many
+The problems we have w.r.t. regression testing, that apply to one or many of the above. "we" means people working on Coq, not necessarily in PPS, Inria, France, Europe...
 
  1. 4 systems, overlap, which is the reference?  Maybe 5, wasn't pyrolis intended to be the bench system?
  1. access: we need to be able to access the compilation logs
