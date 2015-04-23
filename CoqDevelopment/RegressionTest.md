@@ -8,7 +8,8 @@ Systems currently running some sort of benchmarking, regression testing for Coq.
 || opam-bench   || [[http://coq-bench.github.io/|opam-bench]]              || jobs on gihub, infrastructure ??? || opam packages || ||
 
 = Problems =
-The problems we have w.r.t. regression testing, that apply to one or many of the above. "we" means people working on Coq, not necessarily in PPS, Inria, France, Europe...
+The problems we have w.r.t. regression testing, that apply to one or many of the above.
+"we" means people working on Coq, not necessarily in PPS, Inria, France, Europe...
 
  1. 4 systems, overlap, which is the reference?  Maybe 5, wasn't pyrolis intended to be the bench system?
  1. access: we need to be able to access the compilation logs
@@ -19,3 +20,11 @@ The problems we have w.r.t. regression testing, that apply to one or many of the
  1. only 1 big test (all contribs), all or nothing
  1. test a personal experiment without impacting the other developers
  1. single point of failure (only 1 gatekeeper)
+
+= Desiderata =
+Things that are desirable, not necessarily a problem:
+
+ 1. extend the bench with extra tools/scripts (graphs, etc...)
+ 1. extend the bench to produced precompiled artifacts (installers...)
+   1. windows (ci.inria has it)
+   1. osx (ci.inria does not have it)
