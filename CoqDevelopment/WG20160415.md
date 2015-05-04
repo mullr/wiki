@@ -15,3 +15,5 @@ Sophie Germain, PPS on the 3rd floor.
  * 14:30 Debugging session
 
 = Talking points =
+
+ * OPAM news
