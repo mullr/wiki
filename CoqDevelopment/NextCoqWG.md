@@ -16,4 +16,4 @@ Sophie Germain, PPS on the 3rd floor.
 
 = Talking points =
 
- * OPAM news
+ * OPAM news (Enrico, 15')
