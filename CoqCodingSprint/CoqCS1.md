@@ -62,8 +62,10 @@ Subscription is required in order to post.
    1. coqobjinfo (like ocamlobjinfo) reusing some code from votour to get infos about a .vo or .vio file
    1. make it possible to hide all support files (e.g. .glob files) to make directory listing and file selection/auto-completion operation simpler.  (comment: very much in the spirit of what .coq-native/ does for native_compute files).
 
- * type inference:
+ * type inference, unification:
    1. Print canonical structures inference failures in error messages.  E.g. "typing error... + during type inference this CS inference failed"
+   1. Add proper categories to unification variables (goals, typeclass constraints, implicits that should be solved...)
+   1. Reimplement and merge typeclasses eauto, auto and eauto using the new tactic engine.
 
  * bench system:
    1. honor branches named like bench/v8.4/this-experiment and publish the report somewhere so that we can have feedback on an experiment without pushing it to the main branch.
