@@ -46,8 +46,10 @@ Subscription is required in order to post.
  1. Arnaud Spiwack
  1. Pierre-Marie Pédrot (*)
  1. Laurence Rideau
+ 1. Jacques-Henri Jourdan
  1. Reynald Affeldt
  1. Guilhem Jaber
+ 1. Jasmin Blanchet
 
 (*) To be confirmed
 
