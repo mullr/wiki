@@ -50,6 +50,7 @@ Subscription is required in order to post.
  1. Reynald Affeldt
  1. Guilhem Jaber
  1. Jasmin Blanchette
+ 1. Cyril Cohen
 
 (*) To be confirmed
 
