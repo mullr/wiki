@@ -49,7 +49,7 @@ Subscription is required in order to post.
  1. Jacques-Henri Jourdan
  1. Reynald Affeldt
  1. Guilhem Jaber
- 1. Jasmin Blanchet
+ 1. Jasmin Blanchette
 
 (*) To be confirmed
 
