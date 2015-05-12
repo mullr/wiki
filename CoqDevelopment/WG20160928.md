@@ -14,4 +14,4 @@ The next Coq Working Group will take place on may 12th at Sophie Germain, PPS on
 = Talking points =
  * OPAM news (Enrico, 15')
  * Boston Meeting (Yves + Matthieu, 20')
- * Explicit Prop/Type cumulativity (Pierre L, 20'). Presented files: [[http://www.pps.univ%2Dparis%2Ddiderot.fr/%7Eletouzey/coq%2Dwip/extraction_cornercases.v|extraction_cornercases.v]] and [[http://www.pps.univ%2Dparis%2Ddiderot.fr/%7Eletouzey/coq%2Dwip/explict_cumul.v|explict_cumul.v]]
+ * Explicit Prop/Type cumulativity (Pierre L, 20'). Presented files: [[http://www.pps.univ-paris-diderot.fr/~letouzey/coq-wip/extraction_cornercases.v|extraction_cornercases.v]] and [[http://www.pps.univ-paris-diderot.fr/~letouzey/coq-wip/explict_cumul.v|explict_cumul.v]]
