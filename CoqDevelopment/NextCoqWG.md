@@ -5,16 +5,13 @@
 This page is used to organize the next Coq Working Group (in French GT Coq).
 
 = Organization =
-
-The next Coq Working Group will take place on may 12th at
-Sophie Germain, PPS on the 3rd floor. 
+The next Coq Working Group will take place on may 12th at Sophie Germain, PPS on the 3rd floor.
 
 = Schedule =
-
  * 13:00 Lunch at the pizzeria
  * 14:30 Debugging session
 
 = Talking points =
-
  * OPAM news (Enrico, 15')
  * Boston Meeting (Yves + Matthieu, 20')
+ * Explicit Prop/Type cumulativity (Pierre L, 20'). Presented files: [[http://www.pps.univ%2Dparis%2Ddiderot.fr/%7Eletouzey/coq%2Dwip/extraction_cornercases.v|extraction_cornercases.v]] and [[http://www.pps.univ%2Dparis%2Ddiderot.fr/%7Eletouzey/coq%2Dwip/explict_cumul.v|explict_cumul.v]]
