@@ -61,19 +61,22 @@ Subscription is required in order to post.
    1. Make the goal window display all goals, not only the focused one.  Consider using a notebook widget to let the user look at any goal by changing page.  Think about creative uses for the notebook page labels.
    1. Give more structure to the internal representation of document to confine failures to sub-branches.  Like an unfinished branch started with a bullet or {.  This way Coq could continue checking the rest of the proof.
    1. Add a "quick compile" button, as in coqc -quick
+   1. Make coqide silently kill coqtop and save the current position when too many tabs are opened and restart coqtop qhen the user re-opens an old tab.
 
  * tools:
-   1. Coq_makefile: use a real template engine to generate the Makefile, instead of playing with OCaml strings.
-   1. coqobjinfo (like ocamlobjinfo) reusing some code from votour to get infos about a .vo or .vio file
-   1. make it possible to hide all support files (e.g. .glob files) to make directory listing and file selection/auto-completion operation simpler.  (comment: very much in the spirit of what .coq-native/ does for native_compute files).
+   1. Coq_makefile: use a real template engine to generate the Makefile, instead of playing with OCaml strings; alternatively make coq_makefile just generate a Makefile.conf snippet with the user setting and copy in the current directory a standard Makefile that uses conditionals at run time (not at generation time as it is done now).  In both cases the Makefile should be easier to read from the sources of coq_makefile, now it is really hard to do so.
+   1. coqobjinfo (like ocamlobjinfo) reusing some code from votour to get infos about a .vo or .vio file: modules/lemmas included, axioms, ...
+   1. make it possible to hide all support files (e.g. .glob files) to make directory listing and file selection/auto-completion operation simpler.  (comment: very much in the spirit of what .coq-native/ does for native_compute files).  One could also say that a .vo file is a directory, that the segments in which the .vo file are organized are files with standard names in these directories and that all extra metadata are again files in such directory. E.g. foo.vo/{lib,opaque,glob}.  This is also compatibile with Makefiles, since it is possible to target a single components (a .vio could be foo.vo/stmprooftasks and no foo.vo/opaque).
 
  * type inference, unification:
    1. Print canonical structures inference failures in error messages.  E.g. "typing error... + during type inference this CS inference failed"
    1. Add proper categories to unification variables (goals, typeclass constraints, implicits that should be solved...)
    1. Reimplement and merge typeclasses eauto, auto and eauto using the new tactic engine.
+   1. Let the user tell TI when the expected type should be propagated down via an Argument directive.  E.g. with "Arguments cons {A} | x xs" type inference should unify A (probably an implicit) with the A in the expected type before processing x and xs.  If the expected type is "list Q" and "x" is a "nat", then "N->Q" coercion could be inserted.  If we wait, we may infer that the list is "list nat" and there is not coercion to "list Q".
 
  * bench system:
    1. honor branches named like bench/v8.4/this-experiment and publish the report somewhere so that we can have feedback on an experiment without pushing it to the main branch.
+   1. plug decent graphs into ci.inria.fr/coq
    1. fix "coqc -quick -time" [[https://coq.inria.fr/bugs/show_bug.cgi?id=3934|Bug 3934]]
 
  * improving Search:
@@ -93,7 +96,7 @@ Subscription is required in order to post.
    1. Implement a "debug" trace for tactics. The `Info` command gives a trace of the tactics which were effectively applied. In order to debug scripts, it may be useful to also have a trace of all the tactics which were attempted.
 
  * declarative proof mode
-   1. More robust implementation of the declarative proof mode. The declarative mode, because it's older, doesn't really take advantage of the disciplined focus API of the new proof engine and reimplements its features in a fragile way. To move forward, the code must be cleaned up and use the modern API.
+   1. More robust implementation of the declarative proof mode. The declarative mode, because it's older, doesn't really take advantage of the disciplined focus API of the new proof engine and reimplement its features in a fragile way. To move forward, the code must be cleaned up and use the modern API.
 
  * Notation:
    1. fine grained control on enabled notations and coercions
