@@ -56,8 +56,10 @@ Subscription is required in order to post.
  1. Thomas Sibut-Pinote
  1. Amin Timany
  1. Thibault Gauthier
+ 1. Théo Zimmermann (+)
 
-(*) To be confirmed
+ (+) Late subscription
+ (*) To be confirmed
 
 == Coding ideas ==
 
