@@ -58,8 +58,9 @@ Subscription is required in order to post.
  1. Thibault Gauthier
  1. Théo Zimmermann (+)
 
- (+) Late subscription
- (*) To be confirmed
+
+(+) Late subscription
+(*) To be confirmed
 
 == Coding ideas ==
 
