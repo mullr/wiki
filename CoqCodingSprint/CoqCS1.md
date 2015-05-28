@@ -110,3 +110,65 @@ Subscription is required in order to post.
    1. uniform names/notations see [[https://coq.inria.fr/bugs/show_bug.cgi?id=4110|Bug 4110]]
    1. document the axiom used in each file/file-group
    
+
+== Other ideas ==
+
+(Arthur: these are not original ideas; I'm just trying to make precise proposals.)
+
+  * Development benchmark for Coq developers
+
+   The idea is to gather a few real, modern Coq developments, and use them for the during-the-day testing of changes to the code base of Coq.
+
+   * Select a number of developments provided by volunteers Coq power users, who are available to help in case the developers of Coq cannot easily figure out why a proof has been broken by their changes.
+   * For each, ask the authors to maintain a little script to describe which lemmas should be turned into axioms (to save compilation time), keeping only a representative subset of the lemmas in the developments. Typically, it would suffice to provide a list of lemmas to keep, e.g. in JSON format:
+        [ { file : "foo.v",
+            keep : [ "lemma_x", "lemma_y" ],
+            keep_sections : [ "Part1" ] },
+          { file : "bar.v", keep_all : "true" } ]  // keep_all could be implicit. 
+     The goal is to test a maximal number of aspects in less than 1 minute  of compilation time per development. (If needed, it is also possible to exclude some files entirely.)
+   * The code can be pulled (on carefully-chosen commit points) form the git  repository of the authors, then the filter on proofs is applied. Optionnaly, these generated files can be commited in a git used by coq developers, but this might not be necessary if the process is fast enough.
+   * It might be useful to also keep track of little patches that may need to  be applied to the development, in order to cope with non-backward compatible  changes. Such patches could be commited in the git of the Coq developers.
+
+
+  * Computation of the dependency graph
+
+   The goal is to build an OCaml data structure representing the global dependency graph (given a set of compiled files):
+      * each node is labelled with the fully qualified path of a definition; the node carries a flag indicating whether the proof is transparent (i.e. Defined vs Qed).
+      * the node associated with "foo" has two sets of outgoing edges: one for describing the definitions that are required for typechecking  the type of "foo", and one for describing the definitions that are required for typechecking the body of "foo" (body of the definition, or the proof term).
+
+   This graph could be then used for many applications (plugins), e.g.:
+      * extracting the set of assumptions associated with a final theorems,
+      * locating the places of uses of a given definition,
+      * in the future, optimizing the recompilation process by knowing which parts need to be recompiled following a change in one given definition.
+      
+
+  * Speeding up recompilation in a project
+
+    The idea is to make it possible to recompile the definitions located in  all the dependencies of a given file as fast as possible, by skipping all proofs in the dependencies, and avoiding the space blow-up currently affecting vio files.
+   * "The command "coqlighten foo.v" generates "foo.light.v", which is the same as foo.v except that all lemmas whose proof ends on a Qed  are replaced with a corresponding axiom. (coqlighten can probably be implemented using sed with the right regular expression). This file is typically compiled using "coqc" as "foo.light.vo".
+   * "coqc -light bar.v" treats "Require Import foo" exactly as if it were "Require Import foo.light", and it produces as output the file "bar.vo.light" (instead of "bar.vo").
+   * "coqdep foo.v" (where "foo.v" depends on "bar.v") produces dependencies using an extra level of indirection that is useful for the end-user (read further), as follows:
+
+        * foo.vo: foo.vo.requires
+        * foo.vo.requires: bar.vo
+        * foo.vo.light: foo.vo.light.requires
+        * foo.vo.light.requires: bar.light.vo
+
+   Note that we have "foo.light.vo: foo.light.v" following the standard compilation rule based on "coqc", and we also have "foo.light.v: foo.v" following the build rule based on "coqlighten".
+   * In CoqIDE, add a shortcut that, when the current file is "foo.v", runs the command "make foo.vo.light.requires", and then (optionnaly)  reloads the current file up to current location in this file. This allows making a change in another file "bar.v", and getting back to an up-to-date state in "foo.v" with minimal recompilation effort.
+   * If parsing takes significant time, it is possible to dump the content of the parsed tree in binary format, in e.g. "foo.light.ast". This assumes, though, that the user will be responsible for doing a clean of those files if he changes the scopes or the set of notation  being used.    
+
+
+  * HTML5 interface for Coq developments
+
+ The idea is to make sure that all the tools are ready to allow for the development of an alternative to CoqIDE, which would allow for:
+   * customizable display for domain-specific uses of Coq (e.g. CFML).
+   * display of latex-style mathematical formula using mathjax.
+   * working with Coq online without any local installation, in case a remote server is used for compiling scripts.
+   * integration in the display of links for looking up definitions.
+
+ What's needed:
+
+   * a basic http server that runs coqtop, and (preferably) that is able to do a little bit of caching to avoid the transmition of fule files on every change.
+   * a way for the server to obtain from coqtop structured AST (instead of plain strings), so as to be able to render structured display.
+   * a Coq plugin to be able to register latex notation with term constructs (such a plugin would also be useful to generate readable versions of formal definitions, e.g. for documentation purposes)."
