@@ -111,11 +111,7 @@ Subscription is required in order to post.
    1. document the axiom used in each file/file-group
    
 
-== Other ideas ==
-
-(Arthur: these are not original ideas; I'm just trying to make precise proposals.)
-
-  * Development benchmark for Coq developers
+ * Development benchmark for Coq developers
 
    The idea is to gather a few real, modern Coq developments, and use them for the during-the-day testing of changes to the code base of Coq.
 
@@ -130,7 +126,7 @@ Subscription is required in order to post.
    * It might be useful to also keep track of little patches that may need to  be applied to the development, in order to cope with non-backward compatible  changes. Such patches could be commited in the git of the Coq developers.
 
 
-  * Computation of the dependency graph
+ * Computation of the dependency graph
 
    The goal is to build an OCaml data structure representing the global dependency graph (given a set of compiled files):
       * each node is labelled with the fully qualified path of a definition; the node carries a flag indicating whether the proof is transparent (i.e. Defined vs Qed).
@@ -142,7 +138,7 @@ Subscription is required in order to post.
       * in the future, optimizing the recompilation process by knowing which parts need to be recompiled following a change in one given definition.
       
 
-  * Speeding up recompilation in a project
+ * Speeding up recompilation in a project
 
     The idea is to make it possible to recompile the definitions located in  all the dependencies of a given file as fast as possible, by skipping all proofs in the dependencies, and avoiding the space blow-up currently affecting vio files.
    * "The command "coqlighten foo.v" generates "foo.light.v", which is the same as foo.v except that all lemmas whose proof ends on a Qed  are replaced with a corresponding axiom. (coqlighten can probably be implemented using sed with the right regular expression). This file is typically compiled using "coqc" as "foo.light.vo".
@@ -159,7 +155,7 @@ Subscription is required in order to post.
    * If parsing takes significant time, it is possible to dump the content of the parsed tree in binary format, in e.g. "foo.light.ast". This assumes, though, that the user will be responsible for doing a clean of those files if he changes the scopes or the set of notation  being used.    
 
 
-  * HTML5 interface for Coq developments
+ * HTML5 interface for Coq developments
 
  The idea is to make sure that all the tools are ready to allow for the development of an alternative to CoqIDE, which would allow for:
    * customizable display for domain-specific uses of Coq (e.g. CFML).
