@@ -58,6 +58,7 @@ Subscription is required in order to post.
  1. Thibault Gauthier
  1. Théo Zimmermann (+)
  1. Lionel Rieg (+)
+ 1. Cyprien Mangin (+)
 
 
 (+) Late subscription
