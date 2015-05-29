@@ -176,3 +176,17 @@ Subscription is required in order to post.
    * a basic http server that runs coqtop, and (preferably) that is able to do a little bit of caching to avoid the transmition of fule files on every change.
    * a way for the server to obtain from coqtop structured AST (instead of plain strings), so as to be able to render structured display.
    * a Coq plugin to be able to register latex notation with term constructs (such a plugin would also be useful to generate readable versions of formal definitions, e.g. for documentation purposes)."
+
+
+
+
+
+ * A lightweight abstraction mechanism
+
+   Currently, the only way to have a real abstraction layer is to use module signatures, which are very heavy in practice, as they require copy-pasting statements. It would be nice if the same result could be achieve through a simple top-level command, "Abstract foo bar." which would ensure that all the definitions mentioned have their definition made really opaque, as if the definitions/proofs where enclosed in a module signature.
+
+
+ * Environments: a powerful replacement for sections
+
+   The idea is to introduce environments, which solve the problem of closing/reopening a section with similar variables and implicit types, and which generalizes the notion of notation scope and hint databas. An "environment" consists of a set of declaration, among: context variables declaration, implicit types declaration, eauto hint declaration, local notation declaration. (Note that dependencies are possible, i.e. an implicit type or a hint or a notation can be associated with a context variable.) An "environment" can be named, and can be opened in a section. It can be built as the union of existing environments (or by removing declarations from existing environments). Environments are functional (i.e. they are not extended in place), even though a convenient syntax can be provided for extending an environment and immediately rebinding it with the same name, so as to locally give the illusion that it is augmented in place. Having functional environments solves the modularity issue that is currently associated with scopes and hint bases being global.
+   
