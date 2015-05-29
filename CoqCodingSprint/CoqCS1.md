@@ -100,7 +100,7 @@ Subscription is required in order to post.
    1. Write down the policies (a real document): how to submit code to Coq, how to submit a contrib, how opam packages should be written...
 
  * kernel
-   1. Make it possible for the kernel to accept a priori unsound definition (not guarded, not universe consistent, not strictly positive) when the definition is prefixed by some command. This must be taken account by `Print Assumptions` with assumptions like `foo is total`.
+   1. Make it possible for the kernel to accept an a priori unsound definition (not guarded, not universe consistent, not strictly positive) when the definition is prefixed by some command. This must be taken account by `Print Assumptions` with assumptions like `foo is total`.
  
  * tactics:
    1. decouple the prelude from the tactics
