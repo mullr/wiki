@@ -44,7 +44,7 @@ Subscription is required in order to post.
  1. Jason Gross
  1. Assia Mahboubi
  1. Arnaud Spiwack
- 1. Pierre-Marie Pédrot (*)
+ 1. Pierre-Marie Pédrot
  1. Laurence Rideau
  1. Jacques-Henri Jourdan
  1. Reynald Affeldt
