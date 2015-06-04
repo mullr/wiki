@@ -101,7 +101,8 @@ Subscription is required in order to post.
 
  * kernel
    1. Make it possible for the kernel to accept an a priori unsound definition (not guarded, not universe consistent, not strictly positive) when the definition is prefixed by some command. This must be taken account by `Print Assumptions` with assumptions like `foo is total`.
- 
+   2. Harden the kernel interface: move from arrays to an abstract type at least.
+
  * tactics:
    1. decouple the prelude from the tactics
    1. Coding the tactics of the `logic.ml` file in the new proof engine. These were the primitive tactics of the old proof engine and are currently implemented using a compatibility layer which, in particular, makes the `Info` command unaware of their semantics.
