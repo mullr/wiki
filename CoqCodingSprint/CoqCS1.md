@@ -60,6 +60,7 @@ Subscription is required in order to post.
  1. Lionel Rieg (+)
  1. Cyprien Mangin (+)
  1. Abhishek Anand (+)
+ 1. Matej Kosik (+)
 
 (+) Late subscription
 (*) To be confirmed
