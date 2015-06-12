@@ -27,13 +27,13 @@ Subscription is required in order to post.
 
 == List of participants ==
 
- 1. Yves Bertot (*)
+ 1. Yves Bertot
  1. Pierre Boutillier
  1. Maxime Dénès
  1. Hugo Herbelin
  1. Matthieu Sozeau
  1. Enrico Tassi
- 1. Bruno Barras (*)
+ 1. Bruno Barras
  1. Benjamin Gregoire
  1. Pierre Letouzey
  1. Jaap Boender
