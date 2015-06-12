@@ -63,6 +63,7 @@ Subscription is required in order to post.
  1. Anders Mörtberg (+)
  1. Alexander Faithfull (+)
  1. Jesper Bengtson (+)
+ 1. Guillaume Cano (+)
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
