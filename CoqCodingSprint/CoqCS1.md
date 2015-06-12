@@ -64,8 +64,7 @@ Subscription is required in order to post.
  1. Alexander Faithfull (+)
  1. Jesper Bengtson (+)
 
-(+) Late subscription
-(*) To be confirmed
+(+) Late subscription (tradition says you pay a round at the pub...)
 
 == Coding ideas ==
 
