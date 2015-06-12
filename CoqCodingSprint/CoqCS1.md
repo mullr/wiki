@@ -62,6 +62,8 @@ Subscription is required in order to post.
  1. Abhishek Anand (+)
  1. Matej Kosik (+)
  1. Anders Mörtberg (+)
+ 1. Alexander Faithfull (+)
+ 1. Jesper Bengtson (+)
 
 (+) Late subscription
 (*) To be confirmed
