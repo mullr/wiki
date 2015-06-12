@@ -36,7 +36,6 @@ Subscription is required in order to post.
  1. Bruno Barras (*)
  1. Benjamin Gregoire
  1. Pierre Letouzey
- 1. Yann Régis-Gianas (*)
  1. Jaap Boender
  1. Arthur Charguéraud
  1. Nicolas Magaud
