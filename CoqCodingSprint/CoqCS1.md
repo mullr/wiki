@@ -64,6 +64,7 @@ Subscription is required in order to post.
  1. Alexander Faithfull (+)
  1. Jesper Bengtson (+)
  1. Guillaume Cano (+)
+ 1. Frederic Chyzak
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
