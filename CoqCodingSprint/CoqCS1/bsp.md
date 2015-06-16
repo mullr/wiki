@@ -17,6 +17,6 @@ This page lists a collection of open bugs.  If you are working on one of these, 
  * [[https://coq.inria.fr/bugs/show_bug.cgi?id=4058|4058]]  "-schedule-vio-checking" should not be so verbose (unless an option such as -verbose is passed) (fixable)
  * [[https://coq.inria.fr/bugs/show_bug.cgi?id=3991|3991]]  CoqIde does not report error if "Compile Buffer fails" (fixable)
 
-More bugs can be found at the [[https://coq.inria.fr/bugs/|Coq bugzilla]].
+More bugs can be found at the [[https://coq.inria.fr/bugs/|Coq bugzilla]].  Remember to put the bug in this list if you tackle it, so that others don't tackle the same!
 
  
