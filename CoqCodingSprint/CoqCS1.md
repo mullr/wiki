@@ -8,7 +8,7 @@ A coding sprint is an event that brings together the core developers of Coq and 
 The coding sprint will take place at the Inria Center in Sophia-Antipolis ([[https://team.inria.fr/marelle/venue/|how to reach the Inria center]], [[https://team.inria.fr/marelle/accomodation-information/|accommodation infos]]).
 
 == Program ==
-[[attachment:schedule-coqcs1.pdf|Tentative schedule]]
+[[attachment:schedule-coqcs1.pdf|Tentative schedule]], [[attachment:intro-talk.pdf|Slides]] for the introduction
 
 == Registration ==
 For organization purposes we require the participants to register (free of charge) by following these two steps:
