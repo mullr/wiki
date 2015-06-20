@@ -128,6 +128,7 @@ Also, [[https://coq.inria.fr/bugs/|bug triaging]] is very welcome (check if a bu
   1. decouple the prelude from the tactics
   1. Coding the tactics of the `logic.ml` file in the new proof engine. These were the primitive tactics of the old proof engine and are currently implemented using a compatibility layer which, in particular, makes the `Info` command unaware of their semantics.
   1. Implement a "debug" trace for tactics. The `Info` command gives a trace of the tactics which were effectively applied. In order to debug scripts, it may be useful to also have a trace of all the tactics which were attempted.
+  1. Port [[http://www.ps.uni-saarland.de/~ttebbi/ltacprof/|LtacProf]] to Coq 8.5, possibly hooking into the `Info` infrastructure.
 
  * declarative proof mode
   1. More robust implementation of the declarative proof mode. The declarative mode, because it's older, doesn't really take advantage of the disciplined focus API of the new proof engine and re-implements its features in a fragile way. To move forward, the code must be cleaned up and use the modern API.
