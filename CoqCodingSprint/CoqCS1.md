@@ -18,6 +18,9 @@ For organization purposes we require the participants to register (free of charg
 
 The mailing list is also the preferred channel to contact the organizers. Subscription is required in order to post.
 
+== Beach on Wednesday 24 ==
+[[attachment:itinerary-beach-coqcs1.pdf|Itinerary]]
+
 == List of participants ==
  1. Yves Bertot
  1. Pierre Boutillier
