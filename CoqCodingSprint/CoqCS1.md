@@ -142,23 +142,16 @@ Also, [[https://coq.inria.fr/bugs/|bug triaging]] is very welcome (check if a bu
 
  * Evar instantiation failure explanation: given an evar defined in some context, and given a term with which the evar fails to unify, report to the user the list of variables that occur in the term but that do not belong to the context in which the evar was defined.
 
- * Development benchmark for Coq developers
-  . The idea is to gather a few real, modern Coq developments, and use them for the during-the-day testing of changes to the code base of Coq. 
-
-  * Select a number of developments provided by volunteers Coq power users, who are available to help in case the developers of Coq cannot easily figure out why a proof has been broken by their changes.
-  * For each, ask the authors to maintain a little script to describe which lemmas should be turned into axioms (to save compilation time), keeping only a representative subset of the lemmas in the developments. Typically, it would suffice to provide a list of lemmas to keep, e.g. in JSON format:
-   . [ { file : "foo.v",
-    . keep : [ "lemma_x", "lemma_y" ], keep_sections : [ "Part1" ] },
-    . { file : "bar.v", keep_all : "true" } ]  // keep_all could be implicit.
-   . The goal is to test a maximal number of aspects in less than 1 minute  of compilation time per development. (If needed, it is also possible to exclude some files entirely.)
-  * The code can be pulled (on carefully-chosen commit points) form the git  repository of the authors, then the filter on proofs is applied. Optionnaly, these generated files can be commited in a git used by coq developers, but this might not be necessary if the process is fast enough.
-  * It might be useful to also keep track of little patches that may need to  be applied to the development, in order to cope with non-backward compatible  changes. Such patches could be commited in the git of the Coq developers.
-
  * Computation of the dependency graph
   . The goal is to build an OCaml data structure representing the global dependency graph (given a set of compiled files):
    * each node is labelled with the fully qualified path of a definition; the node carries a flag indicating whether the proof is transparent (i.e. Defined vs Qed).
    * the node associated with "foo" has two sets of outgoing edges: one for describing the definitions that are required for typechecking  the type of "foo", and one for describing the definitions that are required for typechecking the body of "foo" (body of the definition, or the proof term).
 
+ * A lightweight abstraction mechanism
+  . Currently, the only way to have a real abstraction layer is to use module signatures, which are very heavy in practice, as they require copy-pasting statements. It would be nice if the same result could be achieve through a simple top-level command, "Abstract foo bar." which would ensure that all the definitions mentioned have their definition made really opaque, as if the definitions/proofs where enclosed in a module signature.
+
+ * Environments: a powerful replacement for sections
+  . The idea is to introduce environments, which solve the problem of closing/reopening a section with similar variables and implicit types, and which generalizes the notion of notation scope and hint database. An "environment" consists of a set of declaration, among: context variables declaration, implicit types declaration, eauto hint declaration, local notation declaration, coercion declaration, instance declaration. (Note that dependencies are possible, i.e. an implicit type or a hint or a notation can be associated with a context variable.) An "environment" can be named, and can be opened in a section. It can be built as the union of existing environments (or by removing declarations from existing environments). Environments are functional (i.e. they are not extended in place), even though a convenient syntax can be provided for extending an environment and immediately rebinding it with the same name, so as to locally give the illusion that it is augmented in place. Having functional environments solves the modularity issue that is currently associated with scopes / hint / instances being global.
 
 
  * Speeding up recompilation in a project
@@ -174,7 +167,7 @@ Also, [[https://coq.inria.fr/bugs/|bug triaging]] is very welcome (check if a bu
   * In CoqIDE, add a shortcut that, when the current file is "foo.v", runs the command "make foo.vo.light.requires", and then (optionnaly)  reloads the current file up to current location in this file. This allows making a change in another file "bar.v", and getting back to an up-to-date state in "foo.v" with minimal recompilation effort.
   * If parsing takes significant time, it is possible to dump the content of the parsed tree in binary format, in e.g. "foo.light.ast". This assumes, though, that the user will be responsible for doing a clean of those files if he changes the scopes or the set of notation  being used.
 
- * HTML5 interface for Coq developments The idea is to make sure that all the tools are ready to allow for the development of an alternative to CoqIDE, which would allow for:
+ * (bonus) HTML5 interface for Coq developments The idea is to make sure that all the tools are ready to allow for the development of an alternative to CoqIDE, which would allow for:
   * customizable display for domain-specific uses of Coq (e.g. CFML).
   * display of latex-style mathematical formula using mathjax.
   * working with Coq online without any local installation, in case a remote server is used for compiling scripts.
@@ -184,8 +177,15 @@ Also, [[https://coq.inria.fr/bugs/|bug triaging]] is very welcome (check if a bu
   * a way for the server to obtain from coqtop structured AST (instead of plain strings), so as to be able to render structured display.
   * a Coq plugin to be able to register latex notation with term constructs (such a plugin would also be useful to generate readable versions of formal definitions, e.g. for documentation purposes)."
 
- * A lightweight abstraction mechanism
-  . Currently, the only way to have a real abstraction layer is to use module signatures, which are very heavy in practice, as they require copy-pasting statements. It would be nice if the same result could be achieve through a simple top-level command, "Abstract foo bar." which would ensure that all the definitions mentioned have their definition made really opaque, as if the definitions/proofs where enclosed in a module signature.
 
- * Environments: a powerful replacement for sections
-  . The idea is to introduce environments, which solve the problem of closing/reopening a section with similar variables and implicit types, and which generalizes the notion of notation scope and hint database. An "environment" consists of a set of declaration, among: context variables declaration, implicit types declaration, eauto hint declaration, local notation declaration, coercion declaration, instance declaration. (Note that dependencies are possible, i.e. an implicit type or a hint or a notation can be associated with a context variable.) An "environment" can be named, and can be opened in a section. It can be built as the union of existing environments (or by removing declarations from existing environments). Environments are functional (i.e. they are not extended in place), even though a convenient syntax can be provided for extending an environment and immediately rebinding it with the same name, so as to locally give the illusion that it is augmented in place. Having functional environments solves the modularity issue that is currently associated with scopes / hint / instances being global.
+ * (bonus) Development benchmark for Coq developers
+  . The idea is to gather a few real, modern Coq developments, and use them for the during-the-day testing of changes to the code base of Coq. 
+
+  * Select a number of developments provided by volunteers Coq power users, who are available to help in case the developers of Coq cannot easily figure out why a proof has been broken by their changes.
+  * For each, ask the authors to maintain a little script to describe which lemmas should be turned into axioms (to save compilation time), keeping only a representative subset of the lemmas in the developments. Typically, it would suffice to provide a list of lemmas to keep, e.g. in JSON format:
+   . [ { file : "foo.v",
+    . keep : [ "lemma_x", "lemma_y" ], keep_sections : [ "Part1" ] },
+    . { file : "bar.v", keep_all : "true" } ]  // keep_all could be implicit.
+   . The goal is to test a maximal number of aspects in less than 1 minute  of compilation time per development. (If needed, it is also possible to exclude some files entirely.)
+  * The code can be pulled (on carefully-chosen commit points) form the git  repository of the authors, then the filter on proofs is applied. Optionnaly, these generated files can be commited in a git used by coq developers, but this might not be necessary if the process is fast enough.
+  * It might be useful to also keep track of little patches that may need to  be applied to the development, in order to cope with non-backward compatible  changes. Such patches could be commited in the git of the Coq developers.
