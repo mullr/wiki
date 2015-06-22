@@ -140,11 +140,10 @@ Also, [[https://coq.inria.fr/bugs/|bug triaging]] is very welcome (check if a bu
   1. uniform names/notations see [[https://coq.inria.fr/bugs/show_bug.cgi?id=4110|Bug 4110]]
   1. document the axiom used in each file/file-group
 
- * Development benchmark for Coq developers
-  . The idea is to gather a few real, modern Coq developments, and use them for the during-the-day testing of changes to the code base of Coq.
-
  * Evar instantiation failure explanation: given an evar defined in some context, and given a term with which the evar fails to unify, report to the user the list of variables that occur in the term but that do not belong to the context in which the evar was defined.
- 
+
+ * Development benchmark for Coq developers
+  . The idea is to gather a few real, modern Coq developments, and use them for the during-the-day testing of changes to the code base of Coq. 
 
   * Select a number of developments provided by volunteers Coq power users, who are available to help in case the developers of Coq cannot easily figure out why a proof has been broken by their changes.
   * For each, ask the authors to maintain a little script to describe which lemmas should be turned into axioms (to save compilation time), keeping only a representative subset of the lemmas in the developments. Typically, it would suffice to provide a list of lemmas to keep, e.g. in JSON format:
