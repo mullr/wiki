@@ -8,8 +8,9 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
 * nothing yet
 
 === Tuesday 23 ===
-* (Jaap) working on IDE stuff - branch here: [[http://github.com/jaapb/coq]]
-* MS and JHJ fixing bugs on universes (#4254).
+
+ * (Jaap) working on IDE stuff - branch here: [[http://github.com/jaapb/coq]]
+ * MS and JHJ fixing bugs on universes (#4254).
 
 === Wednesday 24 ===
 * nothing yet
