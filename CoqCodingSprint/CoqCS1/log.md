@@ -11,6 +11,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Jaap) working on IDE stuff - fork here: http://github.com/jaapb/coq
  * MS and JHJ fixing bugs on universes (#4254).
  * (Frédéric) [Set Printing Coercions Quoted] (like the name?); don't know how to do a pull request
+ * (Maxime) Add a printer for VM bytecode to make debugging easier
 
 === Wednesday 24 ===
 * nothing yet
