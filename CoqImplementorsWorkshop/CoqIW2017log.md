@@ -8,7 +8,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
 * nothing yet
 
 === Tuesday 23 ===
-* nothing yet
+* (Jaap) working on IDE stuff - branch here: [[http://github.com/jaapb/coq]]
 
 === Wednesday 24 ===
 * nothing yet
