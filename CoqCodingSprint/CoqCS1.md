@@ -10,6 +10,9 @@ The coding sprint will take place at the Inria Center in Sophia-Antipolis ([[htt
 == Program ==
 [[attachment:schedule-coqcs1.pdf|Tentative schedule]], [[attachment:intro-talk.pdf|Slides]] for the introduction
 
+== Do log what you did/learnt/implemented! ==
+Write it [[https://coq.inria.fr/cocorico/CoqCodingSprint/CoqCS1/log|here]].
+
 == Registration ==
 For organization purposes we require the participants to register (free of charge) by following these two steps:
 
@@ -65,13 +68,11 @@ The mailing list is also the preferred channel to contact the organizers. Subscr
 (+) Late subscription (tradition says you pay a round at the pub...)
 
 == Bug squashing ==
-
 A list of [[https://coq.inria.fr/cocorico/CoqCodingSprint/CoqCS1/bsp|relatively simple bugs]], to kill the time ;-)
 
 Also, [[https://coq.inria.fr/bugs/|bug triaging]] is very welcome (check if a bug is still valid, add extra info, close solved bugs...).
 
 == "Little" projects ==
-
  * coqide:
   1. Make the goal window display all goals, not only the focused one.  Consider using a notebook widget to let the user look at any goal by changing page.  Think about creative uses for the notebook page labels.  Requires GTK skills.
   1. Add a "quick compile" button, as in coqc -quick.  The STM can also "dump" the current state as a .vio file, but there is no protocol message for requiring such service.
@@ -99,7 +100,6 @@ Also, [[https://coq.inria.fr/bugs/|bug triaging]] is very welcome (check if a bu
   1. test [[https://github.com/coq/opam-coq-shell|coq:shell]] especially under OSX
 
 == Brainstorming ("harder" projects, to be considered carefully) ==
-
  * improving Search:
   1. finding theorems that fit a pattern thanks to type classes, canonical structures, or modulo iota-reduction, or delta steps of a set of registered constants (see also [[https://coq.inria.fr/bugs/show_bug.cgi?id=3904|#3904]])
   1. Invent a "search" that works for tactics: search the patterns used in the tactic, or use patterns given by the user. ([[http://staff.computing.dundee.ac.uk/katya/ML4PG/|related work]])
@@ -156,7 +156,6 @@ Also, [[https://coq.inria.fr/bugs/|bug triaging]] is very welcome (check if a bu
  * Environments: a powerful replacement for sections
   . The idea is to introduce environments, which solve the problem of closing/reopening a section with similar variables and implicit types, and which generalizes the notion of notation scope and hint database. An "environment" consists of a set of declaration, among: context variables declaration, implicit types declaration, eauto hint declaration, local notation declaration, coercion declaration, instance declaration. (Note that dependencies are possible, i.e. an implicit type or a hint or a notation can be associated with a context variable.) An "environment" can be named, and can be opened in a section. It can be built as the union of existing environments (or by removing declarations from existing environments). Environments are functional (i.e. they are not extended in place), even though a convenient syntax can be provided for extending an environment and immediately rebinding it with the same name, so as to locally give the illusion that it is augmented in place. Having functional environments solves the modularity issue that is currently associated with scopes / hint / instances being global.
 
-
  * Speeding up recompilation in a project
   . The idea is to make it possible to recompile the definitions located in  all the dependencies of a given file as fast as possible, by skipping all proofs in the dependencies, and avoiding the space blow-up currently affecting vio files.
   * "The command "coqlighten foo.v" generates "foo.light.v", which is the same as foo.v except that all lemmas whose proof ends on a Qed  are replaced with a corresponding axiom. (coqlighten can probably be implemented using sed with the right regular expression). This file is typically compiled using "coqc" as "foo.light.vo".
@@ -180,9 +179,8 @@ Also, [[https://coq.inria.fr/bugs/|bug triaging]] is very welcome (check if a bu
   * a way for the server to obtain from coqtop structured AST (instead of plain strings), so as to be able to render structured display.
   * a Coq plugin to be able to register latex notation with term constructs (such a plugin would also be useful to generate readable versions of formal definitions, e.g. for documentation purposes)."
 
-
  * (bonus) Development benchmark for Coq developers
-  . The idea is to gather a few real, modern Coq developments, and use them for the during-the-day testing of changes to the code base of Coq. 
+  . The idea is to gather a few real, modern Coq developments, and use them for the during-the-day testing of changes to the code base of Coq.
 
   * Select a number of developments provided by volunteers Coq power users, who are available to help in case the developers of Coq cannot easily figure out why a proof has been broken by their changes.
   * For each, ask the authors to maintain a little script to describe which lemmas should be turned into axioms (to save compilation time), keeping only a representative subset of the lemmas in the developments. Typically, it would suffice to provide a list of lemmas to keep, e.g. in JSON format:
