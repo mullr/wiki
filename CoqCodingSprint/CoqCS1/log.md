@@ -13,6 +13,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Frédéric) [Set Printing Coercions Quoted] (like the name?); don't know how to do a pull request
  * (Maxime) Add a printer for VM bytecode to make debugging easier
  * (Assia, with the help of Pierre B.) Learnt about _CoqProject (with ProofGeneral, to handle plugins, options...). Started rebasing old code on v8.5.
+ * (Cyprien) Add range selectors ("[1,3-5]:tac."). I still need to check if I can make the syntax simpler while still working with IDEs.
 
 === Wednesday 24 ===
 * nothing yet
