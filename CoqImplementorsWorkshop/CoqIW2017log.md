@@ -31,6 +31,9 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
 === Wednesday 24 ===
  * (Emilio with help of countless others) Make ocaml plugin loading work in the javascript port. vo loading seems to be working in a proper way, but unfortunately javascript don't allow to unmarshall to 64 bits integers, which even trivial vo files contain. Trying with a 32 bit version of Coq, this looks like a tricky issue.
  * (Gabriel) report a Merlin issue affecting Coq plugin authors: [[https://github.com/the-lambda-church/merlin/issues/410|#410]].
+ * (Frédéric) got review by Enrico; dealt with it, except for the request to be able to collapse stacked quoted coercions:
+   * quoted coercions now can be parsed
+   * start thinking about using declare_string_option for the variety of presentations of coercions
 
 === Thursday 25 ===
 * nothing yet
