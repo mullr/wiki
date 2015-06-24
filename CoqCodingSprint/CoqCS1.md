@@ -22,7 +22,21 @@ For organization purposes we require the participants to register (free of charg
 The mailing list is also the preferred channel to contact the organizers. Subscription is required in order to post.
 
 == Beach on Wednesday 24 ==
+Meeting point 17:00 in front of Inria or 18:00 at the beach.
+
 [[attachment:itinerary-beach-coqcs1.pdf|Itinerary]]
+
+Meeting point 20:00 if you want to join the group for dinner.
+
+=== Quick list of dinner options ===
+(pick what you prefer and build your dinner group around you)
+
+ * Le Brulot (grill) or le Burlot Pasta (mediterran cuisine) https://goo.gl/maps/vidtd,
+ * Le Safranier (local cuisine) https://goo.gl/maps/YAg0O,
+ * L'Altro (italian) https://goo.gl/maps/AtQWL,
+ * Hong Yun (chinese) https://goo.gl/maps/sYwbH
+ * Sushi shop (sushi) https://goo.gl/maps/fnF3E
+
 
 == List of participants ==
  1. Yves Bertot
