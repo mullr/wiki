@@ -7,7 +7,7 @@ This page lists a collection of open bugs.  If you are working on one of these, 
  * [[https://coq.inria.fr/bugs/show_bug.cgi?id=2389|2389]]  coqdoc -g omits "Declare Instance" (see how to make this robust in face of new commands)
  * [[https://coq.inria.fr/bugs/show_bug.cgi?id=3334|3334]]  Typeclasses eauto := bfs has no settable max depth (ask Matthieu, reply wontfix or fix)
  * [[https://coq.inria.fr/bugs/show_bug.cgi?id=3026|3026]]  multiple anomalies in coqchk on CompCert (Pierre L. and Bruno in the same room, check still relevant, see also 2588)
- * [[https://coq.inria.fr/bugs/show_bug.cgi?id=3936|3936]]  Pretty-printer gives confusing output for type casts on function applications (fixable, or won't fix)
+ * (SQUASHED: Gregory Malecha) [[https://coq.inria.fr/bugs/show_bug.cgi?id=3936|3936]]  Pretty-printer gives confusing output for type casts on function applications (fixable, or won't fix)
  * [[https://coq.inria.fr/bugs/show_bug.cgi?id=3941|3941]]  Second character does not appear (fixable with GTK+ skills)
  * [[https://coq.inria.fr/bugs/show_bug.cgi?id=4004|4004]]  [Set Suggest Proof Using] should print suggestions only for objects the user defines, not things defined behind the scenes by the system itself.  (fixable via a blacklist or via an extra flag threaded from the seff declaration to the print)
  * [[https://coq.inria.fr/bugs/show_bug.cgi?id=4041|4004]]  request: document behavior of implicit arguments in generalizing binders (Ask Matthieu and document/fix)
