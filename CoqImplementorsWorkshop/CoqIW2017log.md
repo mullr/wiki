@@ -15,6 +15,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Assia, with the help of Pierre B.) Learnt about _CoqProject (with ProofGeneral, to handle plugins, options...). Started rebasing old code on v8.5.
  * (Cyprien) Add range selectors ("[1,3-5]:tac."). I still need to check if I can make the syntax simpler while still working with IDEs.
  * (Enrico) merge pull request of Alec (fix STM + obligations); buy candies & coffee; a lot of chatting
+ * (Arnaud) document positivity checker (pushed), lots of helping around, progress on making inductive definition assume their positivity (commits here https://github.com/aspiwack/coq/commits/assumetotal )
 
 === Wednesday 24 ===
 * nothing yet
