@@ -18,6 +18,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Arnaud) document positivity checker (pushed), lots of helping around, progress on making inductive definition assume their positivity (commits here https://github.com/aspiwack/coq/commits/assumetotal )
  * (Matej) Studying Stm.show_script function and transitively whatever it relies upon.
  * (Pierre-Marie) Merge pull requests, do profiling, help people.
+ * (Alec) Fixed a conflict between STM and Program; changed the way Coqoon draws processing annotations
 
 === Wednesday 24 ===
 * nothing yet
