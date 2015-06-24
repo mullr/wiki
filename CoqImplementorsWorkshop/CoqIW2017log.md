@@ -36,6 +36,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
    * start thinking about using declare_string_option for the wanted variety of presentations of coercions
    * start thinking about using declare_string_option for the variety of presentations of coercions
  * (Matej) I tried to understand in understanding relevant parts of "Stm", "VCS" and "Dag" modules. Some progress in that.
+ * (Arnaud) Some helping. Completed inductive definition assumed positive.
 
 === Thursday 25 ===
 * nothing yet
