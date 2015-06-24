@@ -5,7 +5,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
 * Enrico spams the participants with infos about wifi, git and this page
 
 === Monday 22 ===
-* nothing yet
+ * Enrico makes a brilliant talk.
 
 === Tuesday 23 ===
  * (Jaap) working on IDE stuff - fork here: http://github.com/jaapb/coq
