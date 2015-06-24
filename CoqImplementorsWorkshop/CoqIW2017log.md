@@ -21,6 +21,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Alec) Fixed a conflict between STM and Program; changed the way Coqoon draws processing annotations
  * (Jacques-Henri) test a sampling memory profiler on Coq with PMP; work on #4254 with Matthieu 
  * (Gabriel) fix small issues in Jacques-Henri's memory profiler; very slow progress on a (fun <pattern> => ...) patch 
+ * (Jason, with help from Arnaud) Ported [[www.ps.uni-saarland.de/~ttebbi/ltacprof/|LtacProf]] to Coq 8.5; it compiles, but there seem to be heisenbugs, and other strange behavior.  (With help from Hugo) Started reverting [[https://github.com/coq/coq/commit/18796b6aea453bdeef1ad12ce80eeb220bf01e67|18796b6]] to add `function_scope`, fixing [[https://coq.inria.fr/bugs/show_bug.cgi?id=3080|#3080]]
 
 === Wednesday 24 ===
 * nothing yet
