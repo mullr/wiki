@@ -29,7 +29,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Anders) Patch the paramcoq plugin so that it compiles on v8.5. Continue porting CoqEAL to use this and start rewriting the matrix refinements library (https://github.com/CoqEAL/CoqEAL/tree/paramcoq). 
 
 === Wednesday 24 ===
-* nothing yet
+ * (Emilio with help of countless others) Make ocaml plugin loading work in the javascript port. vo loading seems to be working in a proper way, but unfortunately javascript don't allow to unmarshall to 64 bits integers, which even trivial vo files contain. Trying with a 32 bit version of Coq, this looks like a tricky issue.
 
 === Thursday 25 ===
 * nothing yet
