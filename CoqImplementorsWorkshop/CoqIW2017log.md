@@ -33,7 +33,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Gabriel) report a Merlin issue affecting Coq plugin authors: [[https://github.com/the-lambda-church/merlin/issues/410|#410]].
  * (Frédéric) got review by Enrico; dealt with it, except for the request to be able to collapse stacked quoted coercions:
    * quoted coercions now can be parsed
-   * start thinking about using declare_string_option for the variety of presentations of coercions
+   * start thinking about using declare_string_option for the wanted variety of presentations of coercions
 
 === Thursday 25 ===
 * nothing yet
