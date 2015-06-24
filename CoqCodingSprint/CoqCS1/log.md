@@ -34,6 +34,8 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Frédéric) got review by Enrico; dealt with it, except for the request to be able to collapse stacked quoted coercions:
    * quoted coercions now can be parsed
    * start thinking about using declare_string_option for the wanted variety of presentations of coercions
+   * start thinking about using declare_string_option for the variety of presentations of coercions
+ * (Matej) I tried to understand in understanding relevant parts of "Stm", "VCS" and "Dag" modules. Some progress in that.
 
 === Thursday 25 ===
 * nothing yet
