@@ -16,7 +16,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Cyprien) Add range selectors ("[1,3-5]:tac."). I still need to check if I can make the syntax simpler while still working with IDEs.
  * (Enrico) merge pull request of Alec (fix STM + obligations); buy candies & coffee; a lot of chatting
  * (Arnaud) document positivity checker (pushed), lots of helping around, progress on making inductive definition assume their positivity (commits here https://github.com/aspiwack/coq/commits/assumetotal )
- * (Matej) Studying Stm.show_script function and transitively whatever it relies upon. Talking to Enrico. dist-upgrading my machine.
+ * (Matej) Talking to Enrico. dist-upgrading my machine (in order to generate VCS diagrams, I needed a newer version of "graphviz"). Studying Stm.show_script function and transitively whatever it relies upon. 
  * (Pierre-Marie) Merge pull requests, do profiling, help people.
  * (Alec) Fixed a conflict between STM and Program; changed the way Coqoon draws processing annotations
  * (Jacques-Henri) test a sampling memory profiler on Coq with PMP; work on #4254 with Matthieu 
