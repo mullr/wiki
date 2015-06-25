@@ -70,3 +70,4 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Théo) Learned about Canonical Structures with the help of Yves and Assia.
  * (Cyprien) PR on migrating [reduce] to the new tactics engine.
  * (Maxime) Made github pull requests automatically built by Jenkins
+ * (Abhishek) Studied [[https://github.com/acowley/roshask|roshask]]. Used it to generate Haskell definitions of some [[http://www.ros.org/|ROS]] message types (e.g. [[http://docs.ros.org/api/geometry_msgs/html/msg/Twist.html|Twist]]). Realized that it should be easy to tweak roshask to generate corresponding Coq definitions as well, e.g. change ''data'' to ''Inductive''. The generated Coq file should also include Extraction directives to extract Coq Message types to the corresponding Haskell versions. The Haskell definitions (of message types) also includes extra functions, e.g. for (de) serialization. These would not be included in the Coq version.
