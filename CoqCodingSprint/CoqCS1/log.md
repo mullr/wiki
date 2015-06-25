@@ -57,15 +57,15 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
 
 === Thursday 25 ===
  * (Frédéric):
-   * got option strings to work; want to augment my data structure with a Coq nat, learnt how to do it in principle, but this leads to dependency headaches
-   * [then discuss with Assia and Pierre: the approach of adding a new constant is bad, as representing presentation-only Coq terms inside the true logical content will lead to troubles (rewrite will apply to the metadata as well, etc); the right approach would be to have a genuine presentation-tree type in OCaml, and have metadata passed to IDEs through a separate channel; my hack could still live as a plugin, through a hook into constrextern; else it could be possible to use copies of `bool`, `nat`, etc, less prone to interference with the user] ← I take it back: those augmented terms are only seen by the user, after externalization; the term kept in constants, goals, etc, for further logical manipulations are not augmented
-   * discussed with Arthur his draft for:
-     * design of environments containing the state of interaction parameters (flags, notations, coercions, databases, hints, etc)
-     * design of a set of tacticals (fast intros, easy post-application of tactics, etc) and tactics for disjunction, conjunction abstracted over their (n-ary) representation
+  * got option strings to work; want to augment my data structure with a Coq nat, learnt how to do it in principle, but this leads to dependency headaches
+  * [then discuss with Assia and Pierre: the approach of adding a new constant is bad, as representing presentation-only Coq terms inside the true logical content will lead to troubles (rewrite will apply to the metadata as well, etc); the right approach would be to have a genuine presentation-tree type in OCaml, and have metadata passed to IDEs through a separate channel; my hack could still live as a plugin, through a hook into constrextern; else it could be possible to use copies of `bool`, `nat`, etc, less prone to interference with the user] ← I take it back: those augmented terms are only seen by the user, after externalization; the term kept in constants, goals, etc, for further logical manipulations are not augmented
+  * discussed with Arthur his draft for:
+   * design of environments containing the state of interaction parameters (flags, notations, coercions, databases, hints, etc)
+   * design of a set of tacticals (fast intros, easy post-application of tactics, etc) and tactics for disjunction, conjunction abstracted over their (n-ary) representation
  * (Jason)
-   * Fixed [[https://coq.inria.fr/bugs/show_bug.cgi?id=4262|bug #4262, Output of [Print Scopes] is missing class keys]]
-   * Figured out, with Arnaud, how to write a [Trace] vernacular (like [Info], but closer to [debug] ([Debug] is reserved), and includes backtracking info)
-   * [[https://github.com/JasonGross/coq/tree/debug-command|Implemented most of the [Trace] vernacular]], currently stuck on finding a way of [[https://github.com/JasonGross/coq/blob/1a64808ad4b2a840c2cb115ae2e90cb632ac4f7e/engine/proofview_monad.ml#L105|comparing lazy data types for strict equality that isn't [Pervasives.(=)] (which doesn't like functions)]]
+  * Fixed [[https://coq.inria.fr/bugs/show_bug.cgi?id=4262|bug #4262, Output of [Print Scopes] is missing class keys]]
+  * Figured out, with Arnaud, how to write a [Trace] vernacular (like [Info], but closer to [debug] ([Debug] is reserved), and includes backtracking info)
+  * [[https://github.com/JasonGross/coq/tree/debug-command|Implemented most of the [Trace] vernacular]], currently stuck on finding a way of [[https://github.com/JasonGross/coq/blob/1a64808ad4b2a840c2cb115ae2e90cb632ac4f7e/engine/proofview_monad.ml#L105|comparing lazy data types for strict equality that isn't [Pervasives.(=)] (which doesn't like functions)]]
  * (Matej) I learned why my previous attempts to use "Drop." command failed.
  * (Arnaud) PR on assuming positivity ( https://github.com/coq/coq/pull/79 )
  * (Jaap) Updated my MSc thesis project (10 years old now) to work with Coq 8.5 and as a plugin. Github repo here: https://github.com/jaapb/pra
@@ -76,3 +76,4 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Abhishek) Studied [[https://github.com/acowley/roshask|roshask]]. Used it to generate Haskell definitions of some [[http://www.ros.org/|ROS]] message types (e.g. [[http://docs.ros.org/api/geometry_msgs/html/msg/Twist.html|Twist]]). Realized that it should be easy to tweak roshask to generate corresponding Coq definitions as well, e.g. change ''data'' to ''Inductive''. The generated Coq file should also include Extraction directives to extract Coq Message types to the corresponding Haskell versions. The Haskell definitions (of message types) also includes extra functions, e.g. for (de) serialization. These would not be included in the Coq version.
  * (Amin) Finished the plugin (https://github.com/amintimany/UniverseComparator). It now also works for constraints local to a universe polymorphic definition.
  * (Reynald) Extended yesterday's sample plugin to use user libraries. Test various variations of myplug.ml4 (global_with_alias vs. global_of_extended_global; ise_pretype_gen vs. understand vs. understand_tcc; Global.env vs. Goal.env vs. Goal.hyps; msg_info vs. msg_warning vs. ppnl; etc.) and ask for explanations to Coq developers. Start working on reimplementing a slow Ltac function as a plugin.
+ * (Assia) Still trying to have the generic-equality branch compile. Edition of the _CoqProject / coq_makefile section of the reference manual.
