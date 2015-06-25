@@ -46,6 +46,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Reynald) Compiled CoqSDK for Windows 64 bits with debug flag and was explained construction of Windows installers in coq/dev by ET. Failed to compile Merlin for Cygwin (various problems with subprograms and in particular ocamlfind). Reported problem with coq_makefile-generated makefile's on cygwin (failing "make clean"). As an exercise, extended sample plugin by ET to use standard libraries (Coqlib.glob_nat data structures, etc; had issues with printing via Pp.msg_warning). Set up environment to further extend above plugin with calls to lemmas from own user libraries.
  * (Jaap) continued with introducing tabs in the CoqIDE proof view; also solved an irritating lablgtk bug in NetBSD (I know this has nothing to do with Coq, but it really was an annoying bug)
  * (Lionel) alpha version of the selective unfolding of notations
+ * (Maxime) made all Cocorico pages indexable by Google :- started working on Coq's jenkins server
  * (Gregory) working on coqdep
  * (Pierre-Marie) Helped people, profiled, optimized.
  * (Jason) Added back [Bind Scope ... with Sortclass], [Bind Scope ... with Funclass], added [function_scope] declared in Coq.Init.Notations, moved [type_scope] into user-space, rather than special-casing it in OCaml (the string ["type_scope"] no longer appears anywhere in the Coq source code).  Submitted a [[https://github.com/coq/coq/pull/77|pull request]].
