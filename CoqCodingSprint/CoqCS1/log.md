@@ -35,11 +35,10 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Frédéric) got review by Enrico; dealt with it, except for the request to be able to collapse stacked quoted coercions:
   * quoted coercions now can be parsed
   * start thinking about using declare_string_option for the wanted variety of presentations of coercions
-  * start thinking about using declare_string_option for the variety of presentations of coercions
  * (Matej) I tried to understand in understanding relevant parts of "Stm", "VCS" and "Dag" modules. Some progress in that.
  * (Arnaud) Some helping. Completed inductive definition assumed positive (some bug fixes left in vio & checker).
  * (Abhishek) [[http://www.cs.cornell.edu/~aa755/ROSCoq/|ROSCoq]] failed to compile with the [[https://github.com/coq/coq/commit/607b1cbfc819c321c1f5449ee10d12789f51e09a|8.4 tip]]. Minimized the problem with Jason and filed a [[https://coq.inria.fr/bugs/show_bug.cgi?id=4260|bug report]]. Patched ROSCoq with Jason's workaround and got it to compile. Then extracted the [[http://www.cs.cornell.edu/~aa755/ROSCoq/coqdoc/ROSCOQ.icreateConcrete.html#robotProgramInstance|robotic program]] to Haskell. Like the Ocaml extract, this Haskell extract also failed to compile. Manually fixed the extract to make it compile. It produced correct results when run. Hence, decided that the main way to run ROSCoq programs will be to extract them to Haskell and then to link them somehow with the [[https://github.com/acowley/roshask|roshask]] bindings for the [[http://www.ros.org/|Robot Operating System]].
  * (Assia, with Pierre B.) still rebasing... plus some more discussions about _CoqProject. Started editing its documentation on the reference manual.
 
 === Thursday 25 ===
-* nothing yet
+ * (Frédéric) got option strings to work; want to augment my data structure with a Coq nat, but don't know how to do it
