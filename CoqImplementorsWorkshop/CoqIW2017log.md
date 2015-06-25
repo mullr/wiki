@@ -62,7 +62,10 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
    * discussed with Arthur his draft for:
      * design of environments containing the state of interaction parameters (flags, notations, coercions, databases, hints, etc)
      * design of a set of tacticals (fast intros, easy post-application of tactics, etc) and tactics for disjunction, conjunction abstracted over their (n-ary) representation
- * (Jason) Fixed [[https://coq.inria.fr/bugs/show_bug.cgi?id=4262|bug #4262, Output of [Print Scopes] is missing class keys]]
+ * (Jason)
+   * Fixed [[https://coq.inria.fr/bugs/show_bug.cgi?id=4262|bug #4262, Output of [Print Scopes] is missing class keys]]
+   * Figured out, with Arnaud, how to write a [Trace] vernacular (like [Info], but closer to [debug] ([Debug] is reserved), and includes backtracking info)
+   * [[https://github.com/JasonGross/coq/tree/debug-command|Implemented most of the [Trace] vernacular]], currently stuck on finding a way of [[https://github.com/JasonGross/coq/blob/1a64808ad4b2a840c2cb115ae2e90cb632ac4f7e/engine/proofview_monad.ml#L105|comparing lazy data types for strict equality that isn't [Pervasives.(=)] (which doesn't like functions)]]
  * (Matej) I learned why my previous attempts to use "Drop." command failed.
  * (Arnaud) PR on assuming positivity ( https://github.com/coq/coq/pull/79 )
  * (Jaap) Updated my MSc thesis project (10 years old now) to work with Coq 8.5 and as a plugin. Github repo here: https://github.com/jaapb/pra
