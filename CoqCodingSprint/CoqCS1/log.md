@@ -33,7 +33,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
 
 === Wednesday 24 ===
  * (Emilio with help of countless others) Make ocaml plugin loading work in the javascript port. vo loading seems to be working in a proper way, but unfortunately javascript don't allow to unmarshall to 64 bits integers, which even trivial vo files contain. Trying with a 32 bit version of Coq, this looks like a tricky issue.
- * (Gabriel) report a Merlin issues affecting Coq plugin authors: [[https://github.com/the-lambda-church/merlin/issues/410|#410]], [[https://github.com/the-lambda-church/merlin/issues/411|#411]]. Elisp parser for Anomaly stack traces.
+ * (Gabriel) report a Merlin issues affecting Coq plugin authors: [[https://github.com/the-lambda-church/merlin/issues/410|merlin#410]], [[https://github.com/the-lambda-church/merlin/issues/411|merlin#411]]. Elisp parser for Anomaly stack traces: [[https://github.com/coq/coq/pull/78|#78]].
  * (Frédéric) got review by Enrico; dealt with it, except for the request to be able to collapse stacked quoted coercions:
   * quoted coercions now can be parsed
   * start thinking about using declare_string_option for the wanted variety of presentations of coercions
@@ -45,6 +45,8 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Théo) Talked with Arnaud, Pierre-Marie and Matthieu about choices on how to generalize the subterm function in  rewrite.ml. Current goal is to add a second term as input before generalizing to heterogenous relations. When there is no know second term, we need to give a "hole" instead. How to represent this hole? Went to Evar to Meta to special kind_of_term with holes back to Meta and yet, not sure it's the right solution.
  * (Reynald) Compiled CoqSDK for Windows 64 bits with debug flag and was explained construction of Windows installers in coq/dev by ET. Failed to compile Merlin for Cygwin (various problems with subprograms and in particular ocamlfind). Reported problem with coq_makefile-generated makefile's on cygwin (failing "make clean"). As an exercise, extended sample plugin by ET to use standard libraries (Coqlib.glob_nat data structures, etc; had issues with printing via Pp.msg_warning). Set up environment to further extend above plugin with calls to lemmas from own user libraries.
  * (Jaap) continued with introducing tabs in the CoqIDE proof view; also solved an irritating lablgtk bug in NetBSD (I know this has nothing to do with Coq, but it really was an annoying bug)
+ * (Lionel) alpha version of the selective unfolding of notations
+ * (Gregory) working on coqdep
 
 === Thursday 25 ===
  * (Frédéric) got option strings to work; want to augment my data structure with a Coq nat, but don't know how to do it
