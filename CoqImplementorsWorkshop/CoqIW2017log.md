@@ -47,6 +47,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Jaap) continued with introducing tabs in the CoqIDE proof view; also solved an irritating lablgtk bug in NetBSD (I know this has nothing to do with Coq, but it really was an annoying bug)
  * (Lionel) alpha version of the selective unfolding of notations
  * (Gregory) working on coqdep
+ * (Pierre-Marie) Helped people, profiled, optimized.
 
 === Thursday 25 ===
  * (Frédéric) got option strings to work; want to augment my data structure with a Coq nat, but don't know how to do it
