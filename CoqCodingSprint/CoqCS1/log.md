@@ -51,8 +51,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Jason) Added back [Bind Scope ... with Sortclass], [Bind Scope ... with Funclass], added [function_scope] declared in Coq.Init.Notations, moved [type_scope] into user-space, rather than special-casing it in OCaml (the string ["type_scope"] no longer appears anywhere in the Coq source code).  Submitted a [[https://github.com/coq/coq/pull/77|pull request]].
  * (Alec) Attempted (with Enrico) to track down the cause of a mysteriously non-responsive PIDE worker; ''almost'' managed to understand PIDE query overlays
 
-
-
 === Thursday 25 ===
  * (Frédéric) got option strings to work; want to augment my data structure with a Coq nat, but don't know how to do it
  * (Jason) Fixed [[https://coq.inria.fr/bugs/show_bug.cgi?id=4262|bug #4262, Output of [Print Scopes] is missing class keys]]
+ * (Matej) I learned why my previous attempts to use "Drop." command failed.
