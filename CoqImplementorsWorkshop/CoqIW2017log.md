@@ -52,3 +52,4 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
 
 === Thursday 25 ===
  * (Frédéric) got option strings to work; want to augment my data structure with a Coq nat, but don't know how to do it
+ * (Jason) Fixed [[https://coq.inria.fr/bugs/show_bug.cgi?id=4262|bug #4262, Output of [Print Scopes] is missing class keys]]
