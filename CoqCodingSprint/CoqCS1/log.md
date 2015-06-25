@@ -57,3 +57,4 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Frédéric) got option strings to work; want to augment my data structure with a Coq nat, learnt how to do it in principle, but this leads to dependency headaches
  * (Jason) Fixed [[https://coq.inria.fr/bugs/show_bug.cgi?id=4262|bug #4262, Output of [Print Scopes] is missing class keys]]
  * (Matej) I learned why my previous attempts to use "Drop." command failed.
+ * (Arnaud) PR on assuming positivity ( https://github.com/coq/coq/pull/79 )
