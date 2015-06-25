@@ -50,7 +50,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Pierre-Marie) Helped people, profiled, optimized.
  * (Jason) Added back [Bind Scope ... with Sortclass], [Bind Scope ... with Funclass], added [function_scope] declared in Coq.Init.Notations, moved [type_scope] into user-space, rather than special-casing it in OCaml (the string ["type_scope"] no longer appears anywhere in the Coq source code).  Submitted a [[https://github.com/coq/coq/pull/77|pull request]].
  * (Alec) Attempted (with Enrico) to track down the cause of a mysteriously non-responsive PIDE worker; ''almost'' managed to understand PIDE query overlays
-
+ * (Anders) Continued rewriting CoqEAL to use paramcoq (ported polynomial pseudo-division and started porting Bareiss algorithm). Ran into some problems with the refinements for matrices.
 === Thursday 25 ===
  * (Frédéric) got option strings to work; want to augment my data structure with a Coq nat, but don't know how to do it
  * (Jason) Fixed [[https://coq.inria.fr/bugs/show_bug.cgi?id=4262|bug #4262, Output of [Print Scopes] is missing class keys]]
