@@ -68,3 +68,4 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Jaap) Tabs in CoqIDE now at workable prototype stage.
  * (Théo) Learned about Canonical Structures with the help of Yves and Assia.
  * (Cyprien) PR on migrating [reduce] to the new tactics engine.
+ * (Maxime) Made github pull requests automatically built by Jenkins
