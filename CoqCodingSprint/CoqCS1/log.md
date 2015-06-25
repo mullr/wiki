@@ -54,7 +54,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Cyprien) Submitted a PR for range selectors. Also started to look at the migration of some tactics to the new tactics engine.
  * (Guilhem) Adapted the Forcing plugin (https://github.com/mattam82/Forcing) to v8.5. Trying to remove the need of UIP in conversion in the proofs, and rather using it only as an Axiom.
 === Thursday 25 ===
- * (Frédéric) got option strings to work; want to augment my data structure with a Coq nat, learnt how to do it in principle, but this leads to dependency headaches
+ * (Frédéric) got option strings to work; want to augment my data structure with a Coq nat, learnt how to do it in principle, but this leads to dependency headaches; then discuss with Assia and Pierre: the approach of adding a new constant is bad, as representing presentation-only Coq terms inside the true logical content will lead to troubles (rewrite will apply to the metadata as well, etc); the right approach would be to have a genuine presentation-tree type in OCaml, and have metadata passed to IDEs through a separate channel; my hack could still live as a plugin, through a hook into constrextern
  * (Jason) Fixed [[https://coq.inria.fr/bugs/show_bug.cgi?id=4262|bug #4262, Output of [Print Scopes] is missing class keys]]
  * (Matej) I learned why my previous attempts to use "Drop." command failed.
  * (Arnaud) PR on assuming positivity ( https://github.com/coq/coq/pull/79 )
