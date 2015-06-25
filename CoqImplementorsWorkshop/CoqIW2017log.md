@@ -44,7 +44,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Amin) The plugin now works for global constraints. I'm trying to add support for constraints local to a universe polymorphic definition.
  * (Théo) Talked with Arnaud, Pierre-Marie and Matthieu about choices on how to generalize the subterm function in  rewrite.ml. Current goal is to add a second term as input before generalizing to heterogenous relations. When there is no know second term, we need to give a "hole" instead. How to represent this hole? Went to Evar to Meta to special kind_of_term with holes back to Meta and yet, not sure it's the right solution.
  * (Reynald) Compiled CoqSDK for Windows 64 bits with debug flag and was explained construction of Windows installers in coq/dev by ET. Failed to compile Merlin for Cygwin (various problems with subprograms and in particular ocamlfind). Reported problem with coq_makefile-generated makefile's on cygwin (failing "make clean"). As an exercise, extended sample plugin by ET to use standard libraries (Coqlib.glob_nat data structures, etc; had issues with printing via Pp.msg_warning). Set up environment to further extend above plugin with calls to lemmas from own user libraries.
-  * (Jaap) continued with introducing tabs in the CoqIDE proof view; also solved an irritating lablgtk bug in NetBSD (I know this has nothing to do with Coq, but it really was an annoying bug)
+ * (Jaap) continued with introducing tabs in the CoqIDE proof view; also solved an irritating lablgtk bug in NetBSD (I know this has nothing to do with Coq, but it really was an annoying bug)
 
 === Thursday 25 ===
  * (Frédéric) got option strings to work; want to augment my data structure with a Coq nat, but don't know how to do it
