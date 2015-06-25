@@ -28,6 +28,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Cyril, Laurence) Design of a vernacular command to extend a hierarchy of packed classes, on paper.
  * (Anders) Patch the paramcoq plugin so that it compiles on v8.5. Continue porting CoqEAL to use this and start rewriting the matrix refinements library (https://github.com/CoqEAL/CoqEAL/tree/paramcoq).
  * (Abhishek) Extracted the "3-digits of e" program to Ocaml; the Ocaml program produces correct answer when run. Then extracted a [[http://www.cs.cornell.edu/~aa755/ROSCoq/coqdoc/ROSCOQ.icreateConcrete.html#robotProgramInstance|robotic program]] to OCaml. This did not typecheck. A simplified version typechecked and produced correct answer. Read the full documentation of extraction. With help of Pierre Letouzey, mapped many Coq types to native OCaml implentations in the extract. He also fixed an issue causing the Haskell extract of the 3-digit program to segfault. Rebuilt Coq and CoRN with this fix in the [[https://github.com/coq/coq/commit/607b1cbfc819c321c1f5449ee10d12789f51e09a|8.4 tip]].
+ * (Amin) Learned about how kernel handles universes and universe constraints. Started making a plugin to compare universe levels with a vernacular command.
 
 === Wednesday 24 ===
  * (Emilio with help of countless others) Make ocaml plugin loading work in the javascript port. vo loading seems to be working in a proper way, but unfortunately javascript don't allow to unmarshall to 64 bits integers, which even trivial vo files contain. Trying with a 32 bit version of Coq, this looks like a tricky issue.
@@ -39,6 +40,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Arnaud) Some helping. Completed inductive definition assumed positive (some bug fixes left in vio & checker).
  * (Abhishek) [[http://www.cs.cornell.edu/~aa755/ROSCoq/|ROSCoq]] failed to compile with the [[https://github.com/coq/coq/commit/607b1cbfc819c321c1f5449ee10d12789f51e09a|8.4 tip]]. Minimized the problem with Jason and filed a [[https://coq.inria.fr/bugs/show_bug.cgi?id=4260|bug report]]. Patched ROSCoq with Jason's workaround and got it to compile. Then extracted the [[http://www.cs.cornell.edu/~aa755/ROSCoq/coqdoc/ROSCOQ.icreateConcrete.html#robotProgramInstance|robotic program]] to Haskell. Like the Ocaml extract, this Haskell extract also failed to compile. Manually fixed the extract to make it compile. It produced correct results when run. Hence, decided that the main way to run ROSCoq programs will be to extract them to Haskell and then to link them somehow with the [[https://github.com/acowley/roshask|roshask]] bindings for the [[http://www.ros.org/|Robot Operating System]].
  * (Assia, with Pierre B.) still rebasing... plus some more discussions about _CoqProject. Started editing its documentation on the reference manual.
+ * (Amin) The plugin now works for global constraints. I'm trying to add support for constraints local to a universe polymorphic definition.
 
 === Thursday 25 ===
  * (Frédéric) got option strings to work; want to augment my data structure with a Coq nat, but don't know how to do it
