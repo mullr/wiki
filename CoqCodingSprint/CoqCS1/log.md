@@ -59,3 +59,4 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Matej) I learned why my previous attempts to use "Drop." command failed.
  * (Arnaud) PR on assuming positivity ( https://github.com/coq/coq/pull/79 )
  * (Jaap) Updated my MSc thesis project (10 years old now) to work with Coq 8.5 and as a plugin. Github repo here: [[https://github.com/jaapb/pra]]
+ * (Jaap) Tabs in CoqIDE now at workable prototype stage.
