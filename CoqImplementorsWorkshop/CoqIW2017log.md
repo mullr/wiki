@@ -55,7 +55,11 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Guilhem) Adapted the Forcing plugin (https://github.com/mattam82/Forcing) to v8.5. Trying to remove the need of UIP in conversion in the proofs, and rather using it only as an Axiom.
 
 === Thursday 25 ===
- * (Frédéric) got option strings to work; want to augment my data structure with a Coq nat, learnt how to do it in principle, but this leads to dependency headaches; then discuss with Assia and Pierre: the approach of adding a new constant is bad, as representing presentation-only Coq terms inside the true logical content will lead to troubles (rewrite will apply to the metadata as well, etc); the right approach would be to have a genuine presentation-tree type in OCaml, and have metadata passed to IDEs through a separate channel; my hack could still live as a plugin, through a hook into constrextern
+ * (Frédéric):
+   * got option strings to work; want to augment my data structure with a Coq nat, learnt how to do it in principle, but this leads to dependency headaches; then discuss with Assia and Pierre: the approach of adding a new constant is bad, as representing presentation-only Coq terms inside the true logical content will lead to troubles (rewrite will apply to the metadata as well, etc); the right approach would be to have a genuine presentation-tree type in OCaml, and have metadata passed to IDEs through a separate channel; my hack could still live as a plugin, through a hook into constrextern; else it could be possible to use copies of `bool`, `nat`, etc, less prone to interference with the user
+   * discussed with Arthur his draft for:
+     * design of environments containing the state of interaction parameters (flags, notations, coercions, databases, hints, etc)
+     * design of a set of tacticals (fast intros, easy post-application of tactics, etc) and tactics for disjunction, conjunction abstracted over their (n-ary) representation
  * (Jason) Fixed [[https://coq.inria.fr/bugs/show_bug.cgi?id=4262|bug #4262, Output of [Print Scopes] is missing class keys]]
  * (Matej) I learned why my previous attempts to use "Drop." command failed.
  * (Arnaud) PR on assuming positivity ( https://github.com/coq/coq/pull/79 )
