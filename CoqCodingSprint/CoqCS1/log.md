@@ -66,3 +66,4 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Jaap) Updated my MSc thesis project (10 years old now) to work with Coq 8.5 and as a plugin. Github repo here: https://github.com/jaapb/pra
  * (Jaap) Tabs in CoqIDE now at workable prototype stage.
  * (Théo) Learned about Canonical Structures with the help of Yves and Assia.
+ * (Cyprien) PR on migrating [reduce] to the new tactics engine.
