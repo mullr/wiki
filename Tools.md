@@ -17,6 +17,10 @@ Some of the tools listed here are part of bigger projects that support other pro
   . Papuq is patched version of CoqIde with teaching oriented features.
  * [[http://www.cs.ru.nl/~lionelm/tmEgg/|tmEgg]]
   . Coq plugin for !TeXmacs
+ * [[http://prover.cs.ru.nl|ProofWeb]]
+  . An online web interface for Coq (and other proof assistants), with a focus on teaching.
+ * [[http://provereditor.gforge.inria.fr|ProverEditor]]
+  . An experimental Eclipse plugin with support for Coq.
 
 ==== Discontinued interfaces ====
 
