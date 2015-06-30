@@ -11,4 +11,9 @@ The next Coq Working Group will take place on Wednesday 8 July 2015 at Sophie Ge
 
  * Pascal Manoury: An ordinal measure for proof termination
 
-= Talking points =
+= Talking points / todo =
+
+ * Pull requests from the CoqCS
+ * Document opam archive / contribs on Coq's www
+ * What is missing for the release? (any severe bugs?)
+ 
