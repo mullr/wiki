@@ -17,4 +17,5 @@ The next Coq Working Group will take place on Wednesday 8 July 2015 at Sophie Ge
  * Document opam archive / contribs on Coq's www
  * What is missing for the release? (any severe bugs?)
  * immutable strings [https://coq.inria.fr/bugs/show_bug.cgi?id=4278]
+ * Reflections on development organization
  
