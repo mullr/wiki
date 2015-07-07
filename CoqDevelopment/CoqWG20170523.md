@@ -27,6 +27,6 @@ The next Coq Working Group will take place on Wednesday 8 July 2015 at Sophie Ge
   * #4283	Universe polymorphism incompatible with let-ins in records
 
  * immutable strings [https://coq.inria.fr/bugs/show_bug.cgi?id=4278]
- * Reflections on development organization
+ * Reflections on development organization [https://pad.inria.fr/p/QkAmQ3AzUMNB1WaK_Devenir-Coq]
  * Primitive projection representation.
  * left2right ref in kernel
