@@ -29,3 +29,4 @@ The next Coq Working Group will take place on Wednesday 8 July 2015 at Sophie Ge
  * immutable strings [https://coq.inria.fr/bugs/show_bug.cgi?id=4278]
  * Reflections on development organization
  * Primitive projection representation.
+ * left2right ref in kernel
