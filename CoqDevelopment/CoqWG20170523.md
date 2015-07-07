@@ -24,6 +24,7 @@ The next Coq Working Group will take place on Wednesday 8 July 2015 at Sophie Ge
   * #4276	Primitive projections incompatible with let-ins
   * #4267	Coq 8.5 beta 2 is unusable on Windows unless -no-native-compiler is passed
   * #4269	A proof of [False] which is closed under the global context ([Print Assumptions] lies about which axioms a term depends on)
+  * #4283	Universe polymorphism incompatible with let-ins in records
 
  * immutable strings [https://coq.inria.fr/bugs/show_bug.cgi?id=4278]
  * Reflections on development organization
