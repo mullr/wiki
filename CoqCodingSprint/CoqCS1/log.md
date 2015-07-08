@@ -77,6 +77,7 @@ This page is to log all the activities done during the Coq Coding Sprint.  Pleas
  * (Amin) Finished the plugin (https://github.com/amintimany/UniverseComparator). It now also works for constraints local to a universe polymorphic definition.
  * (Reynald) Extended yesterday's sample plugin to use user libraries. Test various variations of myplug.ml4 (global_with_alias vs. global_of_extended_global; ise_pretype_gen vs. understand vs. understand_tcc; Global.env vs. Goal.env vs. Goal.hyps; msg_info vs. msg_warning vs. ppnl; etc.) and ask for explanations to Coq developers. Start working on reimplementing a slow Ltac function as a plugin.
  * (Assia) Still trying to have the generic-equality branch compile. Edition of the _CoqProject / coq_makefile section of the reference manual.
+ * (Emilio) More tweaks to module loading in the Js port, was finally able to load Mathcomp.
 
 === Friday 26 ===
 
