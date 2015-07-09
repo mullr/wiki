@@ -3,25 +3,15 @@
 <<TableOfContents>>
 
 This page is used to organize the next Coq Working Group (in French GT Coq).
+The framadate link to decide which day it will happen is:
+
+  https://framadate.org/5p7j3xmx7l5skloo
 
 = Organization =
-The next Coq Working Group will take place on Wednesday 8 July 2015 at Sophie Germain, PPS on the 3rd floor at 10am. If time permits, it will be continued by a debugging session.
+The next Coq Working Group will take place in September at Sophie Germain, PPS on the 3rd floor. If time permits, it will be continued by a debugging session.
 
 = Talks =
- * Pascal Manoury: An ordinal measure for proof termination (diapos: [[attachment:gtcoq.pdf]])
+ * 8.5
 
 = Talking points / todo =
- * Pull requests from the CoqCS
- * Document opam archive / contribs on Coq's www
- * What is missing for the release? (any severe bugs?)
-  * #3714       bad files in the OSX installers?
-  * #4258       Logical inconsistency due to a bug in template polymorphism
-  * #4270       Coq does not compile with findlib 1.2.7
-  * #4276       Primitive projections incompatible with let-ins
-  * #4267       Coq 8.5 beta 2 is unusable on Windows unless -no-native-compiler is passed
-  * #4269       A proof of [False] which is closed under the global context ([Print Assumptions] lies about which axioms a term depends on)
-
- * immutable strings [https://coq.inria.fr/bugs/show_bug.cgi?id=4278]
- * Reflections on development organization [https://pad.inria.fr/p/QkAmQ3AzUMNB1WaK_Devenir-Coq]
- * Primitive projection representation.
- * left2right ref in kernel
+ * add
