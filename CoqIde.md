@@ -4,7 +4,7 @@ CoqIde is a graphical interface for Coq. It is written in OCaml. CoqIde is docum
 
 === Manual Installation in Debian ===
 
-''( See also the instructions in the file `$COQTOP/INSTALL.ide in your Coq distribution)''
+''( See also the instructions in the file `$COQTOP/INSTALL.ide` in your Coq distribution)''
 
 If you want to install CoqIde but without using `apt-get install coqide`, in Debian `lenny` you can try:
 
