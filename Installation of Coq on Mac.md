@@ -27,15 +27,15 @@ MacOS and gtk move too fast for this section to be up to date. If you try it, yo
    * {{{ ~/.local/bin/jhbuild build meta-gtk-osx-core }}}
    * {{{ ~/.local/bin/jhbuild build gtksourceview }}}
 
-/!\ This never work on the first time. Get ready to patch gtksourceview, download some tar.xz by hand, recall autoconf with extra arguments, ...
+/!\ This never work on the first time. Get ready to patch gtksourceview (something like [[attachment:fix_gtksourceview.patch]]), download some tar.xz by hand, recall autoconf with extra arguments, ...
 
  * Get coq OCaml build dependencies (OCaml, camlp5, lablgtk2, lablgtkosx). I did it using opam by
    * Get the opam binary on the opam github page. Put it somewhere on path, give it x rights. Do {{{ opam init }}} and then the command opam asks you to do to config your shell.
    * {{{ ~/.local/bin/jhbuild run opam install lablgtkosx camlp5 }}}
  * Get coq >= v8.5 sources
  * {{{ ~/.local/bin/jhbuild run ./configure -opt -prefix '''whatever''' }}}
- * {{{ ~/.local/bin/jhbuild run make bin/CoqIDE_version.app }}}
-(./) You've got a CoqIDE (without coqtop so that will asks for you if you launch it)
+ * {{{ ~/.local/bin/jhbuild run make bin/CoqIDE_'''versionfromconfigure.ml'''.app }}}
+(./) You've got a CoqIDE (without coqtop so it will asks you for it if you launch it)
 
  * Add a coq installation in the bundle can be done independently from generating the bundle as long as you use the same version of the OCaml compiler and a coq that speaks the same protocol.
 
@@ -43,8 +43,8 @@ If you've {{{ ./configure -opt -prefix '''somewhere_there_is_nothing''' }}} do
 
    * {{{ make -j 4 coq copide-toploop }}}
    * {{{ make install-coq -install-coqide-toploop }}}
-   * {{{ ditto '''somewhere_there_is_nothing''' '''correct_path'''/CoqIDE_version.app/Contents/Resources/ }}}
-   * {{{ codesign -f -s - '''correct_path'''/CoqIDE_version.app }}}
+   * {{{ ditto '''somewhere_there_is_nothing''' '''correct_path'''/CoqIDE_'''versionfromconfigure.ml'''.app/Contents/Resources/ }}}
+   * {{{ codesign -f -s - '''correct_path'''/CoqIDE_'''versionfromconfigure.ml'''.app }}}
 
 == Put an extra package in a CoqIDE bundle ==
  * Get command line tools for Xcode.
