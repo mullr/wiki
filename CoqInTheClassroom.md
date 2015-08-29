@@ -18,6 +18,22 @@ In 2006, Adam Chlipala and George Necula taught [[http://adam.chlipala.net/itp/|
 
 The University of Pennsylvania Provers Group ran a 2008 POPL tutorial, [[http://www.cis.upenn.edu/~plclub/popl08-tutorial/|Using Proof Assistants for Programming Language Research]].  Extensively documented Coq code, illustrating type soundness for simply typed lambda calculus and system F-sub, is available from the website.
 
+An Asian-Pacific summer school was held in 2009, 2010, [[kyhcs.ustcsz.edu.cn/fmschool-2011|2011]], 2012 and 2013 (part of material [[http://pauillac.inria.fr/~levy/courses/tsinghua/13coq/|here]]).
+
+A school on [[http://www.di.ens.fr/~zappa/teaching/coq/ecole10/|Modelling and verifying algorithms in Coq]] was held in 2010 in Paris.
+
+A spring school on the [[http://www-sop.inria.fr/manifestations/MapSpringSchool/program.html|Formalization of Mathematics]] was held in Nice-Sophia-Antipolis in 2012.
+
+A short [[http://specfun.inria.fr/mahboubi/cirm14.html|course on the formalization of mathematics]] at the initial school of the [[https://ihp2014.pps.univ-paris-diderot.fr/doku.php|IHP 2014]] special trimester.
+
+A winter school on [[https://team.inria.fr/marelle/en/coq-winter-school-14|Software verification and computer proof|]] in Nice in 2014.
+
+A spring school on [[http://yann.regis-gianas.org/coqepit/index.html|Mechanizing proofs of programs]] was held in 2015 in Fréjus (France).
+
+A short [[http://www.strub.nu/coq-itp-15|tutorial]] was given in Nanjing as part of ITP 2015.
+
+Coq is regularly taught as part of the [[https://www.cs.uoregon.edu/research/summerschool/|Oregon Programming Languages Summer School]].
+
 == Using Coq as a teaching tool ==
 
 === Coq as a teaching tool in computer science ===
