@@ -6,14 +6,14 @@
  * [[http://cel.archives-ouvertes.fr/inria-00001173|Coq in a Hurry]], tutorial by Yves Bertot
  * Material from the Coq summer school [[http://moscova.inria.fr/~zappa/teaching/coq/ecole10/|Modelling and verifying algorithms in Coq: an introduction]].
  * Material from courses in French:
-   * [[http://www.irisa.fr/celtique/pichardie/teaching/M2/MDV/| par David Pichardie]]
-   * [[http://www.pps.jussieu.fr/~letouzey/teaching.fr.html| par Pierre Letouzey]]
-   * [[http://www.lix.polytechnique.fr/~assia/ens.html| par Assia Mahboubi]]
-   * [[http://www.pps.jussieu.fr/~miquel/enseignement/mpri/index.html| par Alexandre Miquel]]
-   * [[http://perso.ens-lyon.fr/aurelien.pardon/coq/index.html| par Jean Duprat]]
+   * [[http://www.irisa.fr/celtique/pichardie/teaching/M2/MDV/| by David Pichardie]]
+   * [[http://www.pps.jussieu.fr/~letouzey/teaching.fr.html| by Pierre Letouzey]]
+   * [[http://specfun.inria.fr/mahboubi/ens.html| by Assia Mahboubi]]
+   * [[http://www.pps.jussieu.fr/~miquel/enseignement/mpri/index.html| by Alexandre Miquel]]
+ * Material from course [[http://specfun.inria.fr/mahboubi/cirm14.html|Semantic of Proofs and Certified Mathematics]]
  * Material from the [[http://www.cis.upenn.edu/~plclub/popl08-tutorial/code/index.html|Using Proof Assistants for Programming Language Research]] tutorial.
   See also the page [[BindingRepresentation|Technique for formalization of variable binding]].
-
+ * [[http://coq.inria.fr/coq-itp-2015|ITP'15 tutorial on Coq]]
 
 == Specific techniques ==
 
