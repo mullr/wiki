@@ -30,7 +30,7 @@ A winter school on [[https://team.inria.fr/marelle/en/coq-winter-school-14|Softw
 
 A spring school on [[http://yann.regis-gianas.org/coqepit/index.html|Mechanizing proofs of programs]] was held in 2015 in Fréjus (France).
 
-A short [[http://www.strub.nu/coq-itp-15|tutorial]] was given in Nanjing as part of ITP 2015.
+A short [[http://coq.inria.fr/coq-itp-2015|tutorial]] was given in Nanjing as part of ITP 2015.
 
 Coq is regularly taught as part of the [[https://www.cs.uoregon.edu/research/summerschool/|Oregon Programming Languages Summer School]].
 
