@@ -14,5 +14,6 @@ The next Coq Working Group will take place in September at Sophie Germain, PPS o
  * 8.5
 
 = Talking points / todo =
+ * CoqPL
  * Pull requests
  * Some words on the consortium
