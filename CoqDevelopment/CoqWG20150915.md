@@ -1,3 +1,4 @@
+## page was renamed from CoqDevelopment/NextCoqWG
 ## page was copied from CoqDevelopment/CRGTCoq20131126
 ## page was copied from CoqDevelopment/CRGTCoq20130709
 <<TableOfContents>>
