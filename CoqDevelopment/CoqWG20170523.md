@@ -17,3 +17,4 @@ The next Coq Working Group will take place in November at 10am at Sophie Germain
  * Pull requests
  * Review whodidwhat
  * Some policy on coqdev?
+ * status of options: synchro / non synchro / both.
