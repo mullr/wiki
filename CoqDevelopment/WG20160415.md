@@ -15,3 +15,5 @@ The next Coq Working Group will take place in November at 10am at Sophie Germain
 = Talking points / todo =
  * 8.5
  * Pull requests
+ * Review whodidwhat
+ * Some policy on coqdev?
