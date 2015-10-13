@@ -18,3 +18,4 @@ The next Coq Working Group will take place in November at 10am at Sophie Germain
  * Review whodidwhat
  * Some policy on coqdev?
  * status of options: synchro / non synchro / both.
+ * should we find an alternative to "f is assumed" ("declared", "taken", "given", ...)?
