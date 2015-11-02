@@ -10,7 +10,7 @@ The framadate link to decide which day it will happen is:
   https://framadate.org/PZmXSIVoCjxElHOE
 
 = Organization =
-The next Coq Working Group will take place in November at 10am at Sophie Germain, PPS on the 3rd floor. If time permits, it will be continued by a debugging session.
+The next Coq Working Group will take place in on November the 25th at 10am at Sophie Germain, PPS on the 3rd floor. If time permits, it will be continued by a debugging session.
 
 = Talking points / todo =
  * 8.5
@@ -20,3 +20,4 @@ The next Coq Working Group will take place in November at 10am at Sophie Germain
  * status of options: synchro / non synchro / both.
  * should we find an alternative to "f is assumed" ("declared", "taken", "given", ...)?
  * how frequently should we release Coq after 8.5?
+ * I (Guillaume Claret) can present a 10 minutes review on the current status of OPAM for Coq
