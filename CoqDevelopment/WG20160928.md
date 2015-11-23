@@ -21,3 +21,4 @@ The next Coq Working Group will take place in on November the 25th at 10am at So
  * should we find an alternative to "f is assumed" ("declared", "taken", "given", ...)?
  * how frequently should we release Coq after 8.5?
  * I (Guillaume Claret) can present a 10 minutes review on the current status of OPAM for Coq
+ * on the status of trunk
