@@ -13,14 +13,12 @@ The framadate link to decide which day it will happen is:
 The next Coq Working Group will take place in on November the 25th at 10am at Sophie Germain, PPS on the 3rd floor. If time permits, it will be continued by a debugging session.
 
 = Schedule =
-== 10:00 - 10:20 Status of 8.5, calendar (Maxime) ==
-== 10:20 - 10:40 Communication practices (Hugo) ==
-== 10:40 - 11:00 Current status of OPAM for Coq (Guillaume C.) ==
-== 11:00 - 11:15 Break ==
-== 11:15 - 12:15 Organization of the development : proposal and discussion (Maxime, collective discussion) ==
-== 12:15 - 12:25 Status of options: synchro / non synchro / both (Pierre C.) ==
-== 12:25 - 12:30 Alternative to "f is assumed" ("declared", "taken", "given", ...)? (Hugo) ==
-
-== 12:30 Lunch ==
-
-== Afternoon: Pull requests and bug squashing ==
+ * 10:00 - 10:20 Status of 8.5, calendar (Maxime)
+ * 10:20 - 10:40 Communication practices (Hugo)
+ * 10:40 - 11:00 Current status of OPAM for Coq (Guillaume C.)
+ * 11:00 - 11:15 Break
+ * 11:15 - 12:15 Organization of the development : proposal and discussion (Maxime, collective discussion)
+ * 12:15 - 12:25 Status of options: synchro / non synchro / both (Pierre C.)
+ * 12:25 - 12:30 Alternative to "f is assumed" ("declared", "taken", "given", ...)? (Hugo)
+ * 12:30 Lunch
+ * Afternoon: Pull requests and bug squashing
