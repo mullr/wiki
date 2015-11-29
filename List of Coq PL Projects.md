@@ -37,3 +37,5 @@ This is a partial list of of programming languages projects using Coq.  If we've
  * Java Card EAL7 certification in 2007 at Gemalto [[http://www.gemalto.com/php/pr_view.php?id=239]].
 
  * The JSCert team (Imperial College London & INRIA): We have formalized the semantics of Java``Script (ECMAScript 5) in Coq, and extracted a trusted reference interpreter for the langauge, as described in our POPL'14 paper ([[http://dl.acm.org/citation.cfm?id=2535876]]). Our development is available online, please use it and/or contribute: [[http://jscert.org]], [[https://github.com/jscert/jscert]].
+
+ * Kia Rahmani (Purdue University): I am using Coq to formalize Quelea, a declarative programming language over eventually consistent data stores [[http://gowthamk.github.io/docs/quelea.pdf]].
