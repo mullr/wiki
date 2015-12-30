@@ -40,5 +40,5 @@ This is a partial list of of programming languages projects using Coq.  If we've
 
  * Kia Rahmani (Purdue University): I am using Coq to formalize Quelea, a declarative programming language over eventually consistent data stores [[http://gowthamk.github.io/docs/quelea.pdf]].
 
- * Abhishek Anand (Cornell University): I have developed [[https://github.com/aa755/ROSCoq|ROSCoq]], a framework for developing and reasoning about robotic programs in Coq. ROSCoq comes with facilities for compiling Coq programs to Haskell, and running them on robots supported by the Robot Operating System  [[http://www.ros.org/|(ROS)]] using the [[https://github.com/acowley/roshask|roshask]] library.
+ * Abhishek Anand (Cornell University): I have developed [[https://github.com/aa755/ROSCoq|ROSCoq]], a framework for developing and reasoning about robotic programs in Coq. ROSCoq comes with facilities for running these programs on robots supported by the Robot Operating System  [[http://www.ros.org/|(ROS)]]. This is achieved by using Coq's extraction to Haskell, and then using the [[https://github.com/acowley/roshask|roshask]] library.
  
