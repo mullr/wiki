@@ -5,7 +5,7 @@
 <<TableOfContents>>
 
 This page is used to organize the next Coq Working Group (in French GT Coq).
-The framadate link to decide which day it will happen is:
+The framadate link to decide which day it will happen was:
 
   https://framadate.org/2a2xL73ZXlaYpNWK
 
