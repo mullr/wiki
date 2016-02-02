@@ -16,3 +16,4 @@ The next Coq Working Group will take place on February 16th at Sophie Germain, P
  * Development rules and best practices
  * Schedule and roadmap for 8.6
  * Afternoon: Pull requests
+ * Bugzilla vs other tools?
