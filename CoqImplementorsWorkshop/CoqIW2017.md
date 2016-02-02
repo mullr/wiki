@@ -1,8 +1,7 @@
 = Second Coq Implementors Workshop, May 30 - June 3 2016 Sophia-Antipolis =
 This page collects useful infos for the participants to the second Coq Implementors Workshop
 
-== What is an Implementors Workshop? ==
-An Implementors Workshop is an event that brings together the core developers of Coq and people willing to understand, improve or extend the system.
+The Coq Implementors Workshop is an event that brings together the core developers of Coq and people willing to understand, improve or extend the system.
 
 == Location ==
 The Implementors Workshop takes place at the Inria Center in Sophia-Antipolis ([[https://team.inria.fr/marelle/venue/|how to reach the Inria center]], [[https://team.inria.fr/marelle/accomodation-information/|accommodation infos]]).
