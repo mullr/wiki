@@ -48,6 +48,10 @@ As discussed this summer, would a separate release process for the libraries and
 
 IMHO, this would imply a lot of effort, but on the other hand it could bring significant advantages.
 
+'''GM''' Personally, I think this would be a very good thing. Three reasons: 1) it would likely improve the adoption of opam. 2) it would allow additions to the library without needing to get them merged into Coq. 3), I think it would allow help getting more people involved without Coq development without them needing to work with the Coq internals (yes you can submit pull requests to the standard library without touching the Coq implementation but it seems like a lot). If this gets done, there should be something like a 'batteries' package that packages up some of the most commonly used pieces of the library, in particular, this is probably useful for people where opam does not work well.
+
+'''GM''' One way to see if this would be beneficial would be to poll the community and see how much interest there would be from others in working on this. If no one would want to contribute then it probably is not worth it.
+
 === coqdoc future ===
 
 What are the plans for CoqDoc? What about supporting writing proof scripts in rich markup languages?
