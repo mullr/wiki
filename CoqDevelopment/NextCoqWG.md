@@ -16,6 +16,7 @@ The next Coq Working Group will take place on February 16th at Sophie Germain, P
  * Development rules and best practices
  * Schedule and roadmap for 8.6
  * Afternoon: Pull requests
+ * Discusssion on tactics, ssreflect (minimum 30mns, up to 1h30 if time permits) [HH]
 
 == Some more possible topics (by Emilio J. Gallego) ==
 
