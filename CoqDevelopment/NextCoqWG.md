@@ -18,6 +18,11 @@ The next Coq Working Group will take place on February 16th at Sophie Germain, P
  * Afternoon: Pull requests
  * Discusssion on tactics, ssreflect (minimum 30mns, up to 1h30 if time permits) [HH]
 
+== Talk
+
+ * Syntax extension : 'pattern 10 min (Daniel de Rauglaudre)
+
+
 == Some more possible topics (by Emilio J. Gallego) ==
 
 === Bugzilla vs other tools? ===
