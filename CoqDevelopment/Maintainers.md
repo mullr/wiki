@@ -66,3 +66,4 @@ What are the plans for CoqDoc? What about supporting writing proof scripts in ri
 
 * Coq mailing lists are not indexed by google!
 * Should cleanups target master or 8.5?
+* '''MK''' I was wondering why do we have "trunk" instead of "master". Technically, it does not matter. It just sounds (to me) curiously in the git-context.
