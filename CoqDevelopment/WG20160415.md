@@ -48,6 +48,10 @@ Regarding github's/gitlab, IMHO their interface currently lacks enough release m
 
 Another interesting approach is to have every pull request to go by a mailing list review as done in linux.
 
+=== README.dev ===
+
+In particular it would be nice to have a small "How to contribute to Coq, guide for the casual developer" document.
+
 === Splitting the libraries ===
 
 As discussed this summer, would a separate release process for the libraries and for the compiler make sense?
