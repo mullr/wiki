@@ -20,7 +20,7 @@ The next Coq Working Group will take place on February 16th at Sophie Germain, P
 
 == Talk ==
 
- * Syntax extension : 'pattern 10 min (Daniel de Rauglaudre)
+ * Syntax extension : '(pattern), e.g. "Definition f '(x,y) := ...", 10 min (Daniel de Rauglaudre)
 
 
 == Some more possible topics (by Emilio J. Gallego) ==
