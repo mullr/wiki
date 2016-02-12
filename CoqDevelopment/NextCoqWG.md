@@ -12,16 +12,13 @@ The framadate link to decide which day it will happen was:
 = Organization =
 The next Coq Working Group will take place on February 16th at Sophie Germain, PPS on the 3rd floor.
 
-= Topics for discussion =
- * Development rules and best practices
- * Schedule and roadmap for 8.6
+= Schedule =
+ * 10:00 - 11:00 Development rules and best practices (Maxime)
+ * 11:00 - 12:00 Discusssion on tactics, ssreflect (Hugo)
+ * 12:00 - 12:10 Syntax extension : '(pattern), e.g. "Definition f '(x,y) := ..." - Daniel De Rauglaudre
+ * 12:10 - 12:20 Splitting libraries
+ * 12:20 - 12:30 Bug management systems
  * Afternoon: Pull requests
- * Discusssion on tactics, ssreflect (minimum 30mns, up to 1h30 if time permits) [HH]
-
-== Talk ==
-
- * Syntax extension : '(pattern), e.g. "Definition f '(x,y) := ...", 10 min (Daniel de Rauglaudre)
-
 
 == Some more possible topics (by Emilio J. Gallego) ==
 
