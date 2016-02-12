@@ -18,6 +18,7 @@ The next Coq Working Group will take place on February 16th at Sophie Germain, P
  * 12:00 - 12:10 Syntax extension : '(pattern), e.g. "Definition f '(x,y) := ..." - Daniel De Rauglaudre
  * 12:10 - 12:20 Splitting libraries
  * 12:20 - 12:30 Bug management systems
+ * 12:30 Lunch
  * Afternoon: Pull requests
 
 == Some more possible topics (by Emilio J. Gallego) ==
