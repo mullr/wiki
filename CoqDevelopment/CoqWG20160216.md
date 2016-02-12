@@ -73,11 +73,3 @@ Coq mailing lists are not indexed by google!
 Should cleanups target master or 8.5?
 
 Why do we have "trunk" instead of "master"? Technically, it does not matter. It just sounds (to me) curiously in the git-context.
-
-Should we / is it a good idea to define a DOI for individual Coq versions
-(like it was done for company-coq
-
-  https://zenodo.org/record/44331#.Vrnn3exidhE
-
-so that people can refer to us (and we can find out who is referring to us).
-This seems has a flavour of some socialistic network but possibly could be useful.
