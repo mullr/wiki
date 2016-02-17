@@ -36,6 +36,7 @@ TBD
  1. Maxime Dénès
  1. Enrico Tassi
  1. Pierre-Marie Pédrot
+ 1. Matej Košík
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
