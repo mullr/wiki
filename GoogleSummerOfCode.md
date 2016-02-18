@@ -93,7 +93,7 @@ Template for ideas are:
 
 === Improve CoqDoc support for JsCoq ===
 
-* '''Description''': A branch of [[https://github.com/coq/coq/pull/133]|[CoqDoc ]] has now support for outputting JsCoq documents. However coqdoc lacks support for many useful constructs to build lessons with CoqDoc like a "click here to eval"/"click here to view the type, automatic "go to this point", "solve this exercise" etc... commands. The goal of the student would be, starting from the current coqdoc branch to build and extend CoqDoc to support a nice interactive introduction to Coq.
+* '''Description''': A branch of [[https://github.com/coq/coq/pull/133|CoqDoc]] has now support for outputting JsCoq documents. However coqdoc lacks support for many useful constructs to build lessons with CoqDoc like a "click here to eval"/"click here to view the type, automatic "go to this point", "solve this exercise" etc... commands. The goal of the student would be, starting from the current coqdoc branch to build and extend CoqDoc to support a nice interactive introduction to Coq.
 
 * '''Requisites''': Ocaml: ''Medium'', Coq: ''Medium/Low'', Js/HTML: ''Medium/High'':
 
