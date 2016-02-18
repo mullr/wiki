@@ -51,7 +51,7 @@ Template for ideas are:
 
 * '''Difficulty''': Medium/High
 
-* '''Mentor''': Emilio J. Gallego
+* '''Mentor''': Emilio J. Gallego  (GM: I have a partial implementation of the revised API, I wanted to do a bit of benchmarking)
 
 
 === Atom-based CoqIDE ===
@@ -63,3 +63,15 @@ Template for ideas are:
 * '''Difficulty''': Very High
 
 * '''Mentor''': Emilio J. Gallego 
+
+=== Stable Binary Format ===
+
+* '''Description''': Implement a stable binary format for Coq theory files (an alternative to .vo). As a starting point, we could just write a standalone tool that converts a .vo to one of these files and back. The benefits of a stable binary format are: 1) avoid rebuilding large libraries, 2) avoid having to install plugins that are only necessary to build files, 3) quick way to use old developments in new ones, 4) ability to manipulate Coq files in languages other than Ocaml.
+
+* '''NOTE''': Someone on the Coq teams needs to weigh in on their perceived usefulness of this and the feasibility of the project.
+
+* '''Requisites''': Ocaml: ''High'', Coq: ''Medium''
+
+* '''Difficulty''': Very High
+
+* '''Mentor''': Gregory Malecha + Someone from the Coq team
