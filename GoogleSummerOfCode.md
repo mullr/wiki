@@ -51,7 +51,7 @@ Template for ideas are:
 
 * '''Difficulty''': Medium/High
 
-* '''Mentor''': Emilio J. Gallego  (GM: I have a partial implementation of the revised API, I wanted to do a bit of benchmarking)
+* '''Mentor''': Emilio J. Gallego  (GM: I have a partial implementation of the revised API, I wanted to do a bit of benchmarking) (EG: great ! Would you like to mentor/co-mentor this project?)
 
 
 === Atom-based CoqIDE ===
@@ -62,13 +62,14 @@ Template for ideas are:
 
 * '''Difficulty''': Very High
 
-* '''Mentor''': Emilio J. Gallego 
+* '''Mentor''': Emilio J. Gallego
 
 === Stable Binary Format ===
 
 * '''Description''': Implement a stable binary format for Coq theory files (an alternative to .vo). As a starting point, we could just write a standalone tool that converts a .vo to one of these files and back. The benefits of a stable binary format are: 1) avoid rebuilding large libraries, 2) avoid having to install plugins that are only necessary to build files, 3) quick way to use old developments in new ones, 4) ability to manipulate Coq files in languages other than Ocaml.
 
 * '''NOTE''': Someone on the Coq teams needs to weigh in on their perceived usefulness of this and the feasibility of the project.
+     (EG: IMO this is super interesting stuff, but indeed it may be too hard. The first problem we found some time ago is that .vo files store hashes, which are of different size in 32 vs 64 versions of Coq.)
 
 * '''Requisites''': Ocaml: ''High'', Coq: ''Medium''
 
@@ -80,10 +81,22 @@ Template for ideas are:
 
 * '''Description''': Update Coq to 1) Support an XML format for all outputs (proof goals, responses to entering definitions--good or bad, etc.), 2) To produce a command that can take any Coq command and respond with the corresponding AST XML with line/column annotations.  3)  Develop a Python library (based on CoqPIE) to provide support for many useful capabilities such as proof replay, dependency analysis, lemma extraction and term difference analysis.  The idea being that the Python library will be integrated into other IDEs.
 
-* '''Support for developing an IDE based on Coq Syntax ASTs''': 
+* '''Support for developing an IDE based on Coq Syntax ASTs''':
 
 * '''Requisites''': Ocaml: ''High'', Coq: ''Medium'' Python: ''Medium'':
 
 * '''Difficulty''': Medium
- 
+
 * '''Mentor''': Kenneth Roe + Someone from the Coq team
+
+* '''Comments by EG''': Note that a sensible plan here could be to use automatic serialization of the Coq internal structures using ocaml PPX. Note that in particular JSON/SEXP serialization works well and a proof of concept has been implemented for JsCoq, see the thread titled ''Printing-only notations (was Re: Printing in fully parenthesized Polish prefix notation)'' in coqev. Unfortunately the ppx support for json serialization seems to work not so well these days, and doing is manually is IMO just not going to work due to the size and complexity of the structures.
+
+=== Improve CoqDoc support for JsCoq ===
+
+* '''Description''': A branch of [[https://github.com/coq/coq/pull/133]|[CoqDoc ]] has now support for outputting JsCoq documents. However coqdoc lacks support for many useful constructs to build lessons with CoqDoc like a "click here to eval"/"click here to view the type, automatic "go to this point", "solve this exercise" etc... commands. The goal of the student would be, starting from the current coqdoc branch to build and extend CoqDoc to support a nice interactive introduction to Coq.
+
+* '''Requisites''': Ocaml: ''Medium'', Coq: ''Medium/Low'', Js/HTML: ''Medium/High'':
+
+* '''Difficulty''': Medium
+
+* '''Mentor''': Emilio J. Gallego
