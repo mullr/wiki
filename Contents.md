@@ -45,6 +45,8 @@ You need to install Coq and either CoqIDE (recommended for beginners) or Proof G
 
  * [[CoqDevelopment/NextCoqWG|The next Coq Working Group]]
 
+ * [[GoogleSummerOfCode|Ideas for the Google Summer of Code]]
+
 == Coq community ==
 
 Pointers to existing projects involving Coq.
