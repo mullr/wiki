@@ -75,3 +75,15 @@ Template for ideas are:
 * '''Difficulty''': Very High
 
 * '''Mentor''': Gregory Malecha + Someone from the Coq team
+
+=== Update Coq Parser API ===
+
+* '''Description''': Update Coq to 1) Support an XML format for all outputs (proof goals, responses to entering definitions--good or bad, etc.), 2) To produce a command that can take any Coq command and respond with the corresponding AST XML with line/column annotations.  3)  Develop a Python library (based on CoqPIE) to provide support for many useful capabilities such as proof replay, dependency analysis, lemma extraction and term difference analysis.  The idea being that the Python library will be integrated into other IDEs.
+
+* '''Support for developing an IDE based on Coq Syntax ASTs''': 
+
+* '''Requisites''': Ocaml: ''High'', Coq: ''Medium'' Python: ''Medium'':
+
+* '''Difficulty''': Medium
+ 
+* '''Mentor''': Kenneth Roe + Someone from the Coq team
