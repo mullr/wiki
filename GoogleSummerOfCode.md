@@ -1,6 +1,5 @@
 = Ideas for Google Summer of Code and Coq =
 
-
 == Mentors ==
 
 People that have expressed interest in mentoring: Maxime Dènes, Emilio Gallego, Gregory Machela, Pierre-Marie Pedrot, Kenneth Roe, Matthieu Sozeau, Enrico Tassi
@@ -17,7 +16,9 @@ Template for ideas are:
 
 * '''Difficulty''':
 
-* '''Mentor''': 
+* '''Mentors''': 
+
+We aim most ideas to be co-mentored, so feel free to participate in an existing one.
 
 === JsCoq library and option management ===
 
@@ -103,6 +104,16 @@ Template for ideas are:
 * '''Description''': A branch of [[https://github.com/coq/coq/pull/133|CoqDoc]] has now support for outputting JsCoq documents. However coqdoc lacks support for many useful constructs to build lessons with CoqDoc like a "click here to eval"/"click here to view the type, automatic "go to this point", "solve this exercise" etc... commands. The goal of the student would be, starting from the current coqdoc branch to build and extend CoqDoc to support a nice interactive introduction to Coq.
 
 * '''Requisites''': Ocaml: ''Medium'', Coq: ''Medium/Low'', Js/HTML: ''Medium/High'':
+
+* '''Difficulty''': Medium
+
+* '''Mentor''': Emilio J. Gallego
+
+=== Extraction to Javascript ===
+
+* '''Description''': Extend Coq's extraction plugin so it can output javascript. This would allow the definition of Coq programs in JsCoq, their extraction, and execution whithin the browser.
+
+* '''Requisites''': Ocaml: ''Medium'', Coq: ''Medium'', Js/HTML: ''Medium'':
 
 * '''Difficulty''': Medium
 
