@@ -51,7 +51,7 @@ Template for ideas are:
 
 * '''Difficulty''': Medium/High
 
-* '''Mentor''': Emilio J. Gallego  (GM: I have a partial implementation of the revised API, I wanted to do a bit of benchmarking) (EG: great ! Would you like to mentor/co-mentor this project?)
+* '''Mentor''': Emilio J. Gallego  (GM: I have a partial implementation of the revised API, I wanted to do a bit of benchmarking) (EG: great ! Would you like to mentor/co-mentor this project?) (GM: sure)
 
 
 === Atom-based CoqIDE ===
@@ -69,7 +69,7 @@ Template for ideas are:
 * '''Description''': Implement a stable binary format for Coq theory files (an alternative to .vo). As a starting point, we could just write a standalone tool that converts a .vo to one of these files and back. The benefits of a stable binary format are: 1) avoid rebuilding large libraries, 2) avoid having to install plugins that are only necessary to build files, 3) quick way to use old developments in new ones, 4) ability to manipulate Coq files in languages other than Ocaml.
 
 * '''NOTE''': Someone on the Coq teams needs to weigh in on their perceived usefulness of this and the feasibility of the project.
-     (EG: IMO this is super interesting stuff, but indeed it may be too hard. The first problem we found some time ago is that .vo files store hashes, which are of different size in 32 vs 64 versions of Coq.)
+     (EG: IMO this is super interesting stuff, but indeed it may be too hard. The first problem we found some time ago is that .vo files store hashes, which are of different size in 32 vs 64 versions of Coq.) (GM: A hash of what? At their core, these files are just ASTs of Gallina terms + notations + ltac tactics. But I can't think of what you would need hashes for.)
 
 * '''Requisites''': Ocaml: ''High'', Coq: ''Medium''
 
