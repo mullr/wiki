@@ -77,7 +77,7 @@ We aim most ideas to be co-mentored, so feel free to participate in an existing 
 * '''Description''': Implement a stable binary format for Coq theory files (an alternative to .vo). As a starting point, we could just write a standalone tool that converts a .vo to one of these files and back. The benefits of a stable binary format are: 1) avoid rebuilding large libraries, 2) avoid having to install plugins that are only necessary to build files, 3) quick way to use old developments in new ones, 4) ability to manipulate Coq files in languages other than Ocaml.
 
 * '''NOTE''': Someone on the Coq teams needs to weigh in on their perceived usefulness of this and the feasibility of the project.
-     (EG: IMO this is super interesting stuff, but indeed it may be too hard. The first problem we found some time ago is that .vo files store hashes, which are of different size in 32 vs 64 versions of Coq.) (GM: A hash of what? At their core, these files are just ASTs of Gallina terms + notations + ltac tactics. But I can't think of what you would need hashes for.)
+     (EG: IMO this is super interesting stuff, but indeed it may be too hard. The first problem we found some time ago is that .vo files store hashes, which are of different size in 32 vs 64 versions of Coq.) (GM: A hash of what? At their core, these files are just ASTs of Gallina terms + notations + ltac tactics. But I can't think of what you would need hashes for. ET: imo this project mixes "stable" and "readable".  by turning .vo files into directories would make the second part simpler, especially the step0 (converter); eg .vo files are already divided into binary segments, one of these segment is an array of terms and could simply be a subdirectory of terms)
 
 * '''Requisites''': Ocaml: ''High'', Coq: ''Medium''
 
@@ -95,8 +95,7 @@ We aim most ideas to be co-mentored, so feel free to participate in an existing 
 
 * '''Difficulty''': Medium
 
-* '''Mentor''': Kenneth Roe + Someone from the Coq team
-
+* '''Mentor''': Kenneth Roe + Enrico Tassi
 * '''Comments by EG''': Note that a sensible plan here could be to use automatic serialization of the Coq internal structures using ocaml PPX. Note that in particular JSON/SEXP serialization works well and a proof of concept has been implemented for JsCoq, see the thread titled ''Printing-only notations (was Re: Printing in fully parenthesized Polish prefix notation)'' in coqev. Unfortunately the ppx support for json serialization seems to work not so well these days, and doing is manually is IMO just not going to work due to the size and complexity of the structures.
 
 === Improve CoqDoc support for JsCoq ===
