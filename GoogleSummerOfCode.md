@@ -1,5 +1,12 @@
 = Ideas for Google Summer of Code and Coq =
 
+
+== Mentors ==
+
+People that have expressed interest in mentoring: Maxime Dènes, Emilio Gallego, Gregory Machela, Pierre-Marie Pedrot, Kenneth Roe, Matthieu Sozeau, Enrico Tassi
+
+== Ideas ==
+
 Template for ideas are:
 
 === Title of the Idea ===
