@@ -168,6 +168,39 @@ This is not as useful as native support for lexicographic ordering because when 
 
 When unfolding a fixpoint and reducing it, we are left with a {{{fix}}} expression which in principle could be refolded when this expression is associated to a definition. What are the issues if we modify the rule for unfolding "named fixpoint" in the kernel.
 
+=== Dependent mutual fixpoints ===
+
+Support mutual fixpoints with dependencies as e.g. in:
+
+{{{
+Notation "x .1" := (projT1 x) (at level 1, left associativity, format "x .1").
+Notation "x .2" := (projT2 x) (at level 1, left associativity, format "x .2").
+
+Fixpoint f (n:nat) : Type :=
+  match n with
+  | 0 => unit
+  | S n => {x:f n | g n x}
+  end
+
+with g (n:nat) : f n -> Prop :=
+  match n with
+  | 0 => fun _ => True
+  | S n => fun x => g n x.1 /\ x = x
+  end.
+}}}
+
+There is for instance an application in [[http://pauillac.inria.fr/~herbelin/articles/mscs-Her14-semisimplicial.pdf|constructing semi-simplicial types]]. Currently, one needs to do
+
+{{{
+Fixpoint fg (n:nat) : {A:Type & A -> Prop} :=
+  match n with
+  | 0 => existT (fun A:Type => A -> Prop) unit (fun _ => True)
+  | S n => let (fn,gn) := fg n in existT (fun A:Type => A -> Prop) {x:fn & gn x} (fun x => gn x.1 /\ x=x)
+  end.
+
+Definition f n := (fg n).1.
+Definition g n := (fg n).2.
+}}}
 === Per-inductive parameters in mutual inductive blocks ===
 
 A mutual inductive definition such as
