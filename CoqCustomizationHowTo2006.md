@@ -3,6 +3,8 @@
 #pragma section-numbers 2
 ## Initial Version by Pierre Corbineau
 
+'''''This document is referring to development under Coq at the period of Coq 8.1 and 8.2. It is outdated'''''
+
 = Coq customization: A tutorial =
 
 The object of this document is to guide the user towards the
