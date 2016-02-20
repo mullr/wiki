@@ -201,6 +201,49 @@ Fixpoint fg (n:nat) : {A:Type & A -> Prop} :=
 Definition f n := (fg n).1.
 Definition g n := (fg n).2.
 }}}
+
+=== Recognizing uniform parameters in fixpoints ===
+
+A definition such as
+
+{{{
+Fixpoint map {A B} (f:A->B) l :=
+  match l with
+  | nil => nil
+  | cons n l => cons (f n) (map f l)
+  end.
+}}}
+
+cannot be used in the presence of 
+
+{{{
+Inductive tree := node : nat -> list tree -> tree.
+}}}
+
+to define
+
+{{{
+Fixpoint map_tree f t :=
+  match t with node n l => node (f n) (map (map_tree f) l) end.
+}}}
+
+Conversely, if one had defined map as follows:
+
+{{{
+Definition map {A B} (f:A->B) :=
+  fix map l :=
+  match l with
+  | nil => nil
+  | cons n l => cons (f n) (map l)
+  end.
+}}}
+
+one could have define map_tree above.
+
+The first definition is more natural than the latter one. What is missing for the first definition to be used in map_tree is that a fixpoint detects which of its parameters are uniform and hence substituable, as if presented with the latter form.
+
+Relevant code is in branch Fix of function check_rec_call in Inductive.check_one_fix [Feb 2016].
+
 === Per-inductive parameters in mutual inductive blocks ===
 
 A mutual inductive definition such as
