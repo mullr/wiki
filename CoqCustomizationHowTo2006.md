@@ -1,3 +1,4 @@
+## page was renamed from CoqCustomizationHowTo
 #language en
 #pragma section-numbers 2
 ## Initial Version by Pierre Corbineau
