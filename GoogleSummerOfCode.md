@@ -10,13 +10,13 @@ Template for ideas are:
 
 === Title of the Idea ===
 
-* '''Description''': 
+* '''Description''':
 
 * '''Requisites''':
 
 * '''Difficulty''':
 
-* '''Mentors''': 
+* '''Mentors''':
 
 We aim most ideas to be co-mentored, so feel free to participate in an existing one.
 
@@ -91,7 +91,7 @@ We aim most ideas to be co-mentored, so feel free to participate in an existing 
 
 * '''Support for developing an IDE based on Coq Syntax ASTs''':
 
-* '''Requisites''': Ocaml: ''High'', Coq: ''Medium'' Python: ''Medium'':
+* '''Requisites''': Ocaml: ''High'', Coq: ''Medium'' Python: ''Medium''
 
 * '''Difficulty''': Medium
 
@@ -102,7 +102,7 @@ We aim most ideas to be co-mentored, so feel free to participate in an existing 
 
 * '''Description''': A branch of [[https://github.com/coq/coq/pull/133|CoqDoc]] has now support for outputting JsCoq documents. However coqdoc lacks support for many useful constructs to build lessons with CoqDoc like a "click here to eval"/"click here to view the type, automatic "go to this point", "solve this exercise" etc... commands. The goal of the student would be, starting from the current coqdoc branch to build and extend CoqDoc to support a nice interactive introduction to Coq.
 
-* '''Requisites''': Ocaml: ''Medium'', Coq: ''Medium/Low'', Js/HTML: ''Medium/High'':
+* '''Requisites''': Ocaml: ''Medium'', Coq: ''Medium/Low'', Js/HTML: ''Medium/High''
 
 * '''Difficulty''': Medium
 
@@ -112,7 +112,7 @@ We aim most ideas to be co-mentored, so feel free to participate in an existing 
 
 * '''Description''': Extend Coq's extraction plugin so it can output javascript. This would allow the definition of Coq programs in JsCoq, their extraction, and execution whithin the browser.
 
-* '''Requisites''': Ocaml: ''Medium'', Coq: ''Medium'', Js/HTML: ''Medium'':
+* '''Requisites''': Ocaml: ''Medium'', Coq: ''Medium'', Js/HTML: ''Medium''
 
 * '''Difficulty''': Medium
 
@@ -122,7 +122,7 @@ We aim most ideas to be co-mentored, so feel free to participate in an existing 
 
 * '''Description''': Tobias Tebbi wrote a very useful [[http://www.ps.uni-saarland.de/~ttebbi/ltacprof/|profiler for Coq 8.4]].  The goal would be to port it to 8.5 and have it integrated in trunk.  Most of it has been [[https://github.com/JasonGross/coq/commits/v8.5%2Bltacprof|ported to a slightly outdated version of the v8.5 branch]], but it doesn't actually work (as you execute more tactics, the percentage of the total time which is accounted for in the table goes down.  What remains is primarily debugging this issue.
 
-* '''Requisites''': Ocaml: ''Medium'', Coq: ''Low'', Debugging: ''High'':
+* '''Requisites''': Ocaml: ''Medium'', Coq: ''Low'', Debugging: ''High''
 
 * '''Difficulty''': Low--Medium
 
