@@ -117,3 +117,13 @@ We aim most ideas to be co-mentored, so feel free to participate in an existing 
 * '''Difficulty''': Medium
 
 * '''Mentor''': Emilio J. Gallego
+
+=== Porting LtacProf to Coq 8.5 ===
+
+* '''Description''': Tobias Tebbi wrote a very useful [[http://www.ps.uni-saarland.de/~ttebbi/ltacprof/|profiler for Coq 8.4]].  The goal would be to port it to 8.5 and have it integrated in trunk.  Most of it has been [[https://github.com/JasonGross/coq/commits/v8.5%2Bltacprof|ported to a slightly outdated version of the v8.5 branch]], but it doesn't actually work (as you execute more tactics, the percentage of the total time which is accounted for in the table goes down.  What remains is primarily debugging this issue.
+
+* '''Requisites''': Ocaml: ''Medium'', Coq: ''Low'', Debugging: ''High'':
+
+* '''Difficulty''': Low--Medium
+
+* '''Mentors''': ??? (Jason Gross would be willing to provide input and direction, but doesn't have much time available)
