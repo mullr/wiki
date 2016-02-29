@@ -1,6 +1,6 @@
 = Math Classes =
 
-[math-classes](https://math-classes.github.io/) is a library of abstract interfaces for mathematical structures.
+[[https://math-classes.github.io/|math-classes]] is a library of abstract interfaces for mathematical structures.
 
  * Algebraic hierarchy (groups, rings, fields, ...)
  * Relations, orders, ...
