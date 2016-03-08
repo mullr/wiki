@@ -47,6 +47,8 @@ You need to install Coq and either CoqIDE (recommended for beginners) or Proof G
 
  * [[GoogleSummerOfCode|Ideas for the Google Summer of Code]]
 
+ * [[ContinuousIntegration|Procedures related to continuous integration]]
+
 == Coq community ==
 
 Pointers to existing projects involving Coq.
