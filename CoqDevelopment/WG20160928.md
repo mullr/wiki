@@ -14,3 +14,13 @@ The next Coq Working Group will take place in April at Sophie Germain, PPS on th
 
 = Topics for discussion =
  * Roadmap and calendar for 8.6
+
+=== Emilio proposes: ===
+
+If there's time and interest I could lead:
+
+ * Review of PR#143: IMHO is mostly ready to go but there's a funny thing happening in trunk.
+
+ * Commentary of PR#145: Not ready to merge yet, but I could explain what the problem is trying to solve, and what is the current (far from perfect) solution)
+
+ * Evolution of the API for IDEs: I have some ideas towards evolving the current API for IDEs, this could be a good project to do for at the Hackcoqton, but I'd be great to have some feedback now.
