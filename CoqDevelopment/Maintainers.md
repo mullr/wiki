@@ -15,6 +15,10 @@ The next Coq Working Group will take place in April at Sophie Germain, PPS on th
 = Topics for discussion =
  * Roadmap and calendar for 8.6
 
+=== Pierre Courtieu proposes: ===
+
+ * About ways to display goals and error messages in a more compact way (10mn max)
+
 === Emilio proposes: ===
 
 If there's time and interest I could lead:
