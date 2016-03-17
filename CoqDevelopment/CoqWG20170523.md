@@ -28,3 +28,8 @@ If there's time and interest I could lead:
  * Commentary of PR#145: Not ready to merge yet, but I could explain what the problem is trying to solve, and what is the current (far from perfect) solution)
 
  * Evolution of the API for IDEs: I have some ideas towards evolving the current API for IDEs, this could be a good project to do for at the Hackcoqton, but I'd be great to have some feedback now.
+
+=== Paul Steckler proposes: ===
+
+ * improving code sharing between rewrite and setoid_rewrite
+ * memoizing repeated operations in setoid_rewrite, maybe involving typeclass instantiation
