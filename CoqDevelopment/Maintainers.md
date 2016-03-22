@@ -24,6 +24,7 @@ This page lists the components of the Coq system and the names of Coq developers
 ||Proof engine||Pierre-Marie Pédrot||
 
 = Tools =
+||'''Tool'''||'''Maintainers'''||
 ||CoqIDE||Pierre-Marie Pédrot, Enrico Tassi||
 ||coqdoc||Guillaume Melquiond, Matthieu Sozeau||
 ||coq_makefile||Enrico Tassi||
@@ -32,6 +33,7 @@ This page lists the components of the Coq system and the names of Coq developers
 ||coqwc||Guillaume Melquiond||
 
 = Plugins =
+||'''Plugin'''||'''Maintainers'''||
 ||btauto||Pierre-Marie Pédrot||
 ||cc||Hugo Herbelin||
 ||decl_mode||Hugo Herbelin||
@@ -50,6 +52,7 @@ This page lists the components of the Coq system and the names of Coq developers
 ||syntax||Pierre-Marie Pédrot||
 
 = Standard library =
+||'''Library'''||'''Maintainers'''||
 ||Arith||Pierre Letouzey||
 ||Bool||Pierre Letouzey||
 ||Classes||Matthieu Sozeau||
