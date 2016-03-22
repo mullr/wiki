@@ -5,32 +5,73 @@
 ## page was copied from CoqDevelopment/CRGTCoq20130709
 <<TableOfContents>>
 
-This page is used to organize the next Coq Working Group (in French GT Coq).
-The framadate link to decide which day it will happen is:
+This page lists the components of the Coq system and the names of Coq developers who volunteered to maintain them.
 
-  https://framadate.org/S8v3Q21TcZfqCRCx
+= Core components =
 
-= Organization =
-The next Coq Working Group will take place in April at Sophie Germain, PPS on the 3rd floor.
+||'''Component'''||'''Maintainers'''||
+||Checker||Bruno Barras, Maxime Dénès, Pierre Letouzey, Matthieu Sozeau||
+||Kernel||Bruno Barras, Maxime Dénès, Pierre Letouzey, Matthieu Sozeau||
+||Parsing and printing||Hugo Herbelin, Matthieu Sozeau||
+||STM||Enrico Tassi||
+||Pretyper||Matthieu Sozeau, Enrico Tassi||
+||Documentation and man pages||Guillaume Melquiond, Maxime Dénès||
+||Basic tactics||Pierre-Marie Pédrot, Matthieu Sozeau||
+||Ltac||Pierre-Marie Pédrot||
+||Build system||Pierre Letouzey, Maxime Dénès||
+||OCaml lib||Pierre-Marie Pédrot||
+||vo files (a.k.a. libraries) management||Guillaume Melquiond, Pierre-Marie Pédrot, Enrico Tassi||
+||Proof engine||Pierre-Marie Pédrot||
 
-= Topics for discussion =
- * Roadmap and calendar for 8.6
+= Tools =
+||CoqIDE||Pierre-Marie Pédrot, Enrico Tassi||
+||coqdoc||Guillaume Melquiond, Matthieu Sozeau||
+||coq_makefile||Enrico Tassi||
+||coqdep||Pierre-Marie Pédrot||
+||coq-tex||Guillaume Melquiond||
+||coqwc||Guillaume Melquiond||
 
-=== Pierre Courtieu proposes: ===
+= Plugins =
+||btauto||Pierre-Marie Pédrot||
+||cc||Hugo Herbelin||
+||decl_mode||Hugo Herbelin||
+||derive||Pierre-Marie Pédrot||
+||extraction||Pierre Letouzey||
+||firstorder||Hugo Herbelin||
+||fourier||Hugo Herbelin||
+||funind||Julien Forest, Pierre Courtieu||
+||micromega||Frédéric Besson||
+||nsatz||Hugo Herbelin||
+||omega||Pierre Letouzey||
+||quote||||
+||romega||Pierre Letouzey||
+||rtauto||||
+||setoid_ring||Assia Mahboubi||
+||syntax||Pierre-Marie Pédrot||
 
- * About ways to display goals and error messages in a more compact way (10mn max)
-
-=== Emilio proposes: ===
-
-If there's time and interest I could lead:
-
- * Review of PR#143: IMHO is mostly ready to go but there's a funny thing happening in trunk.
-
- * Commentary of PR#145: Not ready to merge yet, but I could explain what the problem is trying to solve, and what is the current (far from perfect) solution)
-
- * Evolution of the API for IDEs: I have some ideas towards evolving the current API for IDEs, this could be a good project to do for at the Hackcoqton, but I'd be great to have some feedback now.
-
-=== Paul Steckler proposes: ===
-
- * improving code sharing between rewrite and setoid_rewrite
- * memoizing repeated operations in setoid_rewrite, maybe involving typeclass instantiation
+= Standard library =
+||Arith||Pierre Letouzey||
+||Bool||Pierre Letouzey||
+||Classes||Matthieu Sozeau||
+||Compat||||
+||FSets||Pierre Letouzey||
+||Init||Pierre Letouzey, Pierre-Marie Pédrot||
+||Lists||Pierre Letouzey, Pierre-Marie Pédrot||
+||Logic||Hugo Herbelin, Pierre-Marie Pédrot||
+||MSets||Pierre Letouzey||
+||NArith||Pierre Letouzey||
+||Numbers||Pierre Letouzey||
+||PArith||Pierre Letouzey||
+||Program||Matthieu Sozeau||
+||QArith||Pierre Letouzey||
+||Reals||Guillaume Melquiond, Pierre-Marie Pédrot||
+||Relations||Matthieu Sozeau, Pierre-Marie Pédrot||
+||Setoids||Matthieu Sozeau, Pierre-Marie Pédrot||
+||Sets||Pierre Letouzey||
+||Sorting||Pierre Letouzey||
+||Strings||Pierre Letouzey, Hugo Herbelin||
+||Structures||Pierre Letouzey||
+||Unicode||Pierre Letouzey, Hugo Herbelin||
+||Vectors||||
+||Wellfounded||Pierre Letouzey, Matthieu Sozeau||
+||ZArith||Pierre Letouzey||
