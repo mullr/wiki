@@ -35,11 +35,11 @@ This page lists the components of the Coq system and the names of Coq developers
 = Plugins =
 ||'''Plugin'''||'''Maintainers'''||
 ||btauto||Pierre-Marie Pédrot||
-||cc||Hugo Herbelin||
-||decl_mode||Hugo Herbelin||
+||cc||Pierre Corbineau, Hugo Herbelin||
+||decl_mode||Pierre Corbineau, Hugo Herbelin||
 ||derive||Pierre-Marie Pédrot||
 ||extraction||Pierre Letouzey||
-||firstorder||Hugo Herbelin||
+||firstorder||Pierre Corbineau, Hugo Herbelin||
 ||fourier||Hugo Herbelin||
 ||funind||Julien Forest, Pierre Courtieu||
 ||micromega||Frédéric Besson||
@@ -47,7 +47,7 @@ This page lists the components of the Coq system and the names of Coq developers
 ||omega||Pierre Letouzey||
 ||quote||||
 ||romega||Pierre Letouzey||
-||rtauto||||
+||rtauto||Pierre Corbineau||
 ||setoid_ring||Assia Mahboubi||
 ||syntax||Pierre-Marie Pédrot||
 
