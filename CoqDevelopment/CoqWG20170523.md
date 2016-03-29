@@ -33,3 +33,6 @@ If there's time and interest I could lead:
 
  * improving code sharing between rewrite and setoid_rewrite
  * memoizing repeated operations in setoid_rewrite, maybe involving typeclass instantiation
+
+=== Assia proposes: ===
+ * News from the [[http://www.cost.eu/COST_Actions/ca/CA15123?management|EUtypes]] COST action (10 min)
