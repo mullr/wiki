@@ -10,7 +10,7 @@ The framadate link to decide which day it will happen is:
   https://framadate.org/S8v3Q21TcZfqCRCx
 
 = Organization =
-The next Coq Working Group will take place in April at Sophie Germain, PPS on the 3rd floor.
+The next Coq Working Group will take place on April 15th at Sophie Germain, PPS on the 3rd floor.
 
 = Topics for discussion =
  * Roadmap and calendar for 8.6
