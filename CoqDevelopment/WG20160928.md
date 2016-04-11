@@ -33,3 +33,6 @@ If there's time and interest I could lead:
 
 === Assia proposes: ===
  * News from the [[http://www.cost.eu/COST_Actions/ca/CA15123?management|EUtypes]] COST action (10 min)
+
+=== Daniel de Rauglaudre proposes: ===
+ * New vernac syntax "Numeral Notation", allowing to use strings of digits in user numeral types. Implemented in Coq numeral types (nat, Z, R, etc.), their plugin OCaml versions being removed.
