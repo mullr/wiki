@@ -1,4 +1,11 @@
-In order to hook up a coq-contrib to Jenkins:
- * create a new Jenkins job in [[https://ci.inria.fr/coq/view/coq-contribs/|coq-contribs view]] by copying any of the existing jobs in the same view.
- * the name of the new item '''must''' be the same as the name of the directory that holds its source-code in the "coq-contrib" repository.
- * after copying, keep all the values as they are.
+Jenkins is running [[https://ci.inria.fr/coq|here]].
+
+= coq-contribs =
+
+If you want to check whether coq-contribs are compilable with the Coq version you are interested in:
+
+ 1. Just rebuild the "make-all" project by following [[https://ci.inria.fr/coq/view/coq-contribs/job/make-all/build?delay=0sec|this link]].
+ 1. Keep or edit the values of the parameters of the "make-all" project (i.e. "coq_repository", "coq_branch", "coq_contribs_repository_prefix	
+ 1. Click on the "Build" button.
+
+The progress and the results are displayed in the usual way.
