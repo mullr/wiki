@@ -13,6 +13,7 @@ The next Coq Working Group will take place on April 15th at Sophie Germain, PPS 
 
 = Topics for discussion =
  * Roadmap and calendar for 8.6
+ * Reviewing pull requests?
 
 === Pierre Courtieu proposes: ===
  * About ways to display goals and error messages in a more compact way (10mn max)
