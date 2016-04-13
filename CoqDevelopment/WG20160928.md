@@ -37,3 +37,6 @@ If there's time and interest I could lead:
 
 === Daniel de Rauglaudre proposes: ===
  * New vernac syntax "Numeral Notation", allowing to use strings of digits in user numeral types. Implemented in Coq numeral types (nat, Z, R, etc.), their plugin OCaml versions being removed (15 min).
+
+=== Matthieu Sozeau proposes: ===
+ * Development practices - A short talk about the practices we want to advocate and a call for contributions (10min).
