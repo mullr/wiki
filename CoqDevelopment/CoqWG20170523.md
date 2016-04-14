@@ -40,3 +40,8 @@ If there's time and interest I could lead:
 
 === Matthieu Sozeau proposes: ===
  * Development practices - A short talk about the practices we want to advocate and a call for contributions (10min).
+
+=== Enrico Tassi ===
+ * CEP(es) a way to propose features for Coq (aka DEP in Debian, PEP in Python, tickets in Haskell, … RFC …) 10min
+ * CEP-1 a document format for Coq 8.7, 10m
+  
