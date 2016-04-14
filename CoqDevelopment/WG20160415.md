@@ -22,7 +22,7 @@ The next Coq Working Group will take place on April 15th at Sophie Germain, PPS 
 
  * 13:30 - 13:50 Development practices (Matthieu)
  * 13:50 - 14:00 CEP(es) a way to propose features for Coq (Enrico)
- * 14:00 - 14:15 a document format for Coq 8.7 (Enrico)
+ * 14:00 - 14:15 A document format for Coq 8.7 (Enrico)
  * 14:15 - 14:30 New vernac syntax "Numeral Notation" (Daniel)
  * 14:30 - 14:45 Break
  * 14:45 - 15:15 Improving setoid_rewrite (Paul)
