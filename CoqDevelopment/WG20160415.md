@@ -11,6 +11,23 @@ This page is used to organize the next Coq Working Group (in French GT Coq). The
 = Organization =
 The next Coq Working Group will take place on April 15th at Sophie Germain, PPS on the 3rd floor.
 
+= Schedule =
+ * 10:00 - 10:05 Introduction (Maxime)
+ * 10:05 - 11:30 Roadmap and calendar for 8.6 (Matthieu)
+ * 11:30 - 11:40 Break
+ * 11:40 - 11:50 News from the EUtypes COST action (Assia)
+ * 11:50 - 12:00 About ways to display goals and error messages in a more compact way (Pierre)
+
+ * 12:00 - 13:30 Lunch
+
+ * 13:30 - 13:50 Development practices (Matthieu)
+ * 13:50 - 14:00 CEP(es) a way to propose features for Coq (Enrico)
+ * 14:00 - 14:15 a document format for Coq 8.7 (Enrico)
+ * 14:15 - 14:30 New vernac syntax "Numeral Notation" (Daniel)
+ * 14:30 - 14:45 Break
+ * 14:45 - 15:15 Improving setoid_rewrite (Paul)
+ * 15:15 - 15:45 PR#143, PR#145 and API for IDEs (Emilio)
+
 = Topics for discussion =
  * Roadmap and calendar for 8.6
  * Reviewing pull requests?
