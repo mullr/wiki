@@ -18,17 +18,14 @@ This implementation has as objectives:
 
 == Debate ==
 
- * Z' is defined exactly like Z, with a positive' and constructors having having a quote. So why not using Z? Z' having to be defined very early in the Coq library (Datatypes.v), to be used in the definition of nat (Nat.v), we could move the definition of Z and positive into Datatypes.v and so, we do not have two definitions Z and Z'.
+ * Z' is defined exactly like Z, with a positive' and constructors having having a quote. So why not using Z? Z' having to be defined very early in the Coq library (Datatypes.v), to be used in the definition of nat (Nat.v), we could move the definition of Z and positive into Datatypes.v and so, we do not have two definitions Z and Z'. I think Z' should be kept, perhaps with another name, for the following reasons:
+  * For the mathematical point of view, there is no reason to define ℤ before ℕ. A mathematician using Coq would find this strange. For me, Coq is like a new Bourbaki, thinks must be clean as far a mathematics are concerned, and there is no reason to change this order of definitions just for a parsing and printing issue;
 
-I think Z' should be kept, perhaps with another name, for the following reasons:
+  * Z' is now defined like Z, but it is not a definition of integers; it is a definition of string of decimal digits; it is necessary for programming issues, not for mathematical issues; its definition may change if we decide to be able to parse and print decimal numbers (e.g. 3.5), or even rings in general (e.g. polynomials), as it was suggested in the Coq working group;
 
-  1. For the mathematical point of view, there is no reason to define ℤ before ℕ. A mathematician using Coq would find this strange. For me, Coq is like a new Bourbaki, thinks must be clean as far a mathematics are concerned, and there is no reason to change this order of definitions just for a parsing and printing issue;
+  * If we move the definition of Z into Datatypes.v, do we move also their associated comments explaining its implementation? Do we have to move all Z functions? Or kept them where they are now? In that case, Z definitions, functions, and proofs would be separated in different parts of the Coq library;
 
-  2. Z' is now defined like Z, but it is not a definition of integers; it is a definition of string of decimal digits; it is necessary for programming issues, not for mathematical issues; its definition may change if we decide to be able to parse and print decimal numbers (e.g. 3.5), or even rings in general (e.g. polynomials), as it was suggested in the Coq working group;
-
-  3. If we move the definition of Z into Datatypes.v, do we move also their associated comments explaining its implementation? Do we have to move all Z functions? Or kept them where they are now? In that case, Z definitions, functions, and proofs would be separated in different parts of the Coq library;
-
-  4. Z is very important, Z' is a detail; they should not be considered as the same thing
+  * Z is very important, Z' is a detail; they should not be considered as the same thing
 
  * It was suggested to define Numeral Notation for R differently, since the way integer numbers were coded for R was not good; I think that compatibility is important; if R users want reals integer numbers be parsed and printed differently, they can use their own "Numeral Notation" vernac command (in that case, it masks the "Numeral Notation" of the library), test if it is really better and later, we could adopt a new implementation of real integers.
 
