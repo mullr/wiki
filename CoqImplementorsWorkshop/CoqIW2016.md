@@ -46,7 +46,16 @@ A list of [[https://coq.inria.fr/cocorico/CoqImplementorsWorkshop/CoqIW2016/bsp|
 Also, [[https://coq.inria.fr/bugs/|bug triaging]] is very welcome (check if a bug is still valid, add extra info, close solved bugs...).
 
 == "Little" projects ==
-...
+
+=== Finish the safe string patch ===
+
+A good little project is to submit some cleanups for -safe-string as hinted in https://github.com/coq/coq/pull/134
+
+=== Fix Ocaml Warnings ===
+
+Compiling Coq with Ocaml Warning enabled provides interesting cases to look at for cleanups. More details in Bug: https://coq.inria.fr/bugs/show_bug.cgi?id=4671
+
+Using Merlin is highly recommended for this task.
 
 == Brainstorming ("harder" projects, to be considered carefully) ==
 ...
