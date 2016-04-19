@@ -1,3 +1,4 @@
+## page was renamed from Numeral Notation
 Numeral Notation is a new proposed vernac command. It allows any Coq user to define his own numeral types to be parsed and printed as strings of decimal digits, possibly prefixed by a minus sign (such as "0", "-42", "825"). There is an implementation of that, but before integrating it into the Coq sources, there are several decisions to take. But let us see what it is.
 
 First, the type of "strings of decimal digits" has been named Z' (Z prime, there is an debate about this choice, see below). The vernacular command is the following:
