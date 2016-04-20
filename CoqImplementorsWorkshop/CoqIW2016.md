@@ -55,6 +55,8 @@ A good little project is to submit some cleanups for -safe-string as hinted in h
 
 Compiling Coq with Ocaml Warning enabled provides interesting cases to look at for cleanups. More details in Bug: https://coq.inria.fr/bugs/show_bug.cgi?id=4671
 
+A special interesting project is to get the kernel to compile warning clean with *all warnings enabled*.
+
 Using Merlin is highly recommended for this task.
 
 == Brainstorming ("harder" projects, to be considered carefully) ==
