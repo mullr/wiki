@@ -1,12 +1,11 @@
 ## page was renamed from Numeral Notation
-
 Title: Numeral Notation
 
 Driver: Daniel
 
 Status: Draft
------
 
+-----
 Numeral Notation is a new proposed vernac command. It allows any Coq user to define his own numeral types to be parsed and printed as strings of decimal digits, possibly prefixed by a minus sign (such as "0", "-42", "825"). There is an implementation of that, but before integrating it into the Coq sources, there are several decisions to take. But let us see what it is.
 
 First, the type of "strings of decimal digits" has been named Z' (Z prime, there is an debate about this choice, see below). The vernacular command is the following:
@@ -28,12 +27,60 @@ This implementation has as objectives:
 == Example ==
 
 {{{
-... please fill in an example...
+Fixpoint pos'pred_double x :=
+  match x with
+  | x'I p => x'I (x'O p)
+  | x'O p => x'I (pos'pred_double p)
+  | x'H => x'H
+  end.
 
+Definition nat_of_Z' x :=
+  match x with
+  | Z'0 => Some O
+  | Z'pos p =>
+      let fix iter p a :=
+        match p with
+        | x'I p0 => a + iter p0 (a + a)
+        | x'O p0 => iter p0 (a + a)
+        | x'H => a
+        end
+      in
+      Some (iter p (S O))
+  | Z'neg p => None
+  end.
+
+Fixpoint pos'succ x := 
+  match x with
+  | x'I p => x'O (pos'succ p)
+  | x'O p => x'I p
+  | x'H => x'O x'H
+  end.
+
+Definition Z'succ x := 
+  match x with
+  | Z'0 => Z'pos x'H
+  | Z'pos x' => Z'pos (pos'succ x')
+  | Z'neg x' =>
+      match x' with
+      | x'I p => Z'neg (x'O p)
+      | x'O p => Z'neg (pos'pred_double p)
+      | x'H => Z'0
+      end
+  end.
+
+Fixpoint Z'_of_nat_loop n :=
+  match n with
+  | O => Z'0
+  | S p => Z'succ (Z'_of_nat_loop p)
+  end.
+
+Definition Z'_of_nat n := Some (Z'_of_nat_loop n).
+
+Numeral Notation nat nat_of_Z' Z'_of_nat : nat_scope
+  (warning after 5000).
 }}}
 
 == Debate ==
-
  * Z' is defined exactly like Z, with a positive' and constructors having having a quote. So why not using Z? Z' having to be defined very early in the Coq library (Datatypes.v), to be used in the definition of nat (Nat.v), we could move the definition of Z and positive into Datatypes.v and so, we do not have two definitions Z and Z'. I think Z' should be kept, perhaps with another name, for the following reasons:
   * For the mathematical point of view, there is no reason to define ℤ before ℕ. A mathematician using Coq would find this strange. For me, Coq is like a new Bourbaki, thinks must be clean as far a mathematics are concerned, and there is no reason to change this order of definitions just for a parsing and printing issue;
 
