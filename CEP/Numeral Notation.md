@@ -95,3 +95,25 @@ Numeral Notation nat nat_of_Z' Z'_of_nat : nat_scope
  * The system have been implemented also for int31, bigN, bigZ and bigQ; actually, I think that they should eventually been excluded from this system, because for these types, there are very important issues for speed and memory usage; in this new implementation, there is a big difference (I tested for 10^1000) and it it 4 times slower than the previous version and I suspect this could be worse for bigger numbers.
 
  * Speed of parsing and printing for the other types (nat, Z, R) should be tested, but it depends whether Coq programmers use really big numbers of these types; if not, we could have this version which is probably slower that the previous one, but small compared to the other parts of Coq (e.g. tactics).
+
+ * Pierre Letouzey : I suggest to use a very simple base-10 encoding as Coq entry point of Daniel's new parsing/printing mechanism, and let Coq do the rest of the conversion between these base-10 numbers and nat/positive/N/Z/. A [[https://github.com/letouzey/baseconv|proof-of-concept]] is on github.
+
+  * Interest:
+
+   * Less uncertified critical code : during parsing at the OCaml level, we could keep numeral constants as strings (e.g. "123"), and simply convert these strings to Coq lists of base-10 digits, i.e. D1::D2::D3::nil in my first datatype proposal, see [[https://github.com/letouzey/baseconv/blob/master/Deci.v|Deci.v]], or (D1 (D2 (D3 Stop))) in the second datatype proposal in [[https://github.com/letouzey/baseconv/blob/master/DeciBis.v|DeciBis.v]].
+
+   * This way, we could get rid of arbitrary sized numbers on the OCaml side (typically our lib/bigint.ml and its potential bugs).
+
+   * On the opposite, all conversions functions are already proved in Coq to be bijections, see for instance [[https://github.com/letouzey/baseconv/blob/master/DeciProofs.v|DeciProofs.v]].
+
+   * These Coq proofs aren't needed by the runtime mechanism, they could be kept anywhere in the standard library, as a kind of safety check. On the opposite, the runtime functions require very little (an euclidean division function, mostly) and can come very early in the stdlib.
+
+   * The same mechanism could also provide constants in hexadecimal notation :-), see [[https://github.com/letouzey/baseconv/blob/master/Hexa.v|Hexa.v]] and [[https://github.com/letouzey/baseconv/blob/master/HexaProofs.v|HexaProofs.v]].
+
+  * Cons : Possible slow-up due to these conversions done via vm_compute (but preliminary tests looks promising, even between base10 and nat, see [[https://github.com/letouzey/baseconv/blob/master/Tests.v|Tests.v]]).
+
+  * Todo :
+   * Integrate with Daniel's mechanism
+   * In particular extend to signed integers (i.e. add a boolean flag coding the sign)
+   * Continue the speed tests
+   * Many proofs to cleanup, this is a proof-of-concept, remember ;-)
