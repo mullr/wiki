@@ -37,6 +37,8 @@ TBD
  1. Enrico Tassi
  1. Pierre-Marie Pédrot
  1. Matej Košík
+ 1. Matthieu Sozeau
+ 1. Cyprien Mangin
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
