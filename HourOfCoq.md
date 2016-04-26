@@ -9,7 +9,7 @@ The idea is to imitate the format of the Hour of Code and promote students to do
 
 == TODO ==
 
-* Call for events.
-* Template (use jsCoq?)
-* Change name ?
-* Promotion.
+ * Call for events.
+ * Template (use jsCoq?)
+ * Change name ?
+ * Promotion.
