@@ -1,4 +1,6 @@
-= Ideas for Google Summer of Code and Coq =
+= Ideas for Google Summer of Code 2016 and Coq =
+
+Note: This page needs updating for GSOC 2017.
 
 == Mentors ==
 
