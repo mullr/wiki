@@ -38,6 +38,9 @@ TBD
  1. Matej Košík
  1. Matthieu Sozeau
  1. Cyprien Mangin
+ 1. Guillaume Melquiond
+ 1. Pierre Letouzey
+ 1. Hugo Herbelin
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
