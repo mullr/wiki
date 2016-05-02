@@ -7,7 +7,8 @@ The Coq Implementors Workshop is an event that brings together the core develope
 The Implementors Workshop takes place at the Inria Center in Sophia-Antipolis ([[https://team.inria.fr/marelle/venue/|how to reach the Inria center]], [[https://team.inria.fr/marelle/accomodation-information/|accommodation infos]]).
 
 == Program ==
-Program PDF
+
+[[attachment:schedule.pdf|Program PDF]]
 
 == Do log what you did/learnt/implemented! ==
 Write it [[https://coq.inria.fr/cocorico/CoqImplementorsWorkshop/CoqIW2016/log|here]].
