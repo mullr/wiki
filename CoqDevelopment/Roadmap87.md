@@ -1,6 +1,14 @@
-= Summary of changes =
+The purpose of this page is to summarize the different new features and
+modifications that are going to be part of Coq 8.6 and gather comments
+and opinions from developers.
 
-These changes are in the trunk and not in 8.5pl1.
+Feel free to start dissusing any of these items on this page, on coqdev 
+or the relevant PRs, and link them here if possible, add comments to 
+any points (creating new pages if necessary) or add your own items.
+
+= Summary of changes in trunk =
+
+These changes are in the trunk and not in 8.5pl1, or PRs for trunk.
 
 ? indicates points which were not discussed/undecided/whose description
 is incomplete, or which required more discussion/in-depth explanations.
@@ -8,7 +16,7 @@ is incomplete, or which required more discussion/in-depth explanations.
 The other items were agreed to be integrated in the next release at the last WG.
 
 ! indicates changes introducing incompatibilities w.r.t. 8.5 (not taking into
-account plugin interfaces)
+account plugin interfaces) 
 
 == General Implementation ==
 
