@@ -48,10 +48,6 @@ account plugin interfaces)
  * ? PR [[[[https://github.com/coq/coq/pull/117|#117]]: iota split into iota0+phi+psi and ML API cleanup for
   reduction functions (H. Herbelin)
 
- * ? Inductive-inductive, inductive-recursive, recursive-recursive definitions
-  Experimental [[https://github.com/mattam82/coq/tree/IR|branch]], probably not 
-  for 8.6, theoretical issues: guardedness and positivity checking (M. Sozeau)
-
 == Kernel ==
 
  * New universe cycle detection algorithm by J.H. Jourdan.
@@ -61,6 +57,10 @@ account plugin interfaces)
       
  * Now accepting unit props in mutual definitions (B. Barras, 045b695)
  Any change due to this? kernel/checker
+
+ * ? Inductive-inductive, inductive-recursive, recursive-recursive definitions
+ Experimental [[https://github.com/mattam82/coq/tree/IR|branch]], probably not 
+ for 8.6, theoretical issues: guardedness and positivity checking (M. Sozeau)
 
 == Elaboration, Gallina ==
 
