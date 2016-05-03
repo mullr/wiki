@@ -112,12 +112,15 @@ account plugin interfaces)
 
  * Typeclasses:
 
-   * Option to add eta-unification during resolution.
-   * Option to do resolution following the dependency order of subgoals
+  * Option to add eta-unification during resolution.
+  * Option to do resolution following the dependency order of subgoals
   in resolution (previously, and by default, the most dependent ones
-  are tried first, respecting the semantics of the previous proof
-  engine).
-   * Option to switch to an iterative deepening search strategy.
+  are tried first, respecting the semantics of the previous proof engine).
+  * Option to switch to an iterative deepening search strategy.
+
+ * ? PR #72 Quote coercions
+  https://github.com/coq/coq/pull/72
+
 
 == Vernacular ==
 
@@ -178,6 +181,11 @@ account plugin interfaces)
  * ? PR #146: Ssreflect pattern matching facilities (E. Tassi)
  * ? PR #150: LtacProf (Coq v8.5) (J. Gross, P. Steckler)
  * ? PR #164: A few tactics for 8.6 (H. Herbelin)
+ * ?! Properly handle Hint Extern with conclusions of the form
+   _ -> _" in typeclass resolution (M. Sozeau)
+   This breaks compatibility, these Hint Externs were not
+   found before as the pattern was matched on the conclusion of the
+   goal, removing arrows.
 
 == Standard Library ==
 
@@ -196,17 +204,3 @@ account plugin interfaces)
  * Modernization of the preferences (P.M. Pédrot).
  * ? PR #67: Add a Show Proof query to CoqIDE
   https://github.com/coq/coq/pull/67
-  
-== PRs: ==
-
- * ? PR #72 Quote coercions
-  https://github.com/coq/coq/pull/72
-
-== Patches that were not backported: ==
-
- * 6cf80dd coq_makefile installs native files
- * Revert "TCs: Properly handle Hint Extern with conclusions of the form
-_ -> _" Not supposed to be part of 8.5beta. f539df5
-
- * Distinguishing between bound modules (Top#X) and submodules (Top.X)
-  (as in module debug printers).
