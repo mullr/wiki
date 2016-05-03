@@ -154,11 +154,7 @@ account plugin interfaces)
 
  * @, abbreviations and notations are now interpreted in patterns like in terms (H. Herbelin).
     
- * D. de Rauglaudre: Coq-level numeral printers, now a CEP: [[Numeral Notation]]
-
-  Lots of questions and suggestions at the WG: 
-  Many propositions emerge: watching efficiency, using Z directly
-  instead of Z', supporting decimal or fractional numbers, ...
+ * PR [[https://github.com/coq/coq/pull/156|#156]] Coq-level numeral printers, now a CEP: [[CEP/Numeral Notation]] (D. de Rauglaudre)
 
  * PR [[https://github.com/coq/coq/pull/64|#64]]: Add a Print Ltacs vernacular (C. Pit-Claudel)
  * ? PR [[https://github.com/coq/coq/pull/113|#113]]: Add the "not a keyword" modifier to notations (J.P. Delaix?)
