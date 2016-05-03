@@ -48,6 +48,10 @@ account plugin interfaces)
  * ? PR [[[[https://github.com/coq/coq/pull/117|#117]]: iota split into iota0+phi+psi and ML API cleanup for
   reduction functions (H. Herbelin)
 
+ * ? Inductive-inductive, inductive-recursive, recursive-recursive definitions
+  Experimental [[https://github.com/mattam82/coq/tree/IR|branch]], probably not 
+  for 8.6, theoretical issues: guardedness and positivity checking (M. Sozeau)
+
 == Kernel ==
 
  * New universe cycle detection algorithm by J.H. Jourdan.
@@ -117,6 +121,11 @@ account plugin interfaces)
   in resolution (previously, and by default, the most dependent ones
   are tried first, respecting the semantics of the previous proof engine).
   * ? Option to switch to an iterative deepening search strategy.
+  * ?! New implementation of typeclasses eauto based on new proof engine,
+  could replace eauto as well: full backtracking, Hint Cut supported,
+  iterative deepening, limited search, ... (M. Sozeau) 
+  [[https://github.com/mattam82/coq/commits/bteauto|branch]]. 
+  To be turned into a PR, compatibility checks to do first.
 
  * ? PR [[https://github.com/coq/coq/pull/72|#72]] Quote coercions
 
@@ -183,6 +192,11 @@ account plugin interfaces)
    This breaks compatibility, these Hint Externs were not
    found before as the pattern was matched on the conclusion of the
    goal, removing arrows.
+ * ?! Improvements to generalized rewriting: faster rewriting with leibniz equality,
+ new strategies, heterogeneous relations... Still WIP (M. Sozeau)
+   [[https://github.com/mattam82/coq/commits/genreweqwip|branch]]
+ * ?! Tactics and library for transfer/application of lemmas modulo rewritings (T. Zimmermann)
+  [[https://github.com/mattam82/coq/pull/1]], linked to above point.
 
 == Standard Library ==
 
