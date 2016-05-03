@@ -8,7 +8,7 @@ any points (creating new pages if necessary) or add your own items.
 
 = Summary of changes in trunk =
 
-These changes are in the trunk and not in 8.5, or PRs for trunk.
+These changes are in the trunk and not in 8.5, or PRs/branches based on trunk.
 
 ? indicates points which were not discussed/undecided/whose description
 is incomplete, or which required more discussion/in-depth explanations.
