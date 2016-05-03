@@ -8,7 +8,7 @@ any points (creating new pages if necessary) or add your own items.
 
 = Summary of changes in trunk =
 
-These changes are in the trunk and not in 8.5pl1, or PRs for trunk.
+These changes are in the trunk and not in 8.5, or PRs for trunk.
 
 ? indicates points which were not discussed/undecided/whose description
 is incomplete, or which required more discussion/in-depth explanations.
@@ -81,7 +81,7 @@ account plugin interfaces)
   logic_monad, proofview_monad are also in engine.
 
  * Evar resolvability flag and naming are more efficiently handled now,
-  reducing memory usage in presence of large numbers of evars.
+  reducing memory usage in presence of large numbers of evars. MS: in 8.5pl1
 
  * ? Evar naming:
   Unnamed evars generated identifiers are not stable and shouldn't be 
