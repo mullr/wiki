@@ -194,7 +194,7 @@ account plugin interfaces)
   Scopes can be bound to classes again. (J. Gross)
  * Definition of eta in VectorSpec.v
  * ListSet lemmas in Stdlib (S. Hinderer)
- * PR #135: Export Nat in NPeano.v (J. Gross) 
+ * PR [[https://github.com/coq/coq/pull/67|#135]]: Export Nat in NPeano.v (J. Gross) 
 
 == CoqIDE ==
 
