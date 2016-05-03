@@ -99,7 +99,7 @@ account plugin interfaces)
   
  * Unification:
 
-   * ? Unification of Let-In bodies without unifying their types (in
+   * ?! Unification of Let-In bodies without unifying their types (in
 	evarconv heuristic of first-order unifications) (9cc95f5) 
    * Other improvements? (H. Herbelin, M. Sozeau)	
 
@@ -112,11 +112,11 @@ account plugin interfaces)
 
  * Typeclasses:
 
-  * Option to add eta-unification during resolution.
-  * Option to do resolution following the dependency order of subgoals
+  * ? Option to add eta-unification during resolution.
+  * ? Option to do resolution following the dependency order of subgoals
   in resolution (previously, and by default, the most dependent ones
   are tried first, respecting the semantics of the previous proof engine).
-  * Option to switch to an iterative deepening search strategy.
+  * ? Option to switch to an iterative deepening search strategy.
 
  * ? PR [[https://github.com/coq/coq/pull/72|#72]] Quote coercions
 
@@ -151,7 +151,7 @@ account plugin interfaces)
   instead of Z', supporting decimal or fractional numbers, ...
 
  * PR #64: Add a Print Ltacs vernacular (C. Pit-Claudel)
- * ? PR #113: Add the "not a keyword" modifier to notations (J.P. Delaix)
+ * ? PR #113: Add the "not a keyword" modifier to notations (J.P. Delaix?)
  * ? PR #114: Set Debug Foo vs Set Foo Debug (H. Herbelin)
  * ? PR #162: Search Interface Revisions (G. Malecha)
 
@@ -167,7 +167,7 @@ account plugin interfaces)
   guaranteed here (H. Herbelin).
  * ! "Set Regular Subst Tactic", subst has a more
   canonical strategy and can succeed more often.
- * ?! congruence now uses build_selector from Equality (H. Herbelin)
+ * ? congruence now uses build_selector from Equality (H. Herbelin)
  * ? Clearing on the fly, contradiction (H. Herbelin)
  * ? refine and conv_pbs (E. Tassi, M. Dénès)
  * ? PR [[https://github.com/coq/coq/pull/74|#74]]: Range selector (C. Mangin)
