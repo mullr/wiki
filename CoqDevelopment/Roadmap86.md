@@ -128,6 +128,7 @@ account plugin interfaces)
   To be turned into a PR, compatibility checks to do first.
 
  * ? PR [[https://github.com/coq/coq/pull/72|#72]] Quote coercions
+ * PR [[https://github.com/coq/coq/pull/142|#142]] Patterns in abstractions (D. de Rauglaudre)
 
 == Vernacular ==
 
@@ -153,7 +154,7 @@ account plugin interfaces)
 
  * @, abbreviations and notations are now interpreted in patterns like in terms (H. Herbelin).
     
- * D. de Rauglaudre: Coq-level numeral printers.
+ * D. de Rauglaudre: Coq-level numeral printers, now a CEP: [[Numeral Notation]]
 
   Lots of questions and suggestions at the WG: 
   Many propositions emerge: watching efficiency, using Z directly
