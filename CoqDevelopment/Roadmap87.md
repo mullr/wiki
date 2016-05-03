@@ -25,7 +25,9 @@ account plugin interfaces)
   There is a known issue with 4.01.0 and camlp4 where
   Coq compilation fails, this case is now detected early
   in the configure script.
-  
+
+   [EJGA] Note that this will likely break Debian packages, as they ship a patched Ocaml 4.01.0 thus configure will fail.
+ 
  * Switch to using ocamlfind for finding compilers (new dependency)
   
  * Module name conflicts with the ocaml compiler.
