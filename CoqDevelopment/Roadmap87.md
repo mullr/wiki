@@ -1,8 +1,8 @@
 The purpose of this page is to summarize the different new features and
 modifications that are going to be part of Coq 8.6 and gather comments
-and opinions from developers.
+and opinions from developers and users.
 
-Feel free to start dissusing any of these items on this page, on coqdev 
+Feel free to start discussing any of these items on this page, on coqdev 
 or the relevant PRs, and link them here if possible, add comments to 
 any points (creating new pages if necessary) or add your own items.
 
@@ -43,7 +43,7 @@ account plugin interfaces)
  are less likely to forget that there are potentially local definitions
  and not only declarations in these contexts.
 
- * ? PR # 158: Fixing the "beautifier" and checking the parsing-printing reversibility (H. Herbelin)
+ * ? PR [https://github.com/coq/coq/pull/158|#158]: Fixing the "beautifier" and checking the parsing-printing reversibility (H. Herbelin)
  * ? PR #86: simplify sort_fields (G. Sherer)
  * ? PR #117: iota split into iota0+phi+psi and ML API cleanup for
   reduction functions (H. Herbelin)
