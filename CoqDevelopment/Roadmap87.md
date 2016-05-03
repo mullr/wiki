@@ -43,7 +43,8 @@ account plugin interfaces)
  are less likely to forget that there are potentially local definitions
  and not only declarations in these contexts.
 
- * ? PR [[https://github.com/coq/coq/pull/145|#145]] Coqlib cleanup.
+ * ? PR [[https://github.com/coq/coq/pull/145|#145]] Coqlib cleanup (E. J. Gallego)
+ * ? PR [[https://github.com/coq/coq/pull/143|#143]]: Feedback/pp cleanup (E. J. Gallego)
  * ? PR [[https://github.com/coq/coq/pull/158|#158]]: Fixing the "beautifier" and checking the parsing-printing reversibility (H. Herbelin)
  * ? PR [[https://github.com/coq/coq/pull/86|#86]]: simplify sort_fields (G. Sherer)
  * ? PR [[[[https://github.com/coq/coq/pull/117|#117]]: iota split into iota0+phi+psi and ML API cleanup for
