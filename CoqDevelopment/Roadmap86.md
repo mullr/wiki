@@ -11,7 +11,8 @@ any points (creating new pages if necessary) or add your own items.
 These changes are in the trunk and not in 8.5, or PRs/branches based on trunk.
 
 ? indicates points which were not discussed/undecided/whose description
-is incomplete, or which required more discussion/in-depth explanations.
+is incomplete, or which required more discussion/in-depth explanations 
+(at the time of the last WG).
 
 The other items were agreed to be integrated in the next release at the last WG.
 
