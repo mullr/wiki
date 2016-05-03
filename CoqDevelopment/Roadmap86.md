@@ -43,9 +43,9 @@ account plugin interfaces)
  are less likely to forget that there are potentially local definitions
  and not only declarations in these contexts.
 
- * ? PR [https://github.com/coq/coq/pull/158|#158]: Fixing the "beautifier" and checking the parsing-printing reversibility (H. Herbelin)
- * ? PR #86: simplify sort_fields (G. Sherer)
- * ? PR #117: iota split into iota0+phi+psi and ML API cleanup for
+ * ? PR [[https://github.com/coq/coq/pull/158|#158]]: Fixing the "beautifier" and checking the parsing-printing reversibility (H. Herbelin)
+ * ? PR [[https://github.com/coq/coq/pull/86|#86]]: simplify sort_fields (G. Sherer)
+ * ? PR [[[[https://github.com/coq/coq/pull/117|#117]]: iota split into iota0+phi+psi and ML API cleanup for
   reduction functions (H. Herbelin)
 
 == Kernel ==
@@ -118,9 +118,7 @@ account plugin interfaces)
   are tried first, respecting the semantics of the previous proof engine).
   * Option to switch to an iterative deepening search strategy.
 
- * ? PR #72 Quote coercions
-  https://github.com/coq/coq/pull/72
-
+ * ? PR [[https://github.com/coq/coq/pull/72|#72]] Quote coercions
 
 == Vernacular ==
 
@@ -128,10 +126,9 @@ account plugin interfaces)
 
  * Print Assumptions now prints axioms through inductive definitions (M. Lasson)
 
- * ? PR #79 Assume Positive/Guarded/... Syntax issue on attributes, naming.
-  https://github.com/coq/coq/pull/79
+ * ? PR [[https://github.com/coq/coq/pull/78|#79]] Assume Positive/Guarded/... Syntax issue on attributes, naming.
 
- * ? PR #85 Printing in cbv/cbn
+ * ? PR [[https://github.com/coq/coq/pull/85|#85]] Printing in cbv/cbn
 
  * Search has an option to print only the list of names found (C.
   Pit-Claudel). Maybe a generalized API is in order (PR by G. Malecha)?
@@ -173,14 +170,14 @@ account plugin interfaces)
  * ?! congruence now uses build_selector from Equality (H. Herbelin)
  * ? Clearing on the fly, contradiction (H. Herbelin)
  * ? refine and conv_pbs (E. Tassi, M. Dénès)
- * ? PR #74: Range selector (C. Mangin)
- * ?! PR #100: fresh accepts more things (P. Courtieu)
- * ? PR #136: An adaptation of ssreflect's => to Coq introduction pattern model (H. Herbelin)
- * ? PR #140: Iff as a proper connective (H. Herbelin)
- * ? PR #157: pat%constr (H. Herbelin)
- * ? PR #146: Ssreflect pattern matching facilities (E. Tassi)
- * ? PR #150: LtacProf (Coq v8.5) (J. Gross, P. Steckler)
- * ? PR #164: A few tactics for 8.6 (H. Herbelin)
+ * ? PR [[https://github.com/coq/coq/pull/74|#74]]: Range selector (C. Mangin)
+ * ?! PR [[https://github.com/coq/coq/pull/100|#100]]: fresh accepts more things (P. Courtieu)
+ * ? PR [[https://github.com/coq/coq/pull/136|#136]]: An adaptation of ssreflect's => to Coq introduction pattern model (H. Herbelin)
+ * ? PR [[https://github.com/coq/coq/pull/140|#140]]: Iff as a proper connective (H. Herbelin)
+ * ? PR [[https://github.com/coq/coq/pull/157|#157]]: pat%constr (H. Herbelin)
+ * ? PR [[https://github.com/coq/coq/pull/146|#146]]: Ssreflect pattern matching facilities (E. Tassi)
+ * ? PR [[https://github.com/coq/coq/pull/150|#150]]: LtacProf (Coq v8.5) (J. Gross, P. Steckler)
+ * ? PR [[https://github.com/coq/coq/pull/164|#164]]: A few tactics for 8.6 (H. Herbelin)
  * ?! Properly handle Hint Extern with conclusions of the form
    _ -> _" in typeclass resolution (M. Sozeau)
    This breaks compatibility, these Hint Externs were not
@@ -202,5 +199,4 @@ account plugin interfaces)
 == CoqIDE ==
 
  * Modernization of the preferences (P.M. Pédrot).
- * ? PR #67: Add a Show Proof query to CoqIDE
-  https://github.com/coq/coq/pull/67
+ * ? PR [[https://github.com/coq/coq/pull/67|#67]]: Add a Show Proof query to CoqIDE
