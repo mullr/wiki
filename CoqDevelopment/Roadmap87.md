@@ -38,6 +38,8 @@ account plugin interfaces)
  * Bytes/String PR by E. Arias. WIP, proposal is to split it in smaller
   chunks and do renamings.
 
+   [EGJA] A few minor parts should be able to go into 8.6 IMHO. Personally, I would just postpone the rest until 4.02 is the default compiler to avoid shipping more compatibility burden.
+
  * M. Kosik implemented the move to Context.Rel/Named for manipulating
  named and de Bruijn contexts using an algebraic datatype distinguishing
  declarations and definitions and modules with a similar interface. This
@@ -47,7 +49,9 @@ account plugin interfaces)
  and not only declarations in these contexts.
 
  * ? PR [[https://github.com/coq/coq/pull/145|#145]] Coqlib cleanup (E. J. Gallego)
+   [EJGA] No way this can go in 8.6 as is, however some small bits could be split.
  * ? PR [[https://github.com/coq/coq/pull/143|#143]]: Feedback/pp cleanup (E. J. Gallego)
+   [EJGA] I should be able to get this in shape for 8.6.
  * ? PR [[https://github.com/coq/coq/pull/158|#158]]: Fixing the "beautifier" and checking the parsing-printing reversibility (H. Herbelin)
  * ? PR [[https://github.com/coq/coq/pull/86|#86]]: simplify sort_fields (G. Sherer)
  * ? PR [[[[https://github.com/coq/coq/pull/117|#117]]: iota split into iota0+phi+psi and ML API cleanup for
