@@ -150,10 +150,10 @@ account plugin interfaces)
   Many propositions emerge: watching efficiency, using Z directly
   instead of Z', supporting decimal or fractional numbers, ...
 
- * PR #64: Add a Print Ltacs vernacular (C. Pit-Claudel)
- * ? PR #113: Add the "not a keyword" modifier to notations (J.P. Delaix?)
- * ? PR #114: Set Debug Foo vs Set Foo Debug (H. Herbelin)
- * ? PR #162: Search Interface Revisions (G. Malecha)
+ * PR [[https://github.com/coq/coq/pull/64|#64]]: Add a Print Ltacs vernacular (C. Pit-Claudel)
+ * ? PR [[https://github.com/coq/coq/pull/113|#113]]: Add the "not a keyword" modifier to notations (J.P. Delaix?)
+ * ? PR [[https://github.com/coq/coq/pull/114|#114]]: Set Debug Foo vs Set Foo Debug (H. Herbelin)
+ * ? PR [[https://github.com/coq/coq/pull/162|#162]]: Search Interface Revisions (G. Malecha)
 
 == Tactics ==
 
