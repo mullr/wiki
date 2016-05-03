@@ -155,7 +155,7 @@ account plugin interfaces)
  * ? PR #114: Set Debug Foo vs Set Foo Debug (H. Herbelin)
  * ? PR #162: Search Interface Revisions (G. Malecha)
 
-== Tactics == 
+== Tactics ==
 
  * ?! double induction, which is deprecated (but not warned as such),
   was improved by H. Herbelin, introducing an incompatibility (it succeeds
