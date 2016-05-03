@@ -1,6 +1,6 @@
 The purpose of this page is to summarize the different new features and
 modifications that are going to be part of Coq 8.6 and gather comments
-and opinions from developers and users.
+and contributions from developers and users.
 
 Feel free to start discussing any of these items on this page, on coqdev 
 or the relevant PRs, and link them here if possible, add comments to 
