@@ -186,7 +186,7 @@ account plugin interfaces)
  * ? Clearing on the fly, contradiction (H. Herbelin)
  * ? refine and conv_pbs (E. Tassi, M. Dénès)
  * ? PR [[https://github.com/coq/coq/pull/74|#74]]: Range selector (C. Mangin)
- * ?! PR [[https://github.com/coq/coq/pull/100|#100]]: fresh accepts more things (P. Courtieu)
+ * ?! PR [[https://github.com/coq/coq/pull/100|#100]]: fresh accepts more things (P. Courtieu) fresh will succeed more often=incompatibilies. Are these incompatibilites difficult to fix?
  * ? PR [[https://github.com/coq/coq/pull/136|#136]]: An adaptation of ssreflect's => to Coq introduction pattern model (H. Herbelin)
  * ? PR [[https://github.com/coq/coq/pull/140|#140]]: Iff as a proper connective (H. Herbelin)
  * ? PR [[https://github.com/coq/coq/pull/157|#157]]: pat%constr (H. Herbelin)
