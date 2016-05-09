@@ -205,6 +205,8 @@ account plugin interfaces)
    [[https://github.com/mattam82/coq/commits/genreweqwip|branch]]
  * ?! Tactics and library for transfer/application of lemmas modulo rewritings (T. Zimmermann)
   [[https://github.com/mattam82/coq/pull/1]], linked to above point.
+ * ? Fix semantics of pattern-matching in Ltac (non-linear patterns, difference between hyps and goal and hyps)
+   (M. Sozeau)
 
 == Standard Library ==
 
