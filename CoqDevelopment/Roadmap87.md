@@ -222,3 +222,6 @@ account plugin interfaces)
 
  * Modernization of the preferences (P.M. Pédrot).
  * ? PR [[https://github.com/coq/coq/pull/67|#67]]: Add a Show Proof query to CoqIDE
+
+== Tools ==
+ * ? PR [[https://github.com/coq/coq/pull/166|#166]]: Add -o option to coqc to choose the .vo file directory (Enrico)
