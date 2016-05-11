@@ -6,6 +6,8 @@
 
  * [[ZInterfacePackage|Z_interface]] An approach for deriving directly standalone programs from extracted code.
 
+ * [[ExtractionNameTricks]] : some explanations about how names are generated in extracted code
+
 = Tips about Extraction =
 
  * Check the manual pages!
