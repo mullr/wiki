@@ -1,3 +1,11 @@
+= Resources about Extraction =
+
+ * Pierre Letouzey's PhD : [[https://www.irif.univ-paris-diderot.fr/~letouzey/download/these_letouzey_English.pdf|English]] or [[https://www.irif.univ-paris-diderot.fr/~letouzey/download/these_letouzey.pdf|French]].
+
+ * [[AUGER_ExtractionTuto]]
+
+= Tips about Extraction =
+
  * Check the manual pages!
 
  * Use the "{{{Extraction (Inlined) Constant}}}" directive for commonly used types (List, String, Ascii, int); it is less reliable than not using it (since you use some axioms, but it improves performances and readability)
