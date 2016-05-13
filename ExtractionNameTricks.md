@@ -24,17 +24,18 @@ As a consequence, the extraction might need to perform a '''renaming'''. And thi
 
  4. '''Other painful situations'''. For now, the solutions to these issues implies the use of the {{{__}}} substring in a non-clash-safe way, and hence a warning informs the user that this substring is reserved for the extraction.
 
-  * '''co-induction''' (OCaml). 
+ 4.1. '''co-induction''' (OCaml).
 
-  * '''Anonymous fields''' in records (OCaml).
+ 4.2. '''Anonymous fields''' in records (OCaml).
 
-  * '''modules and inaccessible qualified names''' (OCaml)
+ 4.3. '''modules and inaccessible qualified names''' (OCaml)
 
-  * '''module parameters''' (OCaml).
+ 4.4. '''module parameters''' (OCaml).
 
-  * '''unicode characters'''. OCaml doesn't accept unicode characters in names while Coq does : {{{ Definition αβγ := 123. }}}
-  We currently convert such characters to a substring of the form {{{__U1234_}}} where 1234 is the unicode number of the character.
+ 4.5. '''unicode characters'''. OCaml doesn't accept unicode characters in names while Coq does : {{{ Definition αβγ := 123}}}. We currently convert each non-ascii characters to a substring of the form {{{__U1234_}}} where 1234 is the unicode index of the character.
+  
+  * Alternative solution that would be clash-safe : use another prefix, for instance {{{coqU__}}}, in front of names we tweak for unicode reasons.
 
-   * In Haskell, the most recent norm accept unicode letters in names, and apparently ghc supports it (but hugs does not). Anyway, before leaving unicode characters in Haskell extraction (probably via a user flag), we should first compare the range of unicode letters accepted by Coq and by Haskell.
+  * In Haskell, the most recent norm accept unicode letters in names, and apparently ghc supports it (but hugs does not). Anyway, before leaving unicode characters in Haskell extraction (probably via a user flag), we should first compare the range of unicode letters accepted by Coq and by Haskell.
 
-   * Alternative solution that would be clash-safe : use another prefix, for instance {{{coqU__}}}, in front of names we tweak for unicode reasons.
+  
