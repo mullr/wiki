@@ -1,6 +1,6 @@
 When converting some code from Coq to another target language (e.g. OCaml, Haskell, ...), the extraction mechanism does its best to preserve the names occurring in the code. This eases any interaction with the extracted code (call to extracted functions, review of their types, etc). But this isn't always possible. For instance:
 
- * The syntactic conventions may differ, for instance OCaml requires a inductive constructor to be capitalized, while Coq has no such constraint.
+ * The syntactic conventions may differ, for instance OCaml and Haskell require a inductive constructor to be capitalized, while Coq has no such constraint.
 
  * A Coq name could clash with a reserved keyword of the target language (e.g. {{{val}}} in OCaml).
 
@@ -20,16 +20,21 @@ As a consequence, the extraction might need to perform a '''renaming'''. And thi
 
   * For the moment, a warning informs the user that the substring {{{__}}} is reserved for the extraction and shouldn't be use inside user names.
 
-  * Potentially better solution (?) : use a specific prefix just as before, different one from the already used {{{(C|c)oq__}}}, let's say {{{coQ__}}} and {{{CoQ__}}} (hint: big Q as in Qualified names). Then {{{A.B.c}}} would become {{{coQ__A__B__c}}} or {{{CoQ__A__B__c}}}. This would be clash-safe (see before), at the cost of slightly longer names, but these names are already quite ugly anyway.
+  * Potentially better solution (?) : use a specific prefix just as before, different one from the already used {{{(C|c)oq__}}}, let's say {{{coQ__}}} and {{{CoQ__}}} (hint: big Q as in Qualified names ;-). Then {{{A.B.c}}} would become {{{coQ__A__B__c}}} or {{{CoQ__A__B__c}}}. This would be clash-safe (see before), at the cost of slightly longer names, but these names are already quite ugly anyway.
 
- 4. '''Other painful situations'''
+ 4. '''Other painful situations'''. For now, the solutions to these issues implies the use of the {{{__}}} substring in a non-clash-safe way, and hence a warning informs the user that this substring is reserved for the extraction.
 
-  * co-induction in OCaml
+  * '''co-induction''' (OCaml). 
 
-  * records with anonymous fields (OCaml)
+  * '''Anonymous fields''' in records (OCaml).
 
-  * modules and inaccessible qualified names (OCaml)
+  * '''modules and inaccessible qualified names''' (OCaml)
 
-  * module parameters (OCaml)
+  * '''module parameters''' (OCaml).
 
-  * names with unicode characters (TODO : is that true also in Haskell ?)
+  * '''unicode characters'''. OCaml doesn't accept unicode characters in names while Coq does : {{{ Definition αβγ := 123. }}}
+  We currently convert such characters to a substring of the form {{{__U1234_}}} where 1234 is the unicode number of the character.
+
+   * In Haskell, the most recent norm accept unicode letters in names, and apparently ghc supports it (but hugs does not). Anyway, before leaving unicode characters in Haskell extraction (probably via a user flag), we should first compare the range of unicode letters accepted by Coq and by Haskell.
+
+   * Alternative solution that would be clash-safe : use another prefix, for instance {{{coqU__}}}, in front of names we tweak for unicode reasons.
