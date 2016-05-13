@@ -24,11 +24,25 @@ As a consequence, the extraction might need to perform a '''renaming'''. And thi
 
  4. '''Other painful situations'''. For now, the solutions to these issues implies the use of the {{{__}}} substring in a non-clash-safe way, and hence a warning informs the user that this substring is reserved for the extraction.
 
- 4.1. '''co-induction''' (OCaml).
+ 4.1. '''co-induction''' (OCaml). For a co-inductive type {{{foo}}}, we currently produce a mutual block in OCaml :
 
- 4.2. '''Anonymous fields''' in records (OCaml).
+ {{{type foo = __foo Lazy.t and __foo = FooConstr1 ... | FooConstr2 ...}}}
 
- 4.3. '''modules and inaccessible qualified names''' (OCaml)
+ In the rest of the code, it's {{{foo}}} that appears : {{{__foo}}} is only an internal intermediate step. But it may well interfere with a user-defined type of the same name.
+
+  * Alternative solution that would be clash-safe : use another prefix, for instance here use the name {{{coqL__foo}}} (with L as in Lazy). 
+
+ 4.2. '''Anonymous fields''' in records (OCaml). In Coq, it is not mandatory to name all record fields.
+
+ {{{ Record foo := { field : nat; _ : bool}.}}}
+
+ Currently, the extraction generates a field name of the form {{{foo__123}}} for the 123-th field of record {{{foo}}} when this field is anonymous.
+
+  * Alternative solution that would be clash-safe : use another prefix, for instance here use the name {{{coqF__foo__123}}} (with F as in field).
+
+  * Note that Haskell isn't concerned for the moment, since records are treated as standard inductive types during this extraction.
+
+ 4.3. '''modules and inaccessible qualified names''' (OCaml).
 
  4.4. '''module parameters''' (OCaml).
 
