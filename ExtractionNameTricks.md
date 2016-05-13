@@ -20,9 +20,9 @@ As a consequence, the extraction might need to perform a '''renaming'''. And thi
 
   * For the moment, a warning informs the user that the substring {{{__}}} is reserved for the extraction and shouldn't be use inside user names.
 
-  * Potentially better solution (?) : use a specific prefix just as before, different one from the already used {{{(C|c)oq__}}}, let's say {{{coQ__}}} and {{{CoQ__}}} (hint: big Q as in Qualified names ;-). Then {{{A.B.c}}} would become {{{coQ__A__B__c}}} or {{{CoQ__A__B__c}}}. This would be clash-safe (see before), at the cost of slightly longer names, but these names are already quite ugly anyway.
+  * I don't see (yet?) a solution that would be a) predictable b) clash-free c) without reserved substring. For instance, adding a specific prefix in front of {{{A__B__c}}} might help, but that doesn't fully avoid names clashes: {{{A.B.c}}} and {{{A__B.c}}} would still be extracted to the same names. 
 
- 4. '''Other painful situations'''. For now, the solutions to these issues implies the use of the {{{__}}} substring in a non-clash-safe way, and hence a warning informs the user that this substring is reserved for the extraction.
+ 4. '''Other painful situations'''. For now, most of the solutions implemented to the issues below implies the use of the {{{__}}} substring in a non-clash-safe way, and hence a warning informs the user that this substring is reserved for the extraction.
 
  4.1. '''co-induction''' (OCaml). For a co-inductive type {{{foo}}}, we currently produce a mutual block in OCaml :
   {{{
@@ -65,7 +65,10 @@ module M = struct
  end
 end
   }}}
-  A frequent variant of this situation, due to OCaml types definitions being recursive by default:
+
+  * Note : this is actually clash-safe : the part after the {{{Coq__}}} prefix is a number, and cannot interfere with identifiers coming from a modular rename (see section 2 above). And a user module of name {{{Coq__22}}} would have been converted to {{{Coq__Coq__22}}}.
+
+  * Note : these local disambiguating modules are also used in the following situation, which is rather common:
   {{{
 Module M.
  Definition t := nat.
@@ -74,7 +77,7 @@ Module M.
  End N.
 End M. 
   }}}
-  In OCaml, a {{{type t = t}}} would be wrong, so we also use here a local naming submodule. '''TODO''': for OCaml >= 4.02, we could generate here {{{type nonrec t = t}}}.
+  In OCaml, a {{{type t = t}}} would be wrong, since type definition is recursive by default, so we also use here a local naming submodule. '''TODO''': for OCaml >= 4.02, we could generate here {{{type nonrec t = t}}}.
 
  4.4. '''module parameters''' (OCaml). Inside a functor, its parameter name might be shadowed, but the content of the parameter might remain accessible.
   {{{
@@ -86,12 +89,17 @@ End F.
   }}}
   To support this "peculiar" feature, the extraction renames here the functor parameter, using an internal unique id (see {{{MBId}}} in {{{names.ml}}}), leading to names such as {{{X__123}}}.
 
+  * Alternative solution that would be type-safe : use another prefix, for instance here use the name {{{coqP__X__123}}} (with P as in parameter).
+
  4.5. '''unicode characters'''. OCaml doesn't accept unicode characters in names while Coq does.
   {{{
 Definition αβγ := 123.
   }}}
   We currently convert each non-ascii characters to a substring of the form {{{__U1234_}}} where 1234 is the unicode index of the character.
   
-  * Alternative solution that would be clash-safe : use another prefix, for instance {{{coqU__}}}, in front of names we tweak for unicode reasons.
+  * I see no proper solution that would be a) predictable b) clash-safe c) without reserved substring such as {{{__}}}. In particular, how to generate different names for {{{aα}}} and {{{a__U03B1_}}} (with 03B1 being the unicode index of α) ?
 
   * In Haskell, the most recent norm accept unicode letters in names, and apparently ghc supports it (but hugs does not). Anyway, before leaving unicode characters in Haskell extraction (probably via a user flag), we should first compare the range of unicode letters accepted by Coq and by Haskell.
+
+
+A final note : {{{__}}} is also used by the extraction to name the constant which is substituted to eliminated code. With respect to renaming, this isn't a big deal: We simply consider this {{{__}}} name as a keyword of the target language, so any user-defined {{{__}}} is renamed into something else.
