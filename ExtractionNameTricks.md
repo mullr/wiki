@@ -20,7 +20,7 @@ As a consequence, the extraction might need to perform a '''renaming'''. And thi
 
   * For the moment, a warning informs the user that the substring {{{__}}} is reserved for the extraction and shouldn't be use inside user names.
 
-  * I don't see (yet?) a solution that would be a) predictable b) clash-free c) without reserved substring. For instance, adding a specific prefix in front of {{{A__B__c}}} might help, but that doesn't fully avoid names clashes: {{{A.B.c}}} and {{{A__B.c}}} would still be extracted to the same names. 
+  * I don't see (yet?) a solution that would be a) predictable b) clash-free c) without reserved substring. For instance, adding a specific prefix in front of {{{A__B__c}}} might help, but that doesn't fully avoid names clashes: {{{A.B.c}}} and {{{A__B.c}}} would still be extracted to the same names. A possible compromise could be to transform the module path into a unique number (hash?), leading to names of the form {{{coq_123_c}}}. These names aren't predictable easily, but we might add comments relating these unique numbers and the corresponding module path ? 
 
  4. '''Other painful situations'''. For now, most of the solutions implemented to the issues below implies the use of the {{{__}}} substring in a non-clash-safe way, and hence a warning informs the user that this substring is reserved for the extraction.
 
@@ -97,9 +97,11 @@ Definition αβγ := 123.
   }}}
   We currently convert each non-ascii characters to a substring of the form {{{__U1234_}}} where 1234 is the unicode index of the character.
   
-  * I see no proper solution that would be a) predictable b) clash-safe c) without reserved substring such as {{{__}}}. In particular, how to generate different names for {{{aα}}} and {{{a__U03B1_}}} (with 03B1 being the unicode index of α) ?
+  * I see no proper solution that would be a) predictable b) clash-safe c) without reserved substring such as {{{__}}}. In particular, how to generate different names for {{{aα}}} and {{{a__U03B1_}}} (with 03B1 being the unicode index of α) ? At least, we could consider here that the reserved substring is rather {{{__U}}}, which is probably much less frequent than {{{__}}}.
 
   * In Haskell, the most recent norm accept unicode letters in names, and apparently ghc supports it (but hugs does not). Anyway, before leaving unicode characters in Haskell extraction (probably via a user flag), we should first compare the range of unicode letters accepted by Coq and by Haskell.
 
 
 A final note : {{{__}}} is also used by the extraction to name the constant which is substituted to eliminated code. With respect to renaming, this isn't a big deal: We simply consider this {{{__}}} name as a keyword of the target language, so any user-defined {{{__}}} is renamed into something else.
+
+See also: [[https://github.com/coq/coq/pull/149|Pull Request 149]].
