@@ -60,5 +60,8 @@ A special interesting project is to get the kernel to compile warning clean with
 
 Using Merlin is highly recommended for this task.
 
+=== Remove redundant typing ===
+In 8.4 setoid_rewrite, there was code to type-check terms known to be well-typed. It would be useful to scan the codebase to look for other redundant type-checks.
+
 == Brainstorming ("harder" projects, to be considered carefully) ==
 ...
