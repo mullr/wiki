@@ -43,6 +43,7 @@ TBD
  1. Hugo Herbelin
  1. Emilio J. Gallego Arias
  1. Nicolas Magaud
+ 1. Pierre-Évariste Dagand
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
