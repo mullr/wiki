@@ -42,6 +42,7 @@ TBD
  1. Pierre Letouzey
  1. Hugo Herbelin
  1. Emilio J. Gallego Arias
+ 1. Nicolas Magaud
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
