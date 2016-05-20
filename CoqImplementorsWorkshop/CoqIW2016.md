@@ -44,6 +44,7 @@ TBD
  1. Emilio J. Gallego Arias
  1. Nicolas Magaud
  1. Pierre-Évariste Dagand
+ 1. Lionel Rieg
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
