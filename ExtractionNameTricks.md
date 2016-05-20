@@ -24,7 +24,7 @@ As a consequence, the extraction might need to perform a '''renaming'''. And thi
 
  4. '''Other painful situations'''. For now, most of the solutions implemented to the issues below implies the use of the {{{__}}} substring in a non-clash-safe way, and hence a warning informs the user that this substring is reserved for the extraction.
 
- 4.1. '''co-induction''' (OCaml). For a co-inductive type {{{foo}}}, we currently produce a mutual block in OCaml :
+ 4.1. '''Co-induction''' (OCaml). For a co-inductive type {{{foo}}}, we currently produce a mutual block in OCaml :
   {{{
 type foo = __foo Lazy.t and __foo = FooConstr1 ... | FooConstr2 ...
   }}}
@@ -42,7 +42,7 @@ Record foo := { field : nat; _ : bool}.
 
   * Note that Haskell isn't concerned for the moment, since records are treated as standard inductive types during this extraction.
 
- 4.3. '''modules and inaccessible qualified names''' (OCaml). Even if the Coq and OCaml module systems are very similar, the first one is slightly more permissive when it comes to qualifying names.
+ 4.3. '''Modules and inaccessible qualified names''' (OCaml). Even if the Coq and OCaml module systems are very similar, the first one is slightly more permissive when it comes to qualifying names.
   {{{
 Module M.
  Definition t := 0.
@@ -79,7 +79,7 @@ End M.
   }}}
   In OCaml, a {{{type t = t}}} would be wrong, since type definition is recursive by default, so we also use here a local naming submodule. '''TODO''': for OCaml >= 4.02, we could generate here {{{type nonrec t = t}}}.
 
- 4.4. '''module parameters''' (OCaml). Inside a functor, its parameter name might be shadowed, but the content of the parameter might remain accessible.
+ 4.4. '''Module parameters''' (OCaml). Inside a functor, its parameter name might be shadowed, but the content of the parameter might remain accessible.
   {{{
 Module Type T. Parameter t : nat. End T.
 Module F (X:T).
@@ -91,7 +91,7 @@ End F.
 
   * Alternative solution that would be type-safe : use another prefix, for instance here use the name {{{coqP__X__123}}} (with P as in parameter).
 
- 4.5. '''unicode characters'''. OCaml doesn't accept unicode characters in names while Coq does.
+ 4.5. '''Unicode characters'''. OCaml doesn't accept unicode characters in names while Coq does.
   {{{
 Definition αβγ := 123.
   }}}
@@ -101,6 +101,8 @@ Definition αβγ := 123.
 
   * In Haskell, the most recent norm accept unicode letters in names, and apparently ghc supports it (but hugs does not). Anyway, before leaving unicode characters in Haskell extraction (probably via a user flag), we should first compare the range of unicode letters accepted by Coq and by Haskell.
 
+ 4.6. '''First-level inner modules in monolithic mode''' (OCaml). In the so-called "monolithic" mode, the content of many Coq files is assembled in one OCaml file. If these Coq files contain inner modules of the same name, we could end with a name clash. For the moment these 1st-level inner modules are renamed if necessary by prefixing them with {Coq_}, {Coq0_},
+{Coq1_}, etc.
 
 A final note : {{{__}}} is also used by the extraction to name the constant which is substituted to eliminated code. With respect to renaming, this isn't a big deal: We simply consider this {{{__}}} name as a keyword of the target language, so any user-defined {{{__}}} is renamed into something else.
 
