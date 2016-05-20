@@ -101,8 +101,7 @@ Definition αβγ := 123.
 
   * In Haskell, the most recent norm accept unicode letters in names, and apparently ghc supports it (but hugs does not). Anyway, before leaving unicode characters in Haskell extraction (probably via a user flag), we should first compare the range of unicode letters accepted by Coq and by Haskell.
 
- 4.6. '''First-level inner modules in monolithic mode''' (OCaml). In the so-called "monolithic" mode, the content of many Coq files is assembled in one OCaml file. If these Coq files contain inner modules of the same name, we could end with a name clash. For the moment these 1st-level inner modules are renamed if necessary by prefixing them with {Coq_}, {Coq0_},
-{Coq1_}, etc.
+ 4.6. '''First-level inner modules in monolithic mode''' (OCaml). In the so-called "monolithic" mode, the content of many Coq files is assembled in one OCaml file. If these Coq files contain inner modules of the same name, we could end with a name clash. For the moment these 1st-level inner modules are renamed if necessary by prefixing them with {{{Coq_}}}, {{{Coq0_}}}, {{{Coq1_}}}, etc.
 
 A final note : {{{__}}} is also used by the extraction to name the constant which is substituted to eliminated code. With respect to renaming, this isn't a big deal: We simply consider this {{{__}}} name as a keyword of the target language, so any user-defined {{{__}}} is renamed into something else.
 
