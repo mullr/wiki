@@ -45,6 +45,7 @@ TBD
  1. Nicolas Magaud
  1. Pierre-Évariste Dagand
  1. Lionel Rieg
+ 1. Cyril Cohen
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
