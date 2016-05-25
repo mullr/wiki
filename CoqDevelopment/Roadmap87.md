@@ -147,6 +147,8 @@ account plugin interfaces)
 
  * Print Assumptions now prints axioms through inductive definitions (M. Lasson)
 
+ * Deprecate non-qualified Requires ? Emitting a warning may be fine.
+
  * ? PR [[https://github.com/coq/coq/pull/78|#79]] Assume Positive/Guarded/... Syntax issue on attributes, naming.
 
  * ? PR [[https://github.com/coq/coq/pull/85|#85]] Printing in cbv/cbn
