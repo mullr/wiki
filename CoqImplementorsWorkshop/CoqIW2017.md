@@ -12,7 +12,7 @@ The Implementors Workshop takes place at the Inria Center in Sophia-Antipolis ([
 
 Talks by devs:
 
- * Intro [[attachment:intro.pdf|Intro PDF]]
+ * Introduction (Enrico, Maxime, Matej) [[attachment:intro.pdf|Intro PDF]]
  * STM (Enrico) [[attachment:stm4hackers.pdf|Slides PDF]]
 
 == Do log what you did/learnt/implemented! ==
