@@ -56,7 +56,7 @@ account plugin interfaces)
  * ? PR [[https://github.com/coq/coq/pull/86|#86]]: simplify sort_fields (G. Sherer)
  * ? PR [[[[https://github.com/coq/coq/pull/117|#117]]: iota split into iota0+phi+psi and ML API cleanup for
   reduction functions (H. Herbelin)
-
+ * ? Flag deprecated commands: Add Setoid/Morphism/...?
  * Windows SDK built from sources using Michael's script (Enrico).
 
 == Kernel ==
