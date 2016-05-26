@@ -11,7 +11,9 @@ The Implementors Workshop takes place at the Inria Center in Sophia-Antipolis ([
 [[attachment:schedule.pdf|Program PDF]]
 
 Talks by devs:
- - Enrico [[attachment:stm4hackers.pdf|Slides PDF]]
+
+ * Intro [[attachment:intro.pdf|Intro PDF]]
+ * STM (Enrico) [[attachment:stm4hackers.pdf|Slides PDF]]
 
 == Do log what you did/learnt/implemented! ==
 Write it [[https://coq.inria.fr/cocorico/CoqImplementorsWorkshop/CoqIW2016/log|here]].
