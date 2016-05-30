@@ -85,13 +85,13 @@ Insert here your individual plan for the week:
 
  * Look at weird behavior when using new universe unification (PR#178) and universe polimorphism (happens both in trunk and v8.5)
 
- * PR#143 merge: Follow the plan outlined at:
-   * Feedback from the devs?
+ * PR#143 merge: Follow the plan outlined at: https://sympa.inria.fr/sympa/arc/coqdev/2016-04/msg00013.html
+   * Feedback from the devs? Enrico is looking at it. PMP did a preliminary eval.
    * PR#133?
 
- * New protocol/serialization
-   * Upload a document to coq-serapi.
-   * Main point how to support "streams".
+ * New protocol/serialization:
+   * There's already an almost complete serializer at: https://github.com/ejgallego/coq-serapi
+   * Plan is to reify STM and search API to build a toplevel.
 
  * jsCoq/uDoc:
    * complete new linking support
@@ -99,4 +99,4 @@ Insert here your individual plan for the week:
    * new UI
    * vm_compute
 
-- Packing plugins?
+ * Plugin packing: It would be great to have proper namespacing.
