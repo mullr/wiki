@@ -15,4 +15,4 @@ At the moment, there is not a more convenient method than, really, for a given p
 
 E.g. in case of [[https://github.com/coq/coq/pull/178|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs|"coq-contribs" job]] with the following parameters:
 
-{{attachment:coq_contribs_parametrers.png}}
+{{attachment:jenkins.png}}
