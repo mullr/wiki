@@ -75,3 +75,28 @@ In 8.4 setoid_rewrite, there was code to type-check terms known to be well-typed
 
 == Brainstorming ("harder" projects, to be considered carefully) ==
 ...
+
+== Individual Projects ==
+
+Insert here your individual plan for the week:
+
+=== Emilio J. Gallego Arias ===
+
+- Look at weird behavior when using new universe unification (PR#178)
+  and universe polimorphism (happens both in trunk and v8.5)
+
+- PR#143 merge: Follow the plan outlined at:
+  - Feedback from the devs?
+  - PR#133?
+
+- New protocol/serialization
+  - Upload a document to coq-serapi.
+  - Main point how to support "streams".
+
+- jsCoq/uDoc:
+  - complete new linking support
+  - Move to a thread.
+  - new UI
+  - vm_compute
+
+- Packing plugins?
