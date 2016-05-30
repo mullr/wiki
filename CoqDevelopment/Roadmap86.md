@@ -70,10 +70,6 @@ account plugin interfaces)
  * Now accepting unit props in mutual definitions (B. Barras, 045b695)
  Any change due to this? kernel/checker
 
- * ? Inductive-inductive, inductive-recursive, recursive-recursive definitions
- Experimental [[https://github.com/mattam82/coq/tree/IR|branch]], probably not 
- for 8.6, theoretical issues: guardedness and positivity checking (M. Sozeau)
-
 == Elaboration, Gallina ==
 
  * Ltac implementation refactoring, "Ltac as a plugin" (P.M. Pédrot).
