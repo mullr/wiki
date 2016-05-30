@@ -8,6 +8,8 @@
 
  * [[ExtractionNameTricks]] : some explanations about how names are generated in extracted code
 
+ * [[CoqImplementorsWorkshop/CoqIW2016]] : talk by Pierre L. about extraction
+
 = Tips about Extraction =
 
  * Check the manual pages!
