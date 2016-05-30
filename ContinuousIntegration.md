@@ -6,3 +6,9 @@ there is a [[https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs|"coq-con
 
 When you start it, you can specify which coq-repository to clone, which branch to check out etc.
 All coq-contribs will then be rebuilt with the Coq version you have chosen.
+
+== How to test your pull request ==
+
+
+
+== How to get your development added to contributions ==
