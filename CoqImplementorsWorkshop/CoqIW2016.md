@@ -155,3 +155,7 @@ The changes we should discuss during the implementors workshop are:
   (which?)
 
  * ?! cons and Some have their type argument set maximally implicit.
+
+ * ? Evar naming:
+  Unnamed evars generated identifiers are not stable and shouldn't be 
+  used to refer to evars (MS: can they?)
