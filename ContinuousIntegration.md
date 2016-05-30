@@ -12,3 +12,5 @@ All coq-contribs will then be rebuilt with the Coq version you have chosen.
 
 
 == How to get your development added to contributions ==
+
+=== Handling dependencies of your contrib ===
