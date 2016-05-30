@@ -100,3 +100,58 @@ Insert here your individual plan for the week:
    * vm_compute
 
  * Plugin packing: It would be great to have proper namespacing.
+
+=== Discussion on the roadmap ===
+The changes we should discuss during the implementors workshop are:
+
+* Ltac implementation refactoring, "Ltac as a plugin" (P.M. Pédrot).
+ Uniform handling of generic arguments.
+
+  Incompatibilities:
+   * ?! at the syntax level, when using constr:, ltac:
+	grammar entries in Ltac code, parentheses become mandatory
+	(e.g.: constr:((x, y)) for the pair of terms x y).
+	ipattern_list:([] []). Uniformity vs "non-uglyness".
+   * At the level of ML: camlp4 quotations of ltac are no longer
+  supported (<:ltac < auto with *>>)
+  
+ Some tactics and vernac entries were moved to 
+ TACTIC EXTEND/VERNAC EXTEND thanks to the refactoring.
+
+ * Unification:
+
+   * ?! Unification of Let-In bodies without unifying their types (in
+	evarconv heuristic of first-order unifications) (9cc95f5) 
+   * Other improvements? (H. Herbelin, M. Sozeau)
+
+ * Keyed Unification:
+
+  ?! The strategy is now to do a first pass without conversion and
+  a pass with full conversion of arguments if this fails, when
+  selecting subterms. Keyed Unification is still restricted to
+  [unify_to_subterm], used by the standard rewrite only (M. Sozeau).
+
+
+ * ?! Forbiding "Require" inside modules and module types (Import is fine)
+
+ * ?! double induction, which is deprecated (but not warned as such),
+  was improved by H. Herbelin, introducing an incompatibility (it succeeds
+  more often). Compatibility flag?
+ * ! invariants on (a, b, ...), intropattern for generalized cartesian products
+  Stop autocompleting with ? (H. Herbelin)
+  The error message could be improved?
+ * ?! inversion/injection as ([intropattern]): changed? Compatibility is not
+  guaranteed here (H. Herbelin).
+ * ! "Set Regular Subst Tactic", subst has a more
+  canonical strategy and can succeed more often.
+
+* ?! Properly handle Hint Extern with conclusions of the form
+   _ -> _" in typeclass resolution (M. Sozeau)
+   This breaks compatibility, these Hint Externs were not
+   found before as the pattern was matched on the conclusion of the
+   goal, removing arrows.
+
+ * ! Changes in QArith/Qcanon,Qcabs by P. Letouzey with minor incompatibilities
+  (which?)
+
+ * ?! cons and Some have their type argument set maximally implicit.
