@@ -7,7 +7,6 @@ The Coq Implementors Workshop is an event that brings together the core develope
 The Implementors Workshop takes place at the Inria Center in Sophia-Antipolis ([[https://team.inria.fr/marelle/venue/|how to reach the Inria center]], [[https://team.inria.fr/marelle/accomodation-information/|accommodation infos]]).
 
 == Program ==
-
 [[attachment:schedule.pdf|Program PDF]]
 
 Talks by devs:
@@ -51,6 +50,7 @@ TBD
  1. Pierre-Évariste Dagand
  1. Lionel Rieg
  1. Cyril Cohen
+ 1. Théo Zimmermann
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
