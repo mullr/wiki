@@ -58,6 +58,7 @@ account plugin interfaces)
   reduction functions (H. Herbelin)
  * ? Flag deprecated commands: Add Setoid/Morphism/...?
  * Windows SDK built from sources using Michael's script (Enrico).
+ * ? Error resilient mode for STM (Enrico) [[https://github.com/coq/coq/pull/173|#173]]
 
 == Kernel ==
 
