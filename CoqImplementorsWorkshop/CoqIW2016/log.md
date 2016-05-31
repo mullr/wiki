@@ -1,5 +1,10 @@
 This log page is empty.  Feel guilty and fill it!
 
+== 31/05/2016 ==
+
+ * Emilio:
+   * https://github.com/coq/coq/pull/180 Xml cleanup
+
 == 30/05/2016 ==
 
  * Extraction's corner cases do not occur in Compcert
