@@ -80,6 +80,10 @@ account plugin interfaces)
 	grammar entries in Ltac code, parentheses become mandatory
 	(e.g.: constr:((x, y)) for the pair of terms x y).
 	ipattern_list:([] []). Uniformity vs "non-uglyness".
+       All about parsing. It will break. 
+       Using constr:((x, y)). 
+       Decision: ask users about grepping before we can include this. 
+
    * At the level of ML: camlp4 quotations of ltac are no longer
   supported (<:ltac < auto with *>>)
   
