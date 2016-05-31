@@ -16,3 +16,5 @@ This log page is empty.  Feel guilty and fill it!
    * Review PR#143 with Enrico.
    * Submitted new version of PR#143 -> PR#179, seems ready.
    * Review problems of PR#178 with Matthieu, seems he has some idea.
+ * Yves:
+   * Work on plugins/romega/ReflOmegaCore.v, making it robust to number structures where the equality is just an equivalence relation compatible with the operations.
