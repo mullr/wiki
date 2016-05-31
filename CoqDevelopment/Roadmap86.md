@@ -79,13 +79,16 @@ account plugin interfaces)
  Uniform handling of generic arguments.
 
   Incompatibilities:
-   * ?! at the syntax level, when using constr:, ltac:
+   * ! at the syntax level, when using constr:, ltac:
 	grammar entries in Ltac code, parentheses become mandatory
 	(e.g.: constr:((x, y)) for the pair of terms x y).
 	ipattern_list:([] []). Uniformity vs "non-uglyness".
        All about parsing. It will break. 
        Using constr:((x, y)). 
-       Decision: ask users about grepping before we can include this. 
+
+  Decision: ask users about grepping before we can include this,
+  so we can evaluate the incompatibility better and in this case
+  specialize constr:().
 
    * At the level of ML: camlp4 quotations of ltac are no longer
   supported (<:ltac < auto with *>>)
@@ -115,19 +118,32 @@ account plugin interfaces)
   Should we use ?[n] several times, what happens currently?
   Proposition by PMP to use tactics in terms [let t := ltac:(evar sometype) in u] ?
   instantiate(n:=t) is now broken.
-  
+
+  - Bug in compatibility checking.
+
+  Many proposals:
+  ltac:(let x := evar "e" T in exact (x + x))
+  replace (?A + ?B) with B + A.
+
+  No decision really, timeout
+
+ * ?! Clear flags in 8.5.
+
  * Unification:
 
-   * ?! Unification of Let-In bodies without unifying their types (in
-	evarconv heuristic of first-order unifications) (9cc95f5) 
-   * Other improvements? (H. Herbelin, M. Sozeau)	
+   *  Unification of Let-In bodies without unifying their types (in
+	evarconv heuristic of first-order unifications) (9cc95f5)
+   Decision: unification, use cumulativity state leq.
 
  * Keyed Unification:
 
-  ?! The strategy is now to do a first pass without conversion and
+  ! The strategy is now to do a first pass without conversion and
   a pass with full conversion of arguments if this fails, when
   selecting subterms. Keyed Unification is still restricted to
   [unify_to_subterm], used by the standard rewrite only (M. Sozeau).
+
+  Decision: ok.
+  Follow the compat flag.  
 
  * Typeclasses:
 
@@ -147,7 +163,12 @@ account plugin interfaces)
 
 == Vernacular ==
 
- * ?! Forbiding "Require" inside modules and module types (Import is fine)
+ * ! Forbiding "Require" inside modules and module types (Import is
+   fine) Users complain. Do we deprecate or not? We should say
+   something.
+
+   Decision: message with workaround (move outside module).
+   Still an incompatibility to 8.4.
 
  * Print Assumptions now prints axioms through inductive definitions (M. Lasson)
 
@@ -180,16 +201,30 @@ account plugin interfaces)
 
 == Tactics ==
 
- * ?! double induction, which is deprecated (but not warned as such),
+ * ! double induction, which is deprecated (but not warned as such),
   was improved by H. Herbelin, introducing an incompatibility (it succeeds
   more often). Compatibility flag?
+  induction m, n = induction m ; destruct m
+  double induction n m = elim n ; elim m.
+  Decision: remove the double induction tactic.
+
  * ! invariants on (a, b, ...), intropattern for generalized cartesian products
   Stop autocompleting with ? (H. Herbelin)
+  Used to: warning about more names, or less.
+  Now: exact number of names.
+  Decision: ok, relying on the compat_version ().
+
   The error message could be improved?
  * ?! inversion/injection as ([intropattern]): changed? Compatibility is not
   guaranteed here (H. Herbelin).
+  What changed? Postponed to June 1st.
+
  * ! "Set Regular Subst Tactic", subst has a more
-  canonical strategy and can succeed more often.
+   canonical strategy and can succeed more often.
+ 8.4: subst doing weird stuff, Jason puts it in compat84.
+ oops..
+  Decision: ok, compatibility.
+ 
  * ? congruence now uses build_selector from Equality (H. Herbelin)
  * ? Clearing on the fly, contradiction (H. Herbelin)
  * ? refine and conv_pbs (E. Tassi, M. Dénès)
@@ -201,11 +236,14 @@ account plugin interfaces)
  * ? PR [[https://github.com/coq/coq/pull/146|#146]]: Ssreflect pattern matching facilities (E. Tassi)
  * ? PR [[https://github.com/coq/coq/pull/150|#150]]: LtacProf (Coq v8.5) (J. Gross, P. Steckler)
  * ? PR [[https://github.com/coq/coq/pull/164|#164]]: A few tactics for 8.6 (H. Herbelin)
- * ?! Properly handle Hint Extern with conclusions of the form
+ * ! Properly handle Hint Extern with conclusions of the form
    _ -> _" in typeclass resolution (M. Sozeau)
    This breaks compatibility, these Hint Externs were not
    found before as the pattern was matched on the conclusion of the
    goal, removing arrows.
+
+  Decision: put a warning at least on Hint Externs, maybe fix it.
+
  * ?! Improvements to generalized rewriting: faster rewriting with leibniz equality,
  new strategies, heterogeneous relations... Still WIP (M. Sozeau)
    [[https://github.com/mattam82/coq/commits/genreweqwip|branch]]
@@ -217,9 +255,14 @@ account plugin interfaces)
 == Standard Library ==
 
  * ! Changes in QArith/Qcanon,Qcabs by P. Letouzey with minor incompatibilities
-  (which?)
- * Introduction of MMaps
- * ?! cons and Some have their type argument set maximally implicit.
+   Decision: Lemma additions, minor incompatibilities
+   
+* Introduction of MMaps
+ * ! nil, cons, None and Some have their type argument set maximally implicit.
+ Decision: keep it that way.
+ Incompatibility should be clearly mentionned.
+ 
+
  * function_scope is now declared in Notations and bound to Funclass.
   Scopes can be bound to classes again. (J. Gross)
  * Definition of eta in VectorSpec.v
