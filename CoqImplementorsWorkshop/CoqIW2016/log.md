@@ -4,6 +4,8 @@ This log page is empty.  Feel guilty and fill it!
 
  * Emilio:
    * https://github.com/coq/coq/pull/180 Xml cleanup
+   * https://github.com/coq/coq/pull/181 Factor out serialization code.
+ 
 
 == 30/05/2016 ==
 
