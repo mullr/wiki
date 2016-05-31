@@ -16,3 +16,8 @@ At the moment, there is not a more convenient method than, really, for a given p
 E.g. in case of [[https://github.com/coq/coq/pull/178|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs|"coq-contribs" job]] with the following parameters:
 
 {{attachment:jenkins.png}}
+
+== How to add your own contrib to Jenkins ==
+
+1. The first step is to submit a pull request to https://github.com/coq-contribs/coq-contribs Your project should be hosted in a public git server.
+1. More information should be appear in the `coq-contribs` readme.
