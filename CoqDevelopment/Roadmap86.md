@@ -60,6 +60,7 @@ account plugin interfaces)
  * ? Flag deprecated commands: Add Setoid/Morphism/...?
  * Windows SDK built from sources using Michael's script (Enrico).
  * ? Error resilient mode for STM (Enrico) [[https://github.com/coq/coq/pull/173|#173]]
+ * Compartimentalize IDE-API specific serialization in IDE (PR#180, EJGA). Parts of this could be merged on 8.6 but some more discussion is needed.
 
 == Kernel ==
 
