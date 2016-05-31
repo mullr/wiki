@@ -6,7 +6,7 @@ This log page is empty.  Feel guilty and fill it!
    * https://github.com/coq/coq/pull/180 Xml cleanup
    * https://github.com/coq/coq/pull/181 Factor out serialization code.
    * https://github.com/coq/coq/pull/184 Nits
- 
+   * Adapted math-comp and PIDECoq to trunk. https://bitbucket.org/ejgallego/pidetop/src/?at=coq-8.6 https://github.com/math-comp/math-comp/pull/48
 
 == 30/05/2016 ==
 
