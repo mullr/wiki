@@ -52,6 +52,7 @@ account plugin interfaces)
    [EJGA] No way this can go in 8.6 as is, however some small bits could be split.
  * ? PR [[https://github.com/coq/coq/pull/143|#143]] now [[https://github.com/coq/coq/pull/179|#179]]: Feedback/pp cleanup (E. J. Gallego)
    [EJGA] I should be able to get this in shape for 8.6.
+   [EJGA] Done
  * ? PR [[https://github.com/coq/coq/pull/158|#158]]: Fixing the "beautifier" and checking the parsing-printing reversibility (H. Herbelin)
  * ? PR [[https://github.com/coq/coq/pull/86|#86]]: simplify sort_fields (G. Sherer)
  * ? PR [[[[https://github.com/coq/coq/pull/117|#117]]: iota split into iota0+phi+psi and ML API cleanup for
