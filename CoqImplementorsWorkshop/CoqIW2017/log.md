@@ -6,6 +6,7 @@ This log page is empty.  Feel guilty and fill it!
    * Tested performance with -flambda, no difference found with default options between 4.03.0 and 4.03.1+flambda. I couldn't get make to work with -O3 -unbox
    * Misc work on patches and many discussions with people.
    * Finish PR#180/181 in a satisfactory way.
+   * https://github.com/coq/coq/pull/185 Remove unused confusing print tagging functions. This is a first step of a larger cleanup.
 
 == 31/05/2016 ==
 
