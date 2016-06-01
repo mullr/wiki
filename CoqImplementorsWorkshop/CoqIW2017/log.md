@@ -1,6 +1,6 @@
 This log page is empty.  Feel guilty and fill it!
 
-== 31/05/2016 ==
+== 01/06/2016 ==
 
  * Emilio:
    * Tested performance with -flambda, no difference found with default options between 4.03.0 and 4.03.1+flambda.
