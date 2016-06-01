@@ -3,8 +3,9 @@ This log page is empty.  Feel guilty and fill it!
 == 01/06/2016 ==
 
  * Emilio:
-   * Tested performance with -flambda, no difference found with default options between 4.03.0 and 4.03.1+flambda.
+   * Tested performance with -flambda, no difference found with default options between 4.03.0 and 4.03.1+flambda. I couldn't get make to work with -O3 -unbox
    * Misc work on patches and many discussions with people.
+   * Finish PR#180/181 in a satisfactory way.
 
 == 31/05/2016 ==
 
