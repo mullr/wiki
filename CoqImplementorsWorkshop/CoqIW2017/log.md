@@ -3,7 +3,8 @@ This log page is empty.  Feel guilty and fill it!
 == 31/05/2016 ==
 
  * Emilio:
-   * Tested performance with -flambda, misc work on patches and many discussions with people.
+   * Tested performance with -flambda, no difference found with default options between 4.03.0 and 4.03.1+flambda.
+   * Misc work on patches and many discussions with people.
 
 == 31/05/2016 ==
 
