@@ -3,6 +3,11 @@ This log page is empty.  Feel guilty and fill it!
 == 31/05/2016 ==
 
  * Emilio:
+   * Tested performance with -flambda, misc work on patches and many discussions with people.
+
+== 31/05/2016 ==
+
+ * Emilio:
    * https://github.com/coq/coq/pull/180 Xml cleanup
    * https://github.com/coq/coq/pull/181 Factor out serialization code.
    * https://github.com/coq/coq/pull/184 Nits
