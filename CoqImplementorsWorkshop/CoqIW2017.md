@@ -112,11 +112,16 @@ The changes we should discuss during the implementors workshop are:
 
  * ? PR [[https://github.com/coq/coq/pull/86|#86]]: simplify sort_fields (G. Scherer)
 
+ * ? PR [[[[https://github.com/coq/coq/pull/117|#117]]: iota split into iota0+phi+psi and ML API cleanup for
+  reduction functions (H. Herbelin)
+
  * ? New warning system
 
  * ? Flag deprecated commands: Add Setoid/Morphism/...?
 
  * ? Error resilient mode for STM (Enrico) [[https://github.com/coq/coq/pull/173|#173]]
+
+ * ? Compartimentalize IDE-API specific serialization in IDE (PR#180, EJGA). Parts of this could be merged on 8.6 but some more discussion is needed.
 
  * ? PR [[https://github.com/coq/coq/pull/78|#79]] Assume Positive/Guarded/... Syntax issue on attributes, naming.
 
@@ -126,9 +131,26 @@ The changes we should discuss during the implementors workshop are:
 
  * ? PR [[https://github.com/coq/coq/pull/114|#114]]: Set Debug Foo vs Set Foo Debug (H. Herbelin)
 
-== CoqIDE ==
-
  * ? PR [[https://github.com/coq/coq/pull/67|#67]]: Add a Show Proof query to CoqIDE
 
-== Tools ==
  * ? PR [[https://github.com/coq/coq/pull/166|#166]]: Add -o option to coqc to choose the .vo file directory (Enrico)
+
+ * ? Option to add eta-unification during resolution.
+  * ? Option to do resolution following the dependency order of subgoals
+  in resolution (previously, and by default, the most dependent ones
+  are tried first, respecting the semantics of the previous proof engine).
+  * ? Option to switch to an iterative deepening search strategy.
+  * ?! New implementation of typeclasses eauto based on new proof engine,
+  could replace eauto as well: full backtracking, Hint Cut supported,
+  iterative deepening, limited search, ... (M. Sozeau) 
+  [[https://github.com/mattam82/coq/commits/bteauto|branch]]. 
+  To be turned into a PR, compatibility checks to do first.
+
+ * ? congruence now uses build_selector from Equality (H. Herbelin)
+
+ * ? PR [[https://github.com/coq/coq/pull/140|#140]]: Iff as a proper connective (H. Herbelin)
+
+ * ? PR [[https://github.com/coq/coq/pull/150|#150]]: LtacProf (Coq v8.5) (J. Gross, P. Steckler)
+
+ * ? Fix semantics of pattern-matching in Ltac (non-linear patterns, difference between hyps and goal and hyps)
+   (M. Sozeau)
