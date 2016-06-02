@@ -70,9 +70,9 @@ account plugin interfaces)
 
  Decision: ok, with configure option to activating/deactivating.
 
- * ? PR [[https://github.com/coq/coq/pull/86|#86]]: simplify sort_fields
+ * PR [[https://github.com/coq/coq/pull/86|#86]]: simplify sort_fields
    (G. Sherer)
- postpone to june 2nd.
+ Decision: cleanup without parsing rule and merge.
 
  * ! PR [[[[https://github.com/coq/coq/pull/117|#117]]: iota split into iota0+phi+psi and ML API cleanup for
   reduction functions (H. Herbelin).
@@ -163,8 +163,6 @@ account plugin interfaces)
 
   No decision really, timeout
 
- * ?! Clear flags in 8.5.
-
  * Unification:
 
    *  Unification of Let-In bodies without unifying their types (in
@@ -183,11 +181,11 @@ account plugin interfaces)
 
  * Typeclasses:
 
-  * ? Option to add eta-unification during resolution.
-  * ? Option to do resolution following the dependency order of subgoals
+  * Option to add eta-unification during resolution.
+  * Option to do resolution following the dependency order of subgoals
   in resolution (previously, and by default, the most dependent ones
   are tried first, respecting the semantics of the previous proof engine).
-  * ? Option to switch to an iterative deepening search strategy.
+  * Option to switch to an iterative deepening search strategy.
   Should be renamed bfs.
   
   * New implementation of typeclasses eauto based on new proof engine,
@@ -198,7 +196,10 @@ account plugin interfaces)
 
   Decision: ok. Compatibility with eauto?
   
- * ? PR [[https://github.com/coq/coq/pull/72|#72]] Quote coercions
+ * PR [[https://github.com/coq/coq/pull/72|#72]] Quote coercions
+ - Decision: not ready, needs redesign for hooks in the ML code so that
+ this can become a plugin.
+
  * PR [[https://github.com/coq/coq/pull/142|#142]] Patterns in abstractions (D. de Rauglaudre)
 
 == Vernacular ==
@@ -221,7 +222,13 @@ account plugin interfaces)
   Let it be accessible to plugins only.
 
 
- * ? PR [[https://github.com/coq/coq/pull/85|#85]] Printing in cbv/cbn
+ * PR [[https://github.com/coq/coq/pull/85|#85]] Printing in cbv/cbn
+ - Is it subsumed by other features?
+ - Can it be made into a plugin?
+ Decision:
+   - change to implement only the hooks part by 8.6, as this can be
+     generalized. Ask Thomas about the changes needed and update.
+   - Ask for users to tell us and advertise it.
 
  * Search has an option to print only the list of names found (C.
   Pit-Claudel). Maybe a generalized API is in order (PR by G. Malecha)?
@@ -241,13 +248,31 @@ account plugin interfaces)
  * @, abbreviations and notations are now interpreted in patterns like in terms (H. Herbelin).
     
  * PR [[https://github.com/coq/coq/pull/156|#156]] Coq-level numeral printers, now a CEP: [[CEP/Numeral Notation]] (D. de Rauglaudre)
+ Discussion:
+   P. Letouzey helped improve it.
+   should be revised.
+   For BigZ, BigN old parsers will still work.
+   Ltac for real numbers, not so clear it's the right way.
+   This just adds a purely .v solution to have printers.
+ Decision:
+   ok. Advertise it too, new feature, not entirely complete.
 
- * PR [[https://github.com/coq/coq/pull/64|#64]]: Add a Print Ltacs vernacular (C. Pit-Claudel)
- * ? PR [[https://github.com/coq/coq/pull/113|#113]]: Add the "not a keyword" modifier to notations (J.P. Delaix?)
+ * PR [[https://github.com/coq/coq/pull/64|#64]]: Add a Print Ltacs
+   vernacular (C. Pit-Claudel)
+ Decision: Pierre-Marie will reimplement it.
+
+ * PR [[https://github.com/coq/coq/pull/113|#113]]: Add the "not a
+    keyword" modifier to notations (J.P. Delaix?)
+  Discussion: camlp4/camlp5 discrepancy. Fix not needed anymore.
+  Decision: closed. 
+
+
  * PR [[https://github.com/coq/coq/pull/114|#114]]: Set Debug Foo vs Set Foo Debug (H. Herbelin)
  Decision: ok with aliases.
 
-* ? PR [[https://github.com/coq/coq/pull/162|#162]]: Search Interface Revisions (G. Malecha)
+* PR [[https://github.com/coq/coq/pull/162|#162]]: Search Interface Revisions (G. Malecha)
+  Decision: Moving pattern_of_string/dirpath_of_string_list elsewhere.
+  Merge.  
 
 == Tactics ==
 
@@ -265,9 +290,6 @@ account plugin interfaces)
   Decision: ok, relying on the compat_version ().
 
   The error message could be improved?
- * ?! inversion/injection as ([intropattern]): changed? Compatibility is not
-  guaranteed here (H. Herbelin).
-  What changed? Postponed to June 1st.
 
  * ! "Set Regular Subst Tactic", subst has a more
    canonical strategy and can succeed more often.
@@ -278,29 +300,82 @@ account plugin interfaces)
  * ! congruence now uses build_selector from Equality (H. Herbelin)
  Decision: ok, incompatibility on discriminate on dependent types.
 
- * ? Clearing on the fly, contradiction (H. Herbelin)
- * ? refine and conv_pbs (E. Tassi, M. Dénès)
- * ? PR [[https://github.com/coq/coq/pull/74|#74]]: Range selector (C. Mangin)
- * ?! PR [[https://github.com/coq/coq/pull/100|#100]]: fresh accepts more things (P. Courtieu) fresh will succeed more often=incompatibilies. Are these incompatibilites difficult to fix?
- * ? PR [[https://github.com/coq/coq/pull/136|#136]]: An adaptation of ssreflect's => to Coq introduction pattern model (H. Herbelin)
+ * Clearing on the fly
+ To be applied to destruct/applied.
+ Design decisions on default, currently compatible.
+ Discussion: postpone the design on configurability,
+ the default for e.g. apply is not changeable even if more natural.
+ the code is already merged using > for clearing explicitely.
 
-* !? PR [[https://github.com/coq/coq/pull/140|#140]]: Iff as a proper
+ * ! Clear not failing when an hypothesis didn't exist in Ltac mode,
+ now it does (only in strict mode?).
+ Decision: ok.
+
+ * ! contradiction (H. Herbelin)
+ Adds incompatibility: more success. ~ True and ~ (x = x), part of [easy].
+ Decision: ok. Compatibility issue.
+
+ * refine and conv_pbs (E. Tassi, M. Dénès)
+ Discussion: refine can be unsafe in the sense of not checking which
+ unification problems are solved.
+ Problem of API and sealing. 
+ - Fix refine, document API
+ Decision: fix ok.
+
+- Set Printing Unification Problems by M. Sozeau.
+
+ * PR [[https://github.com/coq/coq/pull/74|#74]]: Range selector
+   (C. Mangin)
+ Decision: take 1st part, document it in refman (associativity).
+ Do not allow ?[x].
+
+ * ! PR [[https://github.com/coq/coq/pull/100|#100]]: fresh accepts more
+ things (P. Courtieu) fresh will succeed more often=incompatibilies.
+ Are these incompatibilites difficult to fix? Nobody should rely on it,
+ (is_constr, is_var, ...)
+ Decision: ok with review by Pierre-Marie.
+
+
+ * ! PR [[https://github.com/coq/coq/pull/140|#140]]: Iff as a proper
   connective (H. Herbelin)
 
   Problem of coercions. Compatibility issue..
   - Evaluate on contribs.
   Decision: wait on.
 
+ * PR [[https://github.com/coq/coq/pull/157|#157]]: pat%constr
+    (H. Herbelin)
+   Discussion: still some syntax issues: ambiguity of %.
+   Decision: do not revert. 
 
- * ? PR [[https://github.com/coq/coq/pull/157|#157]]: pat%constr (H. Herbelin)
- * ? PR [[https://github.com/coq/coq/pull/146|#146]]: Ssreflect pattern matching facilities (E. Tassi)
+ * PR [[https://github.com/coq/coq/pull/146|#146]]: Ssreflect pattern
+   matching facilities (E. Tassi)
+  Discussion: some documentation issues
+  Decision: ok. Documentation of the ltac and advertisement.
+
 
 * PR [[https://github.com/coq/coq/pull/150|#150]]: LtacProf (trunk) (J. Gross, P. Steckler)
   Decision: in 8.6. No incompatibility, accept that its incomplete on
   backtracking, as a debug feature.
 
- * ? PR [[https://github.com/coq/coq/pull/164|#164]]: A few tactics for 8.6 (H. Herbelin)
- * ! Properly handle Hint Extern with conclusions of the form
+ * ?! injection as ([intropattern]): changed? Compatibility is not
+  guaranteed here (H. Herbelin).
+  What changed? Postponed to June 1st.
+
+ * ? PR [[https://github.com/coq/coq/pull/164|#164]]: A few tactics for
+   8.6 (H. Herbelin)
+   Discussion:
+   H: it is stepwise additions, so next version will add something else.
+   G: it should be the default if it's the right way.
+
+   - Injection introduces many incompatibilities, we'll need a
+   legacy tactic to replace it. Idea to use a module for deprecated tactics.
+   
+   - intros until 1. (1st). opposition to 1st
+
+   - 
+
+* ! Properly handle Hint Extern with conclusions of the form
    _ -> _" in typeclass resolution (M. Sozeau)
    This breaks compatibility, these Hint Externs were not
    found before as the pattern was matched on the conclusion of the
