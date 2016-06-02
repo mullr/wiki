@@ -95,7 +95,7 @@ account plugin interfaces)
  EJGA).
  Parts of this could be merged on 8.6 but some more discussion is
  needed.
- Decision: ok.
+ Decision: merged.
 
  * Use -pack for plugins [EJGA: IMHO we should really push for this, it is not so hard but important]
 
