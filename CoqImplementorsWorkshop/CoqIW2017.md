@@ -14,6 +14,7 @@ Talks by devs:
  * Introduction (Enrico, Maxime, Matej) [[attachment:intro.pdf|Intro PDF]]
  * STM (Enrico) [[attachment:stm4hackers.pdf|Slides PDF]]
  * Extraction (Pierre L) [[attachment:extraction.pdf|Slides PDF]] [[attachment:extraction_demo.v|extraction_demo.v]] [[attachment:extraction_cornercases.v|extraction_cornercases.v]] [[attachment:explicit_cumul.v|explicit_cumul.v]]
+ * Universes (Matthieu) [[attachment:universes.pdf|Slides PDF]]
 
 == Do log what you did/learnt/implemented! ==
 Write it [[https://coq.inria.fr/cocorico/CoqImplementorsWorkshop/CoqIW2016/log|here]].
