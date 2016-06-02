@@ -314,13 +314,17 @@ account plugin interfaces)
  * ?! Tactics and library for transfer/application of lemmas modulo rewritings (T. Zimmermann)
   [[https://github.com/mattam82/coq/pull/1]], linked to above point.
 
-* Fix semantics of pattern-matching in Ltac (non-linear patterns, difference between hyps and goal and hyps)
+ * Fix semantics of pattern-matching in Ltac (non-linear patterns, difference between hyps and goal and hyps)
    (M. Sozeau)
   Idea: use a warning for using conversion instead of syntactic checks
    and output a warning about deprecation.
   No problem a priori.
   Decision: if we have time to evaluate before June 15th.
-  
+
+ * ?! Remove some atomic tactics from the STM. This breaks "intro" in strict mode (i.e. Ltac := ...) by forcing its argument to have been defined beforehand, e.g. "intro x" is rejected and should be turned into "let x := fresh in intro x" (or similar).
+
+ * ?! Force "let rec" Ltac to be a thunk, e.g. "let rec x := idtac" is forbidden and should be turned into "let rec x _ := idtac".
+
 == Standard Library ==
 
  * ! Changes in QArith/Qcanon,Qcabs by P. Letouzey with minor incompatibilities
