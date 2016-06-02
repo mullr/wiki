@@ -240,5 +240,5 @@ account plugin interfaces)
 
 == FIXME ==
 
-* In implicit_quantifiers.ml, remove dead code and ad-hoc handling of { _ : _ | _ }
-* Remove register_loaded_library with same dirpath
+ * In implicit_quantifiers.ml, remove dead code and ad-hoc handling of { _ : _ | _ }
+ * Remove register_loaded_library with same dirpath
