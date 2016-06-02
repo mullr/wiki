@@ -6,7 +6,7 @@ This log page is empty.  Feel guilty and fill it!
    * Improve PR#185, fix some spacing inconsistencies between color and regular printer.
    * Verified that mirror-core and HoTT can be added to coq-contribs. They have a few problems with trunk thou.
    * Updated PR#145 to trunk, new PR#186
-   * Add preliminary META file to Coq.
+   * Add preliminary META file to Coq, PR #187
 
 == 01/06/2016 ==
 
