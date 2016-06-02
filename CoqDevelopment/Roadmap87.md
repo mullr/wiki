@@ -235,3 +235,10 @@ account plugin interfaces)
 
 == Tools ==
  * ? PR [[https://github.com/coq/coq/pull/166|#166]]: Add -o option to coqc to choose the .vo file directory (Enrico)
+
+----
+
+== FIXME ==
+
+* In implicit_quantifiers.ml, remove dead code and ad-hoc handling of { _ : _ | _ }
+* Remove register_loaded_library with same dirpath
