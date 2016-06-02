@@ -1,5 +1,9 @@
 This log page is empty.  Feel guilty and fill it!
 
+== 02/06/2016 ==
+
+ * Emilio: Improve PR#185, fix some spacing inconsistencies between color and regular printer.
+
 == 01/06/2016 ==
 
  * Emilio:
