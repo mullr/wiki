@@ -109,6 +109,8 @@ account plugin interfaces)
  * Now accepting unit props in mutual definitions (B. Barras, 045b695)
  Any change due to this? kernel/checker
 
+ * ? Optimizations in the (lazy) reduction machine, saving allocations
+
 == Elaboration, Gallina ==
 
  * Ltac implementation refactoring, "Ltac as a plugin" (P.M. Pédrot).
