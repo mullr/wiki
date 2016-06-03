@@ -95,7 +95,7 @@ account plugin interfaces)
  EJGA).
  Decision: merged.
 
- * Use -pack for plugins [EJGA: IMHO we should really push for this, it is not so hard but important]
+ * ? Use -pack for plugins [EJGA: IMHO we should really push for this, it is not so hard but important]
  * [[https://github.com/coq/coq/pull/185|#185]] Remove unused printing infrastructure and duplication.
    [EJGA] This is up to PMP/Enrico, I did this PR because the stuff is abandoned and it was indeed confusing people looking at it. It also saves 24K of bytecode and removes a duplicate code path.
 
