@@ -48,9 +48,6 @@ account plugin interfaces)
  are less likely to forget that there are potentially local definitions
  and not only declarations in these contexts.
 
- * ? PR [[https://github.com/coq/coq/pull/186|#186]] Coqlib cleanup (E. J. Gallego)
-   [EJGA] No way this can go in 8.6 as is; more discussion needed, IMHO a high priority for 8.7.
-
 * ! PR [[https://github.com/coq/coq/pull/143|#143]] now [[https://github.com/coq/coq/pull/179|#179]]: Feedback/pp cleanup (E. J. Gallego)
    [EJGA] I should be able to get this in shape for 8.6.
    [EJGA] Done
