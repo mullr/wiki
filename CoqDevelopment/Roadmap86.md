@@ -385,12 +385,6 @@ account plugin interfaces)
 
   Decision: put a warning at least on Hint Externs, maybe fix it.
 
- * ?! Improvements to generalized rewriting: faster rewriting with leibniz equality,
- new strategies, heterogeneous relations... Still WIP (M. Sozeau)
-   [[https://github.com/mattam82/coq/commits/genreweqwip|branch]]
- * ?! Tactics and library for transfer/application of lemmas modulo rewritings (T. Zimmermann)
-  [[https://github.com/mattam82/coq/pull/1]], linked to above point.
-
  * Fix semantics of pattern-matching in Ltac (non-linear patterns, difference between hyps and goal and hyps)
    (M. Sozeau)
   Idea: use a warning for using conversion instead of syntactic checks
