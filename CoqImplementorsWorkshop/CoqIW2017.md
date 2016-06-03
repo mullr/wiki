@@ -156,3 +156,7 @@ The changes we should discuss during the implementors workshop are:
 
  * ? Fix semantics of pattern-matching in Ltac (non-linear patterns, difference between hyps and goal and hyps)
    (M. Sozeau)
+
+ * Update the website (contribs and others?)
+
+ * opam ?
