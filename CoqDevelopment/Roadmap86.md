@@ -92,7 +92,7 @@ account plugin interfaces)
  EJGA).
  Decision: merged.
 
- * ? Use -pack for plugins [EJGA: IMHO we should really push for this, it is not so hard but important]
+ * Use -pack for plugins [EJGA: IMHO we should really push for this, it is not so hard but important]
  * [[https://github.com/coq/coq/pull/185|#185]] Remove unused printing infrastructure and duplication.
    [EJGA] This is up to PMP/Enrico, I did this PR because the stuff is abandoned and it was indeed confusing people looking at it. It also saves 24K of bytecode and removes a duplicate code path.
 
@@ -106,7 +106,7 @@ account plugin interfaces)
  * Now accepting unit props in mutual definitions (B. Barras, 045b695)
  Any change due to this? kernel/checker
 
- * ? Optimizations in the (lazy) reduction machine, saving allocations
+ * Optimizations in the (lazy) reduction machine, saving allocations
 
 == Elaboration, Gallina ==
 
@@ -389,9 +389,9 @@ account plugin interfaces)
   No problem a priori.
   Decision: if we have time to evaluate before June 15th.
 
- * ?! Remove some atomic tactics from the STM. This breaks "intro" in strict mode (i.e. Ltac := ...) by forcing its argument to have been defined beforehand, e.g. "intro x" is rejected and should be turned into "let x := fresh in intro x" (or similar).
+ * ! Remove some atomic tactics from the STM. This breaks "intro" in strict mode (i.e. Ltac := ...) by forcing its argument to have been defined beforehand, e.g. "intro x" is rejected and should be turned into "let x := fresh in intro x" (or similar).
 
- * ?! Force "let rec" Ltac to be a thunk, e.g. "let rec x := idtac" is forbidden and should be turned into "let rec x _ := idtac".
+ * ! Force "let rec" Ltac to be a thunk, e.g. "let rec x := idtac" is forbidden and should be turned into "let rec x _ := idtac".
 
 == Standard Library ==
 
