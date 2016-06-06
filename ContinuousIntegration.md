@@ -26,4 +26,4 @@ E.g. in case of [[https://github.com/coq/coq/pull/178|this pull request]] it mea
 
 {{attachment:jenkins.png}}
 
-Instructions [[https://github.com/coq-contribs/coq-contribs/blob/master/FAQ.md#how-can-i-my-work-to-coq-contribs|how to add your work to coq-contribs]].
+Instructions [[https://github.com/coq-contribs/coq-contribs/blob/master/FAQ.md#how-can-i-add-my-work-to-coq-contribs|how to add your work to coq-contribs]].
