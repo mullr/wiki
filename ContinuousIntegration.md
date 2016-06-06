@@ -26,9 +26,4 @@ E.g. in case of [[https://github.com/coq/coq/pull/178|this pull request]] it mea
 
 {{attachment:jenkins.png}}
 
-
-
-== How to add your own contrib to Jenkins ==
-
-1. The first step is to submit a pull request to https://github.com/coq-contribs/coq-contribs Your project should be hosted in a public git server.
-1. More information should be appear in the `coq-contribs` readme.
+Instructions [[https://github.com/coq-contribs/coq-contribs/blob/master/FAQ.md#how-can-i-my-work-to-coq-contribs|how to add your work to coq-contribs]].
