@@ -141,18 +141,23 @@ account plugin interfaces)
   reducing memory usage in presence of large numbers of evars. MS: in 8.5pl1
 
  * ? Evar naming:
-  Unnamed evars generated identifiers are not stable and shouldn't be 
-  used to refer to evars (MS: can they?)
+
+  * Unnamed evars generated identifiers are not stable and shouldn't be 
+  used to refer to evars (MS: can they? HH: in 8.5pl1, only the evars named using ?[x] or ?[?x] can be referred to).
   
-  There are two kinds of names printed the same way? the generated ones
-  and the user-specified ones?
+  HH: Whether generated identifiers should be unparsable or not is a question which is worth a discussion. My observation is that both approaches have their supporters.
+
+  * There are two kinds of names printed the same way? the generated ones
+  and the user-specified ones? (HH: Yes, and this is natural I think.)
   
-  We have another occurrence of the "declare at first use" phenomenon.
+  * We have another occurrence of the "declare at first use" phenomenon.
   ?[e] declares and evar and uses it.
-  Check ?[n]+?n differs from Check ?n+?[n].
-  Should we use ?[n] several times, what happens currently?
-  Proposition by PMP to use tactics in terms [let t := ltac:(evar sometype) in u] ?
-  instantiate(n:=t) is now broken.
+  {{{Check ?[n]+?n}}} differs from {{{Check ?n+?[n]}}}.
+  Should we use ?[n] several times? (HH's note: it fails in 8.5) HH: There is a convenient situation where one would like to use ?[n] several times: {{{match t with Constructor x => u | _ => ?[n] end}}}.
+
+  Proposition by PMP to use tactics in terms [let t := ltac:(evar sometype) in u] ? Ongoing CEP by HH on sharing evars.
+
+  Note: {{{instantiate(n:=t)}}} is working in 8.5pl1 for user-named evars but not for coq-generated ones.
 
   - Bug in compatibility checking.
 
