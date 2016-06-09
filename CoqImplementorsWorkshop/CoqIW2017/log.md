@@ -1,5 +1,11 @@
 This log page is empty.  Feel guilty and fill it!
 
+== After the CIW ==
+
+ * Emilio: Completed two projects started there the 08/06/2016
+   * Split IDE from Coq sources, use ocamlbuild: https://github.com/ejgallego/coqide-exp
+   * New toplevel and serialization: https://github.com/ejgallego/coq-serapi
+
 == 02/06/2016 ==
 
  * Emilio:
