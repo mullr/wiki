@@ -16,6 +16,7 @@ Talks by devs:
  * Extraction (Pierre L) [[attachment:extraction.pdf|Slides PDF]] [[attachment:extraction_demo.v|extraction_demo.v]] [[attachment:extraction_cornercases.v|extraction_cornercases.v]] [[attachment:explicit_cumul.v|explicit_cumul.v]]
  * Notations (Hugo) [[attachment:notations.pdf|Slides PDF]]
  * Universes (Matthieu) [[attachment:universes.pdf|Slides PDF]] (see dev/doc/univpoly.txt too)
+ * Ltac (Pierre-Marie) [[attachment:ltac-internals.pdf|Slides PDF]]
 
 == Do log what you did/learnt/implemented! ==
 Write it [[https://coq.inria.fr/cocorico/CoqImplementorsWorkshop/CoqIW2016/log|here]].
