@@ -2,7 +2,7 @@ This page is for collecting unification problems which Coq is not able to solve 
 
 === Missing backtracking ===
 
-This example is a simplification of a realistic example about proving properties of the composition of morphisms of monoids:
+This example is a simplification of a [[attachment:monoid.v|realistic example]] about proving properties of the composition of morphisms of monoids:
 {{{
 Axiom H : forall {a b : nat * unit}, fst a = fst b -> a = b.
 Lemma lem1 (a : nat) (x y:unit) : (a, x) = (a, y).
@@ -21,7 +21,7 @@ Check fun x (a : x = 0) (b : x = 0) => rew a in b.
 
 === Libal-Miller functions-as-constructors extended pattern unification ===
 
-This example is a simplification of a realistic example and enters extended pattern-unification:
+This example is a simplification of a [[attachment:monoid.v|realistic example]] and enters extended pattern-unification:
 {{{
 Check fun x (a : S x = 0) (b : S (S x) = 0) => rew a in b.
 (* Problem is ?P (S x) ≡ S (S x) = 0 *)
