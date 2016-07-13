@@ -52,7 +52,7 @@ Check fun x (a : S x = 0) (b : S (S x) = 0) => rew a in b.
 
 == Inverting tuples in instances of existential variables ==
 
-There is a pretty common pattern where an argument of an existential variable is a tuple of which every component can be projected.
+There is a pretty common pattern where an argument of an existential variable is a tuple of which components can be projected.
 
 See e.g. [[https://coq.inria.fr/bugs/show_bug.cgi?id=3126|Bug #3126]] (or, more distantly, [[https://coq.inria.fr/bugs/show_bug.cgi?id=3823|Bug #3823]]):
 
