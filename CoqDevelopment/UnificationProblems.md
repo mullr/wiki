@@ -49,3 +49,7 @@ This example is a simplification of a [[attachment:monoid.v|realistic example]].
 Check fun x (a : S x = 0) (b : S (S x) = 0) => rew a in b.
 (* Problem is "(?P[x:=x] (S x)) ≡ (S (S x) = 0)" *)
 }}}
+
+== See also ==
+
+[[https://coq.inria.fr/bugs/buglist.cgi?quicksearch=unification&list_id=150125|A raw list of bugs mentioning unification]].
