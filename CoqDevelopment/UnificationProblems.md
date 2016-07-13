@@ -1,16 +1,23 @@
 This page is for collecting unification problems which Coq (or [[https://github.com/unicoq/unicoq|UniCoq]]) are not able to solve (yet, i.e. July 2016).
 
-=== Missing backtracking ===
+== Missing backtracking ==
+
+=== Missing backtracking on successful first-order unification ===
 
 This example is a simplification of a [[attachment:monoid.v|realistic example]] about proving properties of the composition of morphisms of monoids:
 {{{
 Axiom H : forall {a b : nat * unit}, fst a = fst b -> a = b.
 Lemma lem1 (a : nat) (x y:unit) : (a, x) = (a, y).
-apply (H eq_refl).
-(* fails, because "fst a ≡ fst b" entails too eagerly that "a ≡ b" w/o possibility of backtracking *)
+Fail apply (H eq_refl).
+Fail refine (H eq_refl).
+(* fails, because "fst a ≡ fst b" entails too eagerly that "a ≡ b" w/o possibility of backtracking/postponing *)
 }}}
 
-=== Extending the first-order unification heuristic into a "pattern-unification" heuristic ===
+=== Missing backtracking/postponing on failing too complex problem ===
+
+[[https://coq.inria.fr/bugs/show_bug.cgi?id=1214|Bug #1214]] shows a failure in unifying {{{(if ?b then true else false) = ?b) ≡ (true = true)}}}. Contrastingly, {{{?b = if ?b then true else false)) ≡ (true = true)}}} works.
+
+== Extending the first-order unification heuristic into a "pattern-unification" heuristic ==
 
 In some sense, Coq's exitential variables have two levels of instance: the instance of the existential variable properly speaking and the arguments applied to the existential variables. For example, in context
 {{{
@@ -35,7 +42,7 @@ Check fun x (a : x = 0) (b : x = 0) => rew a in b.
 (* Problem is "(?P[x:=x] x) ≡ (x = 0)" *)
 }}}
 
-=== Extending the first-order unification heuristic into a Libal-Miller functions-as-constructors heuristic ===
+== Extending the first-order unification heuristic into a Libal-Miller functions-as-constructors heuristic ==
 
 This example is a simplification of a [[attachment:monoid.v|realistic example]]. It is similar to the one in the previous section but using functions-as-constructors extended pattern-unification rather than basic pattern-unification:
 {{{
