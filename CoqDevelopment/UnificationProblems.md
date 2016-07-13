@@ -50,6 +50,24 @@ Check fun x (a : S x = 0) (b : S (S x) = 0) => rew a in b.
 (* Problem is "(?P[x:=x] (S x)) ≡ (S (S x) = 0)" *)
 }}}
 
+== Inverting tuples in instances of existential variables ==
+
+There is a pretty common pattern where an argument of an existential variable is a tuple of which every component can be projected.
+
+See e.g. [[https://coq.inria.fr/bugs/show_bug.cgi?id=3126|Bug #3126]] (or, more distantly, [[https://coq.inria.fr/bugs/show_bug.cgi?id=3823|Bug #3823]]):
+
+{{{
+Goal forall T1 (P1 : T1 -> Type), sigT P1 -> sigT P1.
+intros T1 P1 H1.
+eexists ?[x].
+destruct H1 as [x1 H1].
+Fail apply H1.
+instantiate (x:=projT1 H1).
+apply H1.
+}}}
+
+Indeed, the first {{{apply H1}}} has to solve {{{?x[H1:=existT P1 x1 H1] ≡ x1}}} which it could do by projecting {{{x1}}} but it is not (yet) able to do it.
+
 == See also ==
 
 [[https://coq.inria.fr/bugs/buglist.cgi?quicksearch=unification&list_id=150125|A raw list of bugs mentioning unification]].
