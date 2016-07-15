@@ -1,5 +1,7 @@
 This page is for collecting unification problems which Coq (or [[https://github.com/unicoq/unicoq|UniCoq]]) are not able to solve (yet, i.e. July 2016).
 
+<<TableOfContents()>>
+
 == Missing backtracking ==
 
 === Missing backtracking on successful first-order unification ===
@@ -17,7 +19,65 @@ Fail refine (H eq_refl).
 
 [[https://coq.inria.fr/bugs/show_bug.cgi?id=1214|Bug #1214]] shows a failure in unifying {{{(if ?b then true else false) = ?b) ≡ (true = true)}}}. Contrastingly, {{{?b = if ?b then true else false)) ≡ (true = true)}}} works.
 
-== Extending the first-order unification heuristic into a "pattern-unification" heuristic ==
+== Inverting tuples in instances of existential variables ==
+
+There is a pretty common pattern where an argument of an existential variable is a tuple of which components can be projected.
+
+See e.g. [[https://coq.inria.fr/bugs/show_bug.cgi?id=3126|Bug #3126]] (or, more distantly, [[https://coq.inria.fr/bugs/show_bug.cgi?id=3823|Bug #3823]]):
+
+{{{
+Goal forall T1 (P1 : T1 -> Type), sigT P1 -> sigT P1.
+intros T1 P1 H1.
+eexists ?[x].
+destruct H1 as [x1 H1].
+Fail apply H1.
+instantiate (x:=projT1 H1).
+apply H1.
+}}}
+
+Indeed, the first {{{apply H1}}} has to solve {{{?x[H1:=existT P1 x1 H1] ≡ x1}}} which it could do by projecting {{{x1}}} but it is not (yet) able to do it.
+
+== Solvable second-order problems ==
+
+Let us consider the following successful problems:
+{{{
+Import EqNotations.
+Check fun x y (a : x = y)     (b : x = 0)   => rew [fun z => z = 0] a in b : (y = 0). (* 1 *)
+Check fun x   (a : x = 0)     (b : x = 0)   => rew [fun z => z = 0] a in b : (0 = 0). (* 2 *)
+Check fun   y (a : 0 = y)     (b : 0 = 0)   => rew [fun z => z = 0] a in b : (y = 0). (* 3 *)
+Check fun x y (a : S x = y)   (b : S x = 0) => rew [fun z => z = 0] a in b : (y = 0). (* 4 *)
+Check fun   y (a : S 0 = y)   (b : S 0 = 0) => rew [fun z => z = 0] a in b : (y = 0). (* 5 *)
+Check fun x y (a : x = S y)   (b : x = 0)   => rew [fun z => z = 0] a in b : (S y = 0). (* 6 *)
+Check fun x   (a : x = S 0)   (b : x = 0)   => rew [fun z => z = 0] a in b : (S 0 = 0). (* 7 *)
+Check fun x y (a : S x = S y) (b : S x = 0) => rew [fun z => z = 0] a in b : (S y = 0). (* 8 *)
+Check fun   y (a : S 0 = S y) (b : S 0 = 0) => rew [fun z => z = 0] a in b : (S y = 0). (* 9 *)
+Check fun x   (a : S x = S 0) (b : S x = 0) => rew [fun z => z = 0] a in b : (S 0 = 0). (* 10 *)
+}}}
+Let us add the following successful problem, derived from a [[attachment:monoid.v|realistic]] situation.
+{{{
+Check fun x   (a : fst x = 0) (b : fst x = 0) => rew [fun z => z = 0] a in b : (0 = 0). (* 11 *)
+}}}
+In cases 1 to 7 and 11, there is a unique solution which is not found.
+{{{
+Import EqNotations.
+Fail Check fun x y (a : x = y)     (b : x = 0)   => rew a in b : (y = 0).
+Fail Check fun x   (a : x = 0)     (b : x = 0)   => rew a in b : (0 = 0).
+Fail Check fun   y (a : 0 = y)     (b : 0 = 0)   => rew a in b : (y = 0).
+Fail Check fun x y (a : S x = y)   (b : S x = 0) => rew a in b : (y = 0).
+Fail Check fun   y (a : S 0 = y)   (b : S 0 = 0) => rew a in b : (y = 0).
+Fail Check fun x y (a : x = S y)   (b : x = 0)   => rew a in b : (S y = 0).
+Fail Check fun x   (a : x = S 0)   (b : x = 0)   => rew a in b : (S 0 = 0).
+Fail Check fun x   (a : fst x = 0) (b : fst x = 0) => rew a in b : (0 = 0).
+}}}
+Indeed the problems are conjunctions of equations of the form {{{?P[x:=x,y:=y] t ≡ t = 0}}} and {{{?P[x:=x,y:=y] u ≡ u = 0}}} with {{{t}}} and {{{u}}} not unifiable and one of {{{t}}} or {{{u}}} neutral, i.e. an eliminated variable, an eliminated axiom, an inductive type, or a sort. The solution is unique, since {{{t}}} and {{{u}}} are in rigid position.
+
+Assuming {{{t}}}, {{{u}}} and the right-hand sides in normal form, these are flexible/rigid problems canonically solvable by imitation (assuming none of {{{t}}} or {{{u}}} start with {{{=}}}, until obtaining {{{?P'[x:=x,y:=y] t ≡ t}}} and {{{?P'[x:=x,y:=y] u ≡ u}}} (and possibly extra equations if {{{t}}} or {{{u}}} is {{{0}}}. Let us assume that it is {{{t}}} which is neutral. One can then use candidates to express that {{{?P'}}} has two solutions for the first equation (namely {{{?P'[x:=x,y:=y] z := z}}} or {{{?P'[x:=x,y:=y] z := t}}} ({{{t}}} being assumed to have only {{{x}}} and {{{y}}} as free variables). The second equation now ensures that only the first solution is acceptable.
+
+If {{{t}}} and {{{u}}} are not in normal form, should we head-normalize them, something that is done in the first-order unification heuristic and which does not seem inducing efficiency in practice.
+
+== Investigation in further heuristics ==
+
+=== Extending the first-order unification heuristic into a "pattern-unification" heuristic ===
 
 In some sense, Coq's exitential variables have two levels of instance: the instance of the existential variable properly speaking and the arguments applied to the existential variables. For example, in context
 {{{
@@ -42,31 +102,19 @@ Check fun x (a : x = 0) (b : x = 0) => rew a in b.
 (* Problem is "(?P[x:=x] x) ≡ (x = 0)" *)
 }}}
 
-== Extending the first-order unification heuristic into a Libal-Miller functions-as-constructors heuristic ==
+Drawbacks: abstracting over all occurrences, especially in the presence of closed subterms is maybe too strong. In
+{{{
+Check fun x (a : 0 = x) (b : 0 = 0) => rew a in b.
+}}}
+Do we really want to infer {{{P[x] := fun y => y = y}}}, or do we want to consider that {{{P[x] := fun y => y = 0}}} or {{{P[x] := fun y => 0 = y}}} are equally good?
+
+=== Extending the first-order unification heuristic into a Libal-Miller functions-as-constructors heuristic ===
 
 This example is a simplification of a [[attachment:monoid.v|realistic example]]. It is similar to the one in the previous section but using functions-as-constructors extended pattern-unification rather than basic pattern-unification:
 {{{
 Check fun x (a : S x = 0) (b : S (S x) = 0) => rew a in b.
 (* Problem is "(?P[x:=x] (S x)) ≡ (S (S x) = 0)" *)
 }}}
-
-== Inverting tuples in instances of existential variables ==
-
-There is a pretty common pattern where an argument of an existential variable is a tuple of which components can be projected.
-
-See e.g. [[https://coq.inria.fr/bugs/show_bug.cgi?id=3126|Bug #3126]] (or, more distantly, [[https://coq.inria.fr/bugs/show_bug.cgi?id=3823|Bug #3823]]):
-
-{{{
-Goal forall T1 (P1 : T1 -> Type), sigT P1 -> sigT P1.
-intros T1 P1 H1.
-eexists ?[x].
-destruct H1 as [x1 H1].
-Fail apply H1.
-instantiate (x:=projT1 H1).
-apply H1.
-}}}
-
-Indeed, the first {{{apply H1}}} has to solve {{{?x[H1:=existT P1 x1 H1] ≡ x1}}} which it could do by projecting {{{x1}}} but it is not (yet) able to do it.
 
 == See also ==
 
