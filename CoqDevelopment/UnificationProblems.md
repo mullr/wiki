@@ -73,7 +73,9 @@ Indeed the problems are conjunctions of equations of the form {{{?P[x:=x,y:=y] t
 
 Assuming {{{t}}}, {{{u}}} and the right-hand sides in normal form, these are flexible/rigid problems canonically solvable by imitation (assuming none of {{{t}}} or {{{u}}} start with {{{=}}}, until obtaining {{{?P'[x:=x,y:=y] t ≡ t}}} and {{{?P'[x:=x,y:=y] u ≡ u}}} (and possibly extra equations if {{{t}}} or {{{u}}} is {{{0}}}. Let us assume that it is {{{t}}} which is neutral. One can then use candidates to express that {{{?P'}}} has two solutions for the first equation (namely {{{?P'[x:=x,y:=y] z := z}}} or {{{?P'[x:=x,y:=y] z := t}}} ({{{t}}} being assumed to have only {{{x}}} and {{{y}}} as free variables). The second equation now ensures that only the first solution is acceptable.
 
-If {{{t}}} and {{{u}}} are not in normal form, should we head-normalize them, something that is done in the first-order unification heuristic and which does not seem inducing efficiency in practice.
+If {{{t}}} and {{{u}}} are not in normal form, should we head-normalize them, something that is done in the first-order unification heuristic and which does not seem inducing efficiency penalty in practice?
+
+As for problems 8 to 10, which do not have a unique solution as they can also be solved e.g. using {{{?P := fun z => S (pred z) = 0}}}, a heuristic could still be used as discussed in the next section.
 
 == Investigation in further heuristics ==
 
