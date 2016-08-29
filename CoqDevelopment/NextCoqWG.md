@@ -6,7 +6,7 @@
 
 This page is used to organize the next Coq Working Group (in French GT Coq). The framadate link to decide which day it will happen is:
 
- . https://framadate.org/S8v3Q21TcZfqCRCx
+ . https://framadate.org/2F3QQQoxwoYLx7BN
 
 = Organization =
 The next Coq Working Group will take place in September at Sophie Germain, PPS on the 3rd floor.
