@@ -7,6 +7,7 @@ discuss ongoing developments.
 
 == Latest Coq WG's (in inverse chronogical order) ==
 
+ * [[CoqDevelopment/CoqWG20160415]]
  * [[CoqDevelopment/CoqWG20160216]]
  * [[CoqDevelopment/CoqWG20151125]]
  * [[CoqDevelopment/CoqWG20150915]]
