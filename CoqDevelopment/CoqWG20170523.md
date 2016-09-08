@@ -23,3 +23,6 @@ The next Coq Working Group will take place in September at Sophie Germain, PPS o
 === Matthieu proposes: ===
  * Rewriting strategies, coqrel and transfer (w/ J. Koenig, T. Zimmermann, 10min)
  * Unifying unifiers (5min progress report)
+
+=== Enrico rants: ===
+ * coq_makefile in Coq 8.7, aka: a meta-meta-language is a bit too much for my little brain (5 minutes)
