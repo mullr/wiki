@@ -26,3 +26,6 @@ The next Coq Working Group will take place in September at Sophie Germain, PPS o
 
 === Enrico rants: ===
  * coq_makefile in Coq 8.7, aka: a meta-meta-language is a bit too much for my little brain (5 minutes)
+
+=== Hugo proposes: ===
+ * From small inversion to pattern-matching compilation (w/ Meven Bertrand) (for instance 30mns)
