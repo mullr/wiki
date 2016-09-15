@@ -29,3 +29,4 @@ The next Coq Working Group will take place in September at Sophie Germain, PPS o
 
 === Hugo proposes: ===
  * From small inversion to pattern-matching compilation (w/ Meven Bertrand) (for instance 30mns)
+ * Gathering opinions about the issues raised recently on the indexation of packages, libraries in general, the standard library in particular?
