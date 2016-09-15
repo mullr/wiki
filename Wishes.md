@@ -18,6 +18,8 @@ A possible approach for printing terms of some type T as numerals is to provide 
 
 ==== A more expressive language for Coq binders ====
 
+Note: The 2nd and 3rd examples are available from Coq 8.6.
+
 The notion of binders could be more general than it is. For instance it would be convenient to be able to write 
 
 {{{Definition f x (y1,y2) z := .... }}} or {{{ Definition f x ((y1,y2) as y) z := ....}}}
