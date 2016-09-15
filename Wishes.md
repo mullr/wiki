@@ -85,7 +85,7 @@ See enhancement [[https://coq.inria.fr/bugs/show_bug.cgi?id=4114]].
 
 === Simplification tactics ===
 
-Note: command {{{Arguments}}} in version 8.4 allows to control such a reduction (e.g. {{{Arguments minus !n !m.}}}.
+Note: command {{{Arguments}}} in version 8.4 allows to control such a reduction (e.g. {{{Arguments minus !n !m.}}}).
 
 {{{simpl}}}, or rather a better {{{simpl}}} with a different name, should not simplify {{{minus O x}}} in the following definition:
 
