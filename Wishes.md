@@ -69,6 +69,17 @@ Automatically build {{{_rect}}} eliminators for inductive propositions with seve
 
 Automatically equip simple algebraic data-types with a canonical total ordering of it
 
+=== Coercions ===
+
+Coercions are from a class to another class, class being either a name, a dependent product or a sort.
+
+A natural enhancement would be to extend classes to patterns, in such a way that e.g. {{{{x:nat|_} }}} could be seen as class and the projection of {{{{x:nat|_} }}} to {{{nat}}} be seen as coercion.
+
+More generally, classes could be bound variables, so that e.g. the projection from {{{{x:A|_} }}} to {{{A}}} could be used as a generic coercion.
+
+The transitive closure of coercions could then not be computed in finite time, but it could e.g. be computed lazily, or at worst dynamically.
+
+See enhancement [[https://coq.inria.fr/bugs/show_bug.cgi?id=4114]].
 
 == Tactics ==
 
