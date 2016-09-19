@@ -35,5 +35,6 @@ The next Coq Working Group will take place in September at Sophie Germain, PPS o
  Topics for 8.6:
  * SerAPI overview (~ 20 - 40 mins)
  * Error handling in the XML/STM protocol (~ 30 mins)
+
  Topics for 8.7 (likely to be delayed after 8.6 is out)
  * Reflections on Pretty Pritting
