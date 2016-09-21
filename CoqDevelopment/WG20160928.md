@@ -19,6 +19,7 @@ The next Coq Working Group will take place in September at Sophie Germain, PPS o
 
 === Maxime proposes: ===
  * Remaining bugs in 8.6
+ * Status of warnings
 
 === Matthieu proposes: ===
  * Rewriting strategies, coqrel and transfer (w/ J. Koenig, T. Zimmermann, 10min)
