@@ -9,7 +9,9 @@ This page is used to organize the next Coq Working Group (in French GT Coq). The
  . https://framadate.org/2F3QQQoxwoYLx7BN
 
 = Organization =
-The next Coq Working Group will take place in September at Sophie Germain, PPS on the 3rd floor.
+The next Coq Working Group will take place on September 28th and 29th 
+room A215 of Inria Paris (2, rue Simone Iff) on the 28th and at Sophie Germain, 
+PPS on the 3rd floor on the 29th.
 
 = Schedule =
 
