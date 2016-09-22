@@ -22,6 +22,7 @@ PPS on the 3rd floor on the 29th.
 === Maxime proposes: ===
  * Remaining bugs in 8.6
  * Status of warnings
+ * A plea for OCaml 4.03
 
 === Matthieu proposes: ===
  * Rewriting strategies, coqrel and transfer (w/ J. Koenig, T. Zimmermann, 10min)
