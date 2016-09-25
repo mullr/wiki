@@ -32,8 +32,9 @@ PPS on the 3rd floor on the 29th.
  * coq_makefile in Coq 8.7, aka: a meta-meta-language is a bit too much for my little brain (5 minutes)
 
 === Hugo proposes: ===
- * From small inversion to pattern-matching compilation (w/ Meven Bertrand) (for instance 30mns)
- * Gathering opinions about the issues raised recently on the indexation of packages, libraries in general, the standard library in particular?
+ * From small inversion to pattern-matching compilation (w/ Meven Bertrand) (for instance 30 mins talk)
+ * Gathering opinions about the issues raised recently on the indexation of packages, libraries in general, the standard library in particular? (at least 10 minutes?)
+ * More to say about a "recommended" programming style (PR #251)? (at least 5 minutes?)
 
 === Emilio proposes: ===
 Topics for 8.6:
