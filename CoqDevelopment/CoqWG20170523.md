@@ -54,7 +54,10 @@ PPS on the 3rd floor on the 29th.
 
  * 11:00 - 11:15 Break
 
- * 11:15 - 11:30 A plea for OCaml 4.03 (Maxime Dénès)
+ * 11:15 - 11:30 Defining a few policies (Maxime Dénès)
+   * Moving to OCaml 4.03
+   * Renaming "trunk" to "master"
+   * How many compat flags?
 
  * 11:30 - 12:00 Group therapy
 
