@@ -15,31 +15,59 @@ PPS on the 3rd floor on the 29th.
 
 = Schedule =
 
+== 28/09/2016 ==
+
+ * 10:00 - 10:15 Packages, libraries, standard library (Hugo Herbelin)
+
+  Gathering opinions about the issues raised recently on these topics.
+
+ * 10:15 - 10:30 A "recommended" programming style (Hugo Herbelin)
+
+  Is there more to say on PR#251?
+
+ * 10:30 - 11:00 SerAPI overview (Emilio Jesús Gallego Arias)
+
+ * 11:00 - 11:15 Break
+
+ * 11:15 - 11:45 Error handling in the XML/STM protocol (Emilio Jesús Gallego Arias)
+
+ * 11:45 - 12:00 Unifying unifiers (Matthieu Sozeau)
+
+  Progress report
+
+ * 12:00 - 12:30 Remaining bugs in 8.6 (Maxime Dénès)
+
+ * 12:30 Lunch
+
+ * Afternoon: bug squashing for 8.6
+
+ * 18:30 Social event at Brewberry
+
+== 29/09/2016 ==
+
+ * 10:00 - 10:30 From small inversion to pattern-matching compilation (Hugo Herbelin, Meven Bertrand)
+
+ * 10:30 - 10:45 Rewriting strategies, coqrel and transfer (Matthieu Sozeau, Jérémie Koenig, Théo Zimmermann)
+
+ * 10:45 - 11:00 coq_makefile in Coq 8.7 (Enrico Tassi)
+   a meta-meta-language is a bit too much for my little brain
+
+ * 11:00 - 11:15 Break
+
+ * 11:15 - 11:30 A plea for OCaml 4.03 (Maxime Dénès)
+
+ * 11:30 - 12:00 Group therapy
+
+   discussion on difficult bugs that could not be solved the previous day,
+   or revealed other problems (if any)
+
+ * 12:00 Lunch
+
+ * Afternoon: more bug squashing for 8.6
+
 
 = Topics for discussion =
 
-
-=== Maxime proposes: ===
- * Remaining bugs in 8.6
- * Status of warnings
- * A plea for OCaml 4.03
-
-=== Matthieu proposes: ===
- * Rewriting strategies, coqrel and transfer (w/ J. Koenig, T. Zimmermann, 10min)
- * Unifying unifiers (5min progress report)
-
-=== Enrico rants: ===
- * coq_makefile in Coq 8.7, aka: a meta-meta-language is a bit too much for my little brain (5 minutes)
-
-=== Hugo proposes: ===
- * From small inversion to pattern-matching compilation (w/ Meven Bertrand) (for instance 30 mins talk)
- * Gathering opinions about the issues raised recently on the indexation of packages, libraries in general, the standard library in particular? (at least 10 minutes?)
- * More to say about a "recommended" programming style (PR #251)? (at least 5 minutes?)
-
 === Emilio proposes: ===
-Topics for 8.6:
- * SerAPI overview (~ 20 - 40 mins)
- * Error handling in the XML/STM protocol (~ 30 mins)
-
 Topics for 8.7 (likely to be delayed after 8.6 is out)
  * Reflections on Pretty Pritting
