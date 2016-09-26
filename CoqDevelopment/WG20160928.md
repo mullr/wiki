@@ -23,7 +23,7 @@ PPS on the 3rd floor on the 29th.
 
  * 10:15 - 10:30 A "recommended" programming style (Hugo Herbelin)
 
-  Is there more to say on PR#251?
+  Is there more to say on [[https://github.com/coq/coq/pull/267|PR#267]]?
 
  * 10:30 - 11:00 SerAPI overview (Emilio Jesús Gallego Arias)
 
