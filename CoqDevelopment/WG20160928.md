@@ -67,10 +67,3 @@ PPS on the 3rd floor on the 29th.
  * 12:00 Lunch
 
  * Afternoon: more bug squashing for 8.6
-
-
-= Topics for discussion =
-
-=== Emilio proposes: ===
-Topics for 8.7 (likely to be delayed after 8.6 is out)
- * Reflections on Pretty Pritting
