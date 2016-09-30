@@ -15,6 +15,8 @@ PPS on the 3rd floor on the 29th.
 
 = Schedule =
 
+Videos of some of the talks are available here: https://www.youtube.com/watch?v=JCdUDB_2VwE
+
 == 28/09/2016 ==
 
  * 10:00 - 10:15 Packages, libraries, standard library (Hugo Herbelin)
