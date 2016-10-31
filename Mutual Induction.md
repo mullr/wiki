@@ -1,4 +1,4 @@
-The `Scheme` command is used to generate mutual induction principals.
+The `Scheme` command is used to generate mutual induction principles.
 
 [[http://mid.gmane.org/46B9E268.10503%40inria.fr|This]] excellent Coq-club post by Xavier Leroy explains best practices for mutual induction in Coq.
 
