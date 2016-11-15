@@ -11,3 +11,5 @@ This page is used to organize the next Coq Working Group (in French GT Coq). The
 = Organization =
 
 = Topics =
+
+* Hints, Typeclasses, CEP with Cyril Cohen
