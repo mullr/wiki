@@ -12,4 +12,4 @@ This page is used to organize the next Coq Working Group (in French GT Coq). The
 
 = Topics =
 
-* Hints, Typeclasses, CEP with Cyril Cohen
+* Hints, Typeclasses, CEP by Matthieu Sozeau, with Cyril Cohen, Théo Zimmermann.
