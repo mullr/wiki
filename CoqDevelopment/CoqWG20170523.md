@@ -10,6 +10,9 @@ This page is used to organize the next Coq Working Group (in French GT Coq). The
 
 = Organization =
 
+The next Coq Working Group will take place on December 14th and 15th at Inria Paris (2, rue Simone Iff). Our room will be "Jacques-Louis
+Lions 2" the first day and A215 the second day.
+
 = Topics =
   * Status report on 8.6 (Maxime)
   * Hints, Typeclasses, CEP by Matthieu Sozeau, with Cyril Cohen, Théo Zimmermann.
