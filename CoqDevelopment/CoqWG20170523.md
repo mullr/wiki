@@ -11,6 +11,6 @@ This page is used to organize the next Coq Working Group (in French GT Coq). The
 = Organization =
 
 = Topics =
-* Status report on 8.6 (Maxime)
-* Hints, Typeclasses, CEP by Matthieu Sozeau, with Cyril Cohen, Théo Zimmermann.
-* 8.7 roadmap (Maxime)
+  * Status report on 8.6 (Maxime)
+  * Hints, Typeclasses, CEP by Matthieu Sozeau, with Cyril Cohen, Théo Zimmermann.
+  * 8.7 roadmap (Maxime)
