@@ -37,6 +37,12 @@ apply H1.
 
 Indeed, the first {{{apply H1}}} has to solve {{{?x[H1:=existT P1 x1 H1] ≡ x1}}} which it could do by projecting {{{x1}}} but it is not (yet) able to do it.
 
+== Inverting case analysis on existential variables ==
+
+It is common to have unification problems of the form {{{negb ?b = true}}} or {{{INR ?n = 2}}} (see Coq-club, 12 Nov 2016) which are canonically solvable, or even {{{ifzero ?n = false}}} or {{{match ?n with 0 | 1 -> true | _ -> false end}}} which are refinable (using candidates for the second one).
+
+The price to pay is to reduce the problem to filtering on a disjunction of subproblems. So we shall need heuristics to control the risk of combinatorial explosion. Maybe by attaching subproblems to candidates?
+
 == Solvable second-order problems ==
 
 Let us consider the following successful problems:
