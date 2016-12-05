@@ -20,3 +20,4 @@ Lions 2" the first day and A215 the second day.
   * 8.7 roadmap (Maxime)
   * pp_new branch (Emilio Gallego, ~15 mins)
   * Thoughts on IDE protocols (Emilio Gallego ~25 mins)
+  * Splitting CoqIDE ? (Emilio Gallego ~ 10 mins)
