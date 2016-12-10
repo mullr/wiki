@@ -21,3 +21,5 @@ Lions 2" the first day and A215 the second day.
   * pp_new branch (Emilio Gallego, ~15 mins)
   * Thoughts on IDE protocols (Emilio Gallego ~25 mins)
   * Splitting CoqIDE ? (Emilio Gallego ~ 10 mins)
+  * Evar-insensitive terms (PMP, ~ 10 mins)
+  * Report on Ltac2 (PMP, ~ 20 mins, although potentially explosive subject)
