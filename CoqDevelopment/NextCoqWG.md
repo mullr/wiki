@@ -15,8 +15,9 @@ Lions 2" the first day and A215 the second day.
 
 = Topics =
   * Status report on 8.6 (Maxime)
-  * Hints, Typeclasses, CEP by Matthieu Sozeau, with Cyril Cohen, Théo Zimmermann.
-  * New Deriving plugin (Matthieu)
+  * Thoughts on Hints, Typeclasses, Sections & Namespaces, CEPs by Matthieu Sozeau, with Cyril Cohen, Théo Zimmermann. 
+  (10min progress report, mainly a discussion opener)
+  * New Deriving plugin opportunity, apart from Equations (Matthieu, 10 min)
   * 8.7 roadmap (Maxime)
   * pp_new branch (Emilio Gallego, ~15 mins)
   * Thoughts on IDE protocols (Emilio Gallego ~25 mins)
