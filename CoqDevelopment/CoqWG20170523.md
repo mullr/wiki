@@ -13,16 +13,46 @@ This page is used to organize the next Coq Working Group (in French GT Coq). The
 The next Coq Working Group will take place on December 14th and 15th at Inria Paris (2, rue Simone Iff). Our room will be "Jacques-Louis
 Lions 2" the first day and A215 the second day.
 
-= Topics =
-  * Status report on 8.6 (Maxime)
-  * Thoughts on Hints, Typeclasses, Sections & Namespaces, CEPs by Matthieu Sozeau, with Cyril Cohen, Théo Zimmermann. 
-  (10min progress report, mainly a discussion opener)
-  * New Deriving plugin opportunity, apart from Equations (Matthieu, 10 min)
-  * 8.7 roadmap (Maxime)
-  * pp_new branch (Emilio Gallego, ~15 mins)
-  * Thoughts on IDE protocols (Emilio Gallego ~25 mins)
-  * Splitting CoqIDE ? (Emilio Gallego ~ 10 mins)
-  * Evar-insensitive terms (PMP, ~ 10 mins)
-  * Report on Ltac2 (PMP, ~ 20 mins, although potentially explosive subject)
-  * Quick review on the organization of the development (5 mins)
-  * Some bottles to drink at some time to celebrate the 8.6 release
+= Schedule =
+
+== 14/12/2016 ==
+
+ * 10:00 8.6 debriefing (Maxime Dénès)
+
+ * 10:30 pp_new branch (Emilio Jesús Gallego Arias)
+
+ * 10:45 Thoughts on IDE protocols (Emilio Jesús Gallego Arias)
+
+ * 11:15 Break
+
+ * 11:30 Splitting CoqIDE ? (Emilio Jesús Gallego Arias)
+
+ * 11:45 Report on Ltac2 (Pierre-Marie Pédrot)
+
+ * 12:30 Lunch
+
+ * Afternoon: bug squashing or work in small groups
+
+ * 18:30 Social event (location TBA)
+
+== 15/12/2016 ==
+
+ * 10:00 Quick review on the organization of the development (Hugo Herbelin)
+
+ * 10:15 8.7 roadmap and schedule (Maxime Dénès)
+ 
+ * 10:45 Evar-insensitive terms (Pierre-Marie Pédrot)
+
+ * 11:00 Break
+
+ * 11:15 Thoughts on Hints, Typeclasses, Sections & Namespaces (Matthieu Sozeau)
+
+ * 11:45 New Deriving plugin opportunity, apart from Equations (Matthieu Sozeau)
+
+ * 12:00 A new benchmark infrastructure (Matej Košík)
+
+ * 12:15 Lunch
+
+ * Afternoon: bug squashing or work in small groups
+
+Bonus: Some bottles to drink at some time to celebrate the 8.6 release
