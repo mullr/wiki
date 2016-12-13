@@ -24,3 +24,5 @@ Lions 2" the first day and A215 the second day.
   * Splitting CoqIDE ? (Emilio Gallego ~ 10 mins)
   * Evar-insensitive terms (PMP, ~ 10 mins)
   * Report on Ltac2 (PMP, ~ 20 mins, although potentially explosive subject)
+  * Quick review on the organization of the development (5 mins)
+  * Some bottles to drink at some time to celebrate the 8.6 release
