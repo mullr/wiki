@@ -23,7 +23,7 @@ Fail refine (H eq_refl).
 
 There is a pretty common pattern where an argument of an existential variable is a tuple of which components can be projected.
 
-See e.g. [[https://coq.inria.fr/bugs/show_bug.cgi?id=3126|Bug #3126]] (or, more distantly, [[https://coq.inria.fr/bugs/show_bug.cgi?id=3823|Bug #3823]]):
+See e.g. [[https://coq.inria.fr/bugs/show_bug.cgi?id=5264|Bug #5264]] and [[https://coq.inria.fr/bugs/show_bug.cgi?id=3126|Bug #3126]] (or, more distantly, [[https://coq.inria.fr/bugs/show_bug.cgi?id=3823|Bug #3823]]):
 
 {{{
 Goal forall T1 (P1 : T1 -> Type), sigT P1 -> sigT P1.
