@@ -9,6 +9,7 @@ discuss ongoing developments.
 
  * [[CoqDevelopment/CoqWG20161214]]
  * [[CoqDevelopment/CoqWG20160928]]
+ * [[CoqDevelopment/CoqWG20160531]]
  * [[CoqDevelopment/CoqWG20160415]]
  * [[CoqDevelopment/CoqWG20160216]]
  * [[CoqDevelopment/CoqWG20151125]]
