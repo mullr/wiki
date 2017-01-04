@@ -8,7 +8,7 @@ ConorMcBride noted that the following four properties cannot be satisfied simult
 
  1. Extensional equality
  1. Intensional inductive families
- 1. Cannonicity
+ 1. Canonicity
  1. Decidable type checking
 
 Consider the following inductive family.
@@ -23,7 +23,7 @@ Definition mkNatId2 : NatId (fun x:nat => x+0) :=
  (eq_ind_r NatId mkNatId Zero_Right_Id).
 }}}
 
-Because {{{mkNatId2}}} is a closed term of an inductive type, by cannonicity its normal form must begin with a constructor.  However, {{{NatId}}} only has one constructor therefore {{{mkNatId2}}} must reduce to {{{mkNatId}}} and therefore their types must also  be convertible
+Because {{{mkNatId2}}} is a closed term of an inductive type, by canonicity its normal form must begin with a constructor.  However, {{{NatId}}} only has one constructor therefore {{{mkNatId2}}} must reduce to {{{mkNatId}}} and therefore their types must also  be convertible
 
 {{{
 NatId (fun x:nat => x+0) <===> NatId (fun x:nat => x)
