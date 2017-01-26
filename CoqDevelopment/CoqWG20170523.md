@@ -15,3 +15,6 @@ The next Coq Working Group will take place in March at Inria Paris (2, rue Simon
 = Topics =
 
 Please suggest topics for discussion!
+
+ * New horizons for tactics (Maxime)
+ * Report on primitive integers and arrays (Maxime)
