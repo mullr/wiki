@@ -130,6 +130,27 @@ Prune the proof terms produced by tauto/intuition/omega (by removal of unnecessa
 
 See CoqDevelopment/UnificationProblems.
 
+=== Inversion combined with recursion ===
+
+Here is an example from file [[https://coq.inria.fr/distrib/8.5pl1/stdlib/Coq.Sorting.Sorted.html|Sorted]] in standard library. In the proof of {{{Sorted_extends}}} one needs an inversion lemma of the following form:
+
+{{{
+Lemma inversion (P:A -> list A -> Prop)
+   (base : forall a, Sorted [] -> HdRel a [] -> P a [])
+   (step : forall a b l, P b l -> Sorted (b::l) -> HdRel a (b::l) -> P a (b::l)) :
+   forall a l, Sorted (a::l) -> P a l.
+Proof (fix f a l H :=
+  match H in Sorted l return match l return Prop with [] => True | a :: l => P a l end with
+  | @Sorted_cons a [] HS HH => base a HS HH
+  | @Sorted_cons a (b::l) HS HH => step a b l (f b l HS) HS HH
+  | @Sorted_nil => I
+  end).
+}}}
+
+One would like that {{{induction}}} on an hypothesis of the form {{{Sorted (a::l)}}} automatically uses this schema.
+
+See Boutillier and Braibant's [[https://github.com/braibant/invert|invert]] tactic for preliminary work in this direction.
+
 === The Ltac language ===
 
 Typing L''tac'' (details to be given).
