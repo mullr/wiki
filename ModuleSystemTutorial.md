@@ -1,5 +1,4 @@
 = A Tutorial on Using Modules =
-
 Coq's module system can be used parameterise proofs over structures.  For instance rather than writing {{{min}}} and {{{max}}} functions, lemma and tactics for {{{nat}}}, {{{Z}}}, {{{Q}}}, etc., we can write the proofs once for an abstract decidable total order and then instanciate these functions, lemmas and tactics for each structure.
 
 This tutorial uses unicode characters and hence requires the [[UTF8Module]].
@@ -7,7 +6,6 @@ This tutorial uses unicode characters and hence requires the [[UTF8Module]].
 {{{#!coq
 Require Import utf8.
 }}}
-
 The first step is to write a {{{Module Type}}} in a file that contains the signature of the abstract structure to work from.  This will be the signature of a decidable total order.  A {{{Module Type}}} is just a listing of {{{Parameter}}}s and {{{Axiom}}}s.  In this case we also add a [[Notation]] to make the syntax nicer.
 
 {{{#!coq
@@ -26,10 +24,9 @@ Axiom le_antisym : ∀ x y, x ≤ y ⇒ y ≤ x ⇒ x = y.
 Axiom le_trans : ∀ x y z, x ≤ y ⇒ y ≤ z ⇒ x ≤ z.
 Axiom le_total : ∀ x y, {x ≤ y} + {y ≤ x}.
 
-Parameter le_dec : ∀ x y, {x ≤ y} +{¬ x ≤ y}. 
+Parameter le_dec : ∀ x y, {x ≤ y} +{¬ x ≤ y}.
 End Sig.
 }}}
-
 Now we can write a module functor.  A module functor is a {{{Module}}} that takes one or more {{{Module}}}s of some {{{Module Type}}}s as parameters.  For example we can create a {{{Module}}} that defines a {{{min}}} function and lemmas for any {{{Module}}} that has the above {{{Module Type}}} signature.  The first thing we do is import the {{{Module}}} parameter in order to have access to its parameters without having to use the DotNotation.  Notice that we also get access to the [[Notation]] defined in the {{{Module Type}}}.
 
 {{{#!coq
@@ -81,7 +78,6 @@ Qed.
 
 End Min.
 }}}
-
 Suppose you have a data type, such as [[http://coq.inria.fr/contribs/QArith-Stern-Brocot.html|Qpositive]], that has a decidable total order and we want to make an instance of {{{min}}} and its lemmas for it.  We first must create a module satisfying the module signature.  The {{{<:}}} notation says that we are making a {{{Module}}} that (transparently) satisfies a given {{{Module Type}}}.  We are then required to have inside our module a list of {{{Definition}}}s and {{{Lemma}}}s that have the same name and types as those listed in the module type's signature. This work is specific to {{{Qpositive}}} and therefore it should go into a different file.
 
 {{{#!coq
@@ -101,7 +97,7 @@ Definition le_antisym := Qpositive_le_antisym.
 Definition le_trans := Qpositive_le_trans.
 Definition le_total := Qpositive_le_total.
 Infix "≤" := le : Qpos_scope.
-Bind Scope Qpos_scope with Qpositive. 
+Bind Scope Qpos_scope with Qpositive.
 Open Scope Qpos_scope.
 
 Lemma le_dec : ∀ x y, {x ≤ y} + {¬ x ≤ y}.
@@ -113,7 +109,6 @@ Defined.
 
 End QDecidableOrderSig.
 }}}
-
 To use the module functor, we must apply it to this module and give the resulting module a name.  Then we can do whatever we want with the resulting module, such as exporting it.
 
 {{{#!coq
@@ -123,18 +118,14 @@ Export Order.
 
 Print min.
 }}}
-
 {{{#!coq
 min = fun a b : A => if le_dec a b then a else b
      : A ⇒  A ⇒  A
 }}}
-
 That is the basics of how to use modules.
 
 === Advanced Module Work ===
-
-Suppose we want to also define a {{{max}}} function.  We could redo all the same sort of work that we did for {{{min}}}; however the proofs are all almost identical.  We would like to reuse that work we did creating {{{min}}} to also create {{{max}}}.  To accomplish this we note that {{{max}}} is dual to {{{min}}}.  That is to say that {{{max}}} is the {{{min}}} function of the reversed ordering.  For any decidable total ordering, the reverse ordering is also a decidable total ordering.  We can make a module functor that creates this dual order.
-The {{{Dual}}} module defined below will take a module of our decidable total order signature, but also produce a module statisfying our decidable total order signature.
+Suppose we want to also define a {{{max}}} function.  We could redo all the same sort of work that we did for {{{min}}}; however the proofs are all almost identical.  We would like to reuse that work we did creating {{{min}}} to also create {{{max}}}.  To accomplish this we note that {{{max}}} is dual to {{{min}}}.  That is to say that {{{max}}} is the {{{min}}} function of the reversed ordering.  For any decidable total ordering, the reverse ordering is also a decidable total ordering.  We can make a module functor that creates this dual order. The {{{Dual}}} module defined below will take a module of our decidable total order signature, but also produce a module statisfying our decidable total order signature.
 
 {{{#!coq
 (* File: DecidableOrder.v
@@ -170,7 +161,7 @@ set (H:=Ord.le_total).
 auto.
 Defined.
 
-Definition le_dec : ∀ x y, {x ≤ y} + {¬x ≤ y}. 
+Definition le_dec : ∀ x y, {x ≤ y} + {¬x ≤ y}.
 unfold le.
 set (H:=Ord.le_dec).
 auto.
@@ -178,7 +169,6 @@ Defined.
 
 End Dual.
 }}}
-
 Now we create a {{{Max}}} module that imports that creates an instance of the {{{Min}}} module for the dual ordering.  We cannot just export the {{{Max}}} module because the names are all wrong.  Instead we create the proper names and types for the items in the {{{Max}}} module as follows.
 
 {{{#!coq
@@ -198,7 +188,6 @@ Definition max_left : ∀ x y, x ≤ (max x y) := Max.min_left.
 Definition max_right : ∀ x y, y ≤ (max x y) := Max.min_right.
 End Max.
 }}}
-
 Finally we can create a single module that exports both the {{{Min}}} and {{{Max}}} modules.
 
 {{{#!coq
@@ -215,7 +204,6 @@ Module MaxOrd := Max Ord.
 Export MaxOrd.
 End MinMax.
 }}}
-
 With {{{min}}} and {{{max}}} in hand we can prove properties involving both of them.  For example, we can prove that {{{min}}} distributed over {{{max}}}.  This goes into another module.
 
 {{{#!coq
@@ -240,7 +228,6 @@ Qed.
 
 End DistributivityA.
 }}}
-
 We can prove the dual lemma that states that {{{max}}} distributes over {{{min}}} by using the same dualizing technique that we used to define {{{max}}} in terms of {{{min}}}.  This can be combined with the above into one distributivity module.
 
 {{{#!coq
@@ -272,7 +259,6 @@ Export DistributivityBOrd.
 
 End Distributivity.
 }}}
-
 Finally at the end of the file, we place a {{{Theory}}} Module that exports all of the modules that we have defined.
 
 {{{#!coq
@@ -286,7 +272,6 @@ Export DistributivityOrd.
 
 End Theory.
 }}}
-
 This {{{Theory}}} module functor can be instantiated and exported inside the {{{QpositiveOrder.v}}} file.
 
 {{{#!coq
