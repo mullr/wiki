@@ -19,3 +19,5 @@ Please suggest talks and topics for discussion!
  * New horizons for tactics (Maxime)
  * Report on primitive integers and arrays (Maxime)
  * Progress Report on the API front (Enrico, Matej)
+ * Travis (Emilio)
+ * The State of the State (Emilio)
