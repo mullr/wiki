@@ -21,3 +21,4 @@ Please suggest talks and topics for discussion!
  * Progress Report on the API front (Enrico, Matej)
  * Travis (Emilio)
  * The State of the State (Emilio)
+ * Camlp4 not passing the test suite on 8.6: let's stop pretending we support it (Bugzilla 5358, Enrico)
