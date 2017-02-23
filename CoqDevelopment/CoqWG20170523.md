@@ -17,7 +17,7 @@ The next Coq Working Group will take place in March (6th and 7th) at Inria Paris
 Please suggest talks and topics for discussion!
 
  * New horizons for tactics (Maxime)
- * Report on primitive integers and arrays (Maxime)
+ * Porting the reference manual to Sphinx (Maxime)
  * Progress Report on the API front (Enrico, Matej)
  * Travis (Emilio)
  * The State of the State (Emilio)
