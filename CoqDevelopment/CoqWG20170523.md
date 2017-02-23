@@ -25,3 +25,4 @@ Please suggest talks and topics for discussion!
    * Camlp4 not passing the test suite on 8.6 (Bugzilla 5358)
    * Decl_mode example contain anomalies in the refman (of v8.6) and has been unusable for the entire 8.4 cycle (IIRC)
  * A quick report on 8.7 (Maxime)
+ * Artifact evaluation and formal proofs (Assia)
