@@ -18,7 +18,7 @@ Please suggest talks and topics for discussion!
 
  * New horizons for tactics (Maxime)
  * Porting the reference manual to Sphinx (Maxime)
- * Progress Report on the API front (Enrico, Matej)
+ * Progress Report on the API front (Matej)
  * Travis (Emilio)
  * The State of the State (Emilio)
  * Reality check: unmaintained source code, what do we do with it? (Enrico)
