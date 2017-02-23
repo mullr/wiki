@@ -21,5 +21,7 @@ Please suggest talks and topics for discussion!
  * Progress Report on the API front (Enrico, Matej)
  * Travis (Emilio)
  * The State of the State (Emilio)
- * Camlp4 not passing the test suite on 8.6: let's stop pretending we support it (Bugzilla 5358, Enrico)
+ * Reality check: unmaintained source code, what do we do with it? (Enrico)
+   * Camlp4 not passing the test suite on 8.6 (Bugzilla 5358)
+   * Decl_mode example contain anomalies in the refman (of v8.6) and has been unusable for the entire 8.4 cycle (IIRC)
  * A quick report on 8.7 (Maxime)
