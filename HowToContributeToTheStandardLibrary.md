@@ -72,7 +72,7 @@ New lemmas or definitions should be accompanied with a coqdoc-compliant header, 
 
 == Use of notations and unicode symbols ==
 
- * For all notations, do as much as possible notations which when printed can parsed (for instance, avoid {{{Notation "!" := (f _).}}}); so that copy/pasting from a result coq buffer to a coq input buffer will be parsable.
+ * For all notations, do as much as possible notations which when printed can be parsed (for instance, avoid {{{Notation "!" := (f _).}}}); so that copying/pasting from a result coq buffer to a coq input buffer will be parsable.
 
    * For Utf-8 notations, consider putting them in a separate module and providing Ascii notations by default, so that the user who doesn't support displaying Utf-8 characters should simply not open your utf8 module, and the user who can output them but not input them, can use ascii notations for input and utf8 notations for output (and of course the user who fully support utf8 can use it for both input and output). If your module is called, {{{Foo}}}, then your UTF-8 module should be called {{{FooUtf8}}} and its content should be {{{Require Export Foo.}}} followed by a sequence of (utf8) notations.
 
