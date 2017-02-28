@@ -23,7 +23,7 @@ case "$@" in
   *-f\ *) true;;
   *-C\ *) true;;
   *)
-  while [ ! \( -e GNUmakefile -o -e Makefile -o -e makefile -o "$PWD" != "/" \) ]; do
+  while [ ! \( -e GNUmakefile -o -e Makefile -o -e makefile -o "$PWD" = "/" \) ]; do
     cd .. 
   done
   if [ ! \(  -e GNUmakefile -o -e Makefile -o -e makefile  \) ]; then
