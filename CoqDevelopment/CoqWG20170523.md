@@ -16,6 +16,8 @@ The next Coq Working Group will take place in March (6th and 7th) at Inria Paris
 
 == 06/03/2017 ==
 
+ * 9:00 Café
+
  * 10:00 Contributors, past and present (Matthieu Sozeau)
 
  * 10:30 A quick report on 8.7 (Maxime Dénès)
@@ -35,6 +37,8 @@ The next Coq Working Group will take place in March (6th and 7th) at Inria Paris
  * 16:00 SSReflect 2.0 (Enrico Tassi)
 
 == 07/03/2017 ==
+
+ * 9:00 Café
 
  * 10:00 Progress Report on the API front (Matej Košík)
 
