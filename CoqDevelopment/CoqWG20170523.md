@@ -27,3 +27,4 @@ Please suggest talks and topics for discussion!
  * A quick report on 8.7 (Maxime)
  * Artifact evaluation and formal proofs (Assia, on Tuesday)
  * Streamlining the CEP process (Enrico)
+ * Technical point: evar_source/evar_kind/evar extra and merging at evar-evar problems (Matthieu)
