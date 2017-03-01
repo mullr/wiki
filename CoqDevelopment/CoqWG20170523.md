@@ -16,7 +16,7 @@ The next Coq Working Group will take place in March (6th and 7th) at Inria Paris
 
 == 06/03/2017 ==
 
- * 9:00 Café
+ * 9:00 Coffee
 
  * 10:00 Contributors, past and present (Matthieu Sozeau)
 
@@ -38,7 +38,7 @@ The next Coq Working Group will take place in March (6th and 7th) at Inria Paris
 
 == 07/03/2017 ==
 
- * 9:00 Café
+ * 9:00 Coffee
 
  * 10:00 Progress Report on the API front (Matej Košík)
 
