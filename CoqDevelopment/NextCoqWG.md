@@ -30,7 +30,7 @@ The next Coq Working Group will take place in March (6th and 7th) at Inria Paris
 
  * 12:15 Lunch
 
- * 13:30 Technical work in small groups
+ * 13:30 Technical work in small groups (Enrico proposes: (ssr)matching + setoid rewrite)
 
  * 15:00 New horizons for tactics (Maxime Dénès)
 
