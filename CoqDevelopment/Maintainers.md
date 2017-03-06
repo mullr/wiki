@@ -43,7 +43,7 @@ This page lists the components of the Coq system and the names of Coq developers
 ||fourier||Hugo Herbelin||
 ||funind||Julien Forest, Pierre Courtieu||
 ||micromega||Frédéric Besson||
-||nsatz||Hugo Herbelin||
+||nsatz||Laurent Théry||
 ||omega||Pierre Letouzey||
 ||quote||||
 ||romega||Pierre Letouzey||
