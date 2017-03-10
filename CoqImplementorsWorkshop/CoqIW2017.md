@@ -1,3 +1,4 @@
+## page was copied from CoqImplementorsWorkshop/CoqIW2016
 = Second Coq Implementors Workshop, May 30 - June 3, 2016, Sophia-Antipolis =
 This page collects useful infos for the participants to the second Coq Implementors Workshop.
 
