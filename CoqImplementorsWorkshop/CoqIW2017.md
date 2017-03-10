@@ -1,5 +1,5 @@
 = Second Coq Implementors Workshop, May 30 - June 3, 2016, Sophia-Antipolis =
-This page collects useful infos for the participants to the second Coq Implementors Workshop
+This page collects useful infos for the participants to the second Coq Implementors Workshop.
 
 The Coq Implementors Workshop is an event that brings together the core developers of Coq and people willing to understand, improve or extend the system.
 
