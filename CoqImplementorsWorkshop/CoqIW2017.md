@@ -1,5 +1,5 @@
 ## page was copied from CoqImplementorsWorkshop/CoqIW2016
-= Third Coq Implementors Workshop, June 12 - June 6, 2017, Le Croisic =
+= Third Coq Implementors Workshop, June 12 - June 16, 2017, Le Croisic =
 This page collects useful infos for the participants to the third Coq Implementors Workshop.
 
 The Coq Implementors Workshop is an event that brings together the core developers of Coq and people willing to understand, improve or extend the system.
