@@ -15,7 +15,20 @@ Meanwhile, there are two approaches depending if you have a Jenkins Inria accoun
 
 === I don't have a Jenkins account ===
 
-You could wait for the automatic integration to happen, but you can also write a mail to the coq-dev mailing list requesting a developer to start your build. All you'll need to provide is the url of public git repository and branch.
+If you do not yet have an account at our Jenkins instance, you can create one:
+
+  * to to [[https://ci.inria.fr/|this place]]
+  * click on "Sign Up"
+  * provide required information
+  * click on "Log In"
+
+Then:
+
+  * go to [[https://ci.inria.fr/dashboard|"dashboard"]]
+  * click on "Join an existing project"
+  * and request to join the project "coq"
+
+You'll have to wait until some of the existing members of the project actually confirms your membership.
 
 === I have a Jenkins account ===
 
