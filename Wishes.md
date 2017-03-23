@@ -102,10 +102,11 @@ It should wait for falling in one of the given n-ary clauses.
 
 === Injection ===
 
-Shouldn't injection turn equations of the form "(exists P x p) = (exists P y q)" into "H : x = y" and "H': p = rew H in q" instead of keeping them
-as elements of sigma-types which cannot be rewritten as such?
+Tactic injection should turn equations of the form "(exists P x p) = (exists P y q)" into "H : x = y" and "H': rew H in p = q" instead of keeping them as elements of sigma-types which cannot be rewritten as such. Not only this is more readable, but, then, when x or y is a variable, H can be rewritten (possibly on the fly with the "as" clause), and H' become "p = q".
 
-Alternatively, shouldn't rewriting be able to rewrite H:(exists P x p) = (exists P y q) in subterms of the form "Q x" or "R p", where x and p do not occur as part of an exists expression?
+=== Rewriting ===
+
+Shouldn't rewriting apply first injection and rewrite the resulting equalities so that e.g. rewrite H:(exists P x p) = (exists P y q) works on statements of the form "Q x" or "R p", where x and p do not occur as part of an exists expression?
 
 === Discriminate ===
 
