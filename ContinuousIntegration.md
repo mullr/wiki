@@ -40,3 +40,12 @@ E.g. in case of [[https://github.com/coq/coq/pull/434|this pull request]] it mea
 where the field ''coq_opam_packages'' can be set to:
 ----
 coq-mathcomp-algebra coq-mathcomp-character coq-mathcomp-field coq-mathcomp-fingroup coq-mathcomp-solvable coq-mathcomp-ssreflect coq-unimath coq-math-classes coq-corn coq-iris coq-hott coq-geocoq coq-flocq coq-coquelicot coq-compcert coq-fiat-parsers coq-fiat-crypto coq-color coq-sf
+----
+Assuming that you will use the above value for the ''coq_opam_packages'' field, the benchmarking will finish in:
+ * 7 hours when each package is compiled once
+ * 15 hours when each package is compiled twice
+ * 22 hours when each package is compiled thrice
+----
+The job itself produces a looooong log. At its end you should see the results rendered as a table:
+
+{{attachment:attachment:benchmarking-results.png}}
