@@ -58,3 +58,5 @@ E.g., in the table shown above, we see that the compilation of '''coq-geocoq'''
  * originally took 2394.71 seconds
  * now it takes 2215.65
  * which means that it decreased by cca. 7%
+
+The lines of the table are ordered wrt. improvements in the overall compilation times.
