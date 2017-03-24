@@ -48,4 +48,13 @@ Assuming that you will use the above value for the ''coq_opam_packages'' field, 
 ----
 The job itself produces a looooong log. At its end you should see the results rendered as a table:
 
-{{attachment:attachment:benchmarking-results.png}}
+{{attachment:benchmarking-results.png}}
+
+Each line shows the measurement for a single OPAM package.
+
+Each measured/computed quantity has its own column.
+
+E.g., in the table shown above, we see that the compilation of '''coq-geocoq'''
+ * originally took 2394.71 seconds
+ * now it takes 2215.65
+ * which means that it decreased by cca. 7%
