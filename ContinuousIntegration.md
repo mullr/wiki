@@ -1,8 +1,3 @@
-= How to compile all coq-contribs with a chosen Coq branch =
-On our [[https://ci.inria.fr/coq|Jenkins server]], in the [[https://ci.inria.fr/coq/view/coq-contribs|"coq-contribs" view]], there is a [[https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs|"coq-contribs" job]].
-
-When you start it, you can specify which coq-repository to clone, which branch to check out etc. All coq-contribs will then be rebuilt with the Coq version you have chosen.
-
 == How to test your pull request ==
 The medium-term plan is have github to request a build automatically for each pull-request.
 
@@ -28,8 +23,18 @@ You'll have to wait until some of the existing members of the project actually c
  * determine the URL that designates the GIT repository
  * determine the name of the branch (of Coq) in that repository that should be compiled
 
-E.g. in case of [[https://github.com/coq/coq/pull/178|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs|"coq-contribs" job]] with the following parameters:
+Now you can:
 
-{{attachment:jenkins.png}}
+=== Check if a given branch breaks some of the tracked developments ===
 
-Instructions [[https://github.com/coq-contribs/coq-contribs/blob/master/FAQ.md#how-can-i-add-my-work-to-coq-contribs|how to add your work to coq-contribs]].
+E.g. in case of [[https://github.com/coq/coq/pull/434|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/opam/job/opam-install|"opam-install" job]] with the following parameters:
+
+{{opam-install.png}}
+
+=== Run the benchmarks for the tracked developments ===
+
+E.g. in case of [[https://github.com/coq/coq/pull/434|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/opam/job/opam-install|"benchmark-the-whole-branch" job]] with the following parameters:
+
+{{benchmark-the-whole-branch.png}}
+
+where ''coq_opam_packages'' can be e.g.: ''coq-mathcomp-algebra coq-mathcomp-character coq-mathcomp-field coq-mathcomp-fingroup coq-mathcomp-solvable coq-mathcomp-ssreflect coq-unimath coq-math-classes coq-corn coq-iris coq-hott coq-geocoq coq-flocq coq-coquelicot coq-compcert coq-fiat-parsers coq-fiat-crypto coq-color coq-sf''
