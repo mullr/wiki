@@ -119,6 +119,10 @@ intros * H.
 discriminate H.
 }}}
 
+=== Specialize ===
+
+Implicitly suggested by Iris: "specialize H with (n:=?)" could open a subgoal proving the n-th hypothesis of "H" (and specializing "H").
+
 === Referring to hypotheses by type ===
 
 When referring to propositional hypotheses, it would be often convenient to refer to them by type. One could for instance imagine typing "induction (le n m)" to mean induction on the (say first) hypothesis of type "(le n m)". A notation for that could be for instance "induction :(le n m)".
