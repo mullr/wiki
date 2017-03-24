@@ -54,6 +54,8 @@ Each line shows the measurement for a single OPAM package.
 
 Each measured/computed quantity has its own column.
 
+The git commits, that were considered are stated explicitely below the table as '''NEW''' and '''OLD'''.
+
 E.g., in the table shown above, we see that the compilation of '''coq-geocoq'''
  * originally took 2394.71 seconds
  * now it takes 2215.65
