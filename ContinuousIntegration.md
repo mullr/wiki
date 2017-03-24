@@ -29,12 +29,12 @@ Now you can:
 
 E.g. in case of [[https://github.com/coq/coq/pull/434|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/opam/job/opam-install|"opam-install" job]] with the following parameters:
 
-{{opam-install.png}}
+{{attachment:opam-install.png}}
 
 === Run the benchmarks for the tracked developments ===
 
 E.g. in case of [[https://github.com/coq/coq/pull/434|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/opam/job/opam-install|"benchmark-the-whole-branch" job]] with the following parameters:
 
-{{benchmark-the-whole-branch.png}}
+{{attachment:benchmark-the-whole-branch.png}}
 
 where ''coq_opam_packages'' can be e.g.: ''coq-mathcomp-algebra coq-mathcomp-character coq-mathcomp-field coq-mathcomp-fingroup coq-mathcomp-solvable coq-mathcomp-ssreflect coq-unimath coq-math-classes coq-corn coq-iris coq-hott coq-geocoq coq-flocq coq-coquelicot coq-compcert coq-fiat-parsers coq-fiat-crypto coq-color coq-sf''
