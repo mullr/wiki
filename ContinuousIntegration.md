@@ -28,14 +28,14 @@ Now you can:
 === Check if a given branch breaks some of the tracked developments ===
 E.g. in case of [[https://github.com/coq/coq/pull/434|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/opam/job/opam-install|opam-install]] job with the following parameters:
 
-{{attachment:opam-install.1.png}}
+{{attachment:opam-install.2.png}}
 
 === Run the benchmarks for the tracked developments ===
-E.g. in case of [[https://github.com/coq/coq/pull/434|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/opam/job/opam-install|benchmark-the-whole-branch]] job with the following parameters:
+E.g. in case of [[https://github.com/coq/coq/pull/155|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/opam/job/opam-install|benchmark-the-whole-branch]] job with the following parameters:
 
-{{attachment:benchmark-the-whole-branch.1.png}}
+{{attachment:benchmark-the-whole-branch.2.png}}
 
-where the field ''coq_opam_packages'' can be set to:
+where the field ''coq_opam_packages'' is by default set to:
 
 ----
 coq-mathcomp-algebra coq-mathcomp-character coq-mathcomp-field coq-mathcomp-fingroup coq-mathcomp-solvable coq-mathcomp-ssreflect coq-unimath coq-math-classes coq-corn coq-iris coq-hott coq-geocoq coq-flocq coq-coquelicot coq-compcert coq-fiat-parsers coq-fiat-crypto coq-color coq-sf
