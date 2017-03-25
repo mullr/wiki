@@ -26,25 +26,28 @@ You'll have to wait until some of the existing members of the project actually c
 Now you can:
 
 === Check if a given branch breaks some of the tracked developments ===
-
 E.g. in case of [[https://github.com/coq/coq/pull/434|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/opam/job/opam-install|opam-install]] job with the following parameters:
 
 {{attachment:opam-install.1.png}}
 
 === Run the benchmarks for the tracked developments ===
-
 E.g. in case of [[https://github.com/coq/coq/pull/434|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/opam/job/opam-install|benchmark-the-whole-branch]] job with the following parameters:
 
 {{attachment:benchmark-the-whole-branch.1.png}}
 
 where the field ''coq_opam_packages'' can be set to:
+
 ----
 coq-mathcomp-algebra coq-mathcomp-character coq-mathcomp-field coq-mathcomp-fingroup coq-mathcomp-solvable coq-mathcomp-ssreflect coq-unimath coq-math-classes coq-corn coq-iris coq-hott coq-geocoq coq-flocq coq-coquelicot coq-compcert coq-fiat-parsers coq-fiat-crypto coq-color coq-sf
+
 ----
 Assuming that you will use the above value for the ''coq_opam_packages'' field, the benchmarking will finish in:
+
  * 7 hours when each package is compiled once
  * 15 hours when each package is compiled twice
  * 22 hours when each package is compiled thrice
+ * 28 hours when each package is compiled four-times
+
 ----
 The job itself produces a looooong log. At its end you should see the results rendered as a table:
 
@@ -57,6 +60,7 @@ Each measured/computed quantity has its own column.
 The git commits, that were considered are stated explicitely below the table as '''NEW''' and '''OLD'''.
 
 E.g., in the table shown above, we see that the compilation of '''coq-geocoq'''
+
  * originally took 2394.71 seconds
  * now it takes 2215.65
  * which means that it decreased by cca. 7%
