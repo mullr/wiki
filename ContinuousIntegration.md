@@ -51,7 +51,7 @@ Assuming that you will use the above value for the ''coq_opam_packages'' field, 
 ----
 The job itself produces a looooong log. At its end you should see the results rendered as a table:
 
-{{attachment:benchmarking-results.png}}
+{{attachment:benchmarking-results.0.png}}
 
 Each line shows the measurement for a single OPAM package.
 
