@@ -28,17 +28,17 @@ Now you can:
 === Check if a given branch breaks some of the tracked developments ===
 E.g. in case of [[https://github.com/coq/coq/pull/434|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/opam/job/opam-install|opam-install]] job with the following parameters:
 
-{{attachment:opam-install.2.png}}
+{{attachment:opam-install.3.png}}
 
 === Run the benchmarks for the tracked developments ===
-E.g. in case of [[https://github.com/coq/coq/pull/155|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/opam/job/opam-install|benchmark-the-whole-branch]] job with the following parameters:
+E.g. in case of [[https://github.com/coq/coq/pull/155|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/opam/job/opam-install|benchmark-part-of-the-branch]] job with the following parameters:
 
-{{attachment:benchmark-the-whole-branch.3.png}}
+{{attachment:benchmark-part-of-the-branch.2.png}}
 
 where the field ''coq_opam_packages'' is by default set to:
 
 ----
-coq-mathcomp-algebra coq-mathcomp-character coq-mathcomp-field coq-mathcomp-fingroup coq-mathcomp-solvable coq-mathcomp-ssreflect coq-unimath coq-math-classes coq-corn coq-iris coq-hott coq-geocoq coq-flocq coq-coquelicot coq-compcert coq-fiat-parsers coq-fiat-crypto coq-color coq-sf
+coq-hott coq-compcert coq-geocoq coq-color coq-fiat-crypto coq-fiat-parsers coq-flocq coq-unimath coq-sf coq-mathcomp-ssreflect coq-iris coq-mathcomp-fingroup coq-mathcomp-finmap coq-coquelicot coq-mathcomp-algebra coq-mathcomp-solvable coq-mathcomp-field coq-mathcomp-character coq-mathcomp-odd_order
 
 ----
 Assuming that you will use the above value for the ''coq_opam_packages'' field, the benchmarking will finish in:
