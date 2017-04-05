@@ -7,6 +7,8 @@ The Coq Implementors Workshop is an event that brings together the core develope
 == Location ==
 The Implementors Workshop takes place at Port aux Rocs in Le Croisic ([[https://www.portauxrocs.com/]]).
 
+The registration for is available ([[http://gipco-adns.com/site/5922/coqdev+2017+registration+form|here]]).
+
 == Program ==
 
 TBA
