@@ -11,7 +11,7 @@ More details can also be found [[attachment:brochure.pdf|here]].
 
 Going from Nantes to Le Croisic takes 1h20 by train. There are also direct train from Paris (3h20).
 
-To go from Le Croisic railway station to Port aux Rocs, you can take Bus 30 ([[attachment:ligne_30.pdf|schedule]]).
+To go from Le Croisic railway station to Port aux Rocs, you can take Bus 30 ([[attachment:ligne_bus.pdf|schedule]]).
 
 == Program ==
 
