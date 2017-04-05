@@ -31,7 +31,7 @@ TBA
 Write it [[https://coq.inria.fr/cocorico/CoqImplementorsWorkshop/CoqIW2017/log|here]].
 
 == Registration ==
-To register, please fill in the following [[http://gipco-adns.com/site/5922/coqdev+2017+registration+form|from]].
+To register, please fill in the following [[http://gipco-adns.com/site/5922/coqdev+2017+registration+form|form]].
 
 The registration is 561€ (single bed room) or 443€ (twin bed room).
 
