@@ -68,6 +68,7 @@ the organizers to see what is possible.
 
 The [[https://sympa.inria.fr/sympa/info/coq-coding-sprint|coordination mailing list]] is the preferred channel to contact the organizers. 
 
+If you need additional funding, please contact the organizers. 
 
 == List of participants ==
 
