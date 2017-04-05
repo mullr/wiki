@@ -7,11 +7,11 @@ The Coq Implementors Workshop is an event that brings together the core develope
 == Location ==
 The Implementors Workshop takes place at Port aux Rocs in Le Croisic ([[https://www.portauxrocs.com/]]).
 
-More details can also be found [[attachment:brochure.pdf|here]].
+More details can also be found [[attachment:brochure|here]].
 
 Going from Nantes to Le Croisic takes 1h20 by train. There are also direct train from Paris (3h20).
 
-To go from Le Croisic railway station to Port aux Rocs, you can take Bus 30 ([[attachment:ligne_bus.pdf|schedule]]).
+To go from Le Croisic railway station to Port aux Rocs, you can take Bus 30 ([[attachment:ligne_bus|schedule]]).
 
 == Program ==
 
