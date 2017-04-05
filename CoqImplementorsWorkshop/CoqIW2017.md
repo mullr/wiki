@@ -7,7 +7,6 @@ The Coq Implementors Workshop is an event that brings together the core develope
 == Location ==
 The Implementors Workshop takes place at Port aux Rocs in Le Croisic ([[https://www.portauxrocs.com/]]).
 
-The registration form is available ([[http://gipco-adns.com/site/5922/coqdev+2017+registration+form|here]]).
 
 == Program ==
 
@@ -27,9 +26,39 @@ TBA
 Write it [[https://coq.inria.fr/cocorico/CoqImplementorsWorkshop/CoqIW2017/log|here]].
 
 == Registration ==
-To register, please fill in the following form [[https://]].
+To register, please fill in the following [[http://gipco-adns.com/site/5922/coqdev+2017+registration+form|from]].
 
-The registration is 550€, including accommodation, food and a special dinner.
+The registration is 561€ (single), including accommodation, food and a special dinner.
+
+== Registration ==
+
+The registration form is available .
+
+Deadline registration: May 10.
+
+
+
+Registration comprises per person:
+workshop attendance;
+accommodation from Monday, June 12 to Thursday, June 15 included (4 nights);
+all meals from Monday, June 12 to Friday, June 16 (lunch);
+coffee breaks ;
+gala dinner.
+The registered participants will receive a notification of their registration by e-mail.
+Participants who are unable to attend the workshop should send an e-mail to the organizers as soon as possible and contact the hotel directly.
+
+Methods of payment:
+By cheque addressed  to: Domaine de Port-aux-Rocs
+and sent to:
+Domaine de Port-aux-Rocs
+A l'attention de Madame Laetitia Gillet
+44 avenue de Port Val
+44490 Le Croisic
+
+By "bon de commande" (organismes publics français uniquement) addressed to the address above.
+By credit card, on site.
+IMPORTANT: Please would you indicate the reference « 53163-35753 » on your payment.
+If you need a quote or more information about your payment, please send an e-mail to Port-aux-Rocs
 
 If you would need some fundings to attend the workshop, please contact
 the organizers to see what is possible. 
