@@ -28,26 +28,24 @@ Write it [[https://coq.inria.fr/cocorico/CoqImplementorsWorkshop/CoqIW2017/log|h
 == Registration ==
 To register, please fill in the following [[http://gipco-adns.com/site/5922/coqdev+2017+registration+form|from]].
 
-The registration is 561€ (single), including accommodation, food and a special dinner.
+The registration is 561€ (single bed room) or 443€ (twin bed room).
 
-== Registration ==
 
-The registration form is available .
+Registration comprises (per person):
+
+* workshop attendance
+* accommodation from Monday, June 12 to Thursday, June 15 included (4 nights)
+* all meals from Monday, June 12 to Friday, June 16 (lunch)
+* coffee breaks
+* gala dinner.
 
 Deadline registration: May 10.
 
-
-
-Registration comprises per person:
-workshop attendance;
-accommodation from Monday, June 12 to Thursday, June 15 included (4 nights);
-all meals from Monday, June 12 to Friday, June 16 (lunch);
-coffee breaks ;
-gala dinner.
 The registered participants will receive a notification of their registration by e-mail.
 Participants who are unable to attend the workshop should send an e-mail to the organizers as soon as possible and contact the hotel directly.
 
-Methods of payment:
+== Methods of payment ==
+
 By cheque addressed  to: Domaine de Port-aux-Rocs
 and sent to:
 Domaine de Port-aux-Rocs
