@@ -38,7 +38,7 @@ E.g. in case of [[https://github.com/coq/coq/pull/155|this pull request]] it mea
 where the field ''coq_opam_packages'' is by default set to:
 
 ----
-coq-hott coq-compcert coq-geocoq coq-color coq-fiat-crypto coq-fiat-parsers coq-flocq coq-unimath coq-sf coq-mathcomp-ssreflect coq-iris coq-mathcomp-fingroup coq-mathcomp-finmap coq-coquelicot coq-mathcomp-algebra coq-mathcomp-solvable coq-mathcomp-field coq-mathcomp-character coq-mathcomp-odd_order
+coq-hott coq-flocq coq-compcert coq-vst coq-geocoq coq-color coq-fiat-crypto coq-fiat-parsers coq-unimath coq-sf coq-mathcomp-ssreflect coq-iris coq-mathcomp-fingroup coq-mathcomp-finmap coq-coquelicot coq-mathcomp-algebra coq-mathcomp-solvable coq-mathcomp-field coq-mathcomp-character coq-mathcomp-odd_order
 
 ----
 Assuming that you will use the above value for the ''coq_opam_packages'' field, the benchmarking will finish in:
