@@ -33,7 +33,7 @@ E.g. in case of [[https://github.com/coq/coq/pull/434|this pull request]] it mea
 === Run the benchmarks for the tracked developments ===
 E.g. in case of [[https://github.com/coq/coq/pull/155|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/opam/job/benchmark-part-of-the-branch|benchmark-part-of-the-branch]] job with the following parameters:
 
-{{attachment:benchmark-part-of-the-branch.4.png}}
+{{attachment:benchmark-part-of-the-branch.5.png}}
 
 where the field ''coq_opam_packages'' is by default set to:
 
