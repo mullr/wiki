@@ -13,5 +13,6 @@
 || No easy way to subscribe to new bug reports (you can subscribe to https://lists.gforge.inria.fr/mailman/listinfo/coq-bugs-redist but you'll need moderator approval) || No features for asking the reporter details about the machine used, the version, etc (but the template can play this role) ||                      ||          ||
 || No way to edit comments || renumber all bugs ||                                              ||                                     ||
 || No mentions || cannot give people permissions to triage bugs without at the same time giving them permission to merge PRs and push ||                                              ||                                     ||
+|| Set-up needed to be indexed by Google. See https://bugzilla.mozilla.org/robots.txt || || || ||
 
 See also https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems
