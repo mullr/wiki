@@ -13,3 +13,5 @@
 || No easy way to subscribe to new bug reports || No features for asking the reporter details about the machine used, the version, etc (but the template can play this role) ||                                              ||                                     ||
 || No way to edit comments ||  ||                                              ||                                     ||
 || No mentions ||  ||                                              ||                                     ||
+
+See also https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems
