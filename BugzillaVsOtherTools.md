@@ -9,7 +9,7 @@
 ||                                || Shared milestones                                                                                                   ||                                          ||                                      ||
 
 || ''' Drawbacks of Bugzilla '''               || ''' Drawbacks of GitHub issues '''   || '''Moving everything to gitlab.com'''        || ''' List here other bug trackers ''' ||
-|| Very hard to understand                     || Non-free software                                                                                                          || github already has PRs and people's accounts ||                                     ||
+|| Very hard to understand                     || Non-free software                                                                                                          || github already has PRs and people's accounts (but GitLab allows logging in with GitHub account) ||                                     ||
 || No easy way to subscribe to new bug reports || No features for asking the reporter details about the machine used, the version, etc (but the template can play this role) ||                                              ||                                     ||
 || No way to edit comments ||  ||                                              ||                                     ||
 || No mentions ||  ||                                              ||                                     ||
