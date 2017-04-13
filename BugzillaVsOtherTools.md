@@ -1,4 +1,4 @@
-|| ''' Advantages of Bugzilla ''' || ''' Advantages of GitHub issues '''                                                                                 || Moving everything to gitlab.com              || ''' List here other bug trackers ''' ||
+|| ''' Advantages of Bugzilla ''' || ''' Advantages of GitHub issues '''              || '''Moving everything to gitlab.com'''          || ''' List here other bug trackers ''' ||
 || Status quo (necessarily simpler) || Issues are indexed by Google                                                                                        || freer than github                        ||                                      ||
 ||                                || #4553 will automatically link to the corresponding issue (or PR)                                                    || similar advantages as github vs bugzilla ||                                      ||
 ||                                || "This closes #2782." in a commit message will automatically close the corresponding issue when the commit is merged ||                                          ||                                      ||
@@ -8,7 +8,7 @@
 ||                                || Shared permission managements                                                                                       ||                                          ||                                      ||
 ||                                || Shared milestones                                                                                                   ||                                          ||                                      ||
 
-|| ''' Drawbacks of Bugzilla '''               || ''' Drawbacks of GitHub issues '''                                                                                         || Moving everything to gitlab.com                  || '' List here other bug trackers ''' ||
+|| ''' Drawbacks of Bugzilla '''               || ''' Drawbacks of GitHub issues '''   || '''Moving everything to gitlab.com'''        || ''' List here other bug trackers ''' ||
 || Very hard to understand                     || Non-free software                                                                                                          || github already has PRs and people's accounts ||                                     ||
 || No easy way to subscribe to new bug reports || No features for asking the reporter details about the machine used, the version, etc (but the template can play this role) ||                                              ||                                     ||
 || No way to edit comments ||  ||                                              ||                                     ||
