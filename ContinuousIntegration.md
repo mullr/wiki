@@ -20,17 +20,17 @@ Then:
 You'll have to wait until some of the existing members of the project actually confirms your membership.
 
 === I have a Jenkins account ===
- * determine the URL that designates the GIT repository
- * determine the name of the branch (of Coq) in that repository that should be compiled
 
-Now you can:
+The following sections describe how you can use your Jenkins account
+ * either to test whether your branch does not break some of the tracked developments
+ * or to run benchmarks (i.e. observe changes in compilation times of tracked developments).
 
 === Check if a given branch breaks some of the tracked developments ===
 E.g. in case of [[https://github.com/coq/coq/pull/434|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/opam/job/opam-install|opam-install]] job with the following parameters:
 
 {{attachment:opam-install.3.png}}
 
-=== Run the benchmarks for the tracked developments ===
+=== Benchmarking (without "overlays") ===
 E.g. in case of [[https://github.com/coq/coq/pull/155|this pull request]] it means we have to "build" the [[https://ci.inria.fr/coq/view/opam/job/benchmark-part-of-the-branch|benchmark-part-of-the-branch]] job with the following parameters:
 
 {{attachment:benchmark-part-of-the-branch.5.png}}
@@ -66,3 +66,17 @@ E.g., in the table shown above, we see that the compilation of '''coq-geocoq'''
  * which means that it decreased by cca. 7%
 
 The lines of the table are ordered wrt. improvements in the overall compilation times.
+
+=== Benchmarking (with "overlays") ===
+
+The following two parameters of the [[https://ci.inria.fr/coq/view/benchmarking/job/benchmark-part-of-the-branch/|job]]:
+ * ''new_coq_opam_archive_git_uri''
+ * ''new_coq_opam_archive_git_branch''
+
+enable us to define "overlays", i.e. tweak the definitions of OPAM packages to be used with ''new_coq_commit''.
+
+Concretely, one has to:
+ * clone the [[https://github.com/coq/opam-coq-archive.git|official repository]] that defines the OPAM packages
+ * modify the definitions of the relevant OPAM packages as needed
+ * push these modifications to some repository visible to Jenkins (e.g. to a personal github fork)
+ * and when starting the [[https://ci.inria.fr/coq/view/benchmarking/job/benchmark-part-of-the-branch/|benchmarking job]], set the ''new_coq_opam_archive_git_uri'' and ''new_coq_opam_archive_git_branch'' appropriatelly.
