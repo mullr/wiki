@@ -69,3 +69,7 @@ If you need additional funding, please contact the organizers.
   * SerAPI OPAM.
   * Glob_constr vs constrexpr reformat (upcoming CEP).
   * Data-centric CRUD API.
+  * Auto deploy from Travis.
+  * Windows CI (appveyor)
+  * Support for notation tables
+  * ENotation (Extended Notation Display)
