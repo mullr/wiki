@@ -72,5 +72,15 @@ If you need additional funding, please contact the organizers.
 
 == List of participants ==
 
+- Emilio Jesús Gallego Arias
 
 (+) Late subscription (tradition says you pay a round at the pub...)
+
+== Proposed Projects and Ideas ==
+
+- By EJGA:
+  - New internal document format for the STM.
+  - Language Server Protocol support.
+  - SerAPI OPAM.
+  - Glob_constr vs constrexpr reformat (upcoming CEP).
+  - Data-centric CRUD API.
