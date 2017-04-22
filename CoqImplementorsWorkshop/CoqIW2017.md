@@ -67,7 +67,7 @@ If you need additional funding, please contact the organizers.
   * New internal document format for the STM.
   * Language Server Protocol support.
   * SerAPI OPAM.
-  * Glob_constr vs constrexpr reformat (upcoming CEP).
+  * Glob_constr vs constrexpr rework (upcoming CEP).
   * Data-centric CRUD API.
   * Auto deploy from Travis.
   * Windows CI (appveyor)
