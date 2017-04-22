@@ -5,7 +5,7 @@ This page collects useful infos for the participants to the third Coq Implemento
 The Coq Implementors Workshop is an event that brings together the core developers of Coq and people willing to understand, improve or extend the system.
 
 == Location ==
-The Implementors Workshop takes place at Port aux Rocs in Le Croisic ([[https://www.portauxrocs.com/]]).
+The Implementors Workshop takes place at Port aux Rocs in Le Croisic (https://www.portauxrocs.com/).
 
 More details can also be found [[attachment:brochure.pdf|here]].
 
@@ -14,19 +14,16 @@ Going from Nantes to Le Croisic takes 1h20 by train. There are also direct train
 To go from Le Croisic railway station to Port aux Rocs, you can take Bus 30 ([[attachment:ligne_bus.pdf|schedule]]).
 
 == Program ==
-
 TBA
+
 ##[[attachment:schedule.pdf|Program PDF]]
-
 ##Talks by devs:
-
 ## * Introduction (Enrico, Maxime, Matej) [[attachment:intro.pdf|Intro PDF]]
 ## * STM (Enrico) [[attachment:stm4hackers.pdf|Slides PDF]]
 ## * Extraction (Pierre L) [[attachment:extraction.pdf|Slides PDF]] [[attachment:extraction_demo.v|extraction_demo.v]] [[attachment:extraction_cornercases.v|extraction_cornercases.v]] [[attachment:explicit_cumul.v|explicit_cumul.v]]
 ## * Notations (Hugo) [[attachment:notations.pdf|Slides PDF]]
 ## * Universes (Matthieu) [[attachment:universes.pdf|Slides PDF]] (see dev/doc/univpoly.txt too)
 ## * Ltac (Pierre-Marie) [[attachment:ltac-internals.pdf|Slides PDF]]
-
 == Do log what you did/learnt/implemented! ==
 Write it [[https://coq.inria.fr/cocorico/CoqImplementorsWorkshop/CoqIW2017/log|here]].
 
@@ -34,7 +31,6 @@ Write it [[https://coq.inria.fr/cocorico/CoqImplementorsWorkshop/CoqIW2017/log|h
 To register, please fill in the following [[http://gipco-adns.com/site/5922/coqdev+2017+registration+form|form]].
 
 The registration is 561€ (single bed room) or 443€ (twin bed room).
-
 
 Registration comprises (per person):
 
@@ -46,41 +42,30 @@ Registration comprises (per person):
 
 Deadline registration: May 10.
 
-The registered participants will receive a notification of their registration by e-mail.
-Participants who are unable to attend the workshop should send an e-mail to the organizers as soon as possible and contact the hotel directly.
+The registered participants will receive a notification of their registration by e-mail. Participants who are unable to attend the workshop should send an e-mail to the organizers as soon as possible and contact the hotel directly.
 
 == Methods of payment ==
+By cheque addressed  to: Domaine de Port-aux-Rocs and sent to: Domaine de Port-aux-Rocs A l'attention de Madame Laetitia Gillet 44 avenue de Port Val 44490 Le Croisic
 
-By cheque addressed  to: Domaine de Port-aux-Rocs
-and sent to:
-Domaine de Port-aux-Rocs
-A l'attention de Madame Laetitia Gillet
-44 avenue de Port Val
-44490 Le Croisic
+By "bon de commande" (organismes publics français uniquement) addressed to the address above. By credit card, on site. IMPORTANT: Please would you indicate the reference « 53163-35753 » on your payment. If you need a quote or more information about your payment, please send an e-mail to Port-aux-Rocs
 
-By "bon de commande" (organismes publics français uniquement) addressed to the address above.
-By credit card, on site.
-IMPORTANT: Please would you indicate the reference « 53163-35753 » on your payment.
-If you need a quote or more information about your payment, please send an e-mail to Port-aux-Rocs
+If you would need some fundings to attend the workshop, please contact the organizers to see what is possible.
 
-If you would need some fundings to attend the workshop, please contact
-the organizers to see what is possible. 
+The [[https://sympa.inria.fr/sympa/info/coq-coding-sprint|coordination mailing list]] is the preferred channel to contact the organizers.
 
-The [[https://sympa.inria.fr/sympa/info/coq-coding-sprint|coordination mailing list]] is the preferred channel to contact the organizers. 
-
-If you need additional funding, please contact the organizers. 
+If you need additional funding, please contact the organizers.
 
 == List of participants ==
+ * Emilio Jesús Gallego Arias
 
-- Emilio Jesús Gallego Arias
+
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
 == Proposed Projects and Ideas ==
-
-- By EJGA:
-  - New internal document format for the STM.
-  - Language Server Protocol support.
-  - SerAPI OPAM.
-  - Glob_constr vs constrexpr reformat (upcoming CEP).
-  - Data-centric CRUD API.
+ * By EJGA:
+  * New internal document format for the STM.
+  * Language Server Protocol support.
+  * SerAPI OPAM.
+  * Glob_constr vs constrexpr reformat (upcoming CEP).
+  * Data-centric CRUD API.
