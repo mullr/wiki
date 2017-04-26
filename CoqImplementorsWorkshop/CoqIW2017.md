@@ -57,9 +57,9 @@ By "bon de commande" (organismes publics français uniquement) addressed to the 
 If you would need some fundings to attend the workshop, please contact the organizers to see what is possible.
 
 == Organizers ==
-* Maxime Dénes (mail at maximedenes.fr)
-* Matthieu Sozeau (matthieu.sozeau at inria.fr)
-* Nicolas Tabareau (nicolas.tabareau at inria.fr)
+ * Maxime Dénes (mail at maximedenes.fr)
+ * Matthieu Sozeau (matthieu.sozeau at inria.fr)
+ * Nicolas Tabareau (nicolas.tabareau at inria.fr)
 
 The [[https://sympa.inria.fr/sympa/info/coq-coding-sprint|coordination mailing list]] is the preferred channel to contact the organizers.
 
