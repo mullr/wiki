@@ -48,7 +48,7 @@ Deadline registration: May 10.
 The registered participants will receive a notification of their registration by e-mail. Participants who are unable to attend the workshop should send an e-mail to the organizers as soon as possible and contact the hotel directly.
 
 == Methods of payment ==
-By credit card, on site. IMPORTANT: Please would you indicate the reference « 53163-35753 » on your payment. 
+By credit card, on site. IMPORTANT: Please indicate the reference « 53163-35753 » on your payment. 
 
 By cheque addressed  to: Domaine de Port-aux-Rocs and sent to: Domaine de Port-aux-Rocs A l'attention de Madame Laetitia Gillet 44 avenue de Port Val 44490 Le Croisic
 
