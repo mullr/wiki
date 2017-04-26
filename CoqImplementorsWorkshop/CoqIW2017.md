@@ -15,9 +15,8 @@ To go from Le Croisic railway station to Port aux Rocs, you can take Bus 30 ([[a
 
 == Program ==
 
-TBA
-
   The schedule will run from monday afternoon to friday after lunch.
+Tentative [[https://docs.google.com/spreadsheets/d/1mUtbJHJUKvwyUsp0cNGpTpdErpaxNqjk4TEPjrvIdIg/edit?usp=sharing|schedule]]
 
 ##[[attachment:schedule.pdf|Program PDF]]
 ##Talks by devs:
