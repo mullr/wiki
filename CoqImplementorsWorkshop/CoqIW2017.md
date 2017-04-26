@@ -18,6 +18,11 @@ To go from Le Croisic railway station to Port aux Rocs, you can take Bus 30 ([[a
   The schedule will run from monday afternoon to friday after lunch.
 Tentative [[https://docs.google.com/spreadsheets/d/1mUtbJHJUKvwyUsp0cNGpTpdErpaxNqjk4TEPjrvIdIg/edit?usp=sharing|schedule]]
 
+Talks by devs:
+
+ * Unification (Matthieu)
+ * Cumulative inductive types (Amin, Matthieu)
+
 ##[[attachment:schedule.pdf|Program PDF]]
 ##Talks by devs:
 ## * Introduction (Enrico, Maxime, Matej) [[attachment:intro.pdf|Intro PDF]]
@@ -84,3 +89,5 @@ If you need additional funding, please contact the organizers.
   * Windows CI (appveyor)
   * Support for notation tables
   * ENotation (Extended Notation Display)
+ * By MS:
+  * Specification/documentation of unification
