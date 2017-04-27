@@ -47,7 +47,7 @@ Registration comprises (per person):
  * coffee breaks
  * gala dinner.
 
-Deadline registration: May 10.
+Registration deadline: May 10.
 
 The registered participants will receive a notification of their registration by e-mail. Participants who are unable to attend the workshop should send an e-mail to the organizers as soon as possible and contact the hotel directly.
 
