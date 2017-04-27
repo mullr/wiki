@@ -67,7 +67,7 @@ If you need funding to attend the workshop, please contact the organizers to see
  * Matthieu Sozeau (matthieu.sozeau at inria.fr)
  * Nicolas Tabareau (nicolas.tabareau at inria.fr)
 
-The [[https://sympa.inria.fr/sympa/info/coq-coding-sprint|coordination mailing list]] is the preferred channel to contact the organizers.
+The [[https://sympa.inria.fr/sympa/info/coq-implementors-workshop|coordination mailing list]] is the preferred channel to contact the organizers.
 
 If you need additional funding, please contact the organizers.
 
