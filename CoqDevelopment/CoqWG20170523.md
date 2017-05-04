@@ -15,3 +15,5 @@ The next Coq Working Group will take place on May 23rd and 24th at Inria Paris (
 = Topics =
 
  * 8.7 status report and open pull requests (Maxime)
+ * [8.7/8.8] Roadmap for AST --- CEP012. (EJGA)
+ * [8.8] Roadmap for the STM --- UI protocols CEP013 (EJGA/Enrico/Maxime)
