@@ -74,6 +74,7 @@ If you need additional funding, please contact the organizers.
 == List of participants ==
  * Emilio Jesús Gallego Arias
  * Théo Zimmermann
+ * Enrico Tassi
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
@@ -93,3 +94,5 @@ If you need additional funding, please contact the organizers.
  * By TZ:
   * Focusing with { } on several sub-goals / not the first sub-goal.
   * A way to mask { } and make indentation significant instead? (w/ EJGA)
+ * By Enrico:
+  * coq-elpi (Elpi embedded in Coq) and the GPWD
