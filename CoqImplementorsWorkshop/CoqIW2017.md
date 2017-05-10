@@ -92,7 +92,7 @@ If you need additional funding, please contact the organizers.
  * By MS:
   * Specification/documentation of unification
  * By TZ:
-  * Focusing with { } on several sub-goals / not the first sub-goal.
-  * A way to mask { } and make indentation significant instead? (w/ EJGA)
+  * Combining focusing with { } and goal selectors.
+  * A way to easily give names to goals.
  * By Enrico:
   * coq-elpi (Elpi embedded in Coq) and the GPWD
