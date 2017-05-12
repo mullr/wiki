@@ -92,7 +92,7 @@ If you need additional funding, please contact the organizers.
  * By MS:
   * Specification/documentation of unification
  * By TZ:
-  * Combining focusing with { } and goal selectors.
+  * Combining focusing with { } and goal selectors (started [[https://github.com/Zimmi48/coq/tree/testing_brackets_with_goal_selector|here]]).
   * A way to easily give names to goals.
  * By Enrico:
   * coq-elpi (Elpi embedded in Coq) and the GPWD
