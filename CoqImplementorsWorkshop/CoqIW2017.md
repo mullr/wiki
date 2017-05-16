@@ -103,6 +103,7 @@ If you need additional funding, please contact the organizers.
   * Glob_constr vs constrexpr rework (upcoming CEP).
   * Data-centric CRUD API.
   * Auto deploy from Travis.
+  * Travis Build Stages
   * Windows CI (appveyor)
   * Support for notation tables
   * ENotation (Extended Notation Display)
