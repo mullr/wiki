@@ -72,9 +72,26 @@ The [[https://sympa.inria.fr/sympa/info/coq-implementors-workshop|coordination m
 If you need additional funding, please contact the organizers.
 
 == List of participants ==
+
+ * Abhishek Anand
+ * Yves Bertot
+ * Simon Boulier
+ * Maxime Dénès
+ * Yannick Forster
  * Emilio Jesús Gallego Arias
- * Théo Zimmermann
+ * Gaëtan Gilbert
+ * Hugo Herbelin
+ * Ambroise Lafont
+ * Cyprien Mangin
+ * Thierry Martinez
+ * Pierre-Marie Pédrot
+ * Matthieu Sozeau
+ * Kathrin Stark
+ * Nicolas Tabareau
  * Enrico Tassi
+ * Amin Timany
+ * Théo Winterhalter
+ * Théo Zimmermann
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
