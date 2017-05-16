@@ -10,7 +10,7 @@ This page is used to organize the next Coq Working Group (in French GT Coq). The
 
 = Organization =
 
-The next Coq Working Group will take place on May 23rd and 24th at Inria Paris (2, rue Simone Iff). The room is "Jacques-Louis Lions 2".
+The next Coq Working Group will take place on May 23rd and 24th at Inria Paris (2, rue Simone Iff). The room is "Jacques-Louis Lions 1".
 
 = Topics =
 
