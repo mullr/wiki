@@ -42,7 +42,7 @@ The registration is 561€ (single bed room) or 443€ (twin bed room).
 Registration comprises (per person):
 
  * workshop attendance
- * accommodation from Monday, June 12 to Thursday, June 15 included (4 nights)
+ * accommodation from Monday, June 12 to Friday, June 16 included (4 nights)
  * all meals from Monday, June 12 to Friday, June 16 (lunch)
  * coffee breaks
  * gala dinner.
