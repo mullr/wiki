@@ -27,7 +27,7 @@ The next Coq Working Group will take place on May 23rd and 24th at Inria Paris (
 * Afternoon: discussion on pull requests
 [[https://github.com/coq/coq/pulls?q=is%3Apr+is%3Aopen+label%3Aneeds_discussion|See PRs labeled "needs_discussion"]]
 
-* Evening: Social event (TBA)
+* Evening: Social event at [[http://www.groundcontrolparis.com/|Ground Control]]
 
 == May, 24th ==
 
