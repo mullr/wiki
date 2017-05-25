@@ -112,5 +112,6 @@ If you need additional funding, please contact the organizers.
  * By TZ:
   * Combining focusing with { } and goal selectors (started [[https://github.com/Zimmi48/coq/tree/testing_brackets_with_goal_selector|here]]).
   * A way to easily give names to goals.
+  * A strict mode that's satisfying for SSReflect (and for vanilla Coq as well if possible).
  * By Enrico:
   * coq-elpi (Elpi embedded in Coq) and the GPWD
