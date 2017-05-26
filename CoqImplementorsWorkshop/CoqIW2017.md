@@ -114,5 +114,5 @@ If you need additional funding, please contact the organizers.
   * A strict mode that's satisfying for SSReflect (and for vanilla Coq as well if possible).
  * By Enrico:
   * coq-elpi (Elpi embedded in Coq) and the GPWD
- * Suggested topic by Paul:
+ * Suggested discussion topic by Paul:
   * Resolving variable shadowing conflicts, Bug 5448
