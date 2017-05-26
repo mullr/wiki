@@ -14,14 +14,18 @@ Going from Nantes to Le Croisic takes 1h20 by train. There are also direct train
 To go from Le Croisic railway station to Port aux Rocs, you can take Bus 30 ([[attachment:ligne_bus.pdf|schedule]]).
 
 == Program ==
+ . The schedule will run from monday afternoon to friday after lunch.
 
-  The schedule will run from monday afternoon to friday after lunch.
 Tentative [[https://docs.google.com/spreadsheets/d/1mUtbJHJUKvwyUsp0cNGpTpdErpaxNqjk4TEPjrvIdIg/edit?usp=sharing|schedule]]
 
 Talks by devs:
 
  * Unification (Matthieu)
  * Cumulative inductive types (Amin, Matthieu)
+
+Discussion:
+
+ * Resolving variable shadowing conflicts, 8.5 vs. 8.6 approaches (bug 5448)
 
 ##[[attachment:schedule.pdf|Program PDF]]
 ##Talks by devs:
@@ -72,7 +76,6 @@ The [[https://sympa.inria.fr/sympa/info/coq-implementors-workshop|coordination m
 If you need additional funding, please contact the organizers.
 
 == List of participants ==
-
  * Abhishek Anand
  * Yves Bertot
  * Simon Boulier
