@@ -117,6 +117,9 @@ If you need additional funding, please contact the organizers.
   * coq-elpi (Elpi embedded in Coq) and the GPWD
  * Suggested discussion topic by Paul:
   * Resolving variable shadowing conflicts, Bug 5448
+ * By Abhishek Anand: (the items are below are needed in the implementation of [[https://arxiv.org/abs/1705.01163|paramcoq-iff]])
+  * [[https://sympa.inria.fr/sympa/arc/coq-club/2017-02/msg00059.html|Efficiency reducing away mentions of a variable]]
+  * [[https://github.com/gmalecha/template-coq/issues/1|Supporting universes in Template-coq]]
 
 == Topics of interest ==
  * Simon Boulier : different ways of being opaque ; managing of universes ; Template Coq & plugins
