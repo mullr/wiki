@@ -118,5 +118,6 @@ If you need additional funding, please contact the organizers.
   * Resolving variable shadowing conflicts, Bug 5448
 
 == Topics of interest ==
+ * Simon Boulier : different ways of being opaque ; managing of universes ; Template Coq & plugins
 
  * ...
