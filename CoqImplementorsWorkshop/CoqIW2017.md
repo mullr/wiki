@@ -97,6 +97,7 @@ If you need additional funding, please contact the organizers.
 == Proposed Projects and Ideas ==
  * By EJGA:
   * New internal document format for the STM.
+  * Plugin linking with external deps.
   * Language Server Protocol support.
   * SerAPI OPAM.
   * Glob_constr vs constrexpr rework (upcoming CEP).
