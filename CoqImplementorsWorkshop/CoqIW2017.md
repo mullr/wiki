@@ -127,4 +127,5 @@ If you need additional funding, please contact the organizers.
 == Topics of interest ==
  * Simon Boulier : different ways of being opaque ; managing of universes ; Template Coq & plugins
  * Overview Coq Source Code, Plugins
+ * more keywords vs fewer keywords (GPR #616)
  * ...
