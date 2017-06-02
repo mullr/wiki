@@ -121,7 +121,9 @@ If you need additional funding, please contact the organizers.
  * By Abhishek Anand: (the items are below are needed in the implementation of [[https://arxiv.org/abs/1705.01163|paramcoq-iff]])
   * [[https://sympa.inria.fr/sympa/arc/coq-club/2017-02/msg00059.html|Efficiency reducing away mentions of a variable]]
   * [[https://github.com/gmalecha/template-coq/issues/1|Supporting universes in Template-coq]]
-
+ * By Yves
+  * port coq-dpdgraph to more recent version of Coq (trunk and pre-8.7)
+    [[https://github.com/Karmaki/coq-dpdgraph|coq-dpdgraph github site]]
 == Topics of interest ==
  * Simon Boulier : different ways of being opaque ; managing of universes ; Template Coq & plugins
  * Overview Coq Source Code, Plugins
