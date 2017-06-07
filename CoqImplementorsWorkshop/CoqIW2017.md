@@ -28,6 +28,10 @@ Talks by devs:
  * ELPI (Enrico Tassi)
  * The beautifier and notations (Hugo Herbelin)
 
+PRs to discusss:
+
+ * Binding of universe constraints [[https://github.com/coq/coq/pull/688]]
+
 ##[[attachment:schedule.pdf|Program PDF]]
 ##Talks by devs:
 ## * Introduction (Enrico, Maxime, Matej) [[attachment:intro.pdf|Intro PDF]]
