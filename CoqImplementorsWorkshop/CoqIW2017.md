@@ -20,8 +20,13 @@ Tentative [[https://docs.google.com/spreadsheets/d/1mUtbJHJUKvwyUsp0cNGpTpdErpax
 
 Talks by devs:
 
- * Unification (Matthieu)
  * Cumulative inductive types (Amin, Matthieu)
+ * Definitional Proof-Irrelevance (Gaëtan Gilbert)
+ * Ltac 2 (Pierre-Marie Pédrot)
+ * Coq and User Interfaces (Emilio Jesus Gallego Arias)
+ * Parametricity in Coq (Abhishek Anand)
+ * ELPI (Enrico Tassi)
+ * The beautifier and notations (Hugo Herbelin)
 
 ##[[attachment:schedule.pdf|Program PDF]]
 ##Talks by devs:
