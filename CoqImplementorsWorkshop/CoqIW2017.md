@@ -20,7 +20,7 @@ Tentative [[https://docs.google.com/spreadsheets/d/1mUtbJHJUKvwyUsp0cNGpTpdErpax
 
 Talks by devs:
 
- * Cumulative inductive types (Amin, Matthieu)
+ * Cumulative inductive types (Amin Timany, Matthieu Sozeau)
  * Definitional Proof-Irrelevance (Gaëtan Gilbert)
  * Ltac 2 (Pierre-Marie Pédrot)
  * Coq and User Interfaces (Emilio Jesus Gallego Arias)
