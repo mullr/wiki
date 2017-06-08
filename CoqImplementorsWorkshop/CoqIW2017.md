@@ -44,7 +44,7 @@ PRs to discusss:
 ## * Universes (Matthieu) [[attachment:universes.pdf|Slides PDF]] (see dev/doc/univpoly.txt too)
 ## * Ltac (Pierre-Marie) [[attachment:ltac-internals.pdf|Slides PDF]]
 == Do log what you did/learnt/implemented! ==
-Write it [[https://coq.inria.fr/cocorico/CoqImplementorsWorkshop/CoqIW2017/log|here]].
+Write it [[https://coq.inria.fr/cocorico/CoqImplementorsWorkshop/CoqIW2017log|here]].
 
 == Registration ==
 To register, please fill in the following [[http://gipco-adns.com/site/5922/coqdev+2017+registration+form|form]].
