@@ -5,10 +5,10 @@ This page is to log all the activities done during the Coq Implementors Workshop
 
 === Monday 12 ===
 
-=== Tuesday 12 ===
+=== Tuesday 13 ===
 
-=== Wednesday 13 ===
+=== Wednesday 14 ===
 
-=== Thursday 14 ===
+=== Thursday 15 ===
 
-=== Friday 26 ===
+=== Friday 16 ===
