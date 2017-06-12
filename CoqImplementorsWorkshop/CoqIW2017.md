@@ -108,18 +108,21 @@ If you need additional funding, please contact the organizers.
 
 == Proposed Projects and Ideas ==
  * By EJGA:
-  * New internal document format for the STM.
-  * Plugin linking with external deps.
-  * Language Server Protocol support.
-  * Ocamlbuild for Coq + bisect_ppx support.
+  * New internal document format for the STM, functional-state handling. [my main focus for this IW] (CEP012)
+  * Glob_constr vs constrexpr rework (upcoming CEP011).
+  * Plugin linking with external dependencies.
+  * Language Server Protocol support. Jupiter / IPython support.
+  * Ocamlbuild for Coq
+  * Code coverage with bisect_ppx.
   * SerAPI OPAM.
-  * Glob_constr vs constrexpr rework (upcoming CEP).
   * Data-centric CRUD API.
   * Auto deploy from Travis.
   * Travis Build Stages
   * Windows CI (appveyor)
-  * Support for notation tables
+  * Support for notation tables (notation scopes that can modify the parser)
   * ENotation (Extended Notation Display)
+  * Scoping mechanism that is friendly to parallel processing.
+  * Better benchmarking / timing for the batch compiler.
  * By MS:
   * Specification/documentation of unification
   * A big TODO list!
