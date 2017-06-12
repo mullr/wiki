@@ -19,7 +19,8 @@ To go from Le Croisic railway station to Port aux Rocs, you can take Bus 30 ([[a
 Tentative [[https://docs.google.com/spreadsheets/d/1mUtbJHJUKvwyUsp0cNGpTpdErpaxNqjk4TEPjrvIdIg/edit?usp=sharing|schedule]]
 
 Talks by devs:
-
+ 
+ * Introduction [[attachment:intro.pdf|slides]]
  * Cumulative inductive types (Amin Timany, Matthieu Sozeau)
  * Definitional Proof-Irrelevance (Gaëtan Gilbert)
  * Ltac 2 (Pierre-Marie Pédrot)
