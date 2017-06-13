@@ -12,7 +12,7 @@ This page is to log all the activities done during the Coq Implementors Workshop
 
 === Tuesday 13 ===
 
- * Emilio: Talk about UI; spend afternoon discussing about side-effects and STM init.
+ * Emilio: Talk about UI; spend afternoon discussing about side-effects and STM init. Ported ELPI to jsCoq.
 
 === Wednesday 14 ===
 
