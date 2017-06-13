@@ -24,7 +24,7 @@ Talks by devs:
  * Cumulative inductive types (Amin Timany, Matthieu Sozeau)
  * Definitional Proof-Irrelevance (Gaëtan Gilbert)
  * Ltac 2 (Pierre-Marie Pédrot)
- * Coq and User Interfaces (Emilio Jesus Gallego Arias)
+ * Coq and User Interfaces (Emilio Jesus Gallego Arias) [[https://x80.org/coq2017/|slides]]
  * Parametricity in Coq (Abhishek Anand)
  * ELPI (Enrico Tassi)
  * The beautifier and notations (Hugo Herbelin)
