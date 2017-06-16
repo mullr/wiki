@@ -19,5 +19,5 @@ This page is to log all the activities done during the Coq Implementors Workshop
  * Yannick Forster and Abhishek Anand : [[ https://github.com/yforster/template-coq/tree/trunk_june_17 | universes in template-coq ported to trunk]]
 
 === Thursday 15 ===
-
+ * Emilio: Code coverage report: https://x80.org/coq2017/report/
 === Friday 16 ===
