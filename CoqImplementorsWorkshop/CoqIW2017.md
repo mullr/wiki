@@ -25,7 +25,7 @@ Talks by devs:
  * Definitional Proof-Irrelevance (Gaëtan Gilbert)
  * Ltac 2 (Pierre-Marie Pédrot)
  * Coq and User Interfaces (Emilio Jesus Gallego Arias) [[https://x80.org/coq2017/|slides]]
- * Parametricity in Coq (Abhishek Anand)[[attachment:CoqImplWorkshop2017.pdf|slides]]
+ * Parametricity in Coq (Abhishek Anand)[[attachment:CoqImplWorkshop2017Fixed.pdf|slides]]
  * ELPI (Enrico Tassi)
  * The beautifier and notations (Hugo Herbelin)
 
