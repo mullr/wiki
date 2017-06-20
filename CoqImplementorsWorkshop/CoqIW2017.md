@@ -27,7 +27,7 @@ Talks by devs:
  * Coq and User Interfaces (Emilio Jesus Gallego Arias) [[https://x80.org/coq2017/|slides]]
  * Parametricity in Coq (Abhishek Anand)[[attachment:CoqImplWorkshop2017Fixed.pdf|slides]]
  * ELPI (Enrico Tassi)
- * The beautifier and notations (Hugo Herbelin)
+ * The beautifier and notations (Hugo Herbelin) [[attachment:beautifier-notations.pdf|slides]]
 
 PRs to discusss:
 
