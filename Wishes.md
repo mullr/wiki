@@ -346,6 +346,10 @@ we need to cast {{{t}}} into a term of type {{{P b true}}}, but how can we ensur
 
 Finally, traversing the fixpoints is complicated. In case of tail-recursive fixpoints, the context can directly be moved to the base case of the recursive defintion but in the general case, this seems impossible.
 
+=== Making transparent the body of an opaque constant ===
+
+Supports turning transparent a definition/proof initially declared opaque. This could e.g. be a command {{{Reveal cst}}} which definitively turns {{{cst}}} transparent (seen as an admissible rule of the CIC). (Note: Abhishek Anand started to work on a plugin which allows to replicate an existing opaque constant as a transparent one.)
+
 == Coqdoc ==
 
 === Features ===
