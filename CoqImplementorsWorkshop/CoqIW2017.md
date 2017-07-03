@@ -107,6 +107,10 @@ If you need additional funding, please contact the organizers.
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
+== Suggestions by New Participants ==
+
+I [EJGA] performed an informal poll asking new participants what they thought of the IW and how we could improve for next year. The conclusion was that it would be good to have ready a concrete set of projects for people new to Coq and to hold a small session where each new participant gets to pick a project and a mentor. They told me they had the hardest time figuring out what to do. Other than that their experience was very positive.
+
 == Proposed Projects and Ideas ==
  * By EJGA:
   * New internal document format for the STM, functional-state handling. [my main focus for this IW] (CEP012)
