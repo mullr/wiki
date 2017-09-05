@@ -16,13 +16,13 @@ The next Coq Working Group will take place on TBA at Inria Paris (2, rue Simone 
 
 == ?? ==
 
-* 9:00 Coffee
+ * 9:00 Coffee
 
 == May, 24th ==
 
-* 9:00 Coffee
+ * 9:00 Coffee
 
 = Talking points =
 
-* Unifall status (M. Sozeau)
-* Fun with template-coq (M. Sozeau)
+ * Unifall status (M. Sozeau)
+ * Fun with template-coq (M. Sozeau)
