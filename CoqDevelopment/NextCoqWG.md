@@ -26,3 +26,6 @@ The next Coq Working Group will take place on TBA at Inria Paris (2, rue Simone 
 
  * Unifall status (M. Sozeau)
  * Fun with template-coq (M. Sozeau)
+ * Moving to GitHub issues (T. Zimmermann)
+ * Discussion on the future of tactics and SSReflect (proposed by T. Zimmermann)
+ * Recent evolution of the release management (T. Zimmermann and M. Dénès)
