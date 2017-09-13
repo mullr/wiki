@@ -10,7 +10,7 @@ This page is used to organize the next Coq Working Group (in French GT Coq). The
 
 = Organization =
 
-The next Coq Working Group will take place on TBA at Inria Paris (2, rue Simone Iff). The room is TBA.
+The next Coq Working Group will take place on october 3 and 4 at Inria Paris (2, rue Simone Iff). The room for the two days it Jacques-Louis Lions 1.
 
 = Schedule =
 
