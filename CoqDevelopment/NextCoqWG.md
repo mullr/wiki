@@ -10,15 +10,15 @@ This page is used to organize the next Coq Working Group (in French GT Coq). The
 
 = Organization =
 
-The next Coq Working Group will take place on october 3 and 4 at Inria Paris (2, rue Simone Iff). The room for the two days it Jacques-Louis Lions 1.
+The next Coq Working Group will take place on October 3rd and 4th at Inria Paris (2, rue Simone Iff). The room for the two days is Jacques-Louis Lions 1.
 
 = Schedule =
 
-== ?? ==
+== October 3rd ==
 
  * 9:00 Coffee
 
-== May, 24th ==
+== October 4th ==
 
  * 9:00 Coffee
 
