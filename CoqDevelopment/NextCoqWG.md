@@ -30,6 +30,7 @@ The next Coq Working Group will take place on October 3rd and 4th at Inria Paris
  * Discussion on the future of tactics and SSReflect (proposed by T. Zimmermann)
  * Recent evolution of the release management (T. Zimmermann and M. Dénès)
  * 8.7 Debrief & 8.8 Roadmap (M. Dénès)
+ * Document migration to Sphinx (M. Dénès)
  * Strategic Priorities in Coq Development [E. Gallego, 15m + discussion]
  * CoqIW 2017 wrap up [E. Gallego, open discussion ~30m] 
  * Google Summer of Code and Coq [E. Gallego, 10m + discussion]
