@@ -27,7 +27,7 @@ The next Coq Working Group will take place on October 3rd and 4th at Inria Paris
  * Unifall status (M. Sozeau)
  * Fun with template-coq (M. Sozeau)
  * Moving to GitHub issues (T. Zimmermann)
- * Discussion on the future of tactics and SSReflect (proposed by T. Zimmermann)
+ * Discussion on the future of tactics and SSReflect (proposed by T. Zimmermann) (Constraints: not on the 4th afternoon plz)
  * Recent evolution of the release management (T. Zimmermann and M. Dénès)
  * 8.7 Debrief & 8.8 Roadmap (M. Dénès)
  * Document migration to Sphinx (M. Dénès)
