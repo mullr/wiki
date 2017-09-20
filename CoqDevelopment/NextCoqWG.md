@@ -38,3 +38,4 @@ The next Coq Working Group will take place on October 3rd and 4th at Inria Paris
  * Planet Coq [E. Gallego 10m + discussion]
 
 Should also be discussed: plan for the standard library, who is in charge of the website (PRs)?
+And plan some time to discuss about the PRs that are tagged "needs: discussion".
