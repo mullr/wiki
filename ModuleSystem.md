@@ -6,3 +6,4 @@
  * ProofTermsConsideredHarmful:  Why using dependent records can be difficult, and sometimes inadvisable.
  * TypeClasses (experimental in Coq 8.2) can also be used to capture mathematical theories, like in IsabelleTheoremProver.  They use parameterized dependent records internally.
  * ModulesBibliography: Various pointers to modules in systems like Coq.
+ * OpenIssuesWithModules: A discussion on various issues about Coq module system and how to address them.
