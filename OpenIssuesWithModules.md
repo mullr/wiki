@@ -36,6 +36,8 @@ Fail Check eq_refl : B1.t = B2.t. (* The inductive types are different *)
 
 For more details, search for "applicative" or "generative" in Élie Soubiran's [[https://tel.archives-ouvertes.fr/file/index/docid/679201/filename/these.pdf|PhD]], or e.g. in this [[https://www.cs.ox.ac.uk/ralf.hinze/WG2.8/24/slides/derek.pdf|talk]] from Derek Dreyer, etc.
 
+Note that generativity can be seen as implicitly tagging any functor application with a time stamp. So internally, a generative functor application {{{F A}}} is actually a double application {{{F A tᵢ}}} where {{{tᵢ}}} is the value of a clock at the time of the application.
+
 = Module and functor transparency =
 
 See e.g. bug [[https://coq.inria.fr/bugs/show_bug.cgi?id=3342|3342]].
