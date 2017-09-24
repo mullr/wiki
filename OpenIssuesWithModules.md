@@ -46,7 +46,7 @@ For more details, search for "applicative" or "generative" in Élie Soubiran's [
 
 I don't believe it is very complicated to do. Since what is visible from a module is anyways only what its signature exports, it is maybe just enough to modify the subtyping algorithm so that it accepts to see inductive types or constructors as parameters.
 
-= How far can module and module types be identified? =
+= How far can modules and module types be identified? =
 
 On the contrary of programming language where modules are implementations and interfaces are specifications, there is no essential differences in a module and a module type in Coq. Both have the structure of a partially defined dependent record for a notion of record containing inductive types and where manifest fields are local definitions (see Thierry Coquand, Randy Pollack and Makoto Takeyama's [[http://homepages.inf.ed.ac.uk/rpollack/export/TLCA03extended.pdf|paper]] about implementing modules as records).
 
