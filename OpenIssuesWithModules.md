@@ -20,6 +20,8 @@ Modules and functors could still be expressed using an algebraic language (using
 
 Otherwise said, the kernel would still check the expansion of a module as a tuple of declarations inhabiting a record (which is the semantics of a module), but would not say anything about the correctness of the algebraic language and about subtyping.
 
+Note: If the kernel had a notion of local (co)inductive types, the modules could be simulated with records. Then subtyping could be implemented with coercitive subtyping (i.e. explicit maps) which the kernel could check. However, it is not clear that we want to simulate the features of a module system (packaging, path selection, etc.) using records, rather than mapping the module structure to a flexible flat structure "path |-> declaration" which has e.g. the advantage that any name can be added at any time, even in what would have been a yet closed record.
+
 = Applicative vs generative functors =
 
 Coq has currently generative functors: twice the same instantiation of a functor gives distinct inductive types and distinct abstract values. For inductive types, this is consistent with the view that inductive types are generative. The utility of generativity for abstract types can be discussed.
