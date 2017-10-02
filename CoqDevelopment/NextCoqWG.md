@@ -12,6 +12,8 @@ This page is used to organize the next Coq Working Group (in French GT Coq). The
 
 The next Coq Working Group will take place on October 3rd and 4th at Inria Paris (2, rue Simone Iff). The room for the two days is Jacques-Louis Lions 1.
 
+Streaming and recorded video will be available from M. Sozeau's YouTube channel: https://www.youtube.com/channel/UCgI_DseUNWbA9_tO88fyhoQ.
+
 = Schedule =
 
 = Schedule =
