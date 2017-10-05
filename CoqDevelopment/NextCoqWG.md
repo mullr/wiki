@@ -16,8 +16,6 @@ Streaming and recorded video will be available from M. Sozeau's YouTube channel:
 
 = Schedule =
 
-= Schedule =
-
 == October 3rd ==
 
  * 9:00 Coffee
@@ -37,12 +35,12 @@ Streaming and recorded video will be available from M. Sozeau's YouTube channel:
  * 9:00 Coffee
 
  * 10:00 Coq Communities (E. Gallego)
- * 11:00 Unifall status (M. Sozeau)
+ * 11:00 Unifall status (M. Sozeau) [[attachment:Unifying Unifiers 2.pdf]]
  * 11:30 Plan for the standard library (T. Zimmermann)
 
  * 12:00 Lunch
 
- * 13:30 Fun with template-coq (M. Sozeau)
+ * 13:30 Fun with template-coq (M. Sozeau) [[attachment:Fun with Template-Coq.pdf]]
  * 14:00 Moving to GitHub issues (T. Zimmermann)
  * 14:30 PR discussion (part II)
 
