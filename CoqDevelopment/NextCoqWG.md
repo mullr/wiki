@@ -41,7 +41,7 @@ Streaming and recorded video will be available from M. Sozeau's YouTube channel:
  * 12:00 Lunch
 
  * 13:30 Fun with template-coq (M. Sozeau) [[attachment:Fun with Template-Coq.pdf]]
- * 14:00 Moving to GitHub issues (T. Zimmermann)
+ * 14:00 Moving to GitHub issues (T. Zimmermann) Here is the link to my experiment: https://github.com/Zimmi48/bugzilla-test/
  * 14:30 PR discussion (part II)
 
 PR authors should get prepared to lead a quick discussion on each of them. Here
