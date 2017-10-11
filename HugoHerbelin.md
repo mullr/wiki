@@ -1,9 +1,14 @@
-##master-page:HomepageTemplate
-#format wiki
-#language en
+## master-page:HomepageTemplate
 
+See `this page`_
 
-See [[http://pauillac.inria.fr/~herbelin/|this page]]
+-------------------------
 
-----
-CategoryHomepage
+ CategoryHomepage_
+
+.. ############################################################################
+
+.. _this page: http://pauillac.inria.fr/~herbelin/
+
+.. _CategoryHomepage: ../CategoryHomepage
+
