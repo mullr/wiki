@@ -1,10 +1,17 @@
-##master-page:HomepageTemplate
-#format wiki
-== Jean-Marc Notin ==
+## master-page:HomepageTemplate
 
-Email: <<MailTo(notin@NOSPAM.lix.polytechnique.fr)>>
+Jean-Marc Notin
+---------------
+
+Email: `[[MailTo(notin@NOSPAM.lix.polytechnique.fr)]]`_
 
 ...
 
-----
-CategoryHomepage CategoryHomepage
+-------------------------
+
+ CategoryHomepage_ CategoryHomepage_
+
+.. ############################################################################
+
+.. _CategoryHomepage: ../CategoryHomepage
+
