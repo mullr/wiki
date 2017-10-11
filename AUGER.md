@@ -1,27 +1,47 @@
-##master-page:HomepageTemplate
-#format wiki
-#language en
-== AUGER Cédric ==
+## master-page:HomepageTemplate
 
-Email: <<cauger AT SPAMFREE lri DOT fr>>
-## You can even more obfuscate your email address by adding more uppercase letters followed by a leading and trailing blank.
+AUGER Cédric
+------------
+
+Email: <<cauger AT SPAMFREE lri DOT fr>>.. You can even more obfuscate your email address by adding more uppercase letters followed by a leading and trailing blank.
 
 ...
 
-----
+-------------------------
 
-[[AUGER_Enumerates|Finite types.]]
 
-[[LinearTactics|Some tactics to keep hypothesis clean.]]
 
-[[XComposeAndNotations|Playing with notations with Coq under X.]]
+`Finite types.`_
 
-[[AUGER_Notations|Set of notations using UTF-8.]]
+`Some tactics to keep hypothesis clean.`_
 
-[[AUGER_LinearLogic|Some notations for linear logic.]]
+`Playing with notations with Coq under X.`_
 
-[[AUGER_Monad|Monads in Coq.]]
+`Set of notations using UTF-8.`_
 
-[[AUGER_Annotations|Annotating a proof.]]
+`Some notations for linear logic.`_
 
-[[AUGER_ExtractionTuto|A short tutorial for extraction.]]
+`Monads in Coq.`_
+
+`Annotating a proof.`_
+
+`A short tutorial for extraction.`_
+
+.. ############################################################################
+
+.. _Finite types.: ../AUGER_Enumerates
+
+.. _Some tactics to keep hypothesis clean.: ../LinearTactics
+
+.. _Playing with notations with Coq under X.: ../XComposeAndNotations
+
+.. _Set of notations using UTF-8.: ../AUGER_Notations
+
+.. _Some notations for linear logic.: ../AUGER_LinearLogic
+
+.. _Monads in Coq.: ../AUGER_Monad
+
+.. _Annotating a proof.: ../AUGER_Annotations
+
+.. _A short tutorial for extraction.: ../AUGER_ExtractionTuto
+
