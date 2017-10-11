@@ -1,1 +1,6 @@
-[[https://github.com/coq/roadmaps/blob/master/text/roadmap-8.6.md|The 8.6 roadmap has moved to github]].
+`The 8.6 roadmap has moved to github`_.
+
+.. ############################################################################
+
+.. _The 8.6 roadmap has moved to github: https://github.com/coq/roadmaps/blob/master/text/roadmap-8.6.md
+
