@@ -1,10 +1,17 @@
-#format wiki
-#language en
-== Judicaël Courant ==
+Judicaël Courant
+----------------
 
-Email: <<MailTo(Firstname.Familyname AT SPAMFREE imag DOT fr)>>
+Email: `[[MailTo(Firstname.Familyname AT SPAMFREE imag DOT fr)]]`_
 
-[[http://www-verimag.imag.fr/~courant/|Professional home page]]
+`Professional home page`_
 
-----
-CategoryHomepage
+-------------------------
+
+ CategoryHomepage_
+
+.. ############################################################################
+
+.. _Professional home page: http://www-verimag.imag.fr/~courant/
+
+.. _CategoryHomepage: ../CategoryHomepage
+
