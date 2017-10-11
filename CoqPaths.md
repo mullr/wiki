@@ -1,69 +1,74 @@
 This page is an attempt to sum up the Coq Dev discussion about where Coq looks for what on hard-disks.
 
-This question can be rephrased as "what is accessible by {{{Require}}} and {{{Declare ML Module}}} commands".
+This question can be rephrased as "what is accessible by ``Require`` and ``Declare ML Module`` commands".
 
 The motivation for changing things are of 2 kinds:
- * Scalability: We want users to use more external libraries (using the opam engine). Therefore, we want users to be able to have a lot of different libraries installed on their systems. Installing a library mustn't break an existing setting.
- * Library development simplification: We want to make life easier for people working on a development that depends on the current development version of a library they develop.
 
-== Terminology ==
+* Scalability: We want users to use more external libraries (using the opam engine). Therefore, we want users to be able to have a lot of different libraries installed on their systems. Installing a library mustn't break an existing setting.
 
-OCaml paths and Coq ones behave differently. But {{{Declare ML Module}}} lives in the OCaml world, so Coq interacts with OCaml paths.
-In OCaml, a subdirectory is ignored. In Coq, it represents a sub-library. That can be rephrased as: In Coq, files in subdirectories are put in a proper "namespace" but are __always__ in the load path.
+* Library development simplification: We want to make life easier for people working on a development that depends on the current development version of a library they develop.
 
-While you set up a path for look up to coqtop, you can __sometimes__ give it a prefix that we call its ''logical'' prefix.
+Terminology
+-----------
 
-Coq introduces a notion of recursive include whose specification is: act as if all subdirectories have been include.
-Let's insist more on the OCaml/Coq difference: in the OCaml world, it adds new accessible files. In Coq's one, it gives shorter names for already accessible files!
+OCaml paths and Coq ones behave differently. But ``Declare ML Module`` lives in the OCaml world, so Coq interacts with OCaml paths. In OCaml, a subdirectory is ignored. In Coq, it represents a sub-library. That can be rephrased as: In Coq, files in subdirectories are put in a proper "namespace" but are :underline:`always` in the load path.
 
-''Recursively include with logical prefix Foo'' is not really correct. It is a shortening for ''include with logical prefix Fla'' and recursively include (with no logical prefix).
+While you set up a path for look up to coqtop, you can :underline:`sometimes` give it a prefix that we call its *logical* prefix.
 
-There is a path called COQLIB that represents where Coq stuff are installed. It is computed from '''coqtop''' location (standard one is {{{$(dirname $(which coqtop))../share/coq/}}})
+Coq introduces a notion of recursive include whose specification is: act as if all subdirectories have been include. Let's insist more on the OCaml/Coq difference: in the OCaml world, it adds new accessible files. In Coq's one, it gives shorter names for already accessible files!
 
-== LoadPath ==
+*Recursively include with logical prefix Foo* is not really correct. It is a shortening for *include with logical prefix Fla* and recursively include (with no logical prefix).
 
- * COQLIB/theories is __recursively__ included in Coq world with logical prefix Coq 
- * COQLIB/plugins is __recursively__ included in Coq world with logical prefix Coq. It is also recursively included in OCaml world.
- * COQLIB/user-contrib is included in Coq world with no logical path. It is also recursively included in OCaml world.
- This is where {{{make install}}} of '''coq_makefile''' installs stuff.
- ||There are discussions about not recursively include it in the OCaml world but making coq_makefile install OCaml stuff in a flat directory COQLIB/user-contrib-plugins. This would have the benefit to illustrate on the file system that 2 independently distributed myplugin.cmxs will destroy everybody Coq installation. The opposite proposal is to implement inside Coq namespaces for OCaml but no realistic way to make OCaml load both super/myplugin.cmxs and great/myplugin.cmxs has been found.||
+There is a path called COQLIB that represents where Coq stuff are installed. It is computed from **coqtop** location (standard one is ``$(dirname $(which coqtop))../share/coq/``)
 
- * for i in $XDG_DATA_DIRS; $i/coq are included with no logical prefix. They are also recursively included in the OCaml world.
- This is where {{{make userinstall}}} of coq_makefile can install stuff.
- Same remark about the badness of name clash with the recursive inclusion in OCaml world. This is where an extra difficulty comes. A free desktop application is supposed to use only one dir in each XDG_DATA_DIR but $i/coq/plugins would be include (in the sub library plugins) in the Coq world if we use this canvas which is not clean.
+LoadPath
+--------
 
- * for i in $COQPATH; $i/coq are included with no logical prefix. It is also recursively included in OCaml world.
- Same remark as above.
- ||There is also an idea of allowing the syntax {{{COQPATH="/toto=Foo;tata=Bar"}}} to give logical path Foo to /toto and Bar to tata instead of the empty one.||
+* COQLIB/theories is :underline:`recursively` included in Coq world with logical prefix Coq 
 
- * On '''coqtop''' command line {{{-I path}}} includes ''path'' in the OCaml world. (Nothing in the Coq world, '''''this is a change w.r.t. coq v8.4''''', people porting from v8.4 should replace -I foo by -Q foo "" in their project files and regenerate makefiles, and keep -I foo for OCaml files if any. To reduce risks of overloading when installed in concurrency with files from other projects, it is even recommended to use -Q foo Name for some appropriate root Name.)
+* COQLIB/plugins is :underline:`recursively` included in Coq world with logical prefix Coq. It is also recursively included in OCaml world.
 
- * On '''coqtop''' command line {{{-Q path Name}}} includes ''path'' in the coq world with the logical prefix Name. (Nothing in the OCaml world, '''''new in coq v8.5''''')
+* COQLIB/user-contrib is included in Coq world with no logical path. It is also recursively included in OCaml world. This is where ``make install`` of **coq_makefile** installs stuff.
 
- Remember that subdirectories of ''path'' are visible using a qualified name.
+  [Table not converted]
 
- * On '''coqtop''' command line {{{-R path Name}}} recursively includes ''path'' in the coq world with logical prefix Name. (Nothing in the OCaml world, which is a change w.r.t. coq v8.4.)
+* for i in $XDG_DATA_DIRS; $i/coq are included with no logical prefix. They are also recursively included in the OCaml world. This is where ``make userinstall`` of coq_makefile can install stuff. Same remark about the badness of name clash with the recursive inclusion in OCaml world. This is where an extra difficulty comes. A free desktop application is supposed to use only one dir in each XDG_DATA_DIR but $i/coq/plugins would be include (in the sub library plugins) in the Coq world if we use this canvas which is not clean.
 
-== Namespace awareness ==
+* for i in $COQPATH; $i/coq are included with no logical prefix. It is also recursively included in OCaml world. Same remark as above.
+
+  [Table not converted]
+
+* On **coqtop** command line ``-I path`` includes *path* in the OCaml world. (Nothing in the Coq world, **this is a change w.r.t. coq v8.4**, people porting from v8.4 should replace -I foo by -Q foo "" in their project files and regenerate makefiles, and keep -I foo for OCaml files if any. To reduce risks of overloading when installed in concurrency with files from other projects, it is even recommended to use -Q foo Name for some appropriate root Name.)
+
+* On **coqtop** command line ``-Q path Name`` includes *path* in the coq world with the logical prefix Name. (Nothing in the OCaml world, **new in coq v8.5**)
+
+  Remember that subdirectories of *path* are visible using a qualified name.
+
+* On **coqtop** command line ``-R path Name`` recursively includes *path* in the coq world with logical prefix Name. (Nothing in the OCaml world, which is a change w.r.t. coq v8.4.)
+
+Namespace awareness
+-------------------
 
 Compiled Coq files (.vo) are aware of their full(/absolute?) Logical name. How and what for is questonnable.
 
- * How they learn their name reuse -R -Q mechanism in a questionable way. Coqc asks itself "What is the longest logical path I know for this file (that have physical path foo/bar) I am compiling. This will be its full logical name."
- ||This auto naming using a kind of overload of -R and -Q semantic may be less clear than an explicit naming. On the opposite, the latter would create a kind of redundancy.||
+* How they learn their name reuse -R -Q mechanism in a questionable way. Coqc asks itself "What is the longest logical path I know for this file (that have physical path foo/bar) I am compiling. This will be its full logical name."
 
- * How they use their name is "I am loaded using a given logical name but would the full logical name I know I have be a correct name for loading me" If not, I fail (This is the annoying error "Bar is compiled as Foo.Bar" if you don't write the correct -R)
+  [Table not converted]
 
- ||We could say that for now on the filesystem gives to a file a logical name and that, when loaded, the file checks it accepts to take this name. It is belt and suspenders. But, since the file knows its full logical name, we could let a vo file be in the logical library and sub libraries he wants to be independently for where it is on the filesystem. We could then imagine a setting where all vo files in all the subdirectories of all the included directories are Requirable. There is no question of logical prefix anymore. All include are in a way recursive but the difference is whether one has to use its full logical name to require a file or can use any suffix of it.||
- ||Indeed, the necessity of the logical prefix is only to conduct the auto generation of full logical name so that is what should be adapted. The argument against is that the flexibility of this solution may go in the opposite direction of scalability. What if 2 files in different logical path want to take the same logical name, There could be 2 files with different logical names that install themselves at the same place (that would be correct as long as I don't install both). Is it really a good thing that for example you make a new module for the already existing library. Once again what if someone else, considering this module is really missing in the first library, copies your extra file in its source tree, ... ||
+* How they use their name is "I am loaded using a given logical name but would the full logical name I know I have be a correct name for loading me" If not, I fail (This is the annoying error "Bar is compiled as Foo.Bar" if you don't write the correct -R)
 
-== More facts ==
- * There must be mention that relying on file system semantic is fragile. Especially when we have in mind that, by default, MacOS HFS+ is case aware but case insensitive and that you cannot count on it to distinguish List and list!
+  [Table not converted]
 
- * '''Coq_makefile''' overloads even more -R and -Q command line arguments. They mean to it "the paths you mention are part of the current development" and for example {{{make clean}}} cleans the mention physical paths. Logical paths are use to infer how to make the doc, where to install the vo, etc ...
+More facts
+----------
 
- ||This is the critical problem in presence of a chain of dependant library as {{{-argument -Q ../deps Deps}}} would say to '''coqtop''' include that without telling to coq_makefile this is what you have to take care by '''coqdep''' also need the -Q and don't get it this way. (Thus the only solution is the COQPATH global variable game)||
- ||We may imagine on the opposite make '''coqdep''' (and '''coqdoc''') accepts all '''coqtop''' argument but ignores the majority of them even it is a bit sad!||
+* There must be mention that relying on file system semantic is fragile. Especially when we have in mind that, by default, MacOS HFS+ is case aware but case insensitive and that you cannot count on it to distinguish List and list!
 
- * Requiring a .vo file requires recursively all its dependencies, that are expressed as full logical paths.  Coq searches for the .vo file using the logical path that today it is almost a physical path too, since .vo are installed in theories/ or user-contribs/ following their logical path. 
+* **Coq_makefile** overloads even more -R and -Q command line arguments. They mean to it "the paths you mention are part of the current development" and for example ``make clean`` cleans the mention physical paths. Logical paths are use to infer how to make the doc, where to install the vo, etc ...
 
- * A .vo file is not easy to relocate, since the file is produced by marshalling and there is no way decent to traverse the data and apply a mapping to all logical names.
+  [Table not converted]
+
+* Requiring a .vo file requires recursively all its dependencies, that are expressed as full logical paths.  Coq searches for the .vo file using the logical path that today it is almost a physical path too, since .vo are installed in theories/ or user-contribs/ following their logical path. 
+
+* A .vo file is not easy to relocate, since the file is produced by marshalling and there is no way decent to traverse the data and apply a mapping to all logical names.
+
