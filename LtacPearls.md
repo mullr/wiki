@@ -1,13 +1,27 @@
-= General tactics =
+General tactics
+===============
 
-  * TacticExts small tactics that are widely useful
+* TacticExts_ small tactics that are widely useful
 
-= Domain specific tactics =
+Domain specific tactics
+=======================
 
-  * RingTactics tactics for reasoning about ring structures
-  * InTac tactic to prove the inclusion of list
+* RingTactics_ tactics for reasoning about ring structures
 
-= Generic tactics =
+* InTac_ tactic to prove the inclusion of list
 
-  * GenericTactics a few tactics letting the user define its domain specific tactics
- 
+Generic tactics
+===============
+
+* GenericTactics_ a few tactics letting the user define its domain specific tactics
+
+.. ############################################################################
+
+.. _TacticExts: ../TacticExts
+
+.. _RingTactics: ../RingTactics
+
+.. _InTac: ../InTac
+
+.. _GenericTactics: ../GenericTactics
+
