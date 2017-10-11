@@ -1,103 +1,117 @@
 ## page was renamed from CocoricoFrontPage
-#pragma section-numbers off
-#language en
 
-<<TableOfContents>>
+.. contents::
 
-Here we will present ideas of what constitutes a well written Coq source file. We discuss the general issues that affect the ''shape'' of the Coq scripts and consequently their  ''legibility'' and ''re-usability''. Yes, we are interested in reading and editing ASCII Coq sources!
+Here we will present ideas of what constitutes a well written Coq source file. We discuss the general issues that affect the *shape* of the Coq scripts and consequently their  *legibility* and *re-usability*. Yes, we are interested in reading and editing ASCII Coq sources!
 
 This is intended to be a collection of suggestions for good style and good practice, acknowledging that usually more than one way is possible.
 
-For the discussion of issues related to the content of specific formalisations and general (type theoretic) tips and traps to avoid please use TipsAndTricks.
+For the discussion of issues related to the content of specific formalisations and general (type theoretic) tips and traps to avoid please use TipsAndTricks_.
 
-= File Structure =
+File Structure
+==============
 
- * Following the shape of the files in the standard library of Coq, start the Coq files with a comment of the form
+* Following the shape of the files in the standard library of Coq, start the Coq files with a comment of the form
 
-{{{
-(************************************************************************)
-(* Copyright <YEAR> <AUTHOR>                                            *)
-(* <LICENSE>                                                            *)
-(************************************************************************)
-}}}
+::
 
- This will credit the author(s) and clarifies any license issues, which is necessary for re-usability of your code.
+   (************************************************************************)
+   (* Copyright <YEAR> <AUTHOR>                                            *)
+   (* <LICENSE>                                                            *)
+   (************************************************************************)
 
- *  Use [[http://coq.inria.fr/doc/Reference-Manual017.html#sec575|coqdoc]]-style comments graciously, to clarify the structure of your formalisation. (However, try not to use them ''inside'' proofs. Instead use ordinary `(*  *)` comments. This is because proofs are less likely to be processed via coqdoc and usually they are suppressed.)
+  This will credit the author(s) and clarifies any license issues, which is necessary for re-usability of your code.
 
- * Use blank lines consistently (I.e. use the same number of blank lines between all lemmas in a section).
+* Use coqdoc_-style comments graciously, to clarify the structure of your formalisation. (However, try not to use them *inside* proofs. Instead use ordinary ``(*  *)`` comments. This is because proofs are less likely to be processed via coqdoc and usually they are suppressed.)
 
- * End the file with a newline character.
+* Use blank lines consistently (I.e. use the same number of blank lines between all lemmas in a section).
 
-= Layout =
+* End the file with a newline character.
 
-== Layout of Proofs ==
+Layout
+======
 
- * Start the proofs using a line containing  `Proof.`
+Layout of Proofs
+----------------
 
- * When a tactic generates more than one subgoal use indentation for tactics that are used for solving each subgoal.
+* Start the proofs using a line containing  ``Proof.``
 
- * When a tactic solves a subgoal use `...` (triple dot) instead of `.` (single dot).
+* When a tactic generates more than one subgoal use indentation for tactics that are used for solving each subgoal.
 
- * Use comments when using complicated or lengthy proof segments on subgoals of `case`, `induction`, `destruct` and their friends.
+* When a tactic solves a subgoal use ``...`` (triple dot) instead of ``.`` (single dot).
 
- * Use blank lines to separate different segments of the proof.
+* Use comments when using complicated or lengthy proof segments on subgoals of ``case``, ``induction``, ``destruct`` and their friends.
 
-{{{#!coq
-Lemma foo:
-Proof.
- <body of tactics before case>.
- case (compare_with_zero X).
-  (* 0 < X *)
-   <body of tactics>...
-  (* X < 0  *)
-   <body of tactics>...
-  (* X = 0  *)
-   <body of tactics>...
+* Use blank lines to separate different segments of the proof.
 
- <body of tactics after case>.
-Qed.
-}}}
+::
+
+   Lemma foo:
+   Proof.
+    <body of tactics before case>.
+    case (compare_with_zero X).
+     (* 0 < X *)
+      <body of tactics>...
+     (* X < 0  *)
+      <body of tactics>...
+     (* X = 0  *)
+      <body of tactics>...
+    <body of tactics after case>.
+   Qed.
 
 An alternate possible layout is to use indentation to tell exactly how many subgoals remain:  n indentation for n subgoals (variant: (n-1)). This is especially useful during development when you replay proofs after you have modified a definition above: you can easily find where your proof script behaves differently.
 
 The previous example would look much less nice than with the former style; on the contrary this latter style fits better with a forward proof-style, using assert-like tactics.
 
 Example:
-{{{#!coq
-Lemma bar:
-Proof.
- assert (H: <some property>).
-  rewrite foobar.
-  intuition.
- assert (H2: <something else>).
-  simpl.
-  omega.
- assert (H3: ...).
-  auto.
- <body of tactics>
-Qed.
-}}}
 
-= Naming =
+::
 
-== Lemmas and Data-types ==
+   Lemma bar:
+   Proof.
+    assert (H: <some property>).
+     rewrite foobar.
+     intuition.
+    assert (H2: <something else>).
+     simpl.
+     omega.
+    assert (H3: ...).
+     auto.
+    <body of tactics>
+   Qed.
 
- * It is good practice to use a uniform naming convention for inductive data-types, their constructors, the inverse of the constructors (provable by `inversion`) and the strong elimination rules (generated by `Scheme`).
+Naming
+======
 
- * For lemmas try to follow a uniform naming convention based on the subject of the formalisation. If in doubt use the naming pattern used for similar lemmas that is used in the Coq standard library.
+Lemmas and Data-types
+---------------------
 
-== Variables inside proofs ==
+* It is good practice to use a uniform naming convention for inductive data-types, their constructors, the inverse of the constructors (provable by ``inversion``) and the strong elimination rules (generated by ``Scheme``).
 
- * It is usually a good idea to explicitly give names to all the hypothesis that are introduced by Coq. This makes reuse of the code easier. It is easy to achieve this when using `intros`, while for `destruct`, `induction` and similar tactics, this means that you have to use the `as` keyword to explicitly give names.
+* For lemmas try to follow a uniform naming convention based on the subject of the formalisation. If in doubt use the naming pattern used for similar lemmas that is used in the Coq standard library.
 
- * Orthogonal to the above, at some points it is better to use underscore `_` to immediately clear the variables that are not useful.
+Variables inside proofs
+-----------------------
 
-== Extraction ==
+* It is usually a good idea to explicitly give names to all the hypothesis that are introduced by Coq. This makes reuse of the code easier. It is easy to achieve this when using ``intros``, while for ``destruct``, ``induction`` and similar tactics, this means that you have to use the ``as`` keyword to explicitly give names.
 
- * When extracting to Haskell, note that Haskell module names should start with an upper-case letter. It is best practice to use the whole Coq generated code as a Haskell module and write your own pretty printing interface for it (in fact this is the default behaviour of the extraction mechanism). Instead of simply capitalising the first letter, I usually use something like following
-{{{#!coq
-Extraction Language Haskell.
-Extraction "Xfoo.hs" foo.
-}}}
- to extract a Coq constant `foo` into Haskell module `Xfoo.hs`. This way it is emphasised that this Haskell file is a result of Coq extraction.
+* Orthogonal to the above, at some points it is better to use underscore ``_`` to immediately clear the variables that are not useful.
+
+Extraction
+----------
+
+* When extracting to Haskell, note that Haskell module names should start with an upper-case letter. It is best practice to use the whole Coq generated code as a Haskell module and write your own pretty printing interface for it (in fact this is the default behaviour of the extraction mechanism). Instead of simply capitalising the first letter, I usually use something like following
+
+::
+
+   Extraction Language Haskell.
+   Extraction "Xfoo.hs" foo.
+
+  to extract a Coq constant ``foo`` into Haskell module ``Xfoo.hs``. This way it is emphasised that this Haskell file is a result of Coq extraction.
+
+.. ############################################################################
+
+.. _TipsAndTricks: ../TipsAndTricks
+
+.. _coqdoc: http://coq.inria.fr/doc/Reference-Manual017.html#sec575
+
