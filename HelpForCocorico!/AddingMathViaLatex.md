@@ -1,42 +1,49 @@
-#language en
+Using latex to generate math
+----------------------------
 
-== Using latex to generate math ==
-
-We use the latex2.py Wiki parser written by [[http://johannes.sipsolutions.de/Projects/new-moinmoin-latex|Johannes Berg]].
+We use the latex2.py Wiki parser written by `Johannes Berg`_.
 
 You can type 
 
-{{{
-{ { { #!latex
-''some latex code without \begin{document} and \end{document}'' 
-} } }
-}}}
+::
+
+   { { { #!latex
+   ''some latex code without \begin{document} and \end{document}''
+   } } }
 
 to get the generated dvi file inlined (as a .png file) in your text. 
 
 For example 
 
-{{{#!latex
-$\forall m,n:{N}\;\; a,b:{Z},\; \neg \frac{a}{b}=2^{\sup (m,n)}$
-}}}
+::
 
-You can also add a peramble containing user defined macros or \usepackage. For example we import the `amssymb` package to get the blackboard fonts for `N` and `Z`:
+   latex error! exitcode was 2 (signal 0), transscript follows:
 
-{{{#!latex
-\usepackage{amssymb}
- %%end-prologue%%
-$\forall m,n:\mathbb{N}\;\; a,b:\mathbb{Z},\; \neg \frac{a}{b}=2^{\sup (m,n)}$
-}}}
+   failed to exec() latex
 
-It is possible to include the outcome in between the text, 
-as we do <<latex2(\usepackage{amssymb}%$\neg\exists p,q\in\mathbb{Q},\;\; \frac{p}{q}=\sqrt{2}$ )>> here!
+
+You can also add a peramble containing user defined macros or \usepackage. For example we import the ``amssymb`` package to get the blackboard fonts for ``N`` and ``Z``:
+
+::
+
+   latex error! exitcode was 2 (signal 0), transscript follows:
+
+   failed to exec() latex
+
+
+It is possible to include the outcome in between the text,  as we do `[[latex2(\usepackage{amssymb}%$\neg\exists p,q\in\mathbb{Q},\;\; \frac{p}{q}=\sqrt{2}$ )]]`_ here!
 
 The most general form is
 
-{{{
-{ { { #!latex
-''latex preamble without \documentclass{article}''
- %%end-prologue%%
-''latex body without \begin{document} and \end{document}'' 
-} } }
-}}}
+::
+
+   { { { #!latex
+   ''latex preamble without \documentclass{article}''
+    %%end-prologue%%
+   ''latex body without \begin{document} and \end{document}''
+   } } }
+
+.. ############################################################################
+
+.. _Johannes Berg: http://johannes.sipsolutions.de/Projects/new-moinmoin-latex
+
