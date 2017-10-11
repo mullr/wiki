@@ -1,5 +1,10 @@
-#pragma section-numbers off
-#language en
+* TheSource_
 
- * TheSource
- * CoqCustomizationHowTo
+* CoqCustomizationHowTo_
+
+.. ############################################################################
+
+.. _TheSource: ../TheSource
+
+.. _CoqCustomizationHowTo: ../CoqCustomizationHowTo
+
