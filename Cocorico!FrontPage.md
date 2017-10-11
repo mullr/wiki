@@ -1,16 +1,55 @@
 ## page was renamed from CocoricoFrontPage
 #acl All:read Known:read,write,revert
-#pragma section-numbers off
-#language en
 
-= Welcome to Cocorico!, the Coq Wiki =
+Welcome to Cocorico!, the Coq Wiki
+==================================
 
-This site is a !WikiWikiWeb dedicated to the [[http://coq.inria.fr|Coq]] proof assistant.
-||<tableclass="userpref">'''''The Coq Community'''''       ||<style="width: 25%">'''''Documentation'''''||<style="width: 25%">'''''Formalisations'''''||<style="width: 25%">'''''Software'''''  ||
-||<style="width: 25%">[[CoqNewbie|The newbie zone]]         ||[[Documentation|Books and Manuals]]         ||[[StandardLibrary|Standard Library]]         ||[[Tools|Interfaces]]             ||
-||[[http://www.nabble.com/Coq-f2323.html|Coq-club on Nabble]]||[[Tutorials]]                     ||[[FormalizedAndVerified|Formalized in Coq...]]||[[Tools|Software Verification]] ||
-||[[irc://irc.freenode.net/#coq|irc channel]]                ||[[FrequentlyAskedQuestions|Frequently asked questions]] ||[[CoqPearls|Coq pearls]]      ||[[Tools|Tactic plugins]]             ||
-||[[CoqInTheClassroom|Coq in the classroom]]                ||[[TheoryBehindCoq|Logical foundations]]                 ||[[LtacPearls|Tactic pearls]]  ||[[Tools|Documentation tools]]        ||
-||                                                         ||[[SpecializedDocumentation|Misc. documentation]]        ||[[ProjectIdeas|Project ideas]]|| ||
-||                                                         ||[[CoqSource|About Coq code source]]                     ||[[CoqStyle|Coq's style]]      || ||
-||                                                         ||[[AboutCocorico!|About This Wiki]]                     || || ||
+This site is a WikiWikiWeb dedicated to the Coq_ proof assistant.
+
+<strong class="highlight">.. raw:: html
+
+</strong>[Table not converted]
+
+.. ############################################################################
+
+.. _Coq: http://coq.inria.fr
+
+.. _The newbie zone: ../CoqNewbie
+
+.. _Books and Manuals: ../Documentation
+
+.. _Standard Library: ../StandardLibrary
+
+.. _Interfaces:
+.. _Software Verification:
+.. _Tactic plugins:
+.. _Documentation tools: ../Tools
+
+.. _Coq-club on Nabble: http://www.nabble.com/Coq-f2323.html
+
+.. _Tutorials: ../Tutorials
+
+.. _Formalized in Coq...: ../FormalizedAndVerified
+
+.. _irc channel: irc://irc.freenode.net/#coq
+
+.. _Frequently asked questions: ../FrequentlyAskedQuestions
+
+.. _Coq pearls: ../CoqPearls
+
+.. _Coq in the classroom: ../CoqInTheClassroom
+
+.. _Logical foundations: ../TheoryBehindCoq
+
+.. _Tactic pearls: ../LtacPearls
+
+.. _Misc. documentation: ../SpecializedDocumentation
+
+.. _Project ideas: ../ProjectIdeas
+
+.. _About Coq code source: ../CoqSource
+
+.. _Coq's style: ../CoqStyle
+
+.. _About This Wiki: ../AboutCocorico!
+
