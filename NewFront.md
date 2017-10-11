@@ -1,5 +1,8 @@
-#acl All:read
+Coq_ is proof assistant based on the calculus of constructions.  It is used to formalize proofs in a variety of fields, including mathematics and programming languages.  Cocorico is a Coq wiki.
 
-[[http://coq.inria.fr/|Coq]] is proof assistant based on the calculus of constructions.  It is used to formalize proofs in a variety of fields, including mathematics and programming languages.  Cocorico is a Coq wiki.
+`[[Include(Contents)]]`_
 
-<<Include(Contents)>>
+.. ############################################################################
+
+.. _Coq: http://coq.inria.fr/
+
