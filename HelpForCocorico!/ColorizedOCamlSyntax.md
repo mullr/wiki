@@ -1,26 +1,25 @@
-#language en
-= OCaml code with highlighted syntax =
+OCaml code with highlighted syntax
+==================================
 
 We use the OCaml parser written by Jakub Piotr Nowak.
 
 You can type
 
-{{{
-{ { { #!ocaml
-<ocaml code>
-} } }
-}}}
+::
 
-
+   { { { #!ocaml
+   <ocaml code>
+   } } }
 
 For example
 
-{{{#!ocaml
-let constr_of c = Constrintern.interp_constr Evd.empty (Global.env()) c
-}}}
+::
+
+   let constr_of c = Constrintern.interp_constr Evd.empty (Global.env()) c
 
 By default you don't get any line numbers. Adding numbers=on adds line numbers to the code, which then can be toggled on and off in most browsers.
 
-{{{#!ocaml numbers=on
-let constr_of c = Constrintern.interp_constr Evd.empty (Global.env()) c
-}}}
+::
+
+   let constr_of c = Constrintern.interp_constr Evd.empty (Global.env()) c
+
