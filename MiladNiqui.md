@@ -1,17 +1,10 @@
-## master-page:HomepageTemplate
+\#\# master-page:HomepageTemplate
 
 Milad Niqui
------------
+===========
 
-`Milad Niqui`_
+[Milad Niqui](http://www.cs.ru.nl/~milad)
 
--------------------------
+------------------------------------------------------------------------
 
- CategoryHomepage_
-
-.. ############################################################################
-
-.. _Milad Niqui: http://www.cs.ru.nl/~milad
-
-.. _CategoryHomepage: ../CategoryHomepage
-
+> [CategoryHomepage](../CategoryHomepage)

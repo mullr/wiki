@@ -1,4 +1,4 @@
 Things to do in the implementation:
 
-- remove unsafe_get_type_of and favor a tactic based on Retyping.get_type_of
+-   remove unsafe\_get\_type\_of and favor a tactic based on Retyping.get\_type\_of
 

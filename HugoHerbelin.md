@@ -1,14 +1,7 @@
-## master-page:HomepageTemplate
+\#\# master-page:HomepageTemplate
 
-See `this page`_
+See [this page](http://pauillac.inria.fr/~herbelin/)
 
--------------------------
+------------------------------------------------------------------------
 
- CategoryHomepage_
-
-.. ############################################################################
-
-.. _this page: http://pauillac.inria.fr/~herbelin/
-
-.. _CategoryHomepage: ../CategoryHomepage
-
+> [CategoryHomepage](../CategoryHomepage)

@@ -1,17 +1,12 @@
-## master-page:HomepageTemplate
+\#\# master-page:HomepageTemplate
 
 Jean-Marc Notin
----------------
+===============
 
-Email: `[[MailTo(notin@NOSPAM.lix.polytechnique.fr)]]`_
+Email: \[\[MailTo(notin@NOSPAM.lix.polytechnique.fr)\]\]\_
 
 ...
 
--------------------------
+------------------------------------------------------------------------
 
- CategoryHomepage_ CategoryHomepage_
-
-.. ############################################################################
-
-.. _CategoryHomepage: ../CategoryHomepage
-
+> [CategoryHomepage](../CategoryHomepage) [CategoryHomepage](../CategoryHomepage)

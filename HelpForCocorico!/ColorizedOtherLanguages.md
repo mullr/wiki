@@ -1,39 +1,27 @@
 Highlighted syntax for various languages
 ========================================
 
-It is possible (using a parrser based on `Gnu enscript`_) to produce colorized syntax for various programming languages.
+It is possible (using a parrser based on [Gnu enscript](http://www.codento.com/people/mtr/genscript/)) to produce colorized syntax for various programming languages.
 
 You have to use the folloiwng format
 
-::
-
-   { { { #! syntax <language-name>
-   <code>
-   } } }
-
-Of course your language-name shoud be among the `languages recognised by Gnu enscript`_.
-
-For example, 
-
-::
-
-    { { {#!syntax haskell
-   type Vector = [Double]
-
-   normSquared :: Vector -> Double
-   normSquared = sum . map (^2)
-
-   norm :: Vector -> Double
-   norm = sqrt . normSquared
+    { { { #! syntax <language-name>
+    <code>
     } } }
 
-generates the folloiwng ``Haskell`` code. 
+Of course your language-name shoud be among the [languages recognised by Gnu enscript](http://www.codento.com/people/mtr/genscript/highlightings.html).
 
-.. raw:: html
+For example,
 
-.. ############################################################################
+    { { {#!syntax haskell
 
-.. _Gnu enscript: http://www.codento.com/people/mtr/genscript/
+> type Vector = \[Double\]
+>
+> normSquared :: Vector -&gt; Double normSquared = sum . map (^2)
+>
+> norm :: Vector -&gt; Double norm = sqrt . normSquared } } }
 
-.. _languages recognised by Gnu enscript: http://www.codento.com/people/mtr/genscript/highlightings.html
+generates the folloiwng `Haskell` code.
+
+
 

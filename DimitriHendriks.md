@@ -1,1 +1,1 @@
-[[http://www.few.vu.nl/~diem|Dimitri Hendriks]]
+\[\[<http://www.few.vu.nl/~diem%7CDimitri> Hendriks\]\]

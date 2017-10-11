@@ -8,17 +8,16 @@ Polymorphic arguments of a constructors must not be a recursive argument. See th
 
 Inductive I : Type := C: (∀ (P : Type), P→P) → I.
 
-Definition Paradox : False := (fix ni (i :I):False := match i with | C (f :∀P:Prop,P→P) => ni (f _i) end) (C (fun (P :Type) (x :P)  => x)).
+Definition Paradox : False := (fix ni (i :I):False := match i with | C (f :∀P:Prop,P→P) =&gt; ni (f \_i) end) (C (fun (P :Type) (x :P) =&gt; x)).
 
 to understand why !
 
-Coq registers "admissible for recursive calls" arguments of a constructor at definition time. Consequently, as the first argument of cons in 
+Coq registers "admissible for recursive calls" arguments of a constructor at definition time. Consequently, as the first argument of cons in
 
 Inductive list (A : Type) : Type :=
 
-  nil : list A | cons : A -> list A -> list A.
+> nil : list A | cons : A -&gt; list A -&gt; list A.
 
 is not a 'list A' it will never be OK to use it (or one of its subterm) as a recursive argument !
 
-There is sometime a work-around. In "match x with | cons a _ => ... | _ => ... end", if 'x' is the recursive argument, we have just seen why sadly 'a' will never be recognize as a subterm but if 'x' is a subterm already then 'a' will be one.
-
+There is sometime a work-around. In "match x with | cons a \_ =&gt; ... | \_ =&gt; ... end", if 'x' is the recursive argument, we have just seen why sadly 'a' will never be recognize as a subterm but if 'x' is a subterm already then 'a' will be one.

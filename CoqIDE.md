@@ -1,1 +1,1 @@
-#REDIRECT CoqIde
+\#REDIRECT CoqIde

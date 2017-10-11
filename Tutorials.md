@@ -1,1 +1,1 @@
-#redirect CoqNewbie
+\#redirect CoqNewbie

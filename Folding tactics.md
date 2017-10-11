@@ -1,7 +1,5 @@
 These tactic definitions can be used to fold multiple instances of negations:
 
-::
-
     Tactic Notation "fold" "any" "not" :=
       repeat (
         match goal with
@@ -34,8 +32,6 @@ These tactic definitions can be used to fold multiple instances of negations:
 
 Similarly, these tactics can be uses to fold logical equivalences:
 
-::
-
     Tactic Notation "fold" "any" "iff" :=
       repeat (
         match goal with
@@ -65,4 +61,3 @@ Similarly, these tactics can be uses to fold logical equivalences:
 
     Tactic Notation "fold" "any" "iff" "in" "*" "|-" "*" :=
       fold any iff in *.
-

@@ -1,6 +1,1 @@
-`Moved here`_.
-
-.. ############################################################################
-
-.. _Moved here: https://coq.inria.fr/cocorico/CoqImplementorsWorkshop/CoqIW2016
-
+[Moved here](https://coq.inria.fr/cocorico/CoqImplementorsWorkshop/CoqIW2016).
