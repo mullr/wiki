@@ -1,4 +1,6 @@
-#pragma section-numbers off
-#language en
+* `Module System of Coq`_
 
- * [[ModuleSystem|Module System of Coq]]
+.. ############################################################################
+
+.. _Module System of Coq: ../ModuleSystem
+
