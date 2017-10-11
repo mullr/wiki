@@ -1,22 +1,26 @@
 ## Please edit system and help pages ONLY in the moinmaster wiki! For more
 ## information, please see MoinMaster:MoinPagesEditorGroup.
-##master-page:Unknown-Page
-##master-date:Unknown-Date
+## master-page:Unknown-Page
+## master-date:Unknown-Date
 #acl MoinPagesEditorGroup:read,write,delete,revert All:read
-#format wiki
-#language en
 
-||<tablestyle="width: 100%; background: #E6EAF0; font-size: 0.85em;"> ||
+<strong class="highlight">.. raw:: html
 
-<<RecentChanges>>
+</strong>[Table not converted]
 
-##last, but not least, a randomly chosen page: [[RandomPage(1)]]
+`[[RecentChanges]]`_
 
-||<:> <<Icon(diffrc)>> || marks older pages that have at least one backup version stored (click for an author diff)||
-||<:> <<Icon(updated)>> || marks pages edited since you set your bookmark (click for a bookmark diff)||
-||<:> <<Icon(new)>> || marks pages created since you set your bookmark, and were not edited after creation||
-||<:> <<Icon(deleted)>> || marks page deletions||
-||<:> /!\ || An editing conflict happened, please resolve it by merging both versions of the problematic paragraphs together. ||
-----
-This page contains a list of recent changes in this wiki.
-More system information on SystemInfo.
+.. last, but not least, a randomly chosen page: [[RandomPage(1)]]
+
+<strong class="highlight">.. raw:: html
+
+</strong>[Table not converted]
+
+-------------------------
+
+ This page contains a list of recent changes in this wiki. More system information on SystemInfo_.
+
+.. ############################################################################
+
+.. _SystemInfo: ../SystemInfo
+
