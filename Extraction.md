@@ -1,104 +1,125 @@
-= Resources about Extraction =
+Resources about Extraction
+==========================
 
- * Pierre Letouzey's PhD : [[https://www.irif.univ-paris-diderot.fr/~letouzey/download/these_letouzey_English.pdf|English]] or [[https://www.irif.univ-paris-diderot.fr/~letouzey/download/these_letouzey.pdf|French]].
+* Pierre Letouzey's PhD : English_ or French_.
 
- * [[AUGER_ExtractionTuto]]
+* AUGER_ExtractionTuto_
 
- * [[ZInterfacePackage|Z_interface]] An approach for deriving directly standalone programs from extracted code.
+* Z_interface_ An approach for deriving directly standalone programs from extracted code.
 
- * [[ExtractionNameTricks]] : some explanations about how names are generated in extracted code
+* ExtractionNameTricks_ : some explanations about how names are generated in extracted code
 
- * [[CoqImplementorsWorkshop/CoqIW2016]] : talk by Pierre L. about extraction
+* `CoqImplementorsWorkshop/CoqIW2016`_ : talk by Pierre L. about extraction
 
-= Tips about Extraction =
+Tips about Extraction
+=====================
 
- * Check the manual pages!
+* Check the manual pages!
 
- * Use the "{{{Extraction (Inlined) Constant}}}" directive for commonly used types (List, String, Ascii, int); it is less reliable than not using it (since you use some axioms, but it improves performances and readability)
+* Use the "``Extraction (Inlined) Constant``" directive for commonly used types (List, String, Ascii, int); it is less reliable than not using it (since you use some axioms, but it improves performances and readability)
 
- * Check from time to time, that you don't generate some functions of module Obj (for the Ocaml extraction) or unsafeCoerce (for Haskell), if so you may consider rewritting your functions not to contain them (don't worry all with work also with these, but the code won't be as pleasant). For an example, run:
-{{{#!coq
+* Check from time to time, that you don't generate some functions of module Obj (for the Ocaml extraction) or unsafeCoerce (for Haskell), if so you may consider rewritting your functions not to contain them (don't worry all with work also with these, but the code won't be as pleasant). For an example, run:
 
-Fixpoint f n :=
- match n with
- | O => nat
- | S n => nat -> (f n)
- end.
+::
 
-Definition sigma: forall n, f n.
- intro n; induction n; simpl.
-  exact O.
- intro m.
- destruct n; simpl in *.
-  exact m.
- intro o.
- apply IHn.
- exact (m+o).
-Defined.
+   Fixpoint f n :=
+    match n with
+    | O => nat
+    | S n => nat -> (f n)
+    end.
+   Definition sigma: forall n, f n.
+    intro n; induction n; simpl.
+     exact O.
+    intro m.
+    destruct n; simpl in *.
+     exact m.
+    intro o.
+    apply IHn.
+    exact (m+o).
+   Defined.
+   (*Extraction Language Haskell.*)
+   Recursive Extraction sigma.
 
-(*Extraction Language Haskell.*)
-Recursive Extraction sigma.
-}}}
-   In this example using a list of integers and a folding function would not have generated such a thing!
+  In this example using a list of integers and a folding function would not have generated such a thing!
 
- * Try to follow the conventions of the language (having a "type t = Coq_a | Coq_b" is not as pleasant as having a "type t = A | B", so declare "Inductive t: Type := A | B." and not "Inductive t: Type := a | b."); not that as non-informative content won't be extracted, you can use lower case for "Inductive t: Prop := a | b." and it won't mess with the code.
+* Try to follow the conventions of the language (having a "type t = Coq_a | Coq_b" is not as pleasant as having a "type t = A | B", so declare "Inductive t: Type := A | B." and not "Inductive t: Type := a | b."); not that as non-informative content won't be extracted, you can use lower case for "Inductive t: Prop := a | b." and it won't mess with the code.
 
- * To avoid [type]_ind, [type]_rec and [type]_rect generation for non recursive types (for instance for pairs) you may consider using coinductives.
-   In Haskell, it will behave as you want (it is a lazy language after all) but for OCaml, your code will be polluted with the use of Lazy module.
-   A better alternative is to use the following command:
-{{{#!coq
-Unset Elimination Scheme.
-}}}
- * Avoid use of multiple modules with extraction to Haskell, as there will be only one big module containing all.
+* To avoid [type]_ind, [type]_rec and [type]_rect generation for non recursive types (for instance for pairs) you may consider using coinductives.
+
+    In Haskell, it will behave as you want (it is a lazy language after all) but for OCaml, your code will be polluted with the use of Lazy module. A better alternative is to use the following command:
+
+::
+
+   Unset Elimination Scheme.
+
+* Avoid use of multiple modules with extraction to Haskell, as there will be only one big module containing all.
 
 A good workbench for the last two points is:
-{{{#!coq
-Module M.
- Module N.
-  CoInductive pair1_type (a b: Type) :=
-  | Pair1: a -> b -> pair1_type a b.
-  Definition fst1 (a b: Type) (p: pair1_type a b) := let (x, _) := p in x.
-  Definition snd1 (a b: Type) (p: pair1_type a b) := let (_, x) := p in x.
- End N.
- Module O.
-  Inductive pair2_type (a b: Type) :=
-  | Pair2: a -> b -> pair2_type a b.
-  Definition fst2 (a b: Type) (p: pair2_type a b) := let (x, _) := p in x.
-  Definition snd2 (a b: Type) (p: pair2_type a b) := let (_, x) := p in x.
- End O.
-End M.
 
-(*Extraction Language Haskell.*)
-Recursive Extraction M.
-}}}
- * As far as possible, avoid using higher order functions which contains some specification
-   for functions meant to be used by some program
-{{{#!coq
-Definition succ_o_f {A: Type} (f: A->{n|1<=n}): A->{n|2<=n}.
-intros.
-destruct (f X).
-exists (S x).
-induction l.
-left.
-right.
-exact IHl.
-Defined.
-Extraction succ_o_f.
-}}}
-   does what you expect, but nothing is done to ensure that the {{{f}}} parameter effectively produces
-   a value which is strictly greater than {{{1}}}.
-   If this was your ultimate goal, then you need some extra care to check that {{{f}}} produces correct
-   values (and tell to do so to the developper; note that no such warning is generated by extraction).
-   If it is not, but that hypothesis is necessary in later functions, you may get an "assert false" triggered
-   later (which is legitime), but not at the place you would have wished.
+::
 
- * The following definition:
-{{{#!coq
-Record unit2 (P: Prop) := { compute: unit; spec: P }.
-}}}
-   can help to get rid of the {{{__}}} in the generated code.
+   Module M.
+    Module N.
+     CoInductive pair1_type (a b: Type) :=
+     | Pair1: a -> b -> pair1_type a b.
+     Definition fst1 (a b: Type) (p: pair1_type a b) := let (x, _) := p in x.
+     Definition snd1 (a b: Type) (p: pair1_type a b) := let (_, x) := p in x.
+    End N.
+    Module O.
+     Inductive pair2_type (a b: Type) :=
+     | Pair2: a -> b -> pair2_type a b.
+     Definition fst2 (a b: Type) (p: pair2_type a b) := let (x, _) := p in x.
+     Definition snd2 (a b: Type) (p: pair2_type a b) := let (_, x) := p in x.
+    End O.
+   End M.
+   (*Extraction Language Haskell.*)
+   Recursive Extraction M.
 
- * You can take a look at [[AUGER_ExtractionTuto|this page]] for a short tutorial (or rather some kind of documented sandbox) on extraction;
-   but it is kind of OCaml oriented tutorial.
+* As far as possible, avoid using higher order functions which contains some specification
 
- * Contributors are invited to put their own advice here
+    for functions meant to be used by some program
+
+::
+
+   Definition succ_o_f {A: Type} (f: A->{n|1<=n}): A->{n|2<=n}.
+   intros.
+   destruct (f X).
+   exists (S x).
+   induction l.
+   left.
+   right.
+   exact IHl.
+   Defined.
+   Extraction succ_o_f.
+
+  does what you expect, but nothing is done to ensure that the ``f`` parameter effectively produces a value which is strictly greater than ``1``. If this was your ultimate goal, then you need some extra care to check that ``f`` produces correct values (and tell to do so to the developper; note that no such warning is generated by extraction). If it is not, but that hypothesis is necessary in later functions, you may get an "assert false" triggered later (which is legitime), but not at the place you would have wished.
+
+* The following definition:
+
+::
+
+   Record unit2 (P: Prop) := { compute: unit; spec: P }.
+
+  can help to get rid of the ``__`` in the generated code.
+
+* You can take a look at `this page`_ for a short tutorial (or rather some kind of documented sandbox) on extraction;
+
+    but it is kind of OCaml oriented tutorial.
+
+* Contributors are invited to put their own advice here
+
+.. ############################################################################
+
+.. _English: https://www.irif.univ-paris-diderot.fr/~letouzey/download/these_letouzey_English.pdf
+
+.. _French: https://www.irif.univ-paris-diderot.fr/~letouzey/download/these_letouzey.pdf
+
+.. _AUGER_ExtractionTuto:
+.. _this page: ../AUGER_ExtractionTuto
+
+.. _Z_interface: ../ZInterfacePackage
+
+.. _ExtractionNameTricks: ../ExtractionNameTricks
+
+.. _CoqImplementorsWorkshop/CoqIW2016: ../CoqImplementorsWorkshop/CoqIW2016
+
