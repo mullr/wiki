@@ -1,16 +1,35 @@
-##master-page:HomepageTemplate
-#format wiki
-#language en
-== @``ME@ ==
+## master-page:HomepageTemplate
 
-Email: <<MailTo(dschepler AT SPAMFREE gmail DOT com)>>
-## You can even more obfuscate your email address by adding more uppercase letters followed by a leading and trailing blank.
+@``ME@
+------
 
- * IteratedFiniteTypes
- * NonInductiveProps
- * ArbitraryArity
- * EqualityFreeInversion
- * ArithmeticExpressionParser
+Email: `[[MailTo(dschepler AT SPAMFREE gmail DOT com)]]`_.. You can even more obfuscate your email address by adding more uppercase letters followed by a leading and trailing blank.
 
-----
-CategoryHomepage
+* IteratedFiniteTypes_
+
+* NonInductiveProps_
+
+* ArbitraryArity_
+
+* EqualityFreeInversion_
+
+* ArithmeticExpressionParser_
+
+-------------------------
+
+ CategoryHomepage_
+
+.. ############################################################################
+
+.. _IteratedFiniteTypes: ../IteratedFiniteTypes
+
+.. _NonInductiveProps: ../NonInductiveProps
+
+.. _ArbitraryArity: ../ArbitraryArity
+
+.. _EqualityFreeInversion: ../EqualityFreeInversion
+
+.. _ArithmeticExpressionParser: ../ArithmeticExpressionParser
+
+.. _CategoryHomepage: ../CategoryHomepage
+
