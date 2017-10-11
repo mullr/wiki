@@ -1,13 +1,19 @@
-##master-page:HomepageTemplate
-#format wiki
-#language en
-== @``ME@ ==
+## master-page:HomepageTemplate
 
-Email: <<MailTo(jherold@cs.ru.nl)>>
-## You can even more obfuscate your email address by adding more uppercase letters followed by a leading and trailing blank.
+@``ME@
+------
 
-I'm a researcher working on the ForMath project, see
-http://www.cs.ru.nl/~jherold/
+Email: `[[MailTo(jherold@cs.ru.nl)]]`_.. You can even more obfuscate your email address by adding more uppercase letters followed by a leading and trailing blank.
 
-----
-CategoryHomepage
+I'm a researcher working on the ForMath_ project, see http://www.cs.ru.nl/~jherold/
+
+-------------------------
+
+ CategoryHomepage_
+
+.. ############################################################################
+
+.. _ForMath: ../ForMath
+
+.. _CategoryHomepage: ../CategoryHomepage
+
