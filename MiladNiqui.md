@@ -1,8 +1,17 @@
-##master-page:HomepageTemplate
-#format wiki
-== Milad Niqui ==
+## master-page:HomepageTemplate
 
-[[http://www.cs.ru.nl/~milad|Milad Niqui]]
+Milad Niqui
+-----------
 
-----
-CategoryHomepage
+`Milad Niqui`_
+
+-------------------------
+
+ CategoryHomepage_
+
+.. ############################################################################
+
+.. _Milad Niqui: http://www.cs.ru.nl/~milad
+
+.. _CategoryHomepage: ../CategoryHomepage
+
