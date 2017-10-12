@@ -3,9 +3,9 @@ Resources about Extraction
 
 -   Pierre Letouzey's PhD : [English](https://www.irif.univ-paris-diderot.fr/~letouzey/download/these_letouzey_English.pdf) or [French](https://www.irif.univ-paris-diderot.fr/~letouzey/download/these_letouzey.pdf).
 -   [AUGER\_ExtractionTuto](..%20_this%20page:%20../AUGER_ExtractionTuto)
--   [Z\_interface](../ZInterfacePackage) An approach for deriving directly standalone programs from extracted code.
--   [ExtractionNameTricks](../ExtractionNameTricks) : some explanations about how names are generated in extracted code
--   [CoqImplementorsWorkshop/CoqIW2016](../CoqImplementorsWorkshop/CoqIW2016) : talk by Pierre L. about extraction
+-   [Z\_interface](ZInterfacePackage) An approach for deriving directly standalone programs from extracted code.
+-   [ExtractionNameTricks](ExtractionNameTricks) : some explanations about how names are generated in extracted code
+-   [CoqImplementorsWorkshop/CoqIW2016](CoqImplementorsWorkshop/CoqIW2016) : talk by Pierre L. about extraction
 
 Tips about Extraction
 =====================

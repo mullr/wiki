@@ -1,4 +1,4 @@
-This development requires that the K\_dec\_set theory be [extended to work on predicates going to Type](../Eqdep_dec_Type).
+This development requires that the K\_dec\_set theory be [extended to work on predicates going to Type](Eqdep_dec_Type).
 
     Require Import Image.
     Require Import List.

@@ -3,11 +3,11 @@ A Tutorial on Using Modules
 
 Coq's module system can be used parameterise proofs over structures. For instance rather than writing `min` and `max` functions, lemma and tactics for `nat`, `Z`, `Q`, etc., we can write the proofs once for an abstract decidable total order and then instanciate these functions, lemmas and tactics for each structure.
 
-This tutorial uses unicode characters and hence requires the [UTF8Module](../UTF8Module).
+This tutorial uses unicode characters and hence requires the [UTF8Module](UTF8Module).
 
     Require Import utf8.
 
-The first step is to write a `Module Type` in a file that contains the signature of the abstract structure to work from. This will be the signature of a decidable total order. A `Module Type` is just a listing of `Parameter`s and `Axiom`s. In this case we also add a [Notation](../Notation) to make the syntax nicer.
+The first step is to write a `Module Type` in a file that contains the signature of the abstract structure to work from. This will be the signature of a decidable total order. A `Module Type` is just a listing of `Parameter`s and `Axiom`s. In this case we also add a [Notation](Notation) to make the syntax nicer.
 
     (* File: DecidableOrder.v
      * Part 1
@@ -24,7 +24,7 @@ The first step is to write a `Module Type` in a file that contains the signature
     Parameter le_dec : ∀ x y, {x ≤ y} +{¬ x ≤ y}.
     End Sig.
 
-Now we can write a module functor. A module functor is a `Module` that takes one or more `Module`s of some `Module Type`s as parameters. For example we can create a `Module` that defines a `min` function and lemmas for any `Module` that has the above `Module Type` signature. The first thing we do is import the `Module` parameter in order to have access to its parameters without having to use the [DotNotation](../DotNotation). Notice that we also get access to the [Notation](../Notation) defined in the `Module Type`.
+Now we can write a module functor. A module functor is a `Module` that takes one or more `Module`s of some `Module Type`s as parameters. For example we can create a `Module` that defines a `min` function and lemmas for any `Module` that has the above `Module Type` signature. The first thing we do is import the `Module` parameter in order to have access to its parameters without having to use the [DotNotation](DotNotation). Notice that we also get access to the [Notation](Notation) defined in the `Module Type`.
 
     (* File: DecidableOrder.v
      * Part 2

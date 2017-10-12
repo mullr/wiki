@@ -76,4 +76,4 @@ Install either [Dejavu Sans](http://dejavu-fonts.org/wiki/Main_Page) or [GNU Fre
 
 Enjoy!
 
-[Installation of Coq](../Installation%20of%20Coq)
+[Installation of Coq](Installation%20of%20Coq)

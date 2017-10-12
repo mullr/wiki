@@ -87,7 +87,7 @@ bigger smaller
 Linking
 =======
 
-[HelpOnEditing](..%20_internal%20link:%20../HelpOnEditing) [InterWiki](../wiki:MoinMoin:InterWiki)
+[HelpOnEditing](..%20_internal%20link:%20../HelpOnEditing) [InterWiki](wiki:MoinMoin:InterWiki)
 
 <http://moinmoin.wikiwikiweb.de/> [Python](http://www.python.org/)
 

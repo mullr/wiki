@@ -3,22 +3,22 @@ Frequently Asked Questions About Coq
 
 Many questions are answered in the official [Coq FAQ](http://coq.inria.fr/V8.1/faq.html) that is maintained by the Coq team.
 
-1.  Should I put my type in [Prop\_or\_Set](../Prop_or_Set)?
-2.  How does the [MatchAsInReturn](../MatchAsInReturn) syntax work?
-3.  Why can't I prove (forall x, f x = g x) -&gt; f = g? (see [extensional\_equality](../extensional_equality))
-4.  Isn't [IntensionalEquality](../IntensionalEquality) useless?
-5.  How do I get [DependentInversion](../DependentInversion) to work in my case?
-6.  Why not [WTypeInsteadOfInductiveTypes](../WTypeInsteadOfInductiveTypes)?
-7.  Do [False, eq, and Acc](../FalseEqAcc) have a special status?
+1.  Should I put my type in [Prop\_or\_Set](Prop_or_Set)?
+2.  How does the [MatchAsInReturn](MatchAsInReturn) syntax work?
+3.  Why can't I prove (forall x, f x = g x) -&gt; f = g? (see [extensional\_equality](extensional_equality))
+4.  Isn't [IntensionalEquality](IntensionalEquality) useless?
+5.  How do I get [DependentInversion](DependentInversion) to work in my case?
+6.  Why not [WTypeInsteadOfInductiveTypes](WTypeInsteadOfInductiveTypes)?
+7.  Do [False, eq, and Acc](FalseEqAcc) have a special status?
 8.  What is the logical strength of Coq? Can it prove the consistency of ZF or ZFC?
-9.  Do objects living in `Prop` ever need to be evaluated? See [PropsGuardingIotaReduction](../PropsGuardingIotaReduction).
-10. When using `eapply`, how can I instantiate the question marks i.e. the [ExistentialVariablesInEapply](../ExistentialVariablesInEapply)?
-11. What is the difference between [Require\_Import\_and\_Require\_Export](../Require_Import_and_Require_Export)?
-12. How can I get Coq to [always print universes](../PrintingUniverses)?
-13. How to define a [Haskell-like notation for list comprehension](../ListComprehensionNotation)?
+9.  Do objects living in `Prop` ever need to be evaluated? See [PropsGuardingIotaReduction](PropsGuardingIotaReduction).
+10. When using `eapply`, how can I instantiate the question marks i.e. the [ExistentialVariablesInEapply](ExistentialVariablesInEapply)?
+11. What is the difference between [Require\_Import\_and\_Require\_Export](Require_Import_and_Require_Export)?
+12. How can I get Coq to [always print universes](PrintingUniverses)?
+13. How to define a [Haskell-like notation for list comprehension](ListComprehensionNotation)?
 
 Coqide
 ------
 
-1.  [CoqIDE\_crashes\_under\_KDE](../CoqIDE_crashes_under_KDE) (Kubuntu) when I open a query window.
+1.  [CoqIDE\_crashes\_under\_KDE](CoqIDE_crashes_under_KDE) (Kubuntu) when I open a query window.
 

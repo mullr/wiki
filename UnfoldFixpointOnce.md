@@ -1,4 +1,4 @@
-This tactic unfolds a fixpoint once. See [evar\_match](../evar_match) for a more basic example of tactic written in OCaml, and instructions on how to compile it.
+This tactic unfolds a fixpoint once. See [evar\_match](evar_match) for a more basic example of tactic written in OCaml, and instructions on how to compile it.
 
     (*i camlp4deps: "parsing/grammar.cma" i*)
     (*i camlp4use: "pa_extend.cmo" i*)

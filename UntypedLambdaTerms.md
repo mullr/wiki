@@ -105,7 +105,7 @@ Properties
 Non-uniform Generalized de Bruijn Indices
 =========================================
 
-This definition does not work because the occurence of `Term` inside `(Maybe (Term A))` doesn't meet Coq's [PositivityRequirement](../PositivityRequirement). And even if it did `(Term (Maybe (Term A)))` would probably require [ImpredicativeSet](../ImpredicativeSet).
+This definition does not work because the occurence of `Term` inside `(Maybe (Term A))` doesn't meet Coq's [PositivityRequirement](PositivityRequirement). And even if it did `(Term (Maybe (Term A)))` would probably require [ImpredicativeSet](ImpredicativeSet).
 
     Module NonUniform_Generalized_De_Bruijn.
     (* THIS DOESN'T WORK
@@ -119,7 +119,7 @@ This definition does not work because the occurence of `Term` inside `(Maybe (Te
 Dependent Generalized de Bruijn Indices
 =======================================
 
-This is also known as the adbmal calculus. See [DimitriHendriks](../DimitriHendriks).
+This is also known as the adbmal calculus. See [DimitriHendriks](DimitriHendriks).
 
 Properties
 ----------

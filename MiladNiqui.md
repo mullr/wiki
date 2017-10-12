@@ -7,4 +7,4 @@ Milad Niqui
 
 ------------------------------------------------------------------------
 
-> [CategoryHomepage](../CategoryHomepage)
+> [CategoryHomepage](CategoryHomepage)

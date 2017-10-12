@@ -14,4 +14,4 @@ The idea is to put all ring expressions occuring in the goal into normal form. T
 ringreplace
 ===========
 
-Instead of this tactic, you can now do `replace a with b by ring` in Coq. Unfortuately this doesn't work for `setoid_replace`.See also [TacticExts\#LHS](../TacticExts#LHS) for using replace with `LHS` and `RHS`.
+Instead of this tactic, you can now do `replace a with b by ring` in Coq. Unfortuately this doesn't work for `setoid_replace`.See also [TacticExts\#LHS](TacticExts#LHS) for using replace with `LHS` and `RHS`.

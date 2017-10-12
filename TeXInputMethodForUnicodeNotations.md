@@ -37,4 +37,4 @@ Many thanks to Vincent Gross for making this input method available.
 Alternative input methods
 =========================
 
-See [XCompose and notations](../XComposeAndNotations) for using the XCompose method (XIM) under X-windows.
+See [XCompose and notations](XComposeAndNotations) for using the XCompose method (XIM) under X-windows.

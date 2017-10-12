@@ -17,7 +17,7 @@ Reusing Theory without Modules
 
 It is possible to reuse the universal theory of groups and apply it to finite groups without using modules. But the result is tedious and difficult to update.
 
-One can define [FiniteGroups](../FiniteGroups) and Groups in many different ways. Let us assume for sake of argument that Groups are implemented using Setoid equality, while [FiniteGroups](../FiniteGroups) are implemented using Leibniz equality. In any case, every finite group is a group, so there will be some function (probably a coercion) from [FiniteGroup](../FiniteGroup) to Group.
+One can define [FiniteGroups](FiniteGroups) and Groups in many different ways. Let us assume for sake of argument that Groups are implemented using Setoid equality, while [FiniteGroups](FiniteGroups) are implemented using Leibniz equality. In any case, every finite group is a group, so there will be some function (probably a coercion) from [FiniteGroup](FiniteGroup) to Group.
 
     Coercion FiniteGroupisGroup : FiniteGroup >-> Group.
 
@@ -28,7 +28,7 @@ To reuse the `cancel_left` for finite groups requires restating the theorem and 
 
 It is necessary to repeat this process for **every theorem** in the universal theory of groups. This could be a huge number of theorems. Furthermore, every time someone adds to the universal theory of groups, it must be added to every theory that uses it.
 
-One cannot omit this process and use left\_cancel\_law directly because Groups use setoid equality while [FiniteGroups](../FiniteGroups) use Leibniz equality. This means in the context
+One cannot omit this process and use left\_cancel\_law directly because Groups use setoid equality while [FiniteGroups](FiniteGroups) use Leibniz equality. This means in the context
 
     G : FiniteGroup
     a b c : G

@@ -12,4 +12,4 @@
 
 ------------------------------------------------------------------------
 
-> This page contains a list of recent changes in this wiki. More system information on [SystemInfo](../SystemInfo).
+> This page contains a list of recent changes in this wiki. More system information on [SystemInfo](SystemInfo).

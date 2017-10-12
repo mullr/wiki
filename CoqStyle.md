@@ -4,7 +4,7 @@ Here we will present ideas of what constitutes a well written Coq source file. W
 
 This is intended to be a collection of suggestions for good style and good practice, acknowledging that usually more than one way is possible.
 
-For the discussion of issues related to the content of specific formalisations and general (type theoretic) tips and traps to avoid please use [TipsAndTricks](../TipsAndTricks).
+For the discussion of issues related to the content of specific formalisations and general (type theoretic) tips and traps to avoid please use [TipsAndTricks](TipsAndTricks).
 
 File Structure
 ==============

@@ -13,7 +13,7 @@ Coq has been taught more deeply in the context of the second-year-of-master-leve
 Other experiences in France
 ---------------------------
 
-Loïc Pottier and Laurent Théry used Coq (and the graphical interface [CtCoq](../CtCoq)) in a class on *Proofs of Algorithms* (at least in 1998 and 1999).
+Loïc Pottier and Laurent Théry used Coq (and the graphical interface [CtCoq](CtCoq)) in a class on *Proofs of Algorithms* (at least in 1998 and 1999).
 
 Experiences were made at the first year of the Master level at ENS Lyon by Yves Bertot (from 2002). This class id now taught by Jean Duprat.
 

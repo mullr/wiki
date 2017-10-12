@@ -9,7 +9,7 @@ Math Classes
 -   Numbers: NN, ZZ, QQ, ...
 -   Operations, ...
 
-It's heavily based on Coq's new [TypeClasses](../TypeClasses) in order to archieve:
+It's heavily based on Coq's new [TypeClasses](TypeClasses) in order to archieve:
 
 -   elegant and mathematically sound abstract interfaces for algebraic and numeric structures up to and including rationals (with practical use of universal algebra and category theory);
 -   a very flexible purely predicate-based representation of algebraic structures that makes sharing, multiple inheritance, and derived inheritance, all trivial;

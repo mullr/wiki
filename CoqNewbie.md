@@ -10,10 +10,10 @@ Well, thinking in Coq is not hard. It just requires some time to learn syntax an
 
 But some questions are always interesting for any newbie:
 
-[ComparisonWithOtherSystems](../ComparisonWithOtherSystems)
+[ComparisonWithOtherSystems](ComparisonWithOtherSystems)
 
 If you are searching some little task to contribute, you might want to look at
 
-[ProjectIdeas](../ProjectIdeas)
+[ProjectIdeas](ProjectIdeas)
 
-Novice coq users can submit questions to [CoqNewbieQuestions](../CoqNewbieQuestions).
+Novice coq users can submit questions to [CoqNewbieQuestions](CoqNewbieQuestions).

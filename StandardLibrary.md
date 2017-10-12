@@ -1,6 +1,6 @@
 [The Coq Standard Library](http://coq.inria.fr/library-eng.html)
 
-[ReflectionOnStandardLibrary](../ReflectionOnStandardLibrary) mostly discusses organizational aspects
+[ReflectionOnStandardLibrary](ReflectionOnStandardLibrary) mostly discusses organizational aspects
 
 Reworking the Standard Library
 ==============================
@@ -10,12 +10,12 @@ Discussion on what users would like to see in a standard library.
 Finite Types
 ------------
 
-Finite Types should be part of the Standard Library. Either [InductiveFiniteTypes](../InductiveFiniteTypes) or [FixpointFiniteTypes](../FixpointFiniteTypes) would be reasonable candidates for inclusion in the standard library.
+Finite Types should be part of the Standard Library. Either [InductiveFiniteTypes](InductiveFiniteTypes) or [FixpointFiniteTypes](FixpointFiniteTypes) would be reasonable candidates for inclusion in the standard library.
 
 Extensional Equality
 --------------------
 
-There should be a library for [extensional\_equality](../extensional_equality) for functions.
+There should be a library for [extensional\_equality](extensional_equality) for functions.
 
 > The axiom of functional extensionality is declared in `Coq.Program.FunctionalExtensionality` (Coq SVN):
 >
@@ -70,7 +70,7 @@ More specifically for decidable total orders I am thinking of module with `compa
     (* ... *)
     Coercion Is_true : bool >-> Sortclass
 
-This process uses [SmallScaleReflection](../SmallScaleReflection) advocated by [GeorgesGonthier](../GeorgesGonthier), i.e. coercing bools to propositions and treating them as equivalent when working on a decidable domain.
+This process uses [SmallScaleReflection](SmallScaleReflection) advocated by [GeorgesGonthier](GeorgesGonthier), i.e. coercing bools to propositions and treating them as equivalent when working on a decidable domain.
 
 ### Is\_true vs (true=)
 
@@ -139,7 +139,7 @@ Organization
 
 Easy-to-contribute library is much better. Although we should keep library clean and strict we should allow user to contribute in even small part. Nobody will write thousands lines of code before contribution. If every ten lines can be submitted, then we'll have much more active and wide community.
 
-There should be clean list of common problems defined in both existing and to-be-written code. One should be able to easily find the problem and solve it. (See [ProjectIdeas](../ProjectIdeas)?)
+There should be clean list of common problems defined in both existing and to-be-written code. One should be able to easily find the problem and solve it. (See [ProjectIdeas](ProjectIdeas)?)
 
 ------------------------------------------------------------------------
 

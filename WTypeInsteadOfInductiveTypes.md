@@ -1,7 +1,7 @@
 W-Type
 ======
 
-A W-type or well-ordered set constructor is introduced in [Martin-LöfTypeTheory](../Martin-LöfTypeTheory) to construct well-ordered sets. It can be used to construct many (all predicative?) inductive types of Coq.
+A W-type or well-ordered set constructor is introduced in [Martin-LöfTypeTheory](Martin-LöfTypeTheory) to construct well-ordered sets. It can be used to construct many (all predicative?) inductive types of Coq.
 
 General form
 ------------
@@ -14,19 +14,19 @@ If A is a type and B is a type dependent on A (of course this may all be in a co
 
 Note that the root of the tree is a node like any other, and the leaves are those nodes labelled by an x: A such that B\[x\] is empty.
 
-For example, to define the [NaturalNumbers](../NaturalNumbers), A has two elements (call them z and s), B\[z\] is empty, and B\[s\] has one element. The tree corresponding to the natural number n consists of n nodes labelled by s (the first of these the root), one after another, ending in one more node (a leaf) labelled by z. (If the number is zero, then the root is the leaf.) Branching is trivial, since every B\[x\] has at most one element; the tree must stop sometime, by well-foundedness.
+For example, to define the [NaturalNumbers](NaturalNumbers), A has two elements (call them z and s), B\[z\] is empty, and B\[s\] has one element. The tree corresponding to the natural number n consists of n nodes labelled by s (the first of these the root), one after another, ending in one more node (a leaf) labelled by z. (If the number is zero, then the root is the leaf.) Branching is trivial, since every B\[x\] has at most one element; the tree must stop sometime, by well-foundedness.
 
-For an example of implementation, see [WtypesInCoq](../WtypesInCoq).
+For an example of implementation, see [WtypesInCoq](WtypesInCoq).
 
-Note that a calculus founded on inductive types will still need to stick in some basic type constructions by hand: an empty type, binary sums, and dependent sums. (Also dependent products, but even the [CalculusOfInductiveConstructions](../CalculusOfInductiveConstructions) has to do that.) Often, followers of Martin-Löf will put in some other basic types by hand (usually N and the non-empty finite types), but these are not strictly necessary.
+Note that a calculus founded on inductive types will still need to stick in some basic type constructions by hand: an empty type, binary sums, and dependent sums. (Also dependent products, but even the [CalculusOfInductiveConstructions](CalculusOfInductiveConstructions) has to do that.) Often, followers of Martin-Löf will put in some other basic types by hand (usually N and the non-empty finite types), but these are not strictly necessary.
 
 W-types vs. Inductive types
 ---------------------------
 
 There some problems with using the W-type constructor instead of the inductive types of Coq:
 
-1.  The elimination rule for inductive types can't be proved using intensional equality. For example, if you define the set of natural numbers as a W-type then you will need [extensional\_equality](../extensional_equality) to obtain nat\_elim. This is because one cannot prove that there is only a unique function from the empty set to the set of natural numbers without using extensional equality.
-2.  It is difficult to encode complicated inductive types (e.g. mutual inductive families) as W-types. You can use the [GeneralTreeConstructor](../GeneralTreeConstructor) to get over some of this difficulty, but still defining inductive types directly using their constructors (as it is done in Coq) is much easier in practice for programming.
+1.  The elimination rule for inductive types can't be proved using intensional equality. For example, if you define the set of natural numbers as a W-type then you will need [extensional\_equality](extensional_equality) to obtain nat\_elim. This is because one cannot prove that there is only a unique function from the empty set to the set of natural numbers without using extensional equality.
+2.  It is difficult to encode complicated inductive types (e.g. mutual inductive families) as W-types. You can use the [GeneralTreeConstructor](GeneralTreeConstructor) to get over some of this difficulty, but still defining inductive types directly using their constructors (as it is done in Coq) is much easier in practice for programming.
 3.  You want to be able to define impredicative inductive types (at least in Prop).
 
 On the other hand, basing a proof assistant on W-types has its own advantages:

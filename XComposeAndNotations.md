@@ -79,4 +79,4 @@ for instance:
 
 Finally restart your X server, and all should work.
 
-See [this file for an example](../XCompose_symbols).
+See [this file for an example](XCompose_symbols).

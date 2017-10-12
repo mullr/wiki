@@ -74,18 +74,18 @@ We aim most ideas to be co-mentored, so feel free to participate in an existing 
 -   **Support for developing an IDE based on Coq Syntax ASTs**:
 -   **Requisites**: Ocaml: *High*, Coq: *Medium* Python: *Medium*
 -   **Difficulty**: Medium
--   **Mentor**: Kenneth Roe + Enrico Tassi \* **Comments by EG**: Note that a sensible plan here could be to use automatic serialization of the Coq internal structures using ocaml PPX. Note that in particular JSON/SEXP serialization works well and a proof of concept has been implemented for [JsCoq](../JsCoq), see the thread titled *Printing-only notations (was Re: Printing in fully parenthesized Polish prefix notation)* in coqev. Unfortunately the ppx support for json serialization seems to work not so well these days, and doing is manually is IMO just not going to work due to the size and complexity of the structures.
+-   **Mentor**: Kenneth Roe + Enrico Tassi \* **Comments by EG**: Note that a sensible plan here could be to use automatic serialization of the Coq internal structures using ocaml PPX. Note that in particular JSON/SEXP serialization works well and a proof of concept has been implemented for [JsCoq](JsCoq), see the thread titled *Printing-only notations (was Re: Printing in fully parenthesized Polish prefix notation)* in coqev. Unfortunately the ppx support for json serialization seems to work not so well these days, and doing is manually is IMO just not going to work due to the size and complexity of the structures.
 
 ### Improve CoqDoc support for JsCoq
 
--   **Description**: A branch of [CoqDoc](https://github.com/coq/coq/pull/133) has now support for outputting [JsCoq](../JsCoq) documents. However coqdoc lacks support for many useful constructs to build lessons with [CoqDoc](../CoqDoc) like a "click here to eval"/"click here to view the type, automatic "go to this point", "solve this exercise" etc... commands. The goal of the student would be, starting from the current coqdoc branch to build and extend [CoqDoc](../CoqDoc) to support a nice interactive introduction to Coq.
+-   **Description**: A branch of [CoqDoc](https://github.com/coq/coq/pull/133) has now support for outputting [JsCoq](JsCoq) documents. However coqdoc lacks support for many useful constructs to build lessons with [CoqDoc](CoqDoc) like a "click here to eval"/"click here to view the type, automatic "go to this point", "solve this exercise" etc... commands. The goal of the student would be, starting from the current coqdoc branch to build and extend [CoqDoc](CoqDoc) to support a nice interactive introduction to Coq.
 -   **Requisites**: Ocaml: *Medium*, Coq: *Medium/Low*, Js/HTML: *Medium/High*
 -   **Difficulty**: Medium
 -   **Mentor**: Emilio J. Gallego
 
 ### Extraction to Javascript
 
--   **Description**: Extend Coq's extraction plugin so it can output javascript. This would allow the definition of Coq programs in [JsCoq](../JsCoq), their extraction, and execution whithin the browser.
+-   **Description**: Extend Coq's extraction plugin so it can output javascript. This would allow the definition of Coq programs in [JsCoq](JsCoq), their extraction, and execution whithin the browser.
 -   **Requisites**: Ocaml: *Medium*, Coq: *Medium*, Js/HTML: *Medium*
 -   **Difficulty**: Medium
 -   **Mentor**: Emilio J. Gallego

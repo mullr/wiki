@@ -17,7 +17,7 @@ For a more complete list see [Freek Wiedijk's list of Computer Math Systems](htt
 It would be nice to give brief list of their advantages and disadvantages compared to Coq.
 
 -   Kam, Robert C., "Case Studies in Proof Checking" available from <http://www.cs.sjsu.edu/faculty/beeson/Masters/KamThesis.pdf> includes a critique of Coq and a comparison with the Mizar system.
--   -   Among other things, it is claimed that Coq's abstract foundations introduce incompatibilities between foundational libraries and make it hard to reuse existing theories. The non-trivialness of type-casting compounds this problem. See [LibraryIncompatibility](../LibraryIncompatibility)
+-   -   Among other things, it is claimed that Coq's abstract foundations introduce incompatibilities between foundational libraries and make it hard to reuse existing theories. The non-trivialness of type-casting compounds this problem. See [LibraryIncompatibility](LibraryIncompatibility)
 
 HOL theorem provers
 ===================
@@ -25,11 +25,11 @@ HOL theorem provers
 HOL Light
 ---------
 
-HOL Light is a proof assistant in the HOL family. It is being used in the [FlyspeckProject](../FlyspeckProject) to machine-check Hales's proof of the Kepler conjecture.
+HOL Light is a proof assistant in the HOL family. It is being used in the [FlyspeckProject](FlyspeckProject) to machine-check Hales's proof of the Kepler conjecture.
 
 Freek Wiedijk has described an encoding of the HOL Light logic into Coq: see \[<http://www.cs.ru.nl/~freek/notes/holl2coq.pdf>\]. Unfortunately, the overall approach is very inefficient.
 
-Hol4 and [ProofPower](../ProofPower) are said to have the same foundation as HOL light; if so, the same encoding should apply. Isabelle/HOL is also a system in the HOL family, and the foundational differences with HOL light should be minor.
+Hol4 and [ProofPower](ProofPower) are said to have the same foundation as HOL light; if so, the same encoding should apply. Isabelle/HOL is also a system in the HOL family, and the foundational differences with HOL light should be minor.
 
 Mizar
 =====

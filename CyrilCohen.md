@@ -9,4 +9,4 @@ Email: \[\[MailTo(cyril DOT cohen AT SPAMFREE inria DOT fr)\]\]\`\_.. You can ev
 
 ------------------------------------------------------------------------
 
-> [CategoryHomepage](../CategoryHomepage)
+> [CategoryHomepage](CategoryHomepage)

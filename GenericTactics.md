@@ -8,7 +8,7 @@ A tactic like `auto` is powerful in theory, but in practice it too often can not
 
 The following code elaborates on this idea: Ltac can be used to build a generic solver tactic, taking as arguments invertible and non-invertible tactics, and applying a standard iterative deepening search using non-invertible tactics and normalizing the goal at each depth using invertible tactics. You can think of it as a parameterized `intuition` tactic (`intuition` can be parameterized this facility is very limited : you can only customize the way it *solves* atoms; there is no way to add some specific behavior in order to, say, make it unfold some definitions or rewrite some terms, or ...)
 
-I ([JudicaelCourant](../JudicaelCourant)) define some domain-specific tactics in my developments, extending the invertible and/or non-invertible tactics given in the next section and I apply the generic search tactic to my tactic. For instance, in a case study I am currently conducting with Jean-François Monin, I defined the following `progress1` tactic:
+I ([JudicaelCourant](JudicaelCourant)) define some domain-specific tactics in my developments, extending the invertible and/or non-invertible tactics given in the next section and I apply the generic search tactic to my tactic. For instance, in a case study I am currently conducting with Jean-François Monin, I defined the following `progress1` tactic:
 
     Ltac progress1 g := match goal with
       | [ |- step_up ?f ?z (?u::?x) ] => apply step_up_snoc2

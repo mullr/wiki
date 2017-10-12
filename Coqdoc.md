@@ -35,7 +35,7 @@ In order to do this, coqdoc will be based on a documentation language 'vdoc' tha
 Coqdoc features
 ===============
 
-We encourage members of the development teams to participate in the following list of wishes. The following features are taken from [Wishes](../Wishes).
+We encourage members of the development teams to participate in the following list of wishes. The following features are taken from [Wishes](Wishes).
 
 Support links from within \[...\] parts of comments
 ---------------------------------------------------

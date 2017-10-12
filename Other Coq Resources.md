@@ -15,7 +15,7 @@ Introduction to Coq
 -   Material from course [Semantic of Proofs and Certified Mathematics](http://specfun.inria.fr/mahboubi/cirm14.html)
 -   Material from the [Using Proof Assistants for Programming Language Research](http://www.cis.upenn.edu/~plclub/popl08-tutorial/code/index.html) tutorial.
 
-    > See also the page [Technique for formalization of variable binding](../BindingRepresentation).
+    > See also the page [Technique for formalization of variable binding](BindingRepresentation).
 
 -   [ITP'15 tutorial on Coq](http://coq.inria.fr/coq-itp-2015)
 
@@ -27,28 +27,28 @@ Warning: the rest of this page may contain deprecated information.
 ### Tips
 
 -   Induction
-    -   How do I do [mutual induction](../Mutual%20Induction)?
-    -   How do I do [induction over a type containing pairs](../Induction%20over%20a%20type%20containing%20pairs)?
-    -   How can I do [induction with self defined cases](../InductionWithSelfDefinedCases) ?
--   [Tips on code extraction](../Extraction)
--   [Tips on improving performance](../Performance)
--   [Tips on notation (Haskell-style list comprehension)](../ListComprehensionNotation)
+    -   How do I do [mutual induction](Mutual%20Induction)?
+    -   How do I do [induction over a type containing pairs](Induction%20over%20a%20type%20containing%20pairs)?
+    -   How can I do [induction with self defined cases](InductionWithSelfDefinedCases) ?
+-   [Tips on code extraction](Extraction)
+-   [Tips on improving performance](Performance)
+-   [Tips on notation (Haskell-style list comprehension)](ListComprehensionNotation)
 
 ### Ltac tactics
 
--   [Marking cases and subcases in proofs](../Case%20(tactic))
--   [Folding definitions in multiple places](../Folding%20tactics)
--   [A conditional tactical](../if/then/else%20(tactical))
--   [An aggressive version of subst](../subst++%20(tactic))
--   [Decomposing all record-like structures](../decompose%20records%20(tactic))
--   [Solving a goal by inversion on an unspecified hypothesis](../solve%20by%20inversion%20(tactic))
--   [Solve goals about list inclusion](../InTac)
--   [Apply &lt;-&gt; forwards and backwards](../AppFwdRev)
--   [Manipulate equalities in the goal](../LhsRhsTactic)
--   Automatically [cleaning your hypothesis like in linear programming](../LinearTactics) (contains also an example of a way to have list of hypothesis in a custom tactic)
+-   [Marking cases and subcases in proofs](Case%20(tactic))
+-   [Folding definitions in multiple places](Folding%20tactics)
+-   [A conditional tactical](if/then/else%20(tactical))
+-   [An aggressive version of subst](subst++%20(tactic))
+-   [Decomposing all record-like structures](decompose%20records%20(tactic))
+-   [Solving a goal by inversion on an unspecified hypothesis](solve%20by%20inversion%20(tactic))
+-   [Solve goals about list inclusion](InTac)
+-   [Apply &lt;-&gt; forwards and backwards](AppFwdRev)
+-   [Manipulate equalities in the goal](LhsRhsTactic)
+-   Automatically [cleaning your hypothesis like in linear programming](LinearTactics) (contains also an example of a way to have list of hypothesis in a custom tactic)
 
 ### OCaml tactics
 
--   A [simple example](../evar_match) of a tactic written in OCaml
--   [Unfold a fixpoint once](../UnfoldFixpointOnce) (in OCaml)
+-   A [simple example](evar_match) of a tactic written in OCaml
+-   [Unfold a fixpoint once](UnfoldFixpointOnce) (in OCaml)
 

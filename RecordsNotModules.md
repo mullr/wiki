@@ -2,4 +2,4 @@ The main bulk of the modules and functor system can be replaced by dependent rec
 
 See Coq's standard library for examples of how to do this.
 
-Note that the [TypeClasses](../TypeClasses) feature uses dependent records internally to provide modularity. As of Coq 8.2, it is experimental.
+Note that the [TypeClasses](TypeClasses) feature uses dependent records internally to provide modularity. As of Coq 8.2, it is experimental.

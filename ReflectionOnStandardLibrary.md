@@ -1,7 +1,7 @@
 Discussion on the standard library of Coq
 =========================================
 
-See also [StandardLibrary](../StandardLibrary) for older discussion (should these pages be merged?)
+See also [StandardLibrary](StandardLibrary) for older discussion (should these pages be merged?)
 
 Organisational aspects
 ----------------------
@@ -10,15 +10,15 @@ Organisational aspects
 
 -   Lack of overall design consistency due to not-always-coordinated multi-author development through different times of the history of Coq.
 -   Lack of human resources for a correct maintenance of many components of the library:
-    -   many users propose to complete and extend some libraries but no availability from the development team to evaluate these additions and to check these extensions do not add design inconsistencies to the existing setting \[Comment by HH: tentative guidelines are available [here](../HowToContributeToTheStandardLibrary) with the objective of making easier the work of evaluation and integration of user's contributions\].
-    -   many users developed libraries that could be considered of general purpose ([UserContributions](../UserContributions)) but, again, the Coq developers do not have the time to referee and validate these libraries.
+    -   many users propose to complete and extend some libraries but no availability from the development team to evaluate these additions and to check these extensions do not add design inconsistencies to the existing setting \[Comment by HH: tentative guidelines are available [here](HowToContributeToTheStandardLibrary) with the objective of making easier the work of evaluation and integration of user's contributions\].
+    -   many users developed libraries that could be considered of general purpose ([UserContributions](UserContributions)) but, again, the Coq developers do not have the time to referee and validate these libraries.
 
 Possible solution: A more modular approach of libraries with a small core of standard library maintained by the Coq development team and a second distinct distributed archive of libraries with a coordinated maintenance so as, not to necessarily guarantee a strict overall consistent design, but to at least guarantee correct compilation dependencies (see the [MathWiki](http://prover.cs.ru.nl/wiki.php) project). The responsibility of the maintenance of the consistency of each individual component of this second archive would be distributed.
 
-From the [StandardLibrary](../StandardLibrary) page:
+From the [StandardLibrary](StandardLibrary) page:
 
 -   Easy-to-contribute library is much better. Although we should keep library clean and strict we should allow user to contribute in even small part. Nobody will write thousands lines of code before contribution. If every ten lines can be submitted, then we'll have much more active and wide community. \[Comment by HH: how to ensure design consistency? Official guidelines to follow? Who takes the responsability of the integration? Set up of a user-contributor group?\]
--   There should be clean list of common problems defined in both existing and to-be-written code. One should be able to easily find the problem and solve it. (See [ProjectIdeas](../ProjectIdeas)?)
+-   There should be clean list of common problems defined in both existing and to-be-written code. One should be able to easily find the problem and solve it. (See [ProjectIdeas](ProjectIdeas)?)
 
 ### Compatibility issues
 
@@ -129,6 +129,6 @@ Libraries on these topics exist:
 
 -   Floating point numbers ([IEEE754](http://logical.saclay.inria.fr/coq/distrib/current/contribs/IEEE754.html), [fp2](http://lipforge.ens-lyon.fr/www/pff))
 -   Constructive real analysis (computing and mathematical aspects, see e.g. [ExactRealArithmetic](http://logical.saclay.inria.fr/coq/distrib/current/contribs/ExactRealArithmetic.html), [CoinductiveReals](http://logical.saclay.inria.fr/coq/distrib/current/contribs/CoinductiveReals.html), [CoRN](http://c-corn.cs.ru.nl), interval arithmetic, ...)
--   Finite sets (either [InductiveFiniteTypes](../InductiveFiniteTypes) or [FixpointFiniteTypes](../FixpointFiniteTypes) would be reasonable candidates for inclusion in the standard library, there is also a library by Jean-François Monin).
+-   Finite sets (either [InductiveFiniteTypes](InductiveFiniteTypes) or [FixpointFiniteTypes](FixpointFiniteTypes) would be reasonable candidates for inclusion in the standard library, there is also a library by Jean-François Monin).
 
 What about the licence issues?

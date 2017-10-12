@@ -1,4 +1,4 @@
-This file uses my [notations](../AUGER_Notations).
+This file uses my [notations](AUGER_Notations).
 
 It has been written from [this Haskell tutorial](http://www.haskell.org/haskellwiki/Monads_as_Containers), so the notations for the monads are also taken from Haskell.
 

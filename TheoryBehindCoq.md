@@ -47,7 +47,7 @@ Model Construction
 Others
 ======
 
--   Why does Coq use inductive types and not [W-Types](../WTypeInsteadOfInductiveTypes)?
--   A [summary](../CoqTerminationDiscussion) of the long and informative discussion that took place on the coq-club mailing list when similar bugs were discovered in the termination checkers of both Coq and Agda.
+-   Why does Coq use inductive types and not [W-Types](WTypeInsteadOfInductiveTypes)?
+-   A [summary](CoqTerminationDiscussion) of the long and informative discussion that took place on the coq-club mailing list when similar bugs were discovered in the termination checkers of both Coq and Agda.
 -   Some [proof theoretic consequences](http://r6.ca/blog/20091101T231201Z.html) of impredicative Prop.
 

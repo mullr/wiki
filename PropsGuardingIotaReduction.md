@@ -1,7 +1,7 @@
 Propositions Guarding Iota Reduction
 ====================================
 
-It is possible for the guard of a fix-point to be of a type inside `Prop` rather than a type inside `Set`. This can be still used [in functions whose output type is in Set](../FalseEqAcc). In fact, this is used in [well-founded recursion](http://coq.inria.fr/library/Coq.Init.Wf.html).
+It is possible for the guard of a fix-point to be of a type inside `Prop` rather than a type inside `Set`. This can be still used [in functions whose output type is in Set](FalseEqAcc). In fact, this is used in [well-founded recursion](http://coq.inria.fr/library/Coq.Init.Wf.html).
 
 The [Acc](http://coq.inria.fr/library/Coq.Init.Wf.html#Acc) `x` type lives in `Prop` and an object of this types is the guard for the fix point function [Fix\_F](http://coq.inria.fr/library/Coq.Init.Wf.html#Fix_F).
 

@@ -13,4 +13,4 @@
     Tactic Notation "solve" "by" "inversion" :=
       solve by inversion 1.
 
-`solve by inversion n` will attempt to solve the goal by `n` successive uses of `inversion` (where `n` may range between `1` and `3`, given the above definitions). This tactic uses [subst++](../subst++%20(tactic)) to maximize its effectiveness but could work almost as well replacing `subst++` with `subst`.
+`solve by inversion n` will attempt to solve the goal by `n` successive uses of `inversion` (where `n` may range between `1` and `3`, given the above definitions). This tactic uses [subst++](subst++%20(tactic)) to maximize its effectiveness but could work almost as well replacing `subst++` with `subst`.

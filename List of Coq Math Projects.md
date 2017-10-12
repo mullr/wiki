@@ -10,4 +10,4 @@ This is a partial list of projects formalizing mathematics in Coq. If your proje
 -   [Homotopy type theory](http://homotopytypetheory.org/) is being formalized in the [UniMath](https://github.com/UniMath/UniMath) and [HoTT](https://github.com/HoTT/HoTT/) libraries.
 -   Exact real arithmetic and floating-point arithmetic are investigated by Guillaume Melquiond, Sylvie Boldo, Micaela Mayero, as part of the [Gappa](http://gforge.inria.fr/projects/gappa/), [pff](https://lipforge.ens-lyon.fr/projects/pff/) and [Flocq](http://flocq.gforge.inria.fr/) libraries.
 
-See the [top 100 mathematical theorems](../Top100MathematicalTheoremsInCoq) formalized in Coq and the Mathematics category at the [Coq user contributions repository](http://coq.inria.fr/contribs).
+See the [top 100 mathematical theorems](Top100MathematicalTheoremsInCoq) formalized in Coq and the Mathematics category at the [Coq user contributions repository](http://coq.inria.fr/contribs).

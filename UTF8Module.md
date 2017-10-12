@@ -1,4 +1,4 @@
-This file is created from scratch. Feel free to enlarge/shorten/modify it. It is tried that the `level`s given here are consistent with the output of `Print Grammar constr` command. Yet some levels are chosen arbitrarily, for the apparent lack of a better alternative at the time of the creation. -- [MiladNiqui](../MiladNiqui) \[\[DateTime(2005-05-31T16:53:09Z)\]\]\_
+This file is created from scratch. Feel free to enlarge/shorten/modify it. It is tried that the `level`s given here are consistent with the output of `Print Grammar constr` command. Yet some levels are chosen arbitrarily, for the apparent lack of a better alternative at the time of the creation. -- [MiladNiqui](MiladNiqui) \[\[DateTime(2005-05-31T16:53:09Z)\]\]\_
 
     (* Notation " A ⇒ B " := (A => B) (at level 90, right associativity) : type_scope. *)
     Notation " A → B " := (A -> B) (at level 90, right associativity) : type_scope.
@@ -42,7 +42,7 @@ attachment:utf8.v\_utf8.v\`<attachment:None%60_>
 Usage
 =====
 
-This file (and all the files based on the notation defined in this file) should be saved with the charset encoding UTF-8, otherwise you won't be able to compile it with `coqc`. In order to ensure this in [CoqIde](../CoqIde) you should go to
+This file (and all the files based on the notation defined in this file) should be saved with the charset encoding UTF-8, otherwise you won't be able to compile it with `coqc`. In order to ensure this in [CoqIde](CoqIde) you should go to
 
 **Edit** -&gt; **Preferences** -&gt; **Files**
 

@@ -1,4 +1,4 @@
-This page is for collecting wishes for Coq and possibly discuss their feasibility. For [CoqIde](../CoqIde) see [CoqIDE wishes page](../CoqIDEWishes). For the standard library, see [StandardLibrary](../StandardLibrary) and [ReflectionOnStandardLibrary](../ReflectionOnStandardLibrary)
+This page is for collecting wishes for Coq and possibly discuss their feasibility. For [CoqIde](CoqIde) see [CoqIDE wishes page](CoqIDEWishes). For the standard library, see [StandardLibrary](StandardLibrary) and [ReflectionOnStandardLibrary](ReflectionOnStandardLibrary)
 
 High-level language
 ===================
@@ -137,7 +137,7 @@ Prune the proof terms produced by tauto/intuition/omega (by removal of unnecessa
 Unification
 -----------
 
-See [CoqDevelopment/UnificationProblems](../CoqDevelopment/UnificationProblems).
+See [CoqDevelopment/UnificationProblems](CoqDevelopment/UnificationProblems).
 
 Inversion combined with recursion
 ---------------------------------

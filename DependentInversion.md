@@ -30,7 +30,7 @@ Using `Show Proof` we can inspect the code that the inversion tactic generates.
      | Vcons a0 n0 v => (*...*)
      end in (*...*)
 
-It is important to see that the inversion tactic has determined that the `(S n)` parameter of `P` needs to be the same as the `(S n)` parameter of `Bvector` in the type of `a`. So inside the [MatchAsInReturn](../MatchAsInReturn) statement a fresh variable, `n0`, takes the place of `(S n)` in the type of the return statement `P n0 v`.
+It is important to see that the inversion tactic has determined that the `(S n)` parameter of `P` needs to be the same as the `(S n)` parameter of `Bvector` in the type of `a`. So inside the [MatchAsInReturn](MatchAsInReturn) statement a fresh variable, `n0`, takes the place of `(S n)` in the type of the return statement `P n0 v`.
 
 A Harder Case
 -------------

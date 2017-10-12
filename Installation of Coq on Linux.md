@@ -45,7 +45,7 @@ Packages required for building Coq:
 
 Packages required only for building CoqIDE:
 
--   [LablGtk](../LablGtk) (package "liblablgtk2-ocaml-dev")
+-   [LablGtk](LablGtk) (package "liblablgtk2-ocaml-dev")
 -   **GTK+** libraries (package "libgtk2.0-dev")
 
 Packages required only for obtaining Coq sources from the svn repository:
@@ -107,11 +107,11 @@ Moreover, if you plan to install CoqIDE, you should be able to read:
 
 \[Table not converted\]
 
-If [LablGtk2](../LablGtk2) is not found, you may try to add the option `-lablgtkdir /usr/lib/ocaml/lablgtk2/` to specify the directory.
+If [LablGtk2](LablGtk2) is not found, you may try to add the option `-lablgtkdir /usr/lib/ocaml/lablgtk2/` to specify the directory.
 
 It is useless to continue if you don't succeed at this stage.
 
-Remark: the packaged version of v8.4pl0 has a known problem is localizing [LablGtk2](../LablGtk2); a simple work around is to use the svn sources of v8.4.
+Remark: the packaged version of v8.4pl0 has a known problem is localizing [LablGtk2](LablGtk2); a simple work around is to use the svn sources of v8.4.
 
 Compilation of Coq and CoqIDE
 -----------------------------

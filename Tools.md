@@ -3,7 +3,7 @@ Some of the tools listed here are part of bigger projects that support other pro
 Interface for Editing Proofs
 ============================
 
--   [CoqIDE](../CoqIde)
+-   [CoqIDE](CoqIde)
 
     > The graphical user interface distributed with Coq.
 
@@ -25,7 +25,7 @@ Interface for Editing Proofs
 
 -   [Papuq](http://www.mimuw.edu.pl/~chrzaszc/Papuq/)
 
-    > Papuq is patched version of [CoqIde](../CoqIde) with teaching oriented features.
+    > Papuq is patched version of [CoqIde](CoqIde) with teaching oriented features.
 
 -   [tmEgg](http://www.cs.ru.nl/~lionelm/tmEgg/)
 
@@ -71,5 +71,5 @@ Tactics packages
 Packaging extracted code
 ========================
 
--   [Z\_interface](../ZInterfacePackage) An approach for deriving directly standalone programs from extracted code.
+-   [Z\_interface](ZInterfacePackage) An approach for deriving directly standalone programs from extracted code.
 

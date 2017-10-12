@@ -1,3 +1,3 @@
--   [TheSource](../TheSource)
--   [CoqCustomizationHowTo](../CoqCustomizationHowTo)
+-   [TheSource](TheSource)
+-   [CoqCustomizationHowTo](CoqCustomizationHowTo)
 

@@ -7,4 +7,4 @@ Email: \[\[MailTo(Firstname.Familyname AT SPAMFREE imag DOT fr)\]\]\_
 
 ------------------------------------------------------------------------
 
-> [CategoryHomepage](../CategoryHomepage)
+> [CategoryHomepage](CategoryHomepage)

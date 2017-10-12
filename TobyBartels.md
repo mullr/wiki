@@ -2,4 +2,4 @@ I am **Toby Bartels**, a mathematician with an interest in logic and the foundat
 
 ------------------------------------------------------------------------
 
-> [CategoryHomepage](../CategoryHomepage)
+> [CategoryHomepage](CategoryHomepage)

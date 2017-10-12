@@ -10,7 +10,7 @@ The object of this document is to guide the user towards the implementation of n
 Before you start
 ----------------
 
-*Written by* [PierreCorbineau](../PierreCorbineau)
+*Written by* [PierreCorbineau](PierreCorbineau)
 
 ### Compiler
 
@@ -35,7 +35,7 @@ To access earlier versions, use the `-r` *nnnn* option.
 Basic setup
 -----------
 
-*Written by* [PierreCorbineau](../PierreCorbineau)
+*Written by* [PierreCorbineau](PierreCorbineau)
 
 ### Running {{{./configure }}}
 
@@ -120,7 +120,7 @@ The compiling process require preprocessing, which requires some compiling, this
 A first example
 ---------------
 
-*Written by* [PierreCorbineau](../PierreCorbineau)
+*Written by* [PierreCorbineau](PierreCorbineau)
 
 For our example, we will add a new directory `custom` in the `contrib/` subdirectory, which is the standard place for additional files.
 

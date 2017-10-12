@@ -6,17 +6,17 @@ Teaching Coq
 Short courses for working researchers
 -------------------------------------
 
-From 1993, the [TYPES](http://www.cs.chalmers.se/Cs/Research/Logic/Types) summer school had courses on Coq as part of its curriculum. In particular, Yves Bertot's course in 2006 led to a tutorial named [Coq in a hurry](../%5Bhttp://cel.archives-ouvertes.fr/inria-00001173/en). Notice that other proof assistants related to the TYPES European working group were taught too (in the 2007 edition, this included Isabelle, Matita and Mizar). Most attendees were PhD students but these summer schools were opened to senior people too.
+From 1993, the [TYPES](http://www.cs.chalmers.se/Cs/Research/Logic/Types) summer school had courses on Coq as part of its curriculum. In particular, Yves Bertot's course in 2006 led to a tutorial named [Coq in a hurry](%5Bhttp://cel.archives-ouvertes.fr/inria-00001173/en). Notice that other proof assistants related to the TYPES European working group were taught too (in the 2007 edition, this included Isabelle, Matita and Mizar). Most attendees were PhD students but these summer schools were opened to senior people too.
 
 Between 1999 and 2002, a few formations were organised by the [LogiCal](http://logical.inria.fr) team (formerly Coq team). It was generally three-day-long intensive formations hosting senior people from industry and academy. The material is now rather old as the last such session was using Coq V7.2.
 
-In 2006, Pierre Castéran proposed a 3-hours introduction to Coq at the [JFLA](../jfla.inria.fr/2006) conference. It was based on his formalisation of ordinals and entitled [Le Coq au Pauillac et aux omégas](http://www.labri.fr/perso/casteran/Cantor/JFLA2006.pdf).
+In 2006, Pierre Castéran proposed a 3-hours introduction to Coq at the [JFLA](jfla.inria.fr/2006) conference. It was based on his formalisation of ordinals and entitled [Le Coq au Pauillac et aux omégas](http://www.labri.fr/perso/casteran/Cantor/JFLA2006.pdf).
 
 In 2006, Adam Chlipala and George Necula taught [Interactive Computer Theorem Proving](http://adam.chlipala.net/itp/) at Berkeley university, focusing on Coq and Twelf.
 
 The University of Pennsylvania Provers Group ran a 2008 POPL tutorial, [Using Proof Assistants for Programming Language Research](http://www.cis.upenn.edu/~plclub/popl08-tutorial/). Extensively documented Coq code, illustrating type soundness for simply typed lambda calculus and system F-sub, is available from the website.
 
-An Asian-Pacific summer school was held in 2009, 2010, [2011](../kyhcs.ustcsz.edu.cn/fmschool-2011), 2012 and 2013 (part of material [here](http://pauillac.inria.fr/~levy/courses/tsinghua/13coq/)).
+An Asian-Pacific summer school was held in 2009, 2010, [2011](kyhcs.ustcsz.edu.cn/fmschool-2011), 2012 and 2013 (part of material [here](http://pauillac.inria.fr/~levy/courses/tsinghua/13coq/)).
 
 A school on [Modelling and verifying algorithms in Coq](http://www.di.ens.fr/~zappa/teaching/coq/ecole10/) was held in 2010 in Paris.
 
@@ -65,15 +65,15 @@ Coq as a teaching tool in mathematics
 
 For teaching Logic, Pierre Castéran used Coq for long. His material (in French) is publicly [available](http://www.labri.fr/perso/casteran/FM/Logique/).
 
-In 2003, Frédérique Guilhot formalised geometry in a way close to the way it is teached in French high schools. A dedicated extension [GeoView](../GeoView) of [PCoq](../PCoq) was designed in the same time. It seems that the conclusion was that much work was necessary before submitting such tools to high school pupils. The paper [Ref2](CoqInTheClassroom#Ref2) (in French) describes this experience and the corresponding [formalisation of geometry](http://coq.inria.fr/contribs/Angles.html) is available as a Coq user contribution which can also serve as the base axiomatic for Julien Narboux' [GeoProof](../GeoProof).
+In 2003, Frédérique Guilhot formalised geometry in a way close to the way it is teached in French high schools. A dedicated extension [GeoView](GeoView) of [PCoq](PCoq) was designed in the same time. It seems that the conclusion was that much work was necessary before submitting such tools to high school pupils. The paper [Ref2](CoqInTheClassroom#Ref2) (in French) describes this experience and the corresponding [formalisation of geometry](http://coq.inria.fr/contribs/Angles.html) is available as a Coq user contribution which can also serve as the base axiomatic for Julien Narboux' [GeoProof](GeoProof).
 
-From 2004, Loïc Pottier and André Hirschowitz started using Coq to for teaching mathematics for undergraduate students at the University of Nice. They set up a [Wiki Coq Web](http://pcmath165.unice.fr/wcw/spikini/?wiki=AccueilWikiCoqWeb) that collects course notes and exercices, all of them being formally checkable via a Coq web server. The Coq web server, [CoqWeb](../CoqWeb), can also be used via the [Wims](http://wims.unice.fr/wims/en_home.html) collection of exercices.
+From 2004, Loïc Pottier and André Hirschowitz started using Coq to for teaching mathematics for undergraduate students at the University of Nice. They set up a [Wiki Coq Web](http://pcmath165.unice.fr/wcw/spikini/?wiki=AccueilWikiCoqWeb) that collects course notes and exercices, all of them being formally checkable via a Coq web server. The Coq web server, [CoqWeb](CoqWeb), can also be used via the [Wims](http://wims.unice.fr/wims/en_home.html) collection of exercices.
 
 In 2005, Cezary Kaliszyk developed [ProofWeb](http://www.cs.ru.nl/~cek/proofweb/ProofWeb), a web server that allows to use online Coq and other proof assistants. This service has been used as a tool for various classes in computer science and mathematics at the University of Nijmegen (see paper [Ref3](CoqInTheClassroom#Ref3)).
 
 In 2006 and 2007, Aaron Stump used Coq as a tool to teach Logic and Discrete Math at the undergraduate level. One of the objective was to learn students what a proof is. The [2006](http://cl.cse.wustl.edu./classes/cse240-spring06) and [2007](http://cl.cse.wustl.edu./classes/cse240-spring07) homepages of the class are available online.
 
-In 2007, Jakub Sakowicz and Jacek Chrząszcz developed [Papuq](http://www.mimuw.edu.pl/~chrzaszc/Papuq), an extension of [CoqIde](../CoqIde) designed for teaching logic and set theory at Warsaw University (see paper [Ref5](CoqInTheClassroom#Ref5)).
+In 2007, Jakub Sakowicz and Jacek Chrząszcz developed [Papuq](http://www.mimuw.edu.pl/~chrzaszc/Papuq), an extension of [CoqIde](CoqIde) designed for teaching logic and set theory at Warsaw University (see paper [Ref5](CoqInTheClassroom#Ref5)).
 
 In 2007, Sungwoo Park started to teach a [logic class](http://www.postech.ac.kr/~gla/cs433/) using Coq for the assignments at [Postech](http://www.postech.ac.kr).
 

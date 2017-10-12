@@ -6,7 +6,7 @@ Extensional equality is an equality such that when `forall x, f x = g x` then `f
 Why does Coq not have Extensional Equality?
 -------------------------------------------
 
-[ConorMcBride](../ConorMcBride) noted that the following four properties cannot be satisfied simultaneously
+[ConorMcBride](ConorMcBride) noted that the following four properties cannot be satisfied simultaneously
 
 1.  Extensional equality
 2.  Intensional inductive families

@@ -3,7 +3,7 @@ Wish list for COQIDE
 
 The purpose of this page is to list wishes for CoqIDE and to set priorities.
 
-See also the [general wish list for graphical user interfaces](../GUIWishes).
+See also the [general wish list for graphical user interfaces](GUIWishes).
 
 Friendly first use of CoqIDE
 ----------------------------
@@ -34,7 +34,7 @@ Miscellaneous features
 -   Displays hypotheses and goal in two separate panes?
 -   Search/replace could be a pane at the bottom as in firefox (not a window)
 -   Search/replace could have the same semantics/shortcuts as in emacs
--   A graphical advanced search windows for driving [SearchAbout](../SearchAbout).
+-   A graphical advanced search windows for driving [SearchAbout](SearchAbout).
 -   --A small detail: when after scrolling down in a fresh coqide we click inside the buffer, it brings back the pointer to the top instead putting it at the current location-- now ok
 -   --Allow editing buffer (only the white part) during evaluation-- provided by E. Tassi
 -   --Allow modifying comments (even in the green part) without re-evaluating the buffer-- partly provided by E. Tassi

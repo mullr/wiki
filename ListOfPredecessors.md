@@ -23,7 +23,7 @@ Solution for N
 
 `predecessorsInN` takes a `positive` number `n` and returns a `list N` of numbers {0, ..., `n - 1`}
 
-This solution was developed by [BasSpitters](../BasSpitters) and [RussellOconnor](../RussellOconnor)
+This solution was developed by [BasSpitters](BasSpitters) and [RussellOconnor](RussellOconnor)
 
 Solution for positive
 ---------------------
@@ -53,7 +53,7 @@ Solution for positive
 
 `predecessorsInPositive` takes a `positive` number `n` and returns a `list positive` of numbers {1, ..., `n`} `predecessorsInPositiveStrict` takes a `positive` number `n` and returns a `list positive` of numbers {1, ..., `n - 1`}
 
-This solution was developed by [PierreCorbineau](../PierreCorbineau).
+This solution was developed by [PierreCorbineau](PierreCorbineau).
 
 Future Work
 -----------

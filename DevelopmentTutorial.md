@@ -33,7 +33,7 @@ The `-debug` option will allow to use the debugger.
 Developer environment
 ---------------------
 
-For compilation shortcuts under Emacs, see [CoqDevelopmentRaccourcisPourDevelopperSousEmacs](../CoqDevelopmentRaccourcisPourDevelopperSousEmacs).
+For compilation shortcuts under Emacs, see [CoqDevelopmentRaccourcisPourDevelopperSousEmacs](CoqDevelopmentRaccourcisPourDevelopperSousEmacs).
 
 Directory structure
 -------------------

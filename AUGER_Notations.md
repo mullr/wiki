@@ -1,4 +1,4 @@
-This file takes all the notations of "Utf8.v" and "Utf8-core.v" and adds a lot of others. See this [page](../XComposeAndNotations) to find how to use XCompose for an easy access to special characters.
+This file takes all the notations of "Utf8.v" and "Utf8-core.v" and adds a lot of others. See this [page](XComposeAndNotations) to find how to use XCompose for an easy access to special characters.
 
     (* Logic *)
     Notation "∀  x .. y , P" := (forall x, .. (forall y, P) ..)
