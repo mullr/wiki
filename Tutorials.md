@@ -1,1 +1,1 @@
-\#redirect CoqNewbie
+See [CoqNewbie](CoqNewbie)
