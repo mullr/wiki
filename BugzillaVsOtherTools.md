@@ -1,13 +1,13 @@
-**Advantages of Bugzilla** | **Advantages of** [GitHub](../GitHub) **issues** |**Moving everything to gitlab.com** | **List here other bug trackers**
--|-|-|-
-Status quo (necessarily simpler) |Issues are indexed by Google |freer than github |
-Advanced bug state tracking (RESOLVED with &lt;reason&gt;, DUP, NEEDINFO, ...) |\#4553 will automatically link to the corresponding issue (or PR) |similar advantages as github vs bugzilla |
-you can use deskzilla to create, modify and search bugs offline, and upload changes later |"This closes \#2782." in a commit message will automatically close the corresponding issue when the commit is merged | |
-|Markdown support | |
-|Possible to have a template for new issues and to show a link to CONTRIBUTING.md when this file exists | |
-|Easy to follow new bug reports (just watch the repository) | |
-|Shared permission managements | |
-|Shared milestones | |
+|**Advantages of Bugzilla** | **Advantages of** [GitHub](../GitHub) **issues** |**Moving everything to gitlab.com** | **List here other bug trackers**|
+|---|---|---|---|
+|Status quo (necessarily simpler) |Issues are indexed by Google |freer than github | |
+|Advanced bug state tracking (RESOLVED with &lt;reason&gt;, DUP, NEEDINFO, ...) |\#4553 will automatically link to the corresponding issue (or PR) |similar advantages as github vs bugzilla ||
+|you can use deskzilla to create, modify and search bugs offline, and upload changes later |"This closes \#2782." in a commit message will automatically close the corresponding issue when the commit is merged |||
+||Markdown support |||
+||Possible to have a template for new issues and to show a link to CONTRIBUTING.md when this file exists | ||
+||Easy to follow new bug reports (just watch the repository) |||
+||Shared permission managements |||
+||Shared milestones |||
 
 **Drawbacks of Bugzilla** | **Drawbacks of** [GitHub](../GitHub) **issues** |**Moving everything to gitlab.com** | **List here other bug trackers**
 -|-|-|-
