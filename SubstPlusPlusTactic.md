@@ -1,7 +1,7 @@
 ```coq  
 Tactic Notation "subst" "++" :=  
 repeat (  
-match goal with | x : _ |- _ =>; subst x end);
+match goal with | x : _ |- _ => subst x end);
 
 cbv zeta beta in *.
 
