@@ -76,9 +76,7 @@ List of participants
 Bug squashing
 -------------
 
-A list of [relatively simple bugs](https://coq.inria.fr/cocorico/CoqImplementorsWorkshop/CoqIW2016/bsp), to kill the time |;-)|
-
-Also, [bug triaging](https://coq.inria.fr/bugs/) is very welcome (check if a bug is still valid, add extra info, close solved bugs...).
+[bug triaging](https://coq.inria.fr/bugs/) is very welcome (check if a bug is still valid, add extra info, close solved bugs...).
 
 "Little" projects
 -----------------
