@@ -44,7 +44,7 @@ PRs to discusss:
 Do log what you did/learnt/implemented!
 ---------------------------------------
 
-Write it [here](https://coq.inria.fr/cocorico/CoqImplementorsWorkshop/CoqIW2017log).
+Write it [here](CoqIW2017log).
 
 Registration
 ------------
