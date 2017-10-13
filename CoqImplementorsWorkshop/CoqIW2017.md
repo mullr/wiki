@@ -8,13 +8,13 @@ The Coq Implementors Workshop is an event that brings together the core develope
 Location
 --------
 
-The Implementors Workshop takes place at Port aux Rocs in Le Croisic (<https://www.portauxrocs.com/>).
+The Implementors Workshop takes place at [Port aux Rocs in Le Croisic](https://www.portauxrocs.com/).
 
-More details can also be found attachment:brochure.pdf\_here\`<attachment:None%60_>.
+More details can also be found [here](files/CoqIW2017/brochure.pdf).
 
 Going from Nantes to Le Croisic takes 1h20 by train. There are also direct train from Paris (3h20).
 
-To go from Le Croisic railway station to Port aux Rocs, you can take Bus 30 (attachment:ligne\_bus.pdf\_schedule\`<attachment:None%60_>).
+To go from Le Croisic railway station to Port aux Rocs, you can take Bus 30 [schedule](files/CoqIW2017/ligne_bus.pdf).
 
 Program
 -------
@@ -25,14 +25,14 @@ Tentative [schedule](https://docs.google.com/spreadsheets/d/1mUtbJHJUKvwyUsp0cNG
 
 Talks by devs:
 
--   Introduction attachment:intro.pdf\_slides\`<attachment:None%60_>
+-   Introduction [slides](files/CoqIW2017/intro.pdf)
 -   Cumulative inductive types (Amin Timany, Matthieu Sozeau)
 -   Definitional Proof-Irrelevance (Gaëtan Gilbert)
 -   Ltac 2 (Pierre-Marie Pédrot)
 -   Coq and User Interfaces (Emilio Jesus Gallego Arias) [slides](https://x80.org/coq2017/)
--   Parametricity in Coq (Abhishek Anand)attachment:CoqImplWorkshop2017Fixed.pdf\_slides\`<attachment:None%60_>
+-   Parametricity in Coq (Abhishek Anand) [slides](files/CoqIW2017/CoqImplWorkshop2017Fixed.pdf)
 -   ELPI (Enrico Tassi)
--   The beautifier and notations (Hugo Herbelin) attachment:beautifier-notations.pdf\_slides\`<attachment:None%60_>
+-   The beautifier and notations (Hugo Herbelin) [slides](files/CoqIW2017/beautifier-notations.pdf)
 
 PRs to discusss:
 
