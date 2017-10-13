@@ -30,7 +30,7 @@ Proposition for a type of constructions that unifies all of constr, constr\_expr
                              V
                           constr
 
-Note:{{{constr\_expr}}} should have been called `raw_constr` and `rawconstr` should have been better named `glob_constr`.
+Note: `constr_expr` should have been called `raw_constr` and `rawconstr` should have been better named `glob_constr`.
 
 -   Location informations are everywhere except in `constr`
 -   Semantics of commands and keywords are known in `vernac_expr`
