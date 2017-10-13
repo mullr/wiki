@@ -27,7 +27,7 @@ Talks by devs:
 Do log what you did/learnt/implemented!
 ---------------------------------------
 
-Write it [here](https://coq.inria.fr/cocorico/CoqImplementorsWorkshop/CoqIW2016/log).
+Write it [here](CoqIW2016-log).
 
 Registration
 ------------
