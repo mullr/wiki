@@ -3,15 +3,15 @@ Installation from Package managers
 
 You can install Coq with Homebrew by simply running
 
-&lt;strong class="highlight"&gt;.. raw:: html
-
-&lt;/strong&gt;\[Table not converted\]
+```
+brew install coq
+```
 
 or using MacPorts by running
 
-&lt;strong class="highlight"&gt;.. raw:: html
-
-&lt;/strong&gt;\[Table not converted\]
+```
+sudo port install coq
+```
 
 You can check that your installation was successful by running `coqc -v`.
 
@@ -20,7 +20,7 @@ The Coq development team will maintain an opam repository for Coq and this will 
 Create a CoqIDE bundle
 ======================
 
-MacOS and gtk move too fast for this section to be up to date. If you try it, you're on your own!
+:exclamation: MacOS and gtk move too fast for this section to be up to date. If you try it, you're on your own!
 
 -   Get Xcode and Command line tools Xcode
 -   Get gtk-mac-integration (that require the Quartz backend of gtk) and gtksourceview2 libraries. I used `jhbuild`. I did
@@ -32,7 +32,7 @@ MacOS and gtk move too fast for this section to be up to date. If you try it, yo
     -   `~/.local/bin/jhbuild build meta-gtk-osx-core`
     -   `~/.local/bin/jhbuild build gtksourceview`
 
-|/!/| This never work on the first time. Get ready to patch gtksourceview (something like attachment:fix\_gtksourceview.patch\_fix\_gtksourceview.patch\`<attachment:None%60_>), download some tar.xz by hand, recall autoconf with extra arguments, ...
+:exclamation: This never work on the first time. Get ready to patch gtksourceview (something like `fix_gtksourceview.patch` (lost)), download some tar.xz by hand, recall autoconf with extra arguments, ...
 
 -   Get coq OCaml build dependencies (OCaml, camlp5, lablgtk2, lablgtkosx). I did it using opam by
     -   Get the opam binary on the opam github page. Put it somewhere on path, give it x rights. Do `opam init` and then the command opam asks you to do to config your shell.
@@ -41,7 +41,7 @@ MacOS and gtk move too fast for this section to be up to date. If you try it, yo
 -   `~/.local/bin/jhbuild run ./configure -opt -prefix '''whatever'''`
 -   `~/.local/bin/jhbuild run make bin/CoqIDE_'''versionfromconfigure.ml'''.app`
 
-|(./)| You've got a CoqIDE (without coqtop so it will asks you for it if you launch it)
+You've got a CoqIDE (without coqtop so it will asks you for it if you launch it)
 
 -   Add a coq installation in the bundle can be done independently from generating the bundle as long as you use the same version of the OCaml compiler and a coq that speaks the same protocol.
 
@@ -57,10 +57,10 @@ Put an extra package in a CoqIDE bundle
 
 -   Get command line tools for Xcode.
 
-|/!/| If this is a plugin (containing ml\* files), you'll have to be an ocaml compiler compatible with the one used to create the bundle.
+:exclamation: If this is a plugin (containing ml\* files), you'll have to be an ocaml compiler compatible with the one used to create the bundle.
 
 -   ` export COQBIN='''correct_path'''/CoqIDE_version.app/Contents/Resources/bin/`
 -   maybe `${COQBIN}coq_makefile -f _CoqProject -o Makefile`
 -   `make -j 2 && make install`
--   |&lt;!&gt;| `codesign -f -s - '''correct_path'''/CoqIDE_version.app` |&lt;!&gt;|
+- :exclamation: `codesign -f -s - '''correct_path'''/CoqIDE_version.app`
 
