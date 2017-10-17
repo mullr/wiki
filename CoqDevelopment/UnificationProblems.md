@@ -6,7 +6,7 @@ Missing backtracking
 Missing backtracking on successful first-order unification
 ----------------------------------------------------------
 
-This example is a simplification of a attachment:monoid.v\_realistic example\`<attachment:None%60_> about proving properties of the composition of morphisms of monoids:
+This example is a simplification of a [realistic example](files/monoid.v) about proving properties of the composition of morphisms of monoids:
 
     Axiom H : forall {a b : nat * unit}, fst a = fst b -> a = b.
     Lemma lem1 (a : nat) (x y:unit) : (a, x) = (a, y).
@@ -60,7 +60,7 @@ Let us consider the following successful problems:
     Check fun   y (a : S 0 = S y) (b : S 0 = 0) => rew [fun z => z = 0] a in b : (S y = 0). (* 9 *)
     Check fun x   (a : S x = S 0) (b : S x = 0) => rew [fun z => z = 0] a in b : (S 0 = 0). (* 10 *)
 
-Let us add the following successful problem, derived from a attachment:monoid.v\_realistic\`<attachment:None%60_> situation.
+Let us add the following successful problem, derived from a [realistic](files/monoid.v) situation.
 
     Check fun x   (a : fst x = 0) (b : fst x = 0) => rew [fun z => z = 0] a in b : (0 = 0). (* 11 *)
 
@@ -121,7 +121,7 @@ Do we really want to infer `P[x] := fun y => y = y`, or do we want to consider t
 Extending the first-order unification heuristic into a Libal-Miller functions-as-constructors heuristic
 -------------------------------------------------------------------------------------------------------
 
-This example is a simplification of a attachment:monoid.v\_realistic example\`<attachment:None%60_>. It is similar to the one in the previous section but using functions-as-constructors extended pattern-unification rather than basic pattern-unification:
+This example is a simplification of a [realistic example](files/monoid.v). It is similar to the one in the previous section but using functions-as-constructors extended pattern-unification rather than basic pattern-unification:
 
     Check fun x (a : S x = 0) (b : S (S x) = 0) => rew a in b.
     (* Problem is "(?P[x:=x] (S x)) ≡ (S (S x) = 0)" *)
