@@ -45,15 +45,13 @@ E.g. in case of [this pull request](https://github.com/coq/coq/pull/155) it mean
 
 ![benchmark-part-of-the-branch.5.png](files/ci/benchmark-part-of-the-branch.5.png)
 
-where the field *coq\_opam\_packages* is by default set to:
+where the field `coq_opam_packages` is by default set to:
 
-------------------------------------------------------------------------
+```
+coq-hott coq-flocq coq-compcert coq-vst coq-geocoq coq-color coq-fiat-crypto coq-fiat-parsers coq-unimath coq-sf coq-mathcomp-ssreflect coq-iris coq-mathcomp-fingroup coq-mathcomp-finmap coq-coquelicot coq-mathcomp-algebra coq-mathcomp-solvable coq-mathcomp-field coq-mathcomp-character coq-mathcomp-odd_order
+```
 
-> coq-hott coq-flocq coq-compcert coq-vst coq-geocoq coq-color coq-fiat-crypto coq-fiat-parsers coq-unimath coq-sf coq-mathcomp-ssreflect coq-iris coq-mathcomp-fingroup coq-mathcomp-finmap coq-coquelicot coq-mathcomp-algebra coq-mathcomp-solvable coq-mathcomp-field coq-mathcomp-character coq-mathcomp-odd\_order
-
-------------------------------------------------------------------------
-
-> Assuming that you will use the above value for the *coq\_opam\_packages* field, the benchmarking will finish in:
+Assuming that you will use the above value for the `coq_opam_packages` field, the benchmarking will finish in:
 
 -   7 hours when each package is compiled once
 -   15 hours when each package is compiled twice
@@ -62,7 +60,7 @@ where the field *coq\_opam\_packages* is by default set to:
 
 ------------------------------------------------------------------------
 
-> The job itself produces a looooong log. At its end you should see the results rendered as a table:
+The job itself produces a looooong log. At its end you should see the results rendered as a table:
 
 ![benchmarking-results.0.png](files/ci/benchmarking-results.0.png)
 
@@ -83,17 +81,17 @@ The lines of the table are ordered wrt. improvements in the overall compilation 
 Benchmarking (with "overlays")
 ------------------------------
 
-The following two parameters of the [job](..%20_benchmarking%20job:%20https://ci.inria.fr/coq/view/benchmarking/job/benchmark-part-of-the-branch/):
+The following two parameters of the [job](https://ci.inria.fr/coq/view/benchmarking/job/benchmark-part-of-the-branch/):
 
--   *new\_coq\_opam\_archive\_git\_uri*
--   *new\_coq\_opam\_archive\_git\_branch*
+-   `new_coq_opam_archive_git_uri`
+-   `new_coq_opam_archive_git_branch`
 
-enable us to define "overlays", i.e. tweak the definitions of OPAM packages to be used with *new\_coq\_commit*.
+enable us to define "overlays", i.e. tweak the definitions of OPAM packages to be used with `new_coq_commit`.
 
 Concretely, one has to:
 
 -   clone the [official repository](https://github.com/coq/opam-coq-archive.git) that defines the OPAM packages
 -   modify the definitions of the relevant OPAM packages as needed
 -   push these modifications to some repository visible to Jenkins (e.g. to a personal github fork)
--   and when starting the benchmarking job\_, set the *new\_coq\_opam\_archive\_git\_uri* and *new\_coq\_opam\_archive\_git\_branch* appropriatelly.
+-   and when starting the [benchmarking job](https://ci.inria.fr/coq/view/benchmarking/job/benchmark-part-of-the-branch/), set the `new_coq_opam_archive_git_uri` and `new_coq_opam_archive_git_branch` appropriatelly.
 
