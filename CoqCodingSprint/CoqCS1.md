@@ -11,25 +11,25 @@ A coding sprint is an event that brings together the core developers of Coq and 
 Location
 --------
 
-The coding sprint will take place at the Inria Center in Sophia-Antipolis (how to reach the Inria center\_, accommodation infos\_).
+The coding sprint will take place at the Inria Center in Sophia-Antipolis ([how to reach the Inria center](https://team.inria.fr/marelle/venue/), [accommodation infos](https://team.inria.fr/marelle/accomodation-information/)).
 
 Program
 -------
 
-attachment:schedule-coqcs1.pdf\_Tentative schedule\`<attachment:None%60_>, attachment:intro-talk.pdf\_Slides\`<attachment:None%60_> for the introduction
+[Tentative schedule](files/cs1/schedule-coqcs1.pdf), [Slides](files/cs1/intro-talk.pdf) for the introduction
 
 Do log what you did/learnt/implemented!
 ---------------------------------------
 
-Write it here\_.
+[Write it here](CoqCS1-log).
 
 Registration
 ------------
 
 For organization purposes we require the participants to register (free of charge) by following these two steps:
 
-1.  subscribe to the coordination mailing list\_
-2.  post a message with subject REGISTER\_. In case you already have an project in mind, please include a short description of it in the registration email.
+1.  subscribe to the [coordination mailing list](https://sympa.inria.fr/sympa/info/coq-coding-sprint)
+2.  post a [message with subject REGISTER](coq-coding-sprint@inria.fr). In case you already have an project in mind, please include a short description of it in the registration email.
 
 The mailing list is also the preferred channel to contact the organizers. Subscription is required in order to post.
 
@@ -38,7 +38,7 @@ Beach on Wednesday 24
 
 Meeting point 17:00 in front of Inria or 18:00 at the beach.
 
-attachment:itinerary-beach-coqcs1.pdf\_Itinerary\`<attachment:None%60_>
+[Itinerary](files/cs1/itinerary-beach-coqcs1.pdf)
 
 Meeting point 20:00 if you want to join the group for dinner.
 
@@ -100,9 +100,9 @@ List of participants
 Bug squashing
 -------------
 
-A list of relatively simple bugs\_, to kill the time |;-)|
+A list of [relatively simple bugs](CoqCS1-bsp), to kill the time :smile:
 
-Also, bug triaging\_ is very welcome (check if a bug is still valid, add extra info, close solved bugs...).
+Also, [bug triaging](https://coq.inria.fr/bugs/) is very welcome (check if a bug is still valid, add extra info, close solved bugs...).
 
 "Little" projects
 -----------------
@@ -110,29 +110,29 @@ Also, bug triaging\_ is very welcome (check if a bug is still valid, add extra i
 -   coqide:
     1.  Make the goal window display all goals, not only the focused one. Consider using a notebook widget to let the user look at any goal by changing page. Think about creative uses for the notebook page labels. Requires GTK skills.
     2.  Add a "quick compile" button, as in coqc -quick. The STM can also "dump" the current state as a .vio file, but there is no protocol message for requiring such service.
-    3.  Make coqide silently kill coqtop and save the current buffer position when too many tabs are opened and restart coqtop when the user re-opens an old tab. (see 4074\_)
-    4.  Remove use of threads in the coqide back end: use CPS+Unix.select to code a cooperative threads library (in the LWT style), see tentative patch by PMP\_.
+    3.  Make coqide silently kill coqtop and save the current buffer position when too many tabs are opened and restart coqtop when the user re-opens an old tab. (see [4074](http://coq.inria.fr/bug/4074))
+    4.  Remove use of threads in the coqide back end: use CPS+Unix.select to code a cooperative threads library (in the LWT style), see tentative patch [by PMP](https://github.com/ppedrot/coq/commits/thread-free).
 -   tooling:
     1.  coqobjinfo (like ocamlobjinfo) reusing some code from votour/coqchk to get infos about a .vo or .vio file: modules/lemmas included, axioms, ... This is turn could be used to build other tools to: extract the set of assumptions associated with a final theorems, locate the places of uses of a given definition, (in the future) optimize the recompilation process by knowing which parts need to be recompiled following a change in one given definition.
     2.  make it possible to hide all support files (e.g. .glob files) to make directory listing and file selection/auto-completion operation simpler. (comment: very much in the spirit of what .coq-native/ does for native\_compute files). One could also say that a .vo file is a directory, that the segments in which the .vo file are organized are files with standard names in these directories and that all extra metadata are again files in such directory. E.g. foo.vo/{lib,opaque,glob}. This is also compatible with Makefiles, since it is possible to target a single components.
 -   tactics
-    1.  CUPS like syntax for selecting a set of goals for tactic application. I.e. generalize "all:" to "1,2-5:", see also 1805\_.
+    1.  CUPS like syntax for selecting a set of goals for tactic application. I.e. generalize "all:" to "1,2-5:", see also [1805](http://coq.inria.fr/bug/1805).
 -   ci.inria.fr
     1.  Prepare a job (to be copied, a sort of template) that one can easily use to compile a personal Coq branch (take from github) and a list of other git repos (like some entries from the coq-contribs).
 -   Win
-    1.  test the Win64 installer\_ on a Win64 machine
+    1.  test the [Win64 installer](https://ci.inria.fr/coq/job/coq-win64-8.5/label=coq-win7-64/lastSuccessfulBuild/artifact/dev/nsis/) on a Win64 machine
 -   OSX
     1.  try to make the procedure of building the .app reproducible (an SDK, or a scipt)
-    2.  see if an opam root (compressed, to be unpacked in /opt/coq$V/opam/ on the fly) can be integrated in the .app bundle and have the bundled CoqIDE use that coqtop
+    2.  see if an opam root (compressed, to be unpacked in `/opt/coq$V/opam/` on the fly) can be integrated in the .app bundle and have the bundled CoqIDE use that coqtop
 -   opam
-    1.  test coq:shell\_ especially under OSX
+    1.  test [coq:shell](https://github.com/coq/opam-coq-shell) especially under OSX
 
 Brainstorming ("harder" projects, to be considered carefully)
 -------------------------------------------------------------
 
 -   improving Search:
-    1.  finding theorems that fit a pattern thanks to type classes, canonical structures, or modulo iota-reduction, or delta steps of a set of registered constants (see also \#3904\_)
-    2.  Invent a "search" that works for tactics: search the patterns used in the tactic, or use patterns given by the user. (related work\_)
+    1.  finding theorems that fit a pattern thanks to type classes, canonical structures, or modulo iota-reduction, or delta steps of a set of registered constants (see also [\#3904](http://coq.inria.fr/bug/3904))
+    2.  Invent a "search" that works for tactics: search the patterns used in the tactic, or use patterns given by the user. ([related work](http://staff.computing.dundee.ac.uk/katya/ML4PG/))
     3.  Sort search result according to a priority heuristic to display more relevant results first.
 -   tools:
     1.  coq\_makefile: use a real template engine to generate the Makefile, instead of playing with OCaml strings; alternatively make coq\_makefile just generate a Makefile.conf snippet with the user setting and copy in the current directory a standard Makefile that uses conditionals at run time (not at generation time as it is done now). In both cases the Makefile should be easier to read from the sources of coq\_makefile, now it is really hard to do so.
@@ -140,15 +140,12 @@ Brainstorming ("harder" projects, to be considered carefully)
     1.  Print canonical structures inference failures in error messages. E.g. "typing error... + during type inference this CS inference failed"
     2.  Add proper categories to unification variables (goals, typeclass constraints, implicits that should be solved...)
     3.  Reimplement and merge typeclasses eauto, auto and eauto using the new tactic engine.
-    4.  Let the user tell TI when the expected type should be propagated down via an Argument directive. E.g. with "Arguments cons {A} | x xs" type inference should unify A (probably an implicit) with the A in the expected type before processing x and xs. If the expected type is "list Q" and "x" is a "nat", then "N-&gt;Q" coercion could be inserted. If we wait, we may infer that the list is "list nat" and there is not coercion to "list Q".
+    4.  Let the user tell TI when the expected type should be propagated down via an Argument directive. E.g. with `Arguments cons {A} | x xs` type inference should unify A (probably an implicit) with the A in the expected type before processing x and xs. If the expected type is `list Q` and `x` is a `nat`, then `N->Q` coercion could be inserted. If we wait, we may infer that the list is `list nat` and there is not coercion to `list Q`.
 -   bench system:
     1.  plug decent graphs into ci.inria.fr/coq
-    2.  fix "coqc -quick -time" Bug 3934\_
+    2.  fix `coqc -quick -time` [Bug 3934](http://coq.inria.fr/bug/3934)
 -   developers manual:
-    1.  Enrich the document started by Wojciech Jedynak <https://github.com/wjzz/Coq-Developers-Manual/releases/download/0.1/devman.pdf>,
-
-        > github\_.
-
+    1.  Enrich the document started by Wojciech Jedynak <https://github.com/wjzz/Coq-Developers-Manual/releases/download/0.1/devman.pdf>, [github](https://github.com/wjzz/Coq-Developers-Manual).
     2.  Write down the policies (a real document): how to submit code to Coq, how to submit a contrib, how opam packages should be written...
 
 -   kernel
@@ -158,13 +155,13 @@ Brainstorming ("harder" projects, to be considered carefully)
     1.  decouple the prelude from the tactics
     2.  Coding the tactics of the `logic.ml` file in the new proof engine. These were the primitive tactics of the old proof engine and are currently implemented using a compatibility layer which, in particular, makes the `Info` command unaware of their semantics.
     3.  Implement a "debug" trace for tactics. The `Info` command gives a trace of the tactics which were effectively applied. In order to debug scripts, it may be useful to also have a trace of all the tactics which were attempted.
-    4.  Port LtacProf\_ to Coq 8.5, possibly hooking into the `Info` infrastructure.
+    4.  Port [LtacProf](http://www.ps.uni-saarland.de/~ttebbi/ltacprof/) to Coq 8.5, possibly hooking into the `Info` infrastructure.
 -   declarative proof mode
     1.  More robust implementation of the declarative proof mode. The declarative mode, because it's older, doesn't really take advantage of the disciplined focus API of the new proof engine and re-implements its features in a fragile way. To move forward, the code must be cleaned up and use the modern API.
 -   Notation:
     1.  control notation/implicits/coercions display on a sub term
 -   stdlib:
-    1.  uniform names/notations see Bug 4110\_
+    1.  uniform names/notations see [Bug 4110](http://coq.inria.fr/bug/4110)
     2.  document the axiom used in each file/file-group
 -   Evar instantiation failure explanation: given an evar defined in some context, and given a term with which the evar fails to unify, report to the user the list of variables that occur in the term but that do not belong to the context in which the evar was defined.
 -   Computation of the dependency graph
@@ -219,13 +216,12 @@ Brainstorming ("harder" projects, to be considered carefully)
     -   Select a number of developments provided by volunteers Coq power users, who are available to help in case the developers of Coq cannot easily figure out why a proof has been broken by their changes.
     -   For each, ask the authors to maintain a little script to describe which lemmas should be turned into axioms (to save compilation time), keeping only a representative subset of the lemmas in the developments. Typically, it would suffice to provide a list of lemmas to keep, e.g. in JSON format:
 
-        > \[ { file : "foo.v",
-        >
-        > > keep : \[ "lemma\_x", "lemma\_y" \], keep\_sections : \[ "Part1" \] },
-        > >
-        > > { file : "bar.v", keep\_all : "true" } \] // keep\_all could be implicit.
-        >
-        > The goal is to test a maximal number of aspects in less than 1 minute of compilation time per development. (If needed, it is also possible to exclude some files entirely.)
+      ```json
+      [ { file : "foo.v",
+          keep : [ "lemma_x", "lemma_y" \], keep_sections : [ "Part1" ] },
+          { file : "bar.v", keep_all : "true" } ] // keep_all could be implicit.
+      ```
+      The goal is to test a maximal number of aspects in less than 1 minute of compilation time per development. (If needed, it is also possible to exclude some files entirely.)
 
     -   The code can be pulled (on carefully-chosen commit points) form the git repository of the authors, then the filter on proofs is applied. Optionnaly, these generated files can be commited in a git used by coq developers, but this might not be necessary if the process is fast enough.
     -   It might be useful to also keep track of little patches that may need to be applied to the development, in order to cope with non-backward compatible changes. Such patches could be commited in the git of the Coq developers.
