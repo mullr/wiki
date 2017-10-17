@@ -36,14 +36,14 @@ Check if a given branch breaks some of the tracked developments
 
 E.g. in case of [this pull request](https://github.com/coq/coq/pull/434) it means we have to "build" the [opam-install](https://ci.inria.fr/coq/view/opam/job/opam-install) job with the following parameters:
 
-attachment:opam-install.3.png\_
+![opam-install.3.png](files/ci/opam-install.3.png)
 
 Benchmarking (without "overlays")
 ---------------------------------
 
 E.g. in case of [this pull request](https://github.com/coq/coq/pull/155) it means we have to "build" the [benchmark-part-of-the-branch](https://ci.inria.fr/coq/view/opam/job/benchmark-part-of-the-branch) job with the following parameters:
 
-attachment:benchmark-part-of-the-branch.5.png\_
+![benchmark-part-of-the-branch.5.png](files/ci/benchmark-part-of-the-branch.5.png)
 
 where the field *coq\_opam\_packages* is by default set to:
 
@@ -64,7 +64,7 @@ where the field *coq\_opam\_packages* is by default set to:
 
 > The job itself produces a looooong log. At its end you should see the results rendered as a table:
 
-attachment:benchmarking-results.0.png\_
+![benchmarking-results.0.png](files/ci/benchmarking-results.0.png)
 
 Each line shows the measurement for a single OPAM package.
 
