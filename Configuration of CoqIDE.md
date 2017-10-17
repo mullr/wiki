@@ -7,8 +7,8 @@ Configuring the alternative set of bindings
 
 Close all running instances of CoqIDE, then download and install the modified configuration file as follows:
 
--   On Linux, copy the file attachment:coqide.keys\_**coqide.keys**attachment:None\_ into the folder **~/.config/coq/**
--   On Windows, copy the file attachment:coqide.keys\_**coqide.keys**attachment:None\_ either into the folder **%HOME%.configcoq\*\* if**HOME\*\* is defined, or into the folder \**C:Program FilesCoqconfig\** (assuming you used the default installation path).
+-   On Linux, copy the file [coqide.keys](files/coqide.keys) into the folder `~/.config/coq/`
+-   On Windows, copy the file [coqide.keys](files/coqide.keys)_ either into the folder `%HOME%\.config\coq` if `HOME` is defined, or into the folder `C:\Program Files\Coq\config` (assuming you used the default installation path).
 -   On MacOS, the alternative set of bindings has not been tested; see below how to modify the bindings yourself.
 
 The alternative set of bindings
@@ -23,7 +23,7 @@ After you copied the modified configuration file, the new bindings are as follow
 How to manually modify the bindings
 -----------------------------------
 
-You can edit the binding files **coqide.keys** yourself. (It is located in **~/.config/coq/** or \**C:Program FilesCoqconfig\**). To modify a binding, edit the corresponding line by removing the semi-column at the beginning of the line and changing the shortcut. Example:
+You can edit the binding files `coqide.keys` yourself. (It is located in `~/.config/coq/` or `C:\Program Files\Coq\config\`). To modify a binding, edit the corresponding line by removing the semi-column at the beginning of the line and changing the shortcut. Example:
 
 \[Table not converted\]
 
