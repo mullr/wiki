@@ -13,16 +13,19 @@ The Implementors Workshop takes place at the Inria Center in Sophia-Antipolis ([
 Program
 -------
 
-attachment:schedule.pdf\_Program PDF\`<attachment:None%60_>
+[Program PDF](files/CoqIW2016/schedule.pdf)
 
 Talks by devs:
 
--   Introduction (Enrico, Maxime, Matej) attachment:intro.pdf\_Intro PDF\`<attachment:None%60_>
--   STM (Enrico) attachment:stm4hackers.pdf\_Slides PDF\`<attachment:None%60_>
--   Extraction (Pierre L) attachment:extraction.pdf\_Slides PDF\`<attachment:None%60_> attachment:extraction\_demo.v\_extraction\_demo.v\`<attachment:None%60_> attachment:extraction\_cornercases.v\_extraction\_cornercases.v\`<attachment:None%60_> attachment:explicit\_cumul.v\_explicit\_cumul.v\`<attachment:None%60_>
--   Notations (Hugo) attachment:notations.pdf\_Slides PDF\`<attachment:None%60_>
--   Universes (Matthieu) attachment:universes.pdf\_Slides PDF\`<attachment:None%60_> (see dev/doc/univpoly.txt too)
--   Ltac (Pierre-Marie) attachment:ltac-internals.pdf\_Slides PDF\`<attachment:None%60_>
+-   Introduction (Enrico, Maxime, Matej) [Intro PDF](files/CoqIW2016/intro.pdf)
+-   STM (Enrico) [Slides PDF](files/CoqIW2016/stm4hackers.pdf)
+-   Extraction (Pierre L) [Slides PDF](files/CoqIW2016/extraction.pdf)
+    [extraction_demo.v](files/CoqIW2016/extraction\_demo.v)
+    [extraction_cornercases.v](files/CoqIW2016/extraction_cornercases.v)
+    [explicit_cumul.v](files/CoqIW2016/explicit_cumul.v)
+-   Notations (Hugo) [Slides PDF](files/CoqIW2016/notations.pdf)
+-   Universes (Matthieu) [Slides PDF](files/CoqIW2016/universes.pdf) (see `dev/doc/univpoly.txt` too)
+-   Ltac (Pierre-Marie) [Slides PDF](files/CoqIW2016/ltac-internals.pdf)
 
 Do log what you did/learnt/implemented!
 ---------------------------------------
