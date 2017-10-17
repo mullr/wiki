@@ -15,4 +15,5 @@ Dans son fichier `~/.procmailrc`, mettre les lignes
 
 (pour activer procmail, mettre par exemple `"| /usr/bin/procmail"` dans son `~/.forward`)
 
-Le filtre ad hoc `gforge-fix-utf8` se compile avec la commande `ocamllex gforge-fix-utf8.mll; ocamlopt -o gforge-fix-utf8 gforge-fix-utf8.ml` à partir du fichier joint attachment:gforge-fix-utf8.mll\_gforge-fix-utf8.mll\`<attachment:None%60_>.
+Le filtre ad hoc `gforge-fix-utf8` se compile avec la commande
+`ocamllex gforge-fix-utf8.mll; ocamlopt -o gforge-fix-utf8 gforge-fix-utf8.ml` à partir du fichier joint gforge-fix-utf8.mll (perdu).
