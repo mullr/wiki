@@ -1,1 +1,1 @@
-\#redirect Cocorico!FrontPage
+Cocorico!FrontPage.md
