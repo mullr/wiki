@@ -1,4 +1,3 @@
-\#\# page was renamed from CocoricoFrontPage
 
 Here we will present ideas of what constitutes a well written Coq source file. We discuss the general issues that affect the *shape* of the Coq scripts and consequently their *legibility* and *re-usability*. Yes, we are interested in reading and editing ASCII Coq sources!
 
