@@ -1,4 +1,3 @@
-\#\# page was renamed from CoqCustomizationHowTo \#language en
 
 **This document is referring to development under Coq at the period of Coq 8.1 and 8.2. It is outdated**
 
