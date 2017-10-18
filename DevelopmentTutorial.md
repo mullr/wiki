@@ -1,4 +1,3 @@
-\#\# page was renamed from CoqCustomizationHowTo \#language en
 
 The information below are valid for developing in Coq 8.5 (2016)
 
@@ -143,4 +142,4 @@ The last `go()` restarts the Coq parser. You can type any Coq command and observ
 Debugging with ocamldebug
 -------------------------
 
-Look at file dev/doc/debugging.txt in the archive.
+Look at file `dev/doc/debugging.txt` in the archive.
