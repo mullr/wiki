@@ -12,7 +12,15 @@ Software Verified in Coq
 Sorting
 -------
 
-\[Table not converted\]
+| Algorithm | Formalisation available from |
+|-----------|------------------------------|
+| Quicksort | [Why](http://why.lri.fr/index.en.html) |
+| Treesort  | [StandardLibrary](http://coq.inria.fr/stdlib/Coq.Sorting.Heap.html) |
+| Insertion sort| [CoqArt chapter 1](http://www.labri.u-bordeaux.fr/perso/casteran/CoqArt/horizon/index.html) |
+| Selection sort| [Why](http://why.lri.fr/index.en.html) |
+| Maximum sort | [Why](http://why.lri.fr/index.en.html) |
+| Heapsort  | [Why](http://why.lri.fr/index.en.html) |
+| Mergesort | [Xavier Leroy](http://moscova.inria.fr/~xleroy/coq/Mergesort.html) |
 
 Other Algorithms
 ----------------
