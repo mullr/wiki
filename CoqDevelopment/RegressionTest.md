@@ -3,7 +3,12 @@ Status quo
 
 Systems currently running some sort of benchmarking, regression testing for Coq.
 
-\[Table not converted\]
+| label        | URL                                                     | access | tests what          | comment |
+|--------------|---------------------------------------------------------|--------|---------------------|---------|
+| lix-bench    | [bench](http://www.lix.polytechnique.fr/coq/bench/)     | lix    | contribs (from git) |         |
+| lix-newbench | [newbench](http://www.lix.polytechnique.fr/coq/pylons)  | lix    | -                   | down very often |
+| inria-ci     | [jenkins](https://ci.inria.fr/coq/)                     | inria  | coq (from git)      |         |
+| opam-bench   | [opam-bench](http://coq-bench.github.io/)               | jobs on gihub, infrastructure ??? | opam packages | |
 
 Problems
 ========
