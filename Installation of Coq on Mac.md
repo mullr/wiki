@@ -32,7 +32,7 @@ Create a CoqIDE bundle
     -   `~/.local/bin/jhbuild build meta-gtk-osx-core`
     -   `~/.local/bin/jhbuild build gtksourceview`
 
-:exclamation: This never work on the first time. Get ready to patch gtksourceview (something like `fix_gtksourceview.patch` (lost)), download some tar.xz by hand, recall autoconf with extra arguments, ...
+:exclamation: This never work on the first time. Get ready to patch gtksourceview (something like `fix_gtksourceview.patch` (lost attachment)), download some tar.xz by hand, recall autoconf with extra arguments, ...
 
 -   Get coq OCaml build dependencies (OCaml, camlp5, lablgtk2, lablgtkosx). I did it using opam by
     -   Get the opam binary on the opam github page. Put it somewhere on path, give it x rights. Do `opam init` and then the command opam asks you to do to config your shell.
