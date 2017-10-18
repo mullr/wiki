@@ -1,0 +1,520 @@
+Coq Working group
+October 3rd, 2017
+
+(Notes taken by Gabriel Scherer)
+
+
+We should have a Coq WG Channel on Youtube.
+
+## Maxime Dénès: Coq 8.7 debrief, Coq 8.8 roadmap
+
+Release.
+
+Everything is going smoothly, but not exactly as expected. Beta1 went
+out much later than expected. Theo and I are planning to release
+a Beta2 this week; but we are planning to *not* delay the release.
+
+We had two issues:
+- the non-hack that shut down our web infrastructure for some time
+- the breakdown of INRIA's CI infrastructure
+
+We moved our CI infrastructure to Travis, that we expect will be more
+stable in the future.
+
+For the website we didn't change anything yet, but we have to think
+about fixing this. One step that we definitely need to take is to
+separate the dynamic parts of the website (the bugtracker, wiki etc.)
+from the static parts of the website (the Coq website).
+
+(Theo asks if consortium engineers could help; there are none yet, and
+the website problem should be addressed somewhat urgently.)
+
+### Branch management
+
+Changes in branch management:
+- all bug fixes target master ('trunk' was renamed into 'master')
+- PRs are backported from master
+- no more merge of v8.7 into master
+- split of tasks: Maxime is in charge of master, Théo is in charge of v8.7
+  (some of Théo's work was done by Pierre-Marie before)
+
+Théo: there were two PRs for which conflicts were too large, and
+Pierre-Marie did the backport work.
+
+Théo: to do the backports, I use a script where I use `git
+cherry-pick` with the `-x` option, which keeps information about where
+it is merged from.
+
+Gabriel: for OCaml we had the same discussions; why did you stop
+merging, did it prove too painful?
+
+Maxime: those merge commits were very risky, a few bugs were
+introduced at merge time. When you backport, you do one feature at
+a time, so there is less risk. The other question, what to do you when
+you don't want to backport everything in a merge workshop? Also, you
+put a tough question on the author of the pull request: where do you
+submit your changes? Merge-based workflows are a problem when branches
+diverge (we had an example of divergence with the API work). It made
+the interaction between the release manager(s) and the authors of
+changes more complex.
+
+Théo: Now everything is simpler for contributors.
+
+Théo: some info on my backporting process. I do backports on my local
+fork, I test everything on my own Travis. If something is too
+complicated to backports and I have doubts about it, or I want to
+backport only parts of a change, then I open a Pull
+Request. (It happens very rarely; I did two PRs and Pierre-Marie did
+two others.)
+
+Emilio: I think we should suggest into CONTRIBUTING that users may be
+able to send backport PRs as well as a trunk PR.
+
+Maxime: to clarify, Théo is only in charge of the latest stable
+release (currently 8.7), no older releases. Hugo helps maintain older
+releases like 8.5, and it is who they should be talking to. But maybe
+it doesn't make much sense to do this before we have proper long-term
+releases.
+
+Théo: by the way, usually I backport changes right away; if users see
+something that hasn't been backported yet, it usually means that it is
+hard to backport.
+
+
+### Communication on ongoing work
+
+How to communicate each other on what we are working on?
+
+Where do we store a per-component todo-list?
+
+(discussion of using github issues with tags to do it.)
+
+Matthieu: we also have the present Working Group to discuss things we
+are working on.
+
+Maxime: right, but it's a bit too infrequent, we only have it every
+two months.
+
+Maxime: for an example, when the cumulative inductive types PR showed
+up, I was very surprised.
+
+Théo: it would be good to share our research TODO-list as well.
+
+Maxime: but for research ideas, you don't change every two months, so
+the Working Group is fine for that. But technical issues, the next
+part you want to revisit, the next big bug to fix, that changes more
+often and coordination would be equally useful. We have a lot of very
+concrete technical tasks that are very difficult, they depend on a lot
+of infrastructure.
+
+Emilio: I think this could be done by the release manager in whatever
+way they want. When starting a release period, the manager asks the
+developers what they are planning to do (using whichever technology),
+they have a global picture of what's going to happen and can
+synchronize, for the horizon of the release. I think right now we
+don't get enough email from the release managers, we could get updates
+more often.
+
+Maxime: Gabriel, how does it work in the OCaml development team?
+
+Gabriel: I think there is not much synchronization of this sort. We
+work from PRs that are sent; sometimes people send WIP/RFC PRs to get
+feedback in advance. But we don't worry about two people working on
+the same thing without knowing, it almost never happens.
+
+Gabriel: some communities (not OCaml) have a weekly "What are you
+doing this week?" email thread, where everyone can write a blurb on
+what they have done or plan to do in the week.
+
+### PR discussions
+
+Hugo: I would like more visibility on the time it is going to take
+before the release manager merges something.
+
+Théo: sometimes Maxime merges something immediately when there was
+approval, but sometimes he is busy with other things or in holidays
+and we have to wait a week or two.
+
+Maxime: my feeling is that getting reviews on PRs is very slow.
+
+(There seems to be a concern that sometimes PRs get merge too quickly,
+in the sense that people don't have the time to provide feedback?)
+
+Maxime: it's inherent to the way I work today that I do big batches
+every day or every two day. The delay you have depends a lot on when
+your PR happens compared to my batch times.
+
+Hugo: maybe we could agree to have, say, a three day delay between the
+PR submission time and the merge time. (Three working days). There
+could be an automatic mail after two days, "discussion ends in one
+day".
+
+Hugo: if I made comments every time I had comments to do, I would make
+comments every time. I find it too invasive.
+
+Théo, Maxime, Matthieu: this is *very good*, please make comments
+whenever you have them!
+
+## Théo: Let's talk about... tactics
+
+During 8.6 and 8.7, there was a big focus on compatibility.
+
+Assia: what is Unifall?
+
+THéo: Unifall is the plan of Matthieu to remove the meta-based
+unification engine and keeping only the new evarconv-based
+unification. We have to port all tactics using the older engine
+(apply, rewrite...), so it affects the tactics. Matthieu is going to
+talk about it tomorrow.
+
+What are ideas for versioning tactics?
+
+(It turns out that Coq developers don't agree on what "tactics" and
+"Ltac" means, so the discussion is mostly about this.)
+
+Assia: there is a problem with the rendering SSReflect documentation
+right now. It is really ugly, and as an author I find it very
+frustrating. (Théo: yeah, it's catastrophic; it seems that the CSS is
+not properly synchronized with the website.)
+
+Maxime: I'll have a look at the CSS issue.
+
+Hugo: there are things in the SSReflect documentation that are
+outdated; for example it has evar with numbers, we don't use numbers
+anymore.
+
+Maxime: it's less outdated that the tutorial.
+
+Yves: Yes, we should remove the tutorial, we have questions on
+StackOverflow of people getting confused by it.
+
+Assia: the manual is not produced by coqdoc, it's very difficult to
+try to use these tools, we copy-paste output so it's more fragile.
+
+Maxime: Théo, first fix coq{doc,tex} bugs.
+
+Gabriel: we have an OCaml contributor, Florian 'octachron' Angeletti,
+that has been looking at this kind of coq{doc,tex} issues for the
+OCaml implementation. Maybe I can ask him to have a look, for advice,
+etc.
+
+(Théo asks insensitive questions about SSReflect.)
+
+SSReflect has the strong compatibility requirement that it must keep
+supporting the Odd Order proof. Changes that affect this development
+must be discussed beforehand with its maintainers.
+
+Maxime: intro patterns are somewhat of an exception with respect to
+SSReflect, in that they touch Ltac syntax, not just provide
+alternative tactics.
+
+
+## Emilio
+
+Maxime complains about the maintenance cost of API.ml{,i} that is
+asking him to duplicate refactoring / interface changes.
+
+Pierre: I think that trying to design the API in one shot did not work
+out well. We should try it parts by parts, starting with the kernel
+for example, and then enlarging the scope.
+
+Hugo: maybe we could have two scripts going both ways, one from
+API.mli to per-function annotations, and one back.
+
+Emilio: the point of my talk is to point out that we don't have a plan
+for these important questions: platform, API, performance etc.
+
+Performance:
+
+Maxime: it's worse than that, there was serious benchmarking work done
+in the past (for example by Thomas on hashconsing), but we lost the
+work, it was not communicated and archived and now we are worse off.
+
+Emilio: we would need something like -dtimings (in OCaml) in Coq, to
+tell the contribution of respective passes.
+
+Gabriel: I think for the tooling there is also the fact that right now
+there is not much communication with OCaml tooling developers. There
+are a few exceptions, we (Emilio and Gabriel) interacted on -flambda,
+Jacques-Henri and Pierre-Marie worked together on Jacques-Henri's
+statistical memory profiler, but we need more on that. Right now when
+OCaml people develop something, the Coq developers are too busy and
+working three OCaml versions before that anyway.
+
+Testing/CI:
+
+Maxime: how does Gitlab CI compares to Travis CI?
+
+Gaetan: each CI machine is a weaker than Travis' (Ram: 2GB instead
+of 4GB), but you can have parallelism (you don't know how many
+machines you're going to get), and you can connect and add your own
+servers if you want more. Gitlab also lets you reuse results from one
+part of the CI in another.
+
+UI:
+
+Clément gave very good feebback, but he needed some changes that would
+require large refactoring of the Coq internals.
+
+
+
+## 8.8 Roadmap
+
+Emilio: this document is there to organize merges.
+
+### Matthieu
+
+  Unifall infra + apply + ...
+  Inductive-inductive types (maybe ? probable)
+
+  (Inductive-inductive types are when you have mutually-recursive
+  inductive types, and one of them is indexed by another.)
+
+Maxime: Matthieu, you had "deriving" planned for 8.7, it's not on the
+roadmap anymore?
+
+Matthieu: the idea of deriving was to have a
+
+  Deriving <something> for <name of inductive type>
+
+command that would derive extra proofs or declarations from an
+inductive type. For example, deriving Quickchick generators or
+equality rules.
+
+Gabriel: could "deriving" be an attribute?
+
+Matthieu: maybe, but then you have to generate the code/proofs at
+definition-processing time, you cannot do this lazily.
+
+  Prolog cuts in eauto (with Cyril)
+
+  Universe (naming + context API) clean up
+
+### Enrico
+
+  Cleaning SSR intro patterns implementation (Enrico)
+
+### Théo
+
+  eauto with Matthieu: porting eauto to the "typeclass eauto"
+  code/implementation.
+
+  "2: { ... }" (in the works)
+
+  significant-indentation mode (in presence of bullets)
+
+  "Lemma :="
+
+Emilio: "Proof" is both a tactic and a separator, it's very weird.
+
+### Assia
+
+  Improve SSR chapter of the manual.
+
+Assia: is there anything we can do to make it more integrated with the
+rest of the manual?
+
+### Maxime + Paul Steckler and volunteers + everybody else
+
+  Port the user manual to Sphinx.
+
+  (the initial impulse comes from Clément:
+    http://web.mit.edu/cpitcla/www/coq-rst/index.html )
+
+
+### Pierre-Marie 
+
+  Attributes
+
+We talked about attributes for the last 2 versions:
+- polymorphic
+- instance
+- program
+- global
+- local
+
+Maxime: the cleanups in Vernacular are fairly consensual. What is much
+less clear is what kind of implementation flexibility we give to the
+mechanism that takes the flags and passes it in some way to the
+function that needs to access the data. Knowing that, probably, we
+want attributes to be extensible by plugins... Arnaud sent me some
+code on gitter, based on hook stacks... This is much less clear.
+
+Maxime: the model I have in mind are the Lean attributes rather than
+the OCaml attributes.
+
+Emilio: we try to do two things at once, a refactor of the code, that
+sounds very useful, and then the syntactic abstraction I am less
+convinced.
+
+Pierre-Marie: for the syntax of annotations, I would propose
+s-expressions as a universal datatype.
+
+### Pierre-Yves
+
+Pierre-Yves would be interested in working on Coercions clean-up, but
+for 8.9 rather than 8.8.
+
+### Pierre
+
+  Numeral notations
+  
+  Stdlib split for reals? (Need to talk with Guillaume)
+  
+  Review the module layer, 'mod subst' and 'declare mod'.
+
+Enrico: if there is a discussion about it, I would like to be part of
+it. With LP I would like to bind to some parts of the module API and
+I didn't understand some parts of it.
+
+Maxime: is there a reason why the "include slef ..." is in the kernel?
+
+  Extraction improvements.
+
+### Thierry
+
+  porting Function (and Functional Induction) to Equations
+
+Thierry: I think that it's not so difficult and I can hope to get it
+done by 8.8.
+
+Matthieu: it's easy to ... but we need to extend Equations to ...
+
+Maxime: you could just re-discover the sharing after-the-fact, like we
+do in native-compute.
+
+  small inversion
+
+Thierry: I'm not sure small-inversion will be reviewed in time for
+8.8, it's a big change.
+
+Hugo: I think if we collaborate enough, we may hope to get it into 8.8
+
+  primitive projections UI
+
+### Hugo
+
+  Warning on the user of generated names.
+
+Enrico: I remember a discussion in Le Croisic, and I think the result
+was "it's impossible".
+
+Théo: the conclusion "it's impossible to do it perfectly, but maybe we
+can do something good enough"
+
+Maxime: in fact I think the conclusion was "in fact Pierre-Marie was
+right".
+
+Hugo: my view evolved since Le Croisic. I think everyone is right. To
+have the warning more and more precise, I think the best way is to
+attach it to a name, not to the reference of the name, but to the
+binding of the name. That would be easier to implement without adding
+a lot of infrastructure on top of the existing system. I think the
+less intrusve approach is to change the type of binding variants; the
+type "name" and the type of indents *in binding contexts* (not in
+use positions). 
+
+Hugo: I am hesitating of doing an extra move, being afraid that we
+don't reach a consensus on this feature. So this is my proposal, to
+change the type of names in binding positions.
+
+Matthieu, Maxime: let's just consult with Pierre-Marie to get feedback
+on your proposal.
+
+  custom grammar entries for notations (parsing tables)
+
+  Sections: separation of section and goal contexts
+
+### Yves
+
+I wanted to ask about two features:
+
+  Support for SMT-Coq
+
+  "Proof using" and Qed?
+
+If you use an extra variable, I think the error location should be at
+the "Proof using" point, not the Qed point.
+
+Yves: actually maybe I could try to implement it myself.
+
+Emilio: I think the kernel should support opauqe constants without
+a body. There are many different ways to do it, but it's not
+unified. I think all the systems should be unified to just one thing.
+
+Maxime: Emilio has a plan there, but it's a long-term plan.
+
+
+### Emilio
+
+
+  Remove some complexity that I think are not worth the tradeoffs in
+  the STM
+
+    remove state from Futures
+
+    expose a bit more, to the clients, the structure of the Coq
+    document; it's implicit in the STM. I would give the developers of
+    user interfaces a clearer view of the document structure.
+
+    make state handling functional
+
+    make the graph traversal pass the state
+
+    make the graph traversal tail-recursive
+
+Emilio: I think that would also improve the caching policy.
+
+Emilio: Enrico, we have to discuss this at some point.
+(True dat.)
+
+    late binding of coq-libraries
+
+Emilio: this is almost done, working, not perfect (some problems with
+coq-hott but...), and not worse than what we had before. I think with
+a bit of help from reviewers this should be ready to go.
+
+    remove side-effects replay
+
+    linearize proofs with side-effects
+
+Let's just say that proofs with side-effects are not executed in
+parallel. I think it's not worth the effort.
+
+Matthieu: is Abstract a side-effect?
+
+Enrico, Emilio: no
+
+Emilio: side-effects would be setting options, importing modules,
+crazy stuff like that.
+
+Enrico: my worry was that you cannot statically know whether
+`abstract` will be called or not.
+
+Emilio: indeed, I did not touch abstract, that handling of constants
+is still there. If I'm not mistaken, abstract is considered
+separately. "nested theorems" are a side-effect, so they are scheduled
+in series.
+
+Emilio: this would allow us to have a proper scheduler, as a static
+analysis from the document, and then we send this to the efficient
+tail-recursive traversal function. Right now you have to be dynamic,
+it depends on nested theorems...
+
+Linearization of side-effects implies a big change in the
+protocol. You have to specify ... . But you remove a large class of
+bugs.
+
+Present:
+- Thierry
+- Pierre-Yves
+- Emilio
+- Yves
+- Assia
+- Enrico
+- Cyril
+- Gaëtan
+- Pierre Letouzey
+- Hugo
+- Simon Boulier
+- Pierre-Marie

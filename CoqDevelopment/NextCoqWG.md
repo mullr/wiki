@@ -1,5 +1,3 @@
-\#\# page was copied from CoqDevelopment/CoqWG20150915 \#\# page was renamed from CoqDevelopment/NextCoqWG \#\# page was copied from CoqDevelopment/CRGTCoq20131126
-
 This page is used to organize the next Coq Working Group (in French GT Coq). The framadate link to decide which day it will happen is:
 
 > <https://framadate.org/gtpksTqOKNOmLpws>
@@ -9,7 +7,7 @@ Organization
 
 The next Coq Working Group will take place on October 3rd and 4th at Inria Paris (2, rue Simone Iff). The room for the two days is Jacques-Louis Lions 1.
 
-Streaming and recorded video will be available from M. Sozeau's YouTube\_ channel: <https://www.youtube.com/channel/UCgI_DseUNWbA9_tO88fyhoQ>.
+Streaming and recorded video will be available from M. Sozeau's YouTube channel: <https://www.youtube.com/channel/UCgI_DseUNWbA9_tO88fyhoQ>.
 
 Schedule
 ========
@@ -26,16 +24,18 @@ October 3rd
 -   14:00 PR discussion (part I)
 -   19:00 Social event (TBA)
 
+[Some notes about this first day](files/WG20171003/first_day_notes.txt)
+
 October 4th
 -----------
 
 -   9:00 Coffee
 -   10:00 Coq Communities (E. Gallego)
--   11:00 Unifall status (M. Sozeau) attachment:Unifying Unifiers 2.pdf\_Unifying Unifiers 2.pdf\`<attachment:None%60_>
+-   11:00 Unifall status (M. Sozeau) [Unifying Unifiers 2.pdf](files/WG20171003/Unifying_Unifiers_2.pdf)
 -   11:30 Plan for the standard library (T. Zimmermann)
 -   12:00 Lunch
--   13:30 Fun with template-coq (M. Sozeau) attachment:Fun with Template-Coq.pdf\_Fun with Template-Coq.pdf\`<attachment:None%60_>
--   14:00 Moving to GitHub\_ issues (T. Zimmermann) Here is the link to my experiment: <https://github.com/Zimmi48/bugzilla-test/>
+-   13:30 Fun with template-coq (M. Sozeau) [Fun with Template-Coq.pdf](files/WG20171003/Fun_with_Template-Coq.pdf)
+-   14:00 Moving to GitHub issues (T. Zimmermann) Here is the link to my experiment: <https://github.com/Zimmi48/bugzilla-test/>
 -   14:30 PR discussion (part II)
 
 PR authors should get prepared to lead a quick discussion on each of them. Here is the list of the PRs we will try to discuss:
