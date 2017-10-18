@@ -1,4 +1,3 @@
-\#\# master-page:HomepageTemplate
 
 AUGER Cédric
 ============
