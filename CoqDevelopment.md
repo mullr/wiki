@@ -8,6 +8,7 @@ Coq developers and users gather once every two months in Paris to discuss ongoin
 Latest Coq WG's (in inverse chronogical order)
 ----------------------------------------------
 
+-   [CoqDevelopment/CoqWG20171003](CoqWG20171003)
 -   [CoqDevelopment/CoqWG20170523](CoqWG20170523)
 -   [CoqDevelopment/CoqWG20170306](CoqWG20170306)
 -   [CoqDevelopment/CoqWG20161214](CoqWG20161214)
