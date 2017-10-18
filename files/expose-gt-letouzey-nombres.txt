@@ -1,0 +1,172 @@
+
+* Current Status of theories/Numbers *
+
+   Pierre Letouzey, 17 dec 2010
+
+
+
+** Recall: Initial Goal of Numbers
+---------------------------------
+
+Provide uniformisation for the different libraries of numbers
+in the stdlib of Coq.
+
+Currently: nat, N, Z, BigN, BigZ
+Todo: Q Qc BigQ R
+
+positive is particular, the only implementation, not so nice
+mathematical properties, hence no abstract layer, but it benefits
+from side effects of the restructuration (new fonctions, lemmas,
+etc)
+
+
+** Initial work by E. Makarov
+-----------------------------
+
+only zero succ pred + * - and order.
+
+Cf. NAxioms / ZAxioms.
+
+Base idea: no code in the abstract part of numbers.
+We axiomatize, derive logical properties, and implement separately.
+
+A few exceptions to this rule now : code for lcm log2_up sqrt_up
+is generically derived from gcd log2 sqrt.
+
+
+** Target of extension : as much as is available for BigN / BigZ
+----------------------------------------------------------------
+
+BigN / BigZ historically made independantly of Numbers.
+Rich interface : about 30 functions.
+Specification with respect to ZArith, cf NSig and Zsig.
+Some pieces were missing in Z, a few specs were non-trivial:
+
+ Parameter spec_sqrt: forall x, [sqrt x] ^ 2 <= [x] < ([sqrt x] + 1) ^ 2.
+
+Functor showing {N,Z}Sig --> {N,Z}Axioms :
+ done from the beginning of integration of Big{N,Z} into Numbers.
+
+Ultimate goal : having {N,Z}Sig <--> {N,Z}Axioms
+
+We're morally there today (and even added stuff in {N,Z}Sig)
+
+Btw, a NSig with respect to N instead of Z would make more
+sense now that N is rich enough
+
+
+** Inventory of recents extensions in Numbers
+---------------------------------------------
+
+We were already having:
+ zero succ pred add mul sub sgn abs compare eqb max min ...
+
+Now, two conventions coexist for division:
+ div mod quot rem
+
+New axiomatizations + properties + implementations for:
+ pow sqrt sqrt_up log2 log2_up gcd lcm even odd
+
+And finally some stuff about bitwise operations:
+ testbit shiftr shiftl lxor lor land ldiff div2 setbit clearbit
+
+More details about some of them ?
+
+For instance, now we have a div and a gcd functions on nat.
+Better late than never...
+
+TODO by the way : an additionnal instance of FSet
+ for finite sets of naturals coded as a characteristic number
+ (cf. L. Théry).
+
+
+** Recent incompatibilities
+---------------------------
+
+In BigZ and BigN, type of pow is now t -> t -> t,
+ earlier version is pow_pos or pow_N.
+
+In BigN, swapped the arguments of shiftl and shiftr.
+
+In ZArith, ZOdiv and ZOmod are now Zquot (notation ÷)
+ and Zrem (cf. Haskell).
+ Zdiv2 is now Zquot2, while a new Zdiv2 correspond to Zdiv.
+
+
+** Delicate points
+------------------
+
+*** some unnatural specifications, but down-to-earth
+
+ Cf for instance testbit.
+ We want to be able to implement specs in a poor environment.
+ Hence a spec with "exists", * ^ instead of div and mod.
+
+*** not as much sharing as I would like.
+
+ Ex. hyps "0<=n" become trivial on naturals
+ Some cloning of modules "by hand" : coherence and completeness
+ isn't garanteed.
+ No sharing yet for bitwise properties.
+
+*** Axiomatization of constants one two:
+
+ (succ 0) is less interesting than 1 in statements of lemmas.
+ In BigN / BigZ, not so trivial, many representation of 0,1,2.
+
+
+** Modules vs. Typeclasses
+--------------------------
+
+ Usual troll, but not only
+
+ Numbers structure is module-only for the moment, but I'd like
+ to also experiment with a type-class version. The proofs are
+ quite generic and basic, they should stay almost intact.
+
+ It would be interesting to have only one lemma add_assoc
+ for all types, instead of a Z.add_assoc, N.add_assoc, etc.
+ At the same time, in a goal mixing Z and N, how to express
+ to use add_assoc only on the N part ?
+ How to make searchabout know about instances:
+ Ex: Z.add implements addition, we would like to say add_assoc
+  when we query about Z.add.
+
+ Do we want to go toward + being a notation for the generic
+ add whose Z.add and N.add and ... would be instance ?
+ How does that interact with scopes ? No more scopes ?
+
+ Efficiency: modules aren't cheap. Cf. contribs, about +20%
+  since sept. To be investigated...
+ But typeclass everywhere (i.e. behind every +) wouldn't
+  come for free either.
+ I do think the gain in genericity worth the potential
+ additional cost.
+
+
+** Future work
+--------------
+
+***  We now have uniformity of lemmas names more or less
+  by construction. But uniformity of function names outside
+  Numbers remains to be done: Z.add instead of Zplus.
+  Creating this Z qualification module isn't simple :
+   one phase ? incremental ?
+
+  I've started an experiment about positive. Principal
+   difficulty ... refrain from "fixing" too many bad designs,
+   such as Pcompare and its 3rd arg, implicits for iter_pos, etc
+
+*** Cleaning searchabout outputs : especially hide some internal
+  modules 
+
+*** Reviewers, everyday users, feedback ...
+
+*** Documentation : hard. Complex hierarchy, functors hence
+  not just a few files to follow. What details to provide ?
+
+*** Investigate efficiency issues ...
+
+*** Consider rationals (and reals some day ?)
+
+ 
