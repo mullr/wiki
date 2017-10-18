@@ -47,9 +47,15 @@ I also wonder whether the front page could start with a short text, linking amon
 
 Here is a new proposition for formatting the Coq topic available on the [Front page](CocoricoFrontPage).
 
-&lt;strong class="highlight"&gt;.. raw:: html
-
-&lt;/strong&gt;\[Table not converted\]
+|*The Coq Community* | *Documentation* | *Formalisations* | *Software* |
+|---|---|---|---|
+|[The newbie zone](CoqNewbie) | [Books and Manuals](Documentation)         |[Standard Library](StandardLibrary)         |[Interfaces](Tools)             |
+|[Coq-club on Nabble](http://www.nabble.com/Coq-f2323.html)|[Tutorials](Tutorials)                     |[Formalized in Coq...](FormalizedAndVerified)|[Software Verification](Tools) |
+|[irc channel](irc://irc.freenode.net/#coq)                |[Frequently asked questions](FrequentlyAskedQuestions) |[Coq pearls](CoqPearls)      |[Tactic plugins](Tools)             |
+|[Coq in the classroom](CoqInTheClassroom)                |[Logical foundations](TheoryBehindCoq)                 |[Tactic pearls](LtacPearls)  |[Documentation tools](Tools)        |
+|                                                         |[Misc. documentation](SpecializedDocumentation)        |[Project ideas](ProjectIdeas)| |
+|                                                         |[About Coq code source](CoqSource)                     |[Coq's style](CoqStyle)      | |
+|                                                         |[About This Wiki](AboutCocorico!)                     | | |
 
 Notes: *About Coq source code* would link to a new page that includes CoqCustomizationHowTo\_ and [TheSource](TheSource); the page on [modules](ModuleSystem) would be in the (new) [Misc. documentation](SpecializedDocumentation) page; the [UserContribution](UserContribution) page would be integrated to the FormalizedAndVerified\_ page. The [TipsAndTricks](TipsAndTricks) page would be integrated to the FrequentlyAskedQuestions\_.
 
