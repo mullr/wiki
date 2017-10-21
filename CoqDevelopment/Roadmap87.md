@@ -132,7 +132,7 @@ Vernacular
 
 -   Support for (@foo) args in patterns, when @foo has no arguments (H. Herbelin).
 -   @, abbreviations and notations are now interpreted in patterns like in terms (H. Herbelin).
--   PR [\#156](https://github.com/coq/coq/pull/156) Coq-level numeral printers, now a CEP: CEP/Numeral Notation\_ (D. de Rauglaudre)
+-   PR [\#156](https://github.com/coq/coq/pull/156) Coq-level numeral printers, now a CEP: [CEP/Numeral Notation](Numeral Notation) (D. de Rauglaudre)
 -   PR [\#64](https://github.com/coq/coq/pull/64): Add a Print Ltacs vernacular (C. Pit-Claudel)
 -   ? PR [\#113](https://github.com/coq/coq/pull/113): Add the "not a keyword" modifier to notations (J.P. Delaix?)
 -   ? PR [\#114](https://github.com/coq/coq/pull/114): Set Debug Foo vs Set Foo Debug (H. Herbelin)
@@ -166,7 +166,7 @@ Tactics
 -   ? PR [\#140](https://github.com/coq/coq/pull/140): Iff as a proper connective (H. Herbelin)
 -   ? PR [\#157](https://github.com/coq/coq/pull/157): pat%constr (H. Herbelin)
 -   ? PR [\#146](https://github.com/coq/coq/pull/146): Ssreflect pattern matching facilities (E. Tassi)
--   ? PR [\#150](https://github.com/coq/coq/pull/150): LtacProf\_ (Coq v8.5) (J. Gross, P. Steckler)
+-   ? PR [\#150](https://github.com/coq/coq/pull/150): LtacProf (Coq v8.5) (J. Gross, P. Steckler)
 -   ? PR [\#164](https://github.com/coq/coq/pull/164): A few tactics for 8.6 (H. Herbelin)
 -   ?! Properly handle Hint Extern with conclusions of the form
 
@@ -197,8 +197,8 @@ Standard Library
 
     > Scopes can be bound to classes again. (J. Gross)
 
--   Definition of eta in VectorSpec\_.v
--   ListSet\_ lemmas in Stdlib (S. Hinderer)
+-   Definition of eta in VectorSpec.v
+-   ListSet lemmas in Stdlib (S. Hinderer)
 -   PR [\#135](https://github.com/coq/coq/pull/135): Export Nat in NPeano.v (J. Gross)
 
 CoqIDE

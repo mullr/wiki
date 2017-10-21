@@ -107,6 +107,6 @@ The purpose is to obtain that all of `raw_constr` (i.e. `constr_expr`), `glob_co
 
 Typically, Detyping (that goes from `constr` down to `rawconstr`) should be rewritable as the injection from `constr` to `luconstr` followed by a internal translation from `luconstr` to `luconstr`. Constrextern (that goes from `rawconstr` to `constr_expr`) should be rewritable as a internal translation from `luconstr` to `luconstr` followed by the skimming from `luconstr` to `constr_expr`.
 
-The communication could then be done at the level of `luconstr`. E.g. CoqIde\_ would receive `luconstr` that it would print itself, keeping the hidden informations for on-demand display. External would receive `luconstr` with a flag indicating whether the interning and pretyping phase have to be done or not.
+The communication could then be done at the level of `luconstr`. E.g. CoqIde would receive `luconstr` that it would print itself, keeping the hidden informations for on-demand display. External would receive `luconstr` with a flag indicating whether the interning and pretyping phase have to be done or not.
 
 \[We also have to understand whether `raw_tactic_expr` and `glob_tactic_expr` can indeed be simulated in an interesting and useful way by pairs `string * luconstr generic_argument list` (this amounts to understand whether every tactic can be defined via a `TACTIC EXTEND` construction).\]
