@@ -56,16 +56,18 @@ This tactic is useful when carefully unfolding definitions, for instance inducti
 
 ------------------------------------------------------------------------
 
-This has proved useful in a situation like:
+This has proved useful in a situation like `sorted (b :: a :: a0)` on
+which `unfold sorted; fold sorted` leads to:
 
-    sorted (b :: a :: a0)
+```
+cmp b a = true /\
+match a0 with
+| nil => True
+| a'' :: _ => cmp a a'' = true /\ sorted a0
+end
+```
 
-> &gt; unfold sorted; fold sorted
->
-> > cmp b a = true /
-> > match a0 with | nil =&gt; True | a'' :: \_ =&gt; cmp a a'' = true /sorted a0 end
-
-there's two levels expanded! Solution was "expand sorted until (a::a0)." (thanks roconnor)
+There's two levels expanded! Solution was "expand sorted until (a::a0)." (thanks roconnor)
 
 Clean duplicated hypothesis
 ===========================
