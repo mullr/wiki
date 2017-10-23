@@ -32,6 +32,8 @@ A short [tutorial](http://coq.inria.fr/coq-itp-2015) was given in Nanjing as par
 
 Coq is regularly taught as part of the [Oregon Programming Languages Summer School](https://www.cs.uoregon.edu/research/summerschool/).
 
+A number of Coq-based short courses on verified software systems were included in the [DeepSpec Summer School](https://deepspec.org/event/dsss17/index.html) in July, 2017.
+
 Using Coq as a teaching tool
 ============================
 
@@ -50,7 +52,7 @@ In 2007, Yves Bertot used Coq as a support for an intensive 4-day class *Semanti
 
 Amy Felty used Coq as a tool for a class on *Principles of Formal Software Development* [Fall 2007](http://www.site.uottawa.ca/~afelty/csi5110) at Ottawa University.
 
-Benjamin Pierce used Coq as a tool for teaching [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/) at the University of Pennsylvania (notes used also at [Portland State Portland](http://web.cecs.pdx.edu/~apt/cs578/), Maryland, Lehigh, Iowa, USCD, Purdue, ...).
+Benjamin Pierce, Stephanie Weirich, and Steve Zdancewic use Coq as a tool for teaching [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/) at the University of Pennsylvania (notes used also at [Portland State Portland](http://web.cecs.pdx.edu/~apt/cs578/), Maryland, Lehigh, Iowa, USCD, Purdue, ...).
 
 Andrew W. Appel used Coq in a class on *Automated Theorem Proving* [Fall 2007](http://www.cs.princeton.edu/courses/archive/fall07/cos595) at Princeton University. This moved to a *Programming Languages* class using the [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/) material.
 
