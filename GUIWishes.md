@@ -1,7 +1,7 @@
 Wish list for graphical user interfaces
 =======================================
 
-See also CoqIDEWishes\_.
+See also [CoqIDEWishes](CoqIDEWishes).
 
 Please complete or add comments or add stars "\*" to vote for features.
 
@@ -16,7 +16,7 @@ Miscellaneous features
     -   ...
 -   Support for easy goal switching?
 -   Use tab to indent proofs
--   A graphical advanced search windows for driving SearchAbout\_.
+-   A graphical advanced search windows for driving `SearchAbout`.
 -   Support for easy selection of structural features (definitions, terms, subterms, identifiers...)?
     -   could be a separate view (see below)
     -   pcoq can do this
