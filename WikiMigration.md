@@ -24,11 +24,11 @@ More on it and its caveats and glitches below.
 
 I (Pierre Letouzey) do think that the above reasons outbalance the following points, but not everything is perfect with the Github solution. So discussion is open.
 
-- First, the migration itself is hard to perform. The only tool I found somewhat satisfactory is [moin2rst](https://github.com/mgaitan/moin2git.git), that converts MoinMoin to a git-based reStructuredText wiki. Then I used pandoc to convert to GFM (Github Flavored Markdown). This 2-step conversion wasn't perfect, even after some hacking of moin2rst, but that's close enough to finish the job by some manual editing (for instance on html tables). Once again, what I obtained is visible [here](Home). I consider it as quite readable, even though some pages may still deserve some more polishing. 
+- First, the migration itself is hard to perform. The only tool I found somewhat satisfactory is [moin2rst](https://github.com/mgaitan/moin2git.git), that converts MoinMoin to a git-based reStructuredText wiki. Then I used pandoc to convert to GFM (Github Flavored Markdown). This 2-step conversion wasn't perfect, even after some hacking of moin2rst, but that's close enough to finish the job by some manual editing (for instance on html tables). Once again, what I obtained is visible [here](Home). I consider it as quite ready already, even though some pages may still deserve some more polishing. 
 
 - Note that the pages history has been preserved, but only the latest revision has been translated to markdown. What you get when browsing older revisions is still in MoinMoin syntax. Note also that deleted pages has not been converted. For Wiki archeology, you'll have to dig into a backup of Cocorico (ask me). 
 
-- The github wiki is *very* poor in configuration options. Either all github users may edit your wiki, or you restrict your wiki to collaborators of your repository. That's all. No fancy ACL or whatever. But that seems ok for what we need. We may lack the possibility to turn a page into read-only, but at the same time, the github monitoring of account behaving as spammers seem pretty aggressive (as experienced during a test).
+- The github wiki is *very* poor in configuration options. Either all github users may edit your wiki, or you restrict your wiki to collaborators of your repository. That's all. No fancy ACL or whatever. But that seems ok for what we need. We may lack the possibility of turning a page into read-only mode, but at the same time, the github monitoring of accounts behaving as spammers seem pretty aggressive (as experienced during a test).
 
 - Similarly, some features of MoinMoin do not seem to have counterpart in Github wiki: 
   - The RecentChanges page (we could replace it someday by a script)
