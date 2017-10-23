@@ -158,7 +158,7 @@ The changes we should discuss during the implementors workshop are:
     -   ?! New implementation of typeclasses eauto based on new proof engine, could replace eauto as well: full backtracking, Hint Cut supported, iterative deepening, limited search, ... (M. Sozeau) [branch](https://github.com/mattam82/coq/commits/bteauto). To be turned into a PR, compatibility checks to do first.
 -   ? congruence now uses build\_selector from Equality (H. Herbelin)
 -   ? PR [\#140](https://github.com/coq/coq/pull/140): Iff as a proper connective (H. Herbelin)
--   ? PR [\#150](https://github.com/coq/coq/pull/150): LtacProf\_ (Coq v8.5) (J. Gross, P. Steckler)
+-   ? PR [\#150](https://github.com/coq/coq/pull/150): LtacProf (Coq v8.5) (J. Gross, P. Steckler)
 -   ? Fix semantics of pattern-matching in Ltac (non-linear patterns, difference between hyps and goal and hyps)
 
     > (M. Sozeau)
