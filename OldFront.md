@@ -9,9 +9,9 @@ High-Level Advice and Guidance
 -   How should I [organize large inductive proofs](Organizing%20Large%20Proofs)?
 -   How do I do [induction over a type containing pairs](Induction%20over%20a%20type%20containing%20pairs)?
 -   Where else can I [learn about Coq](Other%20Coq%20Resources)?
--   Where can I read research papers about [Coq's theoretical foundations](..%20_Logical%20foundations:%20../TheoryBehindCoq)?
+-   Where can I read research papers about [Coq's theoretical foundations](TheoryBehindCoq)?
 -   How can use the [module system](ModuleSystem) effectively?
--   What [tools and tactic packages](..%20_Interfaces:) are available for Coq?
+-   What [tools and tactic packages](Interfaces:) are available for Coq?
 -   Where can I learn about proofs for languages with [variable binding](BindingRepresentation)?
 -   How can I get better [Performance](Performance) out of Coq?
 -   What hints can you give me about [Extraction](Extraction) of OCaml/Haskell/Scheme code?
@@ -26,7 +26,7 @@ Community
 
 -   Who is using [Coq in their programming languages research](List%20of%20Coq%20PL%20Projects)?
 -   Who is using [Coq for the formalization of mathematics](List%20of%20Coq%20Math%20Projects)?
--   How is Coq [being taught and used to teach](..%20_Coq%20in%20the%20classroom:%20../CoqInTheClassroom)?
+-   How is Coq [being taught and used to teach](CoqInTheClassroom)?
 -   [HowToContributeToTheStandardLibrary](HowToContributeToTheStandardLibrary)?
 
 Language Constructs and Built-In Tactics
@@ -72,7 +72,7 @@ Formal Developments and Coq Pearls
 -   [Monads in Coq](AUGER_Monad)
 -   [A short tutorial on extraction](AUGER_ExtractionTuto)
 -   [Math Classes](MathClasses): Mathematics using [TypeClasses](TypeClasses)
--   Where can I see other examples of [formalization and verification](..%20_Formalized%20in%20Coq...:%20../FormalizedAndVerified)?
+-   Where can I see other examples of [formalization and verification](FormalizedAndVerified)?
 
 Proof-General and CoqIDE Tips
 -----------------------------
@@ -86,7 +86,7 @@ Meta
 ----
 
 -   Where is the [old front page](OldFront)?
--   Where can I learn [about this wiki](..%20_About%20This%20Wiki:%20../AboutCocorico!)?
+-   Where can I learn [about this wiki](AboutCocorico!)?
 -   How do I [edit this wiki](EditingCocorico)?
 -   Where did that [old article](OtherContents) go?
 

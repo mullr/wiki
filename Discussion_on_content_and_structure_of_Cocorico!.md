@@ -6,7 +6,7 @@ General style
 English sentences vs internal WikiName to refer to internal pages
 -----------------------------------------------------------------
 
-Cocorico uses the actual [WikiName](WikiName) of an internal page to talk about it. I think that we would get more fluent texts if one'd use ordinary English sentences to mention an internal link. Compare for instance a mention to the [Cocorico's front page](..%20_CocoricoFrontPage:) and another mention to the same CocoricoFrontPage\_. \[HH\]
+Cocorico uses the actual [WikiName](WikiName) of an internal page to talk about it. I think that we would get more fluent texts if one'd use ordinary English sentences to mention an internal link. Compare for instance a mention to the [Cocorico's front page](CocoricoFrontPage) and another mention to the same CocoricoFrontPage. \[HH\]
 
 English sentences vs internal WikiName in titles
 ------------------------------------------------
@@ -25,7 +25,7 @@ Should the exact URL of external links be made explicit in Cocorico pages (as it
 Use of table of contents
 ------------------------
 
-My feeling is that table of contents are relevant on pages with proper elaborated contents. I don't think that they are necessary for pages that consists in a list of links. For instance, removing the table of contents from the [Cocorico's front page](..%20_CocoricoFrontPage:) would remove what at the end is just a redundant information. \[HH\]
+My feeling is that table of contents are relevant on pages with proper elaborated contents. I don't think that they are necessary for pages that consists in a list of links. For instance, removing the table of contents from the [Cocorico's front page](CocoricoFrontPage) would remove what at the end is just a redundant information. \[HH\]
 
 > Yes, on the front page it was redundant (removed now). -- [MiladNiqui](MiladNiqui)
 
@@ -41,9 +41,9 @@ Organisation of the contents
 
 My opinion is that Cocorico has now grown enough to justify a step of reorganisation of the contents. I don't have a clear global idea of what to do but a few restructuration steps are certainly worth to be done.
 
-Among other things, I'm thinking about grouping similar topics under a same heading (grouping for instance the contact links *nable* and *irc*; the documentation links [general documentation](..%20_Books%20and%20Manuals:%20../Documentation), the [logical theory](..%20_Logical%20foundations:%20../TheoryBehindCoq) of Coq, extending the [source](..%20_CoqCustomizationHowTo:%20../CoqCustomizationHowTo) of Coq and documentation on [modules](Modules)).
+Among other things, I'm thinking about grouping similar topics under a same heading (grouping for instance the contact links *nable* and *irc*; the documentation links [general documentation](Documentation), the [logical theory](TheoryBehindCoq) of Coq, extending the [source](CoqCustomizationHowTo) of Coq and documentation on [modules](Modules)).
 
-I also wonder whether the front page could start with a short text, linking among others to the [page](ComparisonWithOtherSystems) (from the [CoqNewbie](..%20_The%20newbie%20zone:%20../CoqNewbie) page) that compares Coq to other similar systems. \[HH\]
+I also wonder whether the front page could start with a short text, linking among others to the [page](ComparisonWithOtherSystems) (from the [CoqNewbie](CoqNewbie) page) that compares Coq to other similar systems. \[HH\]
 
 Here is a new proposition for formatting the Coq topic available on the [Front page](CocoricoFrontPage).
 
@@ -59,4 +59,4 @@ Here is a new proposition for formatting the Coq topic available on the [Front p
 
 Notes: *About Coq source code* would link to a new page that includes CoqCustomizationHowTo\_ and [TheSource](TheSource); the page on [modules](ModuleSystem) would be in the (new) [Misc. documentation](SpecializedDocumentation) page; the [UserContribution](UserContribution) page would be integrated to the FormalizedAndVerified\_ page. The [TipsAndTricks](TipsAndTricks) page would be integrated to the FrequentlyAskedQuestions\_.
 
-> Most of these are applied now. What should [Tutorials](Tutorials) point to? Right now it points to [CoqNewbie](..%20_The%20newbie%20zone:%20../CoqNewbie). -- [MiladNiqui](MiladNiqui) \[\[DateTime(2007-12-03T15:41:24Z)\]\]\_
+> Most of these are applied now. What should [Tutorials](Tutorials) point to? Right now it points to [CoqNewbie](CoqNewbie). -- [MiladNiqui](MiladNiqui) \[\[DateTime(2007-12-03T15:41:24Z)\]\]\_
