@@ -36,6 +36,7 @@ Model Construction
 
 -   [Set-theoretical model of the calculus of construction (CC) and discussion about the extension to CC\_{omega}, Alexandre Miquel and Benjamin Werner](http://www.pps.jussieu.fr/~miquel/publis/types02.pdf)
 -   [Realizability model for the calculus of construction (CC) extended with the type of natural numbers and only one universe, Benjamin Werner](ftp://ftp.inria.fr/INRIA/LogiCal/Benjamin.Werner/these.ps.gz) (in French)
+-   [Consistency of the Predicative Calculus of Cumulative Inductive Constructions (pCuIC), Sozeau and Timany](https://arxiv.org/abs/1710.03912) Set theoretical model for pCIC with universe polymorphic inductive types. also conjectures SN.
 
 (In)dependence of Axioms
 ========================
