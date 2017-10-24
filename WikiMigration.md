@@ -63,6 +63,7 @@ that means that a few file basenames had to be edited to make them unique and si
 - Custom Sidebar and/or footer ?
 - redirect existing wiki pages from `coq.inria.fr/cocorico/Foo` to `github.com/coq/coq/wiki/Foo`
 - archive old pages : either as a read-only MoinMoin, or as a final dump to static html. This is important since page conversions haven't been 100% perfect, so we may want to look at the previous aspect of a page.
+- set up a git mirror somewhere, with nightly pulls, in order to be protected against rogue `git push --force` by a team member. Send warning email if the pull isn't fast-forward.
 
 On these points, any help would be quite appreciated !
 
