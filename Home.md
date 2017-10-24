@@ -19,10 +19,10 @@ You need to install Coq and either CoqIDE (recommended for beginners) or Proof G
 Coq official resources
 ======================
 
--   [The Coq Reference Manual](http://coq.inria.fr/documentation)
+-   [The Coq Reference Manual](http://coq.inria.fr/refman)
 -   [The Coq Standard Library](http://coq.inria.fr/library/)
 -   [The Coq-Club mailing list](https://sympa.inria.fr/sympa/info/coq-club)
--   [The Coq bug tracker](https://coq.inria.fr/bugs/)
+-   [The Coq bug tracker](https://github.com/coq/coq/issues)
 -   [The Coq FAQ](http://coq.inria.fr/faq) (no longer maintained)
 -   The Coq IRC channel: `irc://irc.freenode.net/#coq`
 
@@ -38,8 +38,9 @@ Coq tutorials
 Coq development
 ===============
 
--   [Coq Working Groups and developers resources](CoqDevelopment/Public)
--   [The next Coq Working Group](CoqDevelopment/NextCoqWG)
+-   [The Contributing Guide](https://github.com/coq/coq/blob/master/CONTRIBUTING.md#contributing-to-coq)
+-   [Coq Working Groups and developers resources](CoqDevelopment)
+-   [The next Coq Working Group](NextCoqWG)
 -   [Ideas for the Google Summer of Code 2016](GoogleSummerOfCode)
 -   [Procedures related to continuous integration](ContinuousIntegration)
 
@@ -56,7 +57,7 @@ Coq libraries
 
 A non-exhaustive list of Coq libraries that are being used by other people than the developers.
 
--   [SSReflect](http://www.msr-inria.fr/projects/mathematical-components/): formalization of mathematical theories, focusing in particular on group theory.
+-   [Mathematical Components](http://www.msr-inria.fr/projects/mathematical-components/): formalization of mathematical theories, focusing in particular on group theory.
 -   [Flocq](http://flocq.gforge.inria.fr/): formalization of floating-point computations.
 -   [TLC: a non-constructive library for Coq](http://www.chargueraud.org/softs/tlc/): an alternative to Coq's standard library.
 -   [Coq ExtLib](https://github.com/coq-ext-lib/coq-ext-lib): A collection of theories and plugins that may be useful in other Coq developments.
