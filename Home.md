@@ -82,3 +82,4 @@ Coq Wiki
 
 -   [Old articles](OtherContents)
 -   [Old versions of the front page](OldFront)
+-   [The license of this wiki](Cocorico!WikiLicense)
