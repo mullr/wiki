@@ -1,3 +1,5 @@
+:exclamation: **Note:** This page was created to discuss the advantages and drawbacks of migrating from Bugzilla to another bug tracker. This was finally done in Oct, 2017. We are now using GitHub issues.
+
 |**Advantages of Bugzilla** | **Advantages of** [GitHub](GitHub) **issues** |**Moving everything to gitlab.com** | **List here other bug trackers**|
 |---|---|---|---|
 |Status quo (necessarily simpler) |Issues are indexed by Google |freer than github | |
