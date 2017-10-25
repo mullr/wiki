@@ -36,7 +36,7 @@ Cons: code readability, efficiency?
 <a name="guarded">Guardedness predicate</a>
 -------------------------------------------
 
-This is the method currently used in Coq. Aside from being suspected as the root cause of at least 2 bugs discovered in Coq, this method is not compositional. To do guardedness checking, Coq has to unfold all the definitions used in the body of the function, do reductions, e.t.c. This makes typechecking extremely slow at times. Also, the unfoldings can cause the code to bloat by orders of magnitude and become impossible to debug. More importantly, minor syntactic changes to some definitions used in the body (while preserving semantics) can cause the type-checker to reject a legitimate function. See an example in the subsection 1.2.1 in [Sacchini2011](#Sacchini2011). The same subsection also explains why this guardedness predicate is also involved in loss of SN (strong normalization). Coq is conjectured to be WN though. Moreover, [Westbrook11](#Westbrook11)(unpublished) claims that a large subsystem (with universes and impredicative Prop) **is** SN.
+This is the method currently used in Coq. Aside from being suspected as the root cause of at least 2 bugs discovered in Coq, this method is not compositional. To do guardedness checking, Coq has to unfold all the definitions used in the body of the function, do reductions, e.t.c. This makes typechecking extremely slow at times. Also, the unfoldings can cause the code to bloat by orders of magnitude and become impossible to debug. More importantly, minor syntactic changes to some definitions used in the body (while preserving semantics) can cause the type-checker to reject a legitimate function. See an example in the subsection 1.2.1 in [Sacchini2011](#Sacchini2011). The same subsection also explains why this guardedness predicate is also involved in loss of SN (strong normalization). Coq is conjectured to be WN though. However, [Barras](http://www.lix.polytechnique.fr/~barras/habilitation/) outlines a proof of SN for a large subset of CIC.
 
 Pros: code readability, efficiency?  
 Cons: logical simplicity (lack of compositionality), code readability while debugging.
@@ -85,5 +85,3 @@ Notes in Computer Science, pages 114-129, 2006. Springer-Verlag.
 <a name="Balaa2000">Balaa2000</a> :  A. Balaa and Y. Bertot. Fix-point equations for well-founded
 recursion in type theory. In M. Aagaard and J. Harrison, editors, Proceedings of TPHOLs'00, volume
 1689 of Lecture Notes in Computer Science, pages 1-16. Springer-Verlag, 2000.
-
-<a name="Westbrook11">Westbrook11</a> : Eddy Westbrook, Uniform Logical Relations (unpublished).[PDF](http://csweb.rice.edu/uploadedFiles/Computer_Science/Research/Tech_Reports/TR11-01.pdf)
