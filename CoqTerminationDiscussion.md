@@ -44,7 +44,7 @@ Cons: logical simplicity (lack of compositionality), code readability while debu
 <a name="wfrel">Well founded relations</a>
 ------------------------------------------
 
-Coq also provides a way to write arbitrary recursive function as long as one can provide a well founded relation and prove that all recursive calls are performed on arguments that are "less" according to the well founded relation. The *Function* construct implements this method. For a desctiption on how to use it, see the 4^th variant in <http://coq.inria.fr/refman/Reference-Manual004.html#sec75> . A theoretical description of this construct is described in [Barthe2006](#Barthe2006) (it was called [GenFixpoint](GenFixpoint) at that time). It uses the so-called Bertot-Baala method also named "converging iteration" which is described in [Baala2000](#Baala2000).
+Coq also provides a way to write arbitrary recursive function as long as one can provide a well founded relation and prove that all recursive calls are performed on arguments that are "less" according to the well founded relation. The *Function* construct implements this method. For a desctiption on how to use it, see the 4^th variant in <http://coq.inria.fr/refman/Reference-Manual004.html#sec75> . A theoretical description of this construct is described in [Barthe2006](#Barthe2006) (it was called [GenFixpoint](GenFixpoint) at that time). It uses the so-called Bertot-Balaa method also named "converging iteration" which is described in [Balaa2000](#Balaa2000).
 
 Again a problem is that the function that actually goes to Coq's kernel is much more complicated than what we write. However, Coq automatically generates and proves a lemma that expresses the 1-step unrolling of original recursive call (this section ends with an example). Another downside is that a lot of work might be required from the users. A user has to figure out a well founded relation and prove that the recursive calls are made on "lesser" elements according to this relation. For some, this might not be a big problem. We can build powerful hint databases and tactics to automate much of these proofs.
 
@@ -85,3 +85,5 @@ Notes in Computer Science, pages 114-129, 2006. Springer-Verlag.
 <a name="Balaa2000">Balaa2000</a> :  A. Balaa and Y. Bertot. Fix-point equations for well-founded
 recursion in type theory. In M. Aagaard and J. Harrison, editors, Proceedings of TPHOLs'00, volume
 1689 of Lecture Notes in Computer Science, pages 1-16. Springer-Verlag, 2000.
+
+<a name="Westbrook">Westbrook11</a> : Eddy Westbrook, Uniform Logical Relations (unpublished).[PDF](http://csweb.rice.edu/uploadedFiles/Computer_Science/Research/Tech_Reports/TR11-01.pdf)
