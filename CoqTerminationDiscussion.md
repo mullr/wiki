@@ -86,4 +86,4 @@ Notes in Computer Science, pages 114-129, 2006. Springer-Verlag.
 recursion in type theory. In M. Aagaard and J. Harrison, editors, Proceedings of TPHOLs'00, volume
 1689 of Lecture Notes in Computer Science, pages 1-16. Springer-Verlag, 2000.
 
-<a name="Westbrook">Westbrook11</a> : Eddy Westbrook, Uniform Logical Relations (unpublished).[PDF](http://csweb.rice.edu/uploadedFiles/Computer_Science/Research/Tech_Reports/TR11-01.pdf)
+<a name="Westbrook11">Westbrook11</a> : Eddy Westbrook, Uniform Logical Relations (unpublished).[PDF](http://csweb.rice.edu/uploadedFiles/Computer_Science/Research/Tech_Reports/TR11-01.pdf)
