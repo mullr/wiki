@@ -42,7 +42,7 @@ Coq as a teaching tool in computer science
 
 A former experience of using Coq as a teaching tool and not just per is by Jean Goubault-Larrecq at ENSTA in 1999 (a course on software safety). The [Course notes](http://groups.google.com/group/chalmers-cs-semantics-in-coq) (in French) are available on the teacher's page.
 
-Another experiment has been made by David Delahaye, Mathieu Jaume and Virgile Prevosto to teach semantics of programming languages and software safety at the [master-level](http://deptinfo.cnam.fr/master/spip.php?rubrique15) of CNAM, a university for adults. The paper [Ref1](CoqInTheClassroom#Ref1) (in French) describes this experience.
+Another experiment has been made by David Delahaye, Mathieu Jaume and Virgile Prevosto to teach semantics of programming languages and software safety at the [master-level](http://deptinfo.cnam.fr/master/spip.php?rubrique15) of CNAM, a university for adults. The paper [Ref1](#Ref1) (in French) describes this experience.
 
 A similar master-level class on formal methods and specification languages has been taught by Catherine Dubois using Coq. This was at [ENSIIE](http://www.iie.cnam.fr), a computer science engineer school attached to the CNAM. Groups were composed of 15 to 20 students.
 
@@ -67,15 +67,15 @@ Coq as a teaching tool in mathematics
 
 For teaching Logic, Pierre Castéran used Coq for long. His material (in French) is publicly [available](http://www.labri.fr/perso/casteran/FM/Logique/).
 
-In 2003, Frédérique Guilhot formalised geometry in a way close to the way it is teached in French high schools. A dedicated extension [GeoView](GeoView) of [PCoq](PCoq) was designed in the same time. It seems that the conclusion was that much work was necessary before submitting such tools to high school pupils. The paper [Ref2](CoqInTheClassroom#Ref2) (in French) describes this experience and the corresponding [formalisation of geometry](http://coq.inria.fr/contribs/Angles.html) is available as a Coq user contribution which can also serve as the base axiomatic for Julien Narboux' [GeoProof](GeoProof).
+In 2003, Frédérique Guilhot formalised geometry in a way close to the way it is teached in French high schools. A dedicated extension [GeoView](GeoView) of [PCoq](PCoq) was designed in the same time. It seems that the conclusion was that much work was necessary before submitting such tools to high school pupils. The paper [Ref2](#Ref2) (in French) describes this experience and the corresponding [formalisation of geometry](http://coq.inria.fr/contribs/Angles.html) is available as a Coq user contribution which can also serve as the base axiomatic for Julien Narboux' [GeoProof](GeoProof).
 
 From 2004, Loïc Pottier and André Hirschowitz started using Coq to for teaching mathematics for undergraduate students at the University of Nice. They set up a [Wiki Coq Web](http://pcmath165.unice.fr/wcw/spikini/?wiki=AccueilWikiCoqWeb) that collects course notes and exercices, all of them being formally checkable via a Coq web server. The Coq web server, [CoqWeb](CoqWeb), can also be used via the [Wims](http://wims.unice.fr/wims/en_home.html) collection of exercices.
 
-In 2005, Cezary Kaliszyk developed [ProofWeb](http://www.cs.ru.nl/~cek/proofweb/ProofWeb), a web server that allows to use online Coq and other proof assistants. This service has been used as a tool for various classes in computer science and mathematics at the University of Nijmegen (see paper [Ref3](CoqInTheClassroom#Ref3)).
+In 2005, Cezary Kaliszyk developed [ProofWeb](http://www.cs.ru.nl/~cek/proofweb/ProofWeb), a web server that allows to use online Coq and other proof assistants. This service has been used as a tool for various classes in computer science and mathematics at the University of Nijmegen (see paper [Ref3](#Ref3)).
 
 In 2006 and 2007, Aaron Stump used Coq as a tool to teach Logic and Discrete Math at the undergraduate level. One of the objective was to learn students what a proof is. The [2006](http://cl.cse.wustl.edu./classes/cse240-spring06) and [2007](http://cl.cse.wustl.edu./classes/cse240-spring07) homepages of the class are available online.
 
-In 2007, Jakub Sakowicz and Jacek Chrząszcz developed [Papuq](http://www.mimuw.edu.pl/~chrzaszc/Papuq), an extension of [CoqIde](CoqIde) designed for teaching logic and set theory at Warsaw University (see paper [Ref5](CoqInTheClassroom#Ref5)).
+In 2007, Jakub Sakowicz and Jacek Chrząszcz developed [Papuq](http://www.mimuw.edu.pl/~chrzaszc/Papuq), an extension of [CoqIde](CoqIde) designed for teaching logic and set theory at Warsaw University (see paper [Ref5](#Ref5)).
 
 In 2007, Sungwoo Park started to teach a [logic class](http://www.postech.ac.kr/~gla/cs433/) using Coq for the assignments at [Postech](http://www.postech.ac.kr).
 
@@ -95,29 +95,12 @@ The [GeoProof](http://www.activemath.org/workshops/MathUI/07/proceedings/Narboux
 Bibliography
 ============
 
-Ref1: .. \_Ref1:
+<a name="Ref1">Ref1</a>: D. Delahaye, M. Jaume, V. Prevosto, [Coq, un outil pour l'enseignement](http://focal.inria.fr/site/images/stories/articles/delahayetsi05.pdf), Technique et Science Informatiques, vol. 24(9), Langages applicatifs, pp 1139-1160, Hermes Science, 2005.
 
-> D. Delahaye, M. Jaume, V. Prevosto, [Coq, un outil pour l'enseignement](http://focal.inria.fr/site/images/stories/articles/delahayetsi05.pdf), Technique et Science Informatiques, vol. 24(9), Langages applicatifs, pp.. raw:: html  
-> &nbsp;
->
-1139-1160, Hermes Science, 2005.
+<a name="Ref2">Ref2</a>: F. Guilhot, [Formalisation en Coq et visualisation d'un cours de géométrie pour le lycée](http://www-sop.inria.fr/lemme/Frederique.Guilhot/tsi.pdf), Technique et Science Informatiques, vol. 24(9), Langages applicatifs, pp 1113-1138, Hermes Science, 2005.
 
-Ref2: .. \_Ref2:
+<a name="Ref3">Ref3</a>: Kaliszyk, F. Wiedijk, [Teaching logic using a state-of-the-art proof assistant](http://www.cs.ru.nl/~cek/proofweb/pate.pdf), Proceedings of PATE'07, H. Geuvers and P. Courtieu editors. Elsevier, 2007.
 
-> F. Guilhot, [Formalisation en Coq et visualisation d'un cours de géométrie pour le lycée](http://www-sop.inria.fr/lemme/Frederique.Guilhot/tsi.pdf), Technique et Science Informatiques, vol. 24(9), Langages applicatifs, pp.. raw:: html  
-> &nbsp;
->
-1113-1138, Hermes Science, 2005.
+<a name="Ref4">Ref4</a>: Narboux, [Toward the use of a proof assistant to teach mathematics](http://www4.in.tum.de/~narboux/slides/bristol2005.pdf), Proceedings of ICTMT7, 2005.
 
-Ref3: .. \_Ref3:
-
-> 1.  Kaliszyk, F. Wiedijk, [Teaching logic using a state-of-the-art proof assistant](http://www.cs.ru.nl/~cek/proofweb/pate.pdf), Proceedings of PATE'07, H. Geuvers and P. Courtieu editors. Elsevier, 2007.
-
-Ref4: .. \_Ref4:
-
-> 1.  Narboux, [Toward the use of a proof assistant to teach mathematics](http://www4.in.tum.de/~narboux/slides/bristol2005.pdf), Proceedings of ICTMT7, 2005.
-
-Ref5: .. \_Ref5:
-
-> 1.  Sakowicz, J. Chrząszcz, [Papuq, a Coq assistant](http://www.mimuw.edu.pl/~chrzaszc/papers/Sakowicz-Chrzaszcz_Papuq_a_Coq_assistant.pdf), Proceedings of PATE'07, H. Geuvers and P. Courtieu editors. Elsevier, pp 79-96, 2007.
-
+<a name="Ref5">Ref5</a>: Sakowicz, J. Chrząszcz, [Papuq, a Coq assistant](http://www.mimuw.edu.pl/~chrzaszc/papers/Sakowicz-Chrzaszcz_Papuq_a_Coq_assistant.pdf), Proceedings of PATE'07, H. Geuvers and P. Courtieu editors. Elsevier, pp 79-96, 2007.
