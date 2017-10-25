@@ -1,5 +1,5 @@
-Recursion under binders
-=======================
+<a name="LtacUnderBinders">Recursion under binders</a>
+======================================================
 
 Using typeclasses, it is possible to recurse under binders. Here is an example of a tactic that recurses under binders to turn a proof of `A -> B -> C /\ D` into a proof of `A -> B -> C`:
 
@@ -93,8 +93,8 @@ This tactic assert a fact only if does not already exists in the context. This i
     Ltac assert_if_not_exist H :=
       not_exist_hyp H;assert H.
 
-RewriteAll
-==========
+<a name="RewriteAll">RewriteAll</a>
+===================================
 
 **NB**: A similar `rewrite_all` has been integrated in Coq &gt;= 8.1beta (see file `theories/Init/Tactics.v`). Moreover, in the release following 8.1beta, the newly allowed syntax `rewrite ... in *` permits to define `rewrite_all` with a simple `repeat rewrite ... in *`.
 
@@ -122,8 +122,8 @@ Given an assumption `H : t1 = t2`, the tactic `rewrite_all H` replaces `t1` with
       let H := fresh "H" in
       (cut (t1 = t2); [ intro H; rewrite_all H; clear H | idtac ]).
 
-RewriteAll, expert version
-==========================
+<a name="RewriteAll2">RewriteAll, expert version</a>
+====================================================
 
 Given an assumption `H : t1 = t2`, the tactic `rewrite_all H` replaces `t1` with `t2` both in goal and local context. We have to take care that `H` does not rewrite itself, for then we'd get `H : t2 = t2`, and a loop is entered; this version generates a smarter proof term than the previous one.
 
@@ -142,8 +142,8 @@ Given an assumption `H : t1 = t2`, the tactic `rewrite_all H` replaces `t1` with
        aux H
      end.
 
-Decide Equality
-===============
+<a name="DecideEquality">Decide Equality</a>
+============================================
 
 Coq's [decide equality](http://coq.inria.fr/doc/Reference-Manual010.html#@tactic78) should be more accepting. It ought to behave more like the following.
 
