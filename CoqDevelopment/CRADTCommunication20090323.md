@@ -54,46 +54,48 @@ We have the following needs:
 
 It seems we need to have a communication data structure able to convey informations at different levels. Here is an attempt for such a universal type (in ML-style):
 
-    type uconstr =
-    | App of (* impargs not in effect *) luconstr * luconstr list
-    | UserApp of (* implicit arguments in effect *)
-        bool hidable * (* true means is a coercion *)
-        luconstr * (explicitation located hidable option * luconstr) list
-    | Lambda of name located * luconstr hidable * luconstr
-    | Prod of name located * luconstr hidable * luconstr
-    | LetIn of name located * luconstr * (* always hidden: *) luconstr * luconstr
-    | Var of name | Rel of int (* Two ways to denote variables *)
-    | Ref of reference
-    | Sort of sorts
-    | Cast of uconstr * uconstr * cast_kind
-    | Evar of (existential_key located * luconstr list) option
-    | Notation of
-       notation_component located list * (* what it means: *) uconstr option
-    | Prim of prim_token * (* what it means: *) uconstr option
-    | Generalization of binding_kind * abstraction_kind option * luconstr
-    | Delimiters of string * uconstr
-    | If of uconstr * (name * luconstr hidable option) * luconstr * luconstr
-    | LetTuple of name list * (name * luconstr hidable option) * luconstr * luconstr
-    | Cases of       \
-    | Fixpoint of    | a merge to do of rawconstr.ml and topconstr.ml
-    | CoFixpoint of  /
+```ocaml
+type uconstr =
+| App of (* impargs not in effect *) luconstr * luconstr list
+| UserApp of (* implicit arguments in effect *)
+    bool hidable * (* true means is a coercion *)
+    luconstr * (explicitation located hidable option * luconstr) list
+| Lambda of name located * luconstr hidable * luconstr
+| Prod of name located * luconstr hidable * luconstr
+| LetIn of name located * luconstr * (* always hidden: *) luconstr * luconstr
+| Var of name | Rel of int (* Two ways to denote variables *)
+| Ref of reference
+| Sort of sorts
+| Cast of uconstr * uconstr * cast_kind
+| Evar of (existential_key located * luconstr list) option
+| Notation of
+   notation_component located list * (* what it means: *) uconstr option
+| Prim of prim_token * (* what it means: *) uconstr option
+| Generalization of binding_kind * abstraction_kind option * luconstr
+| Delimiters of string * uconstr
+| If of uconstr * (name * luconstr hidable option) * luconstr * luconstr
+| LetTuple of name list * (name * luconstr hidable option) * luconstr * luconstr
+| Cases of       \
+| Fixpoint of    | a merge to do of rawconstr.ml and topconstr.ml
+| CoFixpoint of  /
 
-    and luconstr =
-      (* a located uconstr, possible annotated with its type *)
-      uconstr located * uconstr option
+and luconstr =
+  (* a located uconstr, possible annotated with its type *)
+  uconstr located * uconstr option
 
-    and reference =
-     (* possibly an absolute qualid, possibly with its "uconstr" form available *)
-      qualid * global_reference option
+and reference =
+ (* possibly an absolute qualid, possibly with its "uconstr" form available *)
+  qualid * global_reference option
 
-    and notation_component =
-    | Terminal of string
-    | Term of uconstr
-    | Ident of identifier
+and notation_component =
+| Terminal of string
+| Term of uconstr
+| Ident of identifier
 
-    type 'a hidable = 'a * bool
-      (* used to remember informations from constr that the printer does not need
-         to display if "true" *)
+type 'a hidable = 'a * bool
+  (* used to remember informations from constr that the printer does not need
+     to display if "true" *)
+```
 
 Notes:
 

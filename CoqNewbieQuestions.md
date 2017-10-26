@@ -3,11 +3,13 @@ Debugging output for tactics
 
 **Q**: `idtac` can be used to give output when writing ltac tactics for debugging reasons. However, I cannot work out how to convert Coq terms to strings. For example, I would like to see what the failed match is below:
 
-    Ltac test x :=
-      match x with
-      |  _+_ => idtac "Hello world!"
-      | _ => idtac x (* Doesn't work! *)
-     end.
+```coq
+Ltac test x :=
+  match x with
+  |  _+_ => idtac "Hello world!"
+  | _ => idtac x (* Doesn't work! *)
+ end.
+```
 
 **A**: From Coq 8.1, `idtac x` works and prints the value `x`.
 
@@ -18,17 +20,23 @@ Can commutativity of or be proven?
 
 **Q**: Can commutativity of `or` be proven?
 
-    Lemma or_comm : forall (A B:Prop), (A \/ B) = (B \/ A).
+```coq
+Lemma or_comm : forall (A B:Prop), (A \/ B) = (B \/ A).
+```
 
 \[\[Date(2006-06-18T22:32:50Z)\]\]\_
 
 **A**: No, but Coq can prove
 
-    Lemma or_comm : forall (A B:Prop), (A \/ B) <-> (B \/ A).
+```coq
+Lemma or_comm : forall (A B:Prop), (A \/ B) <-> (B \/ A).
+```
 
 **Q**: Is it consistent to add as an axiom
 
-    Hypothesis extprop : forall (C D:Prop), (C <-> D) -> (C = D).
+```coq
+Hypothesis extprop : forall (C D:Prop), (C <-> D) -> (C = D).
+```
 
 ? (I don't suppose it's *useful*.)
 
@@ -43,15 +51,21 @@ Syntax Question: What does ... mean?
 
 **A**: If you start your proof with
 
-    Proof with foo.
+```coq
+Proof with foo.
+```
 
 where `foo` is a tactic, then
 
-    induction 1...
+```coq
+induction 1...
+```
 
 is equivalent to
 
-    induction 1; foo.
+```coq
+induction 1; foo.
+```
 
 This is explained in the Reference Manual in <http://coq.inria.fr/V8.1/refman/Reference-Manual010.html#@command186>.
 
@@ -71,32 +85,34 @@ Implicit arguments
 
 I believe that the following input shows the issues simply:
 
-    Set Implicit Arguments.
-    Definition comp (A B C: Set) (f: A -> B) (g: B -> C): A -> C := fun x => g (f x).
-    Print comp.
-    Section comp.
-    Variables (A B C: Set) (f: A -> B) (g: B -> C) (x: A).
-    Check (comp f g x).
-    End comp.
-    Theorem associativity (A B C D: Set) (f: A -> B) (g: B -> C) (h: C -> D): forall (x: A), comp f (comp g h) x = comp (comp f g) h x.
-    Proof. trivial. Qed.
-    Definition id (A: Set): A -> A := fun x => x.
-    Print id.
-    Section id.
-    Variables (A: Set) (x: A).
-    Check (id x).
-    End id.
-    Theorem unit (A B: Set) (f: A -> B): forall (x: A), comp (id (A := A)) f x = f x.
-    Proof. trivial. Qed.
-    Unset Implicit Arguments.
-    Definition id' (A: Set): A -> A := fun x => x.
-    Print id'.
-    Section id'.
-    Variables (A: Set) (x: A).
-    Check (id' A x).
-    End id'.
-    Theorem unit' (A B: Set) (f: A -> B): forall (x: A), comp (id' A) f x = f x.
-    Proof. trivial. Qed.
+```coq
+Set Implicit Arguments.
+Definition comp (A B C: Set) (f: A -> B) (g: B -> C): A -> C := fun x => g (f x).
+Print comp.
+Section comp.
+Variables (A B C: Set) (f: A -> B) (g: B -> C) (x: A).
+Check (comp f g x).
+End comp.
+Theorem associativity (A B C D: Set) (f: A -> B) (g: B -> C) (h: C -> D): forall (x: A), comp f (comp g h) x = comp (comp f g) h x.
+Proof. trivial. Qed.
+Definition id (A: Set): A -> A := fun x => x.
+Print id.
+Section id.
+Variables (A: Set) (x: A).
+Check (id x).
+End id.
+Theorem unit (A B: Set) (f: A -> B): forall (x: A), comp (id (A := A)) f x = f x.
+Proof. trivial. Qed.
+Unset Implicit Arguments.
+Definition id' (A: Set): A -> A := fun x => x.
+Print id'.
+Section id'.
+Variables (A: Set) (x: A).
+Check (id' A x).
+End id'.
+Theorem unit' (A B: Set) (f: A -> B): forall (x: A), comp (id' A) f x = f x.
+Proof. trivial. Qed.
+```
 
 As you can see, **comp** is very convenient to use. Thanks to my setting at the start, I can define **comp** in a perfectly straightforward way. Now, **comp** depends on three arguments of type **Set**, but we ordinarily don't refer to these when discussing function composition in mathematics (the symbol is ‘∘’, not ‘∘\_A,B,C’), so it's nice that I don't actually have to refer to them! The example in **Section comp** shows how convenient this is to use; I write simply **comp f g** instead of **comp A B C f g**. The theorem **associativity** gives a more complicated example; all very nice.
 
@@ -112,24 +128,28 @@ So in the end, here's what I'd like to do, and maybe there's some way to do it t
 
 **A**: The feature you are looking for is implemented in the development version of Coq (to be released as Coq version 8.2 in early 2008). It is called maximal insertion of implicit arguments and it works as follows:
 
-    Set Implicit Arguments.
-    Set Maximal Implicit Insertion.
-    Definition comp (A B C: Set) (f: A -> B) (g: B -> C): A -> C := fun x => g (f x).
-    Definition id (A: Set): A -> A := fun x => x.
-    About id.
-    (* tells you that A is "maximally inserted", i.e. inserted even if no arguments follow *)
-    Theorem unit (A B: Set) (f: A -> B): forall (x: A), comp id f x = f x. (* works *)
+```coq
+Set Implicit Arguments.
+Set Maximal Implicit Insertion.
+Definition comp (A B C: Set) (f: A -> B) (g: B -> C): A -> C := fun x => g (f x).
+Definition id (A: Set): A -> A := fun x => x.
+About id.
+(* tells you that A is "maximally inserted", i.e. inserted even if no arguments follow *)
+Theorem unit (A B: Set) (f: A -> B): forall (x: A), comp id f x = f x. (* works *)
+```
 
 **Q**: Here's another example, which doesn't show all of the issues above, but does demonstrate quickly that I really don't understand what's going on:
 
-    Set Implicit Arguments.
-    Set Contextual Implicit.
-    Inductive sum_dep (A: Set) (B: A -> Set): Set := |pair_dep (a: A) (b: B a).
-    Print pair_dep.
-    Definition sum_indep (A B: Set): Set := sum_dep (fun a: A => B).
-    Definition pair_indep (A B: Set) (a: A) (b: B): sum_indep A B := pair_dep (B := fun _ => B) a b.
-    Print pair_indep.
-    Definition pair_indep' (A B: Set) (a: A) (b: B): sum_indep A B := pair_dep a b.
+```coq
+Set Implicit Arguments.
+Set Contextual Implicit.
+Inductive sum_dep (A: Set) (B: A -> Set): Set := |pair_dep (a: A) (b: B a).
+Print pair_dep.
+Definition sum_indep (A B: Set): Set := sum_dep (fun a: A => B).
+Definition pair_indep (A B: Set) (a: A) (b: B): sum_indep A B := pair_dep (B := fun _ => B) a b.
+Print pair_indep.
+Definition pair_indep' (A B: Set) (a: A) (b: B): sum_indep A B := pair_dep a b.
+```
 
 (Note that the final line causes an error.)
 

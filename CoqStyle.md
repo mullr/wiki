@@ -12,10 +12,12 @@ File Structure
 
 <!-- -->
 
-    (************************************************************************)
-    (* Copyright <YEAR> <AUTHOR>                                            *)
-    (* <LICENSE>                                                            *)
-    (************************************************************************)
+```coq
+(************************************************************************)
+(* Copyright <YEAR> <AUTHOR>                                            *)
+(* <LICENSE>                                                            *)
+(************************************************************************)
+```
 
 > This will credit the author(s) and clarifies any license issues, which is necessary for re-usability of your code.
 
@@ -37,18 +39,20 @@ Layout of Proofs
 
 <!-- -->
 
-    Lemma foo:
-    Proof.
-     <body of tactics before case>.
-     case (compare_with_zero X).
-      (* 0 < X *)
-       <body of tactics>...
-      (* X < 0  *)
-       <body of tactics>...
-      (* X = 0  *)
-       <body of tactics>...
-     <body of tactics after case>.
-    Qed.
+```coq
+Lemma foo:
+Proof.
+ <body of tactics before case>.
+ case (compare_with_zero X).
+  (* 0 < X *)
+   <body of tactics>...
+  (* X < 0  *)
+   <body of tactics>...
+  (* X = 0  *)
+   <body of tactics>...
+ <body of tactics after case>.
+Qed.
+```
 
 An alternate possible layout is to use indentation to tell exactly how many subgoals remain: n indentation for n subgoals (variant: (n-1)). This is especially useful during development when you replay proofs after you have modified a definition above: you can easily find where your proof script behaves differently.
 
@@ -56,18 +60,20 @@ The previous example would look much less nice than with the former style; on th
 
 Example:
 
-    Lemma bar:
-    Proof.
-     assert (H: <some property>).
-      rewrite foobar.
-      intuition.
-     assert (H2: <something else>).
-      simpl.
-      omega.
-     assert (H3: ...).
-      auto.
-     <body of tactics>
-    Qed.
+```coq
+Lemma bar:
+Proof.
+ assert (H: <some property>).
+  rewrite foobar.
+  intuition.
+ assert (H2: <something else>).
+  simpl.
+  omega.
+ assert (H3: ...).
+  auto.
+ <body of tactics>
+Qed.
+```
 
 Naming
 ======
@@ -91,7 +97,9 @@ Extraction
 
 <!-- -->
 
-    Extraction Language Haskell.
-    Extraction "Xfoo.hs" foo.
+```coq
+Extraction Language Haskell.
+Extraction "Xfoo.hs" foo.
+```
 
 > to extract a Coq constant `foo` into Haskell module `Xfoo.hs`. This way it is emphasised that this Haskell file is a result of Coq extraction.
