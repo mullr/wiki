@@ -1,5 +1,5 @@
 Some dummy library to have annotations on your proof.
-
+```coq
     Require Import String.
     Inductive Trace: Prop :=
     | End_of_trace: Trace
@@ -119,3 +119,4 @@ And a (not very relevant) example using it.
      show_trace.
      split.
     Qed.
+```
