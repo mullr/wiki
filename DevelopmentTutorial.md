@@ -133,9 +133,11 @@ Simple debugging with Drop
 
 Now run `bin/coqtop.byte` and type `Drop.` This will drop to the OCaml toplevel. Then type:
 
-    #use "include";;
-    #trace String.uppercase;; (* or any name of a function you'd like to trace *)
-    go();;
+```
+#use "include";;
+#trace String.uppercase;; (* or any name of a function you'd like to trace *)
+go();;
+```
 
 The last `go()` restarts the Coq parser. You can type any Coq command and observe when it calls the function asked to be traced.
 
