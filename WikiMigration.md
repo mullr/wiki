@@ -7,7 +7,7 @@ Until October 2017, [cocorico](http://coq.inria.fr/cocorico) was a [MoinMoin](ht
 
 ## New situation : Github wiki ##
 
-Here is the new [proposed wiki](Home), which is a full translation of today's cocorico to github wiki.
+The new [wiki](Home) is a full translation of Cocorico to github wiki.
 More on it and its caveats and glitches below.
 
 ## Why moving ? ##
