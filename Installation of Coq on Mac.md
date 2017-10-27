@@ -20,7 +20,7 @@ The Coq development team will maintain an opam repository for Coq and this will 
 Create a CoqIDE bundle
 ======================
 
-:exclamation: MacOS and gtk move too fast for this section to be up to date. If you try it, you're on your own!
+:warning: MacOS and gtk move too fast for this section to be up to date. If you try it, you're on your own!
 
 -   Get Xcode and Command line tools Xcode
 -   Get gtk-mac-integration (that require the Quartz backend of gtk) and gtksourceview2 libraries. I used `jhbuild`. I did
@@ -32,7 +32,7 @@ Create a CoqIDE bundle
     -   `~/.local/bin/jhbuild build meta-gtk-osx-core`
     -   `~/.local/bin/jhbuild build gtksourceview`
 
-:exclamation: This never work on the first time. Get ready to patch gtksourceview (something like `fix_gtksourceview.patch` (lost attachment)), download some tar.xz by hand, recall autoconf with extra arguments, ...
+:warning: This never work on the first time. Get ready to patch gtksourceview (something like `fix_gtksourceview.patch` (lost attachment)), download some tar.xz by hand, recall autoconf with extra arguments, ...
 
 -   Get coq OCaml build dependencies (OCaml, camlp5, lablgtk2, lablgtkosx). I did it using opam by
     -   Get the opam binary on the opam github page. Put it somewhere on path, give it x rights. Do `opam init` and then the command opam asks you to do to config your shell.
@@ -57,10 +57,10 @@ Put an extra package in a CoqIDE bundle
 
 -   Get command line tools for Xcode.
 
-:exclamation: If this is a plugin (containing ml\* files), you'll have to be an ocaml compiler compatible with the one used to create the bundle.
+:warning: If this is a plugin (containing ml\* files), you'll have to be an ocaml compiler compatible with the one used to create the bundle.
 
 -   ` export COQBIN='''correct_path'''/CoqIDE_version.app/Contents/Resources/bin/`
 -   maybe `${COQBIN}coq_makefile -f _CoqProject -o Makefile`
 -   `make -j 2 && make install`
-- :exclamation: `codesign -f -s - '''correct_path'''/CoqIDE_version.app`
+- :warning: `codesign -f -s - '''correct_path'''/CoqIDE_version.app`
 

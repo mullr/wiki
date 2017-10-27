@@ -1,4 +1,4 @@
-:exclamation: **Note:** This page discusses the migration from svn to git that happened in Nov, 2013.
+:warning: **Note:** This page discusses the migration from svn to git that happened in Nov, 2013.
 
 Migrating the coq repository from svn to git
 ============================================
