@@ -1,6 +1,6 @@
 [Coq](http://coq.inria.fr/) is a proof assistant based on the calculus of constructions. It is used to formalize proofs in a variety of fields, including mathematics and programming languages. Cocorico is the Coq wiki.
 
-:warning: **Note**: this wiki is a clone of <https://coq.inria.fr/cocorico> and will probably subsume it, more information on this migration [here](WikiMigration).
+:warning: **Note**: this wiki has been converted in October 2017 from an earlier wiki based on MoinMoin. [More about this migration](WikiMigration). In case of need, this earlier wiki is [still here](https://coq.inria.fr/cocorico) for the moment, in read-only mode.
 
 Coq installation
 ================
