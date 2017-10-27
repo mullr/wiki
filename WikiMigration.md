@@ -1,11 +1,11 @@
 Notes on migrating Coq wiki 
 ===========================
 
-## Current situation ##
+## Previous situation ##
 
-[cocorico](http://coq.inria.fr/cocorico) was up to now a [MoinMoin](https://moinmo.in/) wiki, installed on the same server as Coq website, located at Inria Rocquencourt.
+Until October 2017, [cocorico](http://coq.inria.fr/cocorico) was a [MoinMoin](https://moinmo.in/) wiki, installed on the same server as Coq website, located at Inria Rocquencourt.
 
-## Proposed migration : Github wiki ##
+## New situation : Github wiki ##
 
 Here is the new [proposed wiki](Home), which is a full translation of today's cocorico to github wiki.
 More on it and its caveats and glitches below.
@@ -33,7 +33,7 @@ I (Pierre Letouzey) do think that the above reasons outbalance the following poi
 - The github wiki is *very* poor in configuration options. Either all github users may edit your wiki, or you restrict your wiki to collaborators of your repository. That's all. No fancy ACL or whatever. But that seems ok for what we need. We may lack the possibility of turning a page into read-only mode, but at the same time, the github monitoring of accounts behaving as spammers seem pretty aggressive (as experienced during a test).
 
 - Similarly, some features of MoinMoin do not seem to have counterpart in Github wiki: 
-  - The RecentChanges page (we could replace it someday by a script)
+  - The RecentChanges page (we could replace it someday by a script). **Update** : see [Github history](_history).
   - The `<<TableOfContents>>` pragma at the top of a page, expanded by MoinMoin into a real table of content.
   - The various header pragma such as `#include` or `#redirect`. For redirection, we could use symlinks, see below.
 
