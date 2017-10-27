@@ -83,3 +83,4 @@ Coq Wiki
 -   [Old articles](OtherContents)
 -   [Old versions of the front page](OldFront)
 -   [The license of this wiki](Cocorico!WikiLicense)
+-   [List of recent changes](https://github.com/coq/coq/wiki/_history) (compare two revisions by selecting them then clicking on "Compare Revisions")
