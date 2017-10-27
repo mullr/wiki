@@ -6,9 +6,11 @@ Why Have Intensional Equality
 
 Suppose you create a countable data type of recursive functions, `RecursiveFunction`, along with some execution function `exec : forall (rf:RecursiveFunction) (input:N) (steps:N) : option N`, then you could add an axiom
 
-    reflect : forall (f:N -> N),
-     {rf:RecursiveFunction
-     | forall (n m:N) {(exec rf n m)=Some (f n)}+{(exec rf n m)=None}
+```coq
+reflect : forall (f:N -> N),
+ {rf:RecursiveFunction
+ | forall (n m:N) {(exec rf n m)=Some (f n)}+{(exec rf n m)=None}
+```
 
 During [ProgramExtraction](ProgramExtraction) this function could be mapped to a function satisfying this signature. This might be a useful thing to do.
 

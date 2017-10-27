@@ -52,16 +52,18 @@ Induction schemes
 
 Automatically build `_rect` eliminators for inductive propositions with several constructors whose constructors have disjoint conclusions and whose constructors have only propositional (possibly recursive) arguments as in, e.g.:
 
-    Inductive le_list a : list nat -> Prop :=
-      | le_list_nil : le_list a nil
-      | le_list_cons b l : a <= b -> le_list a (b :: l).
+```coq
+Inductive le_list a : list nat -> Prop :=
+  | le_list_nil : le_list a nil
+  | le_list_cons b l : a <= b -> le_list a (b :: l).
 
-    Lemma le_list_inv : forall a b l, le_list a (b :: l) -> a <= b.
-    Proof. intros; inversion H; trivial. Defined.
+Lemma le_list_inv : forall a b l, le_list a (b :: l) -> a <= b.
+Proof. intros; inversion H; trivial. Defined.
 
-    Lemma le_list_rect : forall a (P : list nat -> Type),
-         P nil -> (forall b l, a <= b -> P (b :: l)) -> forall l : list nat, le_list a l -> P l.
-    Proof. induction l; firstorder using le_list_inv. Defined.
+Lemma le_list_rect : forall a (P : list nat -> Type),
+     P nil -> (forall b l, a <= b -> P (b :: l)) -> forall l : list nat, le_list a l -> P l.
+Proof. induction l; firstorder using le_list_inv. Defined.
+```
 
 ### Total ordering of algebraic data-types
 
@@ -90,12 +92,14 @@ Note: command `Arguments` in version 8.4 allows to control such a reduction (e.g
 
 `simpl`, or rather a better `simpl` with a different name, should not simplify `minus O x` in the following definition:
 
-    Fixpoint minus (n m:nat) {struct n} : nat :=
-       match n, m with
-       | O, _ => n
-       | S k, O => n
-       | S k, S l => k - l
-       end
+```coq
+Fixpoint minus (n m:nat) {struct n} : nat :=
+   match n, m with
+   | O, _ => n
+   | S k, O => n
+   | S k, S l => k - l
+   end
+```
 
 It should wait for falling in one of the given n-ary clauses.
 
@@ -114,10 +118,12 @@ Discriminate
 
 Should be able to work on heterogenous equalities as in:
 
-    Require Import Vector Eqdep.
-    Goal forall (a n : nat) (l : t nat n), eq_dep nat (t nat) 0 (nil nat) (S n) (cons nat a n l) -> False.
-    intros * H.
-    discriminate H.
+```coq
+Require Import Vector Eqdep.
+Goal forall (a n : nat) (l : t nat n), eq_dep nat (t nat) 0 (nil nat) (S n) (cons nat a n l) -> False.
+intros * H.
+discriminate H.
+```
 
 Specialize
 ----------
@@ -144,16 +150,18 @@ Inversion combined with recursion
 
 Here is an example from file [Sorted](https://coq.inria.fr/distrib/8.5pl1/stdlib/Coq.Sorting.Sorted.html) in standard library. In the proof of `Sorted_extends` one needs an inversion lemma of the following form:
 
-    Lemma inversion (P:A -> list A -> Prop)
-       (base : forall a, Sorted [] -> HdRel a [] -> P a [])
-       (step : forall a b l, P b l -> Sorted (b::l) -> HdRel a (b::l) -> P a (b::l)) :
-       forall a l, Sorted (a::l) -> P a l.
-    Proof (fix f a l H :=
-      match H in Sorted l return match l return Prop with [] => True | a :: l => P a l end with
-      | @Sorted_cons a [] HS HH => base a HS HH
-      | @Sorted_cons a (b::l) HS HH => step a b l (f b l HS) HS HH
-      | @Sorted_nil => I
-      end).
+```coq
+Lemma inversion (P:A -> list A -> Prop)
+   (base : forall a, Sorted [] -> HdRel a [] -> P a [])
+   (step : forall a b l, P b l -> Sorted (b::l) -> HdRel a (b::l) -> P a (b::l)) :
+   forall a l, Sorted (a::l) -> P a l.
+Proof (fix f a l H :=
+  match H in Sorted l return match l return Prop with [] => True | a :: l => P a l end with
+  | @Sorted_cons a [] HS HH => base a HS HH
+  | @Sorted_cons a (b::l) HS HH => step a b l (f b l HS) HS HH
+  | @Sorted_nil => I
+  end).
+```
 
 One would like that `induction` on an hypothesis of the form `Sorted (a::l)` automatically uses this schema.
 
@@ -176,26 +184,30 @@ Support lexicographic termination in Fixpoint
 
 Extend the guard condition so as to support lexicographic ordering. At worst, Coq could support automatic insertion of subfixpoint in recursive function on lexicographic ordering. E.g.
 
-    Fixpoint merge l1 l2 :=
-       match l1, l2 with
-       | [], _ => l2
-       | _, [] => l1
-       | a1::l1', a2::l2' =>
-           if a1 <=? a2 then a1 :: merge l1' l2 else a2 :: merge l1 l2'
-       end.
+```coq
+Fixpoint merge l1 l2 :=
+   match l1, l2 with
+   | [], _ => l2
+   | _, [] => l1
+   | a1::l1', a2::l2' =>
+       if a1 <=? a2 then a1 :: merge l1' l2 else a2 :: merge l1 l2'
+   end.
+```
 
 could be accepted and produce:
 
-    Definition merge :=
-       fix merge l1 l2 :=
-       let fix merge_aux l2 :=
-         match l1, l2 with
-         | [], _ => l2
-         | _, [] => l1
-         | a1::l1', a2::l2' =>
-             if a1 <=? a2 then a1 :: merge l1' l2 else a2 :: merge_aux l2'
-       end
-       in merge_aux l2.
+```coq
+Definition merge :=
+   fix merge l1 l2 :=
+   let fix merge_aux l2 :=
+     match l1, l2 with
+     | [], _ => l2
+     | _, [] => l1
+     | a1::l1', a2::l2' =>
+         if a1 <=? a2 then a1 :: merge l1' l2 else a2 :: merge_aux l2'
+   end
+   in merge_aux l2.
+```
 
 This is not as useful as native support for lexicographic ordering because when exposed, `merge_aux l2` will not appear as `merge l1 l2`.
 
@@ -209,60 +221,72 @@ Dependent mutual fixpoints
 
 Support mutual fixpoints with dependencies as e.g. in:
 
-    Notation "x .1" := (projT1 x) (at level 1, left associativity, format "x .1").
-    Notation "x .2" := (projT2 x) (at level 1, left associativity, format "x .2").
+```coq
+Notation "x .1" := (projT1 x) (at level 1, left associativity, format "x .1").
+Notation "x .2" := (projT2 x) (at level 1, left associativity, format "x .2").
 
-    Fixpoint f (n:nat) : Type :=
-      match n with
-      | 0 => unit
-      | S n => {x:f n | g n x}
-      end
+Fixpoint f (n:nat) : Type :=
+  match n with
+  | 0 => unit
+  | S n => {x:f n | g n x}
+  end
 
-    with g (n:nat) : f n -> Prop :=
-      match n with
-      | 0 => fun _ => True
-      | S n => fun x => g n x.1 /\ x = x
-      end.
+with g (n:nat) : f n -> Prop :=
+  match n with
+  | 0 => fun _ => True
+  | S n => fun x => g n x.1 /\ x = x
+  end.
+```
 
 There is for instance an application in [constructing semi-simplicial types](http://pauillac.inria.fr/~herbelin/articles/mscs-Her14-semisimplicial.pdf). Currently, one needs to do
 
-    Fixpoint fg (n:nat) : {A:Type & A -> Prop} :=
-      match n with
-      | 0 => existT (fun A:Type => A -> Prop) unit (fun _ => True)
-      | S n => let (fn,gn) := fg n in existT (fun A:Type => A -> Prop) {x:fn & gn x} (fun x => gn x.1 /\ x=x)
-      end.
+```coq
+Fixpoint fg (n:nat) : {A:Type & A -> Prop} :=
+  match n with
+  | 0 => existT (fun A:Type => A -> Prop) unit (fun _ => True)
+  | S n => let (fn,gn) := fg n in existT (fun A:Type => A -> Prop) {x:fn & gn x} (fun x => gn x.1 /\ x=x)
+  end.
 
-    Definition f n := (fg n).1.
-    Definition g n := (fg n).2.
+Definition f n := (fg n).1.
+Definition g n := (fg n).2.
+```
 
 Recognizing uniform parameters in fixpoints
 -------------------------------------------
 
 A definition such as
 
-    Fixpoint map {A B} (f:A->B) l :=
-      match l with
-      | nil => nil
-      | cons n l => cons (f n) (map f l)
-      end.
+```coq
+Fixpoint map {A B} (f:A->B) l :=
+  match l with
+  | nil => nil
+  | cons n l => cons (f n) (map f l)
+  end.
+```
 
 cannot be used in the presence of
 
-    Inductive tree := node : nat -> list tree -> tree.
+```coq
+Inductive tree := node : nat -> list tree -> tree.
+```
 
 to define
 
-    Fixpoint map_tree f t :=
-      match t with node n l => node (f n) (map (map_tree f) l) end.
+```coq
+Fixpoint map_tree f t :=
+  match t with node n l => node (f n) (map (map_tree f) l) end.
+```
 
 Conversely, if one had defined map as follows:
 
-    Definition map {A B} (f:A->B) :=
-      fix map l :=
-      match l with
-      | nil => nil
-      | cons n l => cons (f n) (map l)
-      end.
+```coq
+Definition map {A B} (f:A->B) :=
+  fix map l :=
+  match l with
+  | nil => nil
+  | cons n l => cons (f n) (map l)
+  end.
+```
 
 one could have define map\_tree above.
 
@@ -275,21 +299,25 @@ Per-inductive parameters in mutual inductive blocks
 
 A mutual inductive definition such as
 
-    Inductive Tree : bool -> Type :=
-     | leaf : Tree true
-     | node : forall b, TreePair b -> Tree false
+```coq
+Inductive Tree : bool -> Type :=
+ | leaf : Tree true
+ | node : forall b, TreePair b -> Tree false
 
-    with TreePair (b:bool) : Type :=
-     | stp  : Tree b -> Tree b -> TreePair Tree b.
+with TreePair (b:bool) : Type :=
+ | stp  : Tree b -> Tree b -> TreePair Tree b.
+```
 
 is not supported with the message that all parameters should be the same for all inductive type of the block. However, it can be simulated with
 
-    Inductive TreePair Tree (b:bool) : Type :=
-     | stp  : Tree b -> Tree b -> TreePair Tree b.
+```coq
+Inductive TreePair Tree (b:bool) : Type :=
+ | stp  : Tree b -> Tree b -> TreePair Tree b.
 
-    Inductive Tree : bool -> Type :=
-     | leaf : Tree true
-     | node : forall b, TreePair Tree b -> Tree false.
+Inductive Tree : bool -> Type :=
+ | leaf : Tree true
+ | node : forall b, TreePair Tree b -> Tree false.
+```
 
 Why not to provide it natively? (Agda does for instance)
 
@@ -302,28 +330,36 @@ In many cases, terms could be made convertible thanks to commutative cuts, such 
 
 In presence of predicate parameters (i.e. indices), commutative cuts may get quite involved. Consider the following example in context `H : x = y`:
 
-    match H in _ = z return P(z) -> Q(z) with
-        eq_refl => fun H:P(x) => H'
-    end (t : P(y))
+```coq
+match H in _ = z return P(z) -> Q(z) with
+    eq_refl => fun H:P(x) => H'
+end (t : P(y))
+```
 
 The naive commutation
 
-    match H in _ = z return P(z) -> Q(z) with
-        eq_refl => (fun H:P(x) => H') t
-    end
+```coq
+match H in _ = z return P(z) -> Q(z) with
+    eq_refl => (fun H:P(x) => H') t
+end
+```
 
 is ill-typed but one can use the following commutation:
 
-    match H in _ = z return P(z) -> Q(z) with
-      eq_refl => (fun H:P(x) => H') (match sym_eq H in _ = z return P(z) with eq_refl => t)
-    end
+```coq
+match H in _ = z return P(z) -> Q(z) with
+  eq_refl => (fun H:P(x) => H') (match sym_eq H in _ = z return P(z) with eq_refl => t)
+end
+```
 
 In presence of truly dependent pattern-matching, commutation is apparently possible only if the surrounding context is uniformly dependent on the term matched. Consider e.g.
 
-    match b as b' return P b b' -> Q b b' with
-      | true => a   (* of type P b true -> Q b true *)
-      | false => b  (* of type P b false-> Q b false *)
-      end  t (* of type P b b)
+```coq
+match b as b' return P b b' -> Q b b' with
+  | true => a   (* of type P b true -> Q b true *)
+  | false => b  (* of type P b false-> Q b false *)
+  end  t (* of type P b b)
+```
 
 we need to cast `t` into a term of type `P b true`, but how can we ensure it is possible?
 

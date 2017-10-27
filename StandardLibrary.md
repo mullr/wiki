@@ -17,15 +17,16 @@ Extensional Equality
 
 There should be a library for [extensional\_equality](extensional_equality) for functions.
 
-> The axiom of functional extensionality is declared in `Coq.Program.FunctionalExtensionality` (Coq SVN):
->
->     Axiom fun_extensionality_dep : forall A, forall B : (A -> Type),
->       forall (f g : forall x : A, B x),
->       (forall x, f x = g x) -> f = g.
->     Lemma fun_extensionality : forall A B (f g : A -> B),
->       (forall x, f x = g x) -> f = g.
->
-> Is this what's meant here?
+> The axiom of functional extensionality is declared in
+> `Coq.Program.FunctionalExtensionality` (see below). Is this what's meant here?
+
+```coq
+Axiom fun_extensionality_dep : forall A, forall B : (A -> Type),
+  forall (f g : forall x : A, B x),
+  (forall x, f x = g x) -> f = g.
+Lemma fun_extensionality : forall A B (f g : A -> B),
+  (forall x, f x = g x) -> f = g.
+```
 
 Wf
 --
@@ -59,16 +60,18 @@ I think that a consistent set of definitions would be easy to achieved by writin
 
 More specifically for decidable total orders I am thinking of module with `compare : A -> A -> comparison` as primitive and with
 
-    Definition ltcompare (c:compare) : bool :=
-    match c with
-    | Lt => true
-    | Eq => false
-    | Gt => false
-    end.
-    (* ... *)
-    Definition lt (a b:A) : bool := ltcompare (compare a b)
-    (* ... *)
-    Coercion Is_true : bool >-> Sortclass
+```coq
+Definition ltcompare (c:compare) : bool :=
+match c with
+| Lt => true
+| Eq => false
+| Gt => false
+end.
+(* ... *)
+Definition lt (a b:A) : bool := ltcompare (compare a b)
+(* ... *)
+Coercion Is_true : bool >-> Sortclass
+```
 
 This process uses [SmallScaleReflection](SmallScaleReflection) advocated by [GeorgesGonthier](GeorgesGonthier), i.e. coercing bools to propositions and treating them as equivalent when working on a decidable domain.
 
@@ -78,7 +81,9 @@ Some may argue that the function `(true=)` should be the coercion because it all
 
 I would advocate for using the following definition as the canonical coercion from `bool` to `Prop`:
 
-    Inductive eq_true : bool -> Prop := is_eq_true : eq_true true.
+```coq
+Inductive eq_true : bool -> Prop := is_eq_true : eq_true true.
+```
 
 It directly expresses what it means, it does not interfere with other potentially independent uses of `true=` and it is easy to use for rewriting expressions into `true` using `destruct`. \[HH\]
 
@@ -98,9 +103,11 @@ Both the `A -> Set` and the `forall I:Type, I -> A` notions of subsets of A shou
 
 I also suggest a theory of decidable sets `A -> bool` (This is apparently provided by `Coq.Sets.Uniset`) and semi-decidable sets `A -> conat` where
 
-    CoInductive conat : Set :=
-    | coO : conat
-    | coS : conat -> conat.
+```coq
+CoInductive conat : Set :=
+| coO : conat
+| coS : conat -> conat.
+```
 
 > Of course, we should try to establish connections among these notions whenever possible.
 

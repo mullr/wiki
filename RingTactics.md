@@ -5,11 +5,13 @@ ringsimpl
 
 The idea is to put all ring expressions occuring in the goal into normal form. This tactic could use lots of improvement.
 
-    Ltac ringsimpl :=
-    match goal with
-    | |- (_ ?a ?b) => ring a b
-    | |- (?a ?b ?c) => try ringsimpl a; try ringsimpl b; try ringsimpl c
-    end.
+```coq
+Ltac ringsimpl :=
+match goal with
+| |- (_ ?a ?b) => ring a b
+| |- (?a ?b ?c) => try ringsimpl a; try ringsimpl b; try ringsimpl c
+end.
+```
 
 ringreplace
 ===========

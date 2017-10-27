@@ -1,7 +1,9 @@
 `match` allows the result type to depend on both the input value, and the parameters of the input type. The `as` and `in` keywords create bound variables that can occur in the `return` type. So the expression
 
-    match expr as T in (deptype A B) return exprR
-    (*...*)
+```coq
+match expr as T in (deptype A B) return exprR
+(*...*)
+```
 
 creates bound variables `T`, `A`, and `B` that occur in `exprR`. If `expr` has type `(deptype exprA exprB)` then the type of the entire `match` expression will have type `exprR[T/expr, A/exprA, B/exprB]`, that is `exprR` with `T`, `A`, and `B` substituted by `expr`, `exprA`, and `exprB`.
 
@@ -12,21 +14,25 @@ creates bound variables `T`, `A`, and `B` that occur in `exprR`. If `expr` has t
 
 Coq is missing some assumptions about real arguments (see page 105 of the 11-Feb-2009 edition of the Coq 8.2 manual for the subtle definition of the technical term "real argument"). In the (highly contrived) program below, it cannot discern that `u` has type `updown (n+1)`:
 
-    Inductive updown : nat -> Set :=
-      | up   : forall n, updown (n+1) -> updown n
-      | down : forall n, updown  n    -> updown (n+1).
-    Fixpoint demo (n:nat)(t:updown n)(t':updown (n+1)) : nat :=
-      match t with
-        | up   _ u => demo n t u
-        | down _ d => 3
-      end.
+```coq
+Inductive updown : nat -> Set :=
+  | up   : forall n, updown (n+1) -> updown n
+  | down : forall n, updown  n    -> updown (n+1).
+Fixpoint demo (n:nat)(t:updown n)(t':updown (n+1)) : nat :=
+  match t with
+    | up   _ u => demo n t u
+    | down _ d => 3
+  end.
+```
 
 Possible Fix
 ------------
 
 In the typing rule at the bottom of page 114 of the 11-Feb-2009 edition of the Coq 8.2 manual, the text E\[Gamma\] appears three times in the hypothesis of rule "match". The rightmost occurrence should be replaced with:
 
-    E[\Gamma, x:(Coq.Logic.Eqdep.eq_dep Type (fun x=>x) C c A_i c)]
+```coq
+E[\Gamma, x:(Coq.Logic.Eqdep.eq_dep Type (fun x=>x) C c A_i c)]
+```
 
 For x a fresh variable name. See the bottom of page 109 for the meaning of A\_i. This suggestion has the disadvantage (which was first lamented [here](http://article.gmane.org/gmane.science.mathematics.logic.coq.club/4667)) of introducing a new constant into the typing rules, thereby making `eq_dep` a primitive of CiC.
 
@@ -46,44 +52,50 @@ If not natively put inside the kernel type-checker, there is then a second alter
 
 [AdamMegacz](AdamMegacz), 3 May 2010: That's not the problem -- adding a decreasing parameter doesn't fix the problem (but certainly makes the example more difficult to read)
 
-    Inductive updown : nat -> Set :=                                                                                         
-      | up   : forall n, updown (n+1) -> updown n                                                                            
-      | down : forall n, updown  n    -> updown (n+1).
-    Fixpoint demo (n:nat)(t:updown n)(t':updown (n+1))
-                  (decreasing_parameter:nat) {struct decreasing_parameter} : nat :=
-      match decreasing_parameter with
-        | 0 => 0
-        | (S dec) => 0
-          match t with
-            | up   _ u => demo n t u dec
-            | down _ d => 3
-          end
-      end.
+```coq
+Inductive updown : nat -> Set :=
+  | up   : forall n, updown (n+1) -> updown n
+  | down : forall n, updown  n    -> updown (n+1).
+Fixpoint demo (n:nat)(t:updown n)(t':updown (n+1))
+              (decreasing_parameter:nat) {struct decreasing_parameter} : nat :=
+  match decreasing_parameter with
+    | 0 => 0
+    | (S dec) => 0
+      match t with
+        | up   _ u => demo n t u dec
+        | down _ d => 3
+      end
+  end.
+```
 
 [PierreBoutillier](PierreBoutillier), 23 April 2010 but why are you unhappy with:
 
-    Fixpoint demo (n:nat)(t:updown n)(t':updown (n+1)) : nat :=
-      match t with
-        | up   n0 u as t0 => demo n0 t0 u
-        | down _ d => 3
-      end.
+```coq
+Fixpoint demo (n:nat)(t:updown n)(t':updown (n+1)) : nat :=
+  match t with
+    | up   n0 u as t0 => demo n0 t0 u
+    | down _ d => 3
+  end.
+```
 
 [AdamMegacz](AdamMegacz), 3 May 2010: Because that is a different program from the one I wrote. You are passing "u" as the second argument to the recursive call, whereas I am passing "t". The problem is more glaring if you add an extra argument to the up/down constructors:
 
-    Inductive updown : nat -> Set :=                                                                                         
-      | up   : forall n, updown (n+1) -> nat -> updown n                                                                     
-      | down : forall n, updown  n    -> nat -> updown (n+1).                                                                
+```coq
+Inductive updown : nat -> Set :=
+  | up   : forall n, updown (n+1) -> nat -> updown n
+  | down : forall n, updown  n    -> nat -> updown (n+1).
 
-    Definition getX (n:nat)(t:updown n) :=                                                                                   
-      match t with                                                                                                           
-      | up   _ _ x => x                                                                                                      
-      | down _ _ x => x                                                                                                      
-      end.
-    Fixpoint demo (n:nat)(t:updown n)(t':updown (n+1)) : nat :=
-      match t with
-        | up   _ u _ => demo n t u
-        | down _ d _ => 3
-      end.
+Definition getX (n:nat)(t:updown n) :=
+  match t with
+  | up   _ _ x => x
+  | down _ _ x => x
+  end.
+Fixpoint demo (n:nat)(t:updown n)(t':updown (n+1)) : nat :=
+  match t with
+    | up   _ u _ => demo n t u
+    | down _ d _ => 3
+  end.
+```
 
 There is no guarantee that (getX t) and (getX u) are equal, so your change will drastically alter the observable behavior of the function.
 
@@ -91,59 +103,69 @@ There is no guarantee that (getX t) and (getX u) are equal, so your change will 
 
 My playground :
 
-    Variable s : Type.
-    Inductive t : Type := |C1 : s -> t |C2 : whatever -> t.
-    Variable a : s, b : t, f : s -> t.
-    Inductive T : t -> Type := stuff.
+```coq
+Variable s : Type.
+Inductive t : Type := |C1 : s -> t |C2 : whatever -> t.
+Variable a : s, b : t, f : s -> t.
+Inductive T : t -> Type := stuff.
+```
 
 -   If you match over a term of type *T b*, tactics will automaticaly build the generalisation of terms depending of *b* and will rewrite the goal with the new *b*. I need a better example than the silly :
 
 <!-- -->
 
-    Lemma f_equal (A B : Type) (f : A -> B) (x y : A) (H  : x = y) : f x = f y.
-    Proof.
-    destruct H.
-    reflexivity.
-    Qed.
+```coq
+Lemma f_equal (A B : Type) (f : A -> B) (x y : A) (H  : x = y) : f x = f y.
+Proof.
+destruct H.
+reflexivity.
+Qed.
+```
 
 -   If you match over a term of type *T (C1 a)*, first, terms whose type depends of *a* are not generalized (by the way, terms of types depending of *C a* are, so you may have an "ill typed term" message !) and second, constructor that build something of type *T (C2 \_)* aren't automaticaly erased. But by a bit weird match in the return clause and the use of *ID/id* or\*True/I\* for impossible case, we've got a solution.
 
 Here is the already existing :
 
-    Definition Vtail (A : Type) (n : nat) (v : vector A (S n)) : vector A n :=
-    match v in (vector _ n0) return match n0 with
-        | 0 => ID | S n1 => vector A n1 end with
-     | Vnil => id
-     | Vcons _ _ v0 => v0
-    end.
+```coq
+Definition Vtail (A : Type) (n : nat) (v : vector A (S n)) : vector A n :=
+match v in (vector _ n0) return match n0 with
+    | 0 => ID | S n1 => vector A n1 end with
+ | Vnil => id
+ | Vcons _ _ v0 => v0
+end.
+```
 
 or an example (adapted from Heq of Chung-Kil Hur) :
 
-    Inductive TyVar : nat -> Type :=
-    | ZTYVAR : forall u, TyVar (S u)
-    | STYVAR : forall u, TyVar u -> TyVar (S u).
-    Definition RenT u w := TyVar u -> TyVar w.
-    Definition RTyL u w (r:RenT u w) : RenT (S u) (S w) :=
-    fun var : TyVar (S u) => match var in TyVar n return match n with
-        |0 => ID |S x => RenT x w -> TyVar (S w) end with
-      | ZTYVAR _ => fun _ => (ZTYVAR _)
-      | STYVAR _ var' => fun r' => STYVAR (r' var')
-      end r.
+```coq
+Inductive TyVar : nat -> Type :=
+| ZTYVAR : forall u, TyVar (S u)
+| STYVAR : forall u, TyVar u -> TyVar (S u).
+Definition RenT u w := TyVar u -> TyVar w.
+Definition RTyL u w (r:RenT u w) : RenT (S u) (S w) :=
+fun var : TyVar (S u) => match var in TyVar n return match n with
+    |0 => ID |S x => RenT x w -> TyVar (S w) end with
+  | ZTYVAR _ => fun _ => (ZTYVAR _)
+  | STYVAR _ var' => fun r' => STYVAR (r' var')
+  end r.
+```
 
 Never the less, this technique isn't really friend with terminaison checking. In
 
-    Fixpoint Vbinary n  (a : vector n) {struct a} : vector n -> vector n :=
-    match a in vector n0 return vector n0 -> vector n0 with
-      |Vnil => fun b' => match b' in vector n0' return
-          match n0' with |0 => vector 0 |S _ => ID end with
-          |Vnil => Vnil |Vcons _ _ _ => id end
-      |Vcons h l t => fun b' => match b' in vector n0' return
-        match n0' with |0 => ID |S n' => vector n' -> vector (S n') end with
-        |Vnil => id
-        |Vcons h' l' t' => fun tbis => Vcons (g h h') l'
-          (Vbinary l' tbis t')
-      end t
-    end.
+```coq
+Fixpoint Vbinary n  (a : vector n) {struct a} : vector n -> vector n :=
+match a in vector n0 return vector n0 -> vector n0 with
+  |Vnil => fun b' => match b' in vector n0' return
+      match n0' with |0 => vector 0 |S _ => ID end with
+      |Vnil => Vnil |Vcons _ _ _ => id end
+  |Vcons h l t => fun b' => match b' in vector n0' return
+    match n0' with |0 => ID |S n' => vector n' -> vector (S n') end with
+    |Vnil => id
+    |Vcons h' l' t' => fun tbis => Vcons (g h h') l'
+      (Vbinary l' tbis t')
+  end t
+end.
+```
 
 *tbis* isn't a strict subterm of *a*. I've to ask for a rule such as in *(fun x' =&gt; f x') x* (*x, x'* variables), gives to *x'* the subterm property of *x*.
 

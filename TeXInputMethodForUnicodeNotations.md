@@ -7,7 +7,9 @@ Just do `M-x set-input-method` and choose `TeX`. Unicode symbols can then be ent
 
 To make this happen automatically, add the following line to your `.emacs` file:
 
-    (add-hook 'proof-mode-hook (lambda () (set-input-method "TeX") ))
+```
+(add-hook 'proof-mode-hook (lambda () (set-input-method "TeX") ))
+```
 
 In CoqIDE (using UIM on POSIX systems)
 ======================================

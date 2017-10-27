@@ -29,12 +29,14 @@ Coq has currently generative functors: twice the same instantiation of a functor
 
 Example of generativity of inductive types:
 
-    Module Type S. End S.
-    Module A <: S. End A.
-    Module F (X : S). Inductive t := C. End F.
-    Module B1 := F A.
-    Module B2 := F A.
-    Fail Check eq_refl : B1.t = B2.t. (* The inductive types are different *)
+```coq
+Module Type S. End S.
+Module A <: S. End A.
+Module F (X : S). Inductive t := C. End F.
+Module B1 := F A.
+Module B2 := F A.
+Fail Check eq_refl : B1.t = B2.t. (* The inductive types are different *)
+```
 
 For more details, search for "applicative" or "generative" in Élie Soubiran's [PhD](https://tel.archives-ouvertes.fr/file/index/docid/679201/filename/these.pdf), or e.g. in this [talk](https://www.cs.ox.ac.uk/ralf.hinze/WG2.8/24/slides/derek.pdf) from Derek Dreyer, etc.
 
@@ -49,29 +51,35 @@ The signature of an aliased module is transparent thanks to strenghtening (which
 
 Example showing the transparency of the signature of aliased modules in functors:
 
-    Module Type S. Parameter t : Type. End S.
-    Module A <: S. Definition t := nat. End A.
-    Module F (Y : S). Module M := Y. End F.
-    Module C := F A.
-    Print C.M.t. (* Shows C.M.t = A.t *)
+```coq
+Module Type S. Parameter t : Type. End S.
+Module A <: S. Definition t := nat. End A.
+Module F (Y : S). Module M := Y. End F.
+Module C := F A.
+Print C.M.t. (* Shows C.M.t = A.t *)
+```
 
 In current Coq, the signature of an applied functor does not have strengthening and is not transparent.
 
 Example showing the non-transparency of the signature of an applied functor in an higher-order functor:
 
-    Module Type S. Parameter t : Type. End S.
-    Module A <: S. Definition t := nat. End A.
-    Module Type T (X : S). Parameter u : Type. End T.
-    Module B (X : S) <: T X. Definition u := X.t. End B.
-    Module F (Y : T). Module M := Y A. End F.
-    Module C := F B.
-    Print C.M.u. (* Show *** [ C.M.u : Type ], i.e. C.M.u is abstract *)
+```coq
+Module Type S. Parameter t : Type. End S.
+Module A <: S. Definition t := nat. End A.
+Module Type T (X : S). Parameter u : Type. End T.
+Module B (X : S) <: T X. Definition u := X.t. End B.
+Module F (Y : T). Module M := Y A. End F.
+Module C := F B.
+Print C.M.u. (* Show *** [ C.M.u : Type ], i.e. C.M.u is abstract *)
+```
 
 For strengthening to be applicable on applied functors, one would typically need paths to include arbitrary module expressions (for instance, OCaml adopts the compromise to allow strengthening on any functor made of application of names of functors).
 
 As an alternative to using arbitrary module expressions in paths, another approach would be to use self-reference, i.e. to type any named algebraic expression with a type referring to the name given to the expression, as in the following informal pseudo-code:
 
-    Module N := F M : sig Definition t := N.t ... end.
+```coq
+Module N := F M : sig Definition t := N.t ... end.
+```
 
 Note that the absence of signature transparency of applied functors in higher-order functors implies that abstract types in the signature of these applied functors (as C.M.u above) to be de facto generative.
 
@@ -84,9 +92,11 @@ It should not be very complicated to do. Since what is visible from a module is 
 
 Example of currently failing subtyping:
 
-    Module Type S. Parameter t : Type. End S.
-    Module A. Inductive t := O. End A.
-    Module B : S := A. (* fails *)
+```coq
+Module Type S. Parameter t : Type. End S.
+Module A. Inductive t := O. End A.
+Module B : S := A. (* fails *)
+```
 
 How far can modules and module types be identified?
 ===================================================

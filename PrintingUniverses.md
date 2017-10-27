@@ -13,12 +13,14 @@ From Coq version 8.1, `Type` universes in terms can be displayed by toggling the
 
 Subsequently, the `Print [term]` command will annotate it's output with universes levels. For instance
 
-    Coq < Set Printing Universes.
-    Coq < Print prod.
-    Inductive prod
-                  (A : Type (* Coq.Init.Datatypes.22 *))
-                  (B : Type (* Coq.Init.Datatypes.22 *))
-                : Type (* Coq.Init.Datatypes.22 *) :=  pair : A -> B -> A * B
+```coq
+Coq < Set Printing Universes.
+Coq < Print prod.
+Inductive prod
+              (A : Type (* Coq.Init.Datatypes.22 *))
+              (B : Type (* Coq.Init.Datatypes.22 *))
+            : Type (* Coq.Init.Datatypes.22 *) :=  pair : A -> B -> A * B
+```
 
 Coq 8.0
 -------
@@ -29,23 +31,33 @@ In Coq versions 8.0, 8.0pl1 and 8.0pl2, you should modify the source of Coq:
 
 In the file `$COQTOP/translate/ppconstrnew.ml` replace
 
-    let pr_universe u = str "<univ>"
+```ocaml
+let pr_universe u = str "<univ>"
+```
 
 with
 
-    let pr_universe = Univ.pr_uni
+```ocaml
+let pr_universe = Univ.pr_uni
+```
 
 Then in the file `$COQTOP/interp/constrextern.ml` replace
 
-    let print_universes = ref false
+```ocaml
+let print_universes = ref false
+```
 
 with
 
-    let print_universes = ref true
+```ocaml
+let print_universes = ref true
+```
 
 Now you should recompile Coq. After recompiling the universes will be printed. You can use
 
-    Dump Universes.
+```coq
+Dump Universes.
+```
 
 > to see a graph of universes. In fact, the `Dump Universes` command above also works without changing the source code, but in this case it is less helpful. See also, `$COQTOP/dev/universes.txt` file in your local installation for a documentation of this feature.
 
