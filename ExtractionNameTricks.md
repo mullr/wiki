@@ -94,7 +94,7 @@ End M.
 
 In OCaml, a `type t = t` would be wrong, since type definition is recursive by default, so we also use here a local naming submodule. **TODO**: for OCaml >= 4.02, we could generate here `type nonrec t = t`.
 
-#### Module parameters** (OCaml) ####
+#### Module parameters (OCaml) ####
 
 Inside a functor, its parameter name might be shadowed, but the content of the parameter might remain accessible.
 
