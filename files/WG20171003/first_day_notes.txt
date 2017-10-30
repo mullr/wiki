@@ -198,7 +198,12 @@ that has been looking at this kind of coq{doc,tex} issues for the
 OCaml implementation. Maybe I can ask him to have a look, for advice,
 etc.
 
-(Théo asks insensitive questions about SSReflect.)
+(Théo asks insensitive questions about SSReflect.
+
+ EDIT from Théo: that's Gabriel POV and anyways lots of good discussion
+ happened afterwards that have been cut from the notes. Everything is
+ in the video anyways.
+)
 
 SSReflect has the strong compatibility requirement that it must keep
 supporting the Odd Order proof. Changes that affect this development
@@ -364,7 +369,7 @@ for 8.9 rather than 8.8.
   Review the module layer, 'mod subst' and 'declare mod'.
 
 Enrico: if there is a discussion about it, I would like to be part of
-it. With LP I would like to bind to some parts of the module API and
+it. With Elpi I would like to bind to some parts of the module API and
 I didn't understand some parts of it.
 
 Maxime: is there a reason why the "include slef ..." is in the kernel?
@@ -517,4 +522,3 @@ Present:
 - Pierre Letouzey
 - Hugo
 - Simon Boulier
-- Pierre-Marie
