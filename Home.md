@@ -29,7 +29,10 @@ Coq official resources
 Coq tutorials
 =============
 
--   [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/), by Benjamin C. Pierce et al
+-   [Software Foundations](http://www.cis.upenn.edu/~bcpierce/sf/)
+      - Volume 1: Logical Foundations (by Benjamin C. Pierce et al.)
+      - Volume 2: Programming Language Foundations (by Benjamin C. Pierce et al.)
+      - Volume 3: Verified Functional Algorithms (by Andrew Appel)
 -   [Certified Programming with Dependent Types](http://adam.chlipala.net/cpdt/), by Adam Chlipala
 -   [CoqArt'](http://www.labri.fr/perso/casteran/CoqArt/index.html) (book), by Yves Bertot and Pierre Castéran
 -   [Other tutorials](Other%20Coq%20Resources)...
