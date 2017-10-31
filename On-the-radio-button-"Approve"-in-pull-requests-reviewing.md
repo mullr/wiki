@@ -26,3 +26,4 @@ The goal of reviewing is to improve quality and mutual awareness by providing fe
 Role of the "review" as a communication tool between the authors/reviewers and the persons in charge of committing the PRs to the main branches:
 - to be detailed
 
+**EJGA:** Also doing a review works as a kind of "thank you" to the original author, maybe because you wanted the proposed change to happen.
