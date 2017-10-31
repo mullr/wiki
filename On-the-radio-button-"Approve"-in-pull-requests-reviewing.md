@@ -1,4 +1,4 @@
-This page is the current synthesis of discussions started in PR #6036 and issue #6045.
+This page is the current synthesis of discussions started in PR #6036 and issue #6046.
 
 The radio button "Approve":
 - does not mean the end of discussion
