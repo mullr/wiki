@@ -34,7 +34,7 @@ careful with misspelling of page names.
 - For a specific page, the mention `<n> revisions` just below
   the title is a link leading to the history of this page. Or you can
   add `/_history` to the page URL to get there. When on the history
-  page, you can select two revisions and click on `compare` to get
+  page, you can select two revisions and click on `Compare Revisions` to get
   a diff.
 
 ## Git ##
