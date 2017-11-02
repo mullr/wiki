@@ -54,7 +54,7 @@ git clone git@github.com:coq/coq.wiki.git
 
 A wiki page named `FooBar` will correspond to a file named `FooBar.md` in this
 repository (`md` stands for `markdown`, the name of the syntax format).
-The main page is `Home.md`. Images and attachments are in the `files` subdirectories.
+The main page is [Home.md](Home). Images and attachments are in the `files` subdirectories.
 
 This may indeed be a convenient way to browse the wiki files locally,
 inspect their history, etc. You may even use this to push
