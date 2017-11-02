@@ -1,7 +1,7 @@
 Help on Cocorico!, the Coq Wiki on Github
 =========================================
 
-Some advice about this wiki, mainly for wiki editors.
+Some advice about the [current wiki](Home), mainly for wiki editors.
 
 ## Syntax ##
 
