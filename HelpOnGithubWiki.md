@@ -98,12 +98,12 @@ repository, please keep it this way.
 
 For attachment files (for instance `pdf`, or `v` scripts), simply put a local link,
 whose markdown syntax is something like `[textual description](files/attachment_filename.pdf)`.
-See pages  [CoqIW2017](CoqIW2017) and [UTF8Module](UTF8Module) for live examples of pages with attachment.
+See pages  [CoqIW2017](CoqIW2017) and [UTF8Module](UTF8Module) for live examples of pages with attachments.
 Here again, these attachment files are all in the `files` subdirectory of the
 git repository of this wiki, please keep it this way.
 
 For attachments of code (Coq scripts, ocaml files, etc), note that you could also
-use the gist feature of Github (TODO: pointer).
+use the [Gist feature](https://gist.github.com/) of Github.
 
 ## Compared with the earlier MoinMoin wiki... ##
 
