@@ -1,7 +1,7 @@
 Help on Cocorico!, the Coq Wiki on Github
 =========================================
 
-A few advices about this wiki, mainly for wiki editors.
+Some advice about this wiki, mainly for wiki editors.
 
 ## Syntax ##
 
@@ -46,7 +46,7 @@ As mention at the bottom of the right sidebar, it is possible to
 git clone https://github.com/coq/coq.wiki.git
 ```
 
-Or for registered github users:
+Or for registered Github users:
 
 ```
 git clone git@github.com:coq/coq.wiki.git
@@ -59,7 +59,7 @@ The main page is [Home.md](Home). Images and attachments are in the `files` subd
 This may indeed be a convenient way to browse the wiki files locally,
 inspect their history, etc. You may even use this to push
 modifications to the wiki if you have write access to the Coq
-repository on github. In this case, please **never** push
+repository on Github. In this case, please **never** push
 modifications forcingly, only fast-forward ones. Forced modifications
 will be undone by administrators as soon as they are noticed.
 
@@ -102,7 +102,7 @@ See pages  [CoqIW2017](CoqIW2017) and [UTF8Module](UTF8Module) for live examples
 Here again, these attachment files are all in the `files` subdirectory of the
 git repository of this wiki, please keep it this way.
 
-For attachments of code (Coq scripts, ocaml files, etc), note that you could also
+For attachments of code (Coq scripts, OCaml files, etc), note that you could also
 use the [Gist feature](https://gist.github.com/) of Github.
 
 ## Compared with the earlier MoinMoin wiki... ##
@@ -118,4 +118,4 @@ use the [Gist feature](https://gist.github.com/) of Github.
 - In markdown, tables should have a header row, unlike in MoinMoin
   syntax. See for instance [FormalizedAndVerified](FormalizedAndVerified) for an example of table.
 
-- The page style of Github makes it difficult to create hugely larged tables, so for instance [Top100MathematicalTheoremsInCoq](Top100MathematicalTheoremsInCoq) has now many sections instead of a big table.
+- The page style of Github makes it difficult to create hugely large tables, so for instance [Top100MathematicalTheoremsInCoq](Top100MathematicalTheoremsInCoq) has now many sections instead of a big table.
