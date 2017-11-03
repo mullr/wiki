@@ -3,7 +3,7 @@ Notes on migrating Coq wiki
 
 ## Previous situation ##
 
-Until October 2017, [cocorico](http://coq.inria.fr/cocorico) was a [MoinMoin](https://moinmo.in/) wiki, installed on the same server as Coq website, located at Inria Rocquencourt.
+Until October 2017, [cocorico](http://coq.inria.fr/cocorico-old/) was a [MoinMoin](https://moinmo.in/) wiki, installed on the same server as Coq website, located at Inria Rocquencourt.
 
 ## New situation : Github wiki ##
 
