@@ -57,13 +57,13 @@ that means that a few file basenames had to be edited to make them unique and si
 
 ## TODO ##
 
-- Welcome pages : adapt / polish old pages about how to contribute, syntax, caveats as those listed above, etc.
-- I already discarded many pages that were MoinMoin-specific (Help on syntax, etc), but there remain more to do, see for instance [Discussion_on_content_and_structure_of_Cocorico!](Discussion_on_content_and_structure_of_Cocorico!).
-- Decide what to do with the `Users*` pages : I'm in favor of their removal, but in 1-2 cases we'd better ask since they have (a bit) of content. 
-- Custom Sidebar and/or footer ?
-- redirect existing wiki pages from `coq.inria.fr/cocorico/Foo` to `github.com/coq/coq/wiki/Foo`
-- archive old pages : either as a read-only MoinMoin, or as a final dump to static html. This is important since page conversions haven't been 100% perfect, so we may want to look at the previous aspect of a page.
-- set up a git mirror somewhere, with nightly pulls, in order to be protected against rogue `git push --force` by a team member. Send warning email if the pull isn't fast-forward. **DONE**, see <https://gitlab.inria.fr/coq/wiki-backup>, synchronized every hour, in a fast-forward way.
+- [ ] Welcome pages : adapt / polish old pages about how to contribute, syntax, caveats as those listed above, etc.
+- [ ] I already discarded many pages that were MoinMoin-specific (Help on syntax, etc), but there remain more to do, see for instance [Discussion_on_content_and_structure_of_Cocorico!](Discussion_on_content_and_structure_of_Cocorico!), see also [issue #5681](https://github.com/coq/coq/issues/5681).
+- [ ] Decide what to do with the `Users*` pages : I'm in favor of their removal, but in 1-2 cases we'd better ask since they have (a bit) of content. 
+- [ ] Custom Sidebar and/or footer ?
+- [x] redirect existing wiki pages from `coq.inria.fr/cocorico/Foo` to `github.com/coq/coq/wiki/Foo`
+- [x] archive old pages : either as a read-only MoinMoin, or as a final dump to static html. This is important since page conversions haven't been 100% perfect, so we may want to look at the previous aspect of a page.
+- [x] set up a git mirror somewhere, with nightly pulls, in order to be protected against rogue `git push --force` by a team member. Send warning email if the pull isn't fast-forward. **DONE**, see <https://gitlab.inria.fr/coq/wiki-backup>, synchronized every hour, in a fast-forward way.
 
 On these points, any help would be quite appreciated !
 
