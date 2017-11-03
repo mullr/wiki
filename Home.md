@@ -3,7 +3,7 @@
 :warning: **Note**: this wiki has been converted in October 2017 from
 an earlier wiki based on MoinMoin. [Some help on this Wiki](HelpOnGithubWiki).
 [More about this migration](WikiMigration). In case of need, this earlier wiki is
-[still here](https://coq.inria.fr/cocorico) for the moment, in read-only mode.
+[still here](https://coq.inria.fr/cocorico-old/) for the moment, in read-only mode.
 
 Coq installation
 ================
