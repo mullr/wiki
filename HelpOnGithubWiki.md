@@ -37,7 +37,7 @@ careful with misspelling of page names.
   page, you can select two revisions and click on `Compare Revisions` to get
   a diff.
 
-## Git ##
+## <a name="Git">Git</a> ##
 
 As mention at the bottom of the right sidebar, it is possible to
 `clone this wiki locally`, as a git repository:
@@ -63,8 +63,10 @@ repository on Github. In this case, please **never** push
 modifications forcingly, only fast-forward ones. Forced modifications
 will be undone by administrators as soon as they are noticed.
 
-In case of strong popular request, we may propose someday a "pull request"
-system for this wiki, since it could help large-scale modifications.
+For large-scale modifications and/or additions of images and
+attachments, one may propose a
+[pull request](https://github.com/coq/wiki/pulls) with respect to
+[this git mirror of the Wiki](https://github.com/coq/wiki).
 
 ## Subdirectories ##
 
@@ -72,7 +74,7 @@ You may have noticed that all existing pages appear to be at toplevel:
 the full URL of the page `FooBar` is `https://github.com/coq/coq/wiki/FooBar`,
 and there's never anything between `wiki` and `FooBar`.
 
-Actually, when accessing this wiki via its git repository (see above),
+Actually, when accessing this wiki via its git repository (see [above](#Git)),
 some files don't live at toplevel, but in various subdirectories. But these
 subdirectories aren't reflected in the URL proposed by Github Wiki.
 That's a bit awkward, but well, so be it.
@@ -88,22 +90,27 @@ is visible in the final URL: images and attached files (e.g. pdf), see below.
 
 ## Images and attachments ##
 
-TODO: could a basic user upload an image or an attachment through
-the Github web interface ? Where does it go then ?
+**Note:** the Github web interface for editing pages could only insert
+images that are stored elsewhere (or already present beforehand in our Wiki).
+Same for links to attachment files. For uploading images and
+non-markdown files in this Wiki, you must access this wiki through
+git, see [above](#Git), and [submit a pull request](https://github.com/coq/wiki/pulls)
+if you do not have write access.
 
 For images, the markdown syntax is `![textual description](files/image_name.png)`.
 See page [HandMul](HandMul) for an example of wiki page with some images.
 For now, all these images are in the `files` subdirectory of the git
 repository, please keep it this way.
 
-For attachment files (for instance `pdf`, or `v` scripts), simply put a local link,
+For attachment files (for instance `pdf`), simply put a local link,
 whose markdown syntax is something like `[textual description](files/attachment_filename.pdf)`.
 See pages  [CoqIW2017](CoqIW2017) and [UTF8Module](UTF8Module) for live examples of pages with attachments.
 Here again, these attachment files are all in the `files` subdirectory of the
 git repository of this wiki, please keep it this way.
 
-For attachments of code (Coq scripts, OCaml files, etc), note that you could also
-use the [Gist feature](https://gist.github.com/) of Github.
+For attachments of code (Coq scripts, OCaml files, etc), note that you could
+simply use the [Gist feature](https://gist.github.com/) of Github, and
+hence avoid uploading this code file to the Wiki itself.
 
 ## Compared with the earlier MoinMoin wiki... ##
 
