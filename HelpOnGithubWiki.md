@@ -39,7 +39,7 @@ careful with misspelling of page names.
 
 ## <a name="Git">Git</a> ##
 
-As mention at the bottom of the right sidebar, it is possible to
+As mentioned at the bottom of the right sidebar, it is possible to
 `clone this wiki locally`, as a git repository:
 
 ```
@@ -79,7 +79,7 @@ some files don't live at toplevel, but in various subdirectories. But these
 subdirectories aren't reflected in the URL proposed by Github Wiki.
 That's a bit awkward, but well, so be it.
 
-As a consequences, please use unambiguous file names, even if you regroup
+As a consequence, please use unambiguous file names, even if you regroup
 these pages in some subdirectories via the git interface. We suggest using
 the dash `-` to prefix page names with what would normally be a directory
 part. See for instance the various `Tactic-xyz` pages, that are actually
