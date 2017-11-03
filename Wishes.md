@@ -71,7 +71,7 @@ Automatically equip simple algebraic data-types with a canonical total ordering 
 
 ### Equality induction principle for records
 
-See #6061.
+See [#6061](../issues/6061).
 
 Coercions
 ---------
@@ -84,7 +84,7 @@ More generally, classes could be bound variables, so that e.g. the projection fr
 
 The transitive closure of coercions could then not be computed in finite time, but it could e.g. be computed lazily, or at worst dynamically.
 
-See enhancement <https://coq.inria.fr/bugs/show_bug.cgi?id=4114>.
+See enhancement [#4114](../issues/4114).
 
 Tactics
 =======
