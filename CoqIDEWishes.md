@@ -40,7 +40,7 @@ Miscellaneous features
 -   --Allow modifying comments (even in the green part) without re-evaluating the buffer-- partly provided by E. Tassi
 -   --Allow changing the target of evaluation (the scope of the blue part) during evaluation-- now ok
 
-See also <http://coq.inria.fr/bugs/show_bug.cgi?id=2144>
+See also [#2144](../issues/2144)
 
 Historical notes
 ----------------

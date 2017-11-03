@@ -45,7 +45,7 @@ Note that generativity can be seen as implicitly tagging any functor application
 Module and functor transparency
 ===============================
 
-See e.g. bug [3342](https://coq.inria.fr/bugs/show_bug.cgi?id=3342).
+See e.g. bug [3342](../issues/3342).
 
 The signature of an aliased module is transparent thanks to strenghtening (which is basically eta-expansion of records).
 

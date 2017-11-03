@@ -19,14 +19,14 @@ Fail refine (H eq_refl).
 Missing backtracking/postponing on failing too complex problem
 --------------------------------------------------------------
 
-[Bug \#1214](https://coq.inria.fr/bugs/show_bug.cgi?id=1214) shows a failure in unifying `(if ?b then true else false) = ?b) ≡ (true = true)`. Contrastingly, `?b = if ?b then true else false)) ≡ (true = true)` works.
+[Bug \#1214](../issues/1214) shows a failure in unifying `(if ?b then true else false) = ?b) ≡ (true = true)`. Contrastingly, `?b = if ?b then true else false)) ≡ (true = true)` works.
 
 Inverting tuples in instances of existential variables
 ======================================================
 
 There is a pretty common pattern where an argument of an existential variable is a tuple of which components can be projected.
 
-See e.g. [Bug \#5264](https://coq.inria.fr/bugs/show_bug.cgi?id=5264) and [Bug \#3126](https://coq.inria.fr/bugs/show_bug.cgi?id=3126) (or, more distantly, [Bug \#3823](https://coq.inria.fr/bugs/show_bug.cgi?id=3823)):
+See e.g. [Bug \#5264](../issues/5264) and [Bug \#3126](../issues/3126) (or, more distantly, [Bug \#3823](../issues/3823)):
 
 ```coq
 Goal forall T1 (P1 : T1 -> Type), sigT P1 -> sigT P1.

@@ -110,13 +110,13 @@ Also, [bug triaging](https://coq.inria.fr/bugs/) is very welcome (check if a bug
 -   coqide:
     1.  Make the goal window display all goals, not only the focused one. Consider using a notebook widget to let the user look at any goal by changing page. Think about creative uses for the notebook page labels. Requires GTK skills.
     2.  Add a "quick compile" button, as in coqc -quick. The STM can also "dump" the current state as a .vio file, but there is no protocol message for requiring such service.
-    3.  Make coqide silently kill coqtop and save the current buffer position when too many tabs are opened and restart coqtop when the user re-opens an old tab. (see [4074](http://coq.inria.fr/bug/4074))
+    3.  Make coqide silently kill coqtop and save the current buffer position when too many tabs are opened and restart coqtop when the user re-opens an old tab. (see [4074](../issues/4074))
     4.  Remove use of threads in the coqide back end: use CPS+Unix.select to code a cooperative threads library (in the LWT style), see tentative patch [by PMP](https://github.com/ppedrot/coq/commits/thread-free).
 -   tooling:
     1.  coqobjinfo (like ocamlobjinfo) reusing some code from votour/coqchk to get infos about a .vo or .vio file: modules/lemmas included, axioms, ... This is turn could be used to build other tools to: extract the set of assumptions associated with a final theorems, locate the places of uses of a given definition, (in the future) optimize the recompilation process by knowing which parts need to be recompiled following a change in one given definition.
     2.  make it possible to hide all support files (e.g. .glob files) to make directory listing and file selection/auto-completion operation simpler. (comment: very much in the spirit of what .coq-native/ does for native\_compute files). One could also say that a .vo file is a directory, that the segments in which the .vo file are organized are files with standard names in these directories and that all extra metadata are again files in such directory. E.g. foo.vo/{lib,opaque,glob}. This is also compatible with Makefiles, since it is possible to target a single components.
 -   tactics
-    1.  CUPS like syntax for selecting a set of goals for tactic application. I.e. generalize "all:" to "1,2-5:", see also [1805](http://coq.inria.fr/bug/1805).
+    1.  CUPS like syntax for selecting a set of goals for tactic application. I.e. generalize "all:" to "1,2-5:", see also [1805](../issues/1805).
 -   ci.inria.fr
     1.  Prepare a job (to be copied, a sort of template) that one can easily use to compile a personal Coq branch (take from github) and a list of other git repos (like some entries from the coq-contribs).
 -   Win
@@ -131,7 +131,7 @@ Brainstorming ("harder" projects, to be considered carefully)
 -------------------------------------------------------------
 
 -   improving Search:
-    1.  finding theorems that fit a pattern thanks to type classes, canonical structures, or modulo iota-reduction, or delta steps of a set of registered constants (see also [\#3904](http://coq.inria.fr/bug/3904))
+    1.  finding theorems that fit a pattern thanks to type classes, canonical structures, or modulo iota-reduction, or delta steps of a set of registered constants (see also [\#3904](../issues/3904))
     2.  Invent a "search" that works for tactics: search the patterns used in the tactic, or use patterns given by the user. ([related work](http://staff.computing.dundee.ac.uk/katya/ML4PG/))
     3.  Sort search result according to a priority heuristic to display more relevant results first.
 -   tools:
@@ -143,7 +143,7 @@ Brainstorming ("harder" projects, to be considered carefully)
     4.  Let the user tell TI when the expected type should be propagated down via an Argument directive. E.g. with `Arguments cons {A} | x xs` type inference should unify A (probably an implicit) with the A in the expected type before processing x and xs. If the expected type is `list Q` and `x` is a `nat`, then `N->Q` coercion could be inserted. If we wait, we may infer that the list is `list nat` and there is not coercion to `list Q`.
 -   bench system:
     1.  plug decent graphs into ci.inria.fr/coq
-    2.  fix `coqc -quick -time` [Bug 3934](http://coq.inria.fr/bug/3934)
+    2.  fix `coqc -quick -time` [Bug 3934](../issues/3934)
 -   developers manual:
     1.  Enrich the document started by Wojciech Jedynak <https://github.com/wjzz/Coq-Developers-Manual/releases/download/0.1/devman.pdf>, [github](https://github.com/wjzz/Coq-Developers-Manual).
     2.  Write down the policies (a real document): how to submit code to Coq, how to submit a contrib, how opam packages should be written...
@@ -161,7 +161,7 @@ Brainstorming ("harder" projects, to be considered carefully)
 -   Notation:
     1.  control notation/implicits/coercions display on a sub term
 -   stdlib:
-    1.  uniform names/notations see [Bug 4110](http://coq.inria.fr/bug/4110)
+    1.  uniform names/notations see [Bug 4110](../issues/4110)
     2.  document the axiom used in each file/file-group
 -   Evar instantiation failure explanation: given an evar defined in some context, and given a term with which the evar fails to unify, report to the user the list of variables that occur in the term but that do not belong to the context in which the evar was defined.
 -   Computation of the dependency graph

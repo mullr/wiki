@@ -1,7 +1,7 @@
 How to contribute to the Coq standard library
 =============================================
 
-Updates or fixes to existing Coq library are welcome. Please follow the guidelines below as much as possible. Contributions can be submitted to the coqdev mailing list (coqdev at inria dot fr) or to the [bug tracker](http://coq.inria.fr/bugs%20Coq). Please take into consideration that developers are generally researchers working only part time on Coq and that response delays may vary from hours to weeks. If delays exceed months, feel free to contact the developers again.
+Updates or fixes to existing Coq library are welcome. Please follow the guidelines below as much as possible. Contributions can be submitted to the coqdev mailing list (coqdev at inria dot fr) or to the [bug tracker](http://coq.inria.fr/bugs). Please take into consideration that developers are generally researchers working only part time on Coq and that response delays may vary from hours to weeks. If delays exceed months, feel free to contact the developers again.
 
 Contributors should accept to have their contribution licensed with the same licence as Coq standard library, i.e. [LGLP 2.0](http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html).
 
