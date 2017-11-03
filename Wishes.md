@@ -69,6 +69,10 @@ Proof. induction l; firstorder using le_list_inv. Defined.
 
 Automatically equip simple algebraic data-types with a canonical total ordering of it
 
+### Equality induction principle for records
+
+See #6061.
+
 Coercions
 ---------
 
