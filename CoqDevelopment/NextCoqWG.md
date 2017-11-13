@@ -11,3 +11,5 @@ Streaming and recorded video will be available on YouTube.
 
 Topics
 ======
+- Attributes (Maxime, 30 min)
+- Integers and arrays (Maxime, 30 min)
