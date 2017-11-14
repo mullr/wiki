@@ -13,3 +13,4 @@ Topics
 ======
 - Attributes (Maxime, 30 min)
 - Integers and arrays (Maxime, 30 min)
+- API (Emilio, 45 min - 1h)
