@@ -14,3 +14,4 @@ Topics
 - Attributes (Maxime, 30 min)
 - Integers and arrays (Maxime, 30 min)
 - API (Emilio, 45 min - 1h)
+- Status of the Coqlib rebindable PR (#186) (Emilio, 30 min)
