@@ -17,3 +17,4 @@ Topics
 - Status of the Coqlib rebindable PR (#186) (Emilio, 30 min)
 - Plugin Developer Program (Emilio, 30 min)
 - Report on performance testing with OExp (Emilio, 45 mins)
+- Equations & the Function replacement plan (Matthieu, Cyprien, Thierry, 45 min)
