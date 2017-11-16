@@ -16,3 +16,4 @@ Topics
 - API (Emilio, 45 min - 1h)
 - Status of the Coqlib rebindable PR (#186) (Emilio, 30 min)
 - Plugin Developer Program (Emilio, 30 min)
+- Report on performance testing with OExp (Emilio, 45 mins)
