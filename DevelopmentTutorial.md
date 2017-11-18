@@ -25,7 +25,7 @@ Development process might be faster by working locally and not installing Coq in
 
 The `-local` option means that you will not need to install coq to `/usr/local` but instead that you will run Coq directly from the `bin` subdirectory.
 
-The `-debug` option will allow to use the debugger.
+<!-- The `-debug` option will allow to use the debugger. -->
 
 Developer environment
 ---------------------
