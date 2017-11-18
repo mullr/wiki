@@ -1,0 +1,1 @@
+Developers meet as [Coq Working Groups](Coq-Working-Groups).
