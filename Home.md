@@ -54,7 +54,7 @@ Coq development
 -   [A development tutorial](DevelopmentTutorial)
 -   [List of maintainers](Maintainers)
 -   [Road maps](Roadmaps)
--   [Archive of discussions](DevelopmentArchive]
+-   [Archive of discussions](DevelopmentArchive)
 
 Coq community
 =============
