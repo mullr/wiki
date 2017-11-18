@@ -52,6 +52,7 @@ Coq development
 -   [Wishes for Coq](Wishes) (and a specific page of [wishes for unification](UnificationProblems))
 -   [Wishes for Graphical User Interfaces](GUIWishes) (and a specific page for [CoqIDE wishes](CoqIDEWishes))
 -   [A development tutorial](DevelopmentTutorial)
+-   [Development frequently asked questions](Development-questions)
 -   [List of maintainers](Maintainers)
 -   [Road maps](Roadmaps)
 -   [Archive of discussions](DevelopmentArchive)
