@@ -1,0 +1,3 @@
+- [Discussion on OPAM](OPAM)
+- [Discussion on the design of a new tactic language](DesignNewTacticLanguage)
+- [Regression tests](RegressionTests)
