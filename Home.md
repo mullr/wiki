@@ -45,12 +45,13 @@ Coq development
 ===============
 
 -   [The Contributing Guide](https://github.com/coq/coq/blob/master/CONTRIBUTING.md#contributing-to-coq)
--   [Coq Working Groups and developers resources](CoqDevelopment)
+-   [Coq Working Groups](Coq-Working-Groups)
 -   [The next Coq Working Group](NextCoqWG)
 -   [Ideas for the Google Summer of Code 2016](GoogleSummerOfCode)
 -   [Procedures related to continuous integration](ContinuousIntegration)
 -   [Wishes for Coq](Wishes)
 -   [Wishes for Graphical User Interfaces](GUIWishes) (and a specific page for [CoqIDE wishes](CoqIDEWishes))
+-   [Miscellaneous development resources](CoqDevelopment)
 
 Coq community
 =============
