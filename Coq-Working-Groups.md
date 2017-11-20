@@ -1,6 +1,6 @@
 Coq developers and users gather once every two months in Paris to discuss ongoing developments.
 
-[The next Coq Working Group](NextCoqWG) info.
+[The next Coq Working Group](Next-Coq-Working-Group) info.
 
 Latest Coq WG's (in inverse chronogical order)
 ----------------------------------------------
