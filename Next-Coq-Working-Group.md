@@ -18,3 +18,4 @@ Topics
 - Plugin Developer Program (Emilio, 30 min)
 - Report on performance testing with OExp (Emilio, 45 mins)
 - Equations & the Function replacement plan (Matthieu, Cyprien, Thierry, 45 min)
+- dir-locals (Gaetan, ??min)
