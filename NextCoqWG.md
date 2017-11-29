@@ -1,1 +1,1 @@
-Next-Coq-Working-Group.md
+Moved [there](Next-Coq-Working-Group).
