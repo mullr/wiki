@@ -22,3 +22,10 @@ Topics
 - A presentation of TLC 2.0 (covering library design, not tactics) (Arthur, 45min + questions)
 - Evaluation inside Coq with non-constructive recursive definitions (Arthur, 20 min)
 
+PRs that need to be discussed (possibly around a computer)
+==========================================================
+
+From oldest to most recent:
+- https://github.com/coq/coq/pull/313 (Scoped options)
+- https://github.com/coq/coq/pull/400 (Reducing temporary allocations in CClosure)
+- ...
