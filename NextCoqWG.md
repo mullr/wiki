@@ -1,1 +1,1 @@
-Moved [there][Next-Coq-Working-Group).
+Moved [there](Next-Coq-Working-Group).
