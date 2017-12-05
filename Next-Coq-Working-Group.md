@@ -19,6 +19,7 @@ Topics
 - Plugin Developer Program (Emilio, 30 min)
 - Report on performance testing with OExp (Emilio, 45 mins)
 - Equations & the Function replacement plan (Matthieu, Cyprien, Thierry, 45 min)
+  + as [pat|..|pat] / as '(x, y, z) intropatterns (15 min)
 - dir-locals (Gaetan, ??min)
 - A presentation of TLC 2.0 (covering library design, not tactics) (Arthur, 45min + questions)
 - Evaluation inside Coq with non-constructive recursive definitions (Arthur, 20 min)
