@@ -5,7 +5,7 @@ This page is used to organize the next Coq Working Group (in French GT Coq). The
 Organization
 ------------
 
-The next Coq Working Group will take place on December 18th and 19th at Inria Paris (2, rue Simone Iff). The room for the two days is Salle Philippe Flageolet, Building C, 1st floor. For non-Inria participants, due to security measures, we need to announce the list of participants in advance, so please write your name here if you intend to participate or send an email to [matthieu.sozeau@inria.fr](mailto:matthieu.sozeau@inria.fr) with your name at least the day before.
+The next Coq Working Group will take place on December 18th and 19th at Inria Paris (2, rue Simone Iff). The room for the two days is Salle Philippe Flajolet, Building C, 1st floor. For non-Inria participants, due to security measures, we need to announce the list of participants in advance, so please write your name here if you intend to participate or send an email to [matthieu.sozeau@inria.fr](mailto:matthieu.sozeau@inria.fr) with your name at least the day before.
 
 Streaming and recorded video will be available on Coq's [YouTube channel](https://www.youtube.com/channel/UCbJo6gYYr0OF18x01M4THdQ)
 
