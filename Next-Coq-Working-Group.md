@@ -31,3 +31,4 @@ From oldest to most recent:
 - https://github.com/coq/coq/pull/313 (Scoped options)
 - https://github.com/coq/coq/pull/400 (Reducing temporary allocations in CClosure)
 - ...
+- https://github.com/coq/coq/pull/1003 (intros '(x,y))
