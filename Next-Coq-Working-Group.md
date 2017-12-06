@@ -29,9 +29,9 @@ PRs that need to be discussed (possibly around a computer)
 ----------------------------------------------------------
 
 From oldest to most recent:
-- https://github.com/coq/coq/pull/313 (Scoped options)
-- https://github.com/coq/coq/pull/400 (Reducing temporary allocations in CClosure)
-- https://github.com/coq/coq/pull/616 (Make some keywords into normal idents)
+- https://github.com/coq/coq/pull/313 (Scoped options) Emilio suggests that this needs to be discussed with a small group, around a computer.
+- https://github.com/coq/coq/pull/400 (Reducing temporary allocations in CClosure) Pierre-Marie needs to convince Guillaume of the importance of his patch, and Emilio that this has nothing to do with Flambda.
+- https://github.com/coq/coq/pull/616 (Make some keywords into normal idents) Gaetan will lead the discussion (last time this was discussed, he was not here).
 - ...
-- https://github.com/coq/coq/pull/1003 (intros '(x,y))
+- https://github.com/coq/coq/pull/1003 (intros '(x,y)) The debate is about "syntactic pollution". I guess the people that are rather against the merge of this PR (Pierre-Marie, Maxime) should explain their viewpoint.
 - ...
