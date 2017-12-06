@@ -20,7 +20,6 @@ Topics
 - Report on performance testing with OExp (Emilio, 45 mins)
 - Equations & the Function replacement plan (Matthieu, Cyprien, Thierry, 45 min)
   + as [pat|..|pat] / as '(x, y, z) intropatterns (15 min)
-- dir-locals (Gaetan, ??min)
 - A presentation of TLC 2.0 (covering library design, not tactics) (Arthur, 45min + questions)
 - Evaluation inside Coq with non-constructive recursive definitions (Arthur, 20 min)
 - Coq Meetup [Théo, Emilio] (15 min)
@@ -34,4 +33,4 @@ From oldest to most recent:
 - https://github.com/coq/coq/pull/616 (Make some keywords into normal idents) Gaetan will lead the discussion (last time this was discussed, he was not here).
 - ...
 - https://github.com/coq/coq/pull/1003 (intros '(x,y)) The debate is about "syntactic pollution". I guess the people that are rather against the merge of this PR (Pierre-Marie, Maxime) should explain their viewpoint.
-- ...
+- https://github.com/coq/coq/pull/1136 (dir-locals)
