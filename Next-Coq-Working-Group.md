@@ -31,5 +31,7 @@ PRs that need to be discussed (possibly around a computer)
 From oldest to most recent:
 - https://github.com/coq/coq/pull/313 (Scoped options)
 - https://github.com/coq/coq/pull/400 (Reducing temporary allocations in CClosure)
+- https://github.com/coq/coq/pull/616 (Make some keywords into normal idents)
 - ...
 - https://github.com/coq/coq/pull/1003 (intros '(x,y))
+- ...
