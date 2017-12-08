@@ -23,6 +23,7 @@ Topics
 - A presentation of TLC 2.0 (covering library design, not tactics) (Arthur, 45min + questions)
 - Evaluation inside Coq with non-constructive recursive definitions (Arthur, 20 min)
 - Coq Meetup [Théo, Emilio] (15 min)
+- coq-community, a new birth for Coq contribs (Théo, 30 minutes).
 
 PRs that need to be discussed (possibly around a computer)
 ----------------------------------------------------------
