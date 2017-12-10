@@ -33,7 +33,7 @@ There are a few typical useful axioms that are independent from the Calculus of 
 
 Here is a visual summary of the relative strength of these axioms, most proofs can be found in directory `Logic` of the standard library. (Statements in boldface are the most "interesting" ones for Coq.) The justification of their validity relies on the interpretability in set theory.
 
-![](https://raw.githubusercontent.com/mattjquinn/coq_wiki_temp/master/axioms.jpg)
+![](/files/axioms.jpg)
 
 ### What standard axioms are inconsistent with Coq?
 
