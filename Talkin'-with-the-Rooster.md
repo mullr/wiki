@@ -53,12 +53,12 @@ No more subgoals.
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
-### My goal contains a conjunction as an hypothesis, how can I use it?
+### My goal contains a conjunction as a hypothesis, how can I use it?
 
-If you want to decompose your hypothesis into other hypothesis you can use the `decompose` tactic:
+If you want to decompose your hypothesis into several hypothesess you can use the `destruct` tactic:
 
 ```coq
-Coq < Goal forall A B:Prop, A /\ B-> B.
+Coq < Goal forall A B : Prop, A /\ B -> B.
 
 1 subgoal
   
@@ -75,7 +75,7 @@ Unnamed_thm < intros.
   ============================
   B
 
-Unnamed_thm < decompose [and] H.
+Unnamed_thm < destruct H as [H1 H2].
 
 1 subgoal
   
@@ -97,7 +97,7 @@ Unnamed_thm is defined
 You can also perform the destruction at the time of introduction:
 
 ```coq
-Coq < Goal forall A B:Prop, A /\ B -> B.
+Coq < Goal forall A B : Prop, A /\ B -> B.
 
 1 subgoal
 
@@ -126,7 +126,7 @@ Unnamed_thm is defined
 You can prove the left part or the right part of the disjunction using the `left` or `right` tactics. If you want to do a classical reasoning step, use the `classic` axiom to prove the right part with the assumption that the left part of the disjunction is false.
 
 ```coq
-Coq < Goal forall A B:Prop, A-> A\/B.
+Coq < Goal forall A B : Prop, A -> A \/ B.
 
 1 subgoal
   
