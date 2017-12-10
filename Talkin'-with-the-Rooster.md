@@ -1405,7 +1405,7 @@ You can use the `clear` command.
 
 ### How can I use a proof which is not finished?
 
-You can use the `Admitted` command to state your current proof as an axiom. You can use the `give up`
+You can use the `Admitted` command to state your current proof as an axiom. You can use the `give_up`
 tactic to omit a portion of a proof.
 
 ### How can I state a conjecture?
