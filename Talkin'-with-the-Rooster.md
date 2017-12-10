@@ -64,8 +64,7 @@ Coq < Goal forall A B:Prop, A /\ B-> B.
   
   ============================
   forall A B : Prop, A /\ B -> B
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -75,8 +74,7 @@ Unnamed_thm < intros.
   H : A /\ B
   ============================
   B
-```
-```coq
+
 Unnamed_thm < decompose [and] H.
 
 1 subgoal
@@ -88,12 +86,10 @@ Unnamed_thm < decompose [and] H.
   H1 : B
   ============================
   B
-```
-```coq
+
 Unnamed_thm < assumption.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -107,8 +103,7 @@ Coq < Goal forall A B:Prop, A /\ B -> B.
 
   ============================
   forall A B : Prop, A /\ B -> B
-```
-```coq
+
 Unnamed_thm < intros A B [H1 H2].
 
 1 subgoal
@@ -118,12 +113,10 @@ Unnamed_thm < intros A B [H1 H2].
   H2 : B
   ============================
   B
-```
-```coq
+
 Unnamed_thm < assumption.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -139,8 +132,7 @@ Coq < Goal forall A B:Prop, A-> A\/B.
   
   ============================
   forall A B : Prop, A -> A \/ B
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -150,8 +142,7 @@ Unnamed_thm < intros.
   H : A
   ============================
   A \/ B
-```
-```coq
+
 Unnamed_thm < left.
 
 1 subgoal
@@ -161,12 +152,10 @@ Unnamed_thm < left.
   H : A
   ============================
   A
-```
-```coq
+
 Unnamed_thm < assumption.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -175,30 +164,26 @@ An example using classical reasoning:
 
 ```coq
 Coq < Require Import Classical.
-```
-```coq
+
 Coq < Ltac classical_right := 
       match goal with 
       | _:_ |-?X1 \/ _ => (elim (classic X1);intro;[left;trivial|right])
       end.
 classical_right is defined
-```
-```coq
+
 Coq < Ltac classical_left := 
       match goal with 
       | _:_ |- _ \/?X1 => (elim (classic X1);intro;[right;trivial|left])
       end.
 classical_left is defined
-```
-```coq
+
 Coq < Goal forall A B:Prop, (~A -> B) -> A \/ B.
 
 1 subgoal
   
   ============================
   forall A B : Prop, (~ A -> B) -> A \/ B
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -208,8 +193,7 @@ Unnamed_thm < intros.
   H : ~ A -> B
   ============================
   A \/ B
-```
-```coq
+
 Unnamed_thm < classical_right.
 
 1 subgoal
@@ -220,12 +204,10 @@ Unnamed_thm < classical_right.
   H0 : ~ A
   ============================
   B
-```
-```coq
+
 Unnamed_thm < auto.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -252,16 +234,14 @@ Coq < Goal exists x:nat, forall y, x + y = y.
   
   ============================
   exists x : nat, forall y : nat, x + y = y
-```
-```coq
+
 Unnamed_thm < exists 0.
 
 1 subgoal
   
   ============================
   forall y : nat, 0 + y = y
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -269,12 +249,10 @@ Unnamed_thm < intros.
   y : nat
   ============================
   0 + y = y
-```
-```coq
+
 Unnamed_thm < auto.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -290,27 +268,22 @@ Coq < Lemma mylemma : forall x, x + 0 = x.
   
   ============================
   forall x : nat, x + 0 = x
-```
-```coq
+
 mylemma < auto.
 No more subgoals.
-```
-```coq
+
 mylemma < Qed.
 mylemma is defined
-```
-```coq
+
 Coq < Goal 3 + 0 = 3.
 1 subgoal
   
   ============================
   3 + 0 = 3
-```
-```coq
+
 Unnamed_thm < apply mylemma.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
