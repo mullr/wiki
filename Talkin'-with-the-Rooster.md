@@ -656,68 +656,56 @@ You can use what is called a "hints' base".
 Coq < Require Import ZArith.
 Coq < Require Ring.
 Coq < Local Open Scope Z_scope.
-```
-```coq
+
 Coq < Lemma toto1 : 1 + 1 = 2.
 
 1 subgoal
   
   ============================
   1 + 1 = 2
-```
-```coq
+
 toto1 < ring.
 No more subgoals.
-```
-```coq
+
 toto1 < Qed.
 toto1 is defined
-```
-```coq
+
 Coq < Lemma toto2 : 2 + 2 = 4.
 
 1 subgoal
   
   ============================
   2 + 2 = 4
-```
-```coq
+
 toto2 < ring.
 No more subgoals.
-```
-```coq
+
 toto2 < Qed.
 toto2 is defined
-```
-```coq
+
 Coq < Lemma toto3 : 2 + 1 = 3.
 
 1 subgoal
   
   ============================
   2 + 1 = 3
-```
-```coq
+
 toto3 < ring.
 No more subgoals.
-```
-```coq
+
 toto3 < Qed.
 toto3 is defined
-```
-```coq
+
 Coq < Hint Resolve toto1 toto2 toto3 : mybase.
 Coq < Goal 2+(1+1)=4. 
 1 subgoal
   
   ============================
    2 + (1 + 1) = 4
-```
-```coq
+
 Unnamed_thm < auto with mybase.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -733,8 +721,7 @@ Coq < Goal 1 = 1 -> 1 = 1.
   
   ============================
   1 = 1 -> 1 = 1
-```
-```coq
+
 Unnamed_thm < intro.
 
 1 subgoal
@@ -742,12 +729,10 @@ Unnamed_thm < intro.
   H : 1 = 1
   ============================
   1 = 1
-```
-```coq
+
 Unnamed_thm < assumption.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -763,8 +748,7 @@ Coq < Goal 1 = 1 -> 1 = 1 -> 1 = 1.
   
   ============================
   1 = 1 -> 1 = 1 -> 1 = 1
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -773,12 +757,10 @@ Unnamed_thm < intros.
   H0 : 1 = 1
   ============================
   1 = 1
-```
-```coq
+
 Unnamed_thm < exact H0.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -798,8 +780,7 @@ Coq < Goal forall A B:Prop, A -> (A \/ B) /\ A.
   
   ============================
   forall A B : Prop, A -> (A \/ B) /\ A
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -809,12 +790,10 @@ Unnamed_thm < intros.
   H : A
   ============================
   (A \/ B) /\ A
-```
-```coq
+
 Unnamed_thm < tauto.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -834,8 +813,7 @@ Coq < Goal forall a b c d e, a = d -> b = e -> c + b = d -> c + e = a.
   
   ============================
   forall a b c d e : Z, a = d -> b = e -> c + b = d -> c + e = a
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -846,12 +824,10 @@ Unnamed_thm < intros.
   H1 : c + b = d
   ============================
   c + e = a
-```
-```coq
+
 Unnamed_thm < congruence.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -867,8 +843,7 @@ Coq < Goal forall a b c d, a <> d -> b = a -> d = c + b -> b <> c + b.
   
   ============================
   forall a b c d : Z, a <> d -> b = a -> d = c + b -> b <> c + b
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -879,12 +854,10 @@ Unnamed_thm < intros.
   H1 : d = c + b
   ============================
   b <> c + b
-```
-```coq
+
 Unnamed_thm < congruence.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -897,16 +870,14 @@ Just use the `ring` tactic.
 Coq < Require Import ZArith.
 Coq < Require Ring.
 Coq < Local Open Scope Z_scope.
-```
-```coq
+
 Coq < Goal forall a b : Z, (a + b) * (a + b) = a * a + 2 * a * b + b * b. 
 
 1 subgoal
   
   ============================
   forall a b : Z, (a + b) * (a + b) = a * a + 2 * a * b + b * b
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -914,12 +885,10 @@ Unnamed_thm < intros.
   a, b : Z
   ============================
   (a + b) * (a + b) = a * a + 2 * a * b + b * b
-```
-```coq
+
 Unnamed_thm < ring.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -932,16 +901,14 @@ Just use the `field` tactic.
 Coq < Require Import Reals.
 Coq < Require Ring.
 Coq < Local Open Scope R_scope.
-```
-```coq
+
 Coq < Goal forall a b : R, b * a <> 0 -> (a / b) * (b / a) = 1.
 
 1 subgoal
   
   ============================
   forall a b : R, b * a <> 0 -> a / b * (b / a) = 1
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -950,8 +917,7 @@ Unnamed_thm < intros.
   H : b * a <> 0
   ============================
   a / b * (b / a) = 1
-```
-```coq
+
 Unnamed_thm < field.
 
 1 subgoal
@@ -960,12 +926,10 @@ Unnamed_thm < field.
   H : b * a <> 0
   ============================
   a <> 0 /\ b <> 0
-```
-```coq
+
 Unnamed_thm < split ; auto with real.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -976,16 +940,14 @@ Unnamed_thm is defined
 Coq < Require Import ZArith.
 Coq < Require Omega.
 Coq < Local Open Scope Z_scope.
-```
-```coq
+
 Coq < Goal forall a : Z, a > 0 -> a + a > a. 
 
 1 subgoal
   
   ============================
   forall a : Z, a > 0 -> a + a > a
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -994,12 +956,10 @@ Unnamed_thm < intros.
   H : a > 0
   ============================
   a + a > a
-```
-```coq
+
 Unnamed_thm < omega.
 No more subgoals.
-```
-```
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -1020,8 +980,7 @@ Coq < Goal forall A B C D : Prop, (A -> B) -> (B -> C) -> A -> C.
   
   ============================
   forall A B C : Prop, Prop -> (A -> B) -> (B -> C) -> A -> C
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -1032,8 +991,7 @@ Unnamed_thm < intros.
   H1 : A
   ============================
   C
-```
-```coq
+
 Unnamed_thm < assert (A -> C).
 
 2 subgoals
@@ -1047,8 +1005,7 @@ Unnamed_thm < assert (A -> C).
 
 subgoal 2 is:
  C
-```
-```coq
+
 Unnamed_thm < intro;apply H0;apply H;assumption.
 
 1 subgoal
@@ -1060,8 +1017,7 @@ Unnamed_thm < intro;apply H0;apply H;assumption.
   H2 : A -> C
   ============================
   C
-```
-```coq
+
 Unnamed_thm < apply H2.
 
 1 subgoal
@@ -1073,24 +1029,20 @@ Unnamed_thm < apply H2.
   H2 : A -> C
   ============================
   A
-```
-```coq
+
 Unnamed_thm < assumption.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
-```
-```coq
+
 Coq < Goal forall A B C D : Prop, (A -> B) -> (B -> C) -> A -> C.
 
 1 subgoal
   
   ============================
   forall A B C : Prop, Prop -> (A -> B) -> (B -> C) -> A -> C
-```
-```coq
+
 Unnamed_thm0 < intros.
 
 1 subgoal
@@ -1101,8 +1053,7 @@ Unnamed_thm0 < intros.
   H1 : A
   ============================
   C
-```
-```coq
+
 Unnamed_thm0 < cut (A -> C).
 
 2 subgoals
@@ -1116,8 +1067,7 @@ Unnamed_thm0 < cut (A -> C).
 
 subgoal 2 is:
  A -> C
-```
-```coq
+
 Unnamed_thm0 < intro.
 
 2 subgoals
@@ -1132,8 +1082,7 @@ Unnamed_thm0 < intro.
 
 subgoal 2 is:
  A -> C
-```
-```coq
+
 Unnamed_thm0 < apply H2;assumption.
 
 1 subgoal
@@ -1144,12 +1093,10 @@ Unnamed_thm0 < apply H2;assumption.
   H1 : A
   ============================
   A -> C
-```
-```coq
+
 Unnamed_thm0 < intro;apply H0;apply H;assumption.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm0 < Qed.
 Unnamed_thm0 is defined
 ```
@@ -1228,12 +1175,10 @@ Coq < Goal forall A B C : Prop, A -> B -> C -> A /\ B /\ C.
   
   ============================
   forall A B C : Prop, A -> B -> C -> A /\ B /\ C
-```
-```coq
+
 Unnamed_thm < Show Intros.
 A B C H H0 H1
-```
-```coq
+
 Unnamed_thm < (* A B C H H0 H1 *)
               intros A B C H H0 H1.
 
@@ -1245,12 +1190,10 @@ Unnamed_thm < (* A B C H H0 H1 *)
   H1 : C
   ============================
   A /\ B /\ C
-```
-```coq
+
 Unnamed_thm < repeat split;assumption.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -1266,16 +1209,14 @@ Coq < Goal forall A B C : Prop, A -> B /\ C -> A /\ B /\ C.
   
   ============================
   forall A B C : Prop, A -> B /\ C -> A /\ B /\ C
-```
-```coq
+
 Unnamed_thm < Proof with assumption.
 
 1 subgoal
 
   ============================
   forall A B C : Prop, A -> B /\ C -> A /\ B /\ C
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -1285,12 +1226,10 @@ Unnamed_thm < intros.
   H0 : B /\ C
   ============================
   A /\ B /\ C
-```
-```coq
+
 Unnamed_thm < split...
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -1303,28 +1242,24 @@ You need to use the `try` and `solve` tactics. For instance:
 Coq < Require Import ZArith.
 Coq < Require Ring.
 Coq < Local Open Scope Z_scope.
-```
-```coq
+
 Coq < Goal forall a b c : Z, a + b = b + a.
 
 1 subgoal
   
   ============================
   forall a b : Z, Z -> a + b = b + a
-```
-```coq
+
 Unnamed_thm < Proof with try solve [ring].
 
 1 subgoal
 
   ============================
   forall a b : Z, Z -> a + b = b + a
-```
-```coq
+
 Unnamed_thm < intros...
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -1340,8 +1275,7 @@ Coq < Goal forall A B : Prop, A -> B -> A /\ B.
   
   ============================
   forall A B : Prop, A -> B -> A /\ B
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -1351,8 +1285,7 @@ Unnamed_thm < intros.
   H0 : B
   ============================
   A /\ B
-```
-```coq
+
 Unnamed_thm < generalize H.
 
 1 subgoal
@@ -1362,8 +1295,7 @@ Unnamed_thm < generalize H.
   H0 : B
   ============================
   A -> A /\ B
-```
-```coq
+
 Unnamed_thm < intro.
 
 1 subgoal
@@ -1374,12 +1306,10 @@ Unnamed_thm < intro.
   H1 : A
   ============================
   A /\ B
-```
-```coq
+
 Unnamed_thm < auto.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
