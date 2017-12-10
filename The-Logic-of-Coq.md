@@ -31,7 +31,7 @@ There are a few typical useful axioms that are independent from the Calculus of 
 * Extensionality of predicates: `∀ P Q:A→ Prop, (∀ x, P(x) ↔ Q(x)) → P=Q`
 * Extensionality of functions: `∀ f g:A→ B, (∀ x, f(x)=g(x)) → f=g`
 
-Here is a visual summary of the relative strength of these axioms, most proofs can be found in directory `Logic` of the standard library. The justification of their validity relies on the interpretability in set theory.
+Here is a visual summary of the relative strength of these axioms, most proofs can be found in directory `Logic` of the standard library. (Statements in boldface are the most "interesting" ones for Coq.) The justification of their validity relies on the interpretability in set theory.
 
 ![](https://raw.githubusercontent.com/mattjquinn/coq_wiki_temp/master/axioms.jpg)
 
