@@ -303,8 +303,7 @@ Coq < Goal forall x, 0 + x = x.
   
   ============================
   forall x : nat, 0 + x = x
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -312,12 +311,10 @@ Unnamed_thm < intros.
   x : nat
   ============================
   0 + x = x
-```
-```coq
+
 Unnamed_thm < reflexivity.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -343,8 +340,7 @@ Coq < Goal forall x, (exists y, x * y = 1) -> x = 1.
 1 subgoal
   ============================
   forall x : nat, (exists y : nat, x * y = 1) -> x = 1
-```
-```coq
+
 Unnamed_thm < intros x [y H].
 
 1 subgoal
@@ -353,8 +349,7 @@ Unnamed_thm < intros x [y H].
   H : x * y = 1
   ============================
   x = 1
-```
-```coq
+
 Unnamed_thm < apply mult_is_one in H.
 
 1 subgoal
@@ -363,12 +358,10 @@ Unnamed_thm < apply mult_is_one in H.
   H : x = 1 /\ y = 1
   ============================
   x = 1
-```
-```
+
 Unnamed_thm < easy.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -384,8 +377,7 @@ Coq < Goal forall x y : nat, x = y -> y = x.
   
   ============================
   forall x y : nat, x = y -> y = x
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -395,8 +387,7 @@ Unnamed_thm < intros.
   H : x = y
   ============================
   y = x
-```
-```coq
+
 Unnamed_thm < symmetry.
 
 1 subgoal
@@ -406,12 +397,10 @@ Unnamed_thm < symmetry.
   H : x = y
   ============================
   x = y
-```
-```coq
+
 Unnamed_thm < assumption.
 No more subgoals.
-```
-```
+
 Unnamed_thm  < Qed.
 Unnamed_thm is defined
 ```
@@ -427,8 +416,7 @@ Coq < Goal forall x y : nat, x=y -> y=x.
   
   ============================
   forall x y : nat, x = y -> y = x
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -438,8 +426,7 @@ Unnamed_thm < intros.
   H : x = y
   ============================
   y = x
-```
-```coq
+
 Unnamed_thm < symmetry in H.
 
 1 subgoal
@@ -449,12 +436,10 @@ Unnamed_thm < symmetry in H.
   H : y = x
   ============================
   y = x
-```
-```coq
+
 Unnamed_thm < assumption.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
@@ -470,8 +455,7 @@ Coq < Lemma trans : forall x y z : nat, x=y -> y=z -> x=z.
   
   ============================
   forall x y z : nat, x = y -> y = z -> x = z
-```
-```coq
+
 trans < intros.
 
 1 subgoal
@@ -481,24 +465,20 @@ trans < intros.
   H0 : y = z
   ============================
   x = z
-```
-```coq
+
 trans < transitivity y;assumption.
 No more subgoals.
-```
-```coq
+
 trans < Qed.
 trans is defined
-```
-```coq
+
 Coq < Goal forall x y z : nat, x=y -> y=z -> x=z.
 
 1 subgoal
   
   ============================
   forall x y z : nat, x = y -> y = z -> x = z
-```
-```coq
+
 Unnamed_thm < intros.
 
 1 subgoal
@@ -508,24 +488,20 @@ Unnamed_thm < intros.
   H0 : y = z
   ============================
   x = z
-```
-```coq
+
 Unnamed_thm < eapply trans;eauto.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
-```
-```coq
+
 Coq < Goal forall x y z t : nat, x=y -> x=t -> y=z -> x=z.
 
 1 subgoal
   
   ============================
   forall x y z t : nat, x = y -> x = t -> y = z -> x = z
-```
-```coq
+
 Unnamed_thm0 < intros.
 
 1 subgoal
@@ -536,8 +512,7 @@ Unnamed_thm0 < intros.
   H1 : y = z
   ============================
   x = z
-```
-```coq
+
 Unnamed_thm0 < eapply trans;eauto.
 
 1 subgoal
@@ -548,8 +523,7 @@ Unnamed_thm0 < eapply trans;eauto.
   H1 : y = z
   ============================
   t = z
-```
-```coq
+
 Unnamed_thm0 < Undo.
 
 1 subgoal
@@ -560,8 +534,7 @@ Unnamed_thm0 < Undo.
   H1 : y = z
   ============================
   x = z
-```
-```coq
+
 Unnamed_thm0 < eapply trans.
 
 2 subgoals
@@ -575,8 +548,7 @@ Unnamed_thm0 < eapply trans.
 
 subgoal 2 is:
  ?y = z
-```
-```coq
+
 Unnamed_thm0 < apply H.
 
 1 subgoal
@@ -587,24 +559,20 @@ Unnamed_thm0 < apply H.
   H1 : y = z
   ============================
   y = z
-```
-```coq
+
 Unnamed_thm0 < auto.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm0 < Qed.
 Unnamed_thm0 is defined
-```
-```coq
+
 Coq < Goal forall x y z t : nat, x=y -> x=t -> y=z -> x=z.
 
 1 subgoal
   
   ============================
   forall x y z t : nat, x = y -> x = t -> y = z -> x = z
-```
-```coq
+
 Unnamed_thm1 < intros.
 
 1 subgoal
@@ -615,8 +583,7 @@ Unnamed_thm1 < intros.
   H1 : y = z
   ============================
   x = z
-```
-```coq
+
 Unnamed_thm1 < eapply trans;eauto.
 
 1 subgoal
@@ -627,8 +594,7 @@ Unnamed_thm1 < eapply trans;eauto.
   H1 : y = z
   ============================
   t = z
-```
-```coq
+
 Unnamed_thm1 < Undo.
 
 1 subgoal
@@ -639,8 +605,7 @@ Unnamed_thm1 < Undo.
   H1 : y = z
   ============================
   x = z
-```
-```coq
+
 Unnamed_thm1 < try solve [eapply trans;eauto].
 
 1 subgoal
@@ -651,8 +616,7 @@ Unnamed_thm1 < try solve [eapply trans;eauto].
   H1 : y = z
   ============================
   x = z
-```
-```coq
+
 Unnamed_thm1 < eapply trans.
 
 2 subgoals
@@ -666,8 +630,7 @@ Unnamed_thm1 < eapply trans.
 
 subgoal 2 is:
  ?y = z
-```
-```coq
+
 Unnamed_thm1 < apply H.
 1 subgoal
   
@@ -677,12 +640,10 @@ Unnamed_thm1 < apply H.
   H1 : y = z
   ============================
   y = z
-```
-```coq
+
 Unnamed_thm1 < auto.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm1 < Qed.
 Unnamed_thm1 is defined
 ```
