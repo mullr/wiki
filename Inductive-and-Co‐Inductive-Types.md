@@ -13,12 +13,10 @@ Coq < Goal C1 <> C2.
   
   ============================
   C1 <> C2
-```
-```coq
+
 Unnamed_thm < discriminate.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
