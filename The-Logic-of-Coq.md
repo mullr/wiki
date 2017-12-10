@@ -51,7 +51,7 @@ Streicher's axiom _K_ [4] is an axiom that asserts dependent elimination of refl
 ```coq
 Axiom Streicher_K :
   forall (A:Type) (x:A) (P: x=x -> Prop),
-    P (refl_equal x) -> forall p: x=x, P p.
+    P (eq_refl x) -> forall p: x=x, P p.
 ```
 
 Axiom _K_ is equivalent to Uniqueness of Identity Proofs [4]:
@@ -63,7 +63,7 @@ Axiom UIP : forall (A:Set) (x y:A) (p1 p2: x=y), p1 = p2.
 Axiom _K_ is also equivalent to Uniqueness of Reflexive Identity Proofs [4]:
 
 ```coq
-Axiom UIP_refl : forall (A:Set) (x:A) (p: x=x), p = refl_equal x.
+Axiom UIP_refl : forall (A:Set) (x:A) (p: x=x), p = eq_refl x.
 ```
 
 Axiom _K_ is also equivalent to:
