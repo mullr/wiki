@@ -28,7 +28,7 @@ Coq < Require Import Eqdep_dec.
 Coq < Require Import Peano_dec.
 
 Coq < Theorem K_nat :
-        forall (x:nat) (P:x = x -> Prop), P (refl_equal x) -> forall p:x = x, P p.
+        forall (x:nat) (P:x = x -> Prop), P (eq_refl x) -> forall p:x = x, P p.
 
 Coq < Proof.
 Coq < intros; apply K_dec_set with (p := p).
@@ -62,16 +62,16 @@ Coq < Theorem le_uniqueness_proof : forall (n m : nat) (p q : n <= m), p = q.
 Coq < Proof.
 Coq < induction p using le_ind'; intro q.
 Coq < replace (le_n n) with
-        (eq_rect _ (fun n0 => n <= n0) (le_n n) _ (refl_equal n)).
+        (eq_rect _ (fun n0 => n <= n0) (le_n n) _ (eq_refl n)).
 Coq < 2:reflexivity.
-Coq <   generalize (refl_equal n).
+Coq <   generalize (eq_refl n).
 Coq <     pattern n at 2 4 6 10, q; case q; [intro | intros m l e].
 Coq <     rewrite <- eq_rect_eq_nat; trivial.
 Coq <     contradiction (le_Sn_n m); rewrite <- e; assumption.
 Coq < replace (le_S n m p) with
-Coq <   (eq_rect _ (fun n0 => n <= n0) (le_S n m p) _ (refl_equal (S m))).
+Coq <   (eq_rect _ (fun n0 => n <= n0) (le_S n m p) _ (eq_refl (S m))).
 Coq < 2:reflexivity.
-Coq <   generalize (refl_equal (S m)).
+Coq <   generalize (eq_refl (S m)).
 Coq <     pattern (S m) at 1 3 4 6, q; case q; [intro Heq | intros m0 l HeqS].
 Coq <     contradiction (le_Sn_n m); rewrite Heq; assumption.
 Coq <     injection HeqS; intro Heq; generalize l HeqS.
