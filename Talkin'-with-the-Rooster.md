@@ -11,9 +11,7 @@ Coq < Goal forall A B:Prop, A->B-> A/\B.
 
   ============================
   forall A B : Prop, A -> B -> A /\ B
-```
 
-```coq
 Unnamed_thm < intros.
 
 1 subgoal
@@ -24,9 +22,7 @@ Unnamed_thm < intros.
   H0 : B
   ============================
   A /\ B
-```
 
-```coq
 Unnamed_thm < split.
 
 2 subgoals
@@ -39,8 +35,7 @@ Unnamed_thm < split.
   A
 subgoal 2 is:
  B
-```
-```coq
+
 Unnamed_thm < assumption.
 
 1 subgoal
@@ -51,13 +46,10 @@ Unnamed_thm < assumption.
   H0 : B
   ============================
   B
-```
 
-```coq
 Unnamed_thm < assumption.
 No more subgoals.
-```
-```coq
+
 Unnamed_thm < Qed.
 Unnamed_thm is defined
 ```
