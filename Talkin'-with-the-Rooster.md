@@ -1237,7 +1237,7 @@ Ltac assert_later t := cut t;[intro|idtac].
 ```
 
 ### What is the difference between `Qed` and `Defined`?
-These two commands perform type checking, but when `Defined` is used the new definition is set as transparent, otherwise it is defined as opaque (see 169).
+These two commands perform type checking, but when `Defined` is used the new definition is set as transparent, otherwise it is defined as opaque (see [this section of the Glossary](Glossary#what-is-the-difference-between-opaque-and-transparent)).
 
 ### How can I know what an automation tactic does in my example?
 You can use its `info` variant: info_auto, info_trivial, info_eauto.
