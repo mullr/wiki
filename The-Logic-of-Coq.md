@@ -138,7 +138,7 @@ excluded-middle in `Set`).
 
 ### Is `Type` impredicative?
 
-No, Type is stratified. This is hidden for the user, but Coq internally maintains a set of constraints ensuring stratification.
+No, `Type` is stratified. This is hidden for the user, but Coq internally maintains a set of constraints ensuring stratification.
 
 If `Type` were impredicative then it would be possible to encode Girard's systems `U−` and `U` in Coq and it is known from Girard, Coquand, Hurkens and Miquel that systems `U−` and `U` are inconsistent [Girard 1972, Coquand 1991, Hurkens 1993, Miquel 2001]. This encoding can be found in file `Logic/Hurkens.v` of the Coq standard library.
 
