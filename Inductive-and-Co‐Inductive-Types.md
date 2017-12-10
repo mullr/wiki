@@ -181,7 +181,7 @@ For instance, the computation of `my_max 567 321` is almost immediate, whereas o
 
 This is normal. Your definition is a simple recursive function which returns a boolean value. Coq's `le_lt_dec` is a _certified function_, i.e. a complex object, able not only to tell whether `n ≤ p` or `p < n`, but also of building a complete proof of the correct inequality. What makes `le_lt_dec` inefficient while computing the min and max is the building of a huge proof term.
 
-Nevertheless, `le_lt_dec` is very useful. Its type is a strong specification, using the `sumbool` type (look at the reference manual or chapter 9 of [1]). Eliminations of the form `case (le_lt_dec n p)` provide proofs of either `n ≤ p` or `p < n`, allowing you to easily prove theorems as [above](#argh-i-cannot-write-expressions-like-if-n--p-then-p-else-n-as-in-any-programming-language). Unfortunately, this not the case of your `my_le_lt_dec`, which returns a quite non-informative boolean value.
+Nevertheless, `le_lt_dec` is very useful. Its type is a strong specification, using the `sumbool` type (look at the reference manual or chapter 9 of [1]). Eliminations of the form `case (le_lt_dec n p)` provide proofs of either `n ≤ p` or `p < n`, allowing easy proofs of some theorems as [above](#argh-i-cannot-write-expressions-like-if-n--p-then-p-else-n-as-in-any-programming-language). Unfortunately, this not the case of your `my_le_lt_dec`, which returns a quite non-informative boolean value.
 
 ```coq
 Coq < Check le_lt_dec.
