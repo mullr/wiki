@@ -58,14 +58,16 @@ The first implementation is from 1985 (it was named CoC which is the acronym of 
 There are graphical user interfaces:
 * **Coqide**: A GTK based GUI for Coq.
 * **Pcoq**: A GUI for Coq with proof by pointing and pretty printing.
-* **coqwc**: A tool similar to wc to count lines in Coq files.
+* **coqwc**: A tool similar to `wc` to count lines in Coq files.
 * **Proof General**: A emacs mode for Coq and many other proof assistants.
+* **ProofWeb**: An online web interface for Coq (and other proof assistants), with a focus on teaching.
+* **ProverEditor**: An experimental Eclipse plugin with support for Coq.
 
 There are documentation and browsing tools:
 
-* **Helm/Mowgli**: A rendering, searching and publishing tool.
-* **coq-tex**: A tool to insert Coq examples within .tex files.
+* **coq-tex**: A tool to insert Coq examples within `.tex` files.
 * **coqdoc**: A documentation tool for Coq.
+* **coqgraph**: A tool to generate a dependency graph from Coq sources.
 
 There are front-ends for specific languages:
 
@@ -74,6 +76,9 @@ There are front-ends for specific languages:
 * **Caduceus**: A C code certification tool that uses both Coq and Why.
 * **Zenon**: A first-order theorem prover.
 * **Focal**: The Focal project aims at building an environment to develop certified computer algebra libraries.
+* **Concoqtion**: A dependently-typed extension of Objective Caml (and of MetaOCaml) with specifications expressed and proved in Coq.
+* **Ynot** is an extension of Coq providing a ”Hoare Type Theory” for specifying higher-order, imperative and concurrent programs.
+* **Ott** is a tool to translate the descriptions of the syntax and semantics of programming languages to the syntax of Coq, or of other provers.
 
 ### What are the high-level tactics of Coq?
 
