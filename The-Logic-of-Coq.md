@@ -150,7 +150,7 @@ When a statement violates a constraint, the message `Universe inconsistency` app
 
 In the base Coq system, the answer is generally no. However, if classical logic is set, the answer is yes for propositions in `Prop`. The answer is also yes if proof irrelevance holds (see [above](#what-is-proof-irrelevance)).
 
-There are also "simple enough" propositions for which you can prove the equality without requiring any extra axioms. This is typically the case for propositions defined deterministically as a first-order inductive predicate on decidable sets. See for instance in question 138 an axiom-free proof of the uniqueness of the proofs of the proposition `le m n` (less or equal on nat).
+There are also "simple enough" propositions for which you can prove the equality without requiring any extra axioms. This is typically the case for propositions defined deterministically as a first-order inductive predicate on decidable sets. See for instance in [this section](Case-Studies#how-to-prove-that-two-proofs-of-n--m-on-nat-are-equal) an axiom-free proof of the uniqueness of the proofs of the proposition `le m n` (less or equal on nat).
 
 ### I have two proofs of an equality statement. Can I prove they are equal?
 
