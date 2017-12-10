@@ -6,7 +6,7 @@ You can define your own notation for `forall`:
 Notation "fa x : t, P" := (forall x:t, P) (at level 200, x ident).
 ```
 
-or if your are using CoqIde you can define a pretty symbol for `forall` and an input method (see 152).
+or if your are using CoqIde you can define a pretty symbol for `forall` and an input method (see [this section](CoqIde#how-to-use-those-forall-and-exists-pretty-symbols)).
 
 ### How can I define a notation for square?
 
