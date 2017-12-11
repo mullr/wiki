@@ -35,3 +35,8 @@ From oldest to most recent:
 - ...
 - https://github.com/coq/coq/pull/1003 (intros '(x,y)) The debate is about "syntactic pollution". I guess the people that are rather against the merge of this PR (Pierre-Marie, Maxime) should explain their viewpoint.
 - https://github.com/coq/coq/pull/1136 (dir-locals)
+
+Issues that need to be discussed (possibly around a computer)
+-------------------------------------------------------------
+
+- https://github.com/coq/coq/issues/5448 (Stack overflow on cbv delta in a trivial tactic in terms) Leader?
