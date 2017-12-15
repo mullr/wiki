@@ -29,9 +29,6 @@ You can use this bibtex entry (to adapt to the appropriate version):
 
 ### Where can I publish my developments in Coq?
 
-You can submit your developments as a user contribution to the Coq development team. This ensures its liveness along the evolution and possible changes of Coq.
+You can submit your developments to the [Coq Package Index](https://coq.inria.fr/packages).
 
-You can also submit your developments to the HELM/MoWGLI repository at the University of Bologna (see http://mowgli.cs.unibo.it). For developments submitted in this database, it is possible to visualize them in natural language and execute various retrieving requests.
-
-### How can I read my proof in natural language?
-You can submit your proof to the HELM/MoWGLI repository and use the rendering tool provided by the server (see http://mowgli.cs.unibo.it).
+An earlier related projet (not active anymore apparently) was the HELM/MoWGLI repository at the University of Bologna (see http://mowgli.cs.unibo.it). For developments submitted in this database, it was possible to visualize them in natural language and execute various retrieving requests.
