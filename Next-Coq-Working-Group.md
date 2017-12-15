@@ -16,7 +16,7 @@ Monday:
   - Equations & the Function replacement plan (Matthieu, Cyprien, Thierry, 45 min)
   - as [pat|..|pat] / as '(x, y, z) intropatterns / https://github.com/coq/coq/pull/1003 (15 min)
 
-- 11h-12h:
+- 11h15-12h15:
   - Attributes (Vincent, 30 min)
   - Integers and arrays (Maxime, 30 min)
 
@@ -39,17 +39,17 @@ Monday:
     Participants: Georges ? Pierre-Marie ? Enrico ?
 
 Tuesday:
-- 10h-11h:
+- 10h-11h00:
   - Plugin Developer Program (Emilio, 30 min)
   - Proof-Irrelevant Coq (Gaëtan, 30 min)
 
-- 11h-12h:
+- 11h15-12h15:
   - A presentation of TLC 2.0 (covering library design, not tactics) (Arthur, 45min + questions)
-  - Evaluation inside Coq with non-constructive recursive definitions (Arthur, 20 min)
 
 - 14h-15h:
+  - Evaluation inside Coq with non-constructive recursive definitions (Arthur, 20 min)
   - Coq Meetup [Théo, Emilio] (15 min)
-  - coq-community, a new birth for Coq contribs (Théo, 30 minutes).
+  - coq-community, a new birth for Coq contribs (Théo, 25 minutes).
 
 - 15h30-..:
   Working groups
