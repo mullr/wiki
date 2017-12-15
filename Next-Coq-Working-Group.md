@@ -27,16 +27,16 @@ Monday:
   Technical work in groups, subject proposals (need one lead per group, not two groups with same lead).
   - EConstr API completion (taking input from e.g. Equations, ssreflect)
     Lead: Matthieu
-    Participants: Cyprien? Pierre-Marie?
+    Participants: Cyprien? Pierre-Marie? Emilio
   - Evar_source/evar_kinds
     Lead: ?
     Participants: Matthieu, ...
   - Future goals and the shelf etc... looking at what unifall-infra adds there.
     Lead: ?
-    Participants: Maxime
+    Participants: Maxime, Emilio
   - Porting the ssr plugin to modern APIs
     Lead: Maxime
-    Participants: Georges ? Pierre-Marie ? Enrico ?
+    Participants: Georges ? Pierre-Marie ? Enrico ? Emilio
 
 Tuesday:
 - 10h-11h00:
@@ -59,7 +59,7 @@ PRs that need to be discussed (possibly around a computer)
 ----------------------------------------------------------
 
 From oldest to most recent:
-- https://github.com/coq/coq/pull/313 (Scoped options) Emilio suggests that this needs to be discussed with a small group, around a computer.
+- https://github.com/coq/coq/pull/313 (Scoped options) Emilio suggests that this needs to be discussed with a small group, around a computer so we can have a closer look to the way `liboject` is working.
 - https://github.com/coq/coq/pull/400 (Reducing temporary allocations in CClosure) Pierre-Marie needs to convince Guillaume of the importance of his patch, and Emilio that this has nothing to do with Flambda.
 - https://github.com/coq/coq/pull/616 (Make some keywords into normal idents) Gaetan will lead the discussion (last time this was discussed, he was not here).
 - ...
@@ -74,15 +74,15 @@ Issues that need to be discussed (possibly around a computer)
 Participants
 ------------
 - Yves Bertot
-- Théo Zimmermann
 - Cyril Cohen
-- Gaëtan Gilbert
-- Enrico Tassi
 - Emilio Gallego
-- Hugo Herbelin
-- Guillaume Melquiond
-- Matthieu Sozeau
 - Maxime Dénès
+- Gaëtan Gilbert
 - Georges Gonthier
-- Pierre-Marie Pédrot
+- Hugo Herbelin
 - Vincent Laporte
+- Guillaume Melquiond
+- Pierre-Marie Pédrot
+- Matthieu Sozeau
+- Enrico Tassi
+- Théo Zimmermann
