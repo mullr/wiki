@@ -16,8 +16,7 @@ let x<sub>1</sub> := e<sub>1</sub> with x<sub>2</sub> := e<sub>2</sub> ... with 
 Beware that if _expr_ is complex (i.e. features at least a sequence) parentheses should be added around it. For example:
 
 ```coq
-Coq < Ltac twoIntro := let x:=intro in (x;x).
-twoIntro is defined
+Ltac twoIntro := let x:=intro in (x;x).
 ```
 
 ### What is the syntax for pattern matching in Ltac?
@@ -45,6 +44,5 @@ rejected.
 You can use the following syntax: `let id:=fresh in ...` For example:
 
 ```coq
-Coq < Ltac introIdGen := let id:=fresh in intro id.
-introIdGen is defined
+Ltac introIdGen := let id:=fresh in intro id.
 ```
