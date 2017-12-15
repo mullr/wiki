@@ -31,4 +31,4 @@ You can use this bibtex entry (to adapt to the appropriate version):
 
 You can submit your developments to the [Coq Package Index](https://coq.inria.fr/packages).
 
-An earlier related projet (not active anymore apparently) was the HELM/MoWGLI repository at the University of Bologna (see http://mowgli.cs.unibo.it). For developments submitted in this database, it was possible to visualize them in natural language and execute various retrieving requests.
+An earlier related projet (unmaintained) was the HELM/MoWGLI repository at the University of Bologna (see http://mowgli.cs.unibo.it). For developments submitted in this database, it was possible to visualize them in natural language and execute various retrieving requests.
