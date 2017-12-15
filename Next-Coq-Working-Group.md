@@ -11,17 +11,29 @@ Streaming and recorded video will be available on Coq's [YouTube channel](https:
 
 Topics
 ------
-
+Monday:
+10h-11h:
 - Attributes (Vincent, 30 min)
 - Integers and arrays (Maxime, 30 min)
-- API (Emilio, 45 min - 1h)
-- Status of the Coqlib rebindable PR (#186) (Emilio, 30 min)
-- Plugin Developer Program (Emilio, 30 min)
-- Report on performance testing with OExp (Emilio, 45 mins)
+
+11h-12h:
 - Equations & the Function replacement plan (Matthieu, Cyprien, Thierry, 45 min)
   + as [pat|..|pat] / as '(x, y, z) intropatterns (15 min)
+
+14h-15h15:
+- API (Emilio, 45 min)
+- Status of the Coqlib rebindable PR (#186) (Emilio, 30 min)
+
+Tuesday:
+10h-11h:
+- Plugin Developer Program (Emilio, 30 min)
+- Report on performance testing with OExp (Emilio, 30 mins)
+
+11h-12h:
 - A presentation of TLC 2.0 (covering library design, not tactics) (Arthur, 45min + questions)
 - Evaluation inside Coq with non-constructive recursive definitions (Arthur, 20 min)
+
+14h-15h:
 - Coq Meetup [Théo, Emilio] (15 min)
 - coq-community, a new birth for Coq contribs (Théo, 30 minutes).
 
