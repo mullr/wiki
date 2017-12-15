@@ -41,7 +41,7 @@ Monday:
 Tuesday:
 - 10h-11h00:
   - Plugin Developer Program (Emilio, 30 min)
-  - Proof-Irrelevant Coq (Gaëtan, 30 min)
+  - TBD (??, 30 min)
 
 - 11h15-12h15:
   - A presentation of TLC 2.0 (covering library design, not tactics) (Arthur, 45min + questions)
