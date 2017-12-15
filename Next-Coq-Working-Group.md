@@ -28,6 +28,9 @@ Monday:
   - EConstr API completion (taking input from e.g. Equations, ssreflect)
     Lead: Matthieu
     Participants: Cyprien?
+  - Evar_source/evar_kinds
+    Lead: ?
+    Participants: ?
   - Future goals and the shelf etc... looking at what unifall-infra adds there.
     Lead: ?
     Participants: ?
@@ -44,6 +47,9 @@ Tuesday:
 - 14h-15h:
   - Coq Meetup [Théo, Emilio] (15 min)
   - coq-community, a new birth for Coq contribs (Théo, 30 minutes).
+
+- 15h30-..:
+  Working groups
 
 PRs that need to be discussed (possibly around a computer)
 ----------------------------------------------------------
