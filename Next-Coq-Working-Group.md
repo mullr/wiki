@@ -25,7 +25,12 @@ Monday:
   - Status of the Coqlib rebindable PR (#186) (Emilio, 30 min)
 
 - 15h30-..:
-  Technical work in groups
+  Technical work in groups, subject proposals:
+  - EConstr API completion (taking input from e.g. Equations)
+    Participants: Matthieu, Cyprien?
+  - Evar sources/kinds
+  - Future goals and the shelf etc... looking at what unifall-infra adds there.
+    Participants: Matthieu, Hugo?
 
 Tuesday:
 - 10h-11h:
