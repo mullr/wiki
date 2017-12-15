@@ -30,7 +30,7 @@ Monday:
     Participants: Cyprien? Pierre-Marie?
   - Evar_source/evar_kinds
     Lead: ?
-    Participants: ?
+    Participants: Matthieu, ...
   - Future goals and the shelf etc... looking at what unifall-infra adds there.
     Lead: ?
     Participants: Maxime
