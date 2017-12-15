@@ -34,7 +34,7 @@ Monday:
 Tuesday:
 - 10h-11h:
   - Plugin Developer Program (Emilio, 30 min)
-  - Report on performance testing with OExp (Emilio, 30 mins)
+  - Proof-Irrelevant Coq (Gaëtan, 30 min)
 
 - 11h-12h:
   - A presentation of TLC 2.0 (covering library design, not tactics) (Arthur, 45min + questions)
