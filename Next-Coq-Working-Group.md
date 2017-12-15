@@ -24,12 +24,13 @@ Monday:
   - API - Emilio
 
 - 15h30-..:
-  Technical work in groups, subject proposals:
-  - EConstr API completion (taking input from e.g. Equations)
-    Participants: Matthieu, Cyprien?
-  - Evar sources/kinds
+  Technical work in groups, subject proposals (need one lead per group, not two groups with same lead).
+  - EConstr API completion (taking input from e.g. Equations, ssreflect)
+    Lead: Matthieu
+    Participants: Cyprien?
   - Future goals and the shelf etc... looking at what unifall-infra adds there.
-    Participants: Matthieu, Hugo?
+    Lead: ?
+    Participants: ?
 
 Tuesday:
 - 10h-11h:
