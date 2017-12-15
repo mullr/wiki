@@ -33,7 +33,10 @@ Monday:
     Participants: ?
   - Future goals and the shelf etc... looking at what unifall-infra adds there.
     Lead: ?
-    Participants: ?
+    Participants: Maxime
+  - Porting the ssr plugin to modern APIs
+    Lead: Maxime
+    Participants: Georges ? Pierre-Marie ? Enrico ?
 
 Tuesday:
 - 10h-11h:
