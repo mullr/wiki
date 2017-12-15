@@ -35,6 +35,8 @@ Here is a visual summary of the relative strength of these axioms, most proofs c
 
 ![](files/axioms.jpg)
 
+[XFig sources](files/axioms.fig) of the previous diagram.
+
 ### What standard axioms are inconsistent with Coq?
 
 The axiom of unique choice together with classical logic (e.g. excluded-middle) are inconsistent in the variant of the Calculus of Inductive Constructions where `Set` is impredicative.
