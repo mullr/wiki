@@ -69,3 +69,16 @@ Issues that need to be discussed (possibly around a computer)
 -------------------------------------------------------------
 
 - https://github.com/coq/coq/issues/5448 (Stack overflow on cbv delta in a trivial tactic in terms) Leader?
+
+Participants
+------------
+Yves Bertot
+Théo Zimmermann
+Cyril Cohen
+Gaëtan Gilbert
+Enrico Tassi
+Emilio Gallego
+Hugo Herbelin
+Guillaume Melquiond
+Matthieu Sozeau
+Maxime Dénès
