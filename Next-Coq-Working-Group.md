@@ -82,3 +82,5 @@ Participants
 - Guillaume Melquiond
 - Matthieu Sozeau
 - Maxime Dénès
+- Georges Gonthier
+- Pierre-Marie Pédrot
