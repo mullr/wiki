@@ -27,7 +27,7 @@ Monday:
   Technical work in groups, subject proposals (need one lead per group, not two groups with same lead).
   - EConstr API completion (taking input from e.g. Equations, ssreflect)
     Lead: Matthieu
-    Participants: Cyprien?
+    Participants: Cyprien? Pierre-Marie?
   - Evar_source/evar_kinds
     Lead: ?
     Participants: ?
