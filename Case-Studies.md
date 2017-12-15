@@ -144,7 +144,7 @@ Lemma eq_pack :
 
 You need to derive the dependent elimination scheme for `natProp` by hand using `Scheme`.
 
-```
+```coq
 Scheme natProp_elim := Induction for natProp Sort Prop.
 
 Definition pack_S : package -> package.
