@@ -48,7 +48,7 @@ Tuesday:
 
 - 14h-15h:
   - Evaluation inside Coq with non-constructive recursive definitions (Arthur, 20 min)
-  - Coq Meetup [Théo, Emilio] (15 min)
+  - Coq Meetup [Théo, Emilio] (15 min)15h
   - coq-community, a new birth for Coq contribs (Théo, 25 minutes).
 
 - 15h30-..:
@@ -84,3 +84,4 @@ Participants
 - Maxime Dénès
 - Georges Gonthier
 - Pierre-Marie Pédrot
+- Vincent Laporte
