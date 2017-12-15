@@ -14,7 +14,7 @@ Topics
 Monday:
 - 10h-11h:
   - Equations & the Function replacement plan (Matthieu, Cyprien, Thierry, 45 min)
-  - as [pat|..|pat] / as '(x, y, z) intropatterns (15 min)
+  - as [pat|..|pat] / as '(x, y, z) intropatterns / https://github.com/coq/coq/pull/1003 (15 min)
 
 - 11h-12h:
   - Attributes (Vincent, 30 min)
