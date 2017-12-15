@@ -93,7 +93,7 @@ Coq < Theorem interval_discr :
 We have a proof requiring the axiom of proof-irrelevance. We conjecture that proof-irrelevance can be
 circumvented by introducing a primitive definition of discrimination of the proofs of `{x : nat | x <= m}`.
 
-The proof can be found in file [interval_discr.v](https://github.com/coq/www/blob/master/files/interval_discr.v).
+The proof can be found in file [interval_discr.v](https://gist.github.com/letouzey/9d99b4ffb307eaf84b91486f2375dcd0).
 
 ### I have a problem of dependent elimination on proofs, how to solve it?
 
