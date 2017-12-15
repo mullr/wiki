@@ -20,9 +20,8 @@ Monday:
   - Attributes (Vincent, 30 min)
   - Integers and arrays (Maxime, 30 min)
 
-- 14h-15h15:
-  - API (Emilio, 45 min)
-  - Status of the Coqlib rebindable PR (#186) (Emilio, 30 min)
+- 14h-15h:
+  - API - Emilio
 
 - 15h30-..:
   Technical work in groups, subject proposals:
