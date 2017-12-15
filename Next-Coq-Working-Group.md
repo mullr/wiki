@@ -87,3 +87,4 @@ Participants
 - Enrico Tassi
 - Théo Zimmermann
 - Arthur Charguéraud
+- Cyprien Mangin
