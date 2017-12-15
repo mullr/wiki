@@ -72,13 +72,13 @@ Issues that need to be discussed (possibly around a computer)
 
 Participants
 ------------
-Yves Bertot
-Théo Zimmermann
-Cyril Cohen
-Gaëtan Gilbert
-Enrico Tassi
-Emilio Gallego
-Hugo Herbelin
-Guillaume Melquiond
-Matthieu Sozeau
-Maxime Dénès
+- Yves Bertot
+- Théo Zimmermann
+- Cyril Cohen
+- Gaëtan Gilbert
+- Enrico Tassi
+- Emilio Gallego
+- Hugo Herbelin
+- Guillaume Melquiond
+- Matthieu Sozeau
+- Maxime Dénès
