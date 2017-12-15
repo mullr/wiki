@@ -75,8 +75,8 @@ Participants
 ------------
 - Yves Bertot
 - Cyril Cohen
-- Emilio Gallego
 - Maxime Dénès
+- Emilio Gallego
 - Gaëtan Gilbert
 - Georges Gonthier
 - Hugo Herbelin
