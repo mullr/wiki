@@ -12,7 +12,7 @@ Streaming and recorded video will be available on Coq's [YouTube channel](https:
 Topics
 ------
 
-- Attributes (Maxime, 30 min)
+- Attributes (Vincent, 30 min)
 - Integers and arrays (Maxime, 30 min)
 - API (Emilio, 45 min - 1h)
 - Status of the Coqlib rebindable PR (#186) (Emilio, 30 min)
