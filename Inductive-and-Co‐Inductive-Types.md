@@ -31,11 +31,17 @@ Have a look at `decide equality` and `discriminate` in [the Reference Manual](ht
 
 ### Why is the proof of `0 + n = n` on natural numbers trivial but the proof of `n + 0 = n` is not?
 
-Because `+` (`plus`) on natural numbers is defined by analysis on its first argument:
+Because `+` (`plus` a.k.a. `Nat.add` now) on natural numbers is defined by analysis on its first argument:
 
 ```coq
-Coq < Print plus.
-Notation plus := Init.Nat.add
+Coq < Print Nat.add.
+Nat.add =
+fix add (n m : nat) {struct n} : nat :=
+  match n with
+  | 0 => m
+  | S p => S (add p m)
+  end
+     : nat -> nat -> nat
 ```
 
 so the expression `0 + n` evaluates to `n`. As Coq reasons modulo evaluation of expressions, `0 + n` and `n` are
@@ -48,7 +54,9 @@ Simply because most of the time it is not needed. To derive a dependent eliminat
 
 ### Argh! I cannot write expressions like "if n <= p then p else n", as in any programming language.
 
-The short answer: You should use `le_lt_dec n p` instead.
+The short answer: `n <= p` is a logical statement, you should rather
+use boolean tests such as `n <=? p` instead (notation for `Nat.leb`),
+or *decidability* functions such as `le_lt_dec n p`.
 
 The long answer: That’s right, you can’t. If you type for instance the following "definition":
 
