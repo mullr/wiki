@@ -8,7 +8,7 @@ Inductive foo : nat * nat -> Prop :=
 
 Naively applying induction will forget the structure of foo's argument.
 
-Doing induction on a term that does not contains only variables (there is a pair and a sum in `(n, m+p)`). The first way to go is to reshape your hypothesis on which you do induction so it contains only variables. Example:
+Doing induction on a term that does not contain only variables (there is a pair and a sum in `(n, m+p)`). The first way to go is to reshape your hypothesis on which you do induction so it contains only variables. Example:
 
 ```coq
 Require Import Omega.
