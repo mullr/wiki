@@ -86,3 +86,4 @@ Participants
 - Matthieu Sozeau
 - Enrico Tassi
 - Théo Zimmermann
+- Arthur Charguéraud
