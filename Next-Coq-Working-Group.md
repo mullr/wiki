@@ -41,7 +41,8 @@ Monday:
 Tuesday:
 - 10h-11h00:
   - Plugin Developer Program (Emilio, 30 min)
-  - coq-community, a new birth for Coq contribs (Théo, 25 minutes).
+  - Fire drill
+
 - 11h15-12h15:
   - A presentation of TLC 2.0 (covering library design, not tactics) (Arthur, 45min + questions)
 
@@ -49,7 +50,7 @@ Tuesday:
   - Evaluation inside Coq with non-constructive recursive definitions (Arthur, 20 min)
   - Coq Meetup [Théo, Emilio] (15 min)
 - 15h
-  - Ltac2 (or Ltac3) by Pierre-Marie (or Enrico) 
+  - coq-community, a new birth for Coq contribs (Théo, 25 minutes), or Ltac2 (or Ltac3) by Pierre-Marie (or Enrico) 
 
 
 - 15h30-..:
