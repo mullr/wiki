@@ -49,7 +49,7 @@ Tuesday:
   - Evaluation inside Coq with non-constructive recursive definitions (Arthur, 20 min)
   - Coq Meetup [Théo, Emilio] (15 min)
 - 15h
-  - Ltac2 (or Ltac3) depending on PMP (or Enrico) 
+  - Ltac2 (or Ltac3) by Pierre-Marie (or Enrico) 
 
 
 - 15h30-..:
