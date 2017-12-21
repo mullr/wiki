@@ -27,7 +27,7 @@ Coq official resources
 -   [The Coq-Club mailing list](https://sympa.inria.fr/sympa/info/coq-club)
 -   [The Coq bug tracker](https://github.com/coq/coq/issues)
 -   [The Coq gitter (web chat)](https://gitter.im/coq/coq)
--   [The Coq FAQ](https://coq.inria.fr/faq) (no longer maintained)
+-   [The Coq FAQ](The-Coq-FAQ)
 -   The Coq IRC channel: `irc://irc.freenode.net/#coq`
 
 Coq tutorials
