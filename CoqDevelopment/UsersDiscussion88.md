@@ -4,26 +4,27 @@ Users are welcomed to comment and discuss with developers on these changes at th
 
 ### The logic
 
-- Removal of (implicit) support for template polymorphism since it can be simulated using (explicit) universe polymorphism and thanks to [cumulativity](https://github.com/coq/coq/pull/613) propagated through inductive definitions (discussion at PR #889).
+- Removal of (implicit) support for template polymorphism since it can be simulated using (explicit) universe polymorphism and thanks to [cumulativity](https://github.com/coq/coq/pull/613) propagated through inductive definitions (discussion at 
+[PR #889](https://github.com/coq/coq/pull/889)).
 
 ### Notations
 
-- New strategy based on open scopes for deciding which notation to use among several of them (discussion at PR #873).
+- New strategy based on open scopes for deciding which notation to use among several of them (discussion at [PR #873](https://github.com/coq/coq/pull/873)).
 
   Typical questions are: should abbreviations (i.e. notations bound to a name rather than to a `" ... "` grammar rule) support being attached to a scope.
   What should be their priority relatively to notations defined in a scope for printing.
   
-- Factorizing "match" clauses with same right-hand side (discussion at PR #978).
+- Factorizing "match" clauses with same right-hand side (discussion at [PR #978](https://github.com/coq/coq/pull/978)).
 
-- Support for custom alternative grammars for terms (discussion at PR #6247).
+- Support for custom alternative grammars for terms (discussion at [PR #6247](https://github.com/coq/coq/pull/6247)).
 
 ### Tactics
 
-- Tactics `apply`, `rewrite`, `destruct`, `induction`, etc. based on a different unification algorithm (discussion at PR #930 and PR #991).
+- Tactics `apply`, `rewrite`, `destruct`, `induction`, etc. based on a different unification algorithm (discussion at [PR #930](https://github.com/coq/coq/pull/930) and [PR #991](https://github.com/coq/coq/pull/)).
 
 - Removal of `Declare Implicit Tactic`.
 
-- Model for letting tactic behaviors evolve without breaking compatibility, or at least without breaking it too much (discussion at issue #6043).
+- Model for letting tactic behaviors evolve without breaking compatibility, or at least without breaking it too much (discussion at [issue 6043](https://github.com/coq/coq/issues/6043)).
 
 ### A comprehensive list of features for version 8.8
 
