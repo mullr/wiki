@@ -29,4 +29,4 @@ Users are welcomed to comment and discuss with developers on these changes at th
 ### A comprehensive list of features for version 8.8
 
 The list of new 8.8 features already integrated is listed [here](https://github.com/coq/coq/pulls?q=is%3Apr+label%3A%22kind%3A+feature%22+milestone%3A8.8+is%3Aclosed)
-and the one planned for integration are listed [here](https://github.com/coq/coq/pulls?q=is%3Apr+label%3A%22kind%3A+feature%22+milestone%3A8.8+is%3Aopen).
+and the one planned for integration are listed [here](https://github.com/coq/coq/pulls?utf8=%E2%9C%93&q=label%3A%22kind%3A+feature%22+milestone%3A8.8+is%3Aopen).
