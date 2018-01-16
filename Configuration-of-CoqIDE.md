@@ -1,20 +1,10 @@
 The default key bindings of CoqIDE are often problematic because they conflict with the window manager. Moreover, the default bindings are not efficient at all: the most useful action requires pressing a combination of 3 keys... Fortunately, it is straightforward to update the bindings.
 
-Configuring the alternative set of bindings
-===========================================
-
-(For Coq version >= 8.4 only)
-
-Close all running instances of CoqIDE, then download and install the modified configuration file as follows:
-
--   On Linux, copy the file [coqide.keys](files/coqide.keys) into the folder `~/.config/coq/`
--   On Windows, copy the file [coqide.keys](files/coqide.keys) either into the folder `%HOME%\.config\coq` if `HOME` is defined, or into the folder `C:\Program Files\Coq\config` (assuming you used the default installation path).
--   On MacOS, the alternative set of bindings has not been tested; see below how to modify the bindings yourself.
 
 The alternative set of bindings
 ===============================
 
-After you copied the modified configuration file, the new bindings are as follows:
+The new bindings are then as follows:
 
 |                          |     |
 |--------------------------|-----|
@@ -22,25 +12,55 @@ After you copied the modified configuration file, the new bindings are as follow
 |Execute backward one step | F6  |
 |Execute forward one step  | F7  |
 |Execute to the end        | F8  |
-|Run make                  | F9  |
-|Reach next error          | F10 |
-|Interrupt execution       | F11 |
-|Reset execution           | F12 |
+|Start                     | F9  |
+|Interrupt                 | F12 |
 
 
-How to manually modify the bindings
------------------------------------
+Configuring the alternative set of bindings
+===========================================
 
-You can edit the binding files `coqide.keys` yourself. (It is located in `~/.config/coq/` or `C:\Program Files\Coq\config\`). To modify a binding, edit the corresponding line by removing the semi-column at the beginning of the line and changing the shortcut. Example:
+(0) You need CoqIDE to have been executed at least once for the configuration file to exist.
+
+(1) Before you make any change to these files, you MUST close all running instances of CoqIDE.
+
+(2) You need find out the location of the configuration files `coqiderc` and `coqide.keys`:
+
+-   On Linux, in `~/.config/coq/`
+-   On Windows, either in `%HOME%\.config\coq` or in `C:\Program Files\Coq\config`
+
+(3) Edit the file `coqiderc` and make the following change:
+
+|before | `modifier_for_navigation = "<Control>" ` |
+|after  | `modifier_for_navigation = "" ` |
+
+(4) Edit the file `coqide.keys` and insert the following lines at the bottom of the file:
+
+```
+(gtk_accel_path "<Actions>/Navigation/Go to" "F5")
+(gtk_accel_path "<Actions>/Navigation/Backward" "F6")
+(gtk_accel_path "<Actions>/Navigation/Forward" "F7")
+(gtk_accel_path "<Actions>/Navigation/End" "F8")
+(gtk_accel_path "<Actions>/Navigation/Start" "F9")
+(gtk_accel_path "<Actions>/Navigation/Interrupt" "F12")
+(gtk_accel_path "<Actions>/Navigation/Previous" "")
+(gtk_accel_path "<Actions>/Navigation/Next" "")
+```
+
+(5) Open CoqIDE and test whether the new bindings work. They should appear in the Navigation menu.
+
+
+Changing other bindings
+=======================
+
+If you use other commands frequently, you can customize their bindings. To that end, spot the line that corresponds to the desired command, then edit this line by removing the semi-column at the beginning of the line and changing the shortcut. Example:
 
 |       |     |
 |-------|-----|
-|before | `;(gtk_accel_path "/Navigation/_Go to/" "<CTRL><ALT>Right")` |
+|before | `;(gtk_accel_path "/Navigation/_Go to/" "<Control><Alt>Right")` |
 |after  | `(gtk_accel_path "/Navigation/_Go to/" "F5")`                |
 
-Other tips for Coqide
-=====================
 
-**Copy-pasting**: to copy a piece of text from proof context or from the error message pannel, you cannot use the CTRL+C key binding, however the key binding CTRL+INSERT does work.
+Troubleshooting
+===============
 
-**Focus**: CoqIDE can be slowed down a lot by the Focus command. Do not use it. Instead, use "admit" to skip subgoals until you can view the one that you are interested in.
+Please report to @charguer in case of issues.
