@@ -327,6 +327,43 @@ Why not to provide it natively? (Agda does for instance)
 
 See also [Coq club](http://news.gmane.org/find-root.php?message_id=%3calpine.LRH.2.00.0910161427500.28930%40theorem.ca%3e) (16 Oct 2009).
 
+Generalizing positivity condition
+---------------------------------
+
+Positivity requirement prevents writing an inductive type of the form
+```
+Inductive foo :=
+| Foo : forall b : bool, match bool with true => unit | false => foo end -> foo
+```
+because `match` blocks are always considered non-positive. Nonetheless, it is still correct to add the following clause to the strict positivity condition.
+
+- `X` appears strictly positively in `match M as x in T return P with p₁ => u₁ | ... | pₙ => uₙ end` if
+  - `X` does not appear in `T` and `P`
+  - `X` appears strictly positively in `u₁` ... `uₙ`
+
+Such a rule can be logically reduced to the use of nested inductive types, by replacing the pattern-matching clause with a parameterized inductive type whose cases encode the various branches. The above generic match can be turned into
+```
+Tᵣ i M
+```
+where
+```
+Inductive Tᵣ : forall (i : I) (x : T{i}), P i x -> Type :=
+| cᵣ₁ => forall a₁, Tᵣ r₁ (c₁ a₁) (u₁{p₁ := a₁})
+...
+| cᵣₙ => forall aₙ, Tᵣ rₙ (cₙ aₙ) (uₙ{pₙ := aₙ})
+```
+assuming
+```
+Inductive T : I -> Type :=
+| c₁ => forall a₁, T r₁
+...
+| cₙ => forall aₙ, T rₙ
+```
+
+This encoding does not provide the desired conversion rules though, which makes the pattern-matching variant better.
+
+See #1433.
+
 Investigation into commutative cuts
 -----------------------------------
 
