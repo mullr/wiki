@@ -1,10 +1,3 @@
-How to test your pull request
-=============================
-
-The medium-term plan is have github to request a build automatically for each pull-request.
-
-Meanwhile, there are two approaches depending if you have a Jenkins Inria account.
-
 I don't have a Jenkins account
 ------------------------------
 
