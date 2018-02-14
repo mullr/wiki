@@ -15,7 +15,7 @@ Video streaming is available on the [YouTube channel](https://www.youtube.com/ch
 Topics
 ------
 
-- Add your own topic!
+- Status of the wiki (eg, look at the second page listed on the right)
 
 PRs that need to be discussed (possibly around a computer)
 ----------------------------------------------------------
