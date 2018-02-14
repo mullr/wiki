@@ -11,8 +11,6 @@ Video streaming is available on the [YouTube channel](https://www.youtube.com/ch
 Topics
 ------
 
-- The *linter* and the *whitespace check*. Purpose, problems of the
-  current implementation, solutions.
 - Add your own topic!
 
 PRs that need to be discussed (possibly around a computer)
