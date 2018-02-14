@@ -16,6 +16,7 @@ Topics
 ------
 
 - Status of the wiki (eg, look at the second page listed on the right)
+- SProp: a sort of definitionally proof irrelevant types (Gaëtan)
 
 PRs that need to be discussed (possibly around a computer)
 ----------------------------------------------------------
