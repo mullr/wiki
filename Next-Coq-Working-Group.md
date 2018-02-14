@@ -13,6 +13,8 @@ Topics
 
 - The *linter* and the *whitespace check*.
   Enrico proposes a quick count: who cares, who wants it, who does not want it.
+  I think we had many discussions in various PR trying to remove such check.
+  IMHO it is time to raise hands.
 - Add your own topic!
 
 PRs that need to be discussed (possibly around a computer)
