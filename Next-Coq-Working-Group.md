@@ -11,6 +11,8 @@ Video streaming is available on the [YouTube channel](https://www.youtube.com/ch
 Topics
 ------
 
+- The *linter* and the *whitespace check*.
+  Enrico proposes a quick count: who cares, who wants it, who does not want it.
 - Add your own topic!
 
 PRs that need to be discussed (possibly around a computer)
