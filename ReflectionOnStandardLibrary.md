@@ -27,7 +27,7 @@ From the [StandardLibrary](StandardLibrary) page:
         -   `_symm` vs `_sym`, `le_n` vs `le_refl`, ...),
         -   `plus`/`mult` instead of `plus`/`times` or `add`/`mult` or `add`/`mul`,
         -   very basic lemmas such as `n = pred (S n)` were stated in an unnatural way (this historically was due to the use of *elim* for simulating rewriting before *rewrite* was implemented),
-    -   bound variables sometimes got inconsistent names in a same library (e.g. lemmas on nat generally use n, m, p, q in this order, but sometimes, it is a,b or x, y or the differently ordered m, n),
+    -   bound variables sometimes got inconsistent names in the same library (e.g. lemmas on nat generally use n, m, p, q in this order, but sometimes, it is a,b or x, y or the differently ordered m, n),
     -   hints database cannot be improved without breaking *auto* in general.
     -   bad definition choices were sometimes made (e.g. `Zplus` of numbers of opposite signs which uselessly computes twice the difference, or the questioned design of &lt;=, &lt;, &gt;= and &gt;),
     -   lemmas not always stated on their optimal generality (useless or arbitrarily weak side-conditions).
