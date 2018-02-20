@@ -18,6 +18,7 @@ Topics
 - Status of the wiki (eg, look at the second page listed on the right)
 - SProp: a sort of definitionally proof irrelevant types (Gaëtan)
 - A Rusty Checker (Josh)
+- Primitive Projections: where are we, where do we want to go? (Matthieu)
 
 PRs that need to be discussed (possibly around a computer)
 ----------------------------------------------------------
