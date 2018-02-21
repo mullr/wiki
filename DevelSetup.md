@@ -1,5 +1,5 @@
-Setting up the development environment is important!
-Here you find the recommended setup for most tools.
+Setting up your development tools is important and may take time.
+Here you find the recommended setup for most tools as text editors, VCS, …
 
 - [Emacs](#emacs)
 - [Vim](#git)
