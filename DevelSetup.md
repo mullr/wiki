@@ -31,7 +31,7 @@ The [Merlin wiki page for vim](https://github.com/ocaml/merlin/wiki/vim-from-scr
 
 Don't use `origin` for Coq's repo, but rather `origin` for your fork and `upstream` for the reference repo.
 ```
-$ git remove -v
+$ git remote -v
 origin	git@github.com:you/coq.git (fetch)
 origin	git@github.com:you/coq.git (push)
 upstream	https://github.com/coq/coq.git (fetch)
