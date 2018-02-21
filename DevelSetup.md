@@ -45,7 +45,7 @@ Adding
         pushdefault = origin
 ```
 
-in you `.gitconfig` or your `.git/config` can ensure that you do not push to `master` or a stable branch by mistake (if you have commit rights).
+in your `.gitconfig` or your `.git/config` can ensure that you do not push to `master` or a stable branch by mistake (if you have commit rights).
 
 ### PRs
 
