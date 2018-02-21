@@ -15,7 +15,15 @@ Here you find the recommended setup for most tools.
 
 ### Indentation
 
+```vim
+autocmd FileType ocaml set expandtab
+```
+
+I'd love to know how to set up ocp-indent properly
+
 ### Merlin
+
+The [Merlin wiki page for vim](https://github.com/ocaml/merlin/wiki/vim-from-scratch) is pretty good.
 
 ## Git
 
