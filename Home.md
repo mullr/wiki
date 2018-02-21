@@ -48,7 +48,6 @@ Coq development
 -   [Coq Working Groups](Coq-Working-Groups)
 -   [The next Coq Working Group](Next-Coq-Working-Group)
 -   [Ideas for the Google Summer of Code 2016](GoogleSummerOfCode)
--   [Procedures related to continuous integration](ContinuousIntegration)
 -   [Wishes for Coq](Wishes) (and a specific page of [wishes for unification](UnificationProblems))
 -   [Wishes for Graphical User Interfaces](GUIWishes) (and a specific page for [CoqIDE wishes](CoqIDEWishes))
 -   [A development tutorial](DevelopmentTutorial)
