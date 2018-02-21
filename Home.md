@@ -56,6 +56,7 @@ Coq development
 -   [List of maintainers](Maintainers)
 -   [Road maps](Roadmaps)
 -   [Archive of discussions](DevelopmentArchive)
+-   [Setting up your development environment](DevelSetup)
 
 Coq community
 =============
