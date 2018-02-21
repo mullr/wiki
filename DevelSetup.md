@@ -26,6 +26,8 @@ To see the PRs add to your `.git/config`
 Put this snippet in your `.git/hooks/pre-push` hook and be done with it.
 
 ```shell
+while read local_ref local_sha remote_ref remote_sha; do
+...
 base=`git merge-base $local_sha origin/master` 
 if git diff --check $base $local_sha; then
 	:
@@ -49,6 +51,8 @@ else
 		  # Please don't do that, rather install this pre-push hook
 	fi
 fi
+...
+done
 ```
 
 
