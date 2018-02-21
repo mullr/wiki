@@ -1,6 +1,25 @@
-# Git
+Setting up the development environment is important!
+Here you find the recommended setup for most tools.
 
-## Remotes
+- [Emacs](#emacs)
+- [Vim](#git)
+- [Git](#git)
+
+## Emacs
+
+### Indentation
+
+### Merlin
+
+## Vim
+
+### Indentation
+
+### Merlin
+
+## Git
+
+### Remotes
 
 Don't use `origin` for Coq's repo, but rather `origin` for your fork and `upstream` for the reference repo.
 ```
@@ -11,7 +30,7 @@ upstream	https://github.com/coq/coq.git (fetch)
 upstream	https://github.com/coq/coq.git (push)
 ```
 
-## PRs
+### PRs
 
 To see the PRs add to your `.git/config`
 
@@ -21,7 +40,7 @@ To see the PRs add to your `.git/config`
         fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
 ```
 
-## White Space Linter
+### White Space Linter
 
 Put this snippet in your `.git/hooks/pre-push` hook and be done with it.
 
