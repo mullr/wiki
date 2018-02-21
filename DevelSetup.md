@@ -38,6 +38,15 @@ upstream	https://github.com/coq/coq.git (fetch)
 upstream	https://github.com/coq/coq.git (push)
 ```
 
+Adding
+
+```ini
+[remote]
+        pushdefault = origin
+```
+
+in you `.gitconfig` or your `.git/config` can ensure that you do not push to `master` or a stable branch by mistake (if you have commit rights).
+
 ### PRs
 
 To see the PRs add to your `.git/config`
