@@ -15,7 +15,8 @@ Video streaming is available on the [YouTube channel](https://www.youtube.com/ch
 Topics
 ------
 
-- Status of the wiki (eg, look at the second page listed on the right)
+- Status of the wiki (eg, look at the second page listed on the right, or the third one...) (Enrico)
+- what should run on ci and what should run in your `pre-push/commit` hook (aka: how my rants about the linter evolved into something more positive) (Enrico)
 - SProp: a sort of definitionally proof irrelevant types (Gaëtan)
 - A Rusty Checker (Josh)
 - Primitive Projections: where are we, where do we want to go? (Matthieu)
