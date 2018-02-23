@@ -7,7 +7,7 @@ Interface for Editing Proofs
 
     > The graphical user interface distributed with Coq.
 
--   [ProofGeneral](http://proofgeneral.inf.ed.ac.uk/)
+-   [ProofGeneral](https://proofgeneral.github.io/)
 
     > ProofGeneral is a generic interface for proof assistants, based on the customizable text editor Emacs.
 
@@ -18,10 +18,6 @@ Interface for Editing Proofs
 -   [Coq PIDE](http://coqpide.bitbucket.org)
 
     > Jedit (proof of concept) plugin for Coq development by Carst Tankink (also based on asynchronous PIDE framework).
-
--   [GeoProof](http://home.gna.org/geoproof/)
-
-    > GeoProof is a dynamic geometry software, with can communicate with CoqIDE to build the formula corresponding to a geometry figure interactively.
 
 -   [Papuq](http://www.mimuw.edu.pl/~chrzaszc/Papuq/)
 
@@ -45,6 +41,10 @@ Interface for Editing Proofs
 
 Discontinued interfaces
 -----------------------
+
+-   [GeoProof](http://home.gna.org/geoproof/)
+
+    > GeoProof was a dynamic geometry software, with can communicate with CoqIDE to build the formula corresponding to a geometry figure interactively.
 
 -   [PCoq](http://www-sop.inria.fr/lemme/pcoq/) (for versions of Coq in old syntax, version 7.4 of 2003 and before)
 
