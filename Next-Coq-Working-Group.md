@@ -24,6 +24,8 @@ Topics
 PRs that need to be discussed (possibly around a computer)
 ----------------------------------------------------------
 
+- #6676 : attaching data to goals
+
 Issues that need to be discussed (possibly around a computer)
 -------------------------------------------------------------
 
