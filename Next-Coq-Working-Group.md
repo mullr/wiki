@@ -21,6 +21,7 @@ Topics
 - A Rusty Checker (Josh)
 - Primitive Projections: where are we, where do we want to go? (Matthieu)
 - Future of `Instance` (special `{}` syntax for records, Refine Instance Mode, etc?)
+- Brief discussion about UI plans for 8.8. [Emilio, 15mins]
 
 PRs that need to be discussed (possibly around a computer)
 ----------------------------------------------------------
