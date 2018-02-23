@@ -20,6 +20,7 @@ Topics
 - SProp: a sort of definitionally proof irrelevant types (Gaëtan)
 - A Rusty Checker (Josh)
 - Primitive Projections: where are we, where do we want to go? (Matthieu)
+- Future of `Instance` (special `{}` syntax for records, Refine Instance Mode, etc?)
 
 PRs that need to be discussed (possibly around a computer)
 ----------------------------------------------------------
