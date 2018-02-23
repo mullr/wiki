@@ -24,7 +24,7 @@ Topics
 PRs that need to be discussed (possibly around a computer)
 ----------------------------------------------------------
 
-- #6676 : attaching data to goals
+- https://github.com/coq/coq/pull/6676  attaching data to goals (Enrico) 15' explanation.
 
 Issues that need to be discussed (possibly around a computer)
 -------------------------------------------------------------
