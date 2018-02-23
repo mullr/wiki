@@ -39,6 +39,10 @@ Interface for Editing Proofs
 
     > An experimental Eclipse plugin with support for Coq.
 
+-   [vscoq](https://github.com/siegebell/vscoq)
+
+    > A Visual Studio based interface developed in 2016.
+
 Discontinued interfaces
 -----------------------
 
