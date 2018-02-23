@@ -44,7 +44,7 @@ Discontinued interfaces
 
 -   [GeoProof](http://home.gna.org/geoproof/)
 
-    > GeoProof was a dynamic geometry software, with can communicate with CoqIDE to build the formula corresponding to a geometry figure interactively.
+    > GeoProof was a dynamic geometry software, which can communicate with CoqIDE to build the formula corresponding to a geometry figure interactively.
 
 -   [PCoq](http://www-sop.inria.fr/lemme/pcoq/) (for versions of Coq in old syntax, version 7.4 of 2003 and before)
 
