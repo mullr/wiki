@@ -31,7 +31,6 @@ Tentative schedule
     - Reducing temporary allocations in CClosure (Pierre-Marie) https://github.com/coq/coq/pull/400
     - Evar/evar order sensitivity (Matthieu) https://github.com/coq/coq/pull/786
     - mli-only files outside API (Pierre L) https://github.com/coq/coq/pull/797
-    - Deprecate Proof term (Théo) https://github.com/coq/coq/pull/827
     - Handling evars in the VM (Pierre-Marie) https://github.com/coq/coq/pull/935
     - Add HashConsing option (Paul) https://github.com/coq/coq/pull/1013
     - changed statements of Rpower_lt and Rle_power and added lemmas (Yves) https://github.com/coq/coq/pull/102    
