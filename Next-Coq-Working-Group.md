@@ -53,7 +53,7 @@ Tentative schedule
   - Brief discussion about UI plans for 8.8. [Emilio, 15mins]
   - https://github.com/coq/coq/pull/6676  attaching data to goals (Enrico) 15' explanation,
     see also: https://github.com/gares/ceps/blob/goal-w-state/text/000-proofview-goal-w-state.md
-
+  - 14:00 PR discussions
 
 Other PRs that need to be discussed (possibly around a computer)
 ----------------------------------------------------------
