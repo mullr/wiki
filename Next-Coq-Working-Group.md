@@ -17,13 +17,13 @@ Tentative schedule
 
 - 26/02/2018
 
-  - 10:00 - 10:30 8.8 final roadmap and todo list
-  - 10:30 - 11:00 Primitive Projections: where are we, where do we want to go? (Matthieu)
-  - 11:00 - 11:15 Break
-  - 11:15 - 11:30 Future of `Instance` (special `{}` syntax for records, Refine Instance Mode, etc?)
-  - 11:30 - 11:45 Status of the wiki (eg, look at the second page listed on the right, or the third one...) (Enrico) 5' minutes to "click on the problematic pages", 10' discussion
-  - 11:45 - 12:00 what should run on ci and what should run in your `pre-push/commit` hook (aka: how my rants about the linter evolved into something more positive) (Enrico) 5' to explain, 10' discussion
-  - 12:00 - 14:00 Lunch
+  - 10:00 8.8 final roadmap and todo list
+  - 10:30 Primitive Projections: where are we, where do we want to go? (Matthieu)
+  - 11:00 Break
+  - 11:15 Future of `Instance` (special `{}` syntax for records, Refine Instance Mode, etc?)
+  - 11:30 Status of the wiki (eg, look at the second page listed on the right, or the third one...) (Enrico) 5' minutes to "click on the problematic pages", 10' discussion
+  - 11:45 what should run on ci and what should run in your `pre-push/commit` hook (aka: how my rants about the linter evolved into something more positive) (Enrico) 5' to explain, 10' discussion
+  - 12:00 Lunch
 
 - 27/02/2018
   - SProp: a sort of definitionally proof irrelevant types (Gaëtan)
