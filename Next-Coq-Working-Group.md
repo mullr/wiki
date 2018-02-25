@@ -18,7 +18,7 @@ Tentative schedule
 - 26/02/2018
 
   - 10:00 8.8 final roadmap and todo list
-    Please update the milestone on your PRs to reflect your current schedule
+    (please update the milestone on your PRs to reflect your current schedule)
   - 10:30 Primitive Projections: where are we, where do we want to go? (Matthieu)
   - 11:00 Break
   - 11:15 Future of `Instance` (special `{}` syntax for records, Refine Instance Mode, etc?)
