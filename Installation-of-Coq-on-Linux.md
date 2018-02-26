@@ -28,38 +28,7 @@ Then, type `Check True.` and use the menu "Navigation", "Forward" to get Coq to 
 Installation from sources
 =========================
 
-Requirements
-------------
-
-In a nutshell:
-
-```
-sudo apt-get install ocaml ocaml-native-compilers camlp5 liblablgtk2-ocaml-dev liblablgtksourceview2-ocaml-dev libgtk2.0-dev
-```
-
-Packages required for building Coq:
-
--   **GNU Make >= 3.81** (package "gnu-make")
--   **OCaml >= 3.11.2** (package "ocaml")
--   **Camlp5 >= 5.10** (package "camlp5") --TODO: it might not be necessary with Coq >= v8.4
-
-Packages required only for building CoqIDE:
-
--   **LablGtk** (package "liblablgtk2-ocaml-dev")
--   **GTK+** libraries (package "libgtk2.0-dev")
-
-Packages required only for obtaining Coq sources from the svn repository:
-
--   **git** (package "git")
-
-Packages required only for generating documentation: (you likely don't need it)
-
--   **Hevea** (package "hevea")
-
-Downloading the sources
------------------------
-
-By default, you should get the archive version. If you are an advanced users, you may consider using an git version.
+Requirements: see INSTALL.md
 
 **Archive version (default):**
 
