@@ -1,3 +1,0 @@
--   [TheSource](TheSource)
--   [CoqCustomizationHowTo](CoqCustomizationHowTo)
-
