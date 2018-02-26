@@ -2,6 +2,6 @@ This page describes the scope behavior of various commands without any locality 
 
 | Command  | Modality | Effect on Require | Effect on Import | Survives Module | Survives Section |
 | ------------- | --| ------------ | ------------- | ------------- | ------------- |
-| Option | Local | Nothing | Nothing | No | Yes |
-| Option | | Nothing | Nothing | No | Yes |
-| Option | Global | Nothing | Nothing | No | Yes |
+| Set/Unset | Local | Nothing | Nothing | No | Yes |
+| Set/Unset | | Nothing | Nothing | No | Yes |
+| Set/Unset | Global | Nothing | Nothing | No | Yes |
