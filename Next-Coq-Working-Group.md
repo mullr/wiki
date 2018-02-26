@@ -64,3 +64,4 @@ Other PRs that need to be discussed (possibly around a computer)
 Other issues that need to be discussed (possibly around a computer)
 -------------------------------------------------------------
 
+- eq_true vs is_true #6012 
