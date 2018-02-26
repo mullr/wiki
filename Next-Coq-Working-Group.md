@@ -33,7 +33,7 @@ Tentative schedule
     - mli-only files outside API (Pierre L) https://github.com/coq/coq/pull/797
     - Handling evars in the VM (Pierre-Marie) https://github.com/coq/coq/pull/935
     - Add HashConsing option (Paul) https://github.com/coq/coq/pull/1013
-    - changed statements of Rpower_lt and Rle_power and added lemmas (Yves) https://github.com/coq/coq/pull/102    
+    - changed statements of Rpower_lt and Rle_power and added lemmas (Yves) https://github.com/coq/coq/pull/1026
     - ￼Deprecate Write/Restore State vernaculars (Maxime) https://github.com/coq/coq/pull/1145
       Also https://github.com/coq/coq/pull/1088
     - Fix/dont install make.exe (Enrico) https://github.com/coq/coq/pull/5991
