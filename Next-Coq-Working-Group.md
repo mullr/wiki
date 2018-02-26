@@ -12,14 +12,13 @@ to do so, please contact Maxime.
 
 Video streaming is available on the [YouTube channel](https://www.youtube.com/channel/UCbJo6gYYr0OF18x01M4THdQ)
 
-Tentative schedule
+Schedule
 ------------------
 
 - 26/02/2018
 
   - 10:00 8.8 final roadmap and todo list
     (please update the milestone on your PRs to reflect your current schedule)
-  - 10:30 Primitive Projections: where are we, where do we want to go? (Matthieu)
   - 11:00 Break
   - 11:15 Future of `Instance` (special `{}` syntax for records, Refine Instance Mode, etc?)
     [Some related bugs: #3632]
@@ -49,20 +48,26 @@ Tentative schedule
     - Scoped options (Pierre-Marie) https://github.com/coq/coq/pull/313
 
 - 27/02/2018
-  - SProp: a sort of definitionally proof irrelevant types (Gaëtan)
-  - A Rusty Checker (Josh)
-  - Brief discussion about UI plans for 8.8. [Emilio, 15mins]
-  - https://github.com/coq/coq/pull/6676  attaching data to goals (Enrico) 15' explanation,
+  - 10:00 SProp: a sort of definitionally proof irrelevant types (Gaëtan)
+  - 10:30 A Rusty Checker (Josh)
+  - 11:00 Break
+  - 11:15 Brief discussion about UI plans for 8.8. [Emilio, 15mins]
+  - 11:45 https://github.com/coq/coq/pull/6676  attaching data to goals (Enrico) 15' explanation,
     see also: https://github.com/gares/ceps/blob/goal-w-state/text/000-proofview-goal-w-state.md
-  - 14:00 PR discussions
+  - 12:00 Lunch
+
+  - 14:00 Primitive Projections: where are we, where do we want to go? (Matthieu)
+  - 14:30 Technical work
+    => What should be done about "summary was capture out of module scope"?
+    => 8.8 blockers
+       https://github.com/coq/coq/issues?q=is%3Aissue+is%3Aopen+label%3A%22priority%3A+blocker%22
 
 Other PRs that need to be discussed (possibly around a computer)
-----------------------------------------------------------
+----------------------------------------------------------------
 
 
-
-Other issues that need to be discussed (possibly around a computer)
--------------------------------------------------------------
+Other issues that need to be discussed (possibly around a computer
+------------------------------------------------------------------
 
 - eq_true vs is_true #6012 
 - what happened to the line-by-line benchmark?
