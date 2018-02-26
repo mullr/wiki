@@ -18,21 +18,111 @@ REQUIRE
 HEAD
 KEYS
 universe binder
-Standard Proposition Elimination Names
-Refolding Reduction
 REDUCTION-EFFECT
 REDUCTIONBEHAVIOUR
-Debug RAKAM
 RENAME-ARGUMENTS
-Debug Cbv
 STRUCTURE
 CANONICAL-STRUCTURE
+COERCION
+SCOPE
+ARGUMENTS-SCOPE
+SYNTAXCONSTANT
+RESERVED-TYPE
+IMPLICITS
+GENERALIZED-IDENT
+CONSTANT
+VARIABLE
+INDUCTIVE
+STRATEGY
+REDUCTION
+SCHEME
+AUTOHINT
+HINT_REWRITE
+TOKEN
+SYNTAX-EXTENSION
+NOTATION
+DELIMITERS
+ML-MODULE
+TAC-DEFINITION
+TRANSITIVITY-STEPS
+IMPLICIT-TACTIC
+```
+
+Options are uniform but they get their own entry too so they can be handled individually:
+
+```
+Asymmetric Patterns
 Debug Unification
 Typeclasses Unique Solutions
 type classes state
 type classes instances state
 Automatic Coercions Import
-COERCION
+Printing Records
+Printing Record
+Printing Constructor
+Global universe context state
+Global universe name state
+Global universe constraints
+Bullet Behavior
+Default Goal Selector
+Default Proof Mode
+Proof Using Clear Unused
+SimplIsCbn
+Solve Unification Constraints
+Printing Unfocused
+Printing Goal Tags
+Printing Goal Names
+Hyps Limit
+Printing Dependent Evars Line
+Short Module Printing
+Typeclass Resolution After Apply
+Default Clearing Used Hypotheses
+Universal Lemma Under Conjunction
+Shrink Abstract
+Bracketing Last Introduction Pattern
+Discriminate Introduction
+Injection L2R Pattern Order
+Structural Injection
+Keep Proof Equalities
+Regular Subst Tactic
+Loose Hint Behavior
+Global universe context
+Debug Trivial
+Debug Auto
+Info Trivial
+Info Auto
+Debug Eauto
+Info Eauto
+Typeclasses Modulo Eta
+Typeclasses Limit Intros
+Typeclasses Dependency Order
+Typeclasses Iterative Deepening
+Typeclasses Legacy Resolution
+Typeclasses Filtered Unification
+Typeclasses Debug
+Debug Typeclasses
+Typeclasses Debug Verbosity
+Typeclasses Depth
+proofusing-nameset
+Suggest Proof Using
+Default Proof Using
+Keep Admitted Variables
+Search Blacklist
+Elimination Schemes
+Nonrecursive Elimination Schemes
+Record Elimination Schemes
+Case Analysis Schemes
+Boolean Equality Schemes
+Decidable Equality Schemes
+Rewriting Schemes
+Hide Obligations
+Shrink Obligations
+Program state
+Typeclasses Axioms Are Instances
+Refine Instance Mode
+Primitive Projections
+Typeclasses Strict Resolution
+Typeclasses Unique Instances
 Printing Coercion
 Transparent Obligations
 Program Cases
@@ -52,92 +142,6 @@ Universe Minimization ToSet
 Keyed Unification
 Debug Tactic Unification
 Tactic Pattern Unification
-SCOPE
-ARGUMENTS-SCOPE
-SYNTAXCONSTANT
-Asymmetric Patterns
-RESERVED-TYPE
-IMPLICITS
-GENERALIZED-IDENT
-Printing Records
-Printing Record
-Printing Constructor
-CONSTANT
-VARIABLE
-INDUCTIVE
-Global universe context state
-Global universe name state
-Global universe constraints
-Bullet Behavior
-Default Goal Selector
-Default Proof Mode
-Proof Using Clear Unused
-SimplIsCbn
-STRATEGY
-REDUCTION
-Solve Unification Constraints
-Printing Unfocused
-Printing Goal Tags
-Printing Goal Names
-Hyps Limit
-Printing Dependent Evars Line
-Short Module Printing
-SCHEME
-Typeclass Resolution After Apply
-Default Clearing Used Hypotheses
-Universal Lemma Under Conjunction
-Shrink Abstract
-Bracketing Last Introduction Pattern
-Discriminate Introduction
-Injection L2R Pattern Order
-Structural Injection
-Keep Proof Equalities
-Regular Subst Tactic
-Loose Hint Behavior
-Global universe context
-AUTOHINT
-Debug Trivial
-Debug Auto
-Info Trivial
-Info Auto
-Debug Eauto
-Info Eauto
-Typeclasses Modulo Eta
-Typeclasses Limit Intros
-Typeclasses Dependency Order
-Typeclasses Iterative Deepening
-Typeclasses Legacy Resolution
-Typeclasses Filtered Unification
-Typeclasses Debug
-Debug Typeclasses
-Typeclasses Debug Verbosity
-Typeclasses Depth
-HINT_REWRITE
-proofusing-nameset
-Suggest Proof Using
-Default Proof Using
-Keep Admitted Variables
-TOKEN
-SYNTAX-EXTENSION
-NOTATION
-DELIMITERS
-Search Blacklist
-Elimination Schemes
-Nonrecursive Elimination Schemes
-Record Elimination Schemes
-Case Analysis Schemes
-Boolean Equality Schemes
-Decidable Equality Schemes
-Rewriting Schemes
-Hide Obligations
-Shrink Obligations
-Program state
-Typeclasses Axioms Are Instances
-Refine Instance Mode
-Primitive Projections
-Typeclasses Strict Resolution
-Typeclasses Unique Instances
-ML-MODULE
 Silent
 Implicit Arguments
 Strict Implicit
@@ -170,15 +174,12 @@ NativeCompute Profile Filename
 NativeCompute Profiling
 Search Output Name Only
 Default Timeout
-TAC-DEFINITION
 Ltac Batch Debug
 TacticGrammar
 Ltac Profiling
 Ltac Debug
 Debug Ltac
 Program tactic
-TRANSITIVITY-STEPS
-IMPLICIT-TACTIC
 Info Level
 Intuition Negation Unfolding
 Intuition Iff Unfolding
@@ -186,4 +187,8 @@ Congruence Verbose
 Firstorder Depth
 Congruence Depth
 Firstorder default solver
+Standard Proposition Elimination Names
+Refolding Reduction
+Debug RAKAM
+Debug Cbv
 ```
