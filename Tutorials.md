@@ -1,1 +1,0 @@
-See [CoqNewbie](CoqNewbie)
