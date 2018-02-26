@@ -1,16 +1,9 @@
-By contributing to Cocorico!, you agree that you hold the copyright and you agree to license your contribution under the license below or you agree that you have permission to distribute your contribution under the license below.
+To the extent possible under law, the contributors of Cocorico!, the Coq wiki have waived all copyright and related or neighboring rights to Cocorico!, the Coq wiki.
 
-> Permission is hereby granted, free of charge, to any person
-> obtaining this work (the "Work"), to deal in the Work without
-> restriction, including without limitation the rights to use, copy,
-> modify, merge, publish, distribute, sublicense, and/or sell copies
-> of the Work, and to permit persons to whom the Work is furnished to
-> do so.
->
-> THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-> OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-> MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-> NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
-> BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
-> ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-> CONNECTION WITH THE WORK OR THE USE OR OTHER DEALINGS IN THE WORK.
+  <a rel="license"
+     href="http://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="https://licensebuttons.net/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+  </a>
+
+By contributing to Cocorico!, the Coq wiki, you agree that you hold the copyright and you agree to license your contribution under the CC0 license or you agree that you have permission to distribute your contribution under the CC0 license.
+
