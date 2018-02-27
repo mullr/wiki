@@ -57,39 +57,6 @@ To see the PRs add to your `.git/config`
         fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
 ```
 
-### White Space Linter
-
-Put this snippet in your `.git/hooks/pre-push` hook and be done with it.
-
-```shell
-while read local_ref local_sha remote_ref remote_sha; do
-...
-base=`git merge-base $local_sha origin/master` 
-if dev/tools/lint-commits.sh $base $local_sha; then
-	:
-else
-	echo "$0: Whitespaces! How dare you!"
-	echo "$0: Please run: git rebase $base --whitespace=fix"
-        echo "$0: If you don't fear global warming export MOCK_LINTER=1"
-	if [ -z "$MOCK_LINTER" ]; then
-		exit 1 # abort, fix, retry
-	else
-		: # Consequences:
-	          # - the linter will complain
-		  # - someone will tag "needs: fixing"
-		  # - you'll complain that the linter is lame
-		  # - you'll open yet another PR to kill the linter
-		  # - wishy-washy discussion
-		  # - someone will tag "needs: discussion"
-		  # - then you'll fix the white spaces and push
-		  # - a few more CI hours wasted because of the linter^Wyou
-		  # - ice will melt and... well you saw the movies
-		  # Please don't do that, rather install this pre-push hook
-	fi
-fi
-...
-done
-```
 
 
 
