@@ -27,6 +27,7 @@ Schedule
     https://github.com/coq/coq/pull/6528
   - 12:00 Lunch
   - 14:00 - 18:00 PR discussions
+    - Allowing coercions from Prop (Arthur: who can review a 1 line diff, plus 2 test cases?) (https://github.com/coq/coq/pull/6480)
     - Reducing temporary allocations in CClosure (Pierre-Marie) https://github.com/coq/coq/pull/400
     - Evar/evar order sensitivity (Matthieu) https://github.com/coq/coq/pull/786
     - mli-only files outside API (Pierre L) https://github.com/coq/coq/pull/797
