@@ -13,6 +13,12 @@ or using MacPorts by running
 sudo port install coq
 ```
 
+or using the [nix package manager](https://nixos.org/nix/) running
+
+```
+nix-env -iA nixpkgs.coq
+```
+
 You can check that your installation was successful by running `coqc -v`.
 
 The Coq development team will maintain an opam repository for Coq and this will become the preferred way to get Coq on MacOS.
