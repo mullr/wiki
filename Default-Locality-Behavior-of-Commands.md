@@ -1,10 +1,46 @@
 This page describes the scope behavior of various commands without any locality modifier.
 
-| Command  | Modality | Effect on Require | Effect on Import | Survives Module | Survives Section |
-| ------------- | --| ------------ | ------------- | ------------- | ------------- |
-| Set/Unset | Local | Nothing | Nothing | No | Yes |
-| Set/Unset | | Nothing | Nothing | No | Yes |
-| Set/Unset | Global | Nothing | Nothing | No | Yes |
+| Command  | Effect on Require | Effect on Import | Survives Module | Survives Section |
+| ------------- | ------------ | ------------- | ------------- | ------------- |
+| Set/Unset | Nothing | Nothing | No | Yes |
+| MODULE | | | | |
+| MODULE KEEP | | | | |
+| MODULE TYPE | | | | |
+| INCLUDE | | | | |
+| IMPORT MODULE | | | | |
+| IMPORT LIBRARY | | | | |
+| REQUIRE | | | | |
+| HEAD | | | | |
+| KEYS | | | | |
+| universe binder | | | | |
+| REDUCTION-EFFECT | | | | |
+| REDUCTIONBEHAVIOUR | | | | |
+| RENAME-ARGUMENTS | | | | |
+| STRUCTURE | | | | |
+| CANONICAL-STRUCTURE | | | | |
+| COERCION | | | | |
+| SCOPE | | | | |
+| ARGUMENTS-SCOPE | | | | |
+| SYNTAXCONSTANT | | | | |
+| RESERVED-TYPE | | | | |
+| IMPLICITS | | | | |
+| GENERALIZED-IDENT | | | | |
+| CONSTANT | | | | |
+| VARIABLE | | | | |
+| INDUCTIVE | | | | |
+| STRATEGY | | | | |
+| REDUCTION | | | | |
+| SCHEME | | | | |
+| AUTOHINT | | | | |
+| HINT_REWRITE | | | | |
+| TOKEN | | | | |
+| SYNTAX-EXTENSION | | | | |
+| NOTATION | | | | |
+| DELIMITERS | | | | |
+| ML-MODULE | | | | |
+| TAC-DEFINITION | | | | |
+| TRANSITIVITY-STEPS | | | | |
+| IMPLICIT-TACTIC | | | | |
 
 This is the list of all objects with lifetime when the prelude is loaded:
 ```
