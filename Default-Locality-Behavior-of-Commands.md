@@ -35,10 +35,10 @@ This page describes the scope behavior of various commands without any locality 
 | HINT_REWRITE | | | | |
 | TOKEN | | | | |
 | SYNTAX-EXTENSION | | | | |
-| NOTATION | | | | |
+| NOTATION | Register scopes | Add notation | Yes | Yes |
 | DELIMITERS | | | | |
 | ML-MODULE | | | | |
-| TAC-DEFINITION | | | | |
+| TAC-DEFINITION | Registers | Shorten name | Yes | Yes |
 | TRANSITIVITY-STEPS | | | | |
 | IMPLICIT-TACTIC | | | | |
 
