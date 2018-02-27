@@ -1,4 +1,4 @@
-To the extent possible under law, the contributors of "Cocorico!, the Coq wiki" have waived all copyright and related or neighboring rights to their contributions.
+To the extent possible under law, the contributors of “Cocorico!, the Coq wiki” have waived all copyright and related or neighboring rights to their contributions.
 
   <a rel="license"
      href="http://creativecommons.org/publicdomain/zero/1.0/">
