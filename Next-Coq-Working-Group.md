@@ -59,9 +59,8 @@ Schedule
 
   - 14:00 Primitive Projections: where are we, where do we want to go? (Matthieu)
   - 14:30 Technical work
-    => What should be done about "summary was capture out of module scope"?
-    => 8.8 blockers
-       https://github.com/coq/coq/issues?q=is%3Aissue+is%3Aopen+label%3A%22priority%3A+blocker%22
+    - What should be done about "summary was capture out of module scope"?
+    - 8.8 blockers https://github.com/coq/coq/issues?q=is%3Aissue+is%3Aopen+label%3A%22priority%3A+blocker%22
 
 Other PRs that need to be discussed (possibly around a computer)
 ----------------------------------------------------------------
