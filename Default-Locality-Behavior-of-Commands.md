@@ -3,13 +3,13 @@ This page describes the scope behavior of various commands without any locality 
 | Command  | Effect on Require | Effect on Import | Survives Module | Survives Section |
 | ------------- | ------------ | ------------- | ------------- | ------------- |
 | Set/Unset | Nothing | Nothing | No | Yes |
-| MODULE | | | | |
-| MODULE KEEP | | | | |
-| MODULE TYPE | | | | |
-| INCLUDE | | | | |
-| IMPORT MODULE | | | | |
-| IMPORT LIBRARY | | | | |
-| REQUIRE | | | | |
+| [MODULE](https://github.com/coq/coq/blob/e3124e098ef8170dac2b348b91757a7034bc4999/library/declaremods.ml#L211) | | | | |
+| [MODULE KEEP](https://github.com/coq/coq/blob/e3124e098ef8170dac2b348b91757a7034bc4999/library/declaremods.ml#L242) | | | | |
+| [MODULE TYPE](https://github.com/coq/coq/blob/e3124e098ef8170dac2b348b91757a7034bc4999/library/declaremods.ml#L276) | | | | |
+| [INCLUDE](https://github.com/coq/coq/blob/e3124e098ef8170dac2b348b91757a7034bc4999/library/declaremods.ml#L302) | | | | |
+| [IMPORT MODULE](https://github.com/coq/coq/blob/e3124e098ef8170dac2b348b91757a7034bc4999/library/declaremods.ml#L947) | | | | |
+| [IMPORT LIBRARY](https://github.com/coq/coq/blob/e3124e098ef8170dac2b348b91757a7034bc4999/library/library.ml#L259) | | | | |
+| [REQUIRE](https://github.com/coq/coq/blob/e3124e098ef8170dac2b348b91757a7034bc4999/library/library.ml#L543) | | | | |
 | HEAD | | | | |
 | KEYS | | | | |
 | universe binder | | | | |
