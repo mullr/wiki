@@ -18,8 +18,8 @@ This page describes the scope behavior of various commands without any locality 
 | RENAME-ARGUMENTS | | | | |
 | STRUCTURE | | | | |
 | CANONICAL-STRUCTURE | | | | |
-| COERCION | | | | |
-| SCOPE | | | | |
+| COERCION | Nothing | Register | Yes | Yes |
+| SCOPE | Nothing | Register | Yes | No (flagged Local) |
 | ARGUMENTS-SCOPE | | | | |
 | SYNTAXCONSTANT | | | | |
 | RESERVED-TYPE | | | | |
