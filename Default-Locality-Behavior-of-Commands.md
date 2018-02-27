@@ -17,7 +17,7 @@ This page describes the scope behavior of various commands without any locality 
 | REDUCTIONBEHAVIOUR | | | | |
 | RENAME-ARGUMENTS | | | | |
 | STRUCTURE | | | | |
-| CANONICAL-STRUCTURE | | | | |
+| CANONICAL-STRUCTURE | Nothing | Applies | Yes | Yes |
 | COERCION | Nothing | Register | Yes | Yes |
 | SCOPE | Nothing | Register | Yes | No (flagged Local) |
 | ARGUMENTS-SCOPE | | | | |
