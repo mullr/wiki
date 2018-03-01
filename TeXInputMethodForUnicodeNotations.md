@@ -14,7 +14,7 @@ To make this happen automatically, add the following line to your `.emacs` file:
 In CoqIDE (using UIM on POSIX systems)
 ======================================
 
-On CoqIDE, under Unix systems (Linux, BSD, MacOS X), the *TeX* input method is also available thanks to the [UIM](http://code.google.com/p/uim/) input method library.
+On CoqIDE, under Unix systems (Linux, BSD, MacOS X), the *TeX* input method is also available thanks to the [UIM](https://github.com/uim/uim) input method library.
 
 You need *uim* 1.5.x or 1.6.x installed.
 
