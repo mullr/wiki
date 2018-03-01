@@ -74,6 +74,7 @@ A non-exhaustive list of Coq libraries that are being used by other people than 
 -   [Flocq](http://flocq.gforge.inria.fr/): formalization of floating-point computations.
 -   [TLC: a non-constructive library for Coq](http://www.chargueraud.org/softs/tlc/): an alternative to Coq's standard library.
 -   [Coq ExtLib](https://github.com/coq-ext-lib/coq-ext-lib): A collection of theories and plugins that may be useful in other Coq developments.
+-   [CoLoR](http://color.inria.fr/): a library on rewriting theory, lambda-calculus and termination, with sub-libraries on common data structures extending the Coq standard library (especially on vectors)
 
 (to be completed)
 
