@@ -11,6 +11,8 @@ To make this happen automatically, add the following line to your `.emacs` file:
 (add-hook 'proof-mode-hook (lambda () (set-input-method "TeX") ))
 ```
 
+Alternatively you can install [company-coq](https://github.com/cpitclaudel/company-coq/).
+
 In CoqIDE (using UIM on POSIX systems)
 ======================================
 
