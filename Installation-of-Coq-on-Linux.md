@@ -3,27 +3,29 @@ You can install CoqIDE either as a package or by compiling it form sources.
 Installation from packages
 ==========================
 
-To install Coq and CoqIDE, open a shell and run the following command:
+You may use your distribution package manager to install Coq and CoqIDE,
+but this is likely to give you an older, outdated version of Coq.
+
+For instance, on Debian / Ubuntu, the following should work:
 
 ```
 sudo apt-get install coq coqide
 ```
 
+To get the latest version of Coq, it is recommended instead to install Coq
+using OPAM as documented [here](https://coq.inria.fr/opam/www/using.html)
+or using [Nix](https://nixos.org/nix/).
+
 To check that the installation is successful, run the command `coqc -v`.
 
-Then, you should configure CoqIDE bindings. This step is optional but strongly recommended, as the default bindings very often conflict with the bindings of the window manager. To that end, all you need to do is to copy a new binding file, as described on the page:
-
--   [Configure the key bindings](Configuration%20of%20CoqIDE)
-
-To check that CoqIDE is correctly installed and configured, run the command:
+To check that CoqIDE is correctly installed, run the command:
 
 ```
-coqide&
+coqide &
 ```
+You may want to change the default [key bindings for CoqIDE](Configuration%20of%20CoqIDE).
 
-Then, type `Check True.` and use the menu "Navigation", "Forward" to get Coq to check the definition.
-
-**Remark:** the installation of **Proof General** should be described here.
+To install Proof-General, refer to the [official Proof-General website](https://proofgeneral.github.io/#quick-installation-instructions).
 
 Installation from sources
 =========================
@@ -65,7 +67,7 @@ After running the configure command, you should be able to read:
 
 ```
 You have GNU Make 3.81. Good!
-You have Objective-Caml 3.11.2. Good!
+You have Objective-Caml 4.02.3. Good!
 You have native-code compilation. Good!
 ```
 
@@ -74,8 +76,6 @@ Moreover, if you plan to install CoqIDE, you should be able to read:
 ```
 LablGtk2 found, native threads: native CoqIde will be available.
 ````
-
-If LablGtk2 is not found, you may try to add the option `-lablgtkdir /usr/lib/ocaml/lablgtk2/` to specify the directory.
 
 It is useless to continue if you don't succeed at this stage.
 
@@ -96,6 +96,6 @@ Then, if you used `-prefix /usr/local`, run
 sudo make install
 ```
 
-To test the success of the installation, run `coqc -v` and `coqide &`. If you plan on using CoqIDE, then it is very important that you [fix the key bindings for CoqIDE](Configuration%20of%20CoqIDE).
+To test the success of the installation, run `coqc -v` and `coqide &`.
 
 Otherwise, if you went for a local installation with the option `-local`, simply test the binaries using the commands `bin/coqc -v` and `bin/coqide &`.
