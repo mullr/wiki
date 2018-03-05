@@ -1,4 +1,4 @@
-This page describes the scope behavior of various commands without any locality modifier.
+This page describes the scope behavior of various commands without any locality modifier. Click on the command to go to the source code defining its behavior.
 
 | Command  | Effect on Require | Effect on Import | Survives Module | Survives Section |
 | ------------- | ------------ | ------------- | ------------- | ------------- |
