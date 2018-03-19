@@ -13,7 +13,7 @@ The Implementors Workshop takes place at Inria Sophia-Antipolis, close to Antibe
 Program
 -------
 
-> The schedule will run from monday afternoon to friday after lunch.
+> The schedule will run from Monday afternoon to Friday after lunch.
 
 TBA
 
@@ -27,7 +27,7 @@ PRs to discusss:
 Do log what you did/learnt/implemented!
 ---------------------------------------
 
-Write it [here](CoqIW2017log).
+Write it here
 
 Registration
 ------------
