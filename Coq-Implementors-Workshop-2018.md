@@ -8,7 +8,7 @@ The Coq Implementors Workshop is an event that brings together the core develope
 Location
 --------
 
-The Implementors Workshop takes place at Inria Sophia-Antipolis, close to Antibes and Nice, France. 
+The Implementors Workshop takes place at University of Nice, Parc Valrose campus, Room M34, France. 
 
 Program
 -------
