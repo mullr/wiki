@@ -24,3 +24,10 @@ This FAQ is the sum of the questions that came to mind as we developed proofs in
 13. [Extraction](Extraction)
 14. [Glossary](Glossary)
 15. [Troubleshooting](Troubleshooting)
+16. [More questions](#more-questions)
+
+# More questions
+
+## How to find unused lemmas in a large development?
+
+Use the [dpdusage](https://github.com/Karmaki/coq-dpdgraph#dpdusage-find-unused-definitions-via-dpd-file) tool which comes with the [coq-dpdgraph](https://github.com/Karmaki/coq-dpdgraph) plugin.
