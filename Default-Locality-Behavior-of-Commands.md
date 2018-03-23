@@ -37,7 +37,7 @@ This page describes the scope behavior of various commands without any locality 
 | SYNTAX-EXTENSION | | | | |
 | NOTATION | Register scopes | Add notation | Yes | Yes |
 | DELIMITERS | | | | |
-| ML-MODULE | | | | |
+| ML-MODULE | Applies | Nothing | Yes | |
 | TAC-DEFINITION | Registers | Shorten name | Yes | Yes |
 | TRANSITIVITY-STEPS | | | | |
 | IMPLICIT-TACTIC | | | | |
