@@ -47,6 +47,16 @@ It is common to have unification problems of the form `negb ?b = true` or `INR ?
 
 The price to pay is to reduce the problem to filtering on a disjunction of subproblems. So we shall need heuristics to control the risk of combinatorial explosion. Maybe by attaching subproblems to candidates?
 
+Another example of disjunction of problems
+==========================================
+
+In the following example submitted at [#7078](https://github.com/coq/coq/issues/7078):
+```coq
+Inductive foo (n : nat) : nat -> Type := bar (_ : foo n n) : foo n n.
+Fail Check fix a m (v : foo ?[n] m) := match v in foo _ m' return foo ?[p] m' with @bar _ v' => a ?[q] v' end.
+```
+the resulting equation `?p@{m:=?q@{m:=m}; m':=?q@{m:=m}} == ?p@{m:=m; m':=?q@{m:=m}}` can be resolved by following two disjoint paths: either restricting `?p` to not use `m`, or instantiating `?q` to be `m`. One would need a way to turn this equation into a disjunction so that the unification algorithm could continue to process without being blocked on the equation.
+
 Solvable second-order problems
 ==============================
 
