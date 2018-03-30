@@ -1,0 +1,61 @@
+* When is a proof started? 
+
+It depends on proof search and how classes were declared.
+#+BEGIN_SRC coq
+Class Trivial1.
+
+Class Trivial2 := {}.
+
+Class TrivialBox := { tvunbox : Trivial1 }.
+
+Instance trivial1 : Trivial1. Check trivial1.
+
+Instance trivial2 : Trivial2. Check trivial2.
+
+Instance box1 : TrivialBox. Abort.
+
+Instance box1 : TrivialBox := {}. Check box1.
+
+Class NatBox := { ntv : TrivialBox; nunbox : nat }.
+
+Instance nbox1 : NatBox := {}.
+Proof. exact 0. Qed.
+
+Instance nbox2 : NatBox.
+Proof. split. exact _. exact 0. Qed.
+
+Class OpClass := opclass : nat.
+
+Instance op : OpClass := {}.
+Proof. exact 0. Defined.
+Check eq_refl : op = 0.
+
+(* [Class Foo.] is not equivalent to [Record Foo := {}. Existing Class/Instance ...] *)
+Existing Class True.
+Existing Instance I.
+Instance ii : True. Abort.
+
+Instance ii : True := {}. Abort.
+
+Record TrivialRec := mktv {}.
+Existing Class TrivialRec.
+Existing Instance mktv.
+Instance tvrec : TrivialRec. Abort.
+Instance tvrec : TrivialRec := {}. Abort.
+
+Record NBox2 := { nunbox2 : nat }.
+Existing Class NBox2.
+
+Instance nbox3 : NBox2 := {}.
+Proof.
+  (* wtf *)
+  match goal with |- Set => exact nat end;fail.
+Abort.
+
+Declare Instance ax : Trivial1.
+Check ax.
+#+END_SRC
+
+* Generalizable variables etc
+
+TODO
