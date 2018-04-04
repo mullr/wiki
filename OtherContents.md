@@ -9,7 +9,6 @@ Coq Pearls
 -   [ListOfPredecessors](ListOfPredecessors) for binary numbers.
 -   [ExcludedMiddleOnNegativeFormulasFromCoqRealAxioms](ExcludedMiddleOnNegativeFormulasFromCoqRealAxioms)
 -   A proof of [Lagrange's Theorem](LagrangesTheorem).
--   A proof that there are [not finitely many primes](NotFinitePrimes).
 -   [SquareRootTwo](SquareRootTwo): A very short proof that the square root of 2 is non rational.
 -   [UntypedLambdaTerms](UntypedLambdaTerms): various data structures for implementing the untyped lambda calculus in Coq.
 -   [ExistsFromPropToSet](ExistsFromPropToSet): Existential implies Sigma for decidable properties on `nat`.
@@ -26,7 +25,6 @@ Discussion
 -   What is the difference between [Require Import and Require Export](Require_Import_and_Require_Export)?
 -   Do objects living in Prop ever need to be evaluated? See [PropsGuardingIotaReduction](PropsGuardingIotaReduction).
 -   A discussion about [intensional equality](IntensionalEquality).
--   How should I [organize large inductive proofs](Organizing%20Large%20Proofs)?
 -   How can use the [module system](ModuleSystem) effectively?
 
 Threads to remove
