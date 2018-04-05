@@ -1,16 +1,14 @@
-This page collects a list of pages dedicated to discuss changes planned in Coq version 8.9 (see also the [8.9 roadmap](https://github.com/coq/roadmaps/blob/master/text/roadmap-8.9.md) page).
+This page collects a list of pages dedicated to discuss changes planned in Coq version 8.9.
 
 Users are welcomed to comment and discuss with developers on these changes at the indicated pages, or by adding a new [issue](https://github.com/coq/coq/issues) page if no link already exists.
+
+See also the [8.9 roadmap](https://github.com/coq/roadmaps/blob/master/text/roadmap-8.9.md) page for an upstream perspective at the 8.9 projects.
 
 ### The logic
 
 - Kernel support for primitive efficient integers ([PR #6914](https://github.com/coq/coq/pull/6914)).
 
 - The `match` reduction, as well as the `iota` reduction which includes it, are now stronger. Formerly, `Eval cbv match in match S O with S n => true | O => false end` was returning `(fun _ : nat => true) 0` needing a `beta` step further to reach a normal form. Substitution of the variables of a pattern by the arguments of a constructor could become part of the `match` reduction. As another example, `Eval lazy match in match 3 with 2 => true | _ => false end` would return `false` without requiring the `beta` flag ([CEPS #34](https://github.com/coq/ceps/pull/34)).
-
-### Elaboration
-
-- New pattern-matching algorithm supporting deep dependent pattern-matching.
 
 ### Notations
 
