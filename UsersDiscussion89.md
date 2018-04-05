@@ -1,4 +1,4 @@
-This page collects a list of pages dedicated to discuss changes planned in Coq version 8.9.
+This page collects a list of pages dedicated to discuss changes planned in Coq version 8.9 (see also the [8.9 roadmap](https://github.com/coq/roadmaps/blob/master/text/roadmap-8.9.md) page).
 
 Users are welcomed to comment and discuss with developers on these changes at the indicated pages, or by adding a new [issue](https://github.com/coq/coq/issues) page if no link already exists.
 
