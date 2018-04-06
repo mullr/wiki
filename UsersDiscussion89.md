@@ -10,6 +10,11 @@ See also the [8.9 roadmap](https://github.com/coq/roadmaps/blob/master/text/road
 
 - The `match` reduction, as well as the `iota` reduction which includes it, are now stronger. Formerly, `Eval cbv match in match S O with S n => true | O => false end` was returning `(fun _ : nat => true) 0` needing a `beta` step further to reach a normal form. Substitution of the variables of a pattern by the arguments of a constructor could become part of the `match` reduction. As another example, `Eval lazy match in match 3 with 2 => true | _ => false end` would return `false` without requiring the `beta` flag ([CEPS #34](https://github.com/coq/ceps/pull/34)).
 
+### Interfaces
+
+- Highlight differences between successive proof steps with ANSI highlights (color, underline, etc.)
+([PR #6801](https://github.com/coq/coq/pull/6801)).
+
 ### Notations
 
 - User-level support for declaring numeral notations for arbitrary types ([PR #496](https://github.com/coq/coq/pull/496)).
@@ -44,5 +49,5 @@ See also the [8.9 roadmap](https://github.com/coq/roadmaps/blob/master/text/road
 
 ### A comprehensive list of features for version 8.9
 
-The list of new 8.9 features already integrated is listed [here](https://github.com/coq/coq/pulls?q=is%3Apr+label%3A%22kind%3A+feature%22+milestone%3A8.9+is%3Aclosed)
+The list of new 8.9 features already integrated is listed [here](https://github.com/coq/coq/pulls?q=is%3Apr+label%3A%22kind%3A+feature%22+milestone%3A8.9%2Bbeta1+is%3Aclosed)
 and the one planned for integration are listed [here](https://github.com/coq/coq/pulls?utf8=%E2%9C%93&q=label%3A%22kind%3A+feature%22+milestone%3A8.9%2Bbeta1+is%3Aopen).
