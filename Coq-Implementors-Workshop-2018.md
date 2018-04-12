@@ -24,7 +24,7 @@ TBA
 PRs to discusss:
 
 
-Do log what you did/learnt/implemented!
+Do log what you did/learned/implemented!
 ---------------------------------------
 
 Write it here
@@ -64,3 +64,24 @@ Proposed Projects and Ideas
 
 Topics of interest
 ------------------
+
+**From Jim Fehrle:**
+1. People are using Coq to do interesting program verification work, such the DeepSpec project.  However, my impression is that the technique is still too time-consuming/difficult to become widely used in industry.  I'd like to discuss how we could make Coq at least 10 times easier/more efficient to use (measured by user time/effort).  Specifically, I'm interested in ways to make the proof search/discovery process much better.  I'd also like to get an idea of the development effort required and how this might be broken down into a manageable series of tasks.
+
+As someone who is still new to Coq, I want to approach this with appropriate humility--I'd like to learn as much I can about ideas already being considered or implemented.  I have a few ideas of my own that may or may not have merit.  And I expect we want to take good care of current users by providing an appropriate level of compatibility.
+
+As part of this I'd like to learn a lot more about the internals of proofchecking, tactics and LTAC.  (Need to learn LTAC externals, too--haven't had time to see what info is available.)
+
+Secondary, shorter topics:
+
+2. How can we make it easier to learn Coq?  I'd be interested in hearing plans for improving the documentation.
+
+3. How can we make Coq development easier?  I'd like to identify which things are worth doing.  Perhaps some of these:
+- internals documentation to make it easier to become a Coq developer and to learn new parts of the system
+- unit testing framework (see https://github.com/coq/coq/pull/6808)
+- improve OCaml documentation and tools  
+= make the OCaml manual more effective for learning/using the language--provide a comprehensive reference, well-indexed, more examples/idioms  
+= for debugging, a routine to print a value of any type (if that is possible in OCaml)  
+= in ocamldebug, show function names in stack traces  
+= look for ways to display stack traces automatically when unexpected exceptions are raised
+
