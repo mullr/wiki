@@ -7,7 +7,7 @@ have the same type `forall x : A, B` I know that `A == A'` (Pi-injectivity).
 
 Analogously when converting constructors we can skip parameters without breaking soundness.
 
-The experiment fails because the kernel converts application arguments right to left, so if we have `P : forall T, T -> ...` and convert `P (forall A0, ...) (fun x : A0' => ...)` and `P (forall A1, ...) (fun x : A1' => ...)` we look at the lambdas before testing `A0 == A1` (which by typing would imply `A0' == A1'`). This means skipping the lambda annotations skips a chance at early failure. Of course the same is true of skipping constructor parameters. Here's a partial bench:
+The experiment fails because the kernel converts application arguments right to left, so if we have `P : forall T, T -> ...` and convert `P (forall A0, ...) (fun x : A0' => ...)` and `P (forall A1, ...) (fun x : A1' => ...)` we look at the lambdas before testing `A0 == A1` (which by typing would imply `A0' == A1'`). This means skipping the lambda annotations skips a chance at early failure. Of course the same is true of skipping constructor parameters. Here's a partial bench: https://ci.inria.fr/coq/view/benchmarking/job/benchmark-part-of-the-branch/391/console
 ```
 ┌──────────────────────────┬───────────────────────────┬───────────────────────────────────────┬───────────────────────────────────────┬─────────────────────────┬─────────────────┐
 │                          │       user time [s]       │              CPU cycles               │           CPU instructions            │  max resident mem [KB]  │   mem faults    │
@@ -36,7 +36,7 @@ The experiment fails because the kernel converts application arguments right to 
 └──────────────────────────┴───────────────────────────┴───────────────────────────────────────┴───────────────────────────────────────┴─────────────────────────┴─────────────────┘
 ```
 
-If we change the comparison order to left to right (as in #396) the above is alleviated but other places slow down to death:
+If we change the comparison order to left to right (as in #396) the above is alleviated but other places slow down to death: https://ci.inria.fr/coq/view/benchmarking/job/benchmark-part-of-the-branch/393/console
 ```
 ┌──────────────────────────┬──────────────────────────┬──────────────────────────────────────┬──────────────────────────────────────┬─────────────────────────┬─────────────────┐
 │                          │      user time [s]       │              CPU cycles              │           CPU instructions           │  max resident mem [KB]  │   mem faults    │
