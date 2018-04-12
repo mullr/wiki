@@ -22,5 +22,3 @@ Opaque Proofs
 -------------
 
 The `Opaque`/`Transparent` distinction is important for keeping memory consumption under control. Subproofs wrapped in the `abstract` tactic and proofs which end with `Qed` are opaque; all others are transparent (unless made opaque with the `Opaque` command).
-
-The `-dont-load-proofs` option is useful once you have broken up your development into multiple separate files and made declarations opaque wherever possible. If `-dont-load-proofs` is enabled when checking one module, proof terms for opaque declarations from other modules will not be loaded into memory, keeping the OCaml heap smaller.
