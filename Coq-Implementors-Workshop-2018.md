@@ -53,6 +53,7 @@ List of participants
 -   Maxime Dénès
 -   Matthieu Sozeau
 -   Enrico Tassi
+-   Théo Winterhalter (theo.winterhalter@inria.fr)
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
