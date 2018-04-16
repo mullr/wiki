@@ -55,6 +55,7 @@ List of participants
 -   Enrico Tassi
 -   Théo Winterhalter (theo.winterhalter at inria.fr)
 -   Ambroise Lafont (ambroise.lafont at inria.fr)
+-   Simon Boulier (simon.boulier at inria.fr)
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
