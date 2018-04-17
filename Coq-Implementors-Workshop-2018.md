@@ -57,6 +57,7 @@ List of participants
 -   Ambroise Lafont (ambroise.lafont at inria.fr)
 -   Simon Boulier (simon.boulier at inria.fr)
 -   Théo Zimmermann
+-   Gaëtan Gilbert
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
