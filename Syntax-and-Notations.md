@@ -1,3 +1,5 @@
+(Part of [[the Coq FAQ]])
+
 ### I do not want to type `forall` because it is too long, what can I do?
 
 You can define your own notation for `forall`:
