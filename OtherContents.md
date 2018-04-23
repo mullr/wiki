@@ -16,6 +16,7 @@ Coq Pearls
 -   [Monads in Coq](AUGER_Monad)
 -   [A short tutorial on extraction](AUGER_ExtractionTuto)
 -   [Math Classes](MathClasses): Mathematics using Type Classes
+- [Tactic pearls](LtacPearls)
 
 Discussion
 ==========
@@ -49,4 +50,4 @@ Threads to update/remove
 -   How does the [fix tactic](Fix%20(tactic)) work?
 -   Why do I get "Error: Abstracting over the term ... [leads to a term which is ill-typed](AbstractingOverTheTermLeadsToATermWhichIsIllTyped)" when rewriting with equalities?
 -   Where can I see other examples of [formalization and verification](FormalizedAndVerified)?
-
+- [Project ideas](ProjectIdeas)
