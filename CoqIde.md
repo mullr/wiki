@@ -1,3 +1,5 @@
+(Part of [[the Coq FAQ]])
+
 ### What is CoqIde?
 
 CoqIde is a GTK-based GUI for Coq.
