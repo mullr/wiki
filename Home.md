@@ -95,7 +95,5 @@ Coq Wiki
 ========
 
 -   [Some help on this Wiki](HelpOnGithubWiki).
--   [Old articles](OtherContents)
--   [Old versions of the front page](OldFront)
--   [The license of this wiki](Cocorico!WikiLicense)
+-   [More content](OtherContents)
 -   [List of recent changes](https://github.com/coq/coq/wiki/_history) (compare two revisions by selecting them then clicking on "Compare Revisions")
