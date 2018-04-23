@@ -1,3 +1,5 @@
+(Part of [[the Coq FAQ]])
+
 ### Can you explain me what an evaluable constant is?
 
 An evaluable constant is a constant which is unfoldable.
