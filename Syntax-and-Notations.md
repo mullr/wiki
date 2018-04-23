@@ -30,3 +30,7 @@ Because we rely on Camlp4 for syntactical analysis and Camlp4 does not really im
 ### How can I know the associativity associated with a level?
 
 You can do “Print Grammar constr”, and decode the output from Camlp4, good luck!
+
+### How to define a Haskell-like notation for list comprehension?
+
+See [[ListComprehensionNotation]]
