@@ -1,3 +1,5 @@
+(Part of [[the Coq FAQ]])
+
 ## My goal is ..., how can I prove it?
 
 ### My goal is a conjunction, how can I prove it?
