@@ -1,3 +1,5 @@
+(Part of [[the Coq FAQ]])
+
 Program extraction generates a program from a constructive proof. You can extract your programs to Objective Caml and Haskell.
 
 Resources about Extraction
