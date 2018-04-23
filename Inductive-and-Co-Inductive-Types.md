@@ -1,3 +1,5 @@
+(Part of [[the Coq FAQ]])
+
 ## General
 
 ### How can I prove that two constructors are different?
