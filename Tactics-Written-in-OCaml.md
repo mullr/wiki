@@ -1,3 +1,7 @@
+(Part of [[the Coq FAQ]])
+
+:warning: **Note**: this page is currently known to be outdated. Some help to update it would be welcome.
+
 ### Can you show me an example of a tactic written in OCaml?
 
 Have a look at the skeleton “Hello World” tactic [below](#is-there-a-skeleton-of-ocaml-tactic-i-can-reuse-somewhere). You also have some examples of tactics written in OCaml in the “plugins” directory of Coq's source.
