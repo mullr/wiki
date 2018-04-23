@@ -1,3 +1,5 @@
+(Part of [[the Coq FAQ]])
+
 ### What is Ltac?
 
 Ltac is the tactic language for Coq. It provides the user with a high-level “toolbox” for tactic creation.
