@@ -1,3 +1,5 @@
+(Part of [[the Coq FAQ]])
+
 ### How can I generate some LaTex from my development?
 
 You can use `coqdoc`.
