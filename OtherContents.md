@@ -36,7 +36,6 @@ Threads to remove
 -   How can I input unicode characters for Coq independently of my editor using [XCompose](XComposeAndNotations) (X graphical servers only) or the [TeX input method](TeXInputMethodForUnicodeNotations) (Unix systems).
 -   [HowToContributeToTheStandardLibrary](HowToContributeToTheStandardLibrary)?
 -   How can I avoid [non-instantiated existential variables with eauto](http://pauillac.inria.fr/pipermail/coq-club/2007/003186.html)?
--   What exactly does [simpl](simpl%20(tactic)) do?
 
 Threads to update/remove
 ========================
@@ -46,8 +45,5 @@ Threads to update/remove
 -   How does [dependent inversion](DependentInversion) work?
 -   When using `eapply`, how can I [instantiate the question marks](ExistentialVariablesInEapply)?
 -   Why doesn't Coq support [extension equality](extensional_equality)? (Why can't I prove `forall x, f x = g x) -> f = g`?)
--   Why can I [eliminate False](FalseEqAcc) (a `Prop`) when constructing a member of `Set`?
--   How does the [fix tactic](Fix%20(tactic)) work?
--   Why do I get "Error: Abstracting over the term ... [leads to a term which is ill-typed](AbstractingOverTheTermLeadsToATermWhichIsIllTyped)" when rewriting with equalities?
 -   Where can I see other examples of [formalization and verification](FormalizedAndVerified)?
 - [Project ideas](ProjectIdeas)
