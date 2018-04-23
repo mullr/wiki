@@ -1,3 +1,5 @@
+(Part of [[the Coq FAQ]])
+
 ### Where can I find documentation about Coq?
 
 All the documentation about Coq, from [the reference manual](https://coq.inria.fr/refman/) to friendly resources such as [this tutorial](https://coq.inria.fr/tutorial-nahas) and [documentation of the standard library](https://coq.inria.fr/library/), is available online. All these documents are viewable either in browsable HTML or as downloadable files.
