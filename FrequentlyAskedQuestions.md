@@ -13,5 +13,4 @@ Many questions are answered in the official [Coq FAQ](http://coq.inria.fr/V8.1/f
 9.  Do objects living in `Prop` ever need to be evaluated? See [PropsGuardingIotaReduction](PropsGuardingIotaReduction).
 10. When using `eapply`, how can I instantiate the question marks i.e. the [ExistentialVariablesInEapply](ExistentialVariablesInEapply)?
 11. What is the difference between [Require\_Import\_and\_Require\_Export](Require_Import_and_Require_Export)?
-13. How to define a [Haskell-like notation for list comprehension](ListComprehensionNotation)?
 
