@@ -1,3 +1,5 @@
+(Part of [[the Coq FAQ]])
+
 ### How to prove that two sets are different?
 
 You need to find a property true on one set and false on the other one. As an example we show how to prove that bool and nat are discriminable. As discrimination property we take the property to have no more than two elements.
