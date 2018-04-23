@@ -193,6 +193,17 @@ Inductive sigST (P:Set -> Set) : Type :=
 
 In the `Set` impredicative variant of Coq, large inductive definitions in `Set` have restricted elimination schemes to prevent inconsistencies. Especially, projecting the set or the proposition content of a large inductive definition is forbidden. If it were allowed, it would be possible to encode e.g. Burali-Forti paradox [5, 6].
 
+### Do `False`, `eq`, and `Acc` have a special status?
+
+Although these inductive types are in `Prop`, their values can be eliminated while constructing objects of type `Set`.
+
+This applies to all inductive types of type `Prop` that are:
+
+-   empty: without constructors (e.g. `False`)
+-   singleton: having one single constructor, whose arguments (if any) are all of type `Prop`
+
+See also the reference manual chapter on the Calculus of Inductive Constructions.
+
 ### Is Coq’s logic conservative over Coquand’s Calculus of Constructions?
 
 In the `Set`-impredicative version of the Calculus of Inductive Constructions (CIC), there are two ways to
