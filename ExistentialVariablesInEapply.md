@@ -35,4 +35,6 @@ If existentials remain after discharging all proof obligations, you must instant
 Existential 1:=term.
 ```
 
-This assumes that you are able to provide an exact term for the existential. [It appears that if you would prefer to use tactics to build the term, you are basically out of luck.](http://article.gmane.org/gmane.science.mathematics.logic.coq.club/5386)
+This assumes that you are able to provide an exact term for the existential.
+
+If you want to use tactics to build this term, you should use the `Unshelve` (or `Grab Existential Variables`) command to transform these existential variables into goals.
