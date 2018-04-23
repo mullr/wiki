@@ -1,3 +1,5 @@
+(Part of [[the Coq FAQ]])
+
 ## General
 
 ### What is the logic of Coq?
