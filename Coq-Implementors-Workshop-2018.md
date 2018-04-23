@@ -58,6 +58,7 @@ List of participants
 -   Simon Boulier (simon.boulier at inria.fr)
 -   Théo Zimmermann
 -   Gaëtan Gilbert
+-   Loïc Pujet
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
