@@ -1,3 +1,5 @@
+(Part of [[the Coq FAQ]])
+
 ### What can I do when `Qed.` is slow?
 
 Sometime you can use the `abstract` tactic, which makes as if you had stated some local lemma, this speeds up the typing process.
