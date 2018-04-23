@@ -10,15 +10,8 @@ Many questions are answered in the official [Coq FAQ](http://coq.inria.fr/V8.1/f
 5.  How do I get [DependentInversion](DependentInversion) to work in my case?
 6.  Why not [WTypeInsteadOfInductiveTypes](WTypeInsteadOfInductiveTypes)?
 7.  Do [False, eq, and Acc](FalseEqAcc) have a special status?
-8.  What is the logical strength of Coq? Can it prove the consistency of ZF or ZFC?
 9.  Do objects living in `Prop` ever need to be evaluated? See [PropsGuardingIotaReduction](PropsGuardingIotaReduction).
 10. When using `eapply`, how can I instantiate the question marks i.e. the [ExistentialVariablesInEapply](ExistentialVariablesInEapply)?
 11. What is the difference between [Require\_Import\_and\_Require\_Export](Require_Import_and_Require_Export)?
-12. How can I get Coq to [always print universes](PrintingUniverses)?
 13. How to define a [Haskell-like notation for list comprehension](ListComprehensionNotation)?
-
-Coqide
-------
-
-1.  [CoqIDE\_crashes\_under\_KDE](CoqIDE_crashes_under_KDE) (Kubuntu) when I open a query window.
 
