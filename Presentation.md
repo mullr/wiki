@@ -1,3 +1,5 @@
+(Part of [[the Coq FAQ]])
+
 ### What is Coq?
 
 The Coq tool is a formal proof management system: a proof done with Coq is mechanically checked by the machine. In particular, Coq allows:
