@@ -1,3 +1,5 @@
+(Part of [[the Coq FAQ]])
+
 ### What is the license of Coq?
 
 Coq is distributed under the GNU Lesser General Public License (LGPL) 2.1.
