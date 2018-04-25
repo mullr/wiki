@@ -1,4 +1,4 @@
-Fourth Coq Implementors Workshop, May 28th - June 1st, 2018, Sophia-Antipolis
+Fourth Coq Implementors Workshop, May 28th - June 1st, 2018, Nice
 ============================================================================
 
 This page collects useful infos for the participants to the 4th Coq Implementors Workshop.
