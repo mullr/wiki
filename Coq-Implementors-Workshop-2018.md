@@ -66,6 +66,8 @@ List of participants
 -   Fabian Kunze (kunze at ps.uni-saarland.de)
 -   Thierry Martinez (thierry.martinez at inria.fr)
 -   Frédéric Dabrowski (frederic.dabrowski/at/univ-orleans.fr)
+-   José Manuel Rodríguez Caballero (rodriguez_caballero(dot)jose_manuel(at)uqam(dot)ca)
+
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
