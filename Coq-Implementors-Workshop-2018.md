@@ -68,7 +68,7 @@ List of participants
 -   Frédéric Dabrowski (frederic.dabrowski/at/univ-orleans.fr)
 -   José Manuel Rodríguez Caballero (rodriguez_caballero(dot)jose_manuel(at)uqam(dot)ca)
 
-
+<!--- Leave this line alone -->
 (+) Late subscription (tradition says you pay a round at the pub...)
 
 Suggestions by New Participants
