@@ -69,7 +69,7 @@ List of participants
 
 Suggestions by New Participants
 -------------------------------
-By Fabian Kunze: I would be interested in learning more about the internals of Coq and plugin development. Porting [AAC_tactics](https://github.com/coq-contribs/aac-tactics) to coq 8.7 and 8.8 might be a good project, as this plugin seems quite usefull.
+By Fabian Kunze: I would be interested in learning more about the internals of Coq and plugin development. Porting [AAC_tactics](https://github.com/coq-contribs/aac-tactics) to coq 8.7 and 8.8 might be a good project, as this plugin seems quite useful. *Matthieu Sozeau*: I would be happy to help you in that endeavor, indeed it is a very useful plugin. It would be good to ask Damien Pous (original author with Thomas Braibant) if he has any intentions regarding it.
 
 Proposed Projects and Ideas
 ---------------------------
