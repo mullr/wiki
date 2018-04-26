@@ -60,6 +60,10 @@ Coq development
 Coq community
 =============
 
+Coq implementor Workshops
+
+-   [2018 Coq Implementor Workshop](Coq-Implementors-Workshop-2018)
+
 Pointers to existing projects involving Coq.
 
 -   [Formal programming language research in Coq](List%20of%20Coq%20PL%20Projects)
