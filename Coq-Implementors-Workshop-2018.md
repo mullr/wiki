@@ -67,6 +67,7 @@ List of participants
 -   Thierry Martinez (thierry.martinez at inria.fr)
 -   Frédéric Dabrowski (frederic.dabrowski/at/univ-orleans.fr)
 -   José Manuel Rodríguez Caballero (rodriguez_caballero(dot)jose_manuel(at)uqam(dot)ca)
+-   Michael Soegtrop (MSoegtropIMC)
 
 <!--- Leave this line alone -->
 (+) Late subscription (tradition says you pay a round at the pub...)
