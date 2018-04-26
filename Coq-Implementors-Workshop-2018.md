@@ -62,6 +62,7 @@ List of participants
 -   Gaëtan Gilbert
 -   Loïc Pujet
 -   Anton Trunov ("anton" dot "a" dot "trunov" at "google" dot "com") 
+-   Antoine Defourné (antoine.defourne at inria.fr)
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
