@@ -64,6 +64,7 @@ List of participants
 -   Anton Trunov ("anton" dot "a" dot "trunov" at "google" dot "com") 
 -   Antoine Defourné (antoine.defourne at inria.fr)
 -   Fabian Kunze (kunze at ps.uni-saarland.de)
+-   Thierry Martinez (thierry.martinez at inria.fr)
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
