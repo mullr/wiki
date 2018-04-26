@@ -65,6 +65,7 @@ List of participants
 -   Antoine Defourné (antoine.defourne at inria.fr)
 -   Fabian Kunze (kunze at ps.uni-saarland.de)
 -   Thierry Martinez (thierry.martinez at inria.fr)
+-   Frédéric Dabrowski (frederic.dabrowski/at/univ-orleans.fr)
 
 (+) Late subscription (tradition says you pay a round at the pub...)
 
