@@ -37,7 +37,7 @@ Program (Preliminary)
 ### Wednesday
 
 - 3pm: Social Event (Museum of Modern Art or Beach depending on weather)
-- 8pm: Diner
+- 8pm: Dinner
 
 ### Unscheduled
 
