@@ -12,6 +12,10 @@ The Implementors Workshop takes place at University of Nice, Parc Valrose campus
 
 https://goo.gl/maps/yJ9hFj3pRNy
 
+Recommended hotels:
+- Hotel Monsigny http://hotelmonsignynice.com/fr
+- ...
+
 Program
 -------
 
