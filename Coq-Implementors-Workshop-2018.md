@@ -22,6 +22,7 @@ Program
   - Vernacular Commands, Tactic extensions
   - Reading terms and, crawling the environment (dpdgraph example)
   - Constructing terms, calling typing and unification, inserting definitions
+  - Programming Tactics in ML
 
 - Roundtable on user experiences writing plugins/contributing
 - Projects descriptions
