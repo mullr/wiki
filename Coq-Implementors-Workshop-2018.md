@@ -53,13 +53,9 @@ Write it here
 Registration
 ------------
 
-Registration to this event is free but mandatory for organization purposes.  To register you should simply add your name in the list of participants on the workshop's wiki page
+Registration to this event is free but *mandatory* for organization purposes.  To register you should simply add your name in the list of participants below.
 
-https://github.com/coq/coq/wiki/Coq-Implementors-Workshop-2018
-
-Your e-mail should either be included in the workshop's page (in a human readable form) or sent to coq-implementors-workshop-request@inria.fr
-
-TBA
+Your e-mail should either be included here(in a human readable form) or sent to coq-implementors-workshop-request@inria.fr
 
 Organizers
 ----------
