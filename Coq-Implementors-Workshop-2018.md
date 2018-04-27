@@ -19,12 +19,12 @@ Recommended hotels:
 Program (Preliminary)
 ---------------------
 
-> The schedule will run from Monday afternoon to Friday after lunch.
+> The schedule will run from Monday afternoon (1pm) to Friday after lunch (~ 2pm).
 > There are no organized lunches.
 
 ### Monday
 
-- Introduction and How To Write A Plugin
+- 1pm: Introduction and How To Write A Plugin
   - Interfacing Coq and ML (building and running)
   - Vernacular Commands, Tactic extensions
   - Reading terms and, crawling the environment (dpdgraph example)
