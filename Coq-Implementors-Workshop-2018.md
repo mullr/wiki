@@ -16,8 +16,8 @@ Recommended hotels:
 - Hotel Monsigny http://hotelmonsignynice.com/fr
 - ...
 
-Program
--------
+Program (Preliminary)
+---------------------
 
 > The schedule will run from Monday afternoon to Friday after lunch.
 > There are no organized lunches.
