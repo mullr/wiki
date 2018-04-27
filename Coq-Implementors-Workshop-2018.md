@@ -106,6 +106,8 @@ Proposed Projects and Ideas
 ---------------------------
 
 - Customizing Arguments for bidirectional typechecking (M. Sozeau)
+- I can give a short overview (tutorial) about the internal language of a topos, which is a type theory. As a concrete application, I can introduce Moerdijk's approach to intuitionistic non-standard Arithmetic, which could be used in order to simplify epsilon-delta proofs in Analysis. (J. M. R. Caballero)
+
 
 Topics of interest
 ------------------
