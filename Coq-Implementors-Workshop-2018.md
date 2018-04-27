@@ -29,8 +29,7 @@ Program
 
 Talks by devs:
 
-PRs to discusss:
-
+- Writing your plugins in Coq using Template Coq (M. Sozeau, S. Boulier)
 
 Do log what you did/learned/implemented!
 ---------------------------------------
