@@ -18,6 +18,11 @@ Program
 > The schedule will run from Monday afternoon to Friday after lunch.
 
 - Introduction and How To Write A Plugin
+  - Interfacing Coq and ML (building and running)
+  - Vernacular Commands, Tactic extensions
+  - Reading terms and, crawling the environment (dpdgraph example)
+  - Constructing terms, calling typing and unification, inserting definitions
+
 - Roundtable on user experiences writing plugins/contributing
 - Projects descriptions
 
