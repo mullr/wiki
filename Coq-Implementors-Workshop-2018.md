@@ -22,8 +22,7 @@ Program
 > The schedule will run from Monday afternoon to Friday after lunch.
 > There are no organized lunches.
 
-Monday:
--------
+### Monday
 
 - Introduction and How To Write A Plugin
   - Interfacing Coq and ML (building and running)
@@ -35,10 +34,11 @@ Monday:
 - Roundtable on user experiences writing plugins/contributing
 - Projects descriptions
 
-Wednesday
----------
+### Wednesday
 
 From 3pm on: Social Event (Museum of Modern Art or Beach depending on weather)
+
+### Unscheduled
 
 Talks by devs:
 
