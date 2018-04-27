@@ -69,6 +69,7 @@ List of participants
 -   José Manuel Rodríguez Caballero (rodriguez_caballero(dot)jose_manuel(at)uqam(dot)ca)
 -   Michael Soegtrop (MSoegtropIMC)
 -   Jim Fehrle (jfehrle at sbcglobal.net)
+-   Hugo Herbelin
 
 <!--- Leave this line alone -->
 (+) Late subscription (tradition says you pay a round at the pub...)
