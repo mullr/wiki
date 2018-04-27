@@ -17,11 +17,11 @@ Program
 
 > The schedule will run from Monday afternoon to Friday after lunch.
 
-TBA
+- Introduction and How To Write A Plugin
+- Roundtable on user experiences writing plugins/contributing
+- Projects descriptions
 
 Talks by devs:
-
-TBA
 
 PRs to discusss:
 
@@ -83,6 +83,8 @@ By J. M. R. Caballero: I would be interested in learning more about the implemen
 
 Proposed Projects and Ideas
 ---------------------------
+
+- Customizing Arguments for bidirectional typechecking (M. Sozeau)
 
 Topics of interest
 ------------------
