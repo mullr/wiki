@@ -91,6 +91,7 @@ List of participants
 -   Michael Soegtrop (MSoegtropIMC)
 -   Jim Fehrle (jfehrle at sbcglobal.net)
 -   Hugo Herbelin
+-   Talia Ringer (tringer at cs.washington.edu)
 
 <!--- Leave this line alone -->
 (+) Late subscription (tradition says you pay a round at the pub...)
