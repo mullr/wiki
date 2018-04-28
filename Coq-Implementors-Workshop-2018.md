@@ -101,6 +101,7 @@ By Fabian Kunze: I would be interested in learning more about the internals of C
 
 By J. M. R. Caballero: I would be interested in learning more about the implementation in Coq of universal constructions from Topos Theory.
 
+By Michael Soegtrop: I would like to work on a forward proof automation tactic. The idea is to have a tactic which takes a hint database and applies lemmas from the database based on hypothesis in the context until no further lemmas can be forwarded or a maximum expansion depth is reached. First task would be to discuss if the current hint database is appropriate for this as is or would need some extension (I think it is pretty goal centric).
 
 Proposed Projects and Ideas
 ---------------------------
