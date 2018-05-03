@@ -16,6 +16,10 @@ Recommended hotels:
 - Hotel Monsigny http://hotelmonsignynice.com/fr
 - ...
 
+Sponsors
+--------
+This workshop is sponsored by Inria (travel support for some of the participants) and University of Nice Sophia Antipolis (room for the meeting).
+
 Program (Preliminary)
 ---------------------
 
