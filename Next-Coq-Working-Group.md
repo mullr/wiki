@@ -15,6 +15,11 @@ Video streaming is available on the [YouTube channel](https://www.youtube.com/ch
 Schedule
 ------------------
 
+ - Debrief of the release
+ - New merging policy discussion
+ - CI system
+
+
 Other PRs that need to be discussed (possibly around a computer)
 ----------------------------------------------------------------
 
