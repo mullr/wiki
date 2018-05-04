@@ -2,7 +2,7 @@ Organization
 ------------
 
 The next Coq Working Group will start on May 16th at 9.30am.
-We will be using video-conference equipment from Sophia and Paris.
+We will be using video-conference equipment.
 
 - In Paris, at IRIF room 3058 (ask Matthieu for more details)
 - In Sophia, at Inria room Euler Bleu (ask Maxime for more details)
