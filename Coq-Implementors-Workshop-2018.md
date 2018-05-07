@@ -97,7 +97,7 @@ List of participants
 -   Hugo Herbelin
 -   Talia Ringer (tringer at cs.washington.edu)
 -   Armaël Guéneau (armael.gueneau at inria.fr)
--   Cyril Cohen (cyril.cohen@inria.fr)
+-   Cyril Cohen (cyril(dot)cohen(at)inria(dot)fr)
 
 <!--- Leave this line alone -->
 (+) Late subscription (tradition says you pay a round at the pub...)
