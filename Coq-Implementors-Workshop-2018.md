@@ -140,3 +140,5 @@ Secondary, shorter topics:
 = in ocamldebug, show function names in stack traces  
 = look for ways to display stack traces automatically when unexpected exceptions are raised
 
+4. It sounds like memory usage may be a limiting factor for some users.  I'd like to understand how Coq uses memory and whether this may be a worthwhile area to look for improvements.
+
