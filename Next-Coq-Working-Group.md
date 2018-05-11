@@ -17,6 +17,7 @@ Schedule
 
  - Debrief of the release
  - New merging policy discussion
+   - Important: [#7346](https://github.com/coq/coq/issues/7346)
  - CI system
 
 
