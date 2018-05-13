@@ -99,6 +99,7 @@ List of participants
 -   Armaël Guéneau (armael.gueneau at inria.fr)
 -   Cyril Cohen (cyril(dot)cohen(at)inria(dot)fr)
 -   Yannick Forster (forster (at) ps.uni-saarland.de)
+-   Leonidas Lampropoulos (llamp (at) seas.upenn.edu)
 
 <!--- Leave this line alone -->
 (+) Late subscription (tradition says you pay a round at the pub...)
