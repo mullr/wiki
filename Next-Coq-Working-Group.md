@@ -20,6 +20,7 @@ Schedule
    - Important: [#7346](https://github.com/coq/coq/issues/7346)
    - How to keep the number of open PRs under control?
  - CI system
+ - EConstr.to_constr invariant
 
 
 Other PRs that need to be discussed (possibly around a computer)
