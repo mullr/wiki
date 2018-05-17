@@ -83,7 +83,7 @@ List of participants [alphabetical]
 -   Maxime Dénès
 -   Jim Fehrle (jfehrle at sbcglobal.net)
 -   Yannick Forster (forster (at) ps.uni-saarland.de)
--   Emilio J. Gallego Arias
+-   [Emilio J. Gallego Arias](https://github.com/ejgallego/)
 -   Gaëtan Gilbert
 -   Armaël Guéneau (armael.gueneau at inria.fr)
 -   Hugo Herbelin
@@ -107,11 +107,12 @@ List of participants [alphabetical]
 
 Suggestions by New Participants
 -------------------------------
-By Fabian Kunze: I would be interested in learning more about the internals of Coq and plugin development. Porting [AAC_tactics](https://github.com/coq-contribs/aac-tactics) to coq 8.7 and 8.8 might be a good project, as this plugin seems quite useful. *Matthieu Sozeau*: I would be happy to help you in that endeavor, indeed it is a very useful plugin. It would be good to ask Damien Pous (original author with Thomas Braibant) if he has any intentions regarding it.
 
-By J. M. R. Caballero: I would be interested in learning more about the implementation in Coq of universal constructions from Topos Theory.
+- By Fabian Kunze: I would be interested in learning more about the internals of Coq and plugin development. Porting [AAC_tactics](https://github.com/coq-contribs/aac-tactics) to coq 8.7 and 8.8 might be a good project, as this plugin seems quite useful. *Matthieu Sozeau*: I would be happy to help you in that endeavor, indeed it is a very useful plugin. It would be good to ask Damien Pous (original author with Thomas Braibant) if he has any intentions regarding it.
 
-By Michael Soegtrop: I would like to work on a forward proof automation tactic. The idea is to have a tactic which takes a hint database and applies lemmas from the database based on hypothesis in the context until no further lemmas can be forwarded or a maximum expansion depth is reached. First task would be to discuss if the current hint database is appropriate for this as is or would need some extension (I think it is pretty goal centric).
+- By J. M. R. Caballero: I would be interested in learning more about the implementation in Coq of universal constructions from Topos Theory.
+
+- By Michael Soegtrop: I would like to work on a forward proof automation tactic. The idea is to have a tactic which takes a hint database and applies lemmas from the database based on hypothesis in the context until no further lemmas can be forwarded or a maximum expansion depth is reached. First task would be to discuss if the current hint database is appropriate for this as is or would need some extension (I think it is pretty goal centric).
 
 Proposed Projects and Ideas
 ---------------------------
@@ -123,7 +124,7 @@ Proposed Projects and Ideas
 Topics of interest
 ------------------
 
-**From Jim Fehrle:**
+- **From Jim Fehrle:**
 1. People are using Coq to do interesting program verification work, such the DeepSpec project.  However, my impression is that the technique is still too time-consuming/difficult to become widely used in industry.  I'd like to discuss how we could make Coq at least 10 times easier/more efficient to use (measured by user time/effort).  Specifically, I'm interested in ways to make the proof search/discovery process much better.  I'd also like to get an idea of the development effort required and how this might be broken down into a manageable series of tasks.
 
 As someone who is still new to Coq, I want to approach this with appropriate humility--I'd like to learn as much I can about ideas already being considered or implemented.  I have a few ideas of my own that may or may not have merit.  And I expect we want to take good care of current users by providing an appropriate level of compatibility.
