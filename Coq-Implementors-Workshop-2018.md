@@ -110,16 +110,12 @@ Suggestions by New Participants
 
 - By Fabian Kunze: I would be interested in learning more about the internals of Coq and plugin development. Porting [AAC_tactics](https://github.com/coq-contribs/aac-tactics) to coq 8.7 and 8.8 might be a good project, as this plugin seems quite useful. *Matthieu Sozeau*: I would be happy to help you in that endeavor, indeed it is a very useful plugin. It would be good to ask Damien Pous (original author with Thomas Braibant) if he has any intentions regarding it.
 
-- By J. M. R. Caballero: I would be interested in learning more about the implementation in Coq of universal constructions from Topos Theory.
-
 - By Michael Soegtrop: I would like to work on a forward proof automation tactic. The idea is to have a tactic which takes a hint database and applies lemmas from the database based on hypothesis in the context until no further lemmas can be forwarded or a maximum expansion depth is reached. First task would be to discuss if the current hint database is appropriate for this as is or would need some extension (I think it is pretty goal centric).
 
 Proposed Projects and Ideas
 ---------------------------
 
 - Customizing Arguments for bidirectional typechecking (M. Sozeau)
-- I can give a short overview (tutorial) about the internal language of a topos, which is a type theory. As a concrete application, I can introduce Moerdijk's approach to intuitionistic non-standard Arithmetic, which can be used in order to simplify epsilon-delta proofs in Analysis. (J. M. R. Caballero)
-
 
 Topics of interest
 ------------------
