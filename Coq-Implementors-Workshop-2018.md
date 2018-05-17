@@ -72,34 +72,35 @@ The [coordination mailing list](https://sympa.inria.fr/sympa/info/coq-implemento
 
 If you need additional funding, please contact the organizers.
 
-List of participants
+List of participants [alphabetical]
 --------------------
 
 -   Yves Bertot
--   Maxime Dénès
--   Matthieu Sozeau
--   Enrico Tassi
--   Théo Winterhalter (theo.winterhalter at inria.fr)
--   Ambroise Lafont (ambroise.lafont at inria.fr)
 -   Simon Boulier (simon.boulier at inria.fr)
--   Théo Zimmermann
--   Gaëtan Gilbert
--   Loïc Pujet
--   Anton Trunov ("anton" dot "a" dot "trunov" at "google" dot "com") 
--   Antoine Defourné (antoine.defourne at inria.fr)
--   Fabian Kunze (kunze at ps.uni-saarland.de)
--   Thierry Martinez (thierry.martinez at inria.fr)
--   Frédéric Dabrowski (frederic.dabrowski/at/univ-orleans.fr)
--   José Manuel Rodríguez Caballero (rodriguez_caballero(dot)jose_manuel(at)uqam(dot)ca)
--   Michael Soegtrop (MSoegtropIMC)
--   Jim Fehrle (jfehrle at sbcglobal.net)
--   Hugo Herbelin
--   Talia Ringer (tringer at cs.washington.edu)
--   Armaël Guéneau (armael.gueneau at inria.fr)
 -   Cyril Cohen (cyril(dot)cohen(at)inria(dot)fr)
+-   Antoine Defourné (antoine.defourne at inria.fr)
+-   Frédéric Dabrowski (frederic.dabrowski/at/univ-orleans.fr)
+-   Maxime Dénès
+-   Jim Fehrle (jfehrle at sbcglobal.net)
 -   Yannick Forster (forster (at) ps.uni-saarland.de)
+-   Emilio J. Gallego Arias
+-   Gaëtan Gilbert
+-   Armaël Guéneau (armael.gueneau at inria.fr)
+-   Hugo Herbelin
+-   Fabian Kunze (kunze at ps.uni-saarland.de)
+-   Ambroise Lafont (ambroise.lafont at inria.fr)
 -   Leonidas Lampropoulos (llamp (at) seas.upenn.edu)
 -   Erik Martin-Dorel (erik.martin-dorel (at) irit.fr)
+-   Thierry Martinez (thierry.martinez at inria.fr)
+-   Loïc Pujet
+-   Talia Ringer (tringer at cs.washington.edu)
+-   José Manuel Rodríguez Caballero (rodriguez_caballero(dot)jose_manuel(at)uqam(dot)ca)
+-   Michael Soegtrop (MSoegtropIMC)
+-   Matthieu Sozeau
+-   Enrico Tassi
+-   Anton Trunov ("anton" dot "a" dot "trunov" at "google" dot "com") 
+-   Théo Winterhalter (theo.winterhalter at inria.fr)
+-   Théo Zimmermann
 
 <!--- Leave this line alone -->
 (+) Late subscription (tradition says you pay a round at the pub...)
