@@ -100,6 +100,7 @@ List of participants
 -   Cyril Cohen (cyril(dot)cohen(at)inria(dot)fr)
 -   Yannick Forster (forster (at) ps.uni-saarland.de)
 -   Leonidas Lampropoulos (llamp (at) seas.upenn.edu)
+-   Erik Martin-Dorel (erik.martin-dorel (at) irit.fr)
 
 <!--- Leave this line alone -->
 (+) Late subscription (tradition says you pay a round at the pub...)
