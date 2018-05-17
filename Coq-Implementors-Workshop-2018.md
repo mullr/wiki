@@ -65,7 +65,6 @@ Organizers
 ----------
 
 -   Maxime Dénes (mail at maximedenes.fr)
--   Enrico Tassi (enrico.tassi at inria.fr)
 -   Yves Bertot (yves.bertot at inria.fr)
 -   Matthieu Sozeau (matthieu.sozeau at inria.fr)
 
