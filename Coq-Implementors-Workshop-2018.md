@@ -97,11 +97,11 @@ List of participants [alphabetical]
 -   José Manuel Rodríguez Caballero (rodriguez_caballero(dot)jose_manuel(at)uqam(dot)ca)
 -   Michael Soegtrop (MSoegtropIMC)
 -   Matthieu Sozeau
+-   Nicolas Tabareau
 -   Enrico Tassi
 -   Anton Trunov ("anton" dot "a" dot "trunov" at "google" dot "com") 
 -   Théo Winterhalter (theo.winterhalter at inria.fr)
 -   Théo Zimmermann
--   Nicolas Tabareau
 
 <!--- Leave this line alone -->
 (+) Late subscription (tradition says you pay a round at the pub...)
