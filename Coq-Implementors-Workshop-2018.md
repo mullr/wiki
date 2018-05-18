@@ -101,6 +101,7 @@ List of participants [alphabetical]
 -   Anton Trunov ("anton" dot "a" dot "trunov" at "google" dot "com") 
 -   Théo Winterhalter (theo.winterhalter at inria.fr)
 -   Théo Zimmermann
+-   Nicolas Tabareau
 
 <!--- Leave this line alone -->
 (+) Late subscription (tradition says you pay a round at the pub...)
