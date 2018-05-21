@@ -63,6 +63,7 @@ Coq community
 Coq implementor Workshops
 
 -   [2018 Coq Implementor Workshop](Coq-Implementors-Workshop-2018)
+-   [Older Implementor Workshops](CoqImplementorsWorkshop)
 
 Pointers to existing projects involving Coq.
 
