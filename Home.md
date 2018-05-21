@@ -52,7 +52,7 @@ Coq development
 -   [Wishes for Graphical User Interfaces](GUIWishes) (and a specific page for [CoqIDE wishes](CoqIDEWishes))
 -   [A development tutorial](DevelopmentTutorial)
 -   [Development frequently asked questions](Development-questions)
--   [List of maintainers](Maintainers)
+-   [List of maintainers](https://github.com/coq/coq/blob/master/.github/CODEOWNERS)
 -   [Road maps](Roadmaps)
 -   [Archive of discussions](DevelopmentArchive)
 -   [Setting up your development environment](DevelSetup)
