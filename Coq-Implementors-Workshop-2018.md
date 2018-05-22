@@ -78,6 +78,7 @@ List of participants [alphabetical]
 -   Yves Bertot
 -   Simon Boulier (simon.boulier at inria.fr)
 -   Cyril Cohen (cyril(dot)cohen(at)inria(dot)fr)
+-   Pierre Corbineau (pierre(dot)corbineau(at)univ(dash)grenoble(dash)alpes(dot)fr)
 -   Antoine Defourné (antoine.defourne at inria.fr)
 -   Frédéric Dabrowski (frederic.dabrowski/at/univ-orleans.fr)
 -   Maxime Dénès
