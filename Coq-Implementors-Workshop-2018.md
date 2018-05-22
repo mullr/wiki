@@ -89,6 +89,7 @@ List of participants [alphabetical]
 -   Hugo Herbelin
 -   Fabian Kunze (kunze at ps.uni-saarland.de)
 -   Ambroise Lafont (ambroise.lafont at inria.fr)
+-   Vincent Laporte (vlaporte chez imdea point org)
 -   Leonidas Lampropoulos (llamp (at) seas.upenn.edu)
 -   Erik Martin-Dorel (erik.martin-dorel (at) irit.fr)
 -   Thierry Martinez (thierry.martinez at inria.fr)
