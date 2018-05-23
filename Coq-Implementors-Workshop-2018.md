@@ -101,7 +101,7 @@ List of participants [alphabetical]
 -   Matthieu Sozeau
 -   Nicolas Tabareau
 -   Enrico Tassi
--   Anton Trunov ("anton" dot "a" dot "trunov" at "google" dot "com") 
+-   Anton Trunov ("anton" dot "a" dot "trunov" at "gmail" dot "com") 
 -   Théo Winterhalter (theo.winterhalter at inria.fr)
 -   Théo Zimmermann
 
