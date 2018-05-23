@@ -8,7 +8,7 @@ The Coq Implementors Workshop is an event that brings together the core develope
 Location
 --------
 
-The Implementors Workshop takes place at University of Nice, Parc Valrose campus, Room M36, France.
+The Implementors Workshop takes place at University of Nice, Parc Valrose campus, Room M36, France [on campus map](https://www-sop.inria.fr/members/Yves.Bertot/misc/Plan-Campus-Valrose.pdf)
 
 https://goo.gl/maps/yJ9hFj3pRNy
 
