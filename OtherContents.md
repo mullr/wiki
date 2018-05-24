@@ -38,11 +38,6 @@ Discussion
 Threads to update/remove
 ------------------------
 
--   [Resources for Coq Newbies](CoqNewbie)
--   How does the [pattern match](MatchAsInReturn) syntax work?
--   How does [dependent inversion](DependentInversion) work?
--   When using `eapply`, how can I [instantiate the question marks](ExistentialVariablesInEapply)?
--   Why doesn't Coq support [extension equality](extensional_equality)? (Why can't I prove `forall x, f x = g x) -> f = g`?)
 -   Where can I see other examples of [formalization and verification](FormalizedAndVerified)?
 - [Project ideas](ProjectIdeas)
 
