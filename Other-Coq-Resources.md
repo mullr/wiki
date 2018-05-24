@@ -9,9 +9,8 @@ Introduction to Coq
 -   Material from the Coq summer school [Modelling and verifying algorithms in Coq: an introduction](http://moscova.inria.fr/~zappa/teaching/coq/ecole10/).
 -   Material from courses in French:
     -   [by David Pichardie](http://www.irisa.fr/celtique/pichardie/teaching/M2/MDV/)
-    -   [by Pierre Letouzey](http://www.pps.jussieu.fr/~letouzey/teaching.fr.html)
+    -   [by Pierre Letouzey](https://www.irif.fr/users/letouzey/edu/preuves)
     -   [by Assia Mahboubi](http://specfun.inria.fr/mahboubi/ens.html)
-    -   [by Alexandre Miquel](http://www.pps.jussieu.fr/~miquel/enseignement/mpri/index.html)
 -   Material from course [Semantic of Proofs and Certified Mathematics](http://specfun.inria.fr/mahboubi/cirm14.html)
 -   Material from the [Using Proof Assistants for Programming Language Research](http://www.cis.upenn.edu/~plclub/popl08-tutorial/code/index.html) tutorial.
 
