@@ -69,6 +69,7 @@ Pointers to existing projects involving Coq.
 
 -   [Formal programming language research in Coq](List%20of%20Coq%20PL%20Projects)
 -   [Formal mathematics in Coq](List%20of%20Coq%20Math%20Projects)
+-   [Published works](Published-Works)
 
 Coq libraries
 =============
