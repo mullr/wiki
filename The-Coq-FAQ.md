@@ -35,7 +35,7 @@ Use the [dpdusage](https://github.com/Karmaki/coq-dpdgraph#dpdusage-find-unused-
 ## Questions to move to the section they belong to
 
 1.  Should I put my type in [[Prop_or_Set]]?
-2.  How does the [[MatchAsInReturn] syntax work?
+2.  How does the [[MatchAsInReturn]] syntax work?
 3.  Why can't I prove (forall x, f x = g x) -&gt; f = g? (see [[extensional_equality]])
 4.  Isn't [[IntensionalEquality]] useless?
 5.  How do I get [[DependentInversion]] to work in my case?
