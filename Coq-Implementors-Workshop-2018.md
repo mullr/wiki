@@ -49,6 +49,11 @@ Talks by devs:
 
 - Writing your plugins in Coq using Template Coq (M. Sozeau, S. Boulier)
 
+Gitter room
+-----------
+
+https://gitter.im/coq/CIW2018
+
 Do log what you did/learned/implemented!
 ---------------------------------------
 
