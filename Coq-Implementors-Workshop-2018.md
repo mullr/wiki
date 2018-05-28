@@ -10,7 +10,7 @@ Location
 
 The Implementors Workshop takes place at University of Nice, Parc Valrose campus, Room M36 (building M, 3rd floor, room 6), France ([campus map](https://www-sop.inria.fr/members/Yves.Bertot/misc/Plan-Campus-Valrose.pdf))
 
-https://goo.gl/maps/yJ9hFj3pRNy
+https://goo.gl/maps/YdbdU2MqmUs
 
 Recommended hotels:
 - Hotel Monsigny http://hotelmonsignynice.com/fr
