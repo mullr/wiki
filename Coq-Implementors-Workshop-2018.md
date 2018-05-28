@@ -150,3 +150,43 @@ Secondary, shorter topics:
 
 4. It sounds like memory usage may be a limiting factor for some users.  I'd like to understand how Coq uses memory and whether this may be a worthwhile area to look for improvements.
 
+Projects listed on Monday
+-------------------------
+### Profiling and performance.
+
+(Main contact: Erik)
+
+Documentation, Tutorial and Sample scripts about how to track down performances issues in computations, conversion, unification, etc...
+
+### Custom rewrite tactic `under` for `SSReflect`
+
+(Main contact: Erik)
+
+Adapt a plugin to rewrite under binders in some cases supported by the mathematical components library.
+Expose an internal function of `SSReflect` to `ltac`
+
+### Forward Reasoning Automation
+
+(Main contact: Mickael)
+
+`eauto` finds a proof in backward reasoning. We want to do the same the other way around: in forward reasoning.
+Depending on the complexity ratio of the premises and the the goal, one or the other might be used.
+Currently, the Hint Db is goal oriented, we need another database which is premise oriented.
+Hint Db are under-instrumented, we should provide ways to inspect, combine, use, etc...
+
+### Plugin design
+
+(Main contact: Leo)
+
+Write the existing QuickChick plugin in a "better" way, using the "right" data-structures and API.
+Port the plugin AAC tactics from 8.6 to 8.8.
+
+The goal is not only to improve QuickChick implementation and port ACC, but also to derive a general best practices to write plugins, and maybe a tutorial for middle size to big plugins.
+
+### Equivalences
+
+Do program "ornamenent"-like translations.
+
+### Template Coq
+
+Quoting from within a tactic or within a section (see issues on TemplateCoq GH page)
