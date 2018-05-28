@@ -179,7 +179,7 @@ Hint Db are under-instrumented, we should provide ways to inspect, combine, use,
 (Main contact: Leo)
 
 Write the existing QuickChick plugin in a "better" way, using the "right" data-structures and API.
-Port the plugin AAC tactics from 8.6 to 8.8.
+Port the plugin AAC tactics from 8.6 to 8.8 and add capabilities to rewrite in heterogeneous, associative structures (e.g. Categories).
 
 The goal is not only to improve QuickChick implementation and port ACC, but also to derive a general best practices to write plugins, and maybe a tutorial for middle size to big plugins.
 
