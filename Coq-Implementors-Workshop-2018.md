@@ -28,7 +28,7 @@ Program (Preliminary)
 
 ### Monday
 
-- 1pm: Introduction and How To Write A Plugin
+- 1pm: Introduction and How To Write A Plugin (see [ybertot/plugin_tutorials](https://github.com/ybertot/plugin_tutorials))
   - Interfacing Coq and ML (building and running)
   - Vernacular Commands, Tactic extensions
   - Reading terms and, crawling the environment (dpdgraph example)
