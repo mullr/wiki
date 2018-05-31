@@ -8,3 +8,4 @@
 - [with Leo] CI for quickchick https://github.com/coq/coq/pull/7656
 - [with Talia] plugin porting to 8.8, discussion about the universe constraint API, also some discussion on reduction.
 - [with Maxime, Enrico] discussion about Dune / package formats.
+- Small merlin / emacs demo [pointer to file]
