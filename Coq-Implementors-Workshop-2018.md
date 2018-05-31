@@ -57,7 +57,7 @@ https://gitter.im/coq/CIW2018
 Do log what you did/learned/implemented!
 ---------------------------------------
 
-Write it here
+Write it [here](Coq-Implementors-Workshop-2018-log)
 
 Registration
 ------------
