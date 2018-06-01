@@ -234,3 +234,9 @@ I (Yannick) fixed several bugs: Unquoting terms now shows an error (instead of r
 Simon ported Template Coq to the current master branch of Coq.
 
 ** Future Work **: I (Yannick) have to port my PRs (currently filed against the 8.7 branch) to the master branch.
+
+### 'have' tactic
+
+I (Frédéric) started writing the 'have' tactics which behaves like the 'assert' tactics but allow to clear the proof environment to improve readability. It is also possible to introduce intermediate results that are expected to be proved automatically by eauto.
+In 'have t from H1 ... Hn, P1 ... Pn', t is the assertion to prove, the Hi are the hypothesis and the Pi are the intermediate results. As suggested by other participants I plan to add the possibility to use hint databases for improving the experience with intermediate results.
+The tactic has been fully written in ocaml. As a complete beginner with Coq's internals, this was a greet and rewardable experience. 
