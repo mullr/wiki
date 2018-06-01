@@ -203,7 +203,7 @@ the evolution of the master branch.
 
 ### Forward reasoning automation
 
-We (Armaël, Michael and Théo) identified a primary need to do this kind of automation: having a way to provide non-backtracking hints (because forward reasoning doesn't make sense to be backtracked since it doesn't reduce the provability of the goal, so having these kinds of hints backtracking would only blow up the proof search space for no good reason). We (Armaël and Théo) implemented this capability and did some clean-ups at the same time. A PR is on its way.
+We (Armaël, Michael and Théo) identified a primary need to do this kind of automation: having a way to provide non-backtracking hints (because forward reasoning doesn't make sense to be backtracked since it doesn't reduce the provability of the goal, so having these kinds of hints backtracking would only blow up the proof search space for no good reason). We (Armaël and Théo) implemented this capability and did some clean-ups at the same time. A PR has been submitted (#7661).
 
 **Future work:** generalize the patterns on which to filter hints, add a `Hint Forward` command (to replace the `Hint Extern` that must be used currently for forward reasoning), document this technique in the manual...
 
