@@ -190,3 +190,13 @@ Do program "ornamenent"-like translations.
 ### Template Coq
 
 Quoting from within a tactic or within a section (see issues on TemplateCoq GH page)
+
+Achievements listed on Friday
+-----------------------------
+
+### plugin tutorial updates
+
+Remarks made during the talks have been taken into account and the master branch of
+[this repository](https://github.com/ybertot/plugin_tutorials) is currently consistent
+with coq-8.8.  **Future work:** add these tutorials in the coq repository and follow
+the evolution of the master branch.
