@@ -226,3 +226,11 @@ I (Fabian) ported the plugin AAC_tactics (containing tactics for rewriting up to
 I am in the process to extend the plugin with an aac_apply tactic, the application of lemmas modulo A or AC. This would enable e.g. to simplify a goal containing of a large inequation of sums 'x+c+y <= c+z' to 'x+y<=z' using the lemma 'forall x y c, x <= y -> x + c <= y + c'. For that, I extend the reflection and ocaml-part to enable reasoning about terms containing several types (aac_tactics currently only works with exactly one carrier type, but my example involve e.g. Prop and nat).
 
 **Future Work:** Complete the aac_apply, a step towards rewriting modulo associativity with heterogeneous, associative operands as function composition or composition of arrows in category theory.
+
+### Template Coq
+
+I (Yannick) fixed several bugs: Unquoting terms now shows an error (instead of raising an anomaly) if an ill-typed term is unquoted (PR #39), fixed the easy tactic in the development (PR #41) and fixed the treatment of implicit arguments in `tmLemma` (PR #45). I also implemented `tmExistingInstance` to register instances (PR #43), implemented `tmInferInstance` to infer an existing instance for a class (PR #44), added an `unfold` option to `tmEval` (PR #40) and made the reduction strategy used for the type of definitions customizable (PR #42).
+
+Simon ported Template Coq to the current master branch of Coq.
+
+** Future Work **: I (Yannick) have to port my PRs (currently filed against the 8.7 branch) to the master branch.
