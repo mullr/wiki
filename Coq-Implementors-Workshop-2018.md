@@ -218,3 +218,11 @@ We (Leo and Talia) both updated plugins to use the latest Coq version. I (Talia)
 We (Talia, Cyril, Matthieu, Nicolas, Enrico) had several productive meetings about ornaments, refinements, and equivalences, figuring out how these projects unify conceptually and where they diverge. In doing so, we identified several places where work from one of our tools (for example, search) may be useful for other tools. 
 
 **Future work:** Collaborate more so that we can actually reuse these concepts across tools. Also, I (Talia) will be in touch with Cyril and Enrico in the future about the possibility of porting infrastructure.
+
+### AAC tactics
+
+I (Fabian) ported the plugin AAC_tactics (containing tactics for rewriting up to associative/associative-commutative operations) to 8.7 and 8.8. I learned a lot about ocaml, the build process of coq and plugins, and about how to interface with coq inside a plugin.
+
+I am in the process to extend the plugin with an aac_apply tactic, the application of lemmas modulo A or AC. This would enable e.g. to simplify a goal containing of a large inequation of sums 'x+c+y <= c+z' to 'x+y<=z' using the lemma 'forall x y c, x <= y -> x + c <= y + c'. For that, I extend the reflection and ocaml-part to enable reasoning about terms containing several types (aac_tactics currently only works with exactly one carrier type, but my example involve e.g. Prop and nat).
+
+**Future Work:** Complete the aac_apply, a step towards rewriting modulo associativity with heterogeneous, associative operands as function composition or composition of arrows in category theory.
