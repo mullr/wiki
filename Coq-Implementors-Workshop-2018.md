@@ -206,3 +206,15 @@ the evolution of the master branch.
 We (Armaël, Michael and Théo) identified a primary need to do this kind of automation: having a way to provide non-backtracking hints (because forward reasoning doesn't make sense to be backtracked since it doesn't reduce the provability of the goal, so having these kinds of hints backtracking would only blow up the proof search space for no good reason). We (Armaël and Théo) implemented this capability and did some clean-ups at the same time. A PR is on its way.
 
 **Future work:** generalize the patterns on which to filter hints, add a `Hint Forward` command (to replace the `Hint Extern` that must be used currently for forward reasoning), document this technique in the manual...
+
+### Plugin design
+
+We (Leo and Talia) both updated plugins to use the latest Coq version. I (Talia) addressed several bugs in my plugin that I did not understand before talking to the Coq developers (for example, dealing with universe constraints and refreshing environments after defining terms).
+
+**Future work:** We should make the Plugin Developer Program that Emilio proposed a reality. In addition, I (Talia) will make a list at some point of the functionality I have in my plugin so that other people can access it, and I will update my own plugin tutorials to the latest Coq and use best practices (I'll be in touch about this at some point).
+
+### Equivalences
+
+We (Talia, Cyril, Matthieu, Nicolas, Enrico) had several productive meetings about ornaments, refinements, and equivalences, figuring out how these projects unify conceptually and where they diverge. In doing so, we identified several places where work from one of our tools (for example, search) may be useful for other tools. 
+
+**Future work:** Collaborate more so that we can actually reuse these concepts across tools. Also, I (Talia) will be in touch with Cyril and Enrico in the future about the possibility of porting infrastructure.
