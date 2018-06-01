@@ -240,3 +240,7 @@ Simon ported Template Coq to the current master branch of Coq.
 I (Frédéric) started writing the 'have' tactics which behaves like the 'assert' tactics but permits to clear the proof environment to improve readability. It is also possible to introduce intermediate results that are expected to be proved automatically by eauto.
 In 'have t from H1 ... Hn, P1 ... Pn', t is the assertion to prove, the Hi are the hypothesis and the Pi are the intermediate results. As suggested by other participants I plan to add the possibility to use hint databases for improving the experience with intermediate results.
 The tactic has been fully written in ocaml. As a complete beginner with Coq's internals, this was a greet and rewardable experience. 
+
+### Agda-like rewrite rules
+I (Ambroise) started to think about how to add rewrite rules in Coq, i.e. reductions rules in the conversion specified by the user of the form 'forall (x1 : A1) ... (xn : An), C y1 .. yp (D z1 .. zq) = t' where yi, zi are variables or holes. C and D are opaque constants or constructors.
+I successfully modified the kernel head normalization algorithm for a single example (the reduction rule for K), though I did not extensevely checked whether I introduced new bugs. I am thinking of using template Coq to write a plugin that allows to introduce new reduction rules that would use this new feature of the kernel.
