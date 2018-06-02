@@ -246,7 +246,7 @@ I (Ambroise) started to think about how to add rewrite rules in Coq, i.e. reduct
 I successfully modified the kernel head normalization algorithm for a single example (the reduction rule for K), though I did not extensevely checked whether I introduced new bugs. I am thinking of using template Coq to write a plugin that allows to introduce new reduction rules that would use this new feature of the kernel.
 
 ### Profiling computation in Coq
-I (Erik) was strongly interesting in studying ways to profile computations in Coq (such as when using `vm_compute` or `native_compute` in a reflexive tactic), and Maxime pointed out that there already exists one such feature for `native_compute`. We did a few experiments but actually identified two blocking bugs that I reported on the issues tracker: [#7631](https://github.com/coq/coq/issues/7631) - already fixed in PR [#7643](https://github.com/coq/coq/pull/7643) - and [#7673](https://github.com/coq/coq/issues/7673).
+I (Erik) was strongly interested in studying ways to profile computations in Coq (such as when using `vm_compute` or `native_compute` in a reflexive tactic), and Maxime pointed out to me that there already exists one such feature for `native_compute`. We did a few experiments to try it, but actually identified two blocking bugs that I reported on the issues tracker: [#7631](https://github.com/coq/coq/issues/7631) − already fixed in [PR #7643](https://github.com/coq/coq/pull/7643) − and [#7673](https://github.com/coq/coq/issues/7673).
 
 Also, beyond `vm_compute`/`native_compute`, Enrico started writing a page [ProfilingCoq](https://github.com/coq/coq/wiki/ProfilingCoq) with a wrap-up of the various layers that may have an impact on the performances of Coq in general.
 
