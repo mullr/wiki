@@ -19,3 +19,32 @@
 - Talk to Théo about improving the documentation.  I plan to make this my next project.
 - Heard from Emilio about plans to use the Language Support Protocol to interface Coq to VSCode and other IDEs.  This would make CoqIde obsolete and save us from the considerable work required to provide a GUI ourselves.
 - Short conversations about how to make Coq more powerful.  The Language Server Protocol may let us add helpful status displays in the various IDEs.
+
+### Michael:
+
+* Efficient and easy to maintain forward reasoning with eauto or typeclasses eauto:
+  - intensive discussion with Théo and Armael on the right approach
+  - my old approach was to bundle all forwarding into one step during backward reasoning to avoid permutation of the order of forwarding steps if a backward step is backtracked
+  - Theó suggested to instead disable creating of a backtracking point for forward reasoning and include the forward reasoning steps as individual steps in the hint database. The main reasoning is that forwarding never influences the solvability of the goal, so it doesn't make much sense to backtrack such steps. This might also apply to some non forwarding steps, so the solution suggested by Théo is a quite general improvement.
+  - Armael and Théo implemented this method for typeclasses eauto - PR has been created (https://github.com/coq/coq/pull/7661).
+  - Michael is still working on some more advanced test cases.
+  - Still open (maybe for CIW2019) is a Hint Forward which uses a premise based discrimination in the database
+* Effective setup for development of Coq for Windows
+  - Emilio helped me to get Merlin compiled under Cygwin (essentially one has to use a very recent OCaml version)
+  - what still doesn't work is integration of Merlin into Visual Studio Code - Emilio is looking into this
+  - Michael will provide an automated setup script - Jim will test it
+* Problem that simpl and cbn tactics easily cross abstraction level borders:
+  - Z is in Coq implemented bases on positives. This has the effect that simpl and cbn frequently "simplify" Z based expressions to positives based expressions. This is frequently not what one want's because it increases the domain automation needs to handle substantially and the results are usually not really simpler. It is a general problem that simpl and cbn cross abstraction borders.
+  - I had intensive discussions on this with Yves, Emilio and Hugo
+  - My suggestion was to use "Arguments Z.add : simpl never." & Co and have a special simplification tactic, which does not obey "simpl never" but only simplifies literal terms (that are terms consiting only of constructors and names of inductive types). Yves implemented a prototype of such a simplification function in ltac.
+  - Emilio suggested to categorize symbols into abstraction domains (possibly by reusing the existing module structure) and be able to specify a preferred abstraction layer, e.g. by specifying a set of modules / files. If simplification would "simplify" a function from the preferred abstraction layer to a function of an unwanted abstraction layer, the simplification is not done. This is not trivial, because one would have to check if further simplification results in a term of the desired abstraction, e.g. a Z literal term. So backtracking would be required. But this would definitely a very powerful and flexible method to define what the user means by "simple".
+* Term classification for gating automation:
+  - Maxime added tactics for term classification, especially a tactic to check if a term is a literal term (PR https://github.com/coq/coq/pull/7670)
+  - Some already existing but not documented tactics (is_ctor) need documentation
+* Many useful hints / details:
+  - deeper explanation of inversion vs. destruct vs. dependent destruct ... by Hugo
+  - learning about Zify and romega
+  - personal contact to developers of interesting Coq contributions
+  - many more
+
+In summary it was a very good, effective and enjoyable workshop!
