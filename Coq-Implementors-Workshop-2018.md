@@ -233,7 +233,7 @@ I (Yannick) fixed several bugs: Unquoting terms now shows an error (instead of r
 
 Simon ported Template Coq to the current master branch of Coq.
 
-** Future Work **: I (Yannick) have to port my PRs (currently filed against the 8.7 branch) to the master branch.
+**Future Work**: I (Yannick) have to port my PRs (currently filed against the 8.7 branch) to the master branch.
 
 ### 'have' tactic
 
@@ -244,3 +244,17 @@ The tactic has been fully written in ocaml. As a complete beginner with Coq's in
 ### Agda-like rewrite rules
 I (Ambroise) started to think about how to add rewrite rules in Coq, i.e. reductions rules in the conversion specified by the user of the form 'forall (x1 : A1) ... (xn : An), C y1 .. yp (D z1 .. zq) = t' where yi, zi are variables or holes. C and D are opaque constants or constructors.
 I successfully modified the kernel head normalization algorithm for a single example (the reduction rule for K), though I did not extensevely checked whether I introduced new bugs. I am thinking of using template Coq to write a plugin that allows to introduce new reduction rules that would use this new feature of the kernel.
+
+### Profiling computation in Coq
+I (Erik) was strongly interesting in studying ways to profile computations in Coq (such as when using `vm_compute` or `native_compute` in a reflexive tactic), and Maxime pointed out that there already exists one such feature for `native_compute`. We did a few experiments but actually identified two blocking bugs that I reported on the issues tracker: [#7631](https://github.com/coq/coq/issues/7631) - already fixed in PR [#7643](https://github.com/coq/coq/pull/7643) - and [#7673](https://github.com/coq/coq/issues/7673).
+
+Also, beyond `vm_compute`/`native_compute`, Enrico started writing a page [ProfilingCoq](https://github.com/coq/coq/wiki/ProfilingCoq) with a wrap-up of the various layers that may have an impact on the performances of Coq in general.
+
+### New implementation of a tactic `under` for `SSReflect`
+I (Erik) started with Enrico a new re-implementation of the `under` tactic ([a previous implementation](https://github.com/erikmd/ssr-under-tac) of which was in pure Ltac and was not as generic as the `rewrite` tactic in terms of contextual patterns and occurrence selectors). After several discussions with Cyril and Enrico, we devised a new specification of the tactic with a more generic and more ssr-friendly syntax. In particular, in addition to a one-liner, immediate proof mode, an interactive mode should be available when doing:
+```coq
+under i: eq_bigr.
+  (* ... *)
+  by rewrite addnC over.
+```
+Enrico and I (Erik) made some progress in implementing this in ML+Gallina during the week, but the work is still on-going.
