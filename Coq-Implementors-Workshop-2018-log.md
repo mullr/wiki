@@ -56,7 +56,7 @@ In summary it was a very good, effective and enjoyable workshop!
 - [with Enrico] on-going work to implement this new specification of `under` (which fortuitously made us notice [PG issue 362](https://github.com/ProofGeneral/PG/issues/362))
 - [with Enrico, Cyril, Théo] discussion on the needed changes in Coq to provide a tactic doing `Focus 1`
 - [with Jim] presentation of his [PR #6801](https://github.com/coq/coq/pull/6801), discussion around ProofGeneral and demo of [company-coq](https://github.com/cpitclaudel/company-coq)
-- [with Enrico, Gaëtan] discussion about the current infrastructure of Coq (w.r.t. CI and Docker)
+- [with Emilio, Gaëtan] discussion about the current infrastructure of Coq (w.r.t. CI and Docker)
 - [with Maxime] discussions about native_compute that lead to Maxime's [PR #7646](https://github.com/coq/coq/pull/7646) that fixes [#4714](https://github.com/coq/coq/issues/4714)
 - [with Maxime] experiments with [Set NativeCompute Profiling](https://coq.inria.fr/refman/proof-engine/tactics.html#coq:tacv.native-compute) that didn't work at first due to [#7631](https://github.com/coq/coq/issues/7631) (now fixed in [PR #7643](https://github.com/coq/coq/pull/7643)) and [#7673](https://github.com/coq/coq/issues/7673)
 - and many fruitful discussions about interesting formalizations, important features for PG, etc.
