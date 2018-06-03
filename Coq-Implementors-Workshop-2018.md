@@ -255,6 +255,6 @@ I (Erik) started with Enrico a new re-implementation of the `under` tactic ([a p
 ```coq
 under i: eq_bigr.
   (* ... *)
-  by rewrite addnC over.
+  by rewrite addnC; over.
 ```
 Enrico and I (Erik) made some progress in implementing this in ML+Gallina during the week, but the work is still on-going.
