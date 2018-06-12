@@ -18,13 +18,14 @@ This FAQ is the sum of the questions that came to mind as we developed proofs in
 7. [Syntax and Notations](Syntax-and-Notations)
 8. [Ltac](Ltac)
 9. [Tactics Written in OCaml](Tactics-Written-in-OCaml)
-10. [Case Studies](Case-Studies)
-11. [Publishing Tools](Publishing-Tools)
-12. [CoqIde](CoqIde)
-13. [Extraction](Extraction)
-14. [Glossary](Glossary)
-15. [Troubleshooting](Troubleshooting)
-16. [More questions](#more-questions)
+10. [Typeclasses and Canonical Structures](Typeclasses-and-Canonical-Structures) 
+11. [Case Studies](Case-Studies)
+12. [Publishing Tools](Publishing-Tools)
+13. [CoqIde](CoqIde)
+14. [Extraction](Extraction)
+15. [Glossary](Glossary)
+16. [Troubleshooting](Troubleshooting)
+17. [More questions](#more-questions)
 
 # More questions
 
