@@ -1,4 +1,3 @@
-# Typeclasses versus Canonical Structures
 
 There is varied opinion about when to use Typeclasses versus when to use Canonical Structures. Some references are listed below:
 
