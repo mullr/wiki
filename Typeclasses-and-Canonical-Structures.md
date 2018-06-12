@@ -1,3 +1,6 @@
+(Part of [[the Coq FAQ]])
+
+### What are the differences between type classes and canonical structures?
 
 There is varied opinion about when to use Typeclasses versus when to use Canonical Structures. Some references are listed below:
 
