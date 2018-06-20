@@ -23,6 +23,6 @@ The general opinion seems to be that:
 
 - Coq typeclasses allow multiple instances, unlike Haskell Typeclasses.
 - The `typeclass` resolution mechanism uses more powerful unification rules, but is also harder to control. 
-- Debugging typeclasses is harder due to their greater power.
-- Typeclass resolution can be slow in large developments.
+- Debugging typeclasses is harder due to their greater power. On the other hand, there is `Set Typeclasses Debug` (and `Set Typeclasses Debug Verbosity 2`); no similar mechanism exists for canonical structures.
+- Typeclass resolution can be slow in large developments, and typeclasses can lead to *huge* terms because of redundancy in class indices.
 - Canonical structures are simple and their unification rule is easy to reason about.
