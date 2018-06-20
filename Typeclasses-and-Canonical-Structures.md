@@ -15,7 +15,7 @@ There is varied opinion about when to use Typeclasses versus when to use Canonic
 
 - [Type Classes for Mathematics in Type Theory](https://arxiv.org/abs/1102.1323) describes an algebraic hierarchy using type classes.
 
-- [Hints in Unification](https://www.cs.unibo.it/~sacerdot/PAPERS/tphol09.pdf) argues for a generalization of both mechanisms
+- [Hints in Unification](https://www.cs.unibo.it/~sacerdot/PAPERS/tphol09.pdf) argues for a generalization of both mechanisms.
 
 The `mathcomp` (Mathematical Components) library uses Canonical Structures, as described in the [`mathcomp` book](https://math-comp.github.io/mcb/book.pdf).
 
