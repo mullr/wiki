@@ -4,7 +4,6 @@
 
 There is varied opinion about when to use Typeclasses versus when to use Canonical Structures. Some references are listed below:
 
-
 - [Mailing list thread on Typeclasses versus Canonical Structures](http://coq-club.inria.narkive.com/TBVZVe4O/typeclasses-vs-canonical-instances)
 
 - [Software foundations discussion: Advice from Experts](https://softwarefoundations.cis.upenn.edu/draft/qc-current/Typeclasses.html)
@@ -12,6 +11,8 @@ There is varied opinion about when to use Typeclasses versus when to use Canonic
 - [Canonical structures for the working Coq user: section on related work](https://hal.inria.fr/hal-00816703v1/document)
 
 - [Packaging Mathematical Structures](https://hal.inria.fr/inria-00368403v1/document) and [Garillot's PhD thesis](https://pastel.archives-ouvertes.fr/pastel-00649586/file/manuscript.pdf) describe how ssreflect uses canonical structure. The thesis also has an in-depth discussion of the computational complexity "bundled" (canonical structures) and "unbundled" (typeclasses) approaches.
+
+- [How to Make Ad Hoc Proof Automation Less Ad Hoc](https://software.imdea.org/~aleks/papers/lessadhoc/paper.pdf) presents a series of design patterns for canonical structure programming that enable one to carefully and predictably coax Coq’s type inference engine into triggering the execution of user-supplied algorithms during unification.
 
 - [Type Classes for Mathematics in Type Theory](https://arxiv.org/abs/1102.1323) describes an algebraic hierarchy using type classes.
 
