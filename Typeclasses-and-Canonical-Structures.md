@@ -11,6 +11,10 @@ There is varied opinion about when to use Typeclasses versus when to use Canonic
 
 - [Canonical structures for the working Coq user: section on related work](https://hal.inria.fr/hal-00816703v1/document)
 
+- [2008 -- Garillot, Gonthier, Mahboubi, Rideau -- Packaging Mathematical Structures](https://hal.inria.fr/inria-00368403v1/document)
+
+- [2011 -- Spitters, van der Weegen -- Type Classes for Mathematics in Type Theory](https://arxiv.org/abs/1102.1323)
+
 The `mathcomp` (Mathematical Components) library uses Canonical Structures, as described in the [`mathcomp` book](https://math-comp.github.io/mcb/book.pdf).
 
 The general opinion seems to be that:
