@@ -11,9 +11,11 @@ There is varied opinion about when to use Typeclasses versus when to use Canonic
 
 - [Canonical structures for the working Coq user: section on related work](https://hal.inria.fr/hal-00816703v1/document)
 
-- [2008 -- Garillot, Gonthier, Mahboubi, Rideau -- Packaging Mathematical Structures](https://hal.inria.fr/inria-00368403v1/document)
+- [Packaging Mathematical Structures](https://hal.inria.fr/inria-00368403v1/document) and [Garillot's PhD thesis](https://pastel.archives-ouvertes.fr/pastel-00649586/file/manuscript.pdf) describe how ssreflect uses canonical structure. The thesis also has an in-depth discussion of the computational complexity "bundled" (canonical structures) and "unbundled" (typeclasses) approaches.
 
-- [2011 -- Spitters, van der Weegen -- Type Classes for Mathematics in Type Theory](https://arxiv.org/abs/1102.1323)
+- [Type Classes for Mathematics in Type Theory](https://arxiv.org/abs/1102.1323) describes an algebraic hierarchy using type classes.
+
+- [Hints in Unification](https://www.cs.unibo.it/~sacerdot/PAPERS/tphol09.pdf) argues for a generalization of both mechanisms
 
 The `mathcomp` (Mathematical Components) library uses Canonical Structures, as described in the [`mathcomp` book](https://math-comp.github.io/mcb/book.pdf).
 
