@@ -27,6 +27,7 @@ Configuring the alternative set of bindings
 
 -   On Linux, in `~/.config/coq/`
 -   On Windows, either in `%HOME%\.config\coq` or in `C:\Program Files\Coq\config`
+-   On Mac OS X, in `~/Library/Application\ Support/coq/`
 
 (3) Edit the file `coqiderc` and make the following change:
 
