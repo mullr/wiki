@@ -1,3 +1,7 @@
+This page explains how to change the navigation shortcuts.
+You might also be interested in the page 
+[[for supporting non-ASCII characters|CoqIde-configuration-to-input-special-characters]].
+
 The default key bindings of CoqIDE are often problematic because they conflict with the window manager. Moreover, the default bindings are not efficient at all: the most useful action requires pressing a combination of 3 keys... Fortunately, it is straightforward to update the bindings.
 
 
