@@ -43,6 +43,15 @@ keycode 26 = e E e E U2203 NoSymbol U2203 NoSymbol
 
 and then run `xmodmap /.xmodmaprc`. Alternatively, you may use an input method editor such as SCIM or iBus. The latter offers a LaTex-like input method.
 
+### How to define simple shortcuts for greek letters?
+
+You can register a key to switch the keyboard to greek letters for the next keystroke. For example, to register the key "F12", execute in a terminal:
+```
+  xmodmap -e 'keycode 96 = dead_greek dead_greek dead_greek dead_greek'
+```
+
+If you like to use another key, you can find its code by typing the command `xmodmap -pke`.
+
 ### How to customize the shortcuts for menus?
 
 Two solutions are offered:
