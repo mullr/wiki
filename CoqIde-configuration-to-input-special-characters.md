@@ -30,7 +30,7 @@ In the `ide` subdirectory of the Coq library, you will find a sample `utf8.v` wi
 
 ### How to define an input method for non ASCII symbols?
 
-* First solution: use iBus:
+First solution, using the iBus input method:
 - type `sudo apt-get install ibus-table-latex`
 - then you must log out and log back in
 - open "system settings" panel, go to menu "text entry"
@@ -43,12 +43,10 @@ In the `ide` subdirectory of the Coq library, you will find a sample `utf8.v` wi
   a completion box. Type the first letters, then type space to validate.
 - For a simple backslash, just type backslash then space.
 
-Alternatively, you may use another input method editor such as SCIM.
-
-
-* Second solution: type `<CONTROL><SHIFT>2200` to enter a forall in the script widow. 2200 is the hexadecimal code for forall in unicode charts and is encoded as in UTF-8. 2203 is for exists. See http://www.unicode.org for more codes.
-
-* Third solution: rebind `<AltGr>a` to forall and `<AltGr>e` to exists. Under X11, one can add those lines in the file `/.xmodmaprc`:
+Alternatives:
+* you may use another input method editor such as SCIM.
+* you could type `<CONTROL><SHIFT>2200` to enter a forall in the script widow. 2200 is the hexadecimal code for forall in unicode charts and is encoded as in UTF-8. 2203 is for exists. See http://www.unicode.org for more codes.
+* you could rebind `<AltGr>a` to forall and `<AltGr>e` to exists. Under X11, one can add those lines in the file `/.xmodmaprc`:
 
 ```
 ! forall
