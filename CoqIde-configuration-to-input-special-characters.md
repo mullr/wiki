@@ -30,9 +30,25 @@ In the `ide` subdirectory of the Coq library, you will find a sample `utf8.v` wi
 
 ### How to define an input method for non ASCII symbols?
 
-* First solution: type `<CONTROL><SHIFT>2200` to enter a forall in the script widow. 2200 is the hexadecimal code for forall in unicode charts and is encoded as in UTF-8. 2203 is for exists. See http://www.unicode.org for more codes.
+* First solution: use iBus:
+- type `sudo apt-get install ibus-table-latex`
+- then you must log out and log back in
+- open "system settings" panel, go to menu "text entry"
+- click the "+" button to add a new input source
+- select "Other (LaTeX) (IBus)"
+- look at which shortcut is registered for switching languages;
+  alternatively, you can switch language from the global menu bar
+  by clicking on the some icon saying, e.g. "Us" or "Fr".
+- When LaTex input is selected, typing a backslash will trigger
+  a completion box. Type the first letters, then type space to validate.
+- For a simple backslash, just type backslash then space.
 
-* Second solution: rebind `<AltGr>a` to forall and `<AltGr>e` to exists. Under X11, one can add those lines in the file `/.xmodmaprc`:
+Alternatively, you may use another input method editor such as SCIM.
+
+
+* Second solution: type `<CONTROL><SHIFT>2200` to enter a forall in the script widow. 2200 is the hexadecimal code for forall in unicode charts and is encoded as in UTF-8. 2203 is for exists. See http://www.unicode.org for more codes.
+
+* Third solution: rebind `<AltGr>a` to forall and `<AltGr>e` to exists. Under X11, one can add those lines in the file `/.xmodmaprc`:
 
 ```
 ! forall
@@ -41,7 +57,7 @@ keycode 24 = a A a A U2200 NoSymbol U2200 NoSymbol
 keycode 26 = e E e E U2203 NoSymbol U2203 NoSymbol
 ```
 
-and then run `xmodmap /.xmodmaprc`. Alternatively, you may use an input method editor such as SCIM or iBus. The latter offers a LaTex-like input method.
+and then run `xmodmap /.xmodmaprc`. 
 
 ### How to define simple shortcuts for greek letters?
 
