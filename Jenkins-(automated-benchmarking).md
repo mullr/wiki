@@ -15,6 +15,7 @@ Then:
 -   and request to join the project "coq"
 
 You'll have to wait until some of the existing members of the project actually confirms your membership.
+You need to be an admin to start builds.
 
 I have a Jenkins account
 ------------------------
