@@ -1,6 +1,7 @@
 (Part of [[the Coq FAQ]])
 
-Program extraction generates a program from a constructive proof. You can extract your programs to Objective Caml and Haskell.
+Program extraction generates a program from a constructive proof. You can extract your programs to Objective Caml, Scheme and Haskell. The extraction function works via an untyped intermediate language CIC_box.
+[Oeuf](oeuf.uwplse.org/) is a Verified Coq Extraction in Coq.
 
 Resources about Extraction
 ==========================
