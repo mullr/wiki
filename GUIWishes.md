@@ -46,3 +46,9 @@ Graphical notations
     -   pcoq and alfa/agda1 have some support for this
     -   as a convention, every notation of the form ^\* could be written as an exponent and every part of an ident ended by \_digits or
 
+Links
+-----
+
+-   Diagram representation in [Penrose](http://www.penrose.ink/)
+-   Structured editing in [Deuce](https://arxiv.org/abs/1707.00015)
+-   The [SerAPI](https://github.com/ejgallego/coq-serapi) library for machine-to-machine interaction with Coq
