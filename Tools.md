@@ -77,3 +77,7 @@ Packaging extracted code
 
 -   [Z\_interface](ZInterfacePackage) An approach for deriving directly standalone programs from extracted code.
 
+Utilities
+=========
+
+-   `coqwc` is a stand-alone command line tool to print line statistics about Coq files (how many lines are spec, proof, comments). `coqwc` comes with the standard Coq distribution.
